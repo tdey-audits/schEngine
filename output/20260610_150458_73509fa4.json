@@ -1,0 +1,141 @@
+{
+  "batch_id": "20260610_150458_73509fa4",
+  "generated_at": "2026-06-10T15:04:58.611168",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Pair of Linear Equations in Two Variables",
+  "subtopic": "graphical method",
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Two non-profit organizations, 'Green Earth' and 'Clean Water', are planning a combined charity event. The budget allocation for the event is governed by two linear constraints based on the number of volunteers $x$ from Green Earth and $y$ from Clean Water. The first constraint is $x + 2y = 10$. The second constraint, related to logistical limitations, is $2x + 4y = c$. The organizers notice that for the event to be feasible, there must be infinitely many solutions for the number of volunteers.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "What is the value of $c$ for which the system of equations has infinitely many solutions?",
+          "answer": "(C)",
+          "options": [
+            "(A) $5$",
+            "(B) $10$",
+            "(C) $20$",
+            "(D) $40$"
+          ],
+          "solution": {
+            "steps": [
+              "For infinitely many solutions, the ratio of coefficients must be equal: $a_1/a_2 = b_1/b_2 = c_1/c_2$.",
+              "The equations are $x + 2y - 10 = 0$ and $2x + 4y - c = 0$.",
+              "Thus, $1/2 = 2/4 = 10/c$.",
+              "Solving $1/2 = 10/c$ gives $c = 20$."
+            ],
+            "derivation": "$a_1 = 1, b_1 = 2, c_1 = -10 \\\\ a_2 = 2, b_2 = 4, c_2 = -c \\\\ \\frac{1}{2} = \\frac{2}{4} = \\frac{-10}{-c} \\\\ \\frac{1}{2} = \\frac{10}{c} \\\\ c = 20$"
+          }
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "If the second constraint was changed to $2x + 4y = 12$, what would be the nature of the lines represented?",
+          "answer": "Parallel lines",
+          "solution": {
+            "steps": [
+              "Compare the ratios of the coefficients: $a_1/a_2 = 1/2$, $b_1/b_2 = 2/4 = 1/2$, and $c_1/c_2 = 10/12 = 5/6$.",
+              "Since $a_1/a_2 = b_1/b_2 \\neq c_1/c_2$, the lines are parallel."
+            ],
+            "derivation": "\\frac{a_1}{a_2} = \\frac{1}{2}, \\frac{b_1}{b_2} = \\frac{2}{4} = \\frac{1}{2}, \\frac{c_1}{c_2} = \\frac{10}{12} = \\frac{5}{6} \\\\ \\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2} \\Rightarrow \\text{Parallel lines}"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "vsa",
+          "question": "Find the point where the line $x + 2y = 10$ intersects the $y$-axis.",
+          "answer": "$(0, 5)$",
+          "solution": {
+            "steps": [
+              "Set $x = 0$ in the equation $x + 2y = 10$.",
+              "Solve for $y$: $0 + 2y = 10 \\Rightarrow 2y = 10 \\Rightarrow y = 5$."
+            ],
+            "derivation": "x = 0 \\\\ 0 + 2y = 10 \\\\ y = 5 \\\\ \\text{Point is } (0, 5)"
+          }
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "Write another linear equation such that the pair with $x + 2y = 10$ is intersecting.",
+          "answer": "$x + y = 5$ (or any equation where $a_1/a_2 \\neq b_1/b_2$)",
+          "solution": {
+            "steps": [
+              "For intersecting lines, $a_1/a_2 \\neq b_1/b_2$.",
+              "Choose any coefficients satisfying this, e.g., $1/1 \\neq 2/1$.",
+              "An example is $x + y = 5$."
+            ],
+            "derivation": "\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2} \\\\ \\text{For } x + 2y = 10, \\frac{1}{a_2} \\neq \\frac{2}{b_2} \\\\ \\text{Let } a_2 = 1, b_2 = 1 \\\\ x + y = 5"
+          }
+        }
+      ],
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "graphical method",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-10T15:04:58.611076",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.1",
+            "question_no": 5,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150458_29617a_01"
+    }
+  ]
+}

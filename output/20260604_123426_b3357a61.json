@@ -1,0 +1,33 @@
+{
+  "batch_id": "20260604_123426_b3357a61",
+  "generated_at": "2026-06-04T12:34:26.866116",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "A train travels 360 km at a uniform speed. If the speed had been 5 km/h more, it would have taken 1 hour less for the same journey. Find the speed of the train.",
+      "answer": "40 km/h",
+      "solution": {
+        "steps": [
+          "Let the original speed of the train be $x$ km/h. Then time taken to cover 360 km is $\\frac{360}{x}$ hours.",
+          "If speed is increased by 5 km/h, new speed = $(x+5)$ km/h, and time taken = $\\frac{360}{x+5}$ hours.",
+          "Given that the difference in time is 1 hour: $\\frac{360}{x} - \\frac{360}{x+5} = 1$. Simplify to get $360(x+5 - x) = x(x+5)$, i.e., $1800 = x^2 + 5x$, so $x^2 + 5x - 1800 = 0$.",
+          "Solve $x^2+5x-1800=0$ using quadratic formula: $x = \\frac{-5 \\pm \\sqrt{25+7200}}{2} = \\frac{-5 \\pm \\sqrt{7225}}{2} = \\frac{-5 \\pm 85}{2}$. Positive root is $x = \\frac{80}{2} = 40$."
+        ],
+        "derivation": "Let speed = $x$ km/h. Times: $\\frac{360}{x}$ and $\\frac{360}{x+5}$. Equation: $\\frac{360}{x} - \\frac{360}{x+5} = 1 \\Rightarrow 360\\left(\\frac{x+5-x}{x(x+5)}\\right)=1 \\Rightarrow \\frac{1800}{x(x+5)} = 1 \\Rightarrow x(x+5)=1800 \\Rightarrow x^2+5x-1800=0$. Using quadratic formula: $x = \\frac{-5 \\pm \\sqrt{25+7200}}{2} = \\frac{-5 \\pm \\sqrt{7225}}{2} = \\frac{-5 \\pm 85}{2}$. Since speed is positive, $x = \\frac{80}{2}=40$ km/h."
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Word problems on speed, time and distance",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T12:34:26.865963",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_123426_b455dc"
+    }
+  ]
+}

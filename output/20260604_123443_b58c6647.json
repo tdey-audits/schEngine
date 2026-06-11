@@ -1,0 +1,38 @@
+{
+  "batch_id": "20260604_123443_b58c6647",
+  "generated_at": "2026-06-04T12:34:43.159621",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "A train travels a distance of 480 km at a uniform speed. If the speed had been 8 km/h less, then it would have taken 3 hours more to cover the same distance. Find the original speed of the train. Also, find the time taken at the original speed.",
+      "answer": "Original speed = 40 km/h, Time taken = 12 hours",
+      "solution": {
+        "steps": [
+          "Step 1: Let the original speed of the train be $x$ km/h. Then, time taken to cover 480 km at original speed is $\\frac{480}{x}$ hours.",
+          "Step 2: If speed is reduced by 8 km/h, new speed = $(x - 8)$ km/h. Time taken at reduced speed = $\\frac{480}{x - 8}$ hours.",
+          "Step 3: According to the problem, the time at reduced speed is 3 hours more than the original time. So, $\\frac{480}{x - 8} - \\frac{480}{x} = 3$.",
+          "Step 4: Multiply both sides by $x(x - 8)$ to clear denominators: $480x - 480(x - 8) = 3x(x - 8)$.",
+          "Step 5: Simplify: $480x - 480x + 3840 = 3x^2 - 24x$ \u21d2 $3840 = 3x^2 - 24x$.",
+          "Step 6: Divide by 3: $1280 = x^2 - 8x$ \u21d2 $x^2 - 8x - 1280 = 0$.",
+          "Step 7: Solve the quadratic equation using the quadratic formula: $x = \\frac{8 \\pm \\sqrt{64 + 5120}}{2} = \\frac{8 \\pm \\sqrt{5184}}{2} = \\frac{8 \\pm 72}{2}$.",
+          "Step 8: So, $x = \\frac{8 + 72}{2} = 40$ or $x = \\frac{8 - 72}{2} = -32$. Since speed cannot be negative, $x = 40$ km/h.",
+          "Step 9: Time taken at original speed = $\\frac{480}{40} = 12$ hours."
+        ],
+        "derivation": "Let original speed = $x$ km/h.\\nOriginal time = $\\frac{480}{x}$ h.\\nReduced speed = $(x-8)$ km/h.\\nNew time = $\\frac{480}{x-8}$ h.\\nGiven: $\\frac{480}{x-8} - \\frac{480}{x} = 3$\\n$\\Rightarrow 480x - 480(x-8) = 3x(x-8)$\\n$\\Rightarrow 3840 = 3x^2 - 24x$\\n$\\Rightarrow x^2 - 8x - 1280 = 0$\\n$\\Rightarrow x = \\frac{8 \\pm \\sqrt{64+5120}}{2} = \\frac{8 \\pm 72}{2}$\\n$\\Rightarrow x = 40$ or $x = -32$ (reject).\\nThus, original speed = 40 km/h, time = $\\frac{480}{40} = 12$ h."
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Word Problems on Speed, Distance and Time",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T12:34:43.159441",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_123443_b493db"
+    }
+  ]
+}

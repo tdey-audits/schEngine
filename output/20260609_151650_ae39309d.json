@@ -1,0 +1,61 @@
+{
+  "batch_id": "20260609_151650_ae39309d",
+  "generated_at": "2026-06-09T15:16:50.697343",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Probability",
+  "subtopic": "probability basics",
+  "difficulty": "medium",
+  "question_type": "sa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A box contains $90$ discs which are numbered from $1$ to $90$. If one disc is drawn at random from the box, find the probability that it bears: (i) a two-digit number, (ii) a perfect square number.",
+      "answer": "The probability of (i) is $\\frac{9}{10}$ and (ii) is $\\frac{1}{10}$.",
+      "solution": {
+        "steps": [
+          "Identify the total number of possible outcomes, which is $90$.",
+          "For (i), identify the two-digit numbers from $10$ to $90$. There are $90 - 9 = 81$ such numbers. The probability is $\\frac{81}{90} = \\frac{9}{10}$.",
+          "For (ii), identify the perfect squares between $1$ and $90$. These are $1, 4, 9, 16, 25, 36, 49, 64, 81$. There are $9$ such numbers. The probability is $\\frac{9}{90} = \\frac{1}{10}$."
+        ],
+        "derivation": "Total \\ outcomes \\ n(S) = 90 \\\\ (i) \\ Two-digit \\ numbers \\ are \\ \\{10, 11, \\dots, 90\\}, \\ n(E_1) = 90 - 9 = 81 \\\\ P(E_1) = \\frac{81}{90} = \\frac{9}{10} \\\\ (ii) \\ Perfect \\ squares \\ are \\ \\{1^2, 2^2, 3^2, 4^2, 5^2, 6^2, 7^2, 8^2, 9^2\\} = \\{1, 4, 9, 16, 25, 36, 49, 64, 81\\}, \\ n(E_2) = 9 \\\\ P(E_2) = \\frac{9}{90} = \\frac{1}{10}"
+      },
+      "topic": "Probability",
+      "subtopic": "probability basics",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-09T15:16:50.697073",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_15 (Probability).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 30,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 27,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 29,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ]
+      },
+      "id": "ncert_20260609_151650_b22056_01"
+    }
+  ]
+}

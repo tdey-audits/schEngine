@@ -1,0 +1,287 @@
+{
+  "batch_id": "20260609_132835_673442cc",
+  "generated_at": "2026-06-09T13:28:35.535974",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A packaging unit receives two consignments of items: $1260$ units of item $A$ and $1980$ units of item $B$. The manager wants to pack these into identical cartons such that each carton contains only one type of item and the maximum possible number of items are packed in each carton, with no items leftover. Let $H$ be the maximum number of items in each carton and $L$ be the total number of cartons if all items were of type $A$ packed in cartons of size $H$.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "What is the value of $H$, the maximum number of items per carton?",
+          "answer": "(C)",
+          "options": [
+            "(A) 90",
+            "(B) 120",
+            "(C) 180",
+            "(D) 360"
+          ],
+          "solution": {
+            "steps": [
+              "Find the HCF of 1260 and 1980.",
+              "Prime factorisation of 1260 = 2^2 * 3^2 * 5 * 7.",
+              "Prime factorisation of 1980 = 2^2 * 3^2 * 5 * 11.",
+              "HCF = 2^2 * 3^2 * 5 = 4 * 9 * 5 = 180."
+            ],
+            "derivation": "$1260 = 2^2 \\times 3^2 \\times 5 \\times 7 \\\\ 1980 = 2^2 \\times 3^2 \\times 5 \\times 11 \\\\ HCF = 2^2 \\times 3^2 \\times 5 = 180$"
+          }
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Calculate the value of $L$.",
+          "answer": "$7$",
+          "solution": {
+            "steps": [
+              "Divide the total number of items A by H."
+            ],
+            "derivation": "$L = \\frac{1260}{180} = 7$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "vsa",
+          "question": "If the number of cartons for item B is denoted by $K$, find the value of $K$.",
+          "answer": "$11$",
+          "solution": {
+            "steps": [
+              "Divide the total number of items B by H."
+            ],
+            "derivation": "$K = \\frac{1980}{180} = 11$"
+          }
+        },
+        {
+          "id": "iv",
+          "type": "mcq",
+          "question": "Which of the following is true regarding the decimal expansion of $\\frac{1}{H}$?",
+          "answer": "(A)",
+          "options": [
+            "(A) Terminating",
+            "(B) Non-terminating repeating",
+            "(C) Non-terminating non-repeating",
+            "(D) None of these"
+          ],
+          "solution": {
+            "steps": [
+              "Check prime factors of denominator $H=180$.",
+              "$180 = 2^2 * 3^2 * 5$.",
+              "Since it contains prime factors other than 2 and 5, it is non-terminating repeating."
+            ],
+            "derivation": "$180 = 2^2 \\times 3^2 \\times 5^1 \\\\ \\text{Since } 3 \\text{ is a factor of the denominator, it is non-terminating repeating.}$"
+          }
+        }
+      ],
+      "topic": "Real Numbers",
+      "subtopic": "",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T13:28:35.535519",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_132835_cfbcc8_01"
+    },
+    {
+      "question": "In a school event, three batches of students are participating in a relay race. The lengths of the track segments assigned to the batches are $120$ cm, $180$ cm, and $300$ cm respectively. The organizers want to mark the track with flags at equal intervals such that the distance between any two flags is the same and the largest possible distance is used. Let $d$ be the distance between two flags.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "What is the value of $d$?",
+          "answer": "(B)",
+          "options": [
+            "(A) 30 cm",
+            "(B) 60 cm",
+            "(C) 90 cm",
+            "(D) 120 cm"
+          ],
+          "solution": {
+            "steps": [
+              "Find HCF of 120, 180, 300.",
+              "120 = 2^3 * 3 * 5.",
+              "180 = 2^2 * 3^2 * 5.",
+              "300 = 2^2 * 3 * 5^2.",
+              "HCF = 2^2 * 3 * 5 = 60."
+            ],
+            "derivation": "$120 = 2^3 \\times 3 \\times 5 \\\\ 180 = 2^2 \\times 3^2 \\times 5 \\\\ 300 = 2^2 \\times 3 \\times 5^2 \\\\ HCF = 2^2 \\times 3 \\times 5 = 60$"
+          }
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "How many flags are required for the $120$ cm segment if flags are placed at both ends?",
+          "answer": "$3$",
+          "solution": {
+            "steps": [
+              "Number of intervals = $120 / 60 = 2$.",
+              "Number of flags = intervals + 1 = 3."
+            ],
+            "derivation": "$n = \\frac{120}{60} + 1 = 2 + 1 = 3$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "vsa",
+          "question": "Find the total number of flags required for the $300$ cm segment.",
+          "answer": "$6$",
+          "solution": {
+            "steps": [
+              "Number of intervals = $300 / 60 = 5$.",
+              "Number of flags = 5 + 1 = 6."
+            ],
+            "derivation": "$n = \\frac{300}{60} + 1 = 5 + 1 = 6$"
+          }
+        },
+        {
+          "id": "iv",
+          "type": "mcq",
+          "question": "If a new segment of length $x$ cm is added such that $d$ remains the HCF of $120, 180, 300,$ and $x$, which of the following could be $x$?",
+          "answer": "(C)",
+          "options": [
+            "(A) 70",
+            "(B) 80",
+            "(C) 420",
+            "(D) 100"
+          ],
+          "solution": {
+            "steps": [
+              "The HCF of 120, 180, 300 is 60. For the HCF to remain 60, $x$ must be a multiple of 60.",
+              "Check options."
+            ],
+            "derivation": "$x \\text{ must be a multiple of } 60. \\\\ 420 = 7 \\times 60. \\\\ \\text{Therefore, } 420 \\text{ is a valid option.}$"
+          }
+        }
+      ],
+      "topic": "Real Numbers",
+      "subtopic": "",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T13:28:35.535664",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_132835_9dfeec_02"
+    }
+  ]
+}

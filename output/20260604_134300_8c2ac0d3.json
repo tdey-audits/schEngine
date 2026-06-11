@@ -1,0 +1,133 @@
+{
+  "batch_id": "20260604_134300_8c2ac0d3",
+  "generated_at": "2026-06-04T13:43:00.958600",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Some Applications of Trigonometry",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A vertical tower stands on a horizontal plane and is surmounted by a vertical flagstaff of height $6$ m. At a point on the plane, the angle of elevation of the bottom and the top of the flagstaff are $30^{\\circ}$ and $60^{\\circ}$ respectively. Find the height of the tower.",
+      "answer": "3 m",
+      "solution": {
+        "steps": [
+          "Let $h$ be the height of the tower and $x$ be the distance from the point to the tower base.",
+          "Use $\\tan(30^{\\circ}) = h/x$ to express $x$ in terms of $h$.",
+          "Use $\\tan(60^{\\circ}) = (h+6)/x$ and substitute $x$.",
+          "Solve the resulting linear equation for $h$."
+        ],
+        "derivation": "\\tan 30^{\\circ} = \\frac{h}{x} \\implies x = h\\sqrt{3} \\\\ \\tan 60^{\\circ} = \\frac{h+6}{x} \\implies \\sqrt{3} = \\frac{h+6}{h\\sqrt{3}} \\\\ 3h = h + 6 \\implies 2h = 6 \\implies h = 3"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:00.958448",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134300_e2a9d1_01"
+    },
+    {
+      "question": "A $1.5$ m tall boy is standing at some distance from a $30$ m tall building. The angle of elevation from his eyes to the top of the building increases from $30^{\\circ}$ to $60^{\\circ}$ as he walks towards the building. Find the distance he walked towards the building.",
+      "answer": "19\\sqrt{3} m",
+      "solution": {
+        "steps": [
+          "Calculate the height above eye level: $30 - 1.5 = 28.5$ m.",
+          "Use $\\tan(30^{\\circ})$ to find the initial distance from the building.",
+          "Use $\\tan(60^{\\circ})$ to find the final distance from the building.",
+          "Subtract the two distances to find the distance walked."
+        ],
+        "derivation": "\\text{Height } H = 28.5 \\text{ m} \\\\ d_1 = \\frac{H}{\\tan 30^{\\circ}} = 28.5\\sqrt{3} \\\\ d_2 = \\frac{H}{\\tan 60^{\\circ}} = \\frac{28.5}{\\sqrt{3}} = 9.5\\sqrt{3} \\\\ \\text{Distance} = 28.5\\sqrt{3} - 9.5\\sqrt{3} = 19\\sqrt{3}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:00.958491",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134300_2cf0a5_02"
+    },
+    {
+      "question": "The angle of elevation of the top of a lighthouse from a boat is $30^{\\circ}$. If the boat moves $100$ m towards the lighthouse, the angle of elevation becomes $45^{\\circ}$. Find the height of the lighthouse.",
+      "answer": "50(\\sqrt{3}+1) m",
+      "solution": {
+        "steps": [
+          "Let $h$ be the height of the lighthouse and $y$ be the distance after moving.",
+          "Set up $\\tan(45^{\\circ}) = h/y$ which means $h = y$.",
+          "Set up $\\tan(30^{\\circ}) = h/(y+100)$.",
+          "Solve for $h$ by substituting $y = h$."
+        ],
+        "derivation": "h = y \\\\ \\frac{h}{h+100} = \\tan 30^{\\circ} = \\frac{1}{\\sqrt{3}} \\\\ h\\sqrt{3} = h + 100 \\\\ h(\\sqrt{3}-1) = 100 \\\\ h = \\frac{100}{\\sqrt{3}-1} = 50(\\sqrt{3}+1)"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:00.958499",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134300_aca37a_03"
+    },
+    {
+      "question": "A kite is flying at a height of $60$ m above the ground. The string attached to the kite is temporarily tied to a point on the ground. The inclination of the string with the ground is $60^{\\circ}$. Find the length of the string, assuming that there is no slack in the string.",
+      "answer": "40\\sqrt{3} m",
+      "solution": {
+        "steps": [
+          "Identify the scenario as a right-angled triangle where the string is the hypotenuse.",
+          "The height is the side opposite to the $60^{\\circ}$ angle.",
+          "Use the sine ratio: $\\sin(60^{\\circ}) = \\text{Opposite} / \\text{Hypotenuse}$."
+        ],
+        "derivation": "\\sin 60^{\\circ} = \\frac{60}{L} \\\\ \\frac{\\sqrt{3}}{2} = \\frac{60}{L} \\\\ L = \\frac{120}{\\sqrt{3}} = \\frac{120\\sqrt{3}}{3} = 40\\sqrt{3}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:00.958506",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134300_7c0d6c_04"
+    },
+    {
+      "question": "From a point on the ground, the angles of elevation of the bottom and the top of a transmission tower fixed at the top of a $20$ m high building are $45^{\\circ}$ and $60^{\\circ}$ respectively. Find the height of the tower.",
+      "answer": "20(\\sqrt{3}-1) m",
+      "solution": {
+        "steps": [
+          "Let $h$ be the height of the tower and $x$ be the distance from the point to the building.",
+          "Use $\\tan(45^{\\circ}) = 20/x$ to find $x$.",
+          "Use $\\tan(60^{\\circ}) = (20+h)/x$ to solve for $h$."
+        ],
+        "derivation": "\\tan 45^{\\circ} = \\frac{20}{x} \\implies x = 20 \\\\ \\tan 60^{\\circ} = \\frac{20+h}{20} \\\\ \\sqrt{3} = \\frac{20+h}{20} \\\\ 20\\sqrt{3} = 20 + h \\implies h = 20(\\sqrt{3}-1)"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:00.958512",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134300_11502d_05"
+    }
+  ]
+}

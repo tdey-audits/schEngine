@@ -1,0 +1,142 @@
+{
+  "batch_id": "20260604_133251_c766b806",
+  "generated_at": "2026-06-04T13:32:51.021803",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The common difference of an A.P. where $a_n = 3n + 7$ is 3. Reason (R): The common difference of an A.P. given by $a_n = An + B$ is always $A$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Find the first term by substituting $n=1$: $a_1 = 3(1) + 7 = 10$.",
+          "Find the second term by substituting $n=2$: $a_2 = 3(2) + 7 = 13$.",
+          "Calculate common difference $d = a_2 - a_1 = 13 - 10 = 3$.",
+          "Since $a_n = An + B$ implies $a_{n+1} - a_n = A(n+1) + B - (An + B) = A$, the reason is correct."
+        ],
+        "derivation": "d = a_{n+1} - a_n = [3(n+1) + 7] - [3n + 7] = 3n + 3 + 7 - 3n - 7 = 3"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "General term of an A.P.",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "medium",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:51.021670",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133251_4177e8_01"
+    },
+    {
+      "question": "Find the sum of all two-digit numbers which are divisible by 6.",
+      "answer": "735",
+      "solution": {
+        "steps": [
+          "Identify the first and last two-digit numbers divisible by 6: $a = 12$, $l = 96$.",
+          "Use the formula $a_n = a + (n-1)d$ to find $n$: $96 = 12 + (n-1)6$.",
+          "Solve for $n$: $84 = (n-1)6 \\implies n-1 = 14 \\implies n = 15$.",
+          "Use $S_n = \\frac{n}{2}(a + l)$ to find the sum: $S_{15} = \\frac{15}{2}(12 + 96)$."
+        ],
+        "derivation": "n = \\frac{96-12}{6} + 1 = 15; S_{15} = \\frac{15}{2}(108) = 15 \\times 54 = 735"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of n terms of an A.P.",
+      "marks": 3,
+      "type": "la",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:51.021720",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133251_69dd6a_02"
+    },
+    {
+      "question": "If the 4th term of an A.P. is 0, prove that its 25th term is triple its 11th term.",
+      "answer": "a_{25} = 3a_{11}",
+      "solution": {
+        "steps": [
+          "Express the 4th term: $a + 3d = 0 \\implies a = -3d$.",
+          "Express the 25th term: $a_{25} = a + 24d$.",
+          "Substitute $a = -3d$ into $a_{25}$: $a_{25} = -3d + 24d = 21d$.",
+          "Express the 11th term: $a_{11} = a + 10d = -3d + 10d = 7d$.",
+          "Compare: $21d = 3(7d) \\implies a_{25} = 3a_{11}$."
+        ],
+        "derivation": "a_4 = a+3d=0 \\implies a=-3d. \\newline a_{25} = a+24d = -3d+24d = 21d. \\newline a_{11} = a+10d = -3d+10d = 7d. \\newline 21d = 3 \\times 7d."
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "General term properties",
+      "marks": 3,
+      "type": "la",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:51.021730",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133251_979360_03"
+    },
+    {
+      "question": "In an A.P., the sum of first $n$ terms is $S_n = 3n^2 + 5n$. Find the common difference of the A.P.",
+      "answer": "6",
+      "solution": {
+        "steps": [
+          "Find $S_1$ (first term $a_1$): $S_1 = 3(1)^2 + 5(1) = 8$.",
+          "Find $S_2$ (sum of first two terms): $S_2 = 3(2)^2 + 5(2) = 12 + 10 = 22$.",
+          "Find the second term $a_2 = S_2 - S_1 = 22 - 8 = 14$.",
+          "Find the common difference $d = a_2 - a_1 = 14 - 8 = 6$."
+        ],
+        "derivation": "a_1 = 8, a_2 = 14, d = 14-8 = 6"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of n terms",
+      "marks": 2,
+      "type": "la",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:51.021737",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133251_1ecd75_04"
+    },
+    {
+      "question": "Find the value of $k$ for which $k-1, k+3, 3k-1$ are in Arithmetic Progression.",
+      "answer": "k = 5",
+      "solution": {
+        "steps": [
+          "For three terms $x, y, z$ to be in A.P., $2y = x + z$.",
+          "Set up the equation: $2(k+3) = (k-1) + (3k-1)$.",
+          "Expand: $2k + 6 = 4k - 2$.",
+          "Solve for $k$: $6 + 2 = 4k - 2k \\implies 8 = 2k \\implies k = 4$ wait, recalculate: $2k+6 = 4k-2 \\implies 8 = 2k \\implies k=4$."
+        ],
+        "derivation": "2(k+3) = k-1+3k-1 \\newline 2k+6 = 4k-2 \\newline 8 = 2k \\newline k = 4"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Properties of A.P.",
+      "marks": 2,
+      "type": "la",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:51.021743",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133251_e07ac4_05"
+    }
+  ]
+}

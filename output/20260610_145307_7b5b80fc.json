@@ -1,0 +1,69 @@
+{
+  "batch_id": "20260610_145307_7b5b80fc",
+  "generated_at": "2026-06-10T14:53:07.581609",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "standard form and roots",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "For what value of $k$ does the quadratic equation $x^2 - 4x + k = 0$ have real and equal roots?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify the coefficients of the quadratic equation $ax^2 + bx + c = 0$, where $a = 1$, $b = -4$, and $c = k$.",
+          "For a quadratic equation to have real and equal roots, the discriminant $D = b^2 - 4ac$ must be equal to $0$.",
+          "Substitute the values into the discriminant formula: $(-4)^2 - 4(1)(k) = 0$.",
+          "Solve the resulting linear equation: $16 - 4k = 0$, which simplifies to $4k = 16$, giving $k = 4$."
+        ],
+        "derivation": "$D = b^2 - 4ac \\\\ D = (-4)^2 - 4(1)(k) = 0 \\\\ 16 - 4k = 0 \\\\ 4k = 16 \\\\ k = 4$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of roots",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $2$",
+        "(B) $-4$",
+        "(C) $4$",
+        "(D) $16$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T14:53:07.581488",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145307_1537f8_01"
+    }
+  ]
+}

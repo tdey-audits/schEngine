@@ -1,0 +1,62 @@
+{
+  "batch_id": "20260610_122503_a248908d",
+  "generated_at": "2026-06-10T12:25:03.973152",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": "euclid division lemma",
+  "difficulty": "medium",
+  "question_type": "sa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Use Euclid's division algorithm to find the Highest Common Factor (HCF) of $867$ and $255$.",
+      "answer": "$51$",
+      "solution": {
+        "steps": [
+          "Identify the larger number as the dividend ($a$) and the smaller number as the divisor ($b$).",
+          "Apply Euclid's division lemma $a = bq + r$ where $0 \\leq r < b$.",
+          "Repeat the process using the divisor from the previous step as the new dividend and the remainder as the new divisor until the remainder becomes $0$.",
+          "The divisor at the step where the remainder is $0$ is the HCF."
+        ],
+        "derivation": "$867 = 255 \\times 3 + 102 \\\\ 255 = 102 \\times 2 + 51 \\\\ 102 = 51 \\times 2 + 0 \\\\ \\text{Since the remainder is } 0, \\text{ the divisor at this stage is } 51. \\\\ \\text{Therefore, } HCF(867, 255) = 51.$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Euclid division lemma",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-10T12:25:03.972953",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 26,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 26,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 29,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122503_928330_01"
+    }
+  ]
+}

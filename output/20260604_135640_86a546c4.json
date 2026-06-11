@@ -1,0 +1,164 @@
+{
+  "batch_id": "20260604_135640_86a546c4",
+  "generated_at": "2026-06-04T13:56:40.094073",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A tangent $PQ$ at a point $P$ of a circle of radius $5 \\text{ cm}$ meets a line through the centre $O$ at a point $Q$ so that $OQ = 13 \\text{ cm}$. The length of $PQ$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "The radius is perpendicular to the tangent at the point of contact.",
+          "In the right-angled triangle $OPQ$, by Pythagoras theorem, $OQ^2 = OP^2 + PQ^2$.",
+          "Substitute the values: $13^2 = 5^2 + PQ^2$.",
+          "Solve for $PQ$."
+        ],
+        "derivation": "PQ = \\sqrt{OQ^2 - OP^2} = \\sqrt{13^2 - 5^2} = \\sqrt{169 - 25} = \\sqrt{144} = 12 \\text{ cm}"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 10 cm",
+        "(B) 8 cm",
+        "(C) 12 cm",
+        "(D) 7 cm"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:40.093922",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135640_984945_01"
+    },
+    {
+      "question": "If tangents $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\\circ$, then $\\angle POA$ is equal to:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "The line segment joining the centre to the external point bisects the angle between the tangents.",
+          "Thus, $\\angle APO = 80^\\circ / 2 = 40^\\circ$.",
+          "In $\\triangle OAP$, $\\angle OAP = 90^\\circ$ (tangent is perpendicular to radius).",
+          "In $\\triangle OAP$, $\\angle POA = 180^\\circ - 90^\\circ - 40^\\circ$."
+        ],
+        "derivation": "\\angle POA = 180^\\circ - 90^\\circ - 40^\\circ = 50^\\circ"
+      },
+      "topic": "Circles",
+      "subtopic": "Properties of tangents",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 50^\\circ",
+        "(B) 60^\\circ",
+        "(C) 70^\\circ",
+        "(D) 80^\\circ"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:40.093965",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135640_147777_02"
+    },
+    {
+      "question": "From a point $Q$, the length of the tangent to a circle is $24 \\text{ cm}$ and the distance of $Q$ from the centre is $25 \\text{ cm}$. The radius of the circle is:",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Let $r$ be the radius. The triangle formed by the radius, tangent, and line to the centre is right-angled.",
+          "$r^2 + 24^2 = 25^2$.",
+          "$r^2 = 625 - 576 = 49$."
+        ],
+        "derivation": "r = \\sqrt{49} = 7 \\text{ cm}"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 9 cm",
+        "(B) 12 cm",
+        "(C) 15 cm",
+        "(D) 7 cm"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:40.093976",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135640_54484d_03"
+    },
+    {
+      "question": "Two concentric circles are of radii $5 \\text{ cm}$ and $3 \\text{ cm}$. The length of the chord of the larger circle which touches the smaller circle is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Let the chord be $AB$ and the point of contact be $M$. $OM \\perp AB$.",
+          "In $\\triangle OMA$, $OA=5$ (hypotenuse) and $OM=3$ (radius).",
+          "$AM = \\sqrt{5^2 - 3^2} = 4$.",
+          "Since the perpendicular from the centre bisects the chord, $AB = 2 \\times AM$."
+        ],
+        "derivation": "AB = 2 \\times 4 = 8 \\text{ cm}"
+      },
+      "topic": "Circles",
+      "subtopic": "Concentric circles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 10 cm",
+        "(B) 8 cm",
+        "(C) 6 cm",
+        "(D) 4 cm"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:40.093984",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135640_e305eb_04"
+    },
+    {
+      "question": "The number of tangents that can be drawn from a point inside a circle is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "A tangent touches the circle at exactly one point.",
+          "A point inside the circle lies in the interior region.",
+          "Any line passing through an interior point will cut the circle at two points (secant).",
+          "Therefore, no tangent can be drawn."
+        ],
+        "derivation": "Number of tangents = 0"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents from a point",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 1",
+        "(B) 2",
+        "(C) 0",
+        "(D) Infinite"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:40.093991",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135640_153760_05"
+    }
+  ]
+}

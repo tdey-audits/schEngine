@@ -1,0 +1,146 @@
+{
+  "batch_id": "20260609_155858_fa42404a",
+  "generated_at": "2026-06-09T15:58:58.222204",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Some Applications of Trigonometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A vertical pole of length $h$ stands on the ground. At a point $P$ on the ground, the angle of elevation of the top of the pole is $60^\\circ$. If the distance from the foot of the pole to point $P$ is $d$, and a point $Q$ is located on the same horizontal line such that the angle of elevation of the top of the pole is $30^\\circ$, then the distance $PQ$ is equal to:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Let the pole be $AB$ with height $h$ and $B$ on the ground.",
+          "In $\\triangle ABP$, $\\tan(60^\\circ) = \\frac{AB}{BP} = \\frac{h}{d}$, so $d = \\frac{h}{\\sqrt{3}}$.",
+          "In $\\triangle ABQ$, $\\tan(30^\\circ) = \\frac{AB}{BQ} = \\frac{h}{BQ}$, so $BQ = h\\sqrt{3}$.",
+          "The distance $PQ = BQ - BP = h\\sqrt{3} - \\frac{h}{\\sqrt{3}}$.",
+          "Simplify $PQ = h \\left( \\frac{3-1}{\\sqrt{3}} \\right) = \\frac{2h}{\\sqrt{3}}$."
+        ],
+        "derivation": "$BP = h \\cot(60^\\circ) = \\frac{h}{\\sqrt{3}} \\\\ BQ = h \\cot(30^\\circ) = h\\sqrt{3} \\\\ PQ = BQ - BP = h\\sqrt{3} - \\frac{h}{\\sqrt{3}} \\\\ PQ = \\frac{3h - h}{\\sqrt{3}} = \\frac{2h}{\\sqrt{3}}$"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Height and Distance",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "hard",
+      "options": [
+        "(A) $\\frac{h}{\\sqrt{3}}$",
+        "(B) $h\\sqrt{3}$",
+        "(C) $\\frac{2h}{\\sqrt{3}}$",
+        "(D) $2h\\sqrt{3}$"
+      ],
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "caption": "Points P and Q on the ground relative to pole AB",
+        "scale": 1.0,
+        "elements": [
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 0,
+            "y": 0,
+            "label": "B",
+            "position": "below"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0,
+            "y": 3,
+            "label": "A",
+            "position": "above"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 1.73,
+            "y": 0,
+            "label": "P",
+            "position": "below"
+          },
+          {
+            "kind": "point",
+            "id": "Q",
+            "x": 5.2,
+            "y": 0,
+            "label": "Q",
+            "position": "below"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "B",
+            "label": "h",
+            "label_position": "left"
+          },
+          {
+            "kind": "segment",
+            "from": "B",
+            "to": "Q",
+            "label": "",
+            "label_position": "none"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "P",
+            "label": "",
+            "label_position": "none"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "Q",
+            "label": "",
+            "label_position": "none"
+          },
+          {
+            "kind": "right_angle",
+            "points": [
+              "A",
+              "B",
+              "Q"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-09T15:58:58.221907",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_9 (Some Applications of Trigonometry).pdf",
+          "Chapter_8 (Introduction to Trigonometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260609_155858_0c9da0_01"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "batch_id": "20260610_145510_8f70cf35",
+  "generated_at": "2026-06-10T14:55:10.806020",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "standard form and roots",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If the quadratic equation $x^2 - 2(k+1)x + k^2 = 0$ has real and equal roots, then the value of $k$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify the coefficients $a=1$, $b=-2(k+1)$, and $c=k^2$ from the standard form $ax^2+bx+c=0$.",
+          "For real and equal roots, the discriminant $D = b^2 - 4ac$ must be equal to $0$.",
+          "Substitute the coefficients into $D=0$: $(-2(k+1))^2 - 4(1)(k^2) = 0$.",
+          "Expand and simplify: $4(k^2 + 2k + 1) - 4k^2 = 0$.",
+          "Solve for $k$: $4k^2 + 8k + 4 - 4k^2 = 0$, which gives $8k = -4$, so $k = -1/2$."
+        ],
+        "derivation": "D = b^2 - 4ac = 0 \\ (-2(k+1))^2 - 4(1)(k^2) = 0 \\ 4(k^2 + 2k + 1) - 4k^2 = 0 \\ 4k^2 + 8k + 4 - 4k^2 = 0 \\ 8k + 4 = 0 \\ 8k = -4 \\ k = -\\frac{4}{8} = -\\frac{1}{2}"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of roots",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $1$",
+        "(B) $-1$",
+        "(C) $-1/2$",
+        "(D) $1/2$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T14:55:10.805893",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145510_479246_01"
+    },
+    {
+      "question": "The quadratic equation $ax^2 + bx + c = 0$ has roots $\\alpha$ and $\\beta$. If $a=2$, $c=3$, and the sum of the roots is equal to the product of the roots, the value of $b$ is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "For a quadratic equation $ax^2+bx+c=0$, the sum of roots $\\alpha + \\beta = -b/a$ and the product of roots $\\alpha \\cdot \\beta = c/a$.",
+          "Given $a=2$ and $c=3$, we have $\\alpha + \\beta = -b/2$ and $\\alpha \\cdot \\beta = 3/2$.",
+          "The condition given is $\\alpha + \\beta = \\alpha \\cdot \\beta$.",
+          "Substitute the expressions: $-b/2 = 3/2$.",
+          "Multiply both sides by $2$ to get $-b = 3$, so $b = -3$."
+        ],
+        "derivation": "\\alpha + \\beta = -\\frac{b}{a} \\ \\alpha \\cdot \\beta = \\frac{c}{a} \\ -\\frac{b}{2} = \\frac{3}{2} \\ -b = 3 \\ b = -3"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Relationship between roots and coefficients",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $3$",
+        "(B) $-3$",
+        "(C) $2$",
+        "(D) $-2$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T14:55:10.805959",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145510_501fdd_02"
+    }
+  ]
+}

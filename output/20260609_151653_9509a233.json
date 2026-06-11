@@ -1,0 +1,62 @@
+{
+  "batch_id": "20260609_151653_9509a233",
+  "generated_at": "2026-06-09T15:16:53.335153",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Statistics",
+  "subtopic": "mean of grouped data",
+  "difficulty": "medium",
+  "question_type": "sa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "The following table shows the daily pocket allowance of $50$ children in a locality. Find the mean daily pocket allowance using the direct method.\n\n| Daily allowance (in $\u20b9$) | $100-120$ | $120-140$ | $140-160$ | $160-180$ | $180-200$ |\n| :--- | :---: | :---: | :---: | :---: | :---: |\n| Number of children | $12$ | $14$ | $8$ | $6$ | $10$ |",
+      "answer": "$\u20b9 145.20$",
+      "solution": {
+        "steps": [
+          "Find the class mark ($x_i$) for each interval using the formula $x_i = \\frac{\\text{upper limit} + \\text{lower limit}}{2}$.",
+          "Multiply each frequency ($f_i$) by its corresponding class mark ($x_i$) to get $f_ix_i$.",
+          "Calculate the sum of all frequencies $\\sum f_i$ and the sum of all products $\\sum f_ix_i$.",
+          "Apply the direct mean formula $\\bar{x} = \\frac{\\sum f_ix_i}{\\sum f_i}$ to find the final result."
+        ],
+        "derivation": "$x_1 = \\frac{100+120}{2} = 110, x_2 = 130, x_3 = 150, x_4 = 170, x_5 = 190 \\\\ \\sum f_i = 12 + 14 + 8 + 6 + 10 = 50 \\\\ \\sum f_ix_i = (12 \\times 110) + (14 \\times 130) + (8 \\times 150) + (6 \\times 170) + (10 \\times 190) \\\\ \\sum f_ix_i = 1320 + 1820 + 1200 + 1020 + 1900 = 7260 \\\\ \\text{Mean} = \\frac{7260}{50} = 145.2$"
+      },
+      "topic": "Statistics",
+      "subtopic": "mean of grouped data",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-09T15:16:53.334841",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 31,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 29,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 29,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ]
+      },
+      "id": "ncert_20260609_151653_1a2a6e_01"
+    }
+  ]
+}

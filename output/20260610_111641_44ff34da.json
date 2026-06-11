@@ -1,0 +1,111 @@
+{
+  "batch_id": "20260610_111641_44ff34da",
+  "generated_at": "2026-06-10T11:16:41.408082",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "vsa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If the HCF of $120$ and $225$ is expressed in the form $225 \\times 5 + 120m$, find the value of $m$.",
+      "answer": "$m = -9$",
+      "solution": {
+        "steps": [
+          "Find the HCF of $120$ and $225$ using Euclid's division algorithm or prime factorization.",
+          "Equate the HCF to the given expression $225 \\times 5 + 120m$ and solve the linear equation for $m$."
+        ],
+        "derivation": "$225 = 120 \\times 1 + 105 \\\\ 120 = 105 \\times 1 + 15 \\\\ 105 = 15 \\times 7 + 0 \\\\ \\text{HCF} = 15 \\\\ 15 = 225 \\times 5 + 120m \\\\ 15 - 1125 = 120m \\\\ -1110 = 120m \\\\ m = -\\frac{1110}{120} = -\\frac{111}{12} = -\\frac{37}{4} = -9.25$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Euclid's Division Algorithm",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-10T11:16:41.407768",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 21,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 23,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 24,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_111641_7e2369_01"
+    }
+  ]
+}

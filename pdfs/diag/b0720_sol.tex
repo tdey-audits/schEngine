@@ -1,0 +1,1108 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag Solutions} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{questions}
+\question \textbf{1.} A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. If $AB = 6$ cm, $BC = 7$ cm, and $CD = 4$ cm, find the length of $AD$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{3 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the property that for a circumscribed quadrilateral, the sums of opposite sides are equal.
+  \item $AB + CD = BC + AD$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+6 + 4 = 7 + AD \\
+10 = 7 + AD \\
+AD = 3 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{2.} A tangent $PQ$ at a point $P$ of a circle of radius $5$ $cm$ meets a line through the centre $O$ at a point $Q$ so that $OQ = 13$ $cm$. Find the length of $PQ$.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_029.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{12 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Since $PQ$ is a tangent at $P$, the radius $OP$ is perpendicular to $PQ$ ($OP \perp PQ$).
+  \item In $\triangle OPQ$, by Pythagoras theorem, $OQ^2 = OP^2 + PQ^2$.
+  \item Substitute the values: $13^2 = 5^2 + PQ^2$.
+  \item Solve for $PQ$: $169 = 25 + PQ^2 \Rightarrow PQ^2 = 144 \Rightarrow PQ = 12$ $cm$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+OP \perp PQ \\
+\Rightarrow \angle OPQ = 90^\circ \\
+OQ^2 = OP^2 + PQ^2 \\
+13^2 = 5^2 + PQ^2 \\
+169 - 25 = PQ^2 \\
+PQ = \sqrt{144} = 12
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{3.} Two concentric circles are of radii $5$ $cm$ and $3$ $cm$. Find the length of the chord of the larger circle which touches the smaller circle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{8 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $O$ be the common center. Let $AB$ be the chord of the larger circle tangent to the smaller circle at $M$.
+  \item Then $OM \perp AB$. In $\triangle OMA$, $OA = 5$ $cm$ and $OM = 3$ $cm$.
+  \item By Pythagoras theorem, $AM = \sqrt{OA^2 - OM^2} = \sqrt{25 - 9} = 4$ $cm$.
+  \item Since the perpendicular from the centre bisects the chord, $AB = 2 \times AM = 8$ $cm$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+AM^2 + OM^2 = OA^2 \\
+AM^2 + 3^2 = 5^2 \\
+AM^2 = 25 - 9 = 16 \\
+AM = 4 \\
+AB = 2 \times AM = 8
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents and chords}
+\vspace{0.3cm}
+
+\question \textbf{4.} If tangents $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\circ$, find $\angle POA$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{50^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item In quadrilateral $\text{OAPB}$, $\angle OAP = \angle OBP = 90^\circ$ (radius $\perp$ tangent).
+  \item The sum of angles in a quadrilateral is $360^\circ$, so $\angle AOB = 180^\circ - 80^\circ = 100^\circ$.
+  \item Since $OP$ bisects $\angle AOB$, $\angle POA = \frac{1}{2} \angle AOB$.
+  \item Therefore, $\angle POA = 100^\circ / 2 = 50^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\angle AOB + \angle APB = 180^\circ \\
+\angle AOB + 80^\circ = 180^\circ \\
+\angle AOB = 100^\circ \\
+\angle POA = \frac{1}{2} \angle AOB = 50^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Properties of tangents}
+\vspace{0.3cm}
+
+\question \textbf{5.} A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Proved}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Tangents drawn from an external point to a circle are equal in length.
+  \item Let the circle touch $AB, BC, CD, DA$ at $P, Q, R, S$ respectively. Then $AP=AS, BP=BQ, CR=CQ, DR=DS$.
+  \item Summing these: $(AP+BP) + (CR+DR) = (AS+DS) + (BQ+CQ)$.
+  \item This simplifies to $AB + CD = AD + BC$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+AP=AS, BP=BQ, CR=CQ, DR=DS \\
+(AP+BP) + (CR+DR) = (AS+DS) + (BQ+CQ) \\
+AB + CD = AD + BC
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents from an external point}
+\vspace{0.3cm}
+
+\question \textbf{6.} Prove that the perpendicular at the point of contact to the tangent to a circle passes through the centre of the circle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Proved using contradiction}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Assume that the perpendicular to the tangent at the point of contact $P$ does not pass through the centre $O$.
+  \item Let another line through $P$ pass through $O$, such that $\angle OPT = 90^\circ$ (where $T$ is on the tangent).
+  \item This contradicts the given that the perpendicular is at $P$.
+  \item Hence, the perpendicular must pass through $O$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Let } OP \perp \text{tangent at } P. \\
+\text{If } O'P \perp \text{tangent at } P, \text{ then } \angle O'PT = \angle OPT = 90^\circ. \\
+\text{This implies } O'P \text{ and } OP \text{ coincide.} \\
+\therefore O' = O.
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{7.} Prove that the lengths of tangents drawn from an external point to a circle are equal. Using this result, if a quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle, prove that $AB + CD = AD + BC$.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_030.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{AB + CD = AD + BC}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item State the theorem: Tangents from an external point are equal.
+  \item Identify the points of contact $P, Q, R, S$ on sides $AB, BC, CD, DA$ respectively.
+  \item Express $AP=AS, BP=BQ, CQ=CR, DR=DS$.
+  \item Sum the left and right sides of these equations.
+  \item Group the terms to form the sides of the quadrilateral.
+\end{enumerate}
+\textbf{Derivation:}
+ AP = AS, \textbackslash{} BP = BQ, \textbackslash{} CQ = CR, \textbackslash{} DR = DS \textbackslash{} (Tangents \textbackslash{} from \textbackslash{} external \textbackslash{} point) \textbackslash{}\textbackslash{} AB + CD = (AP + PB) + (CR + RD) \textbackslash{}\textbackslash{} = (AS + BQ) + (CQ + DS) \textbackslash{}\textbackslash{} = (AS + DS) + (BQ + CQ) \textbackslash{}\textbackslash{} = AD + BC 
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{8.} Two concentric circles are of radii $5 \text{ cm}$ and $3 \text{ cm}$. Find the length of the chord of the larger circle which touches the smaller circle.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_031.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{8 \text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $O$ be the center, $AB$ be the chord of the larger circle, and $P$ be the point of contact on the smaller circle.
+  \item Radius $OP = 3 \text{ cm}$ is perpendicular to chord $AB$.
+  \item Radius $OA = 5 \text{ cm}$ is the hypotenuse of right $\triangle OPA$.
+  \item Use Pythagoras theorem: $AP^2 + OP^2 = OA^2$.
+  \item Calculate $AP = \sqrt{5^2 - 3^2} = 4 \text{ cm}$.
+  \item Since the perpendicular from center bisects the chord, $AB = 2 \times AP = 8 \text{ cm}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+OP \perp AB \\
+\Rightarrow \angle OPA = 90^\circ \\
+AP = \sqrt{OA^2 - OP^2} \\
+AP = \sqrt{5^2 - 3^2} = \sqrt{25 - 9} = \sqrt{16} = 4 \text{ cm} \\
+AB = 2 \times AP = 2 \times 4 = 8 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{9.} A circle is inscribed in a $\triangle ABC$ having sides $8 \text{ cm}, 10 \text{ cm}$ and $12 \text{ cm}$. Find the lengths of the segments $AD, BE, CF$ where $D, E, F$ are points of contact on sides $AB, BC, CA$ respectively.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{AD = 5 \text{ cm}, BE = 3 \text{ cm}, CF = 7 \text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $AD = AF = x, BD = BE = y, CE = CF = z$.
+  \item Write equations: $x + y = 8, y + z = 10, z + x = 12$.
+  \item Sum the equations: $2(x + y + z) = 30 \Rightarrow x + y + z = 15$.
+  \item Solve for $x, y, z$ by subtracting original equations from sum.
+  \item Result: $x = 15 - 10 = 5, y = 15 - 12 = 3, z = 15 - 8 = 7$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+x+y=8, \ y+z=10, \ z+x=12 \\
+2(x+y+z) = 30 \\
+\Rightarrow x+y+z = 15 \\
+x = 15-10 = 5 \text{ cm} \\
+y = 15-12 = 3 \text{ cm} \\
+z = 15-8 = 7 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{10.} Prove that the tangent at any point of a circle is perpendicular to the radius through the point of contact.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_032.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Proof}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Draw a circle with center $O$ and tangent $XY$ at point $P$.
+  \item Take a point $Q$ on $XY$ other than $P$. Join $OQ$.
+  \item Since $Q$ is outside, $OQ > OP$.
+  \item This implies $OP$ is the shortest distance from $O$ to $XY$.
+  \item The shortest distance from a point to a line is the perpendicular distance, so $OP \perp XY$.
+\end{enumerate}
+\textbf{Derivation:}
+ Let \textbackslash{} XY \textbackslash{} be \textbackslash{} the \textbackslash{} tangent \textbackslash{} at \textbackslash{} P. \textbackslash{} Take \textbackslash{} point \textbackslash{} Q \textbackslash{} on \textbackslash{} XY, \textbackslash{} Q $\neq P. \\$ OQ > OP \textbackslash{} (since \textbackslash{} Q \textbackslash{} is \textbackslash{} outside \textbackslash{} the \textbackslash{} circle). \textbackslash{}\textbackslash{} OP \textbackslash{} is \textbackslash{} the \textbackslash{} shortest \textbackslash{} distance \textbackslash{} from \textbackslash{} O \textbackslash{} to \textbackslash{} line \textbackslash{} XY. \textbackslash{}\textbackslash{} Therefore, \textbackslash{} OP $\perp$ XY. 
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{11.} Assertion (A): The length of a tangent drawn from an external point to a circle is always equal to the radius of the circle. Reason (R): A tangent to a circle is perpendicular to the radius at the point of contact.
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The length of the tangent from an external point $P$ to a circle with centre $O$ is $\sqrt{OP^2 - r^2}$, where $r$ is the radius.
+  \item This length is not necessarily equal to the radius $r$. Thus, Assertion (A) is false.
+  \item The theorem states that a tangent is perpendicular to the radius at the point of contact. Thus, Reason (R) is true.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Length} = \sqrt{OP^2 - r^2} \neq r \text{ in general} \\
+\Rightarrow A \text{ is false} \\
+\text{Theorem: Tangent } \perp \text{ radius at point of contact} \\
+\Rightarrow R \text{ is true}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{12.} Assertion (A): The distance between two parallel tangents of a circle of radius $3$ $cm$ is $6$ $cm$. Reason (R): The distance between two parallel tangents is equal to the diameter of the circle.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Two parallel tangents touch the circle at the ends of a diameter.
+  \item The distance between them is the length of the diameter, which is $2 \times \text{radius}$.
+  \item Given radius $r = 3$ $cm$, diameter $= 2 \times 3 = 6$ $cm$. Both A and R are true and R explains A.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+d = 2r \\
+d = 2 \times 3 = 6 \text{ cm} \\
+A \text{ is true, } R \text{ is true, } R \text{ explains } A
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{13.} Assertion (A): If the angle between two tangents drawn from a point $P$ to a circle of radius $a$ and centre $O$ is $60^\circ$, then $OP = 2a$. Reason (R): The line joining the centre to the external point bisects the angle between the tangents.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_033.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the angle between tangents be $\angle APB = 60^\circ$. The line $OP$ bisects $\angle APB$, so $\angle APO = 30^\circ$.
+  \item In $\triangle OAP$ (right-angled at $A$), $\sin(30^\circ) = \frac{OA}{OP} = \frac{a}{OP}$.
+  \item Since $\sin(30^\circ) = \frac{1}{2}$, we have $\frac{1}{2} = \frac{a}{OP}$, so $OP = 2a$. Both A and R are true and R explains A.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\angle APO = \frac{1}{2} \times 60^\circ = 30^\circ \\
+\sin(30^\circ) = \frac{OA}{OP} = \frac{a}{OP} \\
+\frac{1}{2} = \frac{a}{OP} \\
+\Rightarrow OP = 2a
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{14.} Assertion (A): The number of tangents that can be drawn from a point inside a circle is zero. Reason (R): A tangent is a line that intersects the circle at only one point.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Any line passing through a point inside the circle is a secant, not a tangent.
+  \item Therefore, zero tangents can be drawn from an interior point. Assertion A is true.
+  \item By definition, a tangent intersects the circle at exactly one point. This definition explains why no tangent can be drawn from inside. Reason R is true and is the correct explanation.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Point inside } \\
+\Rightarrow \text{No line intersects circle at exactly one point} \\
+\text{Tangent definition: cross at one point} \\
+\text{Both true, R explains A}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{15.} Assertion (A): The tangents drawn at the ends of a diameter of a circle are parallel. Reason (R): The angles between the diameter and the tangents at the ends are $90^\circ$, and since the sum of interior angles on the same side of the transversal is $180^\circ$, they are parallel.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $AB$ be a diameter. Tangents at $A$ and $B$ are perpendicular to $AB$.
+  \item Therefore, both tangents make $90^\circ$ with the diameter.
+  \item Since alternate interior angles are equal (or consecutive interior angles sum to $180^\circ$), the tangents are parallel.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\angle T_1AB = 90^\circ, \angle T_2BA = 90^\circ \\
+\angle T_1AB + \angle T_2BA = 180^\circ \\
+\Rightarrow \text{Parallel lines}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{16.} In the given figure, if $\angle OAB = 40^\circ$, find the measure of $\angle APB$, where $O$ is the center of the circle and $PA, PB$ are tangents from an external point $P$.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_034.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{100^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item In $\triangle OAP$, since $PA$ is a tangent, $\angle OAP = 90^\circ$. Given $\angle OAB = 40^\circ$, we find $\angle PAB = 90^\circ - 40^\circ = 50^\circ$.
+  \item Since $PA = PB$, $\triangle PAB$ is isosceles, so $\angle PBA = \angle PAB = 50^\circ$. Thus, $\angle APB = 180^\circ - (50^\circ + 50^\circ) = 80^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\angle OAP = 90^\circ \\
+\Rightarrow \angle PAB = 90^\circ - 40^\circ = 50^\circ \\
+PA = PB \\
+\Rightarrow \angle PBA = \angle PAB = 50^\circ \\
+\angle APB = 180^\circ - (50^\circ + 50^\circ) = 80^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{17.} A tangent $PQ$ at a point $P$ of a circle of radius $5$ $cm$ meets a line through the center $O$ at a point $Q$ so that $OQ = 12$ $cm$. Find the length of $PQ$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\sqrt{119} cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Since $PQ$ is tangent at $P$, the radius $OP$ is perpendicular to $PQ$. Thus, $\triangle OPQ$ is a right-angled triangle at $P$.
+  \item Applying Pythagoras theorem, $OQ^2 = OP^2 + PQ^2$. Substituting values: $12^2 = 5^2 + PQ^2$, which gives $PQ^2 = 144 - 25 = 119$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+OP \perp PQ \\
+\Rightarrow \triangle OPQ \text{ is right-angled at } P \\
+OQ^2 = OP^2 + PQ^2 \\
+12^2 = 5^2 + PQ^2 \\
+PQ = \sqrt{144 - 25} = \sqrt{119}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{18.} Two concentric circles are of radii $5$ $cm$ and $3$ $cm$. Find the length of the chord of the larger circle which touches the smaller circle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{8 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $O$ be the center, $AB$ be the chord of the larger circle tangent to the smaller circle at $M$. $OM \perp AB$, so $M$ is the midpoint of $AB$.
+  \item In right $\triangle OMA$, $OA^2 = OM^2 + AM^2$. $5^2 = 3^2 + AM^2 \Rightarrow AM = 4$ $cm$. Thus, $AB = 2 \times AM = 8$ $cm$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+OM \perp AB \\
+\Rightarrow AM = MB \\
+\triangle OMA: OA^2 = OM^2 + AM^2 \\
+5^2 = 3^2 + AM^2 \\
+AM = \sqrt{25-9} = 4 \\
+AB = 2 \times 4 = 8
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{19.} If tangents $PA$ and $PB$ from a point $P$ to a circle with center $O$ are inclined to each other at angle of $80^\circ$, then find $\angle POA$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{50^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item In quadrilateral $\text{OAPB}$, $\angle OAP = \angle OBP = 90^\circ$. The sum of angles is $360^\circ$, so $\angle AOB = 180^\circ - 80^\circ = 100^\circ$.
+  \item Since $OP$ bisects $\angle AOB$, $\angle POA = \frac{1}{2} \angle AOB = \frac{100^\circ}{2} = 50^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\angle AOB + \angle APB = 180^\circ \\
+\angle AOB = 180^\circ - 80^\circ = 100^\circ \\
+\angle POA = \frac{1}{2} \angle AOB = 50^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{20.} A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. If $AB = 6$ $cm$, $BC = 7$ $cm$ and $CD = 4$ $cm$, find the length of $AD$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{3 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item For a circumscribed quadrilateral, the sums of opposite sides are equal: $AB + CD = BC + AD$.
+  \item Substituting the given values: $6 + 4 = 7 + AD \Rightarrow 10 = 7 + AD \Rightarrow AD = 3$ $cm$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+AB + CD = BC + AD \\
+6 + 4 = 7 + AD \\
+AD = 10 - 7 = 3
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{21.} Two concentric circles are of radii $5$ cm and $3$ cm. Find the length of the chord of the larger circle which touches the smaller circle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{8 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $O$ be the common center. Let $AB$ be the chord of the larger circle that touches the smaller circle at point $P$.
+  \item Radius $OP$ is perpendicular to tangent $AB$, so $\triangle OPA$ is a right-angled triangle with $\angle OPA = 90^\circ$.
+  \item Using Pythagoras theorem in $\triangle OPA$, $AP = \sqrt{OA^2 - OP^2} = \sqrt{5^2 - 3^2} = \sqrt{25 - 9} = 4$ cm.
+  \item Since the perpendicular from the center bisects the chord, $AB = 2 \times AP = 2 \times 4 = 8$ cm.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+OA = 5, OP = 3 \\
+AP = \sqrt{5^2 - 3^2} = \sqrt{16} = 4 \\
+AB = 2 \times AP = 2 \times 4 = 8 cm
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{22.} If a quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle, prove that $AB + CD = AD + BC$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{AB + CD = AD + BC}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the circle touch the sides $AB$, $BC$, $CD$, and $DA$ at points $P$, $Q$, $R$, and $S$ respectively.
+  \item Using the theorem that tangents drawn from an external point to a circle are equal in length, we have $AP=AS$, $BP=BQ$, $CR=CQ$, and $DR=DS$.
+  \item Adding these four equations: $(AP+BP) + (CR+DR) = (AS+DS) + (BQ+CQ)$.
+  \item This simplifies to $AB + CD = AD + BC$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+AP = AS, BP = BQ, CR = CQ, DR = DS \\
+(AP + BP) + (CR + DR) = (AS + DS) + (BQ + CQ) \\
+AB + CD = AD + BC
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{23.} A tangent $PQ$ at a point $P$ of a circle of radius $5$ cm meets a line through the center $O$ at a point $Q$ so that $OQ = 12$ cm. Find the length of $PQ$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\sqrt{119} cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The radius $OP$ is perpendicular to the tangent $PQ$ at the point of contact $P$.
+  \item In $\triangle OPQ$, $\angle OPQ = 90^\circ$. By Pythagoras theorem, $OQ^2 = OP^2 + PQ^2$.
+  \item Substituting the values, $12^2 = 5^2 + PQ^2$.
+  \item $PQ^2 = 144 - 25 = 119$, so $PQ = \sqrt{119}$ cm.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+OP = 5, OQ = 12 \\
+PQ^2 = 12^2 - 5^2 \\
+PQ^2 = 144 - 25 = 119 \\
+PQ = \sqrt{119}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{24.} In $\triangle ABC$, a circle is inscribed touching sides $AB$, $BC$, and $CA$ at $D$, $E$, and $F$ respectively. If $AB = 12$ cm, $BC = 8$ cm, and $AC = 10$ cm, find the lengths of $AD$, $BE$, and $CF$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{AD = 7 cm, BE = 5 cm, CF = 3 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $AD = AF = x$, $BD = BE = y$, and $CE = CF = z$.
+  \item We have $x+y = 12$, $y+z = 8$, and $z+x = 10$.
+  \item Adding these equations: $2(x+y+z) = 30 \Rightarrow x+y+z = 15$.
+  \item Solving for each: $z = 15-12 = 3$, $x = 15-8 = 7$, $y = 15-10 = 5$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+x+y=12, y+z=8, z+x=10 \\
+2(x+y+z)=30 \\
+z=15-12=3 \\
+x=15-8=7 \\
+y=15-10=5
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{25.} Two tangents $TP$ and $TQ$ are drawn to a circle with center $O$ from an external point $T$. Prove that $\angle PTQ = 2\angle OPQ$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\angle PTQ = 2\angle OPQ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $\angle PTQ = \theta$. In $\triangle TPQ$, $TP = TQ$ (tangents from external point).
+  \item Thus $\angle TPQ = \angle TQP = (180^\circ - \theta) / 2 = 90^\circ - \theta/2$.
+  \item Since $OP \perp TP$, $\angle OPT = 90^\circ$.
+  \item Therefore, $\angle OPQ = \angle OPT - \angle TPQ = 90^\circ - (90^\circ - \theta/2) = \theta/2$. Thus $\angle PTQ = 2\angle OPQ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\angle TPQ = (180^\circ - \theta)/2 = 90^\circ - \theta/2 \\
+\angle OPQ = 90^\circ - \angle TPQ \\
+\angle OPQ = 90^\circ - (90^\circ - \theta/2) = \theta/2 \\
+\theta = 2\angle OPQ
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{26.} Prove that the lengths of tangents drawn from an external point to a circle are equal. Using this, if a quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle, prove that $AB + CD = AD + BC$.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_036.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Proof based on RHS congruence and segment addition property}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item State the theorem: Tangents from an external point to a circle are equal.
+  \item Use the property $AP=AS$, $BP=BQ$, $CQ=CR$, and $DR=DS$.
+  \item Sum the left-hand sides and right-hand sides of these equations.
+  \item Group the segments to form $AB, BC, CD,$ and $AD$.
+  \item Conclude that $AB + CD = AD + BC$.
+\end{enumerate}
+\textbf{Derivation:}
+AP=AS, \textbackslash{} BP=BQ, \textbackslash{} CQ=CR, \textbackslash{} DR=DS \textbackslash{} (Tangents \textbackslash{} from \textbackslash{} ext. \textbackslash{} point) \textbackslash{}\textbackslash{} AB+CD = (AP+PB) + (CR+RD) \textbackslash{}\textbackslash{} AB+CD = (AS+BQ) + (CQ+DS) \textbackslash{}\textbackslash{} AB+CD = (AS+DS) + (BQ+CQ) \textbackslash{}\textbackslash{} AB+CD = AD + BC
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{27.} Two concentric circles are of radii $5 \ cm$ and $3 \ cm$. Find the length of the chord of the larger circle which touches the smaller circle.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_037.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{8 \ cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $O$ be the common center. Let $AB$ be the chord of the larger circle touching the smaller at $P$.
+  \item Since $OP$ is the radius to the point of contact, $OP \perp AB$.
+  \item In $\triangle OPA$, $OA = 5 \ cm$ (hypotenuse) and $OP = 3 \ cm$.
+  \item Apply Pythagoras theorem: $AP^2 = OA^2 - OP^2 = 25 - 9 = 16$.
+  \item So, $AP = 4 \ cm$.
+  \item Since the perpendicular from the center bisects the chord, $AB = 2 \times AP = 8 \ cm$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+OA^2 = OP^2 + AP^2 \\
+5^2 = 3^2 + AP^2 \\
+25 = 9 + AP^2 \\
+AP^2 = 16 \\
+AP = 4 \\
+AB = 2 \times 4 = 8
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangent properties}
+\vspace{0.3cm}
+
+\question \textbf{28.} In $\triangle ABC$, a circle is inscribed touching $BC, CA,$ and $AB$ at $D, E,$ and $F$ respectively. If $AB = 12 \ cm, BC = 8 \ cm,$ and $AC = 10 \ cm$, find the lengths $AD, BE,$ and $CF$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{AD = 7 \ cm, BE = 5 \ cm, CF = 3 \ cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $AF = AE = x, BD = BF = y, CD = CE = z$.
+  \item Setup system of equations: $x+y=12, y+z=8, z+x=10$.
+  \item Add all equations: $2(x+y+z) = 30 \Rightarrow x+y+z = 15$.
+  \item Solve for $x, y, z$: $z = 15-12 = 3, x = 15-8 = 7, y = 15-10 = 5$.
+  \item Identify $AD=x=7, BE=y=5, CF=z=3$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+x+y=12, \ y+z=8, \ z+x=10 \\
+2(x+y+z)=30 \\
+x+y+z=15 \\
+x = 15-8=7, \ y=15-10=5, \ z=15-12=3
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents from an external point}
+\vspace{0.3cm}
+
+\question \textbf{29.} Prove that the angle between the two tangents drawn from an external point to a circle is supplementary to the angle subtended by the line segment joining the points of contact at the centre.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_038.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{The sum of the angles is} 180^\circ.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $PA$ and $PB$ be tangents from point $P$ to a circle with center $O$.
+  \item $OA \perp PA$ and $OB \perp PB$ (radius perpendicular to tangent).
+  \item In quadrilateral $\text{OAPB}$, the sum of angles is $360^\circ$.
+  \item $\angle OAP = 90^\circ$ and $\angle OBP = 90^\circ$.
+  \item Thus, $\angle APB + \angle AOB = 360^\circ - (90^\circ + 90^\circ) = 180^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\angle OAP + \angle OBP + \angle APB + \angle AOB = 360^\circ \\
+90^\circ + 90^\circ + \angle APB + \angle AOB = 360^\circ \\
+\angle APB + \angle AOB = 180^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{30.} In a circle of radius $5$ $cm$, $AB$ and $AC$ are two chords such that $AB = AC = 6$ $cm$. If the tangent at $A$ intersects the line $BC$ produced at $P$, find the length of $AP$.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_039.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{8 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the property that tangents drawn from an external point to a circle are equal in length.
+  \item Apply the property of similar triangles formed by the tangent and the chord segments to find $AP = 8$ $cm$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+AP^2 = PB \times PC \\
+AP = 8 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{31.} If $\angle ATO = 40^\circ$ where $T$ is a point outside the circle with center $O$ and $TA$, $TB$ are tangents, find $\angle AOB$.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_040.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{100^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item In $\triangle OAT$, $\angle OAT = 90^\circ$ because the radius is perpendicular to the tangent.
+  \item In $\triangle OAT$, $\angle AOT = 180^\circ - (90^\circ + 40^\circ) = 50^\circ$. Since $\triangle OAT \cong \triangle OBT$, $\angle AOB = 2 \times \angle AOT = 100^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\angle AOT = 180^\circ - 90^\circ - 40^\circ = 50^\circ \\
+\angle AOB = 2 \times 50^\circ = 100^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{32.} Two concentric circles are of radii $5$ $cm$ and $3$ $cm$. Find the length of the chord of the larger circle which touches the smaller circle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{8 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $O$ be the center, $AB$ the chord of the larger circle tangent to the smaller circle at $M$. $OM \perp AB$.
+  \item In right $\triangle OMA$, $OA^2 = OM^2 + AM^2$. Solve for $AM$ and find $AB = 2 \times AM$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+AM = \sqrt{5^2 - 3^2} = \sqrt{25 - 9} = \sqrt{16} = 4 \text{ cm} \\
+AB = 2 \times 4 = 8 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{33.} If a quadrilateral $\text{ABCD}$ circumscribes a circle, prove that $AB + CD = AD + BC$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Proof based on tangent properties}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the theorem that tangents drawn from an external point to a circle are equal in length.
+  \item Label the points of contact and equate the segments of the sides to prove the sum of opposite sides are equal.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+AP = AS, BP = BQ, CQ = CR, DR = DS \\
+AB+CD = (AP+PB) + (CR+RD) = (AS+BQ) + (CQ+DS) = (AS+DS) + (BQ+CQ) = AD+BC
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{34.} A point $P$ is $13$ $cm$ from the center of a circle. The length of the tangent drawn from $P$ to the circle is $12$ $cm$. Find the radius of the circle.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_042.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{5 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $O$ be the center and $A$ be the point of contact. $\triangle OAP$ is a right-angled triangle.
+  \item Apply Pythagoras theorem: $OP^2 = OA^2 + AP^2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+13^2 = r^2 + 12^2 \\
+169 = r^2 + 144 \\
+r^2 = 25 \\
+r = 5 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{35.} In $\triangle ABC$, $DE \parallel BC$ such that $D$ lies on $AB$ and $E$ lies on $AC$. If $AD = 2.4 \text{ cm}$, $AE = 3.2 \text{ cm}$, and $EC = 4.8 \text{ cm}$, find the length of $AB$.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_043.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{6 \text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Since $DE \parallel BC$, by Basic Proportionality Theorem (Thales' Theorem), $\frac{AD}{DB} = \frac{AE}{EC}$.
+  \item Substitute the given values into the equation: $\frac{2.4}{DB} = \frac{3.2}{4.8}$.
+  \item Solve for $DB$: $DB = \frac{2.4 \times 4.8}{3.2} = 3.6 \text{ cm}$.
+  \item Calculate $AB = AD + DB = 2.4 + 3.6 = 6 \text{ cm}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+By \ BPT, \frac{AD}{DB} = \frac{AE}{EC} \\
+\frac{2.4}{DB} = \frac{3.2}{4.8} \\
+\frac{2.4}{DB} = \frac{2}{3} \\
+DB = \frac{2.4 \times 3}{2} = 3.6 \text{ cm} \\
+AB = AD + DB = 2.4 + 3.6 = 6 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Triangles — Basic Proportionality Theorem}
+\vspace{0.3cm}
+
+\question \textbf{36.} Assertion (A): If in $\triangle ABC$ and $\triangle DEF$, $\frac{AB}{DE} = \frac{BC}{EF} = \frac{CA}{FD} = \frac{2}{3}$, then $\triangle ABC \sim \triangle DEF$. 
+ Reason (R): Two triangles are similar if their corresponding sides are proportional (SSS similarity criterion).
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check the condition for similarity given in the Assertion.
+  \item The ratios of corresponding sides are equal, which is the definition of the SSS similarity criterion.
+  \item The Reason correctly states the SSS similarity criterion, which is the basis for the Assertion.
+  \item Therefore, both A and R are true and R is the correct explanation of A.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Given } \frac{AB}{DE} = \frac{BC}{EF} = \frac{CA}{FD} = \frac{2}{3} \\
+\Rightarrow \triangle ABC \sim \triangle DEF \text{ by SSS similarity criterion.} \\
+\text{The SSS criterion states that if the sides of one triangle are proportional to the sides of another triangle, then the triangles are similar.}
+\end{aligned}}
+\end{center}
+\hfill \textit{Triangles — Similarity of Triangles}
+\vspace{0.3cm}
+
+\question \textbf{37.} Assertion (A): The length of a tangent drawn from an external point to a circle is always equal to the radius of the circle. Reason (R): The tangent at any point of a circle is perpendicular to the radius through the point of contact.
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Evaluate Assertion (A): The length of a tangent from an external point is not necessarily equal to the radius; they are independent.
+  \item Evaluate Reason (R): This is a standard theorem stating that the tangent at any point of a circle is perpendicular to the radius through the point of contact.
+  \item Conclusion: Assertion is false, but Reason is true.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{A \text{ is false, } R \text{ is true. } \text{Therefore, } (D) \text{ is the correct option.}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{38.} Assertion (A): If a quadrilateral $\text{ABCD}$ circumscribes a circle, then $AB + CD = AD + BC$. Reason (R): The lengths of tangents drawn from an external point to a circle are equal.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Analyze Reason (R): This is the fundamental theorem that tangents from an external point to a circle are equal in length.
+  \item Analyze Assertion (A): Using the theorem in R, let the contact points be $P, Q, R, S$ on sides $AB, BC, CD, DA$. Then $AP=AS, BP=BQ, CQ=CR, DR=DS$. Summing these shows $AB+CD = AD+BC$.
+  \item Conclusion: Both are true and R explains A.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+AP=AS, BP=BQ, CQ=CR, DR=DS \\
+AP+BP+CR+DR = AS+DS+BQ+CQ \\
+AB+CD = AD+BC
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Properties of tangents}
+\vspace{0.3cm}
+
+\question \textbf{39.} Prove that the lengths of tangents drawn from an external point to a circle are equal.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_045.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{The lengths of tangents PA and PB are equal as} \triangle OAP \cong \triangle \text{OBP by RHS congruence}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Draw a circle with center $O$ and an external point $P$.
+  \item Let $PA$ and $PB$ be two tangents from $P$ touching the circle at $A$ and $B$ respectively.
+  \item Join $OA$, $OB$, and $OP$.
+  \item In $\triangle OAP$ and $\triangle OBP$, observe that $OA = OB$ (radii of the same circle).
+  \item $OP = OP$ (common side).
+  \item $\angle OAP = \angle OBP = 90^\circ$ (radius is perpendicular to tangent at point of contact).
+  \item By RHS congruence criterion, $\triangle OAP \cong \triangle OBP$.
+  \item Hence, $PA = PB$ by CPCT.
+\end{enumerate}
+\textbf{Derivation:}
+ In \textbackslash{} $\triangle$ OAP \textbackslash{} and \textbackslash{} $\triangle$ OBP, \textbackslash{}\textbackslash{} OA = OB \textbackslash{} (radii), \textbackslash{}\textbackslash{} OP = OP \textbackslash{} (common), \textbackslash{}\textbackslash{} $\angle$ OAP = $\angle$ OBP = 90\textasciicircum{}$\circ \ ($tangent $\perp$ radius), \textbackslash{}\textbackslash{} $\triangle$ OAP $\cong \triangle$ OBP \textbackslash{} (RHS), \textbackslash{}\textbackslash{} $\therefore$ PA = PB \textbackslash{} (CPCT) 
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{40.} From a point $Q$, the length of the tangent to a circle is $24 \ cm$ and the distance of $Q$ from the centre is $25 \ cm$. Find the radius of the circle.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_046.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{7 \ cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $O$ be the center of the circle and $P$ be the point of contact.
+  \item We are given $OQ = 25 \ cm$ and $PQ = 24 \ cm$.
+  \item Since the radius is perpendicular to the tangent at the point of contact, $\triangle OPQ$ is a right-angled triangle with $\angle OPQ = 90^\circ$.
+  \item Using Pythagoras theorem: $OQ^2 = OP^2 + PQ^2$.
+  \item $25^2 = OP^2 + 24^2$.
+  \item $625 = OP^2 + 576$.
+  \item $OP^2 = 625 - 576 = 49$.
+  \item $OP = 7 \ cm$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+OP^2 + PQ^2 = OQ^2 \\
+OP^2 + 24^2 = 25^2 \\
+OP^2 + 576 = 625 \\
+OP^2 = 49 \\
+OP = 7 \ cm
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\end{questions}
+
+\end{document}

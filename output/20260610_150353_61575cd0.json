@@ -1,0 +1,84 @@
+{
+  "batch_id": "20260610_150353_61575cd0",
+  "generated_at": "2026-06-10T15:03:53.738504",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "standard form and roots",
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The quadratic equation $2x^2 - 5x + 3 = 0$ has two distinct real roots. \\\\ Reason (R): A quadratic equation $ax^2 + bx + c = 0$ has two distinct real roots if the discriminant $D = b^2 - 4ac > 0$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Identify the coefficients of the quadratic equation $2x^2 - 5x + 3 = 0$: $a = 2$, $b = -5$, and $c = 3$.",
+          "Calculate the discriminant $D = b^2 - 4ac$.",
+          "Substitute the values: $D = (-5)^2 - 4(2)(3) = 25 - 24 = 1$.",
+          "Compare the discriminant with $0$: Since $1 > 0$, the equation has two distinct real roots. Thus, the Assertion (A) is true.",
+          "The Reason (R) states the condition for distinct real roots ($D > 0$), which is a standard property of quadratic equations. Thus, the Reason (R) is true and correctly explains the Assertion (A)."
+        ],
+        "derivation": "$D = b^2 - 4ac \\\\ D = (-5)^2 - 4(2)(3) \\\\ D = 25 - 24 \\\\ D = 1 \\\\ 1 > 0 \\Rightarrow \\text{Distinct real roots}$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "standard form and roots",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T15:03:53.738432",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.1",
+            "question_no": 3,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.2",
+            "question_no": 5,
+            "question_type": "vsa",
+            "estimated_depth": "medium"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150353_8bfc9c_01"
+    }
+  ]
+}

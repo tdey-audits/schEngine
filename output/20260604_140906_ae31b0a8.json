@@ -1,0 +1,133 @@
+{
+  "batch_id": "20260604_140906_ae31b0a8",
+  "generated_at": "2026-06-04T14:09:06.938085",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the sum of all two-digit numbers which, when divided by 4, yield 1 as a remainder.",
+      "answer": "1210",
+      "solution": {
+        "steps": [
+          "Identify the sequence: The smallest two-digit number is 10. $13 \\div 4 = 3$ remainder 1. So the first term $a = 13$.",
+          "Find the last term: The largest two-digit number is 99. $97 \\div 4 = 24$ remainder 1. So the last term $l = 97$.",
+          "Find the number of terms $n$: Use $a_n = a + (n-1)d$. $97 = 13 + (n-1)4$.",
+          "Calculate the sum using $S_n = \\frac{n}{2}(a + l)$."
+        ],
+        "derivation": "$97 = 13 + 4n - 4 \\implies 88 = 4n \\implies n = 22$. $S_{22} = \\frac{22}{2}(13 + 97) = 11 \\times 110 = 1210$."
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of n terms",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:06.937788",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140906_3bfbe6_01"
+    },
+    {
+      "question": "If the sum of the first $n$ terms of an AP is $S_n = 3n^2 + 5n$, find the $16^{th}$ term of the AP.",
+      "answer": "98",
+      "solution": {
+        "steps": [
+          "Use the relationship between the $n^{th}$ term and the sum of terms: $a_n = S_n - S_{n-1}$.",
+          "Calculate $S_{16} = 3(16)^2 + 5(16)$.",
+          "Calculate $S_{15} = 3(15)^2 + 5(15)$.",
+          "Subtract $S_{15}$ from $S_{16}$ to find $a_{16}$."
+        ],
+        "derivation": "$S_{16} = 3(256) + 80 = 768 + 80 = 848$. $S_{15} = 3(225) + 75 = 675 + 75 = 750$. $a_{16} = 848 - 750 = 98$."
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of n terms",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:06.937878",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140906_22bb57_02"
+    },
+    {
+      "question": "How many terms of the AP $24, 21, 18, \\dots$ must be taken so that their sum is 78?",
+      "answer": "4 or 13",
+      "solution": {
+        "steps": [
+          "Identify $a = 24$, $d = -3$, and $S_n = 78$.",
+          "Use the formula $S_n = \\frac{n}{2}[2a + (n-1)d]$.",
+          "Solve the resulting quadratic equation for $n$.",
+          "Verify both values of $n$."
+        ],
+        "derivation": "$78 = \\frac{n}{2}[48 + (n-1)(-3)] \\implies 156 = n(48 - 3n + 3) \\implies 156 = 51n - 3n^2 \\implies 3n^2 - 51n + 156 = 0 \\implies n^2 - 17n + 52 = 0 \\implies (n-4)(n-13) = 0$."
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of n terms",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:06.937903",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140906_ffae46_03"
+    },
+    {
+      "question": "Find the middle term of the AP: $6, 13, 20, \\dots, 216$.",
+      "answer": "111",
+      "solution": {
+        "steps": [
+          "Find the total number of terms $n$ using $a_n = a + (n-1)d$.",
+          "Identify the middle term position: If $n$ is odd, middle term is $\\frac{n+1}{2}$.",
+          "Calculate the value of the middle term."
+        ],
+        "derivation": "$216 = 6 + (n-1)7 \\implies 210 = 7(n-1) \\implies 30 = n-1 \\implies n = 31$. Middle term is $\\frac{31+1}{2} = 16^{th}$ term. $a_{16} = 6 + 15(7) = 6 + 105 = 111$."
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "n-th term",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:06.937921",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140906_bd5530_04"
+    },
+    {
+      "question": "The $4^{th}$ term of an AP is 11 and the sum of its $5^{th}$ and $7^{th}$ terms is 34. Find the common difference.",
+      "answer": "3",
+      "solution": {
+        "steps": [
+          "Express $a_4$ as $a + 3d = 11$.",
+          "Express $a_5 + a_7$ as $(a + 4d) + (a + 6d) = 34$.",
+          "Solve the system of two linear equations for $d$."
+        ],
+        "derivation": "$a + 3d = 11$ (Eq 1). $2a + 10d = 34 \\implies a + 5d = 17$ (Eq 2). Subtracting Eq 1 from Eq 2: $(a + 5d) - (a + 3d) = 17 - 11 \\implies 2d = 6 \\implies d = 3$."
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "n-th term",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:06.937938",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140906_a5a50d_05"
+    }
+  ]
+}

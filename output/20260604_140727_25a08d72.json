@@ -1,0 +1,157 @@
+{
+  "batch_id": "20260604_140727_25a08d72",
+  "generated_at": "2026-06-04T14:07:27.288960",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The HCF of $12$ and $18$ is $6$. Reason (R): For any two positive integers $a$ and $b$, $HCF(a, b) \\times LCM(a, b) = a \\times b$.",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Calculate HCF of 12 and 18: $12 = 2^2 \\times 3^1$, $18 = 2^1 \\times 3^2$. HCF is $2^1 \\times 3^1 = 6$. So, Assertion is true.",
+          "The formula $HCF \\times LCM = a \\times b$ is a standard property of real numbers. So, Reason is true.",
+          "While both are true, the Reason is a general property and does not directly explain why the HCF of 12 and 18 is 6."
+        ],
+        "derivation": "HCF(12, 18) = 6; Formula: HCF \\times LCM = a \\times b"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Fundamental Theorem of Arithmetic",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:27.288684",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140727_d6c71a_01"
+    },
+    {
+      "question": "Assertion (A): $\\sqrt{3}$ is an irrational number. Reason (R): The square root of any positive integer is always an irrational number.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "$\\sqrt{3}$ cannot be expressed in the form $p/q$ where $p, q$ are integers and $q \\neq 0$, so Assertion is true.",
+          "The square root of a perfect square like $\\sqrt{4} = 2$ is rational. So, Reason is false."
+        ],
+        "derivation": "Rationality test: \\sqrt{x} \\in \\mathbb{Q} \\text{ if } x = k^2"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Irrational Numbers",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:27.288763",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140727_b7edca_02"
+    },
+    {
+      "question": "Assertion (A): The number $0.375$ is a terminating decimal. Reason (R): A rational number $p/q$ terminates if the prime factorization of $q$ is of the form $2^n 5^m$, where $n, m$ are non-negative integers.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "$0.375 = 375/1000 = 3/8$. Since $8 = 2^3$, the denominator is in the form $2^n 5^m$. Assertion is true.",
+          "The theorem states that a rational number has a terminating decimal expansion if its denominator's prime factors are only 2s and 5s. Reason is true and correctly explains A."
+        ],
+        "derivation": "0.375 = \\frac{375}{1000} = \\frac{3}{2^3 \\cdot 5^0}"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Decimal Expansion",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:27.288783",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140727_b79ebb_03"
+    },
+    {
+      "question": "Assertion (A): The HCF of two consecutive natural numbers is 1. Reason (R): Any two consecutive natural numbers are co-prime.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Consecutive numbers $n$ and $n+1$ have no common factor other than 1. Assertion is true.",
+          "Two numbers are co-prime if their HCF is 1. Since HCF of consecutive numbers is 1, they are co-prime. Reason is true and explains A."
+        ],
+        "derivation": "HCF(n, n+1) = 1"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "HCF and LCM",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:27.288799",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140727_22ad5e_04"
+    },
+    {
+      "question": "Assertion (A): The product of a non-zero rational and an irrational number is always irrational. Reason (R): $\\sqrt{2}$ is an irrational number.",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "The product of a non-zero rational and an irrational is always irrational. Assertion is true.",
+          "$\\sqrt{2}$ is indeed irrational. Reason is true.",
+          "While both are true, the fact that $\\sqrt{2}$ is irrational is an example, not the general rule explaining why the product is irrational."
+        ],
+        "derivation": "r \\in \\mathbb{Q}, i \\in \\mathbb{I} \\implies r \\cdot i \\in \\mathbb{I}"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Irrational Numbers",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:27.288813",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140727_76302d_05"
+    }
+  ]
+}

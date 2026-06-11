@@ -1,0 +1,160 @@
+{
+  "batch_id": "20260604_134535_f21440e2",
+  "generated_at": "2026-06-04T13:45:35.427876",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The length of a tangent drawn from an external point to a circle is always equal to the radius of the circle. Reason (R): Tangents drawn from an external point to a circle are equal in length.",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "The length of the tangent from an external point is not necessarily equal to the radius.",
+          "The theorem states that tangents drawn from an external point to a circle are equal in length.",
+          "Therefore, Assertion is false and Reason is true."
+        ],
+        "derivation": "A: False, R: True"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:35.427679",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134535_846473_01"
+    },
+    {
+      "question": "Assertion (A): If the angle between two tangents drawn from a point P to a circle of radius $r$ and center O is $60^\\circ$, then $OP = 2r$. Reason (R): The line segment joining the center to the external point bisects the angle between the two tangents.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "In $\\triangle OAP$ (where A is point of contact), $\\angle OPA = 60^\\circ/2 = 30^\\circ$.",
+          "$\\sin(30^\\circ) = r/OP$, so $1/2 = r/OP$, which implies $OP = 2r$.",
+          "The reason explains the bisection property used in the calculation."
+        ],
+        "derivation": "\\sin(30^\\circ) = \\frac{r}{OP} \\implies OP = 2r"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:35.427730",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134535_860119_02"
+    },
+    {
+      "question": "Assertion (A): A tangent to a circle is perpendicular to the radius at the point of contact. Reason (R): The perpendicular distance from the center of the circle to the tangent is equal to the radius of the circle.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "The theorem of tangents states that the tangent at any point of a circle is perpendicular to the radius through the point of contact.",
+          "The shortest distance from the center to the line (tangent) is the radius, which confirms the perpendicularity.",
+          "Both statements are true and R explains A."
+        ],
+        "derivation": "Radius \\perp Tangent"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:35.427744",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134535_82b279_03"
+    },
+    {
+      "question": "Assertion (A): The number of tangents that can be drawn from a point inside a circle is zero. Reason (R): A tangent to a circle intersects the circle at only one point.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "A point inside a circle cannot have a line touching the circle at only one point.",
+          "A tangent is defined as a line intersecting the circle at exactly one point.",
+          "Both are true and R explains why no tangents can exist from an internal point."
+        ],
+        "derivation": "Internal point \\implies 0 \\text{ tangents}"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:35.427755",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134535_4f0f6e_04"
+    },
+    {
+      "question": "Assertion (A): If the distance between two parallel tangents of a circle of radius $3$ cm is $6$ cm. Reason (R): Parallel tangents touch the circle at the ends of the diameter.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "The distance between two parallel tangents is equal to the diameter of the circle.",
+          "Diameter = $2 \\times$ radius = $2 \\times 3 = 6$ cm.",
+          "Both are true and R explains why the distance is the diameter."
+        ],
+        "derivation": "d = 2r = 2(3) = 6"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:35.427765",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134535_798218_05"
+    }
+  ]
+}

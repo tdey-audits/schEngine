@@ -1,0 +1,67 @@
+{
+  "batch_id": "20260610_122530_5f2308da",
+  "generated_at": "2026-06-10T12:25:30.643306",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "factorisation method",
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A motorboat whose speed in still water is $18 \\text{ km/h}$ takes $1$ hour more to go $24 \\text{ km}$ upstream than to return downstream to the same spot. Let $x \\text{ km/h}$ be the speed of the stream. Form a quadratic equation in $x$ and solve it using the factorisation method to find the speed of the stream.",
+      "answer": "$6 \\text{ km/h}$",
+      "solution": {
+        "steps": [
+          "Define the speed of the boat upstream as $(18 - x) \\text{ km/h}$ and downstream as $(18 + x) \\text{ km/h}$.",
+          "Set up the time equation based on the formula $\\text{Time} = \\frac{\\text{Distance}}{\\text{Speed}}$: $\\frac{24}{18 - x} - \\frac{24}{18 + x} = 1$.",
+          "Multiply by the common denominator $(18 - x)(18 + x)$ to eliminate fractions: $24(18 + x) - 24(18 - x) = (18 - x)(18 + x)$.",
+          "Simplify the equation to standard form: $432 + 24x - 432 + 24x = 324 - x^2$, which leads to $x^2 + 48x - 324 = 0$.",
+          "Factorise the quadratic by splitting the middle term: $x^2 + 54x - 6x - 324 = 0$.",
+          "Solve for $x$: $(x + 54)(x - 6) = 0$, giving $x = -54$ or $x = 6$.",
+          "Since the speed cannot be negative, conclude that the speed of the stream is $6 \\text{ km/h}$."
+        ],
+        "derivation": "\\frac{24}{18-x} - \\frac{24}{18+x} = 1 \\\\ 24(18+x) - 24(18-x) = (18-x)(18+x) \\\\ 432 + 24x - 432 + 24x = 324 - x^2 \\\\ 48x = 324 - x^2 \\\\ x^2 + 48x - 324 = 0 \\\\ x^2 + 54x - 6x - 324 = 0 \\\\ x(x+54) - 6(x+54) = 0 \\\\ (x-6)(x+54) = 0 \\\\ x=6 \\text{ or } x=-54"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-10T12:25:30.643057",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 32,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 35,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-1_Mathematics Basic.pdf",
+            "question_no": 32,
+            "paper_variant": "basic",
+            "question_type": "la"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122530_75a59f_01"
+    }
+  ]
+}

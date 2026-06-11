@@ -1,0 +1,92 @@
+{
+  "batch_id": "20260610_145553_ea4f7c09",
+  "generated_at": "2026-06-10T14:55:53.452839",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "standard form and roots",
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The quadratic equation $2x^2 - kx + 8 = 0$ has equal real roots if $k = 8$ or $k = -8$. Reason (R): A quadratic equation $ax^2 + bx + c = 0$ has equal real roots if and only if its discriminant $D = b^2 - 4ac$ is equal to $0$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Identify the coefficients of the given quadratic equation: $a = 2$, $b = -k$, and $c = 8$.",
+          "Recall that for a quadratic equation to have equal real roots, the discriminant $D$ must be zero.",
+          "Calculate $D = b^2 - 4ac = (-k)^2 - 4(2)(8) = k^2 - 64$.",
+          "Set $D = 0$ to find the value of $k$: $k^2 - 64 = 0 \\Rightarrow k^2 = 64 \\Rightarrow k = \\pm 8$.",
+          "Verify the Assertion and Reason. Both are true, and the Reason correctly explains the method used in the Assertion."
+        ],
+        "derivation": "$D = b^2 - 4ac \\\\ D = (-k)^2 - 4(2)(8) = 0 \\\\ k^2 - 64 = 0 \\\\ k^2 = 64 \\\\ k = \\pm 8$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of roots",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T14:55:53.452729",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145553_a95ad8_01"
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "batch_id": "20260604_151200_01674985",
+  "generated_at": "2026-06-04T15:12:00.160017",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "In $\\triangle ABC$, $DE \\parallel BC$ such that $AD = 3$ $cm$, $DB = 4$ $cm$, and $AE = 6$ $cm$. Find the length of $EC$.",
+      "answer": "$8$ $cm$",
+      "solution": {
+        "steps": [
+          "Apply the Basic Proportionality Theorem (BPT) since $DE \\parallel BC$.",
+          "Substitute the given values into $\\frac{AD}{DB} = \\frac{AE}{EC}$ and solve for $EC$."
+        ],
+        "derivation": "$\\frac{AD}{DB} = \\frac{AE}{EC} \\Rightarrow \\frac{3}{4} = \\frac{6}{EC} \\Rightarrow 3 \\times EC = 24 \\Rightarrow EC = 8$ $cm$"
+      },
+      "topic": "Triangles",
+      "subtopic": "Basic Proportionality Theorem",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "elements": [
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "kind": "segment",
+            "from": "D",
+            "to": "E"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 2,
+            "y": 4,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 0,
+            "y": 0,
+            "label": "B"
+          },
+          {
+            "kind": "point",
+            "id": "C",
+            "x": 4,
+            "y": 0,
+            "label": "C"
+          },
+          {
+            "kind": "point",
+            "id": "D",
+            "x": 1,
+            "y": 2,
+            "label": "D"
+          },
+          {
+            "kind": "point",
+            "id": "E",
+            "x": 3,
+            "y": 2,
+            "label": "E"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T15:12:00.159695",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151200_75781a_01"
+    },
+    {
+      "question": "Two triangles $\\triangle ABC$ and $\\triangle DEF$ are similar. If $Area(\\triangle ABC) = 64$ $cm^2$ and $Area(\\triangle DEF) = 121$ $cm^2$, and $EF = 11$ $cm$, find the length of $BC$.",
+      "answer": "$8$ $cm$",
+      "solution": {
+        "steps": [
+          "Use the theorem: The ratio of areas of two similar triangles is equal to the square of the ratio of their corresponding sides.",
+          "Set up the equation $\\frac{Area(\\triangle ABC)}{Area(\\triangle DEF)} = (\\frac{BC}{EF})^2$ and solve for $BC$."
+        ],
+        "derivation": "$\\frac{64}{121} = (\\frac{BC}{11})^2 \\Rightarrow \\sqrt{\\frac{64}{121}} = \\frac{BC}{11} \\Rightarrow \\frac{8}{11} = \\frac{BC}{11} \\Rightarrow BC = 8$ $cm$"
+      },
+      "topic": "Triangles",
+      "subtopic": "Areas of Similar Triangles",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T15:12:00.159779",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151200_521363_02"
+    },
+    {
+      "question": "In $\\triangle PQR$, $S$ and $T$ are points on sides $PQ$ and $PR$ respectively such that $\\angle PST = \\angle PQR$. If $PS = 2$ $cm$, $SQ = 3$ $cm$, and $PT = 1.5$ $cm$, find the length of $TR$.",
+      "answer": "$2.25$ $cm$",
+      "solution": {
+        "steps": [
+          "Prove $\\triangle PST \\sim \\triangle PQR$ by $AA$ similarity criterion since $\\angle P = \\angle P$ and $\\angle PST = \\angle PQR$.",
+          "Use the proportionality ratio $\\frac{PS}{PQ} = \\frac{PT}{PR}$ where $PQ = PS + SQ$ and $PR = PT + TR$."
+        ],
+        "derivation": "$\\frac{2}{2+3} = \\frac{1.5}{1.5+TR} \\Rightarrow \\frac{2}{5} = \\frac{1.5}{1.5+TR} \\Rightarrow 3 + 2TR = 7.5 \\Rightarrow 2TR = 4.5 \\Rightarrow TR = 2.25$ $cm$"
+      },
+      "topic": "Triangles",
+      "subtopic": "Criteria for Similarity of Triangles",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T15:12:00.159804",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151200_a89698_03"
+    },
+    {
+      "question": "A vertical pole of length $6$ $m$ casts a shadow $4$ $m$ long on the ground and at the same time a tower casts a shadow $28$ $m$ long. Find the height of the tower.",
+      "answer": "$42$ $m$",
+      "solution": {
+        "steps": [
+          "Recognize that the triangles formed by the objects and their shadows are similar due to the same sun angle.",
+          "Set up the proportion $\\frac{Height_1}{Shadow_1} = \\frac{Height_2}{Shadow_2}$ and solve for the tower height."
+        ],
+        "derivation": "$\\frac{6}{4} = \\frac{h}{28} \\Rightarrow 4h = 168 \\Rightarrow h = 42$ $m$"
+      },
+      "topic": "Triangles",
+      "subtopic": "Applications of Similar Triangles",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T15:12:00.159823",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151200_24e588_04"
+    },
+    {
+      "question": "In $\\triangle ABC$, $AD \\perp BC$. Prove that $AB^2 + CD^2 = AC^2 + BD^2$.",
+      "answer": "Proof based on Pythagoras Theorem",
+      "solution": {
+        "steps": [
+          "Apply Pythagoras theorem in $\\triangle ABD$ ($AB^2 = AD^2 + BD^2$) and $\\triangle ACD$ ($AC^2 = AD^2 + CD^2$).",
+          "Express $AD^2$ from both equations and equate them to show the result."
+        ],
+        "derivation": "$AB^2 - BD^2 = AD^2$ \\\\ $AC^2 - CD^2 = AD^2$ \\\\ $AB^2 - BD^2 = AC^2 - CD^2$ \\\\ $AB^2 + CD^2 = AC^2 + BD^2$"
+      },
+      "topic": "Triangles",
+      "subtopic": "Pythagoras Theorem",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "elements": [
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "D"
+          },
+          {
+            "kind": "right_angle",
+            "points": [
+              "A",
+              "D",
+              "B"
+            ]
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 1,
+            "y": 3,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 0,
+            "y": 0,
+            "label": "B"
+          },
+          {
+            "kind": "point",
+            "id": "C",
+            "x": 4,
+            "y": 0,
+            "label": "C"
+          },
+          {
+            "kind": "point",
+            "id": "D",
+            "x": 1,
+            "y": 0,
+            "label": "D"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T15:12:00.159840",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151200_b64bc3_05"
+    }
+  ]
+}

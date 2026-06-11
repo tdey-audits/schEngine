@@ -1,0 +1,66 @@
+{
+  "batch_id": "20260604_132902_d5e40d5d",
+  "generated_at": "2026-06-04T13:29:02.054599",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Prove that $\\frac{\\tan \\theta}{1 - \\cot \\theta} + \\frac{\\cot \\theta}{1 - \\tan \\theta} = 1 + \\sec \\theta \\operatorname{cosec} \\theta$. Hence, or otherwise, evaluate the expression if $\\tan \\theta = 2$.",
+      "answer": "1 + \\sec \\theta \\operatorname{cosec} \\theta = 3.5",
+      "solution": {
+        "steps": [
+          "Convert all terms into $\\sin \\theta$ and $\\cos \\theta$.",
+          "Simplify the denominators by taking common denominators within the fractions.",
+          "Combine the fractions by finding a common denominator for the entire expression.",
+          "Use the identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$ to simplify the numerator.",
+          "Separate the terms to match the required RHS.",
+          "Substitute $\\tan \\theta = 2$ into the result."
+        ],
+        "derivation": "\\frac{\\frac{\\sin \\theta}{\\cos \\theta}}{1 - \\frac{\\cos \\theta}{\\sin \\theta}} + \\frac{\\frac{\\cos \\theta}{\\sin \\theta}}{1 - \\frac{\\sin \\theta}{\\cos \\theta}} = \\frac{\\sin^2 \\theta}{\\cos \\theta(\\sin \\theta - \\cos \\theta)} + \\frac{\\cos^2 \\theta}{\\sin \\theta(\\cos \\theta - \\sin \\theta)} \\\\ = \\frac{\\sin^3 \\theta - \\cos^3 \\theta}{\\sin \\theta \\cos \\theta(\\sin \\theta - \\cos \\theta)} = \\frac{(\\sin \\theta - \\cos \\theta)(\\sin^2 \\theta + \\cos^2 \\theta + \\sin \\theta \\cos \\theta)}{\\sin \\theta \\cos \\theta(\\sin \\theta - \\cos \\theta)} \\\\ = \\frac{1 + \\sin \\theta \\cos \\theta}{\\sin \\theta \\cos \\theta} = \\sec \\theta \\operatorname{cosec} \\theta + 1. \\text{ For } \\tan \\theta = 2, \\cot \\theta = 0.5, \\sec \\theta = \\sqrt{5}, \\operatorname{cosec} \\theta = \\frac{\\sqrt{5}}{2}. \\text{ Result } = 1 + \\frac{5}{2} = 3.5"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:02.054398",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132902_3acbce_01"
+    },
+    {
+      "question": "A vertical tower stands on a horizontal plane and is surmounted by a vertical flagstaff of height $6$ m. At a point on the plane, the angle of elevation of the bottom of the flagstaff is $30^\\circ$ and that of the top of the flagstaff is $60^\\circ$. Find the height of the tower.",
+      "answer": "3 \\text{ m}",
+      "solution": {
+        "steps": [
+          "Let the height of the tower be $h$ m and the distance from the point to the base of the tower be $x$ m.",
+          "Form the first equation using $\\tan 30^\\circ$ for the tower height $h$.",
+          "Form the second equation using $\\tan 60^\\circ$ for the total height $(h + 6)$.",
+          "Express $x$ in terms of $h$ from the first equation.",
+          "Substitute $x$ into the second equation and solve for $h$."
+        ],
+        "derivation": "\\tan 30^\\circ = \\frac{h}{x} \\implies \\frac{1}{\\sqrt{3}} = \\frac{h}{x} \\implies x = h\\sqrt{3} \\\\ \\tan 60^\\circ = \\frac{h+6}{x} \\implies \\sqrt{3} = \\frac{h+6}{h\\sqrt{3}} \\\\ \\sqrt{3}(h\\sqrt{3}) = h+6 \\\\ 3h = h + 6 \\implies 2h = 6 \\implies h = 3"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Applications of Trigonometry (Heights and Distances)",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:02.054477",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132902_f8f1b5_02"
+    }
+  ]
+}

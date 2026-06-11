@@ -1,0 +1,160 @@
+{
+  "batch_id": "20260604_134400_6345d433",
+  "generated_at": "2026-06-04T13:44:00.831034",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Statistics",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "The mean of the first 5 natural numbers is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Identify the first 5 natural numbers: 1, 2, 3, 4, 5.",
+          "Sum the numbers: 1 + 2 + 3 + 4 + 5 = 15.",
+          "Divide the sum by the count of numbers: 15 / 5 = 3."
+        ],
+        "derivation": "\\bar{x} = \\frac{1 + 2 + 3 + 4 + 5}{5} = \\frac{15}{5} = 3"
+      },
+      "topic": "Statistics",
+      "subtopic": "Mean",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 2",
+        "(B) 3",
+        "(C) 4",
+        "(D) 5"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:00.830930",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134400_296710_01"
+    },
+    {
+      "question": "Find the mode of the following data: 2, 3, 4, 3, 5, 3, 6, 3.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Observe the frequency of each number.",
+          "The number 3 appears four times, which is more frequent than any other number.",
+          "Therefore, the mode is 3."
+        ],
+        "derivation": "\\text{Mode is the observation with the highest frequency. Since 3 occurs 4 times, Mode = 3.}"
+      },
+      "topic": "Statistics",
+      "subtopic": "Mode",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 2",
+        "(B) 4",
+        "(C) 3",
+        "(D) 6"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:00.830968",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134400_0b0c20_02"
+    },
+    {
+      "question": "If the mean of $x, x+2, x+4, x+6, x+8$ is 24, find the value of $x$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Sum the observations: x + (x+2) + (x+4) + (x+6) + (x+8) = 5x + 20.",
+          "Divide by number of observations (5) and equate to mean (24).",
+          "Solve for x: (5x + 20) / 5 = 24 => x + 4 = 24 => x = 20."
+        ],
+        "derivation": "\\frac{5x + 20}{5} = 24 \\implies x + 4 = 24 \\implies x = 20"
+      },
+      "topic": "Statistics",
+      "subtopic": "Mean",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 20",
+        "(B) 22",
+        "(C) 24",
+        "(D) 26"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:00.830977",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134400_c088d6_03"
+    },
+    {
+      "question": "The median of first 7 prime numbers is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "List the first 7 prime numbers: 2, 3, 5, 7, 11, 13, 17.",
+          "Since n=7 (odd), the median is the ((n+1)/2)th observation.",
+          "The 4th observation is 7."
+        ],
+        "derivation": "\\text{Median} = \\left(\\frac{7+1}{2}\\right)\\text{th term} = \\text{4th term} = 7"
+      },
+      "topic": "Statistics",
+      "subtopic": "Median",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 5",
+        "(B) 7",
+        "(C) 11",
+        "(D) 13"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:00.830982",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134400_f7a451_04"
+    },
+    {
+      "question": "For a given distribution, if Mean = 20 and Mode = 20, find the Median using the empirical relationship.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Use the empirical formula: Mode = 3(Median) - 2(Mean).",
+          "Substitute the given values: 20 = 3(Median) - 2(20).",
+          "20 = 3(Median) - 40 => 60 = 3(Median) => Median = 20."
+        ],
+        "derivation": "20 = 3(\\text{Median}) - 2(20) \\implies 20 + 40 = 3(\\text{Median}) \\implies \\text{Median} = 60/3 = 20"
+      },
+      "topic": "Statistics",
+      "subtopic": "Empirical Relationship",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 15",
+        "(B) 18",
+        "(C) 20",
+        "(D) 25"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:00.830987",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134400_d57d21_05"
+    }
+  ]
+}

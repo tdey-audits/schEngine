@@ -1,0 +1,127 @@
+{
+  "batch_id": "20260610_122442_2da170b4",
+  "generated_at": "2026-06-10T12:24:42.593523",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": "trigonometric ratios",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In a right-angled triangle $\\triangle ABC$ where $\\angle B = 90^\\circ$, if $\\tan A = \\frac{1}{\\sqrt{3}}$, then the value of $\\sin A$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify the definition of $\\tan A$ in a right triangle: $\\tan A = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{BC}{AB}$.",
+          "Assign lengths: $BC = k$ and $AB = k\\sqrt{3}$ for some constant $k$.",
+          "Use Pythagoras theorem to find the hypotenuse $AC$: $AC^2 = AB^2 + BC^2 = (k\\sqrt{3})^2 + k^2$.",
+          "Calculate $AC$: $AC^2 = 3k^2 + k^2 = 4k^2$, so $AC = 2k$.",
+          "Calculate $\\sin A = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{BC}{AC} = \\frac{k}{2k} = \\frac{1}{2}$."
+        ],
+        "derivation": "$\\tan A = \\frac{BC}{AB} = \\frac{1}{\\sqrt{3}} \\Rightarrow BC = k, AB = k\\sqrt{3} \\\\ AC = \\sqrt{AB^2 + BC^2} = \\sqrt{(k\\sqrt{3})^2 + k^2} = \\sqrt{3k^2 + k^2} = \\sqrt{4k^2} = 2k \\\\ \\sin A = \\frac{BC}{AC} = \\frac{k}{2k} = \\frac{1}{2}$"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "trigonometric ratios",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) \\frac{\\sqrt{3}}{2}",
+        "(B) 1",
+        "(C) \\frac{1}{2}",
+        "(D) \\frac{1}{\\sqrt{2}}"
+      ],
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "caption": "Right-angled triangle ABC",
+        "elements": [
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0,
+            "y": 0,
+            "label": "A",
+            "position": "left"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 4,
+            "y": 0,
+            "label": "B",
+            "position": "below"
+          },
+          {
+            "kind": "point",
+            "id": "C",
+            "x": 4,
+            "y": 3,
+            "label": "C",
+            "position": "above"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "B",
+            "label": "k\\sqrt{3}"
+          },
+          {
+            "kind": "segment",
+            "from": "B",
+            "to": "C",
+            "label": "k"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "C",
+            "label": "2k"
+          },
+          {
+            "kind": "right_angle",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-10T12:24:42.593264",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_8 (Introduction to Trigonometry).pdf",
+          "Chapter_9 (Some Applications of Trigonometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 6,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122442_13db24_01"
+    }
+  ]
+}

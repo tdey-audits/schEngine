@@ -1,0 +1,315 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag} \\[0.3cm]
+  \textbf{Time Allowed: 3 Hours} \hfill \textbf{Maximum Marks: 80} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\noindent\textbf{General Instructions:}
+\begin{enumerate}
+  \item {\normalfont\normalcolor This question paper contains 40 questions. All questions are compulsory.}
+  \item {\normalfont\normalcolor Questions are grouped into sections A through E.}
+  \item {\normalfont\normalcolor Use of calculators is NOT permitted.}
+\end{enumerate}
+\bigskip
+\noindent\textbf{\large Section A: Multiple Choice \& Assertion-Reason (1 mark each)}
+
+\begin{questions}
+\question[1] The total surface area of a cube whose edge is $5 \text{ cm}$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 150 cm\textasciicircum{}2
+  \item (B) 125 cm\textasciicircum{}2
+  \item (C) 100 cm\textasciicircum{}2
+  \item (D) 250 cm\textasciicircum{}2
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If the slant height of a cone is $10 \text{ cm}$ and the radius is $6 \text{ cm}$, its curved surface area is:
+\begin{enumerate}[label=(\Alph*)]
+  \item $(A) 30\pi cm^2$
+  \item $(B) 40\pi cm^2$
+  \item $(C) 50\pi cm^2$
+  \item $(D) 60\pi cm^2$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The lateral surface area of a cuboid of dimensions $8 \text{ cm} \times 6 \text{ cm} \times 5 \text{ cm}$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 70 cm\textasciicircum{}2
+  \item (B) 110 cm\textasciicircum{}2
+  \item (C) 140 cm\textasciicircum{}2
+  \item (D) 280 cm\textasciicircum{}2
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If the probability of an event $E$ occurring is $0.65$, what is the probability of the event 'not $E$'?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 0.25
+  \item (B) 0.35
+  \item (C) 0.45
+  \item (D) 0.65
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The probability of winning a game is $\frac{7}{12}$. What is the probability of losing the game?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 1/12
+  \item (B) 4/12
+  \item (C) 5/12
+  \item (D) 7/12
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] A bag contains balls of different colours. If the probability of picking a red ball is $2/9$, what is the probability that the ball picked is NOT red?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 1/9
+  \item (B) 2/9
+  \item (C) 5/9
+  \item (D) 7/9
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If $P(E) = 0.07$, find $P(\text{not } E)$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 0.93
+  \item (B) 0.97
+  \item (C) 0.03
+  \item (D) 0.07
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] A student solves a problem correctly with a probability of $0.85$. What is the probability that the student solves the problem incorrectly?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 0.05
+  \item (B) 0.10
+  \item (C) 0.15
+  \item (D) 0.25
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The total surface area of a solid hemisphere of radius $r$ is $3\pi r^2$. Reason (R): The total surface area of a sphere is $4\pi r^2$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If the radius of a cylinder is doubled and its height is halved, the volume remains the same. Reason (R): The volume of a cylinder is given by $V = \pi r^2 h$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The volume of a cone with radius $r$ and height $h$ is $\frac{1}{3}\pi r^2 h$. Reason (R): A cone is one-third of a cylinder with the same base and height.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The slant height $l$ of a cone is given by $l = \sqrt{h^2 + r^2}$. Reason (R): This is derived from Pythagoras theorem applied to the triangle formed by height, radius, and slant height.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If the surface area of a sphere is $616 \text{ cm}^2$, its radius is $7 \text{ cm}$. Reason (R): The surface area of a sphere is $4\pi r^2$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If the probability of winning a game is 0.7, then the probability of losing the game is 0.3. Reason (R): The sum of the probabilities of all complementary events is 1.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The probability of an event happening is 0.45, then the probability of the event not happening is 0.65. Reason (R): For any event E, $P(\bar{E}) = 1 - P(E)$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If a fair coin is tossed, the probability of getting a head is 0.5 and the probability of not getting a head is 0.5. Reason (R): Getting a head and not getting a head are complementary events.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If the probability of selecting a red ball from a bag is 2/7, the probability of not selecting a red ball is 5/7. Reason (R): The probability of an impossible event is 1.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If $P(E) = 0.12$, then $P(\bar{E}) = 0.88$. Reason (R): $P(E) + P(\bar{E}) = 1$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section B: Very Short Answer (2 marks each)}
+
+\begin{questions}
+\question[2] Two cubes each of volume $64 \text{ cm}^3$ are joined end to end. Find the surface area of the resulting cuboid.
+\vspace{0.15cm}
+
+\question[2] A metallic sphere of radius $4.2 \text{ cm}$ is melted and recast into the shape of a cylinder of radius $6 \text{ cm}$. Find the height of the cylinder.
+\vspace{0.15cm}
+
+\question[2] The slant height of a frustum of a cone is $4 \text{ cm}$ and the perimeters of its circular ends are $18 \text{ cm}$ and $6 \text{ cm}$. Find the curved surface area of the frustum.
+\vspace{0.15cm}
+
+\question[2] A solid is in the form of a right circular cone mounted on a hemisphere. If the radius of the hemisphere and the cone is $3.5 \text{ cm}$ and the height of the cone is $4 \text{ cm}$, find the volume of the solid. (Use $\pi = 22/7$)
+\vspace{0.15cm}
+
+\question[2] The diameter of a metallic ball is $4.2 \text{ cm}$. What is the mass of the ball, if the density of the metal is $8.9 \text{ g/cm}^3$?
+\vspace{0.15cm}
+
+\question[2] In $\triangle ABC$, a circle is inscribed touching sides $AB$, $BC$, and $CA$ at points $P$, $Q$, and $R$ respectively. If $AB = 12$ cm, $BC = 8$ cm, and $AC = 10$ cm, find the length of $AP$.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_001.pdf}
+\end{center}
+
+\vspace{0.15cm}
+
+\question[2] From a point $P$, $10$ cm away from the centre of a circle, the length of the tangent drawn to the circle is $8$ cm. Find the radius of the circle.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_002.pdf}
+\end{center}
+
+\vspace{0.15cm}
+
+\question[2] Two concentric circles are of radii $5$ cm and $3$ cm. Find the length of the chord of the larger circle which touches the smaller circle.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_003.pdf}
+\end{center}
+
+\vspace{0.15cm}
+
+\question[2] If tangents $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\circ$, find $\angle POA$.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_004.pdf}
+\end{center}
+
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section C: Short Answer (3 marks each)}
+
+\begin{questions}
+\question[3] A metallic sphere of radius $6 \text{ cm}$ is melted and recast into the shape of a cylinder of radius $4 \text{ cm}$. Find the height of the cylinder.
+\vspace{0.15cm}
+
+\question[3] Two cubes each of volume $64 \text{ cm}^3$ are joined end to end. Find the surface area of the resulting cuboid.
+\vspace{0.15cm}
+
+\question[3] A conical tent is $10 \text{ m}$ high and the radius of its base is $24 \text{ m}$. Find the slant height of the tent and the cost of the canvas required to make the tent, if the cost of $1 \text{ m}^2$ canvas is $\text{ \text{Rs.~}} 70$.
+\vspace{0.15cm}
+
+\question[3] A medicine capsule is in the shape of a cylinder with two hemispheres stuck to each of its ends. The length of the entire capsule is $14 \text{ mm}$ and the diameter of the capsule is $5 \text{ mm}$. Find its surface area.
+\vspace{0.15cm}
+
+\question[3] A hemispherical tank, full of water, is emptied by a pipe at the rate of $3\frac{4}{7}$ litres per second. How much time will it take to empty half the tank, if it is $3 \text{ m}$ in diameter? (Take $\pi = \frac{22}{7}$)
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section D: Long Answer (4-5 marks each)}
+
+\begin{questions}
+\question[5] A solid toy is in the form of a hemisphere surmounted by a right circular cone. The height of the cone is $2$ cm and the diameter of the base is $4$ cm. If a right circular cylinder circumscribes the toy, find the difference between the volume of the cylinder and the volume of the toy. (Take $\pi = 3.14$)
+\vspace{0.15cm}
+
+\question[5] A metallic sphere of radius $6$ cm is melted and recast into the shape of a right circular cylinder of radius $6$ cm. Find the height of the cylinder.
+\vspace{0.15cm}
+
+\question[5] A bucket is in the form of a frustum of a cone with a capacity of $12308.8 \text{ cm}^3$. The radii of the top and bottom circular ends are $20$ cm and $12$ cm respectively. Find the height of the bucket. (Use $\pi = 3.14$)
+\vspace{0.15cm}
+
+\question[5] A medicine capsule is in the shape of a cylinder with two hemispheres stuck to each of its ends. The length of the entire capsule is $14$ mm and the diameter of the capsule is $5$ mm. Find its surface area.
+\vspace{0.15cm}
+
+\question[5] A box contains 90 discs which are numbered from 1 to 90. If one disc is drawn at random from the box, find the probability that it bears (i) a two-digit number, (ii) a perfect square number, (iii) a number divisible by 5. Use the concept of complementary events to verify the probability of the event 'not getting a perfect square'.
+\vspace{0.15cm}
+
+\question[5] A game consists of tossing a one-rupee coin 3 times and noting its outcome each time. Hanif wins if all the tosses give the same result i.e., three heads or three tails, and loses otherwise. Calculate the probability that Hanif will lose the game using the complementary event property.
+\vspace{0.15cm}
+
+\question[5] A bag contains 5 red balls and some blue balls. If the probability of drawing a blue ball is double that of a red ball, find the number of blue balls in the bag. Further, if a ball is drawn at random, what is the probability of not drawing a red ball?
+\vspace{0.15cm}
+
+\question[5] Two dice are thrown simultaneously. Find the probability of getting (i) a sum of 8, (ii) a doublet, (iii) a sum greater than 9. Use the complementary event concept to find the probability of getting a sum not equal to 8.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+
+\end{document}

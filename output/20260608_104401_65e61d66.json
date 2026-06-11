@@ -1,0 +1,417 @@
+{
+  "batch_id": "20260608_104401_65e61d66",
+  "generated_at": "2026-06-08T10:44:01.073019",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "assertion_reason",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): For any two positive integers $a$ and $b$, if $HCF(a, b) = 11$ and $LCM(a, b) = 693$, then the product $a \\times b = 7623$. Reason (R): For any two positive integers $a$ and $b$, $HCF(a, b) \\times LCM(a, b) = a \\times b$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Identify the relationship between HCF, LCM and the product of two numbers.",
+          "Check the assertion: $11 \\times 693 = 7623$.",
+          "Verify the Reason: The property $HCF(a, b) \\times LCM(a, b) = a \\times b$ is a standard theorem for positive integers.",
+          "Conclude that both are true and the reason explains the assertion."
+        ],
+        "derivation": "$11 \\times 693 = 7623 \\\\ \\text{Since } HCF(a, b) \\times LCM(a, b) = a \\times b \\text{ is always true, the assertion follows from the reason.}"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Fundamental Theorem of Arithmetic",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "hard",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-08T10:44:01.072415",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 19,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260608_104401_9791fb_01"
+    },
+    {
+      "question": "Show that for any positive integer $n$, $n^3 - n$ is divisible by $6$.",
+      "answer": "$n^3 - n = (n-1)n(n+1)$, which is a product of three consecutive integers, hence divisible by $3! = 6$.",
+      "solution": {
+        "steps": [
+          "Factorize the expression $n^3 - n$ as $n(n^2 - 1)$.",
+          "Further factorize to get $n(n-1)(n+1)$.",
+          "Identify that this is the product of three consecutive integers.",
+          "State that in any set of three consecutive integers, at least one must be even and exactly one must be a multiple of three.",
+          "Conclude that the product must be divisible by $2 \\times 3 = 6$."
+        ],
+        "derivation": "$n^3 - n = n(n^2 - 1) \\\\ = (n-1)n(n+1) \\\\ \\text{Since } (n-1), n, (n+1) \\text{ are three consecutive integers, their product is divisible by } 3! = 6.$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Euclid's Division Lemma",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-08T10:44:01.072558",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 19,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260608_104401_74ace0_02"
+    },
+    {
+      "question": "Find the greatest number of 6 digits which is exactly divisible by $12, 15,$ and $20$.",
+      "answer": "$999960$",
+      "solution": {
+        "steps": [
+          "Find the LCM of $12, 15,$ and $20$.",
+          "$12 = 2^2 \\times 3$, $15 = 3 \\times 5$, $20 = 2^2 \\times 5$.",
+          "$LCM = 2^2 \\times 3 \\times 5 = 60$.",
+          "Identify the largest 6-digit number as $999999$.",
+          "Divide $999999$ by $60$ and find the remainder.",
+          "Subtract the remainder from $999999$ to get the largest divisible number."
+        ],
+        "derivation": "$LCM(12, 15, 20) = 60 \\\\ 999999 \\div 60 = 16666 \\text{ with remainder } 39 \\\\ 999999 - 39 = 999960$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "HCF and LCM",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-08T10:44:01.072599",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 19,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260608_104401_b47cee_03"
+    },
+    {
+      "question": "A merchant has $120$ litres of oil of one kind, $180$ litres of another kind and $240$ litres of a third kind. He wants to sell the oil by filling the three kinds of oil in tins of equal capacity. What should be the greatest capacity of such a tin?",
+      "answer": "$60$ litres",
+      "solution": {
+        "steps": [
+          "Recognize that the problem requires finding the greatest common measure.",
+          "Identify that this is the HCF of $120, 180,$ and $240$.",
+          "Prime factorize the numbers: $120 = 2^3 \\times 3 \\times 5$, $180 = 2^2 \\times 3^2 \\times 5$, $240 = 2^4 \\times 3 \\times 5$.",
+          "Select the lowest powers of common prime factors: $2^2 \\times 3^1 \\times 5^1$.",
+          "Calculate the final product."
+        ],
+        "derivation": "$120 = 2^3 \\times 3 \\times 5 \\\\ 180 = 2^2 \\times 3^2 \\times 5 \\\\ 240 = 2^4 \\times 3 \\times 5 \\\\ HCF = 2^2 \\times 3 \\times 5 = 60$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "HCF and LCM",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-08T10:44:01.072627",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 19,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260608_104401_3d4474_04"
+    }
+  ]
+}

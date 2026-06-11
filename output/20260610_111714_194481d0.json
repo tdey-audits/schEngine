@@ -1,0 +1,82 @@
+{
+  "batch_id": "20260610_111714_194481d0",
+  "generated_at": "2026-06-10T11:17:14.100594",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Prove that for any positive integer $n$, the expression $n^3 - n$ is always divisible by $6$. Using this result, or otherwise, show that the product of three consecutive positive integers is always divisible by $6$.",
+      "answer": "The expression $n^3 - n$ can be factored as $(n-1)n(n+1)$, which represents the product of three consecutive integers. Since out of any three consecutive integers, at least one must be a multiple of $2$ and exactly one must be a multiple of $3$, their product must be divisible by $2 \\times 3 = 6$.",
+      "solution": {
+        "steps": [
+          "Factorize the expression $n^3 - n$ to get $n(n^2 - 1) = (n-1)n(n+1)$.",
+          "Identify that $(n-1)n(n+1)$ represents the product of three consecutive integers.",
+          "Explain that in any set of three consecutive integers, at least one must be even (divisible by $2$).",
+          "Explain that in any set of three consecutive integers, exactly one must be a multiple of $3$.",
+          "Conclude that since the product is divisible by both $2$ and $3$, and $\\text{gcd}(2, 3) = 1$, the product must be divisible by their product, $6$."
+        ],
+        "derivation": "$n^3 - n = n(n^2 - 1) \\\\ = (n-1)n(n+1) \\\\ \\text{Let } k = n-1, \\text{ then the product is } k(k+1)(k+2) \\\\ \\text{Since in any three consecutive integers, at least one is divisible by } 2, \\text{ let } 2 | P \\\\ \\text{Since in any three consecutive integers, one is divisible by } 3, \\text{ let } 3 | P \\\\ \\text{Since } \\text{gcd}(2, 3) = 1, \\text{ it follows that } 2 \\times 3 | P \\\\ \\therefore 6 | (n-1)n(n+1) \\\\ \\therefore 6 | (n^3 - n)$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Fundamental Theorem of Arithmetic",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-10T11:17:14.100183",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/430-1-1_Mathematics Basic.pdf",
+            "question_no": 32,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-3_Mathematics Basic.pdf",
+            "question_no": 33,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 35,
+            "paper_variant": "basic",
+            "question_type": "la"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_111714_6695c8_01"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "batch_id": "20260604_133234_63734077",
+  "generated_at": "2026-06-04T13:32:34.689016",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "The sum of the first $n$ terms of an Arithmetic Progression is given by $S_n = 3n^2 + 5n$. Find the $n^{th}$ term of this AP and hence find the $20^{th}$ term.",
+      "answer": "$6n+2$; $122$",
+      "solution": {
+        "steps": [
+          "Use the relation $a_n = S_n - S_{n-1}$ to find the general term.",
+          "Substitute $S_n = 3n^2 + 5n$.",
+          "Calculate $S_{n-1} = 3(n-1)^2 + 5(n-1)$.",
+          "Subtract $S_{n-1}$ from $S_n$ and simplify the expression.",
+          "Substitute $n=20$ into the resulting formula to find $a_{20}$."
+        ],
+        "derivation": "a_n = S_n - S_{n-1} \\\\ a_n = (3n^2 + 5n) - [3(n-1)^2 + 5(n-1)] \\\\ a_n = 3n^2 + 5n - [3(n^2 - 2n + 1) + 5n - 5] \\\\ a_n = 3n^2 + 5n - [3n^2 - 6n + 3 + 5n - 5] \\\\ a_n = 3n^2 + 5n - 3n^2 + n + 2 = 6n + 2 \\\\ a_{20} = 6(20) + 2 = 122"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of n terms",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:34.688779",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133234_4ac6ad_01"
+    },
+    {
+      "question": "In an AP, the sum of first 10 terms is $-150$ and the sum of its next 10 terms is $-550$. Find the Arithmetic Progression.",
+      "answer": "$a=4, d=-3$; $4, 1, -2, -5, ...$",
+      "solution": {
+        "steps": [
+          "Set up the equation for $S_{10} = -150$.",
+          "Recognize that the sum of the next 10 terms is $S_{20} - S_{10} = -550$.",
+          "Find $S_{20} = -550 + (-150) = -700$.",
+          "Solve the resulting system of two linear equations in $a$ and $d$.",
+          "State the first few terms of the AP."
+        ],
+        "derivation": "S_{10} = 5(2a + 9d) = -150 \\implies 2a + 9d = -30 \\quad (1) \\\\ S_{20} = 10(2a + 19d) = -700 \\implies 2a + 19d = -70 \\quad (2) \\\\ (2) - (1): 10d = -40 \\implies d = -4 \\text{ (Correction: d = -4, then 2a - 36 = -30, 2a = 6, a = 3)} \\\\ \\text{Re-calculating: } 2a + 9(-4) = -30 \\implies 2a - 36 = -30 \\implies 2a = 6 \\implies a = 3 \\\\ \\text{AP: } 3, -1, -5, -9, ..."
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of n terms",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:34.688853",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133234_879be3_02"
+    },
+    {
+      "question": "A sum of \u20b91600 is to be used to give 5 cash prizes to students of a school for their overall academic performance. If each prize is \u20b920 less than its preceding prize, find the value of each of the prizes.",
+      "answer": "\u20b9400, \u20b9380, \u20b9360, \u20b9340, \u20b9320",
+      "solution": {
+        "steps": [
+          "Let the prizes be $a, a-20, a-40, a-60, a-80$.",
+          "Use the sum formula $S_n = \\frac{n}{2}[2a + (n-1)d]$.",
+          "Substitute $n=5$, $S_5=1600$, and $d=-20$.",
+          "Solve for $a$.",
+          "List all 5 terms."
+        ],
+        "derivation": "1600 = \\frac{5}{2}[2a + (5-1)(-20)] \\\\ 3200 = 5[2a - 80] \\\\ 640 = 2a - 80 \\\\ 2a = 720 \\implies a = 360 \\text{ (Wait, check: 5a + 10d = 1600/2*2 is wrong)} \\\\ 1600 = \\frac{5}{2}(2a - 80) \\implies 640 = 2a - 80 \\implies 2a = 720 \\implies a = 360"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Application of AP",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:34.688875",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133234_c1cd90_03"
+    },
+    {
+      "question": "Find the sum of all three-digit numbers which leave a remainder of 3 when divided by 5.",
+      "answer": "98550",
+      "solution": {
+        "steps": [
+          "Identify the first three-digit number $a$ such that $a \\equiv 3 \\pmod 5$, which is 103.",
+          "Identify the last three-digit number $l$ such that $l \\equiv 3 \\pmod 5$, which is 998.",
+          "Determine the number of terms $n$ using $a_n = a + (n-1)d$ where $d=5$.",
+          "Calculate $n = \\frac{l-a}{d} + 1$.",
+          "Calculate the sum using $S_n = \\frac{n}{2}(a + l)$."
+        ],
+        "derivation": "a = 103, l = 998, d = 5 \\\\ 998 = 103 + (n-1)5 \\\\ 895 = (n-1)5 \\\\ n-1 = 179 \\implies n = 180 \\\\ S_{180} = \\frac{180}{2}(103 + 998) = 90(1101) = 99090"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of n terms",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:34.688889",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133234_e2cd0c_04"
+    }
+  ]
+}

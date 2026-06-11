@@ -1,0 +1,69 @@
+{
+  "batch_id": "20260609_151634_613851bc",
+  "generated_at": "2026-06-09T15:16:34.172447",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Probability",
+  "subtopic": "probability basics",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A bag contains $15$ cards numbered from $1$ to $15$. One card is drawn at random from the bag. The probability that the number on the drawn card is a prime number is",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Identify the total number of possible outcomes, which is $15$.",
+          "List the prime numbers between $1$ and $15$: $2, 3, 5, 7, 11, 13$.",
+          "Count the number of favourable outcomes, which is $6$.",
+          "Apply the probability formula: $P(E) = \\frac{\\text{Number of favourable outcomes}}{\\text{Total number of outcomes}}$.",
+          "Calculate $P(E) = \\frac{6}{15} = \\frac{2}{5}$."
+        ],
+        "derivation": "$S = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15\\} \\\\ n(S) = 15 \\\\ E = \\{2, 3, 5, 7, 11, 13\\} \\\\ n(E) = 6 \\\\ P(E) = \\frac{6}{15} = \\frac{2}{5}$"
+      },
+      "topic": "Probability",
+      "subtopic": "probability basics",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $\\frac{1}{3}$",
+        "(B) $\\frac{2}{5}$",
+        "(C) $\\frac{7}{15}$",
+        "(D) $\\frac{1}{5}$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T15:16:34.172169",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_15 (Probability).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 10,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 15,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260609_151634_9c5a88_01"
+    }
+  ]
+}

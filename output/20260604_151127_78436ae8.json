@@ -1,0 +1,160 @@
+{
+  "batch_id": "20260604_151127_78436ae8",
+  "generated_at": "2026-06-04T15:11:27.615097",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Areas Related to Circles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The area of a circle with radius $7 \\text{ cm}$ is $154 \\text{ cm}^2$. Reason (R): The area of a circle is given by the formula $\\pi r^2$, where $r$ is the radius.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Recall formula $\\pi r^2$.",
+          "Substitute $r = 7$ and $\\pi = 22/7$.",
+          "Calculate $22/7 \\times 7 \\times 7 = 154$."
+        ],
+        "derivation": "Area = \\pi r^2 \\\\ Area = \\frac{22}{7} \\times 7 \\times 7 \\\\ Area = 22 \\times 7 = 154 \\text{ cm}^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of a Circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:27.614802",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151127_c5ff2f_01"
+    },
+    {
+      "question": "Assertion (A): The circumference of a circle with diameter $14 \\text{ cm}$ is $44 \\text{ cm}$. Reason (R): The circumference of a circle is given by $\\pi d$, where $d$ is the diameter.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Recall formula $C = \\pi d$.",
+          "Substitute $\\pi = 22/7$ and $d = 14$.",
+          "Calculate $22/7 \\times 14 = 44$."
+        ],
+        "derivation": "C = \\pi d \\\\ C = \\frac{22}{7} \\times 14 \\\\ C = 22 \\times 2 = 44 \\text{ cm}"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Circumference of a Circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:27.614883",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151127_8d14a5_02"
+    },
+    {
+      "question": "Assertion (A): The area of a semicircle with radius $r$ is $\\frac{1}{2} \\pi r^2$. Reason (R): A semicircle is half of a full circle.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Area of full circle is $\\pi r^2$.",
+          "Semicircle is exactly half of a circle.",
+          "Divide the area formula by $2$."
+        ],
+        "derivation": "\\text{Area of semicircle} = \\frac{1}{2} \\times \\text{Area of circle} \\\\ \\text{Area of semicircle} = \\frac{1}{2} \\pi r^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of a Semicircle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:27.614907",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151127_8b8e40_03"
+    },
+    {
+      "question": "Assertion (A): The length of an arc of a circle with radius $r$ and central angle $\\theta$ is $\\frac{\\theta}{360} \\times 2\\pi r$. Reason (R): The circumference of a circle is $2\\pi r$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Arc length is a fraction of the circumference.",
+          "The fraction is determined by the central angle $\\theta$ over $360^\\circ$.",
+          "Combine to get $\\frac{\\theta}{360} \\times 2\\pi r$."
+        ],
+        "derivation": "\\text{Arc Length} = \\frac{\\theta}{360^\\circ} \\times 2\\pi r"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Length of an Arc",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:27.614925",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151127_278c79_04"
+    },
+    {
+      "question": "Assertion (A): The area of a quadrant of a circle with radius $r$ is $\\frac{1}{4} \\pi r^2$. Reason (R): A quadrant is a sector with a central angle of $45^\\circ$.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "The area of a quadrant is indeed $\\frac{1}{4} \\pi r^2$.",
+          "A quadrant implies a central angle of $90^\\circ$, not $45^\\circ$.",
+          "Therefore, Reason is false."
+        ],
+        "derivation": "\\text{Area of sector} = \\frac{\\theta}{360^\\circ} \\times \\pi r^2 \\\\ \\text{For quadrant, } \\theta = 90^\\circ \\\\ \\text{Area} = \\frac{90}{360} \\times \\pi r^2 = \\frac{1}{4} \\pi r^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of a Sector",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:27.614944",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151127_9701e2_05"
+    }
+  ]
+}

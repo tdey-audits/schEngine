@@ -1,0 +1,134 @@
+{
+  "batch_id": "20260604_140737_d1dbb394",
+  "generated_at": "2026-06-04T14:07:37.030208",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Prove that $3 + 2\\sqrt{5}$ is an irrational number, given that $\\sqrt{5}$ is an irrational number.",
+      "answer": "3 + 2\\sqrt{5} is irrational",
+      "solution": {
+        "steps": [
+          "Assume the contrary that $3 + 2\\sqrt{5}$ is rational, i.e., $3 + 2\\sqrt{5} = \\frac{a}{b}$ where $a, b$ are integers and $b \\neq 0$.",
+          "Rearrange the equation to isolate $\\sqrt{5}$.",
+          "Since $a$ and $b$ are integers, $\\frac{a-3b}{2b}$ must be rational, which contradicts the fact that $\\sqrt{5}$ is irrational.",
+          "Conclude that the assumption was wrong and $3 + 2\\sqrt{5}$ is irrational."
+        ],
+        "derivation": "3 + 2\\sqrt{5} = \\frac{a}{b} \\implies 2\\sqrt{5} = \\frac{a}{b} - 3 \\implies 2\\sqrt{5} = \\frac{a-3b}{b} \\implies \\sqrt{5} = \\frac{a-3b}{2b}"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Irrationality of numbers",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:37.029712",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140737_6872cf_01"
+    },
+    {
+      "question": "Find the HCF and LCM of 96 and 404 by the prime factorization method and verify that HCF $\\times$ LCM = product of the two numbers.",
+      "answer": "HCF = 4, LCM = 9696",
+      "solution": {
+        "steps": [
+          "Find prime factorization of 96: $2^5 \\times 3^1$.",
+          "Find prime factorization of 404: $2^2 \\times 101^1$.",
+          "Identify HCF (product of smallest powers of common primes) and LCM (product of greatest powers of all primes).",
+          "Verify the product equality: $4 \\times 9696 = 38784$ and $96 \\times 404 = 38784$."
+        ],
+        "derivation": "96 = 2^5 \\times 3; 404 = 2^2 \\times 101; \\text{HCF} = 2^2 = 4; \\text{LCM} = 2^5 \\times 3 \\times 101 = 9696; 4 \\times 9696 = 38784; 96 \\times 404 = 38784"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Fundamental Theorem of Arithmetic",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:37.029836",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140737_04aa06_02"
+    },
+    {
+      "question": "Without performing long division, state whether $\\frac{129}{2^2 \\times 5^7 \\times 7^5}$ has a terminating or non-terminating repeating decimal expansion. Justify your answer.",
+      "answer": "Non-terminating repeating",
+      "solution": {
+        "steps": [
+          "Check the denominator for the form $2^n \\times 5^m$.",
+          "Observe that the denominator contains a factor $7^5$ other than 2 and 5.",
+          "Conclude that by the theorem, since the prime factorization of the denominator is not of the form $2^n \\times 5^m$, the decimal expansion is non-terminating repeating."
+        ],
+        "derivation": "\\text{Denominator } q = 2^2 \\times 5^7 \\times 7^5. \\text{ Since } q \\neq 2^n \\times 5^m, \\text{ the expansion is non-terminating repeating.}"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Decimal expansion of rational numbers",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:37.029874",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140737_61bb68_03"
+    },
+    {
+      "question": "Use Euclid's division lemma to show that the square of any positive integer is either of the form $3m$ or $3m + 1$ for some integer $m$.",
+      "answer": "Square is 3m or 3m+1",
+      "solution": {
+        "steps": [
+          "Let $a$ be any positive integer. By Euclid's lemma, $a = 3q + r$, where $r = 0, 1, 2$.",
+          "Case 1: $a = 3q \\implies a^2 = 9q^2 = 3(3q^2) = 3m$.",
+          "Case 2: $a = 3q + 1 \\implies a^2 = 9q^2 + 6q + 1 = 3(3q^2 + 2q) + 1 = 3m + 1$.",
+          "Case 3: $a = 3q + 2 \\implies a^2 = 9q^2 + 12q + 4 = 3(3q^2 + 4q + 1) + 1 = 3m + 1$."
+        ],
+        "derivation": "a^2 = (3q)^2 = 9q^2 = 3(3q^2); a^2 = (3q+1)^2 = 9q^2+6q+1 = 3(3q^2+2q)+1; a^2 = (3q+2)^2 = 9q^2+12q+4 = 3(3q^2+4q+1)+1"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Euclid's Division Lemma",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:37.029903",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140737_f3a099_04"
+    },
+    {
+      "question": "There is a circular path around a sports field. Sonia takes 18 minutes to drive one round of the field, while Ravi takes 12 minutes for the same. If they both start at the same point and at the same time, and go in the same direction, after how many minutes will they meet again at the starting point?",
+      "answer": "36 minutes",
+      "solution": {
+        "steps": [
+          "Determine that the time they meet again is the Least Common Multiple (LCM) of their individual times.",
+          "Find prime factors of 18 and 12: $18 = 2 \\times 3^2$ and $12 = 2^2 \\times 3^1$.",
+          "Calculate LCM by taking the highest power of each prime factor involved.",
+          "LCM = $2^2 \\times 3^2 = 4 \\times 9 = 36$."
+        ],
+        "derivation": "18 = 2 \\times 3^2; 12 = 2^2 \\times 3; \\text{LCM}(18, 12) = 2^2 \\times 3^2 = 36"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Applications of HCF and LCM",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:37.029929",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140737_f6318e_05"
+    }
+  ]
+}

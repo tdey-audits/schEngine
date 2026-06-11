@@ -1,0 +1,62 @@
+{
+  "batch_id": "20260610_122458_f680f0b0",
+  "generated_at": "2026-06-10T12:24:58.343208",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "factorisation method",
+  "difficulty": "simple",
+  "question_type": "vsa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the roots of the quadratic equation $x^2 + 5x - 24 = 0$ by the method of factorisation.",
+      "answer": "$x = 3, -8$",
+      "solution": {
+        "steps": [
+          "Find two numbers whose product is $-24$ and sum is $5$. These numbers are $8$ and $-3$.",
+          "Split the middle term $5x$ as $8x - 3x$ and factorise the expression to find the roots."
+        ],
+        "derivation": "$x^2 + 5x - 24 = 0 \\\\ x^2 + 8x - 3x - 24 = 0 \\\\ x(x + 8) - 3(x + 8) = 0 \\\\ (x - 3)(x + 8) = 0 \\\\ x - 3 = 0 \\text{ or } x + 8 = 0 \\\\ x = 3, x = -8$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-10T12:24:58.343032",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 24,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 23,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 21,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122458_2c763a_01"
+    }
+  ]
+}

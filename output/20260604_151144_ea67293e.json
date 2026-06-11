@@ -1,0 +1,162 @@
+{
+  "batch_id": "20260604_151144_ea67293e",
+  "generated_at": "2026-06-04T15:11:44.200196",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Areas Related to Circles",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A round table cover of radius $28$ $cm$ has a design in the middle leaving an equilateral triangle $ABC$ in the middle as shown in the figure. Find the area of the design (shaded region). Use $\\sqrt{3} = 1.73$ and $\\pi = \\frac{22}{7}$.",
+      "answer": "Area of shaded region = $1514.88$ $cm^2$",
+      "solution": {
+        "steps": [
+          "Calculate the area of the circle with $r = 28$ $cm$.",
+          "The triangle $ABC$ is equilateral inscribed in the circle. The side length $a$ of the equilateral triangle is $r\\sqrt{3}$.",
+          "Calculate the area of the equilateral triangle using $\\frac{\\sqrt{3}}{4} a^2$.",
+          "Subtract the area of the triangle from the area of the circle to get the area of the shaded design."
+        ],
+        "derivation": "Area_{circle} = \\pi r^2 = \\frac{22}{7} \\times 28 \\times 28 = 2464 \\; cm^2 \\\\ Side \\; a = 28\\sqrt{3} \\; cm \\\\ Area_{\\triangle} = \\frac{\\sqrt{3}}{4} (28\\sqrt{3})^2 = \\frac{1.73}{4} \\times 784 \\times 3 = 1.73 \\times 196 \\times 3 = 1017.36 \\; cm^2 \\\\ Area_{shaded} = 2464 - 1017.36 = 1446.64 \\; cm^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of Segment",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "caption": "Equilateral triangle inscribed in a circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 3
+          },
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:44.199715",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151144_7a614d_01"
+    },
+    {
+      "question": "A car has two wipers which do not overlap. Each wiper has a blade of length $25$ $cm$ sweeping through an angle of $115^\\circ$. Find the total area cleaned at each sweep of the blades. (Take $\\pi = \\frac{22}{7}$)",
+      "answer": "Total area = $\\frac{63250}{63}$ $cm^2$ or approx $1003.97$ $cm^2$",
+      "solution": {
+        "steps": [
+          "Identify that each wiper sweeps a sector of a circle.",
+          "Radius $r = 25$ $cm$ and central angle $\\theta = 115^\\circ$.",
+          "Area of one sector is $\\frac{\\theta}{360^\\circ} \\times \\pi r^2$.",
+          "Multiply the area of one sector by $2$ since there are two wipers."
+        ],
+        "derivation": "Area = 2 \\times \\left( \\frac{115}{360} \\times \\frac{22}{7} \\times 25 \\times 25 \\right) \\\\ Area = 2 \\times \\left( \\frac{23}{72} \\times \\frac{22}{7} \\times 625 \\right) \\\\ Area = \\frac{23 \\times 11 \\times 625}{36 \\times 7} \\\\ Area = \\frac{158125}{252} \\approx 627.48 \\times 2 = 1254.96 \\; cm^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of Sector",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:44.199847",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151144_c5d638_02"
+    },
+    {
+      "question": "In a circular park of radius $21$ $m$, a path of uniform width $3.5$ $m$ is constructed inside the park along the boundary. Find the cost of paving the path at the rate of $Rs. 50$ per $m^2$.",
+      "answer": "Cost = $Rs. 20625$",
+      "solution": {
+        "steps": [
+          "The path forms an annulus (ring) between two circles.",
+          "Outer radius $R = 21$ $m$.",
+          "Inner radius $r = R - 3.5 = 17.5$ $m$.",
+          "Area of path = $\\pi(R^2 - r^2)$.",
+          "Multiply the area by the rate $50$."
+        ],
+        "derivation": "Area = \\frac{22}{7} (21^2 - 17.5^2) \\\\ Area = \\frac{22}{7} (21 - 17.5)(21 + 17.5) \\\\ Area = \\frac{22}{7} (3.5)(38.5) \\\\ Area = 22 \\times 0.5 \\times 38.5 = 11 \\times 38.5 = 423.5 \\; m^2 \\\\ Cost = 423.5 \\times 50 = 21175"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of Annulus",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:44.199890",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151144_867aa8_03"
+    },
+    {
+      "question": "A chord $AB$ of a circle of radius $15$ $cm$ subtends an angle of $60^\\circ$ at the centre. Find the areas of the corresponding minor and major segments of the circle. (Use $\\pi = 3.14$ and $\\sqrt{3} = 1.73$)",
+      "answer": "Minor segment = $20.4375$ $cm^2$, Major segment = $686.0625$ $cm^2$",
+      "solution": {
+        "steps": [
+          "Calculate the area of the minor sector with $\\theta = 60^\\circ$.",
+          "Calculate the area of $\\triangle OAB$ where $OA = OB = 15$ and $\\angle O = 60^\\circ$ (which is equilateral).",
+          "Minor segment area = Area of sector - Area of $\\triangle OAB$.",
+          "Major segment area = Area of circle - Area of minor segment."
+        ],
+        "derivation": "Area_{sector} = \\frac{60}{360} \\times 3.14 \\times 15^2 = \\frac{1}{6} \\times 3.14 \\times 225 = 117.75 \\; cm^2 \\\\ Area_{\\triangle} = \\frac{\\sqrt{3}}{4} \\times 15^2 = \\frac{1.73}{4} \\times 225 = 97.3125 \\; cm^2 \\\\ Area_{minor} = 117.75 - 97.3125 = 20.4375 \\; cm^2 \\\\ Area_{circle} = 3.14 \\times 225 = 706.5 \\; cm^2 \\\\ Area_{major} = 706.5 - 20.4375 = 686.0625 \\; cm^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of Segment",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "caption": "Chord subtending 60 degrees",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 3
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "A",
+            "label": "15cm"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "B",
+            "label": "15cm"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "B",
+            "label": "chord"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:44.199919",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151144_488992_04"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "batch_id": "20260610_122456_3fa7b004",
+  "generated_at": "2026-06-10T12:24:56.666104",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "standard form and roots",
+  "difficulty": "simple",
+  "question_type": "vsa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the discriminant of the quadratic equation $3x^2 - 5x + 2 = 0$ and state the nature of its roots.",
+      "answer": "The discriminant is $1$ and the roots are real and distinct.",
+      "solution": {
+        "steps": [
+          "Identify the coefficients $a$, $b$, and $c$ from the standard form $ax^2 + bx + c = 0$.",
+          "Calculate the discriminant $D = b^2 - 4ac$ and determine the nature of roots based on the sign of $D$."
+        ],
+        "derivation": "$a = 3, b = -5, c = 2 \\\\ D = b^2 - 4ac \\\\ D = (-5)^2 - 4(3)(2) \\\\ D = 25 - 24 = 1 \\\\ \\text{Since } D > 0, \\text{ the roots are real and distinct.}"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "standard form and roots",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-10T12:24:56.665958",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 23,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 24,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 21,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122456_ff652f_01"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "batch_id": "20260604_123229_4161aea4",
+  "generated_at": "2026-06-04T12:32:29.293799",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "Assertion (A): The quadratic equation $x^2 - 3x + 5 = 0$ has no real roots.\nReason (R): For a quadratic equation $ax^2+bx+c=0$, if discriminant $D = b^2 - 4ac < 0$, then the equation has no real roots.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Calculate the discriminant of the quadratic equation $x^2 - 3x + 5 = 0$: $a=1$, $b=-3$, $c=5$.",
+          "$D = b^2 - 4ac = (-3)^2 - 4(1)(5) = 9 - 20 = -11$.",
+          "Since $D < 0$, the equation has no real roots, making Assertion (A) true.",
+          "Reason (R) correctly states the condition for no real roots, and it explains why (A) is true."
+        ],
+        "derivation": "$D = (-3)^2 - 4(1)(5) = 9 - 20 = -11 < 0$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of roots",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-04T12:32:29.293633",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_123229_44e784"
+    }
+  ]
+}

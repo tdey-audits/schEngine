@@ -1,0 +1,118 @@
+{
+  "batch_id": "20260604_141029_a9fa0008",
+  "generated_at": "2026-06-04T14:10:29.381352",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Prove that $\\frac{\\cos A - \\sin A + 1}{\\cos A + \\sin A - 1} = \\csc A + \\cot A$, using the identity $\\csc^2 A = 1 + \\cot^2 A$.",
+      "answer": "$\\csc A + \\cot A$",
+      "solution": {
+        "steps": [
+          "Divide numerator and denominator by $\\sin A$.",
+          "Rewrite the expression in terms of $\\cot A$ and $\\csc A$.",
+          "Replace $1$ in the numerator with $\\csc^2 A - \\cot^2 A$.",
+          "Factorize the numerator using $a^2 - b^2 = (a-b)(a+b)$.",
+          "Cancel the common term to simplify."
+        ],
+        "derivation": "\\frac{\\cot A - 1 + \\csc A}{\\cot A + 1 - \\csc A} = \\frac{\\cot A + \\csc A - (\\csc^2 A - \\cot^2 A)}{\\cot A - \\csc A + 1} = \\frac{(\\cot A + \\csc A) - (\\csc A - \\cot A)(\\csc A + \\cot A)}{\\cot A - \\csc A + 1} = \\frac{(\\cot A + \\csc A)(1 - (\\csc A - \\cot A))}{\\cot A - \\csc A + 1} = \\cot A + \\csc A"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:29.381255",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141029_f18b4d_01"
+    },
+    {
+      "question": "If $\\sin \\theta + \\cos \\theta = \\sqrt{3}$, then prove that $\\tan \\theta + \\cot \\theta = 1$.",
+      "answer": "$\\tan \\theta + \\cot \\theta = 1$",
+      "solution": {
+        "steps": [
+          "Square both sides of the given equation.",
+          "Expand $(\\sin \\theta + \\cos \\theta)^2$ to get $\\sin^2 \\theta + \\cos^2 \\theta + 2 \\sin \\theta \\cos \\theta = 3$.",
+          "Use identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$ to find $2 \\sin \\theta \\cos \\theta = 2$, so $\\sin \\theta \\cos \\theta = 1$.",
+          "Express $\\tan \\theta + \\cot \\theta$ as $\\frac{\\sin \\theta}{\\cos \\theta} + \\frac{\\cos \\theta}{\\sin \\theta}$.",
+          "Simplify the fraction to $\\frac{\\sin^2 \\theta + \\cos^2 \\theta}{\\sin \\theta \\cos \\theta} = \\frac{1}{1} = 1$."
+        ],
+        "derivation": "(\\sin \\theta + \\cos \\theta)^2 = 3 \\implies 1 + 2 \\sin \\theta \\cos \\theta = 3 \\implies \\sin \\theta \\cos \\theta = 1; \\quad \\tan \\theta + \\cot \\theta = \\frac{\\sin^2 \\theta + \\cos^2 \\theta}{\\sin \\theta \\cos \\theta} = \\frac{1}{\\sin \\theta \\cos \\theta} = 1"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:29.381293",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141029_eb0d7b_02"
+    },
+    {
+      "question": "Evaluate: $\\frac{5 \\cos^2 60^\\circ + 4 \\sec^2 30^\\circ - \\tan^2 45^\\circ}{\\sin^2 30^\\circ + \\cos^2 30^\\circ}$",
+      "answer": "$\\frac{67}{12}$",
+      "solution": {
+        "steps": [
+          "State values: $\\cos 60^\\circ = 1/2$, $\\sec 30^\\circ = 2/\\sqrt{3}$, $\\tan 45^\\circ = 1$, $\\sin 30^\\circ = 1/2$, $\\cos 30^\\circ = \\sqrt{3}/2$.",
+          "Substitute values into the expression.",
+          "Calculate squares: $\\cos^2 60^\\circ = 1/4$, $\\sec^2 30^\\circ = 4/3$, $\\tan^2 45^\\circ = 1$.",
+          "Simplify the numerator: $5(1/4) + 4(4/3) - 1$.",
+          "Simplify the denominator: $(1/2)^2 + (\\sqrt{3}/2)^2 = 1/4 + 3/4 = 1$.",
+          "Final calculation: $5/4 + 16/3 - 1 = (15 + 64 - 12)/12 = 67/12$."
+        ],
+        "derivation": "\\frac{5(1/4) + 4(4/3) - 1}{1} = \\frac{5}{4} + \\frac{16}{3} - 1 = \\frac{15 + 64 - 12}{12} = \\frac{67}{12}"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:29.381301",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141029_040a05_03"
+    },
+    {
+      "question": "If $\\sec \\theta = x + \\frac{1}{4x}$, prove that $\\sec \\theta + \\tan \\theta = 2x$ or $\\frac{1}{2x}$.",
+      "answer": "$\\sec \\theta + \\tan \\theta = 2x \\text{ or } \\frac{1}{2x}$",
+      "solution": {
+        "steps": [
+          "Use the identity $\\tan^2 \\theta = \\sec^2 \\theta - 1$.",
+          "Substitute $\\sec \\theta = x + \\frac{1}{4x}$.",
+          "Calculate $\\tan^2 \\theta = (x + \\frac{1}{4x})^2 - 1$.",
+          "Simplify to $\\tan^2 \\theta = x^2 + \\frac{1}{16x^2} + \\frac{1}{2} - 1 = x^2 + \\frac{1}{16x^2} - \\frac{1}{2}$.",
+          "Notice this is a perfect square: $(x - \\frac{1}{4x})^2$.",
+          "Thus $\\tan \\theta = \\pm(x - \\frac{1}{4x})$.",
+          "Sum $\\sec \\theta + \\tan \\theta$ for both cases."
+        ],
+        "derivation": "\\tan^2 \\theta = (x + \\frac{1}{4x})^2 - 1 = x^2 + \\frac{1}{16x^2} - \\frac{1}{2} = (x - \\frac{1}{4x})^2 \\implies \\tan \\theta = \\pm(x - \\frac{1}{4x}); \\quad \\text{Case 1: } (x + \\frac{1}{4x}) + (x - \\frac{1}{4x}) = 2x; \\quad \\text{Case 2: } (x + \\frac{1}{4x}) - (x - \\frac{1}{4x}) = \\frac{1}{2x}"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:29.381306",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141029_b1cc16_04"
+    }
+  ]
+}

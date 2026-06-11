@@ -1,0 +1,825 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag Solutions} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{questions}
+\question \textbf{1.} The angle of elevation of the top of a chimney from the top of a tower is $30^\circ$ and the angle of depression of the foot of the chimney from the top of the tower is $60^\circ$. If the tower is $40$ m high, find the height of the chimney.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{160/3 \text{ m}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $h$ be the height of the chimney above the tower level and $40$ m be the tower height.
+  \item Distance $d = 40 \cot(60^\circ) = \frac{40}{\sqrt{3}}$.
+  \item Height $h = d \tan(30^\circ) = \frac{40}{\sqrt{3}} \times \frac{1}{\sqrt{3}} = \frac{40}{3}$.
+  \item Total height = $40 + \frac{40}{3} = \frac{160}{3}$ m.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{H = 40 + \frac{40}{\sqrt{3}} \cdot \frac{1}{\sqrt{3}} = 40 + \frac{40}{3} = \frac{160}{3}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Application with two points}
+\vspace{0.3cm}
+
+\question \textbf{2.} A straight highway leads to the foot of a tower. A man standing at the top of the tower observes a car at an angle of depression of $30^\circ$, which is approaching the foot of the tower with a uniform speed. Six seconds later, the angle of depression of the car is found to be $60^\circ$. Find the time taken by the car to reach the foot of the tower from this point.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{3 \text{seconds}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $h$ be the height of the tower and $v$ be the uniform speed of the car.
+  \item Let $A$ be the top of the tower and $BC$ be the distance covered by the car in 6 seconds.
+  \item In $\triangle ABC$ (with angle $60^\circ$ at the car), $\tan 60^\circ = h/CD$.
+  \item In $\triangle ABD$ (with angle $30^\circ$ at the car), $\tan 30^\circ = h/BD$.
+  \item Relate the distances using the speed and time formula $d = v \times t$.
+  \item Solve for the time $t$ taken to travel the remaining distance $CD$.
+\end{enumerate}
+\textbf{Derivation:}
+Let  h  be height.  $\tan 60^\circ = h/x \implies x = h/\sqrt{3}$ .  $\tan 30^\circ = h/(x+d) \implies x+d = h\sqrt{3}$ . Substituting  x :  d = h$\sqrt{3} - h/\sqrt{3} = 2h/\sqrt{3}$ . Since distance  d  is covered in 6s, speed  v = d/6 = h/(3$\sqrt{3})$ . Time for distance  x  is  t = x/v = (h/$\sqrt{3}) / (h/3\sqrt{3}) = 3$  seconds.
+\hfill \textit{Some Applications of Trigonometry — Angle of depression}
+\vspace{0.3cm}
+
+\question \textbf{3.} The angle of elevation of the top of a tower from a point on the ground is $30^\circ$. On walking $40$ metres towards the tower, the angle of elevation changes to $60^\circ$. Find the height of the tower and the distance of the initial point from the tower.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Height} = 20\sqrt{3} m, \text{Distance} = 20\sqrt{3} + 40 m}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the height of the tower be $h$ and the distance from the second point be $x$.
+  \item Set up the equation for the first point: $\tan 30^\circ = h / (x + 40)$.
+  \item Set up the equation for the second point: $\tan 60^\circ = h / x$.
+  \item Express $h$ in terms of $x$ from the second equation.
+  \item Substitute into the first equation to solve for $x$ and then $h$.
+\end{enumerate}
+\textbf{Derivation:}
+1)  h/x = $\sqrt{3} \implies h = x\sqrt{3}$ . 2)  h/(x+40) = 1/$\sqrt{3} \implies x\sqrt{3} / (x+40) = 1/\sqrt{3} \implies 3x = x+40 \implies 2x = 40 \implies x = 20$ . Height  h = 20$\sqrt{3}  m.$ Initial distance  = 20 + 40 = 60  m.
+\hfill \textit{Some Applications of Trigonometry — Angle of elevation}
+\vspace{0.3cm}
+
+\question \textbf{4.} A vertical tower stands on a horizontal plane and is surmounted by a vertical flagstaff of height $6$ metres. At a point on the plane, the angle of elevation of the bottom and top of the flagstaff are $30^\circ$ and $60^\circ$ respectively. Find the height of the tower.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{3 \text{metres}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $h$ be the height of the tower and $d$ be the distance from the point to the base.
+  \item Write the equation for the bottom of the flagstaff: $\tan 30^\circ = h/d$.
+  \item Write the equation for the top of the flagstaff: $\tan 60^\circ = (h+6)/d$.
+  \item Solve the system of equations for $h$.
+\end{enumerate}
+\textbf{Derivation:}
+ d = h/$\tan 30^\circ = h\sqrt{3}$ . Substituting into second equation:  $\sqrt{3} = (h+6) / (h\sqrt{3}) \implies 3h = h+6 \implies 2h = 6 \implies h = 3  m.$
+\hfill \textit{Some Applications of Trigonometry — Height of tower with flagstaff}
+\vspace{0.3cm}
+
+\question \textbf{5.} From the top of a $7$ m high building, the angle of elevation of the top of a cable tower is $60^\circ$ and the angle of depression of its foot is $45^\circ$. Determine the height of the tower.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{7(1 + \sqrt{3}) \text{metres}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the building be $AB = 7$ m and the tower be $CD$.
+  \item Draw a horizontal line from $A$ to meet $CD$ at $E$. Thus $AE = BD$.
+  \item In $\triangle ABD$, since the angle of depression is $45^\circ$, $BD = AB = 7$ m.
+  \item In $\triangle ACE$, $\tan 60^\circ = CE / AE$.
+  \item Calculate $CE$ and add $ED = AB = 7$ m to get the total height.
+\end{enumerate}
+\textbf{Derivation:}
+ AE = BD = 7 . In  $\triangle$ ACE ,  CE = AE $\tan 60^\circ = 7\sqrt{3}$ . Total height  CD = CE + ED = 7$\sqrt{3} + 7 = 7(\sqrt{3} + 1)  m.$
+\hfill \textit{Some Applications of Trigonometry — Combined elevation and depression}
+\vspace{0.3cm}
+
+\question \textbf{6.} A tangent $PQ$ at a point $P$ of a circle of radius $5 \text{ cm}$ meets a line through the centre $O$ at a point $Q$ so that $OQ = 13 \text{ cm}$. The length of $PQ$ is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The radius is perpendicular to the tangent at the point of contact.
+  \item In the right-angled triangle $OPQ$, by Pythagoras theorem, $OQ^2 = OP^2 + PQ^2$.
+  \item Substitute the values: $13^2 = 5^2 + PQ^2$.
+  \item Solve for $PQ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{PQ = \sqrt{OQ^2 - OP^2} = \sqrt{13^2 - 5^2} = \sqrt{169 - 25} = \sqrt{144} = 12 \text{ cm}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{7.} If tangents $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\circ$, then $\angle POA$ is equal to:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The line segment joining the centre to the external point bisects the angle between the tangents.
+  \item Thus, $\angle APO = 80^\circ / 2 = 40^\circ$.
+  \item In $\triangle OAP$, $\angle OAP = 90^\circ$ (tangent is perpendicular to radius).
+  \item In $\triangle OAP$, $\angle POA = 180^\circ - 90^\circ - 40^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\angle POA = 180^\circ - 90^\circ - 40^\circ = 50^\circ}
+\end{center}
+\hfill \textit{Circles — Properties of tangents}
+\vspace{0.3cm}
+
+\question \textbf{8.} From a point $Q$, the length of the tangent to a circle is $24 \text{ cm}$ and the distance of $Q$ from the centre is $25 \text{ cm}$. The radius of the circle is:
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $r$ be the radius. The triangle formed by the radius, tangent, and line to the centre is right-angled.
+  \item $r^2 + 24^2 = 25^2$.
+  \item $r^2 = 625 - 576 = 49$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{r = \sqrt{49} = 7 \text{ cm}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{9.} Two concentric circles are of radii $5 \text{ cm}$ and $3 \text{ cm}$. The length of the chord of the larger circle which touches the smaller circle is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the chord be $AB$ and the point of contact be $M$. $OM \perp AB$.
+  \item In $\triangle OMA$, $OA=5$ (hypotenuse) and $OM=3$ (radius).
+  \item $AM = \sqrt{5^2 - 3^2} = 4$.
+  \item Since the perpendicular from the centre bisects the chord, $AB = 2 \times AM$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{AB = 2 \times 4 = 8 \text{ cm}}
+\end{center}
+\hfill \textit{Circles — Concentric circles}
+\vspace{0.3cm}
+
+\question \textbf{10.} The number of tangents that can be drawn from a point inside a circle is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item A tangent touches the circle at exactly one point.
+  \item A point inside the circle lies in the interior region.
+  \item Any line passing through an interior point will cut the circle at two points (secant).
+  \item Therefore, no tangent can be drawn.
+\end{enumerate}
+\textbf{Derivation:}
+Number of tangents = 0
+\hfill \textit{Circles — Tangents from a point}
+\vspace{0.3cm}
+
+\question \textbf{11.} Assertion (A): The length of a tangent drawn from an external point to a circle is always equal to the radius of the circle.
+Reason (R): The tangent at any point of a circle is perpendicular to the radius through the point of contact.
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check Assertion: The length of a tangent from an external point is not necessarily equal to the radius; they are independent.
+  \item Check Reason: This is a standard theorem (Theorem 10.1 of NCERT).
+  \item Conclusion: Assertion is false, Reason is true.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{A: \text{False}, R: \text{True}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{12.} Assertion (A): If the distance between the centres of two circles of radii $r_1$ and $r_2$ is $d$, then they touch each other externally if $d = r_1 + r_2$.
+Reason (R): The distance between the centres of two circles is the sum of their radii when they touch internally.
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check Assertion: If two circles touch externally, the distance between their centres is indeed the sum of their radii. True.
+  \item Check Reason: If two circles touch internally, the distance between their centres is $|r_1 - r_2|$. False.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{A: \text{True}, R: \text{False}}
+\end{center}
+\hfill \textit{Circles — Relative positions of circles}
+\vspace{0.3cm}
+
+\question \textbf{13.} Assertion (A): The number of tangents that can be drawn from a point inside a circle is zero.
+Reason (R): A tangent to a circle intersects the circle at only one point.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check Assertion: Points inside the circle cannot have tangents drawn to the circle. True.
+  \item Check Reason: By definition, a tangent touches the circle at exactly one point. True.
+  \item Conclusion: Reason explains why no tangent can be drawn from an internal point.
+\end{enumerate}
+\textbf{Derivation:}
+A: True, R: True, R explains A
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{14.} Assertion (A): The length of the tangent from a point $P$ at a distance of $10 \text{ cm}$ from the centre of a circle of radius $6 \text{ cm}$ is $8 \text{ cm}$.
+Reason (R): In a right triangle, the square of the hypotenuse equals the sum of the squares of the other two sides.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check Assertion: $L = \sqrt{d^2 - r^2} = \sqrt{10^2 - 6^2} = \sqrt{100 - 36} = \sqrt{64} = 8$. True.
+  \item Check Reason: Pythagoras theorem is used to calculate the tangent length. True.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{L = \sqrt{10^2 - 6^2} = 8}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{15.} Assertion (A): Two parallel tangents can be drawn to a circle at the ends of a diameter.
+Reason (R): Tangents at the ends of a diameter are perpendicular to the diameter.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check Assertion: Tangents at ends of diameter are parallel. True.
+  \item Check Reason: Since the radius is perpendicular to the tangent at the point of contact, and the diameter is a straight line, the tangents are perpendicular to the diameter and thus parallel to each other. True.
+\end{enumerate}
+\textbf{Derivation:}
+90\textasciicircum{}$\circ + 90^\circ = 180^\circ ($Co-interior angles)
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{16.} Two concentric circles are of radii $5 \text{ cm}$ and $3 \text{ cm}$. Find the length of the chord of the larger circle which touches the smaller circle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{8 \text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $O$ be the center, $AB$ be the chord of the larger circle tangent to the smaller circle at $P$.
+  \item Apply Pythagoras theorem in $\triangle OPA$ where $OA=5, OP=3$ to find $AP$, then double it.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{AP = \sqrt{OA^2 - OP^2} = \sqrt{5^2 - 3^2} = \sqrt{25-9} = 4 \text{ cm}. \text{ Chord } AB = 2 \times AP = 2 \times 4 = 8 \text{ cm}.}
+\end{center}
+\hfill \textit{Circles — Tangent to a circle}
+\vspace{0.3cm}
+
+\question \textbf{17.} If a tangent $PA$ drawn from an external point $P$ to a circle with center $O$ makes an angle of $30^\circ$ with the chord $AB$, where $AB$ is the diameter, find $\angle APB$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{60^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the property that the angle between tangent and chord equals the angle in the alternate segment.
+  \item In $\triangle PAB$, use the angle sum property or circle properties.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\angle ABP = 90^\circ (\text{angle in a semicircle}). \text{ Given } \angle PAB = 30^\circ. \text{ In } \triangle PAB, \angle APB = 180^\circ - (90^\circ + 30^\circ) = 60^\circ.}
+\end{center}
+\hfill \textit{Circles — Tangents and chords}
+\vspace{0.3cm}
+
+\question \textbf{18.} In the given figure, if $\angle OAB = 40^\circ$, find $\angle ACB$ where $O$ is the center of the circle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{50^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify that $\triangle OAB$ is isosceles with $OA=OB$.
+  \item Find $\angle AOB$ and use the theorem that the angle at the center is double the angle at the circumference.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\angle OBA = \angle OAB = 40^\circ. \angle AOB = 180^\circ - (40^\circ + 40^\circ) = 100^\circ. \angle ACB = \frac{1}{2} \angle AOB = 50^\circ.}
+\end{center}
+\hfill \textit{Circles — Angle subtended by arc}
+\vspace{0.3cm}
+
+\question \textbf{19.} A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. If $AB = 6 \text{ cm}$, $BC = 7 \text{ cm}$ and $CD = 4 \text{ cm}$, find the length of $AD$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{3 \text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the property that sums of opposite sides of a circumscribed quadrilateral are equal.
+  \item Substitute the given values into $AB + CD = BC + AD$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+AB + CD = BC + AD \\
+\implies 6 + 4 = 7 + AD \\
+\implies 10 = 7 + AD \\
+\implies AD = 3 \text{ cm}.
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents from external point}
+\vspace{0.3cm}
+
+\question \textbf{20.} Two tangents $TP$ and $TQ$ are drawn to a circle with center $O$ from an external point $T$. If $\angle PTQ = 70^\circ$, find $\angle POQ$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{110^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the property that the opposite angles of a quadrilateral formed by two tangents and two radii are supplementary.
+  \item Subtract the given angle from $180^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\angle OPT = \angle OQT = 90^\circ. \text{ In quadrilateral } \text{OPTQ}, \angle POQ + \angle PTQ = 180^\circ. \angle POQ = 180^\circ - 70^\circ = 110^\circ.}
+\end{center}
+\hfill \textit{Circles — Tangent properties}
+\vspace{0.3cm}
+
+\question \textbf{21.} A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{AB + CD = AD + BC}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the theorem that tangents drawn from an external point to a circle are equal in length.
+  \item Identify pairs of equal tangents from vertices A, B, C, and D.
+  \item Add the four equations to group the sides of the quadrilateral.
+  \item Substitute the grouped segments to show the sum of opposite sides is equal.
+\end{enumerate}
+\textbf{Derivation:}
+Let points of contact be P, Q, R, S on AB, BC, CD, DA respectively. AP=AS, BP=BQ, CQ=CR, DR=DS. Adding them: (AP+BP)+(CR+DR) = (AS+DS)+(BQ+CQ) => AB+CD = AD+BC.
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{22.} Two concentric circles are of radii $5\text{ cm}$ and $3\text{ cm}$. Find the length of the chord of the larger circle which touches the smaller circle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{8\text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Draw the radius to the point of contact, which is perpendicular to the tangent.
+  \item Form a right-angled triangle with the radius of the smaller circle, the radius of the larger circle, and half the chord.
+  \item Apply Pythagoras theorem to find the length of half the chord.
+  \item Multiply the result by 2 to get the full chord length.
+\end{enumerate}
+\textbf{Derivation:}
+r\_1=5, r\_2=3. Let half-chord be x. x\textasciicircum{}2 + 3\textasciicircum{}2 = 5\textasciicircum{}2 => x\textasciicircum{}2 = 25 - 9 = 16 => x = 4. Chord length = 2x = 8$\text{ cm}.$
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{23.} If a tangent $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\circ$, then find $\angle POA$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{50^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify that the line segment $OP$ bisects the angle between the tangents.
+  \item Calculate the angle $\angle APO$ as half of $\angle APB$.
+  \item Use the property that the radius is perpendicular to the tangent at the point of contact.
+  \item Solve for $\angle POA$ in the right-angled triangle $\triangle OAP$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\angle APB = 80^\circ \\
+\implies \angle APO = 40^\circ. \angle OAP = 90^\circ. \angle POA = 180^\circ - (90^\circ + 40^\circ) = 50^\circ.
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{24.} Prove that the lengths of tangents drawn from an external point to a circle are equal.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Proof}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Construct a circle with center O and external point P.
+  \item Draw radii OA and OB to the points of contact A and B.
+  \item Consider the two triangles $\triangle OAP$ and $\triangle OBP$.
+  \item Prove congruence using RHS criterion and conclude PA = PB by CPCT.
+\end{enumerate}
+\textbf{Derivation:}
+In $\triangle$ OAP and $\triangle$ OBP: OA=OB (radii), OP=OP (common), $\angle$ OAP=$\angle$ OBP=90\textasciicircum{}$\circ.$ By RHS, $\triangle$ OAP $\cong \triangle$ OBP. Thus, PA=PB.
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{25.} A tangent $PQ$ at a point $P$ of a circle of radius $5\text{ cm}$ meets a line through the centre $O$ at a point $Q$ so that $OQ = 12\text{ cm}$. Find the length $PQ$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\sqrt{119}\text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recognize that the tangent $PQ$ is perpendicular to the radius $OP$.
+  \item Identify $\triangle OPQ$ as a right-angled triangle with $\angle OPQ = 90^\circ$.
+  \item Apply the Pythagoras theorem: $OQ^2 = OP^2 + PQ^2$.
+  \item Substitute the given values and solve for $PQ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+OP=5, OQ=12. 12^2 = 5^2 + PQ^2 \\
+\implies 144 = 25 + PQ^2 \\
+\implies PQ^2 = 119 \\
+\implies PQ = \sqrt{119}\text{ cm}.
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{26.} Prove that the lengths of tangents drawn from an external point to a circle are equal.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{PA = PB}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Draw a circle with center O and an external point P.
+  \item Draw tangents PA and PB touching the circle at A and B respectively.
+  \item Join OA, OB, and OP.
+  \item Consider triangles OAP and OBP.
+  \item Show that the triangles are congruent by RHS congruence criterion.
+  \item \(
+\text{Conclude that PA} = \text{PB by CPCT}.
+\)
+\end{enumerate}
+\textbf{Derivation:}
+In  $\triangle$ OAP  and  $\triangle$ OBP :  OA = OB  (radii of the same circle).  $\angle$ OAP = $\angle$ OBP = 90\textasciicircum{}$\circ  ($tangent is perpendicular to radius at point of contact).  OP = OP  (common side). Therefore,  $\triangle$ OAP $\cong \triangle$ OBP  by RHS criterion. Hence,  PA = PB  by CPCT.
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{27.} $PQ$ is a chord of length $8\text{ cm}$ of a circle of radius $5\text{ cm}$. The tangents at $P$ and $Q$ intersect at a point $T$. Find the length of $TP$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{TP = 20/3 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the center be O. Join OP and OQ.
+  \item Let OT intersect PQ at R. Since OP=OQ, $\triangle OPQ$ is isosceles.
+  \item OT is the perpendicular bisector of PQ, so PR = 4 cm.
+  \item In $\triangle OPR$, $OR = \sqrt{OP^2 - PR^2} = \sqrt{5^2 - 4^2} = 3\text{ cm}$.
+  \item In $\triangle OPT$, $\angle OPT = 90^\circ$. Using similar triangles $\triangle PRT \sim \triangle OPT$.
+  \item Set up the ratio: $TP/OP = PR/OR$. Solve for TP.
+\end{enumerate}
+\textbf{Derivation:}
+In  $\triangle$ OPT ,  PR $\perp$ OT . Thus,  $\triangle$ PRT $\sim \triangle$ OPT  (AA similarity). Therefore,  TP/OP = PR/OR .  TP/5 = 4/3 .  TP = 20/3$\text{ cm}$ .
+\hfill \textit{Circles — Properties of tangents}
+\vspace{0.3cm}
+
+\question \textbf{28.} A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{AB + CD = AD + BC}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the property that tangents from an external point to a circle are equal.
+  \item Let the points of contact be P, Q, R, S on sides AB, BC, CD, DA respectively.
+  \item \(
+AP = AS, BP = BQ, CQ = CR, DR = DS.
+\)
+  \item Sum the left and right sides of these equations.
+  \item Group the terms to form the sides of the quadrilateral.
+  \item Conclude the result.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{AP=AS, BP=BQ, CR=CQ, DR=DS. AB+CD = (AP+PB) + (CR+RD) = (AS+BQ) + (CQ+DS) = (AS+DS) + (BQ+CQ) = AD+BC.}
+\end{center}
+\hfill \textit{Circles — Circumscribed quadrilaterals}
+\vspace{0.3cm}
+
+\question \textbf{29.} Two concentric circles are of radii $5\text{ cm}$ and $3\text{ cm}$. Find the length of the chord of the larger circle which touches the smaller circle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{8 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let O be the common center. Let AB be the chord of the larger circle touching the smaller circle at point P.
+  \item Join OP. Since AB is a tangent to the smaller circle, OP $\perp$ AB.
+  \item OP = 3 cm (radius of smaller circle). OA = 5 cm (radius of larger circle).
+  \item In right $\triangle OPA$, use Pythagoras theorem to find AP.
+  \item AP = $\sqrt{OA^2 - OP^2} = \sqrt{5^2 - 3^2} = 4\text{ cm}$.
+  \item Since the perpendicular from the center bisects the chord, AB = 2 * AP.
+\end{enumerate}
+\textbf{Derivation:}
+In  $\triangle$ OPA ,  OA\textasciicircum{}2 = OP\textasciicircum{}2 + AP\textasciicircum{}2 $\implies 5^2 = 3^2 +$ AP\textasciicircum{}2 $\implies 25 = 9 +$ AP\textasciicircum{}2 $\implies$ AP\textasciicircum{}2 = 16 $\implies$ AP = 4$\text{ cm}$ . Since  OP $\perp$ AB ,  AP = PB = 4$\text{ cm}$ . Therefore,  AB = 4 + 4 = 8$\text{ cm}$ .
+\hfill \textit{Circles — Concentric circles}
+\vspace{0.3cm}
+
+\question \textbf{30.} If the circumference of a circle is $176\text{ cm}$, then its radius is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the formula for circumference: $C = 2\pi r$
+  \item Substitute $C = 176$ and $\pi = \frac{22}{7}$
+  \item Solve for $r$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+176 = 2 \times \frac{22}{7} \times r \\
+\implies 176 = \frac{44}{7} \times r \\
+\implies r = \frac{176 \times 7}{44} = 4 \times 7 = 28 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Circumference of a Circle}
+\vspace{0.3cm}
+
+\question \textbf{31.} The area of a circle whose diameter is $14\text{ cm}$ is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Find the radius: $r = \frac{d}{2} = \frac{14}{2} = 7\text{ cm}$
+  \item Use the area formula: $A = \pi r^2$
+  \item Calculate $A$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{A = \frac{22}{7} \times 7^2 = \frac{22}{7} \times 49 = 22 \times 7 = 154 \text{ cm}^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Circle}
+\vspace{0.3cm}
+
+\question \textbf{32.} The area of a quadrant of a circle with radius $7\text{ cm}$ is:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the formula for area of a quadrant: $A = \frac{1}{4} \pi r^2$
+  \item Substitute $r = 7$
+  \item Calculate the result
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{A = \frac{1}{4} \times \frac{22}{7} \times 7^2 = \frac{1}{4} \times 154 = 38.5 \text{ cm}^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Sector}
+\vspace{0.3cm}
+
+\question \textbf{33.} If the perimeter of a semi-circular protractor is $36\text{ cm}$, then its diameter is:
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The perimeter of a semi-circle is $\pi r + 2r = r(\pi + 2)$
+  \item Set $r(\frac{22}{7} + 2) = 36$
+  \item Solve for $r$ and find $d = 2r$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+r(\frac{22+14}{7}) = 36 \\
+\implies r(\frac{36}{7}) = 36 \\
+\implies r = 7 \\
+\implies d = 2 \times 7 = 14 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Circumference of a Circle}
+\vspace{0.3cm}
+
+\question \textbf{34.} The area of a sector of a circle with radius $6\text{ cm}$ and central angle $60^\circ$ is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the formula: $A = \frac{\theta}{360^\circ} \times \pi r^2$
+  \item Substitute $\theta = 60^\circ$ and $r = 6$
+  \item Calculate
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{A = \frac{60}{360} \times \pi \times 6^2 = \frac{1}{6} \times \pi \times 36 = 6\pi \text{ cm}^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Sector}
+\vspace{0.3cm}
+
+\question \textbf{35.} Assertion (A): The area of a circle with radius $7$ cm is $154$ cm$^2$. Reason (R): The area of a circle is given by $\pi r^2$, where $r$ is the radius.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Formula for area of a circle is $\pi r^2$.
+  \item Substitute $r = 7$: $\frac{22}{7} \times 7 \times 7 = 22 \times 7 = 154$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Area} = \pi r^2 = \frac{22}{7} \times (7)^2 = 154 \text{ cm}^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a circle}
+\vspace{0.3cm}
+
+\question \textbf{36.} Assertion (A): The circumference of a circle with diameter $14$ cm is $44$ cm. Reason (R): The circumference of a circle is given by $\pi d$, where $d$ is the diameter.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Circumference formula is $\pi d$.
+  \item Substitute $d = 14$: $\frac{22}{7} \times 14 = 22 \times 2 = 44$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{C = \pi d = \frac{22}{7} \times 14 = 44 \text{ cm}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Circumference of a circle}
+\vspace{0.3cm}
+
+\question \textbf{37.} Assertion (A): The area of a semicircle with radius $r$ is $\frac{1}{2} \pi r^2$. Reason (R): The circumference of a semicircle is $\pi r$.
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Area of semicircle is indeed $\frac{1}{2} \pi r^2$ (True).
+  \item Circumference of a semicircle includes the diameter, so it is $\pi r + 2r$ (False).
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Area} = \frac{1}{2} \pi r^2; \text{Perimeter} = \pi r + 2r}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of semicircle}
+\vspace{0.3cm}
+
+\question \textbf{38.} Assertion (A): If the perimeter and the area of a circle are numerically equal, then the radius of the circle is $2$ units. Reason (R): Circumference $2\pi r = \pi r^2$ implies $r=2$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Set $2\pi r = \pi r^2$.
+  \item Divide by $\pi r$ (since $r \neq 0$), we get $2 = r$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+2\pi r = \pi r^2 \\
+\implies r = \frac{2\pi r}{\pi r} = 2
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Numerical equality of area and circumference}
+\vspace{0.3cm}
+
+\question \textbf{39.} Assertion (A): The area of a sector of a circle with radius $r$ and central angle $\theta$ is $\frac{\theta}{360} \times \pi r^2$. Reason (R): The length of the arc of a sector is $\frac{\theta}{360} \times \pi r^2$.
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Area of sector formula is correct (True).
+  \item Arc length formula is $\frac{\theta}{360} \times 2\pi r$ (False).
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Area} = \frac{\theta}{360} \pi r^2; \text{Length} = \frac{\theta}{360} 2\pi r}
+\end{center}
+\hfill \textit{Areas Related to Circles — Sector of a circle}
+\vspace{0.3cm}
+
+\question \textbf{40.} Find the area of a sector of a circle with radius $6 \text{ cm}$ if the angle of the sector is $60^\circ$. (Use $\pi = 3.14$)
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{18.84 \text{ cm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the formula for the area of a sector: $A = \frac{\theta}{360^\circ} \times \pi r^2$.
+  \item Substitute the given values $r=6$ and $\theta=60$ into the formula and calculate.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{A = \frac{60}{360} \times 3.14 \times 6^2 = \frac{1}{6} \times 3.14 \times 36 = 3.14 \times 6 = 18.84 \text{ cm}^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Sector}
+\vspace{0.3cm}
+
+\end{questions}
+
+\end{document}

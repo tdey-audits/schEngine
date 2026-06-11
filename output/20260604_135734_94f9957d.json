@@ -1,0 +1,160 @@
+{
+  "batch_id": "20260604_135734_94f9957d",
+  "generated_at": "2026-06-04T13:57:34.190327",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Statistics",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The mean of the first five natural numbers is 3. Reason (R): The mean of a set of observations is calculated by dividing the sum of observations by the total number of observations.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Sum of first five natural numbers = 1+2+3+4+5 = 15",
+          "Mean = Sum / Count = 15 / 5 = 3",
+          "The formula for mean is standard definition."
+        ],
+        "derivation": "\\text{Mean} = \\frac{\\sum x_i}{n} = \\frac{1+2+3+4+5}{5} = \\frac{15}{5} = 3"
+      },
+      "topic": "Statistics",
+      "subtopic": "Mean of ungrouped data",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:34.190208",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135734_38fdec_01"
+    },
+    {
+      "question": "Assertion (A): The mode of the data 2, 3, 4, 3, 2, 3 is 3. Reason (R): Mode is the value that appears most frequently in a data set.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Count the frequency of each number: 2 appears twice, 3 appears three times, 4 appears once.",
+          "The number with the highest frequency is 3.",
+          "Definition of mode is correctly stated in R."
+        ],
+        "derivation": "\\text{Frequency of 2} = 2, \\text{Frequency of 3} = 3, \\text{Frequency of 4} = 1. \\therefore \\text{Mode} = 3"
+      },
+      "topic": "Statistics",
+      "subtopic": "Mode of ungrouped data",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:34.190244",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135734_af32aa_02"
+    },
+    {
+      "question": "Assertion (A): Median of the data 5, 1, 3, 2, 4 is 3. Reason (R): Median is the middle value when data is arranged in ascending or descending order.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Arrange in ascending order: 1, 2, 3, 4, 5.",
+          "The middle value is the 3rd term, which is 3.",
+          "Definition of median is correctly stated in R."
+        ],
+        "derivation": "\\text{Sorted data: } 1, 2, 3, 4, 5. \\text{ Middle term is } 3."
+      },
+      "topic": "Statistics",
+      "subtopic": "Median of ungrouped data",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:34.190252",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135734_cdcb58_03"
+    },
+    {
+      "question": "Assertion (A): The range of the data 10, 15, 20, 25, 30 is 20. Reason (R): Range is defined as the difference between the maximum and minimum values of the data.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Max value = 30, Min value = 10.",
+          "Range = Max - Min = 30 - 10 = 20.",
+          "Definition of range is correctly stated in R."
+        ],
+        "derivation": "\\text{Range} = 30 - 10 = 20"
+      },
+      "topic": "Statistics",
+      "subtopic": "Range",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:34.190258",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135734_bc9a8e_04"
+    },
+    {
+      "question": "Assertion (A): The sum of deviations of the observations $x_i$ from their mean $\\bar{x}$ is 0. Reason (R): $\\sum (x_i - \\bar{x}) = 0$ is a fundamental property of the arithmetic mean.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Expand the summation: $\\sum x_i - \\sum \\bar{x}$.",
+          "Since $\\sum \\bar{x} = n \\times \\bar{x}$ and $\\bar{x} = \\frac{\\sum x_i}{n}$, the expression becomes $\\sum x_i - n(\\frac{\\sum x_i}{n}) = 0$.",
+          "The reason is the correct mathematical justification."
+        ],
+        "derivation": "\\sum_{i=1}^{n} (x_i - \\bar{x}) = \\sum x_i - \\sum \\bar{x} = \\sum x_i - n\\bar{x} = \\sum x_i - n(\\frac{\\sum x_i}{n}) = 0"
+      },
+      "topic": "Statistics",
+      "subtopic": "Properties of Mean",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:34.190264",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135734_9a1b48_05"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "batch_id": "20260610_122445_199d9f85",
+  "generated_at": "2026-06-10T12:24:45.324176",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": "tangent to a circle",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In a circle with centre $O$, a tangent $PT$ is drawn from an external point $P$ such that the distance $OP = 13$ $cm$. If the radius of the circle is $5$ $cm$, then the length of the tangent $PT$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify that the radius $OT$ is perpendicular to the tangent $PT$ at the point of contact $T$.",
+          "Observe that $\triangle OTP$ is a right-angled triangle with $\\angle OTP = 90^\\circ$.",
+          "Apply the Pythagoras theorem: $OP^2 = OT^2 + PT^2$.",
+          "Substitute the given values: $13^2 = 5^2 + PT^2$.",
+          "Solve for $PT$: $169 = 25 + PT^2 \\Rightarrow PT^2 = 144 \\Rightarrow PT = 12$ $cm$."
+        ],
+        "derivation": "$OP^2 = OT^2 + PT^2 \\\\ 13^2 = 5^2 + PT^2 \\\\ 169 = 25 + PT^2 \\\\ PT^2 = 169 - 25 \\\\ PT^2 = 144 \\\\ PT = \\sqrt{144} = 12$"
+      },
+      "topic": "Circles",
+      "subtopic": "tangent to a circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 8 cm",
+        "(B) 10 cm",
+        "(C) 12 cm",
+        "(D) 15 cm"
+      ],
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "caption": "Tangent PT to a circle with centre O",
+        "scale": 1.0,
+        "elements": [
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O"
+          },
+          {
+            "kind": "point",
+            "id": "T",
+            "x": 0,
+            "y": 5,
+            "label": "T"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 12,
+            "y": 0,
+            "label": "P"
+          },
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 5
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "T",
+            "label": "5 cm"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "P",
+            "label": "13 cm"
+          },
+          {
+            "kind": "segment",
+            "from": "T",
+            "to": "P",
+            "label": "PT"
+          },
+          {
+            "kind": "right_angle",
+            "points": [
+              "O",
+              "T",
+              "P"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-10T12:24:45.324028",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_10 (Circles).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 2,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 1,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122445_733948_01"
+    }
+  ]
+}

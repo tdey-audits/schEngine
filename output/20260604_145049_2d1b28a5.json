@@ -1,0 +1,243 @@
+{
+  "batch_id": "20260604_145049_2d1b28a5",
+  "generated_at": "2026-06-04T14:50:49.485542",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Prove that the lengths of tangents drawn from an external point to a circle are equal. Using this, if a quadrilateral $ABCD$ is drawn to circumscribe a circle, prove that $AB + CD = AD + BC$.",
+      "answer": "Proof based on RHS congruence and segment addition property.",
+      "solution": {
+        "steps": [
+          "State the theorem: Tangents from an external point to a circle are equal.",
+          "Use the property $AP=AS$, $BP=BQ$, $CQ=CR$, and $DR=DS$.",
+          "Sum the left-hand sides and right-hand sides of these equations.",
+          "Group the segments to form $AB, BC, CD,$ and $AD$.",
+          "Conclude that $AB + CD = AD + BC$."
+        ],
+        "derivation": "AP=AS, \\ BP=BQ, \\ CQ=CR, \\ DR=DS \\ (Tangents \\ from \\ ext. \\ point) \\\\ AB+CD = (AP+PB) + (CR+RD) \\\\ AB+CD = (AS+BQ) + (CQ+DS) \\\\ AB+CD = (AS+DS) + (BQ+CQ) \\\\ AB+CD = AD + BC"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "polygon",
+            "points": [
+              "P",
+              "Q",
+              "R",
+              "S"
+            ]
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": -3,
+            "y": 3
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 3,
+            "y": 3
+          },
+          {
+            "kind": "point",
+            "id": "C",
+            "x": 3,
+            "y": -3
+          },
+          {
+            "kind": "point",
+            "id": "D",
+            "x": -3,
+            "y": -3
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:49.485274",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145049_3c534a_01"
+    },
+    {
+      "question": "Two concentric circles are of radii $5 \\ cm$ and $3 \\ cm$. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "answer": "$8 \\ cm$",
+      "solution": {
+        "steps": [
+          "Let $O$ be the common center. Let $AB$ be the chord of the larger circle touching the smaller at $P$.",
+          "Since $OP$ is the radius to the point of contact, $OP \\perp AB$.",
+          "In $\\triangle OPA$, $OA = 5 \\ cm$ (hypotenuse) and $OP = 3 \\ cm$.",
+          "Apply Pythagoras theorem: $AP^2 = OA^2 - OP^2 = 25 - 9 = 16$.",
+          "So, $AP = 4 \\ cm$.",
+          "Since the perpendicular from the center bisects the chord, $AB = 2 \\times AP = 8 \\ cm$."
+        ],
+        "derivation": "OA^2 = OP^2 + AP^2 \\\\ 5^2 = 3^2 + AP^2 \\\\ 25 = 9 + AP^2 \\\\ AP^2 = 16 \\\\ AP = 4 \\\\ AB = 2 \\times 4 = 8"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangent properties",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 3
+          },
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 5
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "B",
+            "label": "Chord"
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "P",
+            "label": "3 cm"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:49.485349",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145049_e2432e_02"
+    },
+    {
+      "question": "In $\\triangle ABC$, a circle is inscribed touching $BC, CA,$ and $AB$ at $D, E,$ and $F$ respectively. If $AB = 12 \\ cm, BC = 8 \\ cm,$ and $AC = 10 \\ cm$, find the lengths $AD, BE,$ and $CF$.",
+      "answer": "$AD = 7 \\ cm, BE = 5 \\ cm, CF = 3 \\ cm$",
+      "solution": {
+        "steps": [
+          "Let $AF = AE = x, BD = BF = y, CD = CE = z$.",
+          "Setup system of equations: $x+y=12, y+z=8, z+x=10$.",
+          "Add all equations: $2(x+y+z) = 30 \\Rightarrow x+y+z = 15$.",
+          "Solve for $x, y, z$: $z = 15-12 = 3, x = 15-8 = 7, y = 15-10 = 5$.",
+          "Identify $AD=x=7, BE=y=5, CF=z=3$."
+        ],
+        "derivation": "x+y=12, \\ y+z=8, \\ z+x=10 \\\\ 2(x+y+z)=30 \\\\ x+y+z=15 \\\\ x = 15-8=7, \\ y=15-10=5, \\ z=15-12=3"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents from an external point",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:49.485371",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145049_4fa8bb_03"
+    },
+    {
+      "question": "Prove that the angle between the two tangents drawn from an external point to a circle is supplementary to the angle subtended by the line segment joining the points of contact at the centre.",
+      "answer": "The sum of the angles is $180^\\circ$.",
+      "solution": {
+        "steps": [
+          "Let $PA$ and $PB$ be tangents from point $P$ to a circle with center $O$.",
+          "$OA \\perp PA$ and $OB \\perp PB$ (radius perpendicular to tangent).",
+          "In quadrilateral $OAPB$, the sum of angles is $360^\\circ$.",
+          "$\\angle OAP = 90^\\circ$ and $\\angle OBP = 90^\\circ$.",
+          "Thus, $\\angle APB + \\angle AOB = 360^\\circ - (90^\\circ + 90^\\circ) = 180^\\circ$."
+        ],
+        "derivation": "\\angle OAP + \\angle OBP + \\angle APB + \\angle AOB = 360^\\circ \\\\ 90^\\circ + 90^\\circ + \\angle APB + \\angle AOB = 360^\\circ \\\\ \\angle APB + \\angle AOB = 180^\\circ"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 5,
+            "y": 0
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 1.4,
+            "y": 1.4
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 1.4,
+            "y": -1.4
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "A"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "B"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "A"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "B"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:49.485388",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145049_11eacb_04"
+    }
+  ]
+}

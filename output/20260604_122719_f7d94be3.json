@@ -1,0 +1,43 @@
+{
+  "batch_id": "20260604_122719_f7d94be3",
+  "generated_at": "2026-06-04T12:27:19.265198",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "A train travels a distance of 480 km at a uniform speed. If the speed had been 8 km/h less, then it would have taken 3 hours more to cover the same distance. Find the usual speed of the train. (Note: Form a quadratic equation and solve it.)",
+      "answer": "Usual speed of the train = $40$ km/h",
+      "solution": {
+        "steps": [
+          "Let the usual speed of the train be $x$ km/h.",
+          "Time taken at usual speed = distance/speed = $\\frac{480}{x}$ hours.",
+          "If speed is 8 km/h less, new speed = $(x - 8)$ km/h.",
+          "Time taken at reduced speed = $\\frac{480}{x - 8}$ hours.",
+          "According to the problem, the time at reduced speed is 3 hours more than the usual time: $\\frac{480}{x - 8} = \\frac{480}{x} + 3$.",
+          "Multiply both sides by $x(x - 8)$ to clear denominators: $480x = 480(x - 8) + 3x(x - 8)$.",
+          "Simplify: $480x = 480x - 3840 + 3x^2 - 24x$.",
+          "Cancel $480x$ on both sides: $0 = -3840 + 3x^2 - 24x$.",
+          "Rearrange: $3x^2 - 24x - 3840 = 0$. Divide through by 3: $x^2 - 8x - 1280 = 0$.",
+          "Solve the quadratic equation: $x^2 - 8x - 1280 = 0$. Using quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$ with $a=1$, $b=-8$, $c=-1280$.",
+          "Discriminant $D = (-8)^2 - 4(1)(-1280) = 64 + 5120 = 5184$.",
+          "So $x = \\frac{8 \\pm \\sqrt{5184}}{2} = \\frac{8 \\pm 72}{2}$.",
+          "Thus $x = \\frac{8 + 72}{2} = 40$ or $x = \\frac{8 - 72}{2} = -32$.",
+          "Since speed cannot be negative, $x = 40$ km/h."
+        ],
+        "derivation": "Let usual speed = $x$ km/h. Usual time = $\\frac{480}{x}$ h. Reduced speed = $(x-8)$ km/h. New time = $\\frac{480}{x-8}$ h. Condition: $\\frac{480}{x-8} = \\frac{480}{x} + 3$. Multiply by $x(x-8)$: $480x = 480(x-8) + 3x(x-8)$. Simplify: $480x = 480x - 3840 + 3x^2 - 24x$. Cancel $480x$: $0 = 3x^2 - 24x - 3840$. Divide by 3: $x^2 - 8x - 1280 = 0$. Quadratic formula: $x = \\frac{8 \\pm \\sqrt{64 + 5120}}{2} = \\frac{8 \\pm 72}{2}$. Positive root: $x = 40$."
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Word Problems (Speed-Distance-Time)",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T12:27:19.265091",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_122719_87c070"
+    }
+  ]
+}

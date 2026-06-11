@@ -1,0 +1,114 @@
+{
+  "batch_id": "20260609_155840_9ee4a564",
+  "generated_at": "2026-06-09T15:58:40.261620",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If the quadratic equation $x^2 + kx + 64 = 0$ has real and equal roots, then the positive value of $k$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "A quadratic equation $ax^2 + bx + c = 0$ has real and equal roots if its discriminant $D = b^2 - 4ac$ is equal to $0$.",
+          "Identify the coefficients: $a = 1$, $b = k$, and $c = 64$.",
+          "Substitute the coefficients into the discriminant formula: $k^2 - 4(1)(64) = 0$.",
+          "Simplify the equation to $k^2 - 256 = 0$.",
+          "Solve for $k$: $k^2 = 256$, which gives $k = \\pm 16$.",
+          "Since the question asks for the positive value, $k = 16$."
+        ],
+        "derivation": "$D = b^2 - 4ac = 0 \\\\ k^2 - 4(1)(64) = 0 \\\\ k^2 - 256 = 0 \\\\ k^2 = 256 \\\\ k = \\pm \\sqrt{256} \\\\ k = \\pm 16 \\\\ \\text{For } k > 0, k = 16$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of roots",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 8",
+        "(B) 32",
+        "(C) 16",
+        "(D) 64"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T15:58:40.261348",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_155840_7ef5cd_01"
+    }
+  ]
+}

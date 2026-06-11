@@ -1,0 +1,297 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag} \\[0.3cm]
+  \textbf{Time Allowed: 3 Hours} \hfill \textbf{Maximum Marks: 80} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\noindent\textbf{General Instructions:}
+\begin{enumerate}
+  \item {\normalfont\normalcolor This question paper contains 40 questions. All questions are compulsory.}
+  \item {\normalfont\normalcolor Questions are grouped into sections A through E.}
+  \item {\normalfont\normalcolor Use of calculators is NOT permitted.}
+\end{enumerate}
+\bigskip
+\noindent\textbf{\large Section A: Multiple Choice \& Assertion-Reason (1 mark each)}
+
+\begin{questions}
+\question[1] If $p(x) = g(x) \cdot q(x) + r(x)$, and $p(x) = x^2 + 3x + 2$, $g(x) = x + 1$, then the quotient $q(x)$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) x + 2
+  \item (B) x - 2
+  \item (C) x + 1
+  \item (D) x - 1
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] According to the division algorithm for polynomials, if $p(x)$ is divided by $g(x)$, then the remainder $r(x)$ must satisfy:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) deg(r(x)) > deg(g(x))
+  \item (B) deg(r(x)) = deg(g(x))
+  \item (C) deg(r(x)) < deg(g(x))
+  \item (D) r(x) = 1
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If $p(x) = x^2 - 4$ is divided by $g(x) = x - 2$, what is the remainder?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 4
+  \item (B) 2
+  \item (C) -4
+  \item (D) 0
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Given $p(x) = 2x^2 + 5x + 3$ and $g(x) = 2x + 3$, the quotient $q(x)$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) x - 1
+  \item (B) x + 1
+  \item (C) 2x + 1
+  \item (D) x + 3
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If the dividend is $x^2 + 5x + 6$, the divisor is $x + 2$, and the remainder is $0$, what is the quotient?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) x + 2
+  \item (B) x - 3
+  \item (C) x + 3
+  \item (D) x - 2
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] A tangent $PQ$ at a point $P$ of a circle of radius $5$ cm meets a line through the center $O$ at a point $Q$ so that $OQ = 13$ cm. The length of $PQ$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 10 cm
+  \item (B) 11 cm
+  \item (C) 12 cm
+  \item (D) 15 cm
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If tangents $PA$ and $PB$ from a point $P$ to a circle with center $O$ are inclined to each other at an angle of $80^\circ$, then $\angle POA$ is equal to:
+\begin{enumerate}[label=(\Alph*)]
+  \item $(A) 50^\circ$
+  \item $(B) 60^\circ$
+  \item $(C) 70^\circ$
+  \item $(D) 80^\circ$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The number of tangents that can be drawn from a point lying inside a circle is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 0
+  \item (B) 1
+  \item (C) 2
+  \item (D) Infinite
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): For a polynomial $p(x) = x^2 - 3x + 2$ and divisor $g(x) = x - 1$, the remainder is 0. Reason (R): If $g(x)$ is a factor of $p(x)$, then $p(x) = g(x)q(x) + r(x)$, where $r(x) = 0$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The degree of the remainder $r(x)$ must be less than the degree of the divisor $g(x)$. Reason (R): In the division algorithm $p(x) = g(x)q(x) + r(x)$, $r(x)$ can be a non-zero constant even if $g(x)$ has degree 1.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If $p(x) = x^2 + 1$ is divided by $g(x) = x$, the remainder is 1. Reason (R): The remainder of $p(x)$ divided by $x-a$ is $p(a)$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If $p(x) = 2x^2 + 4x + 2$ is divided by $g(x) = x+1$, the quotient is $2x+2$. Reason (R): $2x^2 + 4x + 2 = (x+1)(2x+2) + 0$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The division algorithm for polynomials is applicable only when the divisor $g(x) \neq 0$. Reason (R): Division by zero is undefined in mathematics.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section B: Very Short Answer (2 marks each)}
+
+\begin{questions}
+\question[2] On dividing $x^3 - 3x^2 + x + 2$ by a polynomial $g(x)$, the quotient and remainder were $x - 2$ and $-2x + 4$ respectively. Find $g(x)$.
+\vspace{0.15cm}
+
+\question[2] Check whether $x^2 + 3x + 1$ is a factor of $3x^4 + 5x^3 - 7x^2 + 2x + 2$ by applying the division algorithm.
+\vspace{0.15cm}
+
+\question[2] Find the quotient and remainder when $p(x) = x^3 - 3x^2 + 5x - 3$ is divided by $g(x) = x^2 - 2$.
+\vspace{0.15cm}
+
+\question[2] What must be subtracted from $f(x) = x^4 + 2x^3 - 2x^2 + 4x - 1$ so that the resulting polynomial is exactly divisible by $x^2 + 2$?
+\vspace{0.15cm}
+
+\question[2] If the polynomial $x^4 - 6x^3 + 16x^2 - 25x + 10$ is divided by another polynomial $x^2 - 2x + k$, the remainder comes out to be $x + a$. Find the values of $k$ and $a$.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section C: Short Answer (3 marks each)}
+
+\begin{questions}
+\question[3] The mean of the following frequency distribution is $50$. Find the value of $p$ if the sum of frequencies is $100$: 
+| Class | 0-20 | 20-40 | 40-60 | 60-80 | 80-100 |
+|---|---|---|---|---|---|
+| Frequency | 17 | $p$ | 32 | $p$ | 19 |
+\vspace{0.15cm}
+
+\question[3] The following distribution shows the daily pocket allowance of children of a locality. If the mean pocket allowance is Rs. $18$, find the missing frequency $f$:
+| Daily allowance (in Rs) | 11-13 | 13-15 | 15-17 | 17-19 | 19-21 | 21-23 | 23-25 |
+|---|---|---|---|---|---|---|---|
+| Number of children | 7 | 6 | 9 | 13 | $f$ | 5 | 4 |
+\vspace{0.15cm}
+
+\question[3] Find the median of the following data:
+| Marks | 0-10 | 10-20 | 20-30 | 30-40 | 40-50 |
+|---|---|---|---|---|---|
+| Number of students | 5 | 15 | 20 | 7 | 3 |
+\vspace{0.15cm}
+
+\question[3] The following table shows the ages of 100 patients admitted in a hospital during a year. Find the mode of the ages:
+| Age (in years) | 5-15 | 15-25 | 25-35 | 35-45 | 45-55 | 55-65 |
+|---|---|---|---|---|---|---|
+| Number of patients | 6 | 11 | 21 | 23 | 14 | 5 |
+\vspace{0.15cm}
+
+\question[3] A survey conducted on 20 households in a locality by a group of students resulted in the following frequency table for the number of family members in a household:
+| Family size | 1-3 | 3-5 | 5-7 | 7-9 | 9-11 |
+|---|---|---|---|---|---|
+| Frequency | 7 | 8 | 2 | 2 | 1 | 
+Find the mode of this data.
+\vspace{0.15cm}
+
+\question[3] On dividing $x^3 - 3x^2 + x + 2$ by a polynomial $g(x)$, the quotient and remainder were $x - 2$ and $-2x + 4$, respectively. Find $g(x)$.
+\vspace{0.15cm}
+
+\question[3] Find the values of $a$ and $b$ if the polynomial $x^4 + x^3 + 8x^2 + ax + b$ is exactly divisible by $x^2 + 1$.
+\vspace{0.15cm}
+
+\question[3] Divide the polynomial $p(x) = 3x^2 - x^3 - 3x + 5$ by $g(x) = x - 1 - x^2$ and verify the division algorithm.
+\vspace{0.15cm}
+
+\question[3] What must be subtracted from $8x^4 + 14x^3 - 2x^2 + 7x - 8$ so that the resulting polynomial is exactly divisible by $4x^2 + x - 2$?
+\vspace{0.15cm}
+
+\question[3] Obtain all zeros of $3x^4 + 6x^3 - 2x^2 - 10x - 5$, if two of its zeros are $\sqrt{5/3}$ and $-\sqrt{5/3}$.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section D: Long Answer (4-5 marks each)}
+
+\begin{questions}
+\question[5] The mean of the following frequency distribution is $50$. Find the values of $p$ and $q$, if the sum of all frequencies is $120$. 
+
+| Class Interval | 0-20 | 20-40 | 40-60 | 60-80 | 80-100 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Frequency | 17 | $p$ | 32 | $q$ | 19 |
+\vspace{0.15cm}
+
+\question[5] The median of the following data is $525$. Find the values of $x$ and $y$, if the total frequency is $100$.
+
+| Class Interval | 0-100 | 100-200 | 200-300 | 300-400 | 400-500 | 500-600 | 600-700 | 700-800 | 800-900 | 900-1000 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Frequency | 2 | 5 | $x$ | 12 | 17 | 20 | $y$ | 9 | 7 | 4 |
+\vspace{0.15cm}
+
+\question[5] The following distribution gives the daily income of $50$ workers of a factory. Convert the distribution above to a 'less than type' cumulative frequency distribution and draw its ogive. From the ogive, find the median daily income.
+
+| Daily Income (in Rs.~) | 100-120 | 120-140 | 140-160 | 160-180 | 180-200 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Number of workers | 12 | 14 | 8 | 6 | 10 |
+\vspace{0.15cm}
+
+\question[5] Find the mode of the following frequency distribution. If the mean of the same data is $28.6$, verify the empirical relationship between mean, median, and mode.
+
+| Class | 0-10 | 10-20 | 20-30 | 30-40 | 40-50 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Frequency | 5 | 8 | 20 | 15 | 7 |
+\vspace{0.15cm}
+
+\question[5] Obtain all zeroes of the polynomial $p(x) = 2x^4 - 3x^3 - 3x^2 + 6x - 2$, if two of its zeroes are $\sqrt{2}$ and $-\sqrt{2}$.
+\vspace{0.15cm}
+
+\question[5] Find the values of $a$ and $b$ so that the polynomial $x^4 + x^3 + 8x^2 + ax + b$ is exactly divisible by $x^2 + 1$.
+\vspace{0.15cm}
+
+\question[5] If the polynomial $f(x) = x^4 - 6x^3 + 16x^2 - 25x + 10$ is divided by another polynomial $g(x) = x^2 - 2x + k$, the remainder comes out to be $x + a$. Find the values of $k$ and $a$.
+\vspace{0.15cm}
+
+\question[5] A company models its profit $P(x)$ in thousands of rupees by the polynomial $P(x) = -x^3 + 4x^2 + x - 4$, where $x$ represents the number of units sold. If the factor representing the price per unit is $(x-4)$, find the other factors of the profit polynomial.
+\vspace{0.15cm}
+
+\question[5] Prove that the lengths of tangents drawn from an external point to a circle are equal.
+\vspace{0.15cm}
+
+\question[5] A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.
+\vspace{0.15cm}
+
+\question[5] Two concentric circles are of radii 5 cm and 3 cm. Find the length of the chord of the larger circle which touches the smaller circle.
+\vspace{0.15cm}
+
+\question[5] If a hexagon $\text{ABCDEF}$ circumscribes a circle, prove that $AB + CD + EF = BC + DE + FA$.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+
+\end{document}

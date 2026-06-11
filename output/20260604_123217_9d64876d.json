@@ -1,0 +1,39 @@
+{
+  "batch_id": "20260604_123217_9d64876d",
+  "generated_at": "2026-06-04T12:32:17.974857",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "The discriminant of the quadratic equation $2x^2 - 3x + 5 = 0$ is:",
+      "answer": "(B) $-31$",
+      "solution": {
+        "steps": [
+          "Identify coefficients: $a = 2$, $b = -3$, $c = 5$",
+          "Use discriminant formula: $D = b^2 - 4ac$",
+          "Substitute values: $D = (-3)^2 - 4(2)(5) = 9 - 40 = -31$",
+          "Thus the discriminant is $-31$."
+        ],
+        "derivation": "\\[ D = b^2 - 4ac = (-3)^2 - 4(2)(5) = 9 - 40 = -31 \\]"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of Roots",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $31$",
+        "(B) $-31$",
+        "(C) $41$",
+        "(D) $-41$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T12:32:17.974727",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_123217_ce9217"
+    }
+  ]
+}

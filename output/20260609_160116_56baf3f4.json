@@ -1,0 +1,13 @@
+{
+  "batch_id": "20260609_160116_56baf3f4",
+  "generated_at": "2026-06-09T16:01:16.981658",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Some Applications of Trigonometry",
+  "subtopic": null,
+  "difficulty": null,
+  "question_type": null,
+  "question_count": 0,
+  "mechanisms": [],
+  "questions": []
+}

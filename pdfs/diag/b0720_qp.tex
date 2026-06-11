@@ -1,0 +1,311 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag} \\[0.3cm]
+  \textbf{Time Allowed: 3 Hours} \hfill \textbf{Maximum Marks: 80} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\noindent\textbf{General Instructions:}
+\begin{enumerate}
+  \item {\normalfont\normalcolor This question paper contains 40 questions. All questions are compulsory.}
+  \item {\normalfont\normalcolor Questions are grouped into sections A through E.}
+  \item {\normalfont\normalcolor Use of calculators is NOT permitted.}
+\end{enumerate}
+\bigskip
+\noindent\textbf{\large Section A: Multiple Choice \& Assertion-Reason (1 mark each)}
+
+\begin{questions}
+\question[1] Assertion (A): The length of a tangent drawn from an external point to a circle is always equal to the radius of the circle. Reason (R): A tangent to a circle is perpendicular to the radius at the point of contact.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The distance between two parallel tangents of a circle of radius $3$ $cm$ is $6$ $cm$. Reason (R): The distance between two parallel tangents is equal to the diameter of the circle.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If the angle between two tangents drawn from a point $P$ to a circle of radius $a$ and centre $O$ is $60^\circ$, then $OP = 2a$. Reason (R): The line joining the centre to the external point bisects the angle between the tangents.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_009.pdf}
+\end{center}
+
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The number of tangents that can be drawn from a point inside a circle is zero. Reason (R): A tangent is a line that intersects the circle at only one point.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The tangents drawn at the ends of a diameter of a circle are parallel. Reason (R): The angles between the diameter and the tangents at the ends are $90^\circ$, and since the sum of interior angles on the same side of the transversal is $180^\circ$, they are parallel.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If in $\triangle ABC$ and $\triangle DEF$, $\frac{AB}{DE} = \frac{BC}{EF} = \frac{CA}{FD} = \frac{2}{3}$, then $\triangle ABC \sim \triangle DEF$. 
+ Reason (R): Two triangles are similar if their corresponding sides are proportional (SSS similarity criterion).
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The length of a tangent drawn from an external point to a circle is always equal to the radius of the circle. Reason (R): The tangent at any point of a circle is perpendicular to the radius through the point of contact.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If a quadrilateral $\text{ABCD}$ circumscribes a circle, then $AB + CD = AD + BC$. Reason (R): The lengths of tangents drawn from an external point to a circle are equal.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section B: Very Short Answer (2 marks each)}
+
+\begin{questions}
+\question[2] A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. If $AB = 6$ cm, $BC = 7$ cm, and $CD = 4$ cm, find the length of $AD$.
+\vspace{0.15cm}
+
+\question[2] In the given figure, if $\angle OAB = 40^\circ$, find the measure of $\angle APB$, where $O$ is the center of the circle and $PA, PB$ are tangents from an external point $P$.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_012.pdf}
+\end{center}
+
+\vspace{0.15cm}
+
+\question[2] A tangent $PQ$ at a point $P$ of a circle of radius $5$ $cm$ meets a line through the center $O$ at a point $Q$ so that $OQ = 12$ $cm$. Find the length of $PQ$.
+\vspace{0.15cm}
+
+\question[2] Two concentric circles are of radii $5$ $cm$ and $3$ $cm$. Find the length of the chord of the larger circle which touches the smaller circle.
+\vspace{0.15cm}
+
+\question[2] If tangents $PA$ and $PB$ from a point $P$ to a circle with center $O$ are inclined to each other at angle of $80^\circ$, then find $\angle POA$.
+\vspace{0.15cm}
+
+\question[2] A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. If $AB = 6$ $cm$, $BC = 7$ $cm$ and $CD = 4$ $cm$, find the length of $AD$.
+\vspace{0.15cm}
+
+\question[2] In a circle of radius $5$ $cm$, $AB$ and $AC$ are two chords such that $AB = AC = 6$ $cm$. If the tangent at $A$ intersects the line $BC$ produced at $P$, find the length of $AP$.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_013.pdf}
+\end{center}
+
+\vspace{0.15cm}
+
+\question[2] If $\angle ATO = 40^\circ$ where $T$ is a point outside the circle with center $O$ and $TA$, $TB$ are tangents, find $\angle AOB$.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_014.pdf}
+\end{center}
+
+\vspace{0.15cm}
+
+\question[2] Two concentric circles are of radii $5$ $cm$ and $3$ $cm$. Find the length of the chord of the larger circle which touches the smaller circle.
+\vspace{0.15cm}
+
+\question[2] If a quadrilateral $\text{ABCD}$ circumscribes a circle, prove that $AB + CD = AD + BC$.
+\vspace{0.15cm}
+
+\question[2] A point $P$ is $13$ $cm$ from the center of a circle. The length of the tangent drawn from $P$ to the circle is $12$ $cm$. Find the radius of the circle.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_016.pdf}
+\end{center}
+
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section C: Short Answer (3 marks each)}
+
+\begin{questions}
+\question[3] A tangent $PQ$ at a point $P$ of a circle of radius $5$ $cm$ meets a line through the centre $O$ at a point $Q$ so that $OQ = 13$ $cm$. Find the length of $PQ$.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_017.pdf}
+\end{center}
+
+\vspace{0.15cm}
+
+\question[3] Two concentric circles are of radii $5$ $cm$ and $3$ $cm$. Find the length of the chord of the larger circle which touches the smaller circle.
+\vspace{0.15cm}
+
+\question[3] If tangents $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\circ$, find $\angle POA$.
+\vspace{0.15cm}
+
+\question[3] A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.
+\vspace{0.15cm}
+
+\question[3] Prove that the perpendicular at the point of contact to the tangent to a circle passes through the centre of the circle.
+\vspace{0.15cm}
+
+\question[3] Two concentric circles are of radii $5$ cm and $3$ cm. Find the length of the chord of the larger circle which touches the smaller circle.
+\vspace{0.15cm}
+
+\question[3] If a quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle, prove that $AB + CD = AD + BC$.
+\vspace{0.15cm}
+
+\question[3] A tangent $PQ$ at a point $P$ of a circle of radius $5$ cm meets a line through the center $O$ at a point $Q$ so that $OQ = 12$ cm. Find the length of $PQ$.
+\vspace{0.15cm}
+
+\question[3] In $\triangle ABC$, a circle is inscribed touching sides $AB$, $BC$, and $CA$ at $D$, $E$, and $F$ respectively. If $AB = 12$ cm, $BC = 8$ cm, and $AC = 10$ cm, find the lengths of $AD$, $BE$, and $CF$.
+\vspace{0.15cm}
+
+\question[3] Two tangents $TP$ and $TQ$ are drawn to a circle with center $O$ from an external point $T$. Prove that $\angle PTQ = 2\angle OPQ$.
+\vspace{0.15cm}
+
+\question[3] In $\triangle ABC$, $DE \parallel BC$ such that $D$ lies on $AB$ and $E$ lies on $AC$. If $AD = 2.4 \text{ cm}$, $AE = 3.2 \text{ cm}$, and $EC = 4.8 \text{ cm}$, find the length of $AB$.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_019.pdf}
+\end{center}
+
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section D: Long Answer (4-5 marks each)}
+
+\begin{questions}
+\question[5] Prove that the lengths of tangents drawn from an external point to a circle are equal. Using this result, if a quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle, prove that $AB + CD = AD + BC$.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_020.pdf}
+\end{center}
+
+\vspace{0.15cm}
+
+\question[5] Two concentric circles are of radii $5 \text{ cm}$ and $3 \text{ cm}$. Find the length of the chord of the larger circle which touches the smaller circle.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_021.pdf}
+\end{center}
+
+\vspace{0.15cm}
+
+\question[5] A circle is inscribed in a $\triangle ABC$ having sides $8 \text{ cm}, 10 \text{ cm}$ and $12 \text{ cm}$. Find the lengths of the segments $AD, BE, CF$ where $D, E, F$ are points of contact on sides $AB, BC, CA$ respectively.
+\vspace{0.15cm}
+
+\question[5] Prove that the tangent at any point of a circle is perpendicular to the radius through the point of contact.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_022.pdf}
+\end{center}
+
+\vspace{0.15cm}
+
+\question[5] Prove that the lengths of tangents drawn from an external point to a circle are equal. Using this, if a quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle, prove that $AB + CD = AD + BC$.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_023.pdf}
+\end{center}
+
+\vspace{0.15cm}
+
+\question[5] Two concentric circles are of radii $5 \ cm$ and $3 \ cm$. Find the length of the chord of the larger circle which touches the smaller circle.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_024.pdf}
+\end{center}
+
+\vspace{0.15cm}
+
+\question[5] In $\triangle ABC$, a circle is inscribed touching $BC, CA,$ and $AB$ at $D, E,$ and $F$ respectively. If $AB = 12 \ cm, BC = 8 \ cm,$ and $AC = 10 \ cm$, find the lengths $AD, BE,$ and $CF$.
+\vspace{0.15cm}
+
+\question[5] Prove that the angle between the two tangents drawn from an external point to a circle is supplementary to the angle subtended by the line segment joining the points of contact at the centre.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_025.pdf}
+\end{center}
+
+\vspace{0.15cm}
+
+\question[5] Prove that the lengths of tangents drawn from an external point to a circle are equal.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_026.pdf}
+\end{center}
+
+\vspace{0.15cm}
+
+\question[5] From a point $Q$, the length of the tangent to a circle is $24 \ cm$ and the distance of $Q$ from the centre is $25 \ cm$. Find the radius of the circle.
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_027.pdf}
+\end{center}
+
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+
+\end{document}

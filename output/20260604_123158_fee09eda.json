@@ -1,0 +1,33 @@
+{
+  "batch_id": "20260604_123158_fee09eda",
+  "generated_at": "2026-06-04T12:31:58.560797",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "Find the discriminant of the quadratic equation $2x^2 - 4x + 3 = 0$.",
+      "answer": "$-8$",
+      "solution": {
+        "steps": [
+          "Recall the standard form of a quadratic equation: $ax^2 + bx + c = 0$.",
+          "Identify coefficients: $a = 2$, $b = -4$, $c = 3$.",
+          "Use the discriminant formula: $D = b^2 - 4ac$.",
+          "Substitute values: $D = (-4)^2 - 4(2)(3) = 16 - 24 = -8$."
+        ],
+        "derivation": "$D = b^2 - 4ac = (-4)^2 - 4 \\cdot 2 \\cdot 3 = 16 - 24 = -8$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of Roots",
+      "marks": 1,
+      "type": "vsa",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-04T12:31:58.560706",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_123158_20e314"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "batch_id": "20260609_111338_3b0e6963",
+  "generated_at": "2026-06-09T11:13:38.379940",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Pair of Linear Equations in Two Variables",
+  "subtopic": "equations reducible to linear form",
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The pair of equations $\\frac{1}{x} + \\frac{2}{y} = 4$ and $\\frac{2}{x} + \\frac{4}{y} = 12$ is inconsistent. \\nReason (R): A pair of linear equations $a_1x + b_1y + c_1 = 0$ and $a_2x + b_2y + c_2 = 0$ is inconsistent if $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Let $u = \\frac{1}{x}$ and $v = \\frac{1}{y}$. The equations become $u + 2v = 4$ and $2u + 4v = 12$.",
+          "Identify the coefficients $a_1 = 1, b_1 = 2, c_1 = -4$ and $a_2 = 2, b_2 = 4, c_2 = -12$.",
+          "Calculate the ratios $\\frac{a_1}{a_2} = \\frac{1}{2}$, $\\frac{b_1}{b_2} = \\frac{2}{4} = \\frac{1}{2}$, and $\\frac{c_1}{c_2} = \\frac{-4}{-12} = \\frac{1}{3}$.",
+          "Since $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$, the equations are inconsistent as per the condition for parallel lines."
+        ],
+        "derivation": "$\\frac{1}{x} + \\frac{2}{y} = 4 \\Rightarrow u + 2v = 4 \\\\ \\frac{2}{x} + \\frac{4}{y} = 12 \\Rightarrow 2u + 4v = 12 \\\\ \\frac{a_1}{a_2} = \\frac{1}{2}, \\frac{b_1}{b_2} = \\frac{2}{4} = \\frac{1}{2}, \\frac{c_1}{c_2} = \\frac{-4}{-12} = \\frac{1}{3} \\\\ \\frac{1}{2} = \\frac{1}{2} \\neq \\frac{1}{3} \\Rightarrow \\text{Inconsistent}$"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "equations reducible to linear form",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T11:13:38.379632",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 19,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 19,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_111338_b43f50_01"
+    }
+  ]
+}

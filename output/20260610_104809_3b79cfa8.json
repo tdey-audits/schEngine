@@ -1,0 +1,151 @@
+{
+  "batch_id": "20260610_104809_3b79cfa8",
+  "generated_at": "2026-06-10T10:48:09.434751",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Show that for any positive integer $n$, the expression $n^3 - n$ is always divisible by $6$.",
+      "answer": "Since $n^3 - n = (n-1)n(n+1)$ is the product of three consecutive integers, it is divisible by $3! = 6$.",
+      "solution": {
+        "steps": [
+          "Factorize the expression $n^3 - n$ as $n(n^2 - 1)$.",
+          "Further factorize it into the product of three consecutive integers: $(n-1)n(n+1)$.",
+          "Recall that in any set of $k$ consecutive integers, there must be at least one multiple of $k$.",
+          "Identify that among any three consecutive integers, at least one is divisible by $2$ and exactly one is divisible by $3$.",
+          "Conclude that the product must be divisible by $2 \\times 3 = 6$."
+        ],
+        "derivation": "$n^3 - n = n(n^2 - 1) \\\\ = (n-1)n(n+1) \\\\ \\text{The expression is the product of three consecutive integers.} \\\\ \\text{In any three consecutive integers, there is at least one even number and exactly one multiple of } 3. \\\\ \\text{Since the product is divisible by both } 2 \\text{ and } 3, \\text{ it is divisible by } \\text{lcm}(2, 3) = 6. \\\\ \\therefore n^3 - n \\text{ is divisible by } 6 \\text{ for all } n \\in \\mathbb{N}."
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Fundamental Theorem of Arithmetic",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-10T10:48:09.434369",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/430-1-1_Mathematics Basic.pdf",
+            "question_no": 32,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-3_Mathematics Basic.pdf",
+            "question_no": 33,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 35,
+            "paper_variant": "basic",
+            "question_type": "la"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_104809_d4b2b0_01"
+    },
+    {
+      "question": "A merchant has two types of oil: $560$ litres of mustard oil and $720$ litres of sunflower oil. He wants to pack these oils into tin containers of equal size such that each container is completely filled. Find the maximum capacity of such a container and the total number of containers required for both types of oil.",
+      "answer": "Maximum capacity is $80$ litres, and the total number of containers is $16$.",
+      "solution": {
+        "steps": [
+          "Identify that the maximum capacity of the container represents the HCF of $560$ and $720$.",
+          "Use the prime factorization method or Euclid's Division Algorithm to find the HCF.",
+          "Calculate $560 = 2^4 \\times 5 \\times 7$ and $720 = 2^4 \\times 3^2 \\times 5$.",
+          "Determine the HCF by taking the product of the lowest powers of common prime factors: $2^4 \\times 5 = 80$.",
+          "Calculate the number of containers for mustard oil: $560 \\div 80 = 7$.",
+          "Calculate the number of containers for sunflower oil: $720 \\div 80 = 9$.",
+          "Sum the containers: $7 + 9 = 16$."
+        ],
+        "derivation": "$560 = 2^4 \\times 5^1 \\times 7^1 \\\\ 720 = 2^4 \\times 3^2 \\times 5^1 \\\\ \\text{HCF}(560, 720) = 2^4 \\times 5 = 16 \\times 5 = 80 \\\\ \\text{Containers for mustard oil} = 560 \\div 80 = 7 \\\\ \\text{Containers for sunflower oil} = 720 \\div 80 = 9 \\\\ \\text{Total containers} = 7 + 9 = 16$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "HCF and LCM",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-10T10:48:09.434495",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/430-1-1_Mathematics Basic.pdf",
+            "question_no": 32,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-3_Mathematics Basic.pdf",
+            "question_no": 33,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 35,
+            "paper_variant": "basic",
+            "question_type": "la"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_104809_58b178_02"
+    }
+  ]
+}

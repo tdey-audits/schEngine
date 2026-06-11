@@ -1,0 +1,122 @@
+{
+  "batch_id": "20260609_155854_26a26149",
+  "generated_at": "2026-06-09T15:58:54.686357",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $\\cos \\theta + \\sin \\theta = \\sqrt{2} \\cos \\theta$, then the value of $\\cos \\theta - \\sin \\theta$ is",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Square both sides of the given equation $\\cos \\theta + \\sin \\theta = \\sqrt{2} \\cos \\theta$.",
+          "Expand the left side to get $\\cos^2 \\theta + \\sin^2 \\theta + 2 \\sin \\theta \\cos \\theta = 2 \\cos^2 \\theta$.",
+          "Use the identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$ to rewrite the equation as $1 + 2 \\sin \\theta \\cos \\theta = 2 \\cos^2 \\theta$.",
+          "Rearrange to find $2 \\sin \\theta \\cos \\theta = 2 \\cos^2 \\theta - 1$.",
+          "Let $x = \\cos \\theta - \\sin \\theta$. Square $x$ to get $x^2 = \\cos^2 \\theta + \\sin^2 \\theta - 2 \\sin \\theta \\cos \\theta$.",
+          "Substitute $1$ for $\\cos^2 \\theta + \\sin^2 \\theta$ and $(2 \\cos^2 \\theta - 1)$ for $2 \\sin \\theta \\cos \\theta$.",
+          "Calculate $x^2 = 1 - (2 \\cos^2 \\theta - 1) = 2 - 2 \\cos^2 \\theta = 2 \\sin^2 \\theta$.",
+          "Since $\\cos \\theta + \\sin \\theta = \\sqrt{2} \\cos \\theta$, then $\\sin \\theta = (\\sqrt{2} - 1) \\cos \\theta$. Thus $\\cos \\theta - \\sin \\theta = \\cos \\theta - (\\sqrt{2} - 1) \\cos \\theta = (2 - \\sqrt{2}) \\cos \\theta$. Evaluating the square root gives $\\sqrt{2} \\sin \\theta$."
+        ],
+        "derivation": "$\\cos \\theta + \\sin \\theta = \\sqrt{2} \\cos \\theta \\Rightarrow \\sin \\theta = (\\sqrt{2}-1) \\cos \\theta \\\\ \\cos \\theta - \\sin \\theta = \\cos \\theta - (\\sqrt{2}-1) \\cos \\theta \\\\ = \\cos \\theta (1 - \\sqrt{2} + 1) = (2 - \\sqrt{2}) \\cos \\theta \\\\ \\text{Using } \\sin \\theta = (\\sqrt{2}-1) \\cos \\theta \\text{ in } \\sqrt{2} \\sin \\theta \\\\ = \\sqrt{2}(\\sqrt{2}-1) \\cos \\theta = (2 - \\sqrt{2}) \\cos \\theta \\\\ \\therefore \\cos \\theta - \\sin \\theta = \\sqrt{2} \\sin \\theta$"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "hard",
+      "options": [
+        "(A) $\\sqrt{2} \\cos \\theta$",
+        "(B) $\\sqrt{2} \\sin \\theta$",
+        "(C) $2 \\cos \\theta$",
+        "(D) $2 \\sin \\theta$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T15:58:54.686068",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_8 (Introduction to Trigonometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 15,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 12,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 15,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_155854_d8e290_01"
+    }
+  ]
+}

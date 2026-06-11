@@ -1,0 +1,100 @@
+{
+  "batch_id": "20260604_145427_a9f3026c",
+  "generated_at": "2026-06-04T14:54:27.849525",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In $\\triangle ABC$, $DE \\parallel BC$ such that $D$ lies on $AB$ and $E$ lies on $AC$. If $AD = 2.4 \\text{ cm}$, $AE = 3.2 \\text{ cm}$, and $EC = 4.8 \\text{ cm}$, find the length of $AB$.",
+      "answer": "$6 \\text{ cm}$",
+      "solution": {
+        "steps": [
+          "Since $DE \\parallel BC$, by Basic Proportionality Theorem (Thales' Theorem), $\\frac{AD}{DB} = \\frac{AE}{EC}$.",
+          "Substitute the given values into the equation: $\\frac{2.4}{DB} = \\frac{3.2}{4.8}$.",
+          "Solve for $DB$: $DB = \\frac{2.4 \\times 4.8}{3.2} = 3.6 \\text{ cm}$.",
+          "Calculate $AB = AD + DB = 2.4 + 3.6 = 6 \\text{ cm}$."
+        ],
+        "derivation": "$By \\ BPT, \\frac{AD}{DB} = \\frac{AE}{EC} \\\\ \\frac{2.4}{DB} = \\frac{3.2}{4.8} \\\\ \\frac{2.4}{DB} = \\frac{2}{3} \\\\ DB = \\frac{2.4 \\times 3}{2} = 3.6 \\text{ cm} \\\\ AB = AD + DB = 2.4 + 3.6 = 6 \\text{ cm}$"
+      },
+      "topic": "Triangles",
+      "subtopic": "Basic Proportionality Theorem",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "caption": "Triangle ABC with DE parallel to BC",
+        "elements": [
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0,
+            "y": 4,
+            "label": "A",
+            "position": "above"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": -3,
+            "y": 0,
+            "label": "B",
+            "position": "below left"
+          },
+          {
+            "kind": "point",
+            "id": "C",
+            "x": 3,
+            "y": 0,
+            "label": "C",
+            "position": "below right"
+          },
+          {
+            "kind": "point",
+            "id": "D",
+            "x": -1,
+            "y": 2.66,
+            "label": "D",
+            "position": "left"
+          },
+          {
+            "kind": "point",
+            "id": "E",
+            "x": 1,
+            "y": 2.66,
+            "label": "E",
+            "position": "right"
+          },
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "kind": "segment",
+            "from": "D",
+            "to": "E",
+            "label": "DE || BC"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:54:27.849433",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145427_d7b696_01"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "batch_id": "20260610_122536_d2bf4728",
+  "generated_at": "2026-06-10T12:25:36.006080",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Pair of Linear Equations in Two Variables",
+  "subtopic": "graphical method",
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A local NGO is organizing a charity event to distribute food packets. They have two types of delivery routes: Route A, represented by the linear equation $2x + y = 10$, and Route B, represented by the linear equation $x - y = 2$, where $x$ represents the distance covered in km and $y$ represents the fuel consumption in litres. The NGO volunteers need to analyze these routes to optimize their distribution.\n\n(i) If we plot the lines $2x + y = 10$ and $x - y = 2$ on a Cartesian plane, what are the coordinates of the point of intersection of these two lines?\n(ii) At what point does the line $2x + y = 10$ intersect the $x$-axis?\n(iii) What is the nature of the lines represented by the pair of equations $x - y = 2$ and $2x - 2y = 4$?\n(iv) If a new route is introduced as $x + y = k$ and it is known to pass through the point of intersection found in part (i), find the value of $k$.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "The point of intersection of $2x + y = 10$ and $x - y = 2$ is:",
+          "answer": "(A)",
+          "options": [
+            "(A) $(4, 2)$",
+            "(B) $(2, 4)$",
+            "(C) $(3, 1)$",
+            "(D) $(5, 0)$"
+          ],
+          "solution": {
+            "steps": [
+              "Add the two equations: $(2x + y) + (x - y) = 10 + 2$.",
+              "$3x = 12 \\Rightarrow x = 4$.",
+              "Substitute $x = 4$ into $x - y = 2$: $4 - y = 2 \\Rightarrow y = 2$.",
+              "The point is $(4, 2)$."
+            ],
+            "derivation": "$2x + y = 10 \\\\ x - y = 2 \\\\ (2x + y) + (x - y) = 10 + 2 \\\\ 3x = 12 \\\\ x = 4 \\\\ 4 - y = 2 \\\\ y = 2 \\\\ \\text{Point} = (4, 2)$"
+          }
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Find the $x$-intercept of the line $2x + y = 10$.",
+          "answer": "$(5, 0)$",
+          "solution": {
+            "steps": [
+              "The $x$-axis intercept occurs where $y = 0$.",
+              "Substitute $y = 0$ in $2x + y = 10$.",
+              "$2x + 0 = 10 \\Rightarrow 2x = 10 \\Rightarrow x = 5$."
+            ],
+            "derivation": "$2x + y = 10 \\\\ \\text{Set } y = 0 \\\\ 2x + 0 = 10 \\\\ x = 5 \\\\ \\text{Point} = (5, 0)$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "mcq",
+          "question": "What is the nature of the lines for the pair $x - y = 2$ and $2x - 2y = 4$?",
+          "answer": "(C)",
+          "options": [
+            "(A) Intersecting",
+            "(B) Parallel",
+            "(C) Coincident",
+            "(D) Perpendicular"
+          ],
+          "solution": {
+            "steps": [
+              "Compare the ratios: $a_1/a_2 = 1/2$, $b_1/b_2 = -1/-2 = 1/2$, $c_1/c_2 = -2/-4 = 1/2$.",
+              "Since $1/2 = 1/2 = 1/2$, the lines are coincident."
+            ],
+            "derivation": "$a_1/a_2 = 1/2 \\\\ b_1/b_2 = -1/-2 = 1/2 \\\\ c_1/c_2 = -2/-4 = 1/2 \\\\ \\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2} \\\\ \\Rightarrow \\text{Coincident lines}$"
+          }
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "If $x + y = k$ passes through $(4, 2)$, what is $k$?",
+          "answer": "$6$",
+          "solution": {
+            "steps": [
+              "Substitute $x = 4$ and $y = 2$ into the equation $x + y = k$.",
+              "$4 + 2 = k \\Rightarrow k = 6$."
+            ],
+            "derivation": "$x + y = k \\\\ (4) + (2) = k \\\\ k = 6$"
+          }
+        }
+      ],
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "graphical method",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-10T12:25:36.005705",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122536_e4078f_01"
+    }
+  ]
+}

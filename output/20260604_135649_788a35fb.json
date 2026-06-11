@@ -1,0 +1,125 @@
+{
+  "batch_id": "20260604_135649_788a35fb",
+  "generated_at": "2026-06-04T13:56:49.384772",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Two concentric circles are of radii $5 \\text{ cm}$ and $3 \\text{ cm}$. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "answer": "8 \\text{ cm}",
+      "solution": {
+        "steps": [
+          "Let $O$ be the center, $AB$ be the chord of the larger circle tangent to the smaller circle at $P$.",
+          "Apply Pythagoras theorem in $\\triangle OPA$ where $OA=5, OP=3$ to find $AP$, then double it."
+        ],
+        "derivation": "AP = \\sqrt{OA^2 - OP^2} = \\sqrt{5^2 - 3^2} = \\sqrt{25-9} = 4 \\text{ cm}. \\text{ Chord } AB = 2 \\times AP = 2 \\times 4 = 8 \\text{ cm}."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangent to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:49.384279",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135649_2bd466_01"
+    },
+    {
+      "question": "If a tangent $PA$ drawn from an external point $P$ to a circle with center $O$ makes an angle of $30^\\circ$ with the chord $AB$, where $AB$ is the diameter, find $\\angle APB$.",
+      "answer": "60^\\circ",
+      "solution": {
+        "steps": [
+          "Use the property that the angle between tangent and chord equals the angle in the alternate segment.",
+          "In $\\triangle PAB$, use the angle sum property or circle properties."
+        ],
+        "derivation": "\\angle ABP = 90^\\circ (\\text{angle in a semicircle}). \\text{ Given } \\angle PAB = 30^\\circ. \\text{ In } \\triangle PAB, \\angle APB = 180^\\circ - (90^\\circ + 30^\\circ) = 60^\\circ."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents and chords",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:49.384402",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135649_06c6ae_02"
+    },
+    {
+      "question": "In the given figure, if $\\angle OAB = 40^\\circ$, find $\\angle ACB$ where $O$ is the center of the circle.",
+      "answer": "50^\\circ",
+      "solution": {
+        "steps": [
+          "Identify that $\\triangle OAB$ is isosceles with $OA=OB$.",
+          "Find $\\angle AOB$ and use the theorem that the angle at the center is double the angle at the circumference."
+        ],
+        "derivation": "\\angle OBA = \\angle OAB = 40^\\circ. \\angle AOB = 180^\\circ - (40^\\circ + 40^\\circ) = 100^\\circ. \\angle ACB = \\frac{1}{2} \\angle AOB = 50^\\circ."
+      },
+      "topic": "Circles",
+      "subtopic": "Angle subtended by arc",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:49.384438",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135649_de9840_03"
+    },
+    {
+      "question": "A quadrilateral $ABCD$ is drawn to circumscribe a circle. If $AB = 6 \\text{ cm}$, $BC = 7 \\text{ cm}$ and $CD = 4 \\text{ cm}$, find the length of $AD$.",
+      "answer": "3 \\text{ cm}",
+      "solution": {
+        "steps": [
+          "Use the property that sums of opposite sides of a circumscribed quadrilateral are equal.",
+          "Substitute the given values into $AB + CD = BC + AD$."
+        ],
+        "derivation": "AB + CD = BC + AD \\implies 6 + 4 = 7 + AD \\implies 10 = 7 + AD \\implies AD = 3 \\text{ cm}."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents from external point",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:49.384466",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135649_70fe9e_04"
+    },
+    {
+      "question": "Two tangents $TP$ and $TQ$ are drawn to a circle with center $O$ from an external point $T$. If $\\angle PTQ = 70^\\circ$, find $\\angle POQ$.",
+      "answer": "110^\\circ",
+      "solution": {
+        "steps": [
+          "Use the property that the opposite angles of a quadrilateral formed by two tangents and two radii are supplementary.",
+          "Subtract the given angle from $180^\\circ$."
+        ],
+        "derivation": "\\angle OPT = \\angle OQT = 90^\\circ. \\text{ In quadrilateral } OPTQ, \\angle POQ + \\angle PTQ = 180^\\circ. \\angle POQ = 180^\\circ - 70^\\circ = 110^\\circ."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangent properties",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:49.384491",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135649_035ed4_05"
+    }
+  ]
+}

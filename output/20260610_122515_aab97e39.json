@@ -1,0 +1,65 @@
+{
+  "batch_id": "20260610_122515_aab97e39",
+  "generated_at": "2026-06-10T12:25:15.213758",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "factorisation method",
+  "difficulty": "medium",
+  "question_type": "sa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the roots of the quadratic equation $6x^2 - x - 2 = 0$ by the method of factorisation.",
+      "answer": "$x = \\frac{2}{3}, x = -\\frac{1}{2}$",
+      "solution": {
+        "steps": [
+          "Identify the quadratic equation in the form $ax^2 + bx + c = 0$, where $a = 6$, $b = -1$, and $c = -2$.",
+          "Find two numbers whose product is $a \\times c = 6 \\times (-2) = -12$ and whose sum is the coefficient of $x$, which is $-1$. These numbers are $-4$ and $3$.",
+          "Split the middle term $-x$ as $-4x + 3x$ and factorise by grouping: $6x^2 - 4x + 3x - 2 = 0$.",
+          "Factor out common terms: $2x(3x - 2) + 1(3x - 2) = 0$, which gives $(3x - 2)(2x + 1) = 0$.",
+          "Set each factor to zero to find the roots: $3x - 2 = 0 \\Rightarrow x = \\frac{2}{3}$ and $2x + 1 = 0 \\Rightarrow x = -\\frac{1}{2}$."
+        ],
+        "derivation": "$6x^2 - x - 2 = 0 \\\\ 6x^2 - 4x + 3x - 2 = 0 \\\\ 2x(3x - 2) + 1(3x - 2) = 0 \\\\ (3x - 2)(2x + 1) = 0 \\\\ 3x - 2 = 0 \\text{ or } 2x + 1 = 0 \\\\ x = \\frac{2}{3}, x = -\\frac{1}{2}$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-10T12:25:15.213642",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 28,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 27,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 30,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122515_bb91c2_01"
+    }
+  ]
+}

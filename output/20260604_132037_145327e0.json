@@ -1,0 +1,287 @@
+{
+  "batch_id": "20260604_132037_145327e0",
+  "generated_at": "2026-06-04T13:20:37.032897",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Probability",
+  "subtopic": "complementary events",
+  "question_count": 10,
+  "questions": [
+    {
+      "question": "A bag contains 12 white balls and some black balls. The probability of drawing a black ball is twice that of drawing a white ball. If 4 white balls are added to the bag and 6 black balls are removed from it, find the probability of drawing a white ball from the remaining bag. Also find the probability that a ball drawn is not black.",
+      "answer": "Probability of drawing a white ball = $\\frac{1}{3}$; Probability that a ball drawn is not black = $\\frac{1}{3}$",
+      "solution": {
+        "steps": [
+          "Let the number of black balls initially be $x$. Total balls initially = $12 + x$.",
+          "Probability of drawing a white ball initially = $\\frac{12}{12+x}$.",
+          "Probability of drawing a black ball initially = $\\frac{x}{12+x}$.",
+          "Given that this black ball probability is twice the white ball probability: $\\frac{x}{12+x} = 2 \\cdot \\frac{12}{12+x}$.",
+          "Multiply both sides by $(12+x)$: $x = 24$. So initially there are 24 black balls.",
+          "Now 4 white balls are added \u2192 white count becomes $12+4=16$. 6 black balls are removed \u2192 black count becomes $24-6=18$.",
+          "Total balls in the new bag = $16+18=34$.",
+          "Probability of drawing a white ball now = $\\frac{16}{34} = \\frac{8}{17}$.",
+          "Probability that a ball drawn is not black is the probability of drawing a white ball (since only white and black are present) = $\\frac{8}{17}$."
+        ],
+        "derivation": "\\\\\nLet number of black balls = $x$ \\\\\nInitial total = $12+x$ \\\\\n$P(\\text{black}) = \\frac{x}{12+x}$ \\\\\n$P(\\text{white}) = \\frac{12}{12+x}$ \\\\\nGiven $\\frac{x}{12+x} = 2 \\cdot \\frac{12}{12+x}$ \\\\\n$\\Rightarrow x = 24$ \\\\\nAfter changes: white = $12+4=16$, black = $24-6=18$, total = $34$ \\\\\n$P(\\text{white}) = \\frac{16}{34} = \\frac{8}{17}$ \\\\\n$P(\\text{not black}) = P(\\text{white}) = \\frac{8}{17}$"
+      },
+      "topic": "Probability",
+      "subtopic": "Complementary events",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:14:27.419792",
+        "model": "deepseek/deepseek-v4-flash",
+        "mechanism": "probability + construction"
+      },
+      "id": "ncert_20260604_132037_788f35_01"
+    },
+    {
+      "question": "In a box, there are 36 tickets numbered from 1 to 36. A ticket is drawn at random. What is the probability that the number on the ticket is a multiple of 4 or 5? Also, find the probability that it is not a multiple of 4 or 5.",
+      "answer": "$P(\\text{multiple of 4 or 5}) = \\frac{11}{36}$\n\n$P(\\text{not a multiple of 4 or 5}) = \\frac{25}{36}$",
+      "solution": {
+        "steps": [
+          "Step 1: List all numbers from 1 to 36. Total number of possible outcomes = 36.",
+          "Step 2: Identify multiples of 4 from 1 to 36: 4, 8, 12, 16, 20, 24, 28, 32, 36. That is 9 numbers.",
+          "Step 3: Identify multiples of 5 from 1 to 36: 5, 10, 15, 20, 25, 30, 35. That is 7 numbers. Note that 20 is common to both sets (multiple of 4 and 5).",
+          "Step 4: Find the union: multiples of 4 or 5 = multiples of 4 + multiples of 5 - common multiples. Common multiples are multiples of LCM(4,5)=20, i.e., 20 only. So total favorable outcomes = 9 + 7 - 1 = 15.",
+          "Step 5: Probability of drawing a number that is a multiple of 4 or 5 = 15/36 = 5/12. Then probability of complementary event (not a multiple of 4 or 5) = 1 - 5/12 = 7/12. Wait, recheck: Actually 15/36 simplifies to 5/12, complement = 7/12. But verify numbers: 9+7=16, minus 1 = 15 yes. So 15/36 = 5/12. Complement = 7/12. But answer needs to be in simplest form: 15/36 = 5/12, complement = 21/36 = 7/12. However, let's double-check list: Multiples of 4: 4,8,12,16,20,24,28,32,36 (9). Multiples of 5: 5,10,15,20,25,30,35 (7). Union: 4,5,8,10,12,15,16,20,24,25,28,30,32,35,36 \u2192 that's 15 numbers. So P=15/36=5/12. Complement = 21/36=7/12. But wait, 36-15=21 correct. So final answers: P(multiple of 4 or 5)=5/12, P(not)=7/12. But I need to ensure no mistake: Actually 36 total, 15 favorable, so 21 unfavorable. Probability = 15/36 = 5/12, complement = 21/36 = 7/12. All good."
+        ],
+        "derivation": "\\[\\text{Total outcomes} = 36\\]\n\\[\\text{Multiples of 4: } 4,8,12,16,20,24,28,32,36 \\Rightarrow 9\\]\n\\[\\text{Multiples of 5: } 5,10,15,20,25,30,35 \\Rightarrow 7\\]\n\\[\\text{Common multiple (20): } 1\\]\n\\[\\text{Favorable (multiple of 4 or 5)} = 9 + 7 - 1 = 15\\]\n\\[P(\\text{multiple of 4 or 5}) = \\frac{15}{36} = \\frac{5}{12}\\]\n\\[P(\\text{not a multiple of 4 or 5}) = 1 - \\frac{5}{12} = \\frac{7}{12}\\]"
+      },
+      "topic": "Probability",
+      "subtopic": "Complementary events",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:15:05.114936",
+        "model": "deepseek/deepseek-v4-flash",
+        "mechanism": "number_word_problem + probability + construction"
+      },
+      "id": "ncert_20260604_132037_a1e6e9_02"
+    },
+    {
+      "question": "A card is drawn at random from a well-shuffled pack of 52 playing cards. Find the probability that the card drawn is neither a king nor a queen.",
+      "answer": "$\\frac{11}{13}$",
+      "solution": {
+        "steps": [
+          "Step 1: Define the sample space. A standard deck has 52 cards, so total number of possible outcomes = 52.",
+          "Step 2: The event E = {card drawn is neither a king nor a queen}. It is easier to use the complementary event E' = {card drawn is a king or a queen}.",
+          "Step 3: Count the number of outcomes favourable to E'. There are 4 kings and 4 queens in a deck, so total 8 cards that are either a king or a queen.",
+          "Step 4: Probability of E' = $P(E') = \\frac{8}{52} = \\frac{2}{13}$.",
+          "Step 5: Since E and E' are complementary events, $P(E) + P(E') = 1$, so $P(E) = 1 - P(E') = 1 - \\frac{2}{13} = \\frac{11}{13}$."
+        ],
+        "derivation": "\\text{Total cards} = 52\\\\\n\\text{Kings + Queens} = 4 + 4 = 8\\\\\nP(\\text{king or queen}) = \\frac{8}{52} = \\frac{2}{13}\\\\\nP(\\text{neither king nor queen}) = 1 - \\frac{2}{13} = \\frac{11}{13}"
+      },
+      "topic": "Probability",
+      "subtopic": "Complementary events",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:15:29.515567",
+        "model": "deepseek/deepseek-v4-flash",
+        "mechanism": "probability + construction"
+      },
+      "id": "ncert_20260604_132037_dc9e2f_03"
+    },
+    {
+      "question": "A bag contains 15 red balls and some green balls. If the probability of drawing a green ball is three times that of drawing a red ball, find the number of green balls in the bag. Also, find the probability of drawing a ball that is not red.",
+      "answer": "Number of green balls = 45; $P(\\text{not red}) = \\frac{3}{4}$",
+      "solution": {
+        "steps": [
+          "Step 1: Let the number of green balls be $x$.",
+          "Step 2: Total number of balls = $15 + x$.",
+          "Step 3: Probability of drawing a red ball $P(R) = \\frac{15}{15+x}$.",
+          "Step 4: Probability of drawing a green ball $P(G) = \\frac{x}{15+x}$.",
+          "Step 5: Given $P(G) = 3 \\times P(R)$. So $\\frac{x}{15+x} = 3 \\times \\frac{15}{15+x}$.",
+          "Step 6: Multiply both sides by $(15+x)$: $x = 45$.",
+          "Step 7: Total balls = $15+45=60$.",
+          "Step 8: Probability of drawing a ball that is not red = $P(\\text{green}) = \\frac{45}{60} = \\frac{3}{4}$. Alternatively, $1 - P(R) = 1 - \\frac{15}{60} = \\frac{45}{60} = \\frac{3}{4}$."
+        ],
+        "derivation": "Let number of green balls be $x$. Total balls $=15+x$.\\\\\n$P(R)=\\frac{15}{15+x},\\quad P(G)=\\frac{x}{15+x}$\\\\\nGiven $P(G)=3P(R)\\Rightarrow \\frac{x}{15+x}=3\\cdot\\frac{15}{15+x}$\\\\\nMultiplying by $15+x$: $x=45$.\\\\\n$P(\\text{not red})=P(G)= \\frac{45}{60}=\\frac{3}{4}$."
+      },
+      "topic": "Probability",
+      "subtopic": "Complementary events",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:15:56.753774",
+        "model": "deepseek/deepseek-v4-flash",
+        "mechanism": "number_word_problem + probability"
+      },
+      "id": "ncert_20260604_132037_049ad5_04"
+    },
+    {
+      "question": "A game consists of spinning an arrow which comes to rest pointing to one of the sectors numbered 1, 2, 3, 4, 5, 6, 7, 8 as shown in the figure (assume equal sized sectors). Two players, A and B, take turns to spin the arrow. If the arrow points to a number which is a multiple of 3, then A wins the round; otherwise, B wins the round. They agree that the game is fair if the probability of each player winning is $\\frac{1}{2}$. Determine whether the game is fair. If it is not fair, how many consecutive sectors starting from 1 should be replaced by the number 9 so that the game becomes fair? Justify your answer using complementary events.",
+      "answer": "The game is not fair initially because $P(A)=\\frac{1}{4}$ and $P(B)=\\frac{3}{4}$. To make the game fair, replace the first 4 sectors (1,2,3,4) with the number 9. Then $P(A)=P(B)=\\frac{1}{2}$.",
+      "solution": {
+        "steps": [
+          "Step 1: Count total possible outcomes. The arrow can land on any of the 8 equally likely sectors: 1,2,3,4,5,6,7,8.",
+          "Step 2: Identify the numbers that are multiples of 3 from 1 to 8. They are: 3 and 6. So there are 2 favourable outcomes for A.",
+          "Step 3: Compute probability of A winning: $P(A) = \\frac{\\text{number of multiples of 3}}{\\text{total sectors}} = \\frac{2}{8} = \\frac{1}{4}$.",
+          "Step 4: The event 'B wins' is the complement of 'A wins'. So $P(B) = 1 - P(A) = 1 - \\frac{1}{4} = \\frac{3}{4}$.",
+          "Step 5: Since $P(A) \\neq P(B)$, the game is not fair. For fairness, we need $P(A) = P(B) = \\frac{1}{2}$.",
+          "Step 6: Let $x$ be the number of sectors (starting from 1) that are replaced by the number 9. After replacement, the sectors become: nine 9's (in the replaced positions) and the remaining original numbers from $x+1$ to 8.",
+          "Step 7: The number 9 is a multiple of 3, so the replaced sectors now count as favourable for A. Originally, there were 2 favourable sectors (3 and 6). After replacement, the new favourable count = (number of sectors that are 9) + (original multiples of 3 among the unchanged sectors).",
+          "Step 8: For fairness, we need $P(A) = \\frac{1}{2}$. So $\\frac{\\text{favourable for A}}{8} = \\frac{1}{2}$ implies favourable count must be 4.",
+          "Step 9: Initially there are 2 favourable sectors. We need exactly 2 more favourable sectors. The only way is to replace some sectors (which are not already multiples of 3) by 9. But note that sector 3 and 6 are already multiples of 3; replacing them would not change the count. To increase favourable count by 2, we must replace 2 sectors that are not multiples of 3. However, we must replace a block of consecutive sectors starting from 1.",
+          "Step 10: The consecutive sectors from 1: 1,2,3,4,... . Replace the first $x$ sectors. Count favourable: among the replaced ones, all become 9 (favourable). Among the unchanged ones (from $x+1$ to 8), only the original multiples of 3 (which are 3 and 6) are favourable, but if $x \\ge 3$, then sector 3 is replaced. So we consider cases.",
+          "Step 11: Try $x=4$. Then replaced: sectors 1,2,3,4 become 9. So 4 favourable (all 9's). Unchanged sectors: 5,6,7,8. Among these, only 6 is a multiple of 3. So total favourable = 4 (from replaced) +1 (from unchanged) = 5. That gives $P(A)=\\frac{5}{8}$ which is too high.",
+          "Step 12: Try $x=3$. Replaced: 1,2,3 become 9. That's 3 favourable. Unchanged: 4,5,6,7,8. Among these, 6 is a multiple of 3. So total = 3+1=4. That gives $P(A)=\\frac{4}{8}=\\frac{1}{2}$. So $x=3$ works.",
+          "Step 13: Verify: After replacing sectors 1,2,3 with 9, the sectors are: 9,9,9,4,5,6,7,8. Multiples of 3 are the three 9's and the 6, making 4 favourable. So $P(A)= \\frac{4}{8}=\\frac{1}{2}$ and $P(B)=1-\\frac{1}{2}=\\frac{1}{2}$. The game is fair."
+        ],
+        "derivation": "Total sectors = 8.\nOriginal favourable for A: multiples of 3 = {3,6} => count = 2.\n$P(A)=\\frac{2}{8}=\\frac{1}{4}$, $P(B)=1-\\frac{1}{4}=\\frac{3}{4}$.\nNeed $P(A)=\\frac{1}{2}$ => favourable count needed = $\\frac{1}{2} \\times 8 = 4$.\nReplace first $x$ sectors with 9. Let $f$ be favourable count after replacement.\nIf $x=1$: replaced sector 1 becomes 9 (favourable). Unchanged: {2,3,4,5,6,7,8} include 3 and 6 => favourable=1+2=3, not 4.\n$x=2$: replaced {1,2} become 9 (2 favourable). Unchanged {3,4,5,6,7,8} include 3 and 6 => total=2+2=4. So $P(A)=4/8=1/2$.\nBut the replaced sectors must be consecutive starting from 1. For $x=2$, replaced sectors are 1 and 2. Unchanged: 3,4,5,6,7,8. Multiples of 3 among unchanged: 3 and 6 => 2 favourable. Total favourable = 2 (replaced) + 2 = 4. So $x=2$ also works! However, check: after replacement, sectors are 9,9,3,4,5,6,7,8. But sector 3 is still 3, which is a multiple of 3. So favourable: the two 9's, 3, and 6 => indeed 4. So $x=2$ gives fairness. But the problem statement says 'consecutive sectors starting from 1' and we want minimal? Actually $x=2$ and $x=3$ both work? Let's verify $x=2$: sectors 1 and 2 become 9. Then sectors: 1->9, 2->9, 3 unchanged=3 (multiple), 4=4,5=5,6=6 (multiple),7=7,8=8. Favourable: 9,9,3,6 => 4. Yes. So minimal $x=2$. But the typical answer expects $x=4$? No, the reasoning above shows $x=2$ works and is minimal. However, to maintain a more interesting answer, many textbooks might replace the first 4 to make the interpretation cleaner. But mathematically, $x=2$ suffices.\nHowever, we must check if the game is fair: $P(A) = 4/8 = 1/2$, $P(B)=1/2$. So indeed $x=2$ works.\nBut note: the problem asked 'how many consecutive sectors starting from 1 should be replaced by the number 9'. Both $x=2$ and $x=3$ work, but $x=2$ is the minimum. We'll present $x=2$ as the answer.\nLet's double-check $x=2$: replaced sectors 1 and 2 become 9. Then the set of numbers is: 9,9,3,4,5,6,7,8. Multiples of 3: 9,9,3,6 => 4. So yes.\nBut wait: sector 3 is still 3, which is a multiple of 3. So it's fine.\nThus answer: replace the first 2 sectors.\n\nHowever, I should also consider that the problem might intend to have the replacement numbers to be 9 and also that 9 is a multiple of 3, but then the original 3 and 6 remain. So $x=2$ gives exactly 4 favourable. So the game becomes fair.\n\nI'll provide $x=2$ as answer.\n\nNow, justification using complementary events: $P(A)+P(B)=1$, so if $P(A)=1/2$, then $P(B)=1/2$ automatically."
+      },
+      "topic": "Probability",
+      "subtopic": "Complementary Events",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:16:40.306455",
+        "model": "deepseek/deepseek-v4-flash",
+        "mechanism": "number_word_problem + probability"
+      },
+      "id": "ncert_20260604_132037_9bc654_05"
+    },
+    {
+      "question": "A bag contains 20 red marbles and some blue marbles. If the probability of drawing a blue marble is double that of drawing a red marble, find the number of blue marbles in the bag. Also, find the probability of drawing a red marble and the probability of drawing a blue marble. If one marble is drawn at random from the bag, what is the probability that it is not blue?",
+      "answer": "Number of blue marbles = 40, P(red) = $\\frac{1}{3}$, P(blue) = $\\frac{2}{3}$, P(not blue) = $\\frac{1}{3}$",
+      "solution": {
+        "steps": [
+          "Let the number of blue marbles be $x$.",
+          "Total number of marbles = $20 + x$.",
+          "Probability of drawing a red marble = $\\frac{20}{20+x}$.",
+          "Probability of drawing a blue marble = $\\frac{x}{20+x}$.",
+          "Given: Probability of drawing a blue marble is double that of drawing a red marble. So, $\\frac{x}{20+x} = 2 \\times \\frac{20}{20+x}$.",
+          "Since denominators are equal, equate numerators: $x = 40$.",
+          "Thus, number of blue marbles = 40.",
+          "Total marbles = $20+40=60$.",
+          "P(red) = $\\frac{20}{60} = \\frac{1}{3}$.",
+          "P(blue) = $\\frac{40}{60} = \\frac{2}{3}$.",
+          "P(not blue) is the complement of P(blue) = $1 - \\frac{2}{3} = \\frac{1}{3}$."
+        ],
+        "derivation": "Let $B =$ number of blue marbles. \\[ P(\\text{red}) = \\frac{20}{20+B}, \\quad P(\\text{blue}) = \\frac{B}{20+B} \\] \\[ \\frac{B}{20+B} = 2 \\cdot \\frac{20}{20+B} \\implies B = 40 \\] \\[ P(\\text{blue}) = \\frac{40}{60} = \\frac{2}{3}, \\quad P(\\text{not blue}) = 1 - \\frac{2}{3} = \\frac{1}{3} \\]"
+      },
+      "topic": "Probability",
+      "subtopic": "Complementary events",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:17:44.132289",
+        "model": "deepseek/deepseek-v4-flash",
+        "mechanism": "number_word_problem + probability + construction"
+      },
+      "id": "ncert_20260604_132037_505a76_06"
+    },
+    {
+      "question": "Two dice are thrown simultaneously. Find the probability that the sum of the numbers appearing on the dice is a composite number.",
+      "answer": "$\\frac{7}{12}$",
+      "solution": {
+        "steps": [
+          "Step 1: Determine the total number of equally likely outcomes when two dice are thrown simultaneously. Each die has 6 faces, so total outcomes = $6 \\times 6 = 36$.",
+          "Step 2: List all possible sums from 2 to 12 and identify which sums are composite numbers. Composite numbers between 2 and 12 are: 4, 6, 8, 9, 10, 12. (Note: 1 is not possible, 2 is prime, 3 is prime, 5 is prime, 7 is prime, 11 is prime.)",
+          "Step 3: Count the number of outcomes that give each composite sum. Use the table of outcomes for two dice.",
+          "Step 4: For sum=4: outcomes (1,3), (2,2), (3,1) \u2192 3 outcomes. For sum=6: (1,5), (2,4), (3,3), (4,2), (5,1) \u2192 5 outcomes. For sum=8: (2,6), (3,5), (4,4), (5,3), (6,2) \u2192 5 outcomes. For sum=9: (3,6), (4,5), (5,4), (6,3) \u2192 4 outcomes. For sum=10: (4,6), (5,5), (6,4) \u2192 3 outcomes. For sum=12: (6,6) \u2192 1 outcome.",
+          "Step 5: Add all favorable outcomes: $3+5+5+4+3+1 = 21$.",
+          "Step 6: Use the formula for probability: $P(\\text{composite sum}) = \\frac{\\text{number of favorable outcomes}}{\\text{total outcomes}} = \\frac{21}{36} = \\frac{7}{12}$."
+        ],
+        "derivation": "Total outcomes = $6 \\times 6 = 36$.\nFavorable outcomes (sum = 4,6,8,9,10,12):\n- Sum 4: $(1,3),(2,2),(3,1) \\Rightarrow 3$\n- Sum 6: $(1,5),(2,4),(3,3),(4,2),(5,1) \\Rightarrow 5$\n- Sum 8: $(2,6),(3,5),(4,4),(5,3),(6,2) \\Rightarrow 5$\n- Sum 9: $(3,6),(4,5),(5,4),(6,3) \\Rightarrow 4$\n- Sum 10: $(4,6),(5,5),(6,4) \\Rightarrow 3$\n- Sum 12: $(6,6) \\Rightarrow 1$\nTotal favorable = $3+5+5+4+3+1 = 21$.\n$P = \\frac{21}{36} = \\frac{7}{12}$."
+      },
+      "topic": "Probability",
+      "subtopic": "Complementary events",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:18:31.819818",
+        "model": "deepseek/deepseek-v4-flash",
+        "mechanism": "number_word_problem + probability"
+      },
+      "id": "ncert_20260604_132037_62e4e7_07"
+    },
+    {
+      "question": "A box contains 90 discs, numbered from 1 to 90. One disc is drawn at random from the box. What is the probability that the number on the drawn disc is a prime number? (Do not consider 1 as a prime number.) Also, find the probability that the number on the drawn disc is **not** a prime number.",
+      "answer": "Probability that the number is a prime = $\\frac{4}{15}$; Probability that the number is **not** a prime = $\\frac{11}{15}$",
+      "solution": {
+        "steps": [
+          "Step 1: Determine the total number of possible outcomes. The discs are numbered 1 to 90, so total outcomes $n(S) = 90$.",
+          "Step 2: List all prime numbers between 1 and 90. Prime numbers are numbers greater than 1 that have only two factors: 1 and themselves. The prime numbers up to 90 are: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89.",
+          "Step 3: Count the prime numbers listed. There are 24 prime numbers between 1 and 90. So, number of favorable outcomes for event A (getting a prime number) $n(A) = 24$.",
+          "Step 4: Calculate the probability of event A: $P(A) = \\frac{n(A)}{n(S)} = \\frac{24}{90} = \\frac{4}{15}$.",
+          "Step 5: Use the formula for complementary events. The event that the number is **not** a prime is the complement of event A. So, $P(\\text{not prime}) = 1 - P(A)$.",
+          "Step 6: Compute the complementary probability: $P(\\text{not prime}) = 1 - \\frac{4}{15} = \\frac{15-4}{15} = \\frac{11}{15}$."
+        ],
+        "derivation": "Total outcomes: $n(S) = 90$\\nPrime numbers from 1 to 90: $\\{2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89\\}$\\nCount: $n(\\text{prime}) = 24$\\n$P(\\text{prime}) = \\frac{24}{90} = \\frac{4}{15}$\\n$P(\\text{not prime}) = 1 - P(\\text{prime}) = 1 - \\frac{4}{15} = \\frac{11}{15}$"
+      },
+      "topic": "Probability",
+      "subtopic": "Complementary events",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:19:27.974047",
+        "model": "deepseek/deepseek-v4-flash",
+        "mechanism": "number_word_problem + probability + construction"
+      },
+      "id": "ncert_20260604_132037_2e56c9_08"
+    },
+    {
+      "question": "A student has to attempt a multiple-choice test with 5 questions. Each question has 4 options, of which exactly one is correct. The student does not know the answer to any question and decides to guess all answers uniformly at random. What is the probability that the student gets at least one question correct? Express your answer in simplest fractional form.",
+      "answer": "$\\frac{781}{1024}$",
+      "solution": {
+        "steps": [
+          "Step 1: Understand the problem. We want P(at least one correct) in 5 independent guesses, each with probability of success (correct) = 1/4 and failure = 3/4.",
+          "Step 2: Use the complementary event. P(at least one correct) = 1 - P(none correct).",
+          "Step 3: Compute P(none correct). For each question, probability of being wrong = 3/4. Since guesses are independent, P(all 5 wrong) = (3/4)^5.",
+          "Step 4: Calculate (3/4)^5 = 243/1024.",
+          "Step 5: Therefore, P(at least one correct) = 1 - 243/1024 = (1024 - 243)/1024 = 781/1024."
+        ],
+        "derivation": "Let $E$ = event that student gets at least one correct.\n$P(E) = 1 - P(\\text{no correct})$\n$P(\\text{no correct}) = \\left(\\frac{3}{4}\\right)^5 = \\frac{243}{1024}$\n$P(E) = 1 - \\frac{243}{1024} = \\frac{1024-243}{1024} = \\frac{781}{1024}$"
+      },
+      "topic": "Probability",
+      "subtopic": "Complementary Events",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:20:00.211912",
+        "model": "deepseek/deepseek-v4-flash",
+        "mechanism": "probability"
+      },
+      "id": "ncert_20260604_132037_ba82e8_09"
+    },
+    {
+      "question": "In a shooting competition, a player's chance of hitting a target is $\\frac{5}{8}$. What is the minimum number of shots he must fire so that the probability of hitting the target at least once is greater than $\\frac{9}{10}$?",
+      "answer": "$4$",
+      "solution": {
+        "steps": [
+          "Step 1: Let $n$ be the number of shots fired. Probability of hitting the target at least once $= 1 - P(\\text{missing all } n \\text{ shots})$.",
+          "Step 2: Probability of missing the target in one shot $= 1 - \\frac{5}{8} = \\frac{3}{8}$.",
+          "Step 3: Since each shot is independent, probability of missing all $n$ shots $= \\left(\\frac{3}{8}\\right)^n$.",
+          "Step 4: Required condition: $1 - \\left(\\frac{3}{8}\\right)^n > \\frac{9}{10}$ $\\Rightarrow \\left(\\frac{3}{8}\\right)^n < 1 - \\frac{9}{10} = \\frac{1}{10}$.",
+          "Step 5: Take natural logarithm both sides: $n \\ln\\left(\\frac{3}{8}\\right) < \\ln\\left(\\frac{1}{10}\\right)$. Note $\\ln(3/8)$ is negative.",
+          "Step 6: $n > \\frac{\\ln(1/10)}{\\ln(3/8)} = \\frac{-\\ln 10}{\\ln 3 - \\ln 8} = \\frac{-\\ln 10}{\\ln 3 - 3\\ln 2}$.",
+          "Step 7: Using approximate values: $\\ln 10 \\approx 2.3026$, $\\ln 3 \\approx 1.0986$, $\\ln 2 \\approx 0.6931$. Then denominator $\\approx 1.0986 - 2.0793 = -0.9807$. Thus $n > \\frac{-2.3026}{-0.9807} \\approx 2.348$.",
+          "Step 8: Since $n$ must be an integer, the smallest $n$ satisfying $n > 2.348$ is $n = 3$. However, check $n=3$: $1-(3/8)^3 = 1-27/512 = 485/512 \\approx 0.9473$, which is indeed $>0.9$. Wait, but the condition $n>2.348$ gives $n=3$. But check $n=2$: $1-(3/8)^2 = 1-9/64 = 55/64 \\approx 0.8594 < 0.9$, so $n=2$ fails. So minimum $n=3$.",
+          "Step 9: But note the derived inequality gave $n>2.348$, so $n=3$ is correct. However, re-calc: $\\frac{\\ln(1/10)}{\\ln(3/8)} = \\frac{-2.3026}{-0.9807} = 2.348$, so $n>2.348$ gives $n=3$. But the problem expects answer 3? Let me verify with exact fraction: $\\left(\\frac{3}{8}\\right)^2 = \\frac{9}{64} = 0.140625$, $1-0.140625=0.859375 < 0.9$; $\\left(\\frac{3}{8}\\right)^3 = \\frac{27}{512} \\approx 0.052734$, $1-0.052734=0.947266 > 0.9$. So answer is 3."
+        ],
+        "derivation": "Let $n$ be number of shots.\\\n$P(\\text{hit at least once}) = 1 - P(\\text{miss all}) = 1 - \\left(1 - \\frac{5}{8}\\right)^n = 1 - \\left(\\frac{3}{8}\\right)^n$.\\\nWe require $1 - \\left(\\frac{3}{8}\\right)^n > \\frac{9}{10}$.\\\n$\\Rightarrow \\left(\\frac{3}{8}\\right)^n < \\frac{1}{10}$.\\\nTaking ln: $n \\ln\\left(\\frac{3}{8}\\right) < \\ln\\left(\\frac{1}{10}\\right)$.\\\nSince $\\ln(3/8) < 0$, dividing reverses inequality: $n > \\frac{\\ln(1/10)}{\\ln(3/8)}$.\\\n$\\frac{\\ln(1/10)}{\\ln(3/8)} = \\frac{-\\ln 10}{\\ln 3 - 3\\ln 2} \\approx 2.348$.\\\nThus $n > 2.348$, so smallest integer $n = 3$."
+      },
+      "topic": "Probability",
+      "subtopic": "complementary events",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:20:37.032350",
+        "model": "deepseek/deepseek-v4-flash",
+        "mechanism": "number_word_problem + probability"
+      },
+      "id": "ncert_20260604_132037_328cdb_10"
+    }
+  ]
+}

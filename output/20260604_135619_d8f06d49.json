@@ -1,0 +1,159 @@
+{
+  "batch_id": "20260604_135619_d8f06d49",
+  "generated_at": "2026-06-04T13:56:19.437406",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Some Applications of Trigonometry",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The angle of elevation of the top of a tower from a point on the ground, which is $30 \\text{ m}$ away from the foot of the tower of height $30 \\sqrt{3} \\text{ m}$, is $60^\\circ$. \nReason (R): In a right-angled triangle, $\\tan(\\theta) = \\frac{\\text{Opposite}}{\\text{Adjacent}}$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Identify the height (opposite) = $30\\sqrt{3}$ and base (adjacent) = $30$.",
+          "Use the formula $\\tan(\\theta) = \\frac{30\\sqrt{3}}{30} = \\sqrt{3}$.",
+          "Since $\\tan(60^\\circ) = \\sqrt{3}$, the angle is $60^\\circ$."
+        ],
+        "derivation": "\\tan(\\theta) = \\frac{30\\sqrt{3}}{30} = \\sqrt{3} \\implies \\theta = 60^\\circ"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Angle of Elevation",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:19.436998",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135619_bc531a_01"
+    },
+    {
+      "question": "Assertion (A): If the length of the shadow of a vertical pole is equal to its height, then the angle of elevation of the Sun is $45^\\circ$. \nReason (R): The angle of elevation is defined only when the object is taller than the observer.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Let height = $h$ and shadow = $h$.",
+          "$\\tan(\\theta) = \\frac{h}{h} = 1$.",
+          "$\\theta = 45^\\circ$. Assertion is true.",
+          "Reason is false because angle of elevation is defined by the line of sight relative to the horizontal, regardless of relative height."
+        ],
+        "derivation": "\\tan(\\theta) = \\frac{\\text{height}}{\\text{shadow}} = \\frac{h}{h} = 1 \\implies \\theta = 45^\\circ"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Angle of Elevation",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:19.437093",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135619_5afef8_02"
+    },
+    {
+      "question": "Assertion (A): The angle of depression of an object from a point $h$ meters above the ground is always equal to the angle of elevation of that point from the object on the ground. \nReason (R): The angle of elevation and depression are alternate interior angles for parallel horizontal lines.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "By the properties of parallel lines, the line of sight creates alternate interior angles.",
+          "Thus, angle of elevation = angle of depression."
+        ],
+        "derivation": "\\angle \\text{elevation} = \\angle \\text{depression} \\text{ (Alternate Interior Angles)}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Angle of Depression",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:19.437122",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135619_4aca25_03"
+    },
+    {
+      "question": "Assertion (A): If a ladder of length $10 \\text{ m}$ reaches a wall at a height of $5 \\text{ m}$, the angle made by the ladder with the ground is $30^\\circ$. \nReason (R): $\\sin(\\theta) = \\frac{\\text{Opposite}}{\\text{Hypotenuse}}$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Opposite = $5$, Hypotenuse = $10$.",
+          "$\\sin(\\theta) = \\frac{5}{10} = 0.5$.",
+          "$\\theta = 30^\\circ$."
+        ],
+        "derivation": "\\sin(\\theta) = \\frac{5}{10} = \\frac{1}{2} \\implies \\theta = 30^\\circ"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Trigonometric Ratios",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:19.437142",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135619_483a7e_04"
+    },
+    {
+      "question": "Assertion (A): As an observer moves closer to a tower, the angle of elevation of its top increases. \nReason (R): $\\tan(\\theta)$ increases as $\\theta$ increases from $0^\\circ$ to $90^\\circ$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "In $\\tan(\\theta) = \\frac{h}{x}$, as $x$ (distance) decreases, $\\tan(\\theta)$ increases.",
+          "As $\\tan(\\theta)$ increases, $\\theta$ must increase."
+        ],
+        "derivation": "\\text{As } x \\to 0, \\tan(\\theta) = \\frac{h}{x} \\to \\infty, \\text{ so } \\theta \\to 90^\\circ"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Angle of Elevation",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:19.437161",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135619_f639eb_05"
+    }
+  ]
+}

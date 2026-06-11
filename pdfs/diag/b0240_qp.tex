@@ -1,0 +1,289 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag} \\[0.3cm]
+  \textbf{Time Allowed: 3 Hours} \hfill \textbf{Maximum Marks: 80} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\noindent\textbf{General Instructions:}
+\begin{enumerate}
+  \item {\normalfont\normalcolor This question paper contains 40 questions. All questions are compulsory.}
+  \item {\normalfont\normalcolor Questions are grouped into sections A through E.}
+  \item {\normalfont\normalcolor Use of calculators is NOT permitted.}
+\end{enumerate}
+\bigskip
+\noindent\textbf{\large Section A: Multiple Choice \& Assertion-Reason (1 mark each)}
+
+\begin{questions}
+\question[1] A $1.5$ m tall boy is standing at some distance from a $30$ m tall building. The angle of elevation from his eyes to the top of the building is $45^\circ$. The height above his eye level is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) $30$ m
+  \item (B) $28.5$ m
+  \item (C) $31.5$ m
+  \item (D) $1.5$ m
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The shadow of a tower standing on a level ground is found to be $40$ m longer when the Sun's altitude is $30^\circ$ than when it is $60^\circ$. The height of the tower is not required, but if we consider a simpler case where the shadow is $h\sqrt{3}$ when angle is $30^\circ$, what is the height $h$ if the shadow is $30$ m?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) $30\sqrt{3}$ m
+  \item (B) $30$ m
+  \item (C) $10\sqrt{3}$ m
+  \item (D) $10$ m
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If the angle between two tangents drawn from a point $P$ to a circle of radius $r$ and center $O$ is $60^\circ$, then the length of $OP$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) r
+  \item (B) 2r
+  \item $(C) r\sqrt{3}$
+  \item (D) r/2
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] A tangent $PQ$ at a point $P$ of a circle of radius $5 \text{ cm}$ meets a line through the center $O$ at a point $Q$ so that $OQ = 13 \text{ cm}$. The length of $PQ$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 10 cm
+  \item (B) 8 cm
+  \item (C) 12 cm
+  \item (D) 7 cm
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The number of tangents that can be drawn from a point lying inside a circle is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 0
+  \item (B) 1
+  \item (C) 2
+  \item (D) Infinite
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If two tangents inclined at an angle of $80^\circ$ are drawn to a circle of radius $3 \text{ cm}$, then the angle between the two radii at the center is:
+\begin{enumerate}[label=(\Alph*)]
+  \item $(A) 80^\circ$
+  \item $(B) 90^\circ$
+  \item $(C) 100^\circ$
+  \item $(D) 120^\circ$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The length of a tangent from a point $A$ at a distance of $10 \text{ cm}$ from the center of the circle is $8 \text{ cm}$. The radius of the circle is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 4 cm
+  \item (B) 6 cm
+  \item (C) 7 cm
+  \item (D) 9 cm
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The angle of elevation of the top of a tower from a point on the ground, which is $30 \text{ m}$ away from the foot of the tower, is $45^\circ$. The height of the tower is $30 \text{ m}$. Reason (R): In a right-angled triangle, $\tan(\theta) = \frac{\text{Opposite}}{\text{Adjacent}}$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If the length of the shadow of a vertical pole is equal to its height, then the angle of elevation of the Sun is $45^\circ$. Reason (R): The angle of elevation is the angle formed by the line of sight with the horizontal when the object is above the horizontal level.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The length of a kite string making an angle of $30^\circ$ with the ground to reach a height of $50 \text{ m}$ is $100 \text{ m}$. Reason (R): $\sin(\theta) = \frac{\text{Opposite}}{\text{Hypotenuse}}$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The angle of depression from a point $10 \text{ m}$ above sea level to a ship at sea is $30^\circ$. The distance of the ship from the base of the point is $10\sqrt{3} \text{ m}$. Reason (R): Angle of depression is equal to the angle of elevation by alternate interior angles.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If a ladder $10 \text{ m}$ long is placed against a wall such that it makes an angle of $60^\circ$ with the ground, then the foot of the ladder is $5 \text{ m}$ away from the wall. Reason (R): $\cos(\theta) = \frac{\text{Adjacent}}{\text{Hypotenuse}}$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The length of a tangent drawn from an external point to a circle is equal to the length of another tangent drawn from the same point. Reason (R): The lengths of tangents drawn from an external point to a circle are equal.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The tangent at any point of a circle is perpendicular to the radius through the point of contact. Reason (R): The perpendicular distance from the center of the circle to the tangent is equal to the radius.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The number of tangents that can be drawn from a point inside a circle is zero. Reason (R): A point inside a circle lies in the interior, and any line passing through it will be a secant, not a tangent.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If the angle between two tangents drawn from a point P to a circle of radius $r$ and center O is $60^\circ$, then $OP = 2r$. Reason (R): The line segment from the center to the external point bisects the angle between the tangents.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The length of the tangent from a point $A$ at a distance of $5 \text{ cm}$ from the center of the circle is $4 \text{ cm}$. The radius of the circle is $3 \text{ cm}$. Reason (R): In a right triangle formed by radius, tangent, and hypotenuse (distance to center), $r^2 + t^2 = d^2$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section B: Very Short Answer (2 marks each)}
+
+\begin{questions}
+\question[2] A ladder $15 \text{ m}$ long makes an angle of $60^\circ$ with the wall. Find the distance of the foot of the ladder from the wall.
+\vspace{0.15cm}
+
+\question[2] The angle of elevation of the top of a tower from a point on the ground, which is $30 \text{ m}$ away from the foot of the tower, is $30^\circ$. Find the height of the tower.
+\vspace{0.15cm}
+
+\question[2] A kite is flying at a height of $60 \text{ m}$ above the ground. The string attached to the kite is temporarily tied to a point on the ground. The inclination of the string with the ground is $60^\circ$. Find the length of the string.
+\vspace{0.15cm}
+
+\question[2] From the top of a $7 \text{ m}$ high building, the angle of elevation of the top of a cable tower is $60^\circ$. If the distance between the building and the tower is $7\sqrt{3} \text{ m}$, find the height of the tower.
+\vspace{0.15cm}
+
+\question[2] A $1.5 \text{ m}$ tall boy is standing at some distance from a $30 \text{ m}$ tall building. The angle of elevation from his eyes to the top of the building increases from $30^\circ$ to $60^\circ$ as he walks towards the building. Find the distance he walked.
+\vspace{0.15cm}
+
+\question[2] A tangent $PQ$ at a point $P$ of a circle of radius $5$ cm meets a line through the center $O$ at a point $Q$ so that $OQ = 13$ cm. Find the length of $PQ$.
+\vspace{0.15cm}
+
+\question[2] If tangents $PA$ and $PB$ from a point $P$ to a circle with center $O$ are inclined to each other at an angle of $80^\circ$, then find $\angle POA$.
+\vspace{0.15cm}
+
+\question[2] Two concentric circles are of radii $5$ cm and $3$ cm. Find the length of the chord of the larger circle which touches the smaller circle.
+\vspace{0.15cm}
+
+\question[2] A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. If $AB = 6$ cm, $BC = 7$ cm, and $CD = 4$ cm, find the length of $AD$.
+\vspace{0.15cm}
+
+\question[2] If a point $P$ is $26$ cm away from the center $O$ of a circle and the length of the tangent $PT$ drawn from $P$ to the circle is $10$ cm, find the radius of the circle.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section C: Short Answer (3 marks each)}
+
+\begin{questions}
+\question[3] A vertical tower stands on a horizontal plane and is surmounted by a vertical flagstaff of height $6$ m. At a point on the plane, the angle of elevation of the bottom and the top of the flagstaff are $30^{\circ}$ and $60^{\circ}$ respectively. Find the height of the tower.
+\vspace{0.15cm}
+
+\question[3] A $1.5$ m tall boy is standing at some distance from a $30$ m tall building. The angle of elevation from his eyes to the top of the building increases from $30^{\circ}$ to $60^{\circ}$ as he walks towards the building. Find the distance he walked towards the building.
+\vspace{0.15cm}
+
+\question[3] The angle of elevation of the top of a lighthouse from a boat is $30^{\circ}$. If the boat moves $100$ m towards the lighthouse, the angle of elevation becomes $45^{\circ}$. Find the height of the lighthouse.
+\vspace{0.15cm}
+
+\question[3] A kite is flying at a height of $60$ m above the ground. The string attached to the kite is temporarily tied to a point on the ground. The inclination of the string with the ground is $60^{\circ}$. Find the length of the string, assuming that there is no slack in the string.
+\vspace{0.15cm}
+
+\question[3] From a point on the ground, the angles of elevation of the bottom and the top of a transmission tower fixed at the top of a $20$ m high building are $45^{\circ}$ and $60^{\circ}$ respectively. Find the height of the tower.
+\vspace{0.15cm}
+
+\question[3] A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.
+\vspace{0.15cm}
+
+\question[3] From a point $Q$, the length of the tangent to a circle is $24$ cm and the distance of $Q$ from the centre is $25$ cm. Find the radius of the circle.
+\vspace{0.15cm}
+
+\question[3] Two concentric circles are of radii $5$ cm and $3$ cm. Find the length of the chord of the larger circle which touches the smaller circle.
+\vspace{0.15cm}
+
+\question[3] If tangents $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\circ$, then find $\angle POA$.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section D: Long Answer (4-5 marks each)}
+
+\begin{questions}
+\question[5] A vertical tower stands on a horizontal plane and is surmounted by a vertical flagstaff of height $h$. At a point on the plane, the angles of elevation of the bottom and the top of the flagstaff are $\alpha$ and $\beta$ respectively. Prove that the height of the tower is $\frac{h \tan \alpha}{\tan \beta - \tan \alpha}$.
+\vspace{0.15cm}
+
+\question[5] From a point on the ground, the angles of elevation of the bottom and the top of a transmission tower fixed at the top of a $20 \text{ m}$ high building are $45^\circ$ and $60^\circ$ respectively. Find the height of the tower.
+\vspace{0.15cm}
+
+\question[5] The angle of elevation of a cloud from a point $60 \text{ m}$ above a lake is $30^\circ$ and the angle of depression of the reflection of the cloud in the lake is $60^\circ$. Find the height of the cloud from the surface of the lake.
+\vspace{0.15cm}
+
+\question[5] Two poles of equal heights are standing opposite each other side by side and opposite each other on either side of the road, which is $80 \text{ m}$ wide. From a point between them on the road, the angles of elevation of the top of the poles are $60^\circ$ and $30^\circ$ respectively. Find the height of the poles and the distances of the point from the poles.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+
+\end{document}

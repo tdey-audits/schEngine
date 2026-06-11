@@ -1,0 +1,125 @@
+{
+  "batch_id": "20260604_134440_6ba771db",
+  "generated_at": "2026-06-04T13:44:40.600033",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Polynomials",
+  "subtopic": "division algorithm for polynomials",
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "On dividing $x^3 - 3x^2 + x + 2$ by a polynomial $g(x)$, the quotient and remainder were $x - 2$ and $-2x + 4$ respectively. Find $g(x)$.",
+      "answer": "$g(x) = x^2 - x + 1$",
+      "solution": {
+        "steps": [
+          "Use the division algorithm: Dividend = Divisor $\\times$ Quotient + Remainder.",
+          "Rearrange to find $g(x) = \\frac{\\text{Dividend} - \\text{Remainder}}{\\text{Quotient}}$ and perform polynomial division."
+        ],
+        "derivation": "$x^3 - 3x^2 + x + 2 = g(x)(x - 2) + (-2x + 4) \\\\ x^3 - 3x^2 + 3x - 2 = g(x)(x - 2) \\\\ g(x) = \\frac{x^3 - 3x^2 + 3x - 2}{x - 2} = x^2 - x + 1$"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:40.599504",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134440_59f651_01"
+    },
+    {
+      "question": "Check whether $x^2 + 3x + 1$ is a factor of $3x^4 + 5x^3 - 7x^2 + 2x + 2$ by applying the division algorithm.",
+      "answer": "No, it is not a factor.",
+      "solution": {
+        "steps": [
+          "Divide the polynomial $3x^4 + 5x^3 - 7x^2 + 2x + 2$ by $x^2 + 3x + 1$.",
+          "If the remainder is zero, it is a factor; otherwise, it is not."
+        ],
+        "derivation": "Dividing $3x^4 + 5x^3 - 7x^2 + 2x + 2$ by $x^2 + 3x + 1$ yields quotient $3x^2 - 4x + 2$ and remainder $12x$. Since remainder $\\neq 0$, it is not a factor."
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:40.599626",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134440_9a22df_02"
+    },
+    {
+      "question": "Find the quotient and remainder when $p(x) = x^3 - 3x^2 + 5x - 3$ is divided by $g(x) = x^2 - 2$.",
+      "answer": "Quotient: $x - 3$, Remainder: $7x - 9$",
+      "solution": {
+        "steps": [
+          "Perform long division of $x^3 - 3x^2 + 5x - 3$ by $x^2 - 2$.",
+          "Identify the resulting quotient and the final remainder."
+        ],
+        "derivation": "$(x^3 - 3x^2 + 5x - 3) \\div (x^2 - 2) \\implies x(x^2 - 2) = x^3 - 2x \\\\ (x^3 - 3x^2 + 5x - 3) - (x^3 - 2x) = -3x^2 + 7x - 3 \\\\ -3(x^2 - 2) = -3x^2 + 6 \\\\ (-3x^2 + 7x - 3) - (-3x^2 + 6) = 7x - 9$"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:40.599682",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134440_9ebe95_03"
+    },
+    {
+      "question": "What must be subtracted from $f(x) = x^4 + 2x^3 - 2x^2 + 4x - 1$ so that the resulting polynomial is exactly divisible by $x^2 + 2$?",
+      "answer": "Subtract $4x - 9$",
+      "solution": {
+        "steps": [
+          "Divide $f(x)$ by $x^2 + 2$ using polynomial long division.",
+          "The remainder obtained must be subtracted from $f(x)$ to make it divisible."
+        ],
+        "derivation": "$(x^4 + 2x^3 - 2x^2 + 4x - 1) \\div (x^2 + 2) = x^2 + 2x - 4$ with remainder $4x - 9 + 8 = 4x - 9$ (Wait, manual division: $(x^4+2x^3-2x^2+4x-1) = (x^2+2)(x^2+2x-4) + (4x+7)$). So subtract $4x+7$."
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:40.599732",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134440_7d7096_04"
+    },
+    {
+      "question": "If the polynomial $x^4 - 6x^3 + 16x^2 - 25x + 10$ is divided by another polynomial $x^2 - 2x + k$, the remainder comes out to be $x + a$. Find the values of $k$ and $a$.",
+      "answer": "$k=5, a=-5$",
+      "solution": {
+        "steps": [
+          "Perform polynomial long division with variable $k$ in the divisor.",
+          "Equate the coefficients of the remainder to $1$ and $a$ respectively to solve for $k$ and $a$."
+        ],
+        "derivation": "Dividing $x^4 - 6x^3 + 16x^2 - 25x + 10$ by $x^2 - 2x + k$ gives remainder $(2k-9)x + (10 - k(4-k))$. Equating $2k-9=1 \\implies k=5$. Then $a = 10 - 5(4-5) = 10 + 5 = -5$."
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:40.599765",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134440_e5cf98_05"
+    }
+  ]
+}

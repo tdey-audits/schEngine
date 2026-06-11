@@ -1,0 +1,118 @@
+{
+  "batch_id": "20260610_145548_1a844183",
+  "generated_at": "2026-06-10T14:55:48.741296",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Areas Related to Circles",
+  "subtopic": "area of sector",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Two distinct circles have radii $r_1$ and $r_2$ such that $r_1 = 2r_2$. If a sector in the first circle has a central angle of $\\theta_1 = 30^\\circ$ and a sector in the second circle has a central angle of $\\theta_2 = 120^\\circ$, what is the ratio of the area of the first sector to the area of the second sector?",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Recall the formula for the area of a sector: $A = \\frac{\\theta}{360^\\circ} \\times \\pi r^2$.",
+          "Calculate the area of the first sector: $A_1 = \\frac{30^\\circ}{360^\\circ} \\times \\pi r_1^2 = \\frac{1}{12} \\pi (2r_2)^2 = \\frac{4}{12} \\pi r_2^2 = \\frac{1}{3} \\pi r_2^2$.",
+          "Calculate the area of the second sector: $A_2 = \\frac{120^\\circ}{360^\\circ} \\times \\pi r_2^2 = \\frac{1}{3} \\pi r_2^2$.",
+          "Find the ratio $\\frac{A_1}{A_2} = \\frac{\\frac{1}{3} \\pi r_2^2}{\\frac{1}{3} \\pi r_2^2} = 1:1$."
+        ],
+        "derivation": "$A_1 = \\frac{30}{360} \\pi (2r_2)^2 = \\frac{1}{12} \\pi (4r_2^2) = \\frac{1}{3} \\pi r_2^2 \\\\ A_2 = \\frac{120}{360} \\pi r_2^2 = \\frac{1}{3} \\pi r_2^2 \\\\ \\frac{A_1}{A_2} = \\frac{\\frac{1}{3} \\pi r_2^2}{\\frac{1}{3} \\pi r_2^2} = \\frac{1}{1}$"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "area of sector",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $1:2$",
+        "(B) $1:1$",
+        "(C) $2:1$",
+        "(D) $4:1$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T14:55:48.741163",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_12 (Areas Related to Circles).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 15,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.4",
+            "question_no": 16,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.4",
+            "question_no": 15,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.4",
+            "question_no": 8,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.3",
+            "question_no": 13,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145548_2462be_01"
+    }
+  ]
+}

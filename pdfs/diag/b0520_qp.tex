@@ -1,0 +1,307 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag} \\[0.3cm]
+  \textbf{Time Allowed: 3 Hours} \hfill \textbf{Maximum Marks: 80} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\noindent\textbf{General Instructions:}
+\begin{enumerate}
+  \item {\normalfont\normalcolor This question paper contains 40 questions. All questions are compulsory.}
+  \item {\normalfont\normalcolor Questions are grouped into sections A through E.}
+  \item {\normalfont\normalcolor Use of calculators is NOT permitted.}
+\end{enumerate}
+\bigskip
+\noindent\textbf{\large Section A: Multiple Choice \& Assertion-Reason (1 mark each)}
+
+\begin{questions}
+\question[1] For the equation $\frac{2}{x} + \frac{3}{y} = 13$ and $\frac{5}{x} - \frac{4}{y} = -2$, if we substitute $u = \frac{1}{x}$ and $v = \frac{1}{y}$, what will be the resulting linear equation from the first expression?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 2u + 3v = 13
+  \item (B) 3u + 2v = 13
+  \item (C) 2u - 3v = 13
+  \item (D) 2u + 3v = -13
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If $\frac{1}{x+y} = a$ and $\frac{1}{x-y} = b$, the equation $\frac{5}{x+y} - \frac{2}{x-y} = 1$ reduces to which of the following linear forms?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 5a + 2b = 1
+  \item (B) 2a - 5b = 1
+  \item (C) 5a - 2b = 1
+  \item (D) 5a - 2b = -1
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Given the equation $\frac{7}{x-1} + \frac{1}{y-2} = 3$, what substitution would convert this into a linear equation?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) u = x-1, v = y-2
+  \item $(B) u = \frac{1}{x-1}, v = \frac{1}{y-2}$
+  \item (C) u = x+1, v = y+2
+  \item $(D) u = \frac{1}{x+1}, v = \frac{1}{y+2}$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] For the system $\frac{10}{x+y} + \frac{2}{x-y} = 4$ and $\frac{15}{x+y} - \frac{5}{x-y} = -2$, if $u = \frac{1}{x+y}$ and $v = \frac{1}{x-y}$, what is the coefficient of $v$ in the second equation?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 5
+  \item (B) 2
+  \item (C) -2
+  \item (D) -5
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Which of the following represents the linear form of $\frac{x+y}{xy} = 2$?
+\begin{enumerate}[label=(\Alph*)]
+  \item $(A) \frac{1}{x} + \frac{1}{y} = 2$
+  \item (B) x + y = 2
+  \item $(C) \frac{1}{x} - \frac{1}{y} = 2$
+  \item (D) x - y = 2
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Which of the following is a quadratic equation?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) $x(x+1) + 8 = (x+2)(x-2)$
+  \item (B) $(x+2)^3 = x^3 - 4$
+  \item (C) $(x+2)^2 = 2(x+3)$
+  \item (D) $x^2 + \frac{1}{x^2} = 5$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The discriminant of the quadratic equation $2x^2 - 4x + 3 = 0$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 8
+  \item (B) -8
+  \item (C) 4
+  \item (D) -4
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If $1/2$ is a root of the equation $x^2 - kx - 5/4 = 0$, then the value of $k$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 2
+  \item (B) -1
+  \item (C) 1
+  \item (D) -2
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The quadratic equation $x^2 + kx + 1 = 0$ has equal roots if:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) $k = \pm 2$
+  \item (B) $k = \pm 1$
+  \item (C) $k = 0$
+  \item (D) $k = \pm 4$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The roots of the quadratic equation $x^2 - 9 = 0$ are:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 9, -9
+  \item (B) 3, 3
+  \item (C) 3, -3
+  \item (D) 0, 9
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The equation $\frac{2}{x} + \frac{3}{y} = 13$ can be reduced to a linear equation in two variables by substituting $u = \frac{1}{x}$ and $v = \frac{1}{y}$. Reason (R): Any equation of the form $\frac{a}{x} + \frac{b}{y} = c$ where $x, y \neq 0$ is a linear equation. Select the correct option.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): For the system $\frac{1}{x} + \frac{1}{y} = 5$ and $\frac{1}{x} - \frac{1}{y} = 1$, the values are $x = 1/3, y = 1/2$. Reason (R): Adding the two equations eliminates the term involving $1/y$. Select the correct option.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The equation $\frac{5}{x-1} + \frac{1}{y-2} = 2$ is reducible to linear form using $u = \frac{1}{x-1}$ and $v = \frac{1}{y-2}$. Reason (R): The substitution must always be linear functions of $x$ and $y$. Select the correct option.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The pair $\frac{4}{x} + 3y = 14$ and $\frac{3}{x} - 4y = 23$ has $x = 1/5$. Reason (R): Substituting $u = 1/x$ reduces the system to $4u + 3y = 14$ and $3u - 4y = 23$. Select the correct option.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): For $\frac{2}{\sqrt{x}} + \frac{3}{\sqrt{y}} = 2$ and $\frac{4}{\sqrt{x}} - \frac{9}{\sqrt{y}} = -1$, the value of $u = \frac{1}{\sqrt{x}}$ is $1/2$. Reason (R): A linear equation must have variables with power 1. Select the correct option.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The quadratic equation $x^2 + 5x + 6 = 0$ has two distinct real roots. Reason (R): A quadratic equation $ax^2 + bx + c = 0$ has distinct real roots if its discriminant $D = b^2 - 4ac > 0$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If $x = 2$ is a root of $x^2 - kx + 4 = 0$, then $k = 4$. Reason (R): A value $x = \alpha$ is a root of the equation $f(x) = 0$ if $f(\alpha) = 0$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The equation $(x-2)^2 + 1 = 2x - 3$ is a quadratic equation. Reason (R): Any equation of the form $ax^2 + bx + c = 0$ where $a \neq 0$ is a quadratic equation.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The quadratic equation $x^2 + 2x + 5 = 0$ has no real roots. Reason (R): For $x^2 + 2x + 5 = 0$, the discriminant is $-16$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The roots of $x^2 - 9 = 0$ are $3$ and $-3$. Reason (R): $x^2 - a^2 = (x-a)(x+a)$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section B: Very Short Answer (2 marks each)}
+
+\begin{questions}
+\question[2] Solve for $x$ and $y$: $\frac{2}{x} + \frac{3}{y} = 13$ and $\frac{5}{x} - \frac{4}{y} = -2$.
+\vspace{0.15cm}
+
+\question[2] Find the values of $x$ and $y$ given: $\frac{1}{2x} - \frac{1}{y} = -1$ and $\frac{1}{x} + \frac{1}{2y} = 8$.
+\vspace{0.15cm}
+
+\question[2] Solve the system: $\frac{10}{x+y} + \frac{2}{x-y} = 4$ and $\frac{15}{x+y} - \frac{5}{x-y} = -2$.
+\vspace{0.15cm}
+
+\question[2] Solve for $x$ and $y$: $\frac{4}{x} + 3y = 8$ and $\frac{6}{x} - 4y = -5$.
+\vspace{0.15cm}
+
+\question[2] Solve: $\frac{1}{3x+y} + \frac{1}{3x-y} = \frac{3}{4}$ and $\frac{1}{2(3x+y)} - \frac{1}{2(3x-y)} = -\frac{1}{8}$.
+\vspace{0.15cm}
+
+\question[2] Find the roots of the quadratic equation $x^2 - 3x - 10 = 0$ by the method of factorization.
+\vspace{0.15cm}
+
+\question[2] Find the value of $k$ for which the quadratic equation $2x^2 + kx + 3 = 0$ has two equal real roots.
+\vspace{0.15cm}
+
+\question[2] Check whether $x(x + 3) + 1 = (x - 2)(x + 2)$ is a quadratic equation.
+\vspace{0.15cm}
+
+\question[2] Find the roots of the equation $2x^2 - x + \frac{1}{8} = 0$ by using the quadratic formula.
+\vspace{0.15cm}
+
+\question[2] The sum of two numbers is 27 and their product is 182. Form the quadratic equation representing this scenario.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section C: Short Answer (3 marks each)}
+
+\begin{questions}
+\question[3] Solve the following pair of equations by reducing them to a linear form: $\frac{2}{x} + \frac{3}{y} = 13$ and $\frac{5}{x} - \frac{4}{y} = -2$.
+\vspace{0.15cm}
+
+\question[3] A boat goes 30 km upstream and 44 km downstream in 10 hours. In 13 hours, it can go 40 km upstream and 55 km downstream. Determine the speed of the stream and the speed of the boat in still water.
+\vspace{0.15cm}
+
+\question[3] Solve for $x$ and $y$: $\frac{1}{2(2x+3y)} + \frac{12}{7(3x-2y)} = \frac{1}{2}$ and $\frac{7}{2x+3y} + \frac{4}{3x-2y} = 2$.
+\vspace{0.15cm}
+
+\question[3] Roohi travels 300 km to her home partly by train and partly by bus. She takes 4 hours if she travels 60 km by train and the rest by bus. If she travels 100 km by train and the rest by bus, she takes 10 minutes longer. Find the speed of the train and the bus.
+\vspace{0.15cm}
+
+\question[3] Solve the system: $\frac{x+y}{xy} = 2$ and $\frac{x-y}{xy} = 6$.
+\vspace{0.15cm}
+
+\question[3] Find the roots of the quadratic equation $2x^2 - x + \frac{1}{8} = 0$ by the method of factorization.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section D: Long Answer (4-5 marks each)}
+
+\begin{questions}
+\question[5] Solve the following system of equations by reducing them to linear form: $\frac{10}{x+y} + \frac{2}{x-y} = 4$ and $\frac{15}{x+y} - \frac{5}{x-y} = -2$.
+\vspace{0.15cm}
+
+\question[5] A boat goes 30 km upstream and 44 km downstream in 10 hours. In 13 hours, it can go 40 km upstream and 55 km downstream. Determine the speed of the stream and that of the boat in still water.
+\vspace{0.15cm}
+
+\question[5] Solve for $x$ and $y$: $\frac{1}{2(2x+3y)} + \frac{12}{7(3x-2y)} = \frac{1}{2}$ and $\frac{7}{2x+3y} + \frac{4}{3x-2y} = 2$.
+\vspace{0.15cm}
+
+\question[5] Two women and five men can together finish an embroidery work in 4 days, while three women and six men can finish it in 3 days. Find the time taken by 1 woman alone to finish the work, and also that taken by 1 man alone.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+
+\end{document}

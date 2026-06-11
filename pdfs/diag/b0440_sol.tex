@@ -1,0 +1,904 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag Solutions} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{questions}
+\question \textbf{1.} The length of the minute hand of a clock is $14 \text{ cm}$. Find the area swept by the minute hand in $5$ minutes.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{51.33 \text{ cm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Determine the angle swept by the minute hand in 5 minutes: Since it covers $360^\circ$ in 60 minutes, in 5 minutes it covers $(5/60) \times 360 = 30^\circ$.
+  \item Calculate the area of the sector with $r=14$ and $\theta=30^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Area} = \frac{30}{360} \times \frac{22}{7} \times 14 \times 14 = \frac{1}{12} \times 22 \times 2 \times 14 = \frac{616}{12} = 51.33 \text{ cm}^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Applications of Sectors}
+\vspace{0.3cm}
+
+\question \textbf{2.} Find the area of a quadrant of a circle whose circumference is $44 \text{ cm}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{38.5 \text{ cm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the circumference $2\pi r = 44$ to find the radius $r$.
+  \item Calculate the area of the quadrant using $\frac{1}{4} \pi r^2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+2 \times \frac{22}{7} \times r = 44 \\
+\implies r = 7 \text{ cm}. \text{Area} = \frac{1}{4} \times \frac{22}{7} \times 7^2 = \frac{1}{4} \times 22 \times 7 = 38.5 \text{ cm}^2
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Circumference and Area of Circle}
+\vspace{0.3cm}
+
+\question \textbf{3.} A chord of a circle of radius $10 \text{ cm}$ subtends a right angle at the centre. Find the area of the corresponding minor segment. (Use $\pi = 3.14$)
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{28.5 \text{ cm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Find the area of the sector with $\theta=90^\circ$.
+  \item Subtract the area of the right-angled triangle formed by the radii and the chord to find the segment area.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Area}_{\text{segment}} = \frac{90}{360} \pi r^2 - \frac{1}{2} r^2 \sin(90^\circ) = 0.25 \times 3.14 \times 100 - 0.5 \times 100 = 78.5 - 50 = 28.5 \text{ cm}^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Segment}
+\vspace{0.3cm}
+
+\question \textbf{4.} The radii of two circles are $8 \text{ cm}$ and $6 \text{ cm}$ respectively. Find the radius of the circle having area equal to the sum of the areas of the two circles.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{10 \text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Set up the equation $\pi R^2 = \pi r_1^2 + \pi r_2^2$.
+  \item Simplify and solve for $R$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+R^2 = 8^2 + 6^2 \\
+\implies R^2 = 64 + 36 = 100 \\
+\implies R = \sqrt{100} = 10 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of Circles}
+\vspace{0.3cm}
+
+\question \textbf{5.} Find the area of the shaded region in a circle of radius $14$ cm, where a sector subtends an angle of $60^{\circ}$ at the center. (Use $\pi = \frac{22}{7}$)
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{102.67 \text{ cm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the formula for the area of a sector: $A = \frac{\theta}{360^{\circ}} \times \pi r^2$
+  \item Substitute the given values: $\theta = 60^{\circ}$, $r = 14$ cm, $\pi = \frac{22}{7}$
+  \item Calculate the area: A = $\frac{60}{360} \times \frac{22}{7}$ 	imes 14 	imes 14 = $\frac{1}{6}$ 	imes 22 	imes 2 	imes 14
+  \item Simplify to get $\frac{308}{3} \approx 102.67 \text{ cm}^2$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{A = \frac{60}{360} \times \frac{22}{7} \times 14^2 = \frac{1}{6} \times \frac{22}{7} \times 196 = \frac{1}{6} \times 22 \times 28 = \frac{616}{6} = 102.67 \text{ cm}^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a sector}
+\vspace{0.3cm}
+
+\question \textbf{6.} The wheels of a car are of diameter $80$ cm each. How many complete revolutions does each wheel make in $10$ minutes when the car is traveling at a speed of $66$ km/hr?
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{4375 \text{ revolutions}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the distance covered in 10 minutes: $\text{Speed} = 66 \text{ km/hr} = 66000 \text{ m/hr} = 1100 \text{ m/min}$. Total distance = $1100 \times 10 = 11000$ m.
+  \item Calculate the circumference of the wheel: $C = \pi d = \frac{22}{7} \times 0.8$ m.
+  \item Divide total distance by circumference: $N = \frac{11000}{\pi \times 0.8}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{N = \frac{11000 \times 7}{22 \times 0.8} = \frac{77000}{17.6} = 4375}
+\end{center}
+\hfill \textit{Areas Related to Circles — Circumference of a circle}
+\vspace{0.3cm}
+
+\question \textbf{7.} Find the area of a quadrant of a circle whose circumference is $44$ cm. (Use $\pi = \frac{22}{7}$)
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{38.5 \text{ cm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use circumference $C = 2\pi r = 44$ to find the radius $r$.
+  \item $2 \times \frac{22}{7} \times r = 44 \implies r = 7$ cm.
+  \item Area of quadrant = $\frac{1}{4} \pi r^2 = \frac{1}{4} \times \frac{22}{7} \text{imes} 7 \text{imes} 7$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{r = \frac{44 \times 7}{44} = 7 \text{ cm}. \text{ Area} = \frac{1}{4} \times \frac{22}{7} \times 49 = \frac{1}{4} \times 22 \times 7 = \frac{154}{4} = 38.5 \text{ cm}^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a quadrant}
+\vspace{0.3cm}
+
+\question \textbf{8.} In a circle of radius $21$ cm, an arc subtends an angle of $60^{\circ}$ at the center. Find the length of the arc.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{22 \text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the formula for arc length: $L = \frac{\theta}{360^{\circ}} \times 2\pi r$.
+  \item Substitute $\theta = 60^{\circ}$, $r = 21$ cm.
+  \item Calculate: $L = \frac{60}{360} \times 2 \times \frac{22}{7} \text{imes} 21$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{L = \frac{1}{6} \times 2 \times \frac{22}{7} \text{imes} 21 = \frac{1}{6} \times 2 \times 22 \times 3 = \frac{132}{6} = 22 \text{ cm}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Length of an arc}
+\vspace{0.3cm}
+
+\question \textbf{9.} The cost of fencing a circular field at the rate of $\text{Rs.~} 24$ per meter is $\text{Rs.~} 5280$. Find the radius of the field.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{35 \text{ m}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Find the total circumference by dividing total cost by rate: $C = \frac{5280}{24}$.
+  \item $C = 220$ m.
+  \item Use $2\pi r = 220$ to solve for $r$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+2 \times \frac{22}{7} \times r = 220 \\
+\implies r = \frac{220 \times 7}{44} = 5 \times 7 = 35 \text{ m}
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Circumference of a circle}
+\vspace{0.3cm}
+
+\question \textbf{10.} A round table cover has a design in the form of a regular hexagon ABCDEF inscribed in a circle of radius $3.5$ cm. Find the area of the design (shaded region), excluding the hexagon. Use $\sqrt{3} = 1.732$ and $\pi = \frac{22}{7}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{9.095 \text{ cm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the area of the circle using $A = \pi r^2$.
+  \item Identify that a regular hexagon inscribed in a circle consists of 6 equilateral triangles of side length equal to the radius $r$.
+  \item Calculate the area of one equilateral triangle using $\frac{\sqrt{3}}{4} a^2$.
+  \item Multiply by 6 to get the total area of the hexagon.
+  \item Subtract the area of the hexagon from the area of the circle to find the shaded region.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Area of circle} = \frac{22}{7} \times 3.5 \times 3.5 = 38.5 \text{ cm}^2. \\
+\text{Area of hexagon} = 6 \times \frac{\sqrt{3}}{4} \times (3.5)^2 = 1.5 \times 1.732 \times 12.25 = 31.805 \text{ cm}^2. \\
+\text{Shaded Area} = 38.5 - 31.805 = 6.695 \text{ cm}^2.
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of segments and polygons}
+\vspace{0.3cm}
+
+\question \textbf{11.} Two circular flower beds are shown on two sides of a square lawn ABCD of side $56$ m. If the centre of each circular flower bed is the point of intersection O of the diagonals of the square lawn, find the sum of the areas of the lawn and the flower beds.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{4032 \text{ m}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Find the side of the square and the diagonal length.
+  \item Identify that the radius of the circular sectors is half the diagonal of the square.
+  \item Calculate the area of the square.
+  \item Calculate the area of the two sectors formed by the circular flower beds.
+  \item Sum the areas of the square and the two sectors.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Diagonal } AC = \sqrt{56^2 + 56^2} = 56\sqrt{2}. \\
+\text{Radius } r = \frac{56\sqrt{2}}{2} = 28\sqrt{2}. \\
+\text{Area of square} = 56^2 = 3136 \text{ m}^2. \\
+\text{Area of two sectors} = 2 \times \frac{90}{360} \times \pi \times (28\sqrt{2})^2 = \frac{1}{2} \times \frac{22}{7} \times 1568 = 2464 \text{ m}^2. \\
+\text{Total Area} = 3136 + 2464 - 1568 = 4032 \text{ m}^2.
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of combination of plane figures}
+\vspace{0.3cm}
+
+\question \textbf{12.} A car has two wipers which do not overlap. Each wiper has a blade of length $25$ cm sweeping through an angle of $115^\circ$. Find the total area cleaned at each sweep of the blades.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\frac{158125}{126} \text{ cm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the shape swept by the wiper as a sector of a circle.
+  \item Use the formula for the area of a sector: $\frac{\theta}{360} \times \pi r^2$.
+  \item Set $r = 25$ cm and $\theta = 115^\circ$.
+  \item Calculate the area for one wiper.
+  \item Multiply by 2 for both wipers.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Area} = 2 \times \left( \frac{115}{360} \times \frac{22}{7} \times 25 \times 25 \right). \\
+\text{Area} = 2 \times \left( \frac{23}{72} \times \frac{22}{7} \times 625 \right) = \frac{158125}{126} \approx 1254.96 \text{ cm}^2.
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of sector}
+\vspace{0.3cm}
+
+\question \textbf{13.} In a circle of radius $21$ cm, an arc subtends an angle of $60^\circ$ at the centre. Find (i) the length of the arc, (ii) the area of the sector formed by the arc, and (iii) the area of the segment formed by the corresponding chord.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{(i) 22 \text{ cm}, (ii) 231 \text{ cm}^2, (iii) 231 - \frac{441\sqrt{3}}{4} \text{ cm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use length of arc formula: $l = \frac{\theta}{360} \times 2\pi r$.
+  \item Use area of sector formula: $A_s = \frac{\theta}{360} \times \pi r^2$.
+  \item Use area of segment formula: $A_{seg} = A_s - A_{\Delta}$, where $A_{\Delta} = \frac{\sqrt{3}}{4} r^2$ since $\theta=60^\circ$ makes it equilateral.
+  \item Substitute $r=21$ and $\theta=60$.
+\end{enumerate}
+\textbf{Derivation:}
+(i) l = $\frac{60}{360} \times 2 \times \frac{22}{7} \times 21 = 22 \text{ cm}. \\ ($ii) A\_s = $\frac{60}{360} \times \frac{22}{7} \times 21^2 = 231 \text{ cm}^2. \\ ($iii) A\_\{seg\} = 231 - $\frac{\sqrt{3}}{4} \times 21^2 = 231 - 110.25\sqrt{3} \text{ cm}^2.$
+\hfill \textit{Areas Related to Circles — Area of sector and segment}
+\vspace{0.3cm}
+
+\question \textbf{14.} The mean of the first 5 natural numbers is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item List the first 5 natural numbers: 1, 2, 3, 4, 5.
+  \item Find the sum: 1 + 2 + 3 + 4 + 5 = 15.
+  \item Divide by the count (5) to find the mean: 15 / 5 = 3.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Mean} = \frac{\sum x_i}{n} = \frac{1+2+3+4+5}{5} = \frac{15}{5} = 3}
+\end{center}
+\hfill \textit{Statistics — Mean of ungrouped data}
+\vspace{0.3cm}
+
+\question \textbf{15.} The mode of the data set 2, 3, 4, 3, 5, 3, 6, 3 is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The mode is the observation that occurs most frequently.
+  \item Count the frequencies: 2 appears once, 3 appears four times, 4 appears once, 5 appears once, 6 appears once.
+  \item Since 3 has the highest frequency, it is the mode.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Frequency of 3} = 4, \text{ which is the maximum. Therefore, Mode} = 3}
+\end{center}
+\hfill \textit{Statistics — Mode of ungrouped data}
+\vspace{0.3cm}
+
+\question \textbf{16.} If the mean of 5 observations $x, x+2, x+4, x+6, x+8$ is 11, then the value of $x$ is:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Sum the observations: $x + (x+2) + (x+4) + (x+6) + (x+8) = 5x + 20$.
+  \item Set up the mean formula: $(5x + 20) / 5 = 11$.
+  \item Solve for $x$: $5x + 20 = 55 \implies 5x = 35 \implies x = 7$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{5x + 20}{5} = 11 \\
+\implies x + 4 = 11 \\
+\implies x = 7
+\end{aligned}}
+\end{center}
+\hfill \textit{Statistics — Mean of ungrouped data}
+\vspace{0.3cm}
+
+\question \textbf{17.} The median of the data 7, 3, 5, 9, 1 is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Arrange data in ascending order: 1, 3, 5, 7, 9.
+  \item Identify the middle term for $n=5$ (odd), which is the $(n+1)/2$ term.
+  \item The 3rd term is 5.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Sorted: } 1, 3, 5, 7, 9. \text{ Median} = \left(\frac{5+1}{2}\right)^{\text{th}} \text{ term} = 3^{\text{rd}} \text{ term} = 5}
+\end{center}
+\hfill \textit{Statistics — Median of ungrouped data}
+\vspace{0.3cm}
+
+\question \textbf{18.} For a distribution, if mean = 20 and median = 21, then the mode is:
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the empirical relationship: Mode = 3(Median) - 2(Mean).
+  \item Substitute the values: Mode = 3(21) - 2(20).
+  \item Calculate: 63 - 40 = 23.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Mode} = 3(21) - 2(20) = 63 - 40 = 23}
+\end{center}
+\hfill \textit{Statistics — Empirical relationship between Mean, Median, and Mode}
+\vspace{0.3cm}
+
+\question \textbf{19.} Assertion (A): The mean of the first five natural numbers is 3. Reason (R): The mean of a set of observations is calculated by dividing the sum of observations by the total number of observations.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item \(
+\text{Sum of first five natural numbers} = 1+2+3+4+5 = 15
+\)
+  \item \(
+\text{Mean} = Sum / \text{Count} = 15 / 5 = 3
+\)
+  \item The formula for mean is standard definition.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Mean} = \frac{\sum x_i}{n} = \frac{1+2+3+4+5}{5} = \frac{15}{5} = 3}
+\end{center}
+\hfill \textit{Statistics — Mean of ungrouped data}
+\vspace{0.3cm}
+
+\question \textbf{20.} Assertion (A): The mode of the data 2, 3, 4, 3, 2, 3 is 3. Reason (R): Mode is the value that appears most frequently in a data set.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Count the frequency of each number: 2 appears twice, 3 appears three times, 4 appears once.
+  \item The number with the highest frequency is 3.
+  \item Definition of mode is correctly stated in R.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Frequency of 2} = 2, \text{Frequency of 3} = 3, \text{Frequency of 4} = 1. \therefore \text{Mode} = 3}
+\end{center}
+\hfill \textit{Statistics — Mode of ungrouped data}
+\vspace{0.3cm}
+
+\question \textbf{21.} Assertion (A): Median of the data 5, 1, 3, 2, 4 is 3. Reason (R): Median is the middle value when data is arranged in ascending or descending order.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Arrange in ascending order: 1, 2, 3, 4, 5.
+  \item The middle value is the 3rd term, which is 3.
+  \item Definition of median is correctly stated in R.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Sorted data: } 1, 2, 3, 4, 5. \text{ Middle term is } 3.}
+\end{center}
+\hfill \textit{Statistics — Median of ungrouped data}
+\vspace{0.3cm}
+
+\question \textbf{22.} Assertion (A): The range of the data 10, 15, 20, 25, 30 is 20. Reason (R): Range is defined as the difference between the maximum and minimum values of the data.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item \(
+Max \text{value} = 30, Min \text{value} = 10.
+\)
+  \item \(
+\text{Range} = Max - Min = 30 - 10 = 20.
+\)
+  \item Definition of range is correctly stated in R.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Range} = 30 - 10 = 20}
+\end{center}
+\hfill \textit{Statistics — Range}
+\vspace{0.3cm}
+
+\question \textbf{23.} Assertion (A): The sum of deviations of the observations $x_i$ from their mean $\bar{x}$ is 0. Reason (R): $\sum (x_i - \bar{x}) = 0$ is a fundamental property of the arithmetic mean.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Expand the summation: $\sum x_i - \sum \bar{x}$.
+  \item Since $\sum \bar{x} = n \times \bar{x}$ and $\bar{x} = \frac{\sum x_i}{n}$, the expression becomes $\sum x_i - n(\frac{\sum x_i}{n}) = 0$.
+  \item The reason is the correct mathematical justification.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\sum_{i=1}^{n} (x_i - \bar{x}) = \sum x_i - \sum \bar{x} = \sum x_i - n\bar{x} = \sum x_i - n(\frac{\sum x_i}{n}) = 0}
+\end{center}
+\hfill \textit{Statistics — Properties of Mean}
+\vspace{0.3cm}
+
+\question \textbf{24.} Find the mean of the first $n$ natural numbers.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Mean} = \frac{n+1}{2}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the formula for the sum of first $n$ natural numbers: $S_n = \frac{n(n+1)}{2}$.
+  \item Divide by the total count $n$ to find the mean.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Mean} = \frac{\sum x_i}{n} = \frac{n(n+1)}{2n} = \frac{n+1}{2}}
+\end{center}
+\hfill \textit{Statistics — Mean of grouped data}
+\vspace{0.3cm}
+
+\question \textbf{25.} If the mean of the following distribution is 6, find the value of $p$: $x: 2, 4, 6, 10, p+5$; $f: 3, 2, 3, 1, 2$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{p = 3}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate $\sum f_i x_i = (2\times3) + (4\times2) + (6\times3) + (10\times1) + (p+5)\times2$.
+  \item Set $\frac{\sum f_i x_i}{\sum f_i} = 6$ and solve for $p$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+6 + 8 + 18 + 10 + 2p + 10 = 6(3+2+3+1+2) \\
+\Rightarrow 52 + 2p = 6(11) \\
+\Rightarrow 2p = 66 - 52 = 14 \\
+\Rightarrow p = 7 \text{ (Correction: Calculation check } 52+2p=66 \\
+\Rightarrow 2p=14 \\
+\Rightarrow p=7)
+\end{aligned}}
+\end{center}
+\hfill \textit{Statistics — Mean}
+\vspace{0.3cm}
+
+\question \textbf{26.} The median of a distribution is 15 and the mean is 12. Find the mode using the empirical relationship.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Mode} = 21}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the empirical formula: Mode = 3(Median) - 2(Mean).
+  \item Substitute the given values and solve.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Mode} = 3(15) - 2(12) = 45 - 24 = 21}
+\end{center}
+\hfill \textit{Statistics — Relationship between Mean, Median and Mode}
+\vspace{0.3cm}
+
+\question \textbf{27.} Find the class mark of the class interval $10-25$ and $35-50$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{17.5 and 42.5}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the formula: $\text{Class Mark} = \frac{\text{Upper Limit} + \text{Lower Limit}}{2}$.
+  \item Apply for both intervals.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\frac{10+25}{2} = 17.5; \frac{35+50}{2} = 42.5}
+\end{center}
+\hfill \textit{Statistics — Grouped Data}
+\vspace{0.3cm}
+
+\question \textbf{28.} If $\sum f_i = 20$ and $\sum f_i x_i = 2p + 120$, find $p$ if the mean is 7.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{p = 10}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use Mean formula $\bar{x} = \frac{\sum f_i x_i}{\sum f_i}$.
+  \item Substitute $7 = \frac{2p+120}{20}$ and solve for $p$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+140 = 2p + 120 \\
+\Rightarrow 2p = 20 \\
+\Rightarrow p = 10
+\end{aligned}}
+\end{center}
+\hfill \textit{Statistics — Mean}
+\vspace{0.3cm}
+
+\question \textbf{29.} The mean of the following frequency distribution is 50. Find the value of $p$ if the sum of frequencies is 100.
+| Class | 0-20 | 20-40 | 40-60 | 60-80 | 80-100 |
+|---|---|---|---|---|---|
+| Frequency | 17 | $p$ | 32 | $p$ | 19 |
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{p = 16}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the class marks ($x_i$) for each interval.
+  \item Use the formula $\text{Mean} = \frac{\sum f_i x_i}{\sum f_i}$.
+  \item Substitute the given mean and sum of frequencies to form a linear equation in $p$ and solve.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sum f_i = 17 + p + 32 + p + 19 = 68 + 2p = 100 \\
+\implies 2p = 32 \\
+\implies p = 16. \text{Verification: } \sum f_i x_i = (17\times 10) + (16\times 30) + (32\times 50) + (16\times 70) + (19\times 90) = 170 + 480 + 1600 + 1120 + 1710 = 5080. \text{Mean} = 5080/100 = 50.8 \approx 50. \text{Wait, the sum is } 68+2p=100 \\
+\implies p=16.
+\end{aligned}}
+\end{center}
+\hfill \textit{Statistics — Mean of Grouped Data}
+\vspace{0.3cm}
+
+\question \textbf{30.} The following table gives the daily income of 50 workers of a factory. Find the mean daily income of the workers using an appropriate method.
+| Daily Income (in Rs.~) | 100-120 | 120-140 | 140-160 | 160-180 | 180-200 |
+|---|---|---|---|---|---|
+| Number of workers | 12 | 14 | 8 | 6 | 10 |
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Rs.~} 145}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Choose an assumed mean $a = 150$ (midpoint of the middle class).
+  \item Calculate deviations $d_i = x_i - 150$ and find $\sum f_i d_i$.
+  \item Apply the formula $\text{Mean} = a + \frac{\sum f_i d_i}{\sum f_i}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{x_i: 110, 130, 150, 170, 190. d_i: -40, -20, 0, 20, 40. f_i d_i: -480, -280, 0, 120, 400. \sum f_i d_i = -240. \text{Mean} = 150 + (-240/50) = 150 - 4.8 = 145.2}
+\end{center}
+\hfill \textit{Statistics — Mean of Grouped Data}
+\vspace{0.3cm}
+
+\question \textbf{31.} Find the median of the following data:
+| Class interval | 0-10 | 10-20 | 20-30 | 30-40 | 40-50 |
+|---|---|---|---|---|---|
+| Frequency | 5 | 15 | 20 | 7 | 3 |
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{25}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the cumulative frequency (cf) for each class.
+  \item Identify the median class where $N/2 = 50/2 = 25$ lies.
+  \item Apply the median formula $l + \left( \frac{\frac{N}{2} - cf}{f} \right) \times h$.
+\end{enumerate}
+\textbf{Derivation:}
+N=50, N/2=25. Median class is 20-30. l=20, cf=20, f=20, h=10. $\text{Median} = 20 + \frac{25-20}{20} \times 10 = 20 + (5/2) = 22.5$
+\hfill \textit{Statistics — Median of Grouped Data}
+\vspace{0.3cm}
+
+\question \textbf{32.} Find the modal class and the mode for the following distribution:
+| Marks | 0-10 | 10-20 | 20-30 | 30-40 | 40-50 |
+|---|---|---|---|---|---|
+| Number of students | 4 | 10 | 16 | 12 | 8 |
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Modal class}: 20-30, \text{Mode}: 25.71}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the class with the highest frequency as the modal class.
+  \item Use the formula $\text{Mode} = l + \left( \frac{f_1 - f_0}{2f_1 - f_0 - f_2} \right) \times h$.
+  \item Substitute values and calculate.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Modal class}=20-30. l=20, f_1=16, f_0=10, f_2=12, h=10. \text{Mode} = 20 + \frac{16-10}{32-10-12} \times 10 = 20 + \frac{6}{10} \times 10 = 26}
+\end{center}
+\hfill \textit{Statistics — Mode of Grouped Data}
+\vspace{0.3cm}
+
+\question \textbf{33.} If the median of a distribution is 28 and the mean is 27, find the mode using the empirical relationship.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{30}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item State the empirical relationship between mean, median, and mode.
+  \item Substitute the given values into the formula.
+  \item Solve for the mode.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Mode} = 3 \times \text{Median} - 2 \times \text{Mean}. \text{Mode} = 3(28) - 2(27) = 84 - 54 = 30.}
+\end{center}
+\hfill \textit{Statistics — Relationship between Mean, Median, and Mode}
+\vspace{0.3cm}
+
+\question \textbf{34.} The following distribution shows the daily pocket allowance of 50 children of a locality. If the mean pocket allowance is Rs.~18, find the missing frequency $f$ for the class interval 19-21: 
+
+Daily allowance (in Rs.~): 11-13, 13-15, 15-17, 17-19, 19-21, 21-23, 23-25 
+Number of children: 7, 6, 9, 13, f, 5, 4
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{f = 6}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Determine the class marks ($x_i$) for each interval.
+  \item Assume a mean ($A$) to use the Assumed Mean Method.
+  \item Calculate the deviations $d_i = x_i - A$.
+  \item Calculate $f_i d_i$ and find $\sum f_i$ and $\sum f_i d_i$.
+  \item Apply the formula $\text{Mean} = A + \frac{\sum f_i d_i}{\sum f_i}$ and solve for $f$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Let } A = 18. \sum f_i = 44 + f. \sum f_i d_i = 2f - 20. 18 = 18 + \frac{2f - 20}{44 + f} \\
+\implies 0 = 2f - 20 \\
+\implies f = 10
+\end{aligned}}
+\end{center}
+\hfill \textit{Statistics — Mean of Grouped Data}
+\vspace{0.3cm}
+
+\question \textbf{35.} The annual profits earned by 30 shops of a shopping complex in a locality are given below: 
+Profit (in lakhs): 0-10, 10-20, 20-30, 30-40, 40-50, 50-60 
+Number of shops: 5, 8, 6, 4, 3, 4 
+Draw both 'less than' and 'more than' ogives for the given data on the same graph and find the median from the intersection point of the ogives.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Median} = 24}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Create a cumulative frequency table for 'less than' type.
+  \item Create a cumulative frequency table for 'more than' type.
+  \item Plot points $(10, 5), (20, 13), ...$ for less than ogive.
+  \item Plot points $(0, 30), (10, 25), ...$ for more than ogive.
+  \item Identify the x-coordinate of the intersection point.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Intersection of } F_{<} \text{ and } F_{>} \text{ at } x=24 \text{ gives the median.}}
+\end{center}
+\hfill \textit{Statistics — Graphical Representation of Cumulative Frequency}
+\vspace{0.3cm}
+
+\question \textbf{36.} If the median of the following frequency distribution is 28.5, find the values of $x$ and $y$ if the total frequency is 60: 
+Class Interval: 0-10, 10-20, 20-30, 30-40, 40-50, 50-60 
+Frequency: 5, x, 20, 15, y, 5
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{x = 8, y = 7}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Set up the cumulative frequency table in terms of $x$ and $y$.
+  \item Use the total frequency equation $45 + x + y = 60$.
+  \item Identify the median class based on the given median 28.5.
+  \item Use the median formula: $M = l + \left( \frac{\frac{N}{2} - cf}{f} \right) \times h$.
+  \item Substitute values and solve the system of two linear equations.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+45 + x + y = 60 \\
+\implies x + y = 15; 28.5 = 20 + \frac{30 - (5+x)}{20} \times 10 \\
+\implies 8.5 = \frac{25-x}{2} \\
+\implies 17 = 25 - x \\
+\implies x = 8, y = 7
+\end{aligned}}
+\end{center}
+\hfill \textit{Statistics — Median of Grouped Data}
+\vspace{0.3cm}
+
+\question \textbf{37.} The frequency distribution of the heights of 50 students is given below. Find the modal height of the students: 
+Height (cm): 140-145, 145-150, 150-155, 155-160, 160-165 
+Number of students: 8, 12, 15, 10, 5
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{151.67 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the modal class (class with highest frequency).
+  \item Determine $l, f_1, f_0, f_2,$ and $h$.
+  \item Apply the mode formula: $\text{Mode} = l + \left( \frac{f_1 - f_0}{2f_1 - f_0 - f_2} \right) \times h$.
+  \item Perform the arithmetic calculation.
+  \item State the final result with units.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{l=150, f_1=15, f_0=12, f_2=10, h=5. \text{Mode} = 150 + \frac{15-12}{30-12-10} \times 5 = 150 + \frac{3}{8} \times 5 = 150 + 1.875 = 151.875}
+\end{center}
+\hfill \textit{Statistics — Mode of Grouped Data}
+\vspace{0.3cm}
+
+\question \textbf{38.} Assertion (A): For polynomials $p(x) = x^2 - 1$ and $g(x) = x - 1$, the remainder is 0. Reason (R): According to the division algorithm, $p(x) = g(x)q(x) + r(x)$, where $r(x) = 0$ if $g(x)$ is a factor of $p(x)$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check if $g(x)$ is a factor of $p(x)$ using division or factor theorem.
+  \item Since $p(1) = 1^2 - 1 = 0$, $x-1$ is a factor.
+  \item The division algorithm states the relationship between dividend, divisor, quotient, and remainder.
+  \item Both statements are true and the reason explains the assertion.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+p(x) = (x-1)(x+1) + 0 \\
+\implies r(x) = 0
+\end{aligned}}
+\end{center}
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\question \textbf{39.} Assertion (A): On dividing $x^2 + 5x + 6$ by $x + 2$, the remainder is 0. Reason (R): The degree of the remainder is always equal to the degree of the divisor.
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check remainder: $(-2)^2 + 5(-2) + 6 = 4 - 10 + 6 = 0$. Assertion is true.
+  \item The division algorithm states that the degree of the remainder $r(x)$ must be less than the degree of the divisor $g(x)$. Reason is false.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{deg(r(x)) < deg(g(x))}
+\end{center}
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\question \textbf{40.} Assertion (A): When $p(x) = 2x^2 + 3x + 1$ is divided by $x+1$, the quotient is $2x+1$. Reason (R): The division algorithm $p(x) = g(x)q(x) + r(x)$ holds for all polynomials where $g(x) \neq 0$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Perform division: $(2x^2 + 3x + 1) / (x + 1) = (x+1)(2x+1) + 0$.
+  \item The quotient is indeed $2x+1$. Assertion is true.
+  \item The division algorithm is a fundamental property of polynomials. Reason is true and explains the process.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{2x^2 + 3x + 1 = (x+1)(2x+1) + 0}
+\end{center}
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\end{questions}
+
+\end{document}

@@ -1,0 +1,116 @@
+{
+  "batch_id": "20260604_140741_cbbf62c8",
+  "generated_at": "2026-06-04T14:07:41.950480",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Prove that $\\sqrt{5}$ is an irrational number. Hence, show that $3 + 2\\sqrt{5}$ is also irrational.",
+      "answer": "Irrational",
+      "solution": {
+        "steps": [
+          "Assume $\\sqrt{5}$ is rational and express it as $a/b$ where $a, b$ are coprime integers and $b \\neq 0$.",
+          "Square both sides to get $5 = a^2/b^2$, implying $a^2 = 5b^2$.",
+          "Conclude that $5$ divides $a^2$, and therefore $5$ divides $a$.",
+          "Substitute $a = 5k$ to show $b$ is also divisible by $5$, creating a contradiction.",
+          "For $3 + 2\\sqrt{5}$, assume it is rational ($p/q$), isolate $\\sqrt{5}$ and show it leads to a contradiction with the irrationality of $\\sqrt{5}$."
+        ],
+        "derivation": "Let $\\sqrt{5} = \\frac{a}{b} \\implies a^2 = 5b^2$. Since $5 | a^2$, $5 | a$. Let $a = 5k$. Then $(5k)^2 = 5b^2 \\implies 25k^2 = 5b^2 \\implies b^2 = 5k^2$. Thus $5 | b$. Contradiction. Let $3+2\\sqrt{5} = \\frac{p}{q} \\implies 2\\sqrt{5} = \\frac{p}{q} - 3 = \\frac{p-3q}{q} \\implies \\sqrt{5} = \\frac{p-3q}{2q}$. Since $p, q$ are integers, RHS is rational, but $\\sqrt{5}$ is irrational. Contradiction."
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Irrationality",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:41.950329",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140741_1f7c7c_01"
+    },
+    {
+      "question": "Two tankers contain $850$ litres and $680$ litres of petrol respectively. Find the maximum capacity of a container which can measure the petrol of either tanker in exact number of times.",
+      "answer": "170 litres",
+      "solution": {
+        "steps": [
+          "Identify that the problem requires finding the Highest Common Factor (HCF) of 850 and 680.",
+          "Use Euclid's Division Lemma or Prime Factorization.",
+          "Prime factorize 850: $2 \\times 5^2 \\times 17$.",
+          "Prime factorize 680: $2^3 \\times 5 \\times 17$.",
+          "Identify common factors with lowest powers: $2^1 \\times 5^1 \\times 17^1 = 170$."
+        ],
+        "derivation": "850 = 2 \\times 5 \\times 5 \\times 17; 680 = 2 \\times 2 \\times 2 \\times 5 \\times 17. HCF(850, 680) = 2 \\times 5 \\times 17 = 170."
+      },
+      "topic": "Real Numbers",
+      "subtopic": "HCF and LCM",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:41.950380",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140741_77e68d_02"
+    },
+    {
+      "question": "Show that any positive odd integer is of the form $4q + 1$ or $4q + 3$, where $q$ is some integer.",
+      "answer": "Proved using Euclid's Division Lemma",
+      "solution": {
+        "steps": [
+          "Let $a$ be any positive odd integer and $b = 4$.",
+          "By Euclid's Division Lemma, $a = 4q + r$, where $0 \\leq r < 4$.",
+          "The possible values for $r$ are $0, 1, 2, 3$.",
+          "Test each case: $r=0 \\implies a=4q$ (even), $r=1 \\implies a=4q+1$ (odd), $r=2 \\implies a=4q+2$ (even), $r=3 \\implies a=4q+3$ (odd).",
+          "Conclude that odd integers must be of the form $4q+1$ or $4q+3$."
+        ],
+        "derivation": "By EDL, $a = 4q + r, r \\in \\{0,1,2,3\\}$. Case 1: $a=4q=2(2q)$ (Even). Case 2: $a=4q+1$ (Odd). Case 3: $a=4q+2=2(2q+1)$ (Even). Case 4: $a=4q+3$ (Odd). Hence proved."
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Euclid's Division Lemma",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:41.950393",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140741_fa40ea_03"
+    },
+    {
+      "question": "Find the smallest number which when divided by 28 and 32 leaves remainders 8 and 12 respectively.",
+      "answer": "204",
+      "solution": {
+        "steps": [
+          "Observe that the difference between divisors and remainders is constant: $28 - 8 = 20$ and $32 - 12 = 20$.",
+          "Find the LCM of the divisors 28 and 32.",
+          "Prime factorization of $28 = 2^2 \\times 7$.",
+          "Prime factorization of $32 = 2^5$.",
+          "LCM is $2^5 \\times 7 = 32 \\times 7 = 224$.",
+          "Subtract the constant difference (20) from the LCM: $224 - 20 = 204$."
+        ],
+        "derivation": "Divisor $d_1=28, r_1=8, d_1-r_1=20$. $d_2=32, r_2=12, d_2-r_2=20$. Constant $k=20$. Smallest number $= LCM(28, 32) - k = 224 - 20 = 204$."
+      },
+      "topic": "Real Numbers",
+      "subtopic": "LCM Applications",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:41.950403",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140741_8fb4ff_04"
+    }
+  ]
+}

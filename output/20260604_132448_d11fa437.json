@@ -1,0 +1,64 @@
+{
+  "batch_id": "20260604_132448_d11fa437",
+  "generated_at": "2026-06-04T13:24:48.497879",
+  "model": "deepseek/deepseek-v4-flash",
+  "provider": "openrouter",
+  "chapter": "Probability",
+  "subtopic": "complementary events",
+  "difficulty": "simple",
+  "question_type": "vsa",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If the probability of an event $E$ is $\\frac{3}{7}$, what is the probability of the event 'not $E$'?",
+      "answer": "$\\frac{4}{7}$",
+      "solution": {
+        "steps": [
+          "Recall that for any event E, P(not E) = 1 - P(E).",
+          "Substitute P(E) = 3/7.",
+          "Calculate: 1 - 3/7 = 4/7."
+        ],
+        "derivation": "P(not E) = 1 - P(E) = 1 - \\frac{3}{7} = \\frac{4}{7}"
+      },
+      "topic": "Probability",
+      "subtopic": "Complementary events",
+      "marks": 1,
+      "type": "vsa",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-04T13:24:48.497762",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_132448_690100_01"
+    },
+    {
+      "question": "A bag contains 5 red balls and some blue balls. If the probability of drawing a blue ball is twice that of drawing a red ball, find the number of blue balls in the bag.",
+      "answer": "10",
+      "solution": {
+        "steps": [
+          "Let the number of blue balls be x.",
+          "Total balls = 5 + x.",
+          "P(red) = 5/(5+x), P(blue) = x/(5+x).",
+          "Given P(blue) = 2 \u00d7 P(red), so x/(5+x) = 2 \u00d7 5/(5+x).",
+          "Multiply both sides by (5+x): x = 10.",
+          "Thus, number of blue balls = 10."
+        ],
+        "derivation": "\\frac{x}{5+x} = 2 \\times \\frac{5}{5+x} \\implies x = 10"
+      },
+      "topic": "Probability",
+      "subtopic": "Complementary events",
+      "marks": 1,
+      "type": "vsa",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-04T13:24:48.497816",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_132448_966d7d_02"
+    }
+  ]
+}

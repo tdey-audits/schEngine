@@ -1,0 +1,36 @@
+{
+  "batch_id": "20260604_122737_6d70b1b1",
+  "generated_at": "2026-06-04T12:27:37.670924",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "In $\\triangle ABC$, $P$ and $Q$ are points on sides $AB$ and $AC$ respectively such that $PQ \\parallel BC$. The area of $\\triangle APQ$ is $16 \\text{ cm}^2$ and the area of trapezium $PBCQ$ is $20 \\text{ cm}^2$. Find the ratio $AP:PB$. If $AB = 12$ cm, find the lengths of $AP$ and $PB$.",
+      "answer": "$AP:PB = 2:1$, $AP = 8$ cm, $PB = 4$ cm",
+      "solution": {
+        "steps": [
+          "Let $AP = x$, $PB = y$, so $AB = x+y$.",
+          "Since $PQ \\parallel BC$, $\\triangle APQ \\sim \\triangle ABC$ (AA similarity).",
+          "Ratio of areas of similar triangles equals square of ratio of corresponding sides: $\\frac{\\text{area}(\\triangle APQ)}{\\text{area}(\\triangle ABC)} = \\left(\\frac{AP}{AB}\\right)^2$.",
+          "Area of $\\triangle ABC = \\text{area}(\\triangle APQ) + \\text{area}(PBCQ) = 16 + 20 = 36 \\text{ cm}^2$.",
+          "Thus $\\frac{16}{36} = \\left(\\frac{x}{x+y}\\right)^2 \\Rightarrow \\frac{4}{9} = \\left(\\frac{x}{x+y}\\right)^2 \\Rightarrow \\frac{x}{x+y} = \\frac{2}{3}$ (taking positive ratio).",
+          "Cross-multiply: $3x = 2x + 2y \\Rightarrow x = 2y \\Rightarrow \\frac{x}{y} = \\frac{2}{1}$. So $AP:PB = 2:1$.",
+          "Given $AB = 12$ cm, so $x + y = 12$. Since $x = 2y$, substitute: $2y + y = 12 \\Rightarrow 3y = 12 \\Rightarrow y = 4$ cm, then $x = 8$ cm."
+        ],
+        "derivation": "\\begin{align*}\n\\text{area}(\\triangle ABC) &= 16 + 20 = 36 \\text{ cm}^2 \\\\\n\\frac{\\text{area}(\\triangle APQ)}{\\text{area}(\\triangle ABC)} &= \\left(\\frac{AP}{AB}\\right)^2 \\\\\n\\frac{16}{36} &= \\left(\\frac{x}{x+y}\\right)^2 \\\\\n\\frac{4}{9} &= \\left(\\frac{x}{x+y}\\right)^2 \\\\\n\\frac{x}{x+y} &= \\frac{2}{3} \\\\\n3x &= 2(x+y) \\\\\nx &= 2y \\\\\nAP:PB &= x:y = 2:1 \\\\\nAB &= x+y = 12 \\Rightarrow 2y+y=12 \\Rightarrow y=4, x=8\n\\end{align*}"
+      },
+      "topic": "Triangles",
+      "subtopic": "Similarity and Area Ratio",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T12:27:37.670860",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_122737_410264"
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "batch_id": "20260609_160149_b021b80c",
+  "generated_at": "2026-06-09T16:01:49.950286",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In a town planning project, a triangular park $\\triangle ABC$ is designed such that $\\angle B = 90^\\circ$. A straight path $BD$ is constructed perpendicular to the side $AC$ to provide drainage. It is given that the length of segment $AD = 4 \\text{ cm}$ and $CD = 9 \\text{ cm}$. The site engineer needs to calculate the dimensions of the park to ensure proper fencing and area allocation.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "What is the length of the drainage path $BD$?",
+          "answer": "(C)",
+          "options": [
+            "(A) $4 \\text{ cm}$",
+            "(B) $5 \\text{ cm}$",
+            "(C) $6 \\text{ cm}$",
+            "(D) $13 \\text{ cm}$"
+          ],
+          "solution": {
+            "steps": [
+              "In $\\triangle ABC$, $\\angle B = 90^\\circ$ and $BD \\perp AC$.",
+              "By the property of right triangles, $BD^2 = AD \\times CD$.",
+              "$BD^2 = 4 \\times 9 = 36$.",
+              "$BD = 6 \\text{ cm}$."
+            ],
+            "derivation": "$BD^2 = AD \\cdot CD \\Rightarrow BD^2 = 4 \\cdot 9 = 36 \\Rightarrow BD = 6$"
+          }
+        },
+        {
+          "id": "ii",
+          "type": "mcq",
+          "question": "Find the length of side $AB$.",
+          "answer": "(A)",
+          "options": [
+            "(A) $\\sqrt{52} \\text{ cm}$",
+            "(B) $10 \\text{ cm}$",
+            "(C) $\\sqrt{48} \\text{ cm}$",
+            "(D) $8 \\text{ cm}$"
+          ],
+          "solution": {
+            "steps": [
+              "In $\\triangle ABD$, by Pythagoras theorem, $AB^2 = AD^2 + BD^2$.",
+              "$AB^2 = 4^2 + 6^2 = 16 + 36 = 52$.",
+              "$AB = \\sqrt{52} \\text{ cm}$."
+            ],
+            "derivation": "$AB^2 = AD^2 + BD^2 \\Rightarrow AB^2 = 4^2 + 6^2 = 52 \\Rightarrow AB = \\sqrt{52}$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "vsa",
+          "question": "Find the ratio of the area of $\\triangle ABD$ to the area of $\\triangle BCD$.",
+          "answer": "$4:9$",
+          "solution": {
+            "steps": [
+              "Both triangles share the same altitude $BD$ relative to bases $AD$ and $CD$ if we view them as triangles on line $AC$.",
+              "Alternatively, $\\triangle ABD \\sim \\triangle ACB$ and $\\triangle BCD \\sim \\triangle ACB$.",
+              "The ratio of areas is proportional to the square of their corresponding sides.",
+              "Area ratio = $(AD/BD)^2 = (4/6)^2 = 16/36 = 4/9$ (or via base ratio $AD/CD = 4/9$ since they share altitude $BD$)."
+            ],
+            "derivation": "\\frac{\\text{Area}(\\triangle ABD)}{\\text{Area}(\\triangle BCD)} = \\frac{\\frac{1}{2} \\cdot AD \\cdot BD}{\\frac{1}{2} \\cdot CD \\cdot BD} = \\frac{AD}{CD} = \\frac{4}{9}"
+          }
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "Determine the length of the side $BC$.",
+          "answer": "$\\sqrt{117} \\text{ cm}$",
+          "solution": {
+            "steps": [
+              "In $\\triangle BCD$, $\\angle BDC = 90^\\circ$.",
+              "By Pythagoras theorem, $BC^2 = BD^2 + CD^2$.",
+              "$BC^2 = 6^2 + 9^2 = 36 + 81 = 117$.",
+              "$BC = \\sqrt{117} \\text{ cm}$."
+            ],
+            "derivation": "$BC^2 = BD^2 + CD^2 \\Rightarrow BC^2 = 6^2 + 9^2 = 117 \\Rightarrow BC = \\sqrt{117}$"
+          }
+        }
+      ],
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "caption": "Park layout with drainage path BD",
+        "elements": [
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0,
+            "y": 0,
+            "label": "A",
+            "position": "left"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 2,
+            "y": 4,
+            "label": "B",
+            "position": "above"
+          },
+          {
+            "kind": "point",
+            "id": "C",
+            "x": 6,
+            "y": 0,
+            "label": "C",
+            "position": "right"
+          },
+          {
+            "kind": "point",
+            "id": "D",
+            "x": 1.5,
+            "y": 1,
+            "label": "D",
+            "position": "below"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "kind": "segment",
+            "from": "B",
+            "to": "C"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "C"
+          },
+          {
+            "kind": "segment",
+            "from": "B",
+            "to": "D"
+          },
+          {
+            "kind": "right_angle",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "kind": "right_angle",
+            "points": [
+              "B",
+              "D",
+              "C"
+            ]
+          }
+        ]
+      },
+      "topic": "Triangles",
+      "subtopic": "",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T16:01:49.949971",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_6 (Triangles).pdf",
+          "Chapter_7 (Coordinate Geometry).pdf",
+          "Chapter_11 (Constructions).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/1159-1_430-5-1 Mathematics (Basic).pdf",
+            "question_no": 38,
+            "paper_variant": "basic",
+            "question_type": "case_study"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 12,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.4",
+            "question_no": 9,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.3",
+            "question_no": 12,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160149_c53c58_01"
+    }
+  ]
+}

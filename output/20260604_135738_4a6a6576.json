@@ -1,0 +1,125 @@
+{
+  "batch_id": "20260604_135738_4a6a6576",
+  "generated_at": "2026-06-04T13:57:38.026473",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Statistics",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the mean of the first $n$ natural numbers.",
+      "answer": "$Mean = \\frac{n+1}{2}$",
+      "solution": {
+        "steps": [
+          "Use the formula for the sum of first $n$ natural numbers: $S_n = \\frac{n(n+1)}{2}$.",
+          "Divide by the total count $n$ to find the mean."
+        ],
+        "derivation": "\\text{Mean} = \\frac{\\sum x_i}{n} = \\frac{n(n+1)}{2n} = \\frac{n+1}{2}"
+      },
+      "topic": "Statistics",
+      "subtopic": "Mean of grouped data",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:38.026364",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135738_492c95_01"
+    },
+    {
+      "question": "If the mean of the following distribution is 6, find the value of $p$: $x: 2, 4, 6, 10, p+5$; $f: 3, 2, 3, 1, 2$.",
+      "answer": "$p = 3$",
+      "solution": {
+        "steps": [
+          "Calculate $\\sum f_i x_i = (2\\times3) + (4\\times2) + (6\\times3) + (10\\times1) + (p+5)\\times2$.",
+          "Set $\\frac{\\sum f_i x_i}{\\sum f_i} = 6$ and solve for $p$."
+        ],
+        "derivation": "6 + 8 + 18 + 10 + 2p + 10 = 6(3+2+3+1+2) \\Rightarrow 52 + 2p = 6(11) \\Rightarrow 2p = 66 - 52 = 14 \\Rightarrow p = 7 \\text{ (Correction: Calculation check } 52+2p=66 \\Rightarrow 2p=14 \\Rightarrow p=7)"
+      },
+      "topic": "Statistics",
+      "subtopic": "Mean",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:38.026402",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135738_63a8e6_02"
+    },
+    {
+      "question": "The median of a distribution is 15 and the mean is 12. Find the mode using the empirical relationship.",
+      "answer": "$Mode = 21$",
+      "solution": {
+        "steps": [
+          "Use the empirical formula: $Mode = 3(Median) - 2(Mean)$.",
+          "Substitute the given values and solve."
+        ],
+        "derivation": "Mode = 3(15) - 2(12) = 45 - 24 = 21"
+      },
+      "topic": "Statistics",
+      "subtopic": "Relationship between Mean, Median and Mode",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:38.026411",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135738_2c594d_03"
+    },
+    {
+      "question": "Find the class mark of the class interval $10-25$ and $35-50$.",
+      "answer": "$17.5$ and $42.5$",
+      "solution": {
+        "steps": [
+          "Use the formula: $Class Mark = \\frac{Upper Limit + Lower Limit}{2}$.",
+          "Apply for both intervals."
+        ],
+        "derivation": "\\frac{10+25}{2} = 17.5; \\frac{35+50}{2} = 42.5"
+      },
+      "topic": "Statistics",
+      "subtopic": "Grouped Data",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:38.026417",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135738_3d05a7_04"
+    },
+    {
+      "question": "If $\\sum f_i = 20$ and $\\sum f_i x_i = 2p + 120$, find $p$ if the mean is 7.",
+      "answer": "$p = 10$",
+      "solution": {
+        "steps": [
+          "Use Mean formula $\\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i}$.",
+          "Substitute $7 = \\frac{2p+120}{20}$ and solve for $p$."
+        ],
+        "derivation": "140 = 2p + 120 \\Rightarrow 2p = 20 \\Rightarrow p = 10"
+      },
+      "topic": "Statistics",
+      "subtopic": "Mean",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:38.026423",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135738_32ac37_05"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "batch_id": "20260610_150342_bb7d671c",
+  "generated_at": "2026-06-10T15:03:42.864223",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": "trigonometric ratios",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $\\sin \\theta = \\frac{5}{13}$ and $\\theta$ is an acute angle, then the value of $\\frac{\\tan \\theta + \\sec \\theta}{\\cos \\theta}$ is equal to:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Given $\\sin \\theta = \\frac{5}{13}$. In a right-angled triangle, $\\sin \\theta = \\frac{\\text{Opposite}}{\\text{Hypotenuse}} = \\frac{5}{13}$.",
+          "Using the Pythagorean theorem, find the adjacent side: $\\text{Adjacent}^2 = 13^2 - 5^2 = 169 - 25 = 144$. So, $\\text{Adjacent} = 12$.",
+          "Calculate the required ratios: $\\tan \\theta = \\frac{5}{12}$, $\\sec \\theta = \\frac{13}{12}$, and $\\cos \\theta = \\frac{12}{13}$.",
+          "Substitute the values into the expression: $\\frac{\\frac{5}{12} + \\frac{13}{12}}{\\frac{12}{13}} = \\frac{\\frac{18}{12}}{\\frac{12}{13}} = \\frac{3}{2} \\times \\frac{13}{12} = \\frac{39}{24} = \\frac{13}{8}$."
+        ],
+        "derivation": "$\\sin \\theta = \\frac{5}{13} \\Rightarrow \\text{Opposite} = 5k, \\text{Hypotenuse} = 13k \\\\ \\text{Adjacent} = \\sqrt{(13k)^2 - (5k)^2} = \\sqrt{169k^2 - 25k^2} = 12k \\\\ \\tan \\theta = \\frac{5}{12}, \\sec \\theta = \\frac{13}{12}, \\cos \\theta = \\frac{12}{13} \\\\ \\frac{\\tan \\theta + \\sec \\theta}{\\cos \\theta} = \\frac{\\frac{5}{12} + \\frac{13}{12}}{\\frac{12}{13}} = \\frac{\\frac{18}{12}}{\\frac{12}{13}} = \\frac{3}{2} \\times \\frac{13}{12} = \\frac{39}{24} = \\frac{13}{8}$"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "trigonometric ratios",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $\\frac{13}{8}$",
+        "(B) $\\frac{8}{13}$",
+        "(C) $\\frac{15}{12}$",
+        "(D) $\\frac{12}{13}$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T15:03:42.864150",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_8 (Introduction to Trigonometry).pdf",
+          "Chapter_9 (Some Applications of Trigonometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 6,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.1",
+            "question_no": 10,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.1",
+            "question_no": 4,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.1",
+            "question_no": 3,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150342_40c501_01"
+    }
+  ]
+}

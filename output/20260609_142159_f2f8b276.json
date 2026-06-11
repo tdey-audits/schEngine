@@ -1,0 +1,1040 @@
+{
+  "batch_id": "20260609_142159_f2f8b276",
+  "generated_at": "2026-06-09T14:21:59.442934",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Pair of Linear Equations in Two Variables",
+  "subtopic": "cross-multiplication method",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 10,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "For the system of linear equations $3x + 2y = 8$ and $ax - y = 3$, find the value of $a$ such that the system has a unique solution using the property of coefficients.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify the coefficients $a_1=3, b_1=2, c_1=8$ and $a_2=a, b_2=-1, c_2=3$.",
+          "For a unique solution, the condition is $a_1/a_2 \\neq b_1/b_2$.",
+          "Substitute the values: $3/a \\neq 2/(-1)$.",
+          "Solve the inequality: $3/a \\neq -2 \\Rightarrow -2a \\neq 3 \\Rightarrow a \\neq -3/2$."
+        ],
+        "derivation": "$a_1/a_2 \\neq b_1/b_2 \\\\ 3/a \\neq 2/(-1) \\\\ -2a \\neq 3 \\\\ a \\neq -1.5$"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Consistency of Equations",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $a = -1.5$",
+        "(B) $a = 1.5$",
+        "(C) $a \\neq -1.5$",
+        "(D) $a \\neq 1.5$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:21:59.441975",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_142159_782814_01"
+    },
+    {
+      "question": "The pair of equations $x + 2y = 5$ and $3x + ky + 15 = 0$ represents parallel lines. What is the value of $k$?",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "The condition for parallel lines is $a_1/a_2 = b_1/b_2 \\neq c_1/c_2$.",
+          "Here, $a_1=1, b_1=2, c_1=-5$ and $a_2=3, b_2=k, c_2=15$.",
+          "Set the ratio $a_1/a_2 = b_1/b_2$: $1/3 = 2/k$.",
+          "Solve for $k$: $k = 6$."
+        ],
+        "derivation": "$1/3 = 2/k \\\\ k = 3 \\times 2 \\\\ k = 6$"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Graphical Representation",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $3$",
+        "(B) $6$",
+        "(C) $9$",
+        "(D) $2$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:21:59.442113",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_142159_3dc190_02"
+    },
+    {
+      "question": "If the pair of equations $2x + 3y = 7$ and $(a+b)x + (2a-b)y = 21$ has infinitely many solutions, then which of the following is true?",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "For infinitely many solutions, $a_1/a_2 = b_1/b_2 = c_1/c_2$.",
+          "$2/(a+b) = 3/(2a-b) = 7/21 = 1/3$.",
+          "From $2/(a+b) = 1/3$, $a+b = 6$.",
+          "From $3/(2a-b) = 1/3$, $2a-b = 9$.",
+          "Adding equations: $3a = 15 \\Rightarrow a=5, b=1$."
+        ],
+        "derivation": "$a+b=6 \\\\ 2a-b=9 \\\\ 3a=15 \\\\ a=5, b=1$"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Consistency of Equations",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $a=5, b=1$",
+        "(B) $a=1, b=5$",
+        "(C) $a=2, b=4$",
+        "(D) $a=4, b=2$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:21:59.442161",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_142159_4aed98_03"
+    },
+    {
+      "question": "For what value of $k$ does the system $kx + 2y = 5$ and $3x + y = 1$ have a unique solution?",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "For a unique solution, $a_1/a_2 \\neq b_1/b_2$.",
+          "$k/3 \\neq 2/1$.",
+          "$k \\neq 6$."
+        ],
+        "derivation": "$k/3 \\neq 2/1 \\\\ k \\neq 6$"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Consistency of Equations",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $k=6$",
+        "(B) $k=3$",
+        "(C) $k=2$",
+        "(D) $k \\neq 6$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:21:59.442199",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_142159_7cf264_04"
+    },
+    {
+      "question": "Consider the system $4x - 3y = 9$ and $2x + ky = 11$. If the system is consistent and independent, what must be true about $k$?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Consistent and independent means a unique solution exists.",
+          "Condition: $a_1/a_2 \\neq b_1/b_2$.",
+          "$4/2 \\neq -3/k$.",
+          "$2 \\neq -3/k \\Rightarrow 2k \\neq -3 \\Rightarrow k \\neq -1.5$."
+        ],
+        "derivation": "$4/2 \\neq -3/k \\\\ 2 \\neq -3/k \\\\ k \\neq -3/2$"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Consistency of Equations",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $k = -1.5$",
+        "(B) $k = 1.5$",
+        "(C) $k \\neq -1.5$",
+        "(D) $k \\neq 1.5$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:21:59.442236",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_142159_37f00e_05"
+    },
+    {
+      "question": "Which of the following conditions represents a system of linear equations that has no solution?",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "A system has no solution if the lines are parallel.",
+          "The condition for parallel lines is $a_1/a_2 = b_1/b_2 \\neq c_1/c_2$."
+        ],
+        "derivation": "$a_1/a_2 = b_1/b_2 \\neq c_1/c_2$"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Consistency of Equations",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $a_1/a_2 \\neq b_1/b_2$",
+        "(B) $a_1/a_2 = b_1/b_2 \\neq c_1/c_2$",
+        "(C) $a_1/a_2 = b_1/b_2 = c_1/c_2$",
+        "(D) $a_1/a_2 \\neq c_1/c_2$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:21:59.442268",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_142159_63fb7e_06"
+    },
+    {
+      "question": "If the pair of equations $x - y = 1$ and $2x + ky = 2$ is coincident, find $k$.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Coincident lines satisfy $a_1/a_2 = b_1/b_2 = c_1/c_2$.",
+          "$1/2 = -1/k = -1/-2$.",
+          "$1/2 = -1/k \\Rightarrow k = -2$."
+        ],
+        "derivation": "$1/2 = -1/k \\\\ k = -2$"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Consistency of Equations",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $2$",
+        "(B) $1$",
+        "(C) $-2$",
+        "(D) $-1$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:21:59.442300",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_142159_7c4940_07"
+    },
+    {
+      "question": "The system $3x - 5y = 2$ and $6x - 10y = k$ has infinitely many solutions. What is the value of $k$?",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "For infinitely many solutions, $a_1/a_2 = b_1/b_2 = c_1/c_2$.",
+          "$3/6 = -5/-10 = 2/k$.",
+          "$1/2 = 2/k \\Rightarrow k = 4$."
+        ],
+        "derivation": "$3/6 = 2/k \\\\ k = 4$"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Consistency of Equations",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $4$",
+        "(B) $2$",
+        "(C) $1$",
+        "(D) $8$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:21:59.442331",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_142159_20d86d_08"
+    },
+    {
+      "question": "For what value of $p$ is the system $px + 3y = 7$ and $2x + 6y = 14$ inconsistent?",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Inconsistent means no solution, so $a_1/a_2 = b_1/b_2 \\neq c_1/c_2$.",
+          "$p/2 = 3/6 \\neq 7/14$.",
+          "$p/2 = 1/2 \\Rightarrow p = 1$.",
+          "Check the third ratio: $1/2 \\neq 1/2$ is false (they are equal).",
+          "Since $1/2 = 1/2 = 1/2$, the lines are coincident (infinitely many solutions) for $p=1$. Therefore, no value of $p$ makes it inconsistent."
+        ],
+        "derivation": "$p/2 = 3/6 = 7/14 \\\\ p/2 = 1/2 \\\\ p = 1 \\\\ \\text{But } 1/2 = 1/2 \\text{ means infinite solutions. No } p \\text{ exists.}"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Consistency of Equations",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $1$",
+        "(B) $2$",
+        "(C) $0$",
+        "(D) None of these"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:21:59.442360",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_142159_678dfb_09"
+    },
+    {
+      "question": "If the lines $ax + by = c$ and $dx + ey = f$ are parallel, which relation is correct?",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Parallel lines have no solution.",
+          "Condition: $a/d = b/e \\neq c/f$."
+        ],
+        "derivation": "$a/d = b/e \\neq c/f$"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Consistency of Equations",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $a/d \\neq b/e$",
+        "(B) $a/d = b/e \\neq c/f$",
+        "(C) $a/d = b/e = c/f$",
+        "(D) $a/b = d/e$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:21:59.442389",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_142159_541117_10"
+    }
+  ]
+}

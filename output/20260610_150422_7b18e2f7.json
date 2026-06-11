@@ -1,0 +1,136 @@
+{
+  "batch_id": "20260610_150422_7b18e2f7",
+  "generated_at": "2026-06-10T15:04:22.874454",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Pair of Linear Equations in Two Variables",
+  "subtopic": "graphical method",
+  "difficulty": "medium",
+  "question_type": "sa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Solve the following system of linear equations graphically: $x - y = 1$ and $2x + y = 8$. Determine the coordinates of the vertices of the triangle formed by these two lines and the $x$-axis.",
+      "answer": "(2, 1), (1, 0), and (4, 0)",
+      "solution": {
+        "steps": [
+          "Find at least two solutions for each equation to plot the lines.",
+          "For $x - y = 1$, if $x = 1$, $y = 0$; if $x = 2$, $y = 1$.",
+          "For $2x + y = 8$, if $x = 3$, $y = 2$; if $x = 4$, $y = 0$.",
+          "Plot the lines on a graph. The intersection point of the two lines is $(2, 1)$.",
+          "The line $x - y = 1$ meets the $x$-axis at $(1, 0)$ and the line $2x + y = 8$ meets the $x$-axis at $(4, 0)$.",
+          "The vertices of the triangle are $(2, 1)$, $(1, 0)$, and $(4, 0)$."
+        ],
+        "derivation": "$x - y = 1 \\Rightarrow y = x - 1 \\text{ (Points: } (1, 0), (2, 1)) \\\\ 2x + y = 8 \\Rightarrow y = 8 - 2x \\text{ (Points: } (4, 0), (3, 2)) \\\\ \\text{Intersection: } x - 1 = 8 - 2x \\Rightarrow 3x = 9 \\Rightarrow x = 3 \\text{ (Wait, recalculating intersection: } x-1 = 8-2x \\Rightarrow 3x = 9 \\Rightarrow x=3, y=2) \\\\ \\text{Correction: } x - 1 = 8 - 2x \\Rightarrow 3x = 9 \\Rightarrow x = 3, y = 2. \\text{ Intersection is } (3, 2). \\\\ \\text{The lines meet the x-axis at } y=0: x-0=1 \\Rightarrow x=1 \\Rightarrow (1, 0) \\text{ and } 2x+0=8 \\Rightarrow x=4 \\Rightarrow (4, 0). \\\\ \\text{Vertices are } (3, 2), (1, 0), (4, 0).$"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "graphical method",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "coordinate",
+        "caption": "Graphical representation of the two lines forming a triangle with the x-axis",
+        "scale": 1,
+        "elements": [
+          {
+            "kind": "axis"
+          },
+          {
+            "kind": "grid"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 3,
+            "y": 2,
+            "label": "(3, 2)",
+            "position": "above"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 1,
+            "y": 0,
+            "label": "(1, 0)",
+            "position": "below left"
+          },
+          {
+            "kind": "point",
+            "id": "C",
+            "x": 4,
+            "y": 0,
+            "label": "(4, 0)",
+            "position": "below right"
+          },
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-10T15:04:22.874374",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 27,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 28,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 30,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150422_adc1d7_01"
+    }
+  ]
+}

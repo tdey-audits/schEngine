@@ -1,0 +1,125 @@
+{
+  "batch_id": "20260604_135624_dced9463",
+  "generated_at": "2026-06-04T13:56:24.057673",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Some Applications of Trigonometry",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A ladder $15$ m long makes an angle of $60^\\circ$ with the wall. Find the height of the point where the ladder touches the wall.",
+      "answer": "$7.5$ m",
+      "solution": {
+        "steps": [
+          "Identify the triangle formed by the ladder (hypotenuse), the wall (adjacent side to 60 degrees), and the ground.",
+          "Use the trigonometric ratio $\\cos(60^\\circ) = \\frac{\\text{adjacent}}{\\text{hypotenuse}}$ to find the height."
+        ],
+        "derivation": "\\cos(60^\\circ) = \\frac{h}{15} \\implies \\frac{1}{2} = \\frac{h}{15} \\implies h = 7.5 \\text{ m}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Trigonometric Ratios",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:24.057539",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135624_787f85_01"
+    },
+    {
+      "question": "The angle of elevation of the top of a tower from a point on the ground, which is $30$ m away from the foot of the tower, is $30^\\circ$. Find the height of the tower.",
+      "answer": "$10\\sqrt{3}$ m",
+      "solution": {
+        "steps": [
+          "Use the tangent ratio $\\tan(\\theta) = \\frac{\\text{opposite}}{\\text{adjacent}}$ where $\\theta = 30^\\circ$.",
+          "Substitute the given values and solve for the height $h$."
+        ],
+        "derivation": "\\tan(30^\\circ) = \\frac{h}{30} \\implies \\frac{1}{\\sqrt{3}} = \\frac{h}{30} \\implies h = \\frac{30}{\\sqrt{3}} = 10\\sqrt{3} \\text{ m}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Angle of Elevation",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:24.057578",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135624_e2f1df_02"
+    },
+    {
+      "question": "A kite is flying at a height of $60$ m above the ground. The string attached to the kite is temporarily tied to a point on the ground. The inclination of the string with the ground is $60^\\circ$. Find the length of the string.",
+      "answer": "$40\\sqrt{3}$ m",
+      "solution": {
+        "steps": [
+          "Represent the situation as a right triangle where the height is the opposite side and string length is the hypotenuse.",
+          "Use $\\sin(60^\\circ) = \\frac{\\text{height}}{\\text{length}}$ to solve for the length."
+        ],
+        "derivation": "\\sin(60^\\circ) = \\frac{60}{L} \\implies \\frac{\\sqrt{3}}{2} = \\frac{60}{L} \\implies L = \\frac{120}{\\sqrt{3}} = 40\\sqrt{3} \\text{ m}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Real-world problems",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:24.057587",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135624_5c6a73_03"
+    },
+    {
+      "question": "A $1.5$ m tall boy is standing at some distance from a $30$ m tall building. The angle of elevation from his eyes to the top of the building increases from $30^\\circ$ to $60^\\circ$ as he walks towards the building. Find the distance he walked towards the building.",
+      "answer": "$19\\sqrt{3}$ m",
+      "solution": {
+        "steps": [
+          "Determine the effective height of the building relative to the boy's eye level: $30 - 1.5 = 28.5$ m.",
+          "Use $\\cot(30^\\circ)$ and $\\cot(60^\\circ)$ to find the difference in ground distances."
+        ],
+        "derivation": "d = 28.5(\\cot(30^\\circ) - \\cot(60^\\circ)) = 28.5(\\sqrt{3} - \\frac{1}{\\sqrt{3}}) = 28.5(\\frac{2}{\\sqrt{3}}) = \\frac{57}{\\sqrt{3}} = 19\\sqrt{3} \\text{ m}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Angle of Elevation",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:24.057593",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135624_f486e4_04"
+    },
+    {
+      "question": "From a point on the ground, the angles of elevation of the bottom and top of a transmission tower fixed at the top of a $20$ m high building are $45^\\circ$ and $60^\\circ$ respectively. Find the height of the tower.",
+      "answer": "$20(\\sqrt{3}-1)$ m",
+      "solution": {
+        "steps": [
+          "Let $h$ be the height of the tower. The building height is $20$.",
+          "Use $\\tan(45^\\circ)$ to find the distance from the point to the building, then use $\\tan(60^\\circ)$ for the total height."
+        ],
+        "derivation": "\\text{Distance } x = \\frac{20}{\\tan(45^\\circ)} = 20. \\text{ Total height } (20+h) = x \\tan(60^\\circ) = 20\\sqrt{3}. \\implies h = 20\\sqrt{3} - 20 = 20(\\sqrt{3}-1) \\text{ m}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Multiple Angles of Elevation",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:24.057599",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135624_5eb036_05"
+    }
+  ]
+}

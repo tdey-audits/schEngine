@@ -1,0 +1,122 @@
+{
+  "batch_id": "20260610_111610_8a91315c",
+  "generated_at": "2026-06-10T11:16:10.200474",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $3 \\sin \theta + 5 \\cos \theta = 5$, then the value of $5 \\sin \theta - 3 \\cos \theta$ is equal to",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Let the required value be $x = 5 \\sin \theta - 3 \\cos \theta$.",
+          "Square the given equation: $(3 \\sin \theta + 5 \\cos \theta)^2 = 5^2$.",
+          "Expand the square: $9 \\sin^2 \theta + 25 \\cos^2 \theta + 30 \\sin \theta \\cos \theta = 25$.",
+          "Square the required expression: $x^2 = (5 \\sin \theta - 3 \\cos \theta)^2 = 25 \\sin^2 \theta + 9 \\cos^2 \theta - 30 \\sin \theta \\cos \theta$.",
+          "Add the two squared equations: $(3 \\sin \theta + 5 \\cos \theta)^2 + (5 \\sin \theta - 3 \\cos \theta)^2 = 25 + x^2$.",
+          "Simplify the sum: $9(\\sin^2 \theta + \\cos^2 \theta) + 25(\\sin^2 \theta + \\cos^2 \theta) = 25 + x^2$.",
+          "Since $\\sin^2 \theta + \\cos^2 \theta = 1$, we have $9 + 25 = 25 + x^2$.",
+          "Solving for $x^2$: $x^2 = 9$, which implies $x = \\pm 3$."
+        ],
+        "derivation": "$(3 \\sin \theta + 5 \\cos \theta)^2 + (5 \\sin \theta - 3 \\cos \theta)^2 = 25 + x^2 \\\\ 9 \\sin^2 \theta + 25 \\cos^2 \theta + 30 \\sin \theta \\cos \theta + 25 \\sin^2 \theta + 9 \\cos^2 \theta - 30 \\sin \theta \\cos \theta = 25 + x^2 \\\\ 34(\\sin^2 \theta + \\cos^2 \theta) = 25 + x^2 \\\\ 34(1) = 25 + x^2 \\\\ x^2 = 9 \\\\ x = \\pm 3$"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "hard",
+      "options": [
+        "(A) \\pm 3",
+        "(B) \\pm 5",
+        "(C) 0",
+        "(D) \\pm 4"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T11:16:10.200115",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_8 (Introduction to Trigonometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 15,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 12,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 15,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_111610_ee32f7_01"
+    }
+  ]
+}

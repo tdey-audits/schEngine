@@ -1,0 +1,158 @@
+{
+  "batch_id": "20260609_155848_4e5f589d",
+  "generated_at": "2026-06-09T15:58:48.325044",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In $\\triangle ABC$, if $D$ and $E$ are points on sides $AB$ and $AC$ respectively such that $DE \\parallel BC$. If the ratio of the areas of $\\triangle ADE$ and the trapezium $DBCE$ is $4 : 5$, then the ratio of $AD : DB$ is:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Given $DE \\parallel BC$, $\\triangle ADE \\sim \\triangle ABC$ by $AA$ similarity.",
+          "The ratio of the areas of similar triangles is equal to the square of the ratio of their corresponding sides.",
+          "Let $Area(\\triangle ADE) = 4k$ and $Area(Trapezium DBCE) = 5k$. Then $Area(\\triangle ABC) = Area(\\triangle ADE) + Area(Trapezium DBCE) = 4k + 5k = 9k$.",
+          "Since $\\triangle ADE \\sim \\triangle ABC$, $\\frac{Area(\\triangle ADE)}{Area(\\triangle ABC)} = \\left( \\frac{AD}{AB} \\right)^2 = \\frac{4k}{9k} = \\frac{4}{9}$.",
+          "Taking the square root, $\\frac{AD}{AB} = \\frac{2}{3}$.",
+          "Since $AB = AD + DB$, we have $\\frac{AD}{AD + DB} = \\frac{2}{3}$. Solving this gives $3AD = 2AD + 2DB$, so $AD = 2DB$, which means $AD : DB = 2 : 1$."
+        ],
+        "derivation": "$Area(\\triangle ADE) : Area(DBCE) = 4 : 5 \\Rightarrow Area(\\triangle ADE) : Area(\\triangle ABC) = 4 : 9 \\\\ \\triangle ADE \\sim \\triangle ABC \\Rightarrow \\frac{Area(\\triangle ADE)}{Area(\\triangle ABC)} = \\left( \\frac{AD}{AB} \\right)^2 \\\\ \\left( \\frac{AD}{AB} \\right)^2 = \\frac{4}{9} \\Rightarrow \\frac{AD}{AB} = \\frac{2}{3} \\\\ AB = AD + DB \\Rightarrow \\frac{AD}{AD + DB} = \\frac{2}{3} \\\\ 3AD = 2AD + 2DB \\Rightarrow AD = 2DB \\\\ \\frac{AD}{DB} = \\frac{2}{1}$"
+      },
+      "topic": "Triangles",
+      "subtopic": "Area of Similar Triangles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "hard",
+      "options": [
+        "(A) 2 : 1",
+        "(B) 4 : 5",
+        "(C) 2 : 3",
+        "(D) 3 : 2"
+      ],
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "caption": "Triangle ABC with DE parallel to BC",
+        "elements": [
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "kind": "segment",
+            "from": "D",
+            "to": "E"
+          },
+          {
+            "kind": "point",
+            "id": "D",
+            "x": 1.5,
+            "y": 3,
+            "label": "D",
+            "position": "left"
+          },
+          {
+            "kind": "point",
+            "id": "E",
+            "x": 2.5,
+            "y": 3,
+            "label": "E",
+            "position": "right"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-09T15:58:48.324755",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_6 (Triangles).pdf",
+          "Chapter_7 (Coordinate Geometry).pdf",
+          "Chapter_11 (Constructions).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 6,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 12,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 12,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.4",
+            "question_no": 9,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.3",
+            "question_no": 12,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_155848_854420_01"
+    }
+  ]
+}

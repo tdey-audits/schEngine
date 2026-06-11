@@ -1,0 +1,153 @@
+{
+  "batch_id": "20260609_132820_d16dca01",
+  "generated_at": "2026-06-09T13:28:20.525220",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Show that the square of any positive integer can be written in the form $4m$ or $4m + 1$ for some integer $m$. Using this result, prove that the square of any odd integer is of the form $8k + 1$ for some integer $k$.",
+      "answer": "Proof based on Euclid's Division Lemma.",
+      "solution": {
+        "steps": [
+          "Let 'a' be any positive integer. By Euclid's division lemma with divisor 4, 'a' can be $4q$, $4q+1$, $4q+2$, or $4q+3$.",
+          "Case 1: $a = 4q \\Rightarrow a^2 = 16q^2 = 4(4q^2) = 4m$.",
+          "Case 2: $a = 4q+1 \\Rightarrow a^2 = 16q^2 + 8q + 1 = 4(4q^2 + 2q) + 1 = 4m + 1$.",
+          "Case 3: $a = 4q+2 \\Rightarrow a^2 = 16q^2 + 16q + 4 = 4(4q^2 + 4q + 1) = 4m$.",
+          "Case 4: $a = 4q+3 \\Rightarrow a^2 = 16q^2 + 24q + 9 = 4(4q^2 + 6q + 2) + 1 = 4m + 1$.",
+          "For odd integers, consider $a = 2n+1$. Then $a^2 = (2n+1)^2 = 4n^2 + 4n + 1 = 4n(n+1) + 1$.",
+          "Since $n(n+1)$ is always even ($2k$), $a^2 = 4(2k) + 1 = 8k + 1$."
+        ],
+        "derivation": "$a = 2n + 1 \\Rightarrow a^2 = 4n^2 + 4n + 1 \\Rightarrow a^2 = 4n(n + 1) + 1 \\text{ where } n(n+1) = 2k \\Rightarrow a^2 = 4(2k) + 1 = 8k + 1$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Euclid's Division Lemma",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T13:28:20.524803",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/430-1-1_Mathematics Basic.pdf",
+            "question_no": 32,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-3_Mathematics Basic.pdf",
+            "question_no": 33,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 35,
+            "paper_variant": "basic",
+            "question_type": "la"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_132820_9eb679_01"
+    },
+    {
+      "question": "Two street light contractors, Company A and Company B, install lights on a straight road. Company A installs a light every $36$ meters and Company B installs a light every $48$ meters. If they both install a light at the starting point (position $0$ meters), at what distance from the start will they next install a light at the same position? If the road is $1$ kilometer long, how many times will their lights coincide (excluding the start)?",
+      "answer": "First coincidence at $144$ meters; $6$ coincidences in $1$ kilometer.",
+      "solution": {
+        "steps": [
+          "To find the first point of coincidence, calculate the LCM of $36$ and $48$.",
+          "Prime factorisation of $36 = 2^2 \\times 3^2$.",
+          "Prime factorisation of $48 = 2^4 \\times 3^1$.",
+          "$LCM(36, 48) = 2^4 \\times 3^2 = 16 \\times 9 = 144$.",
+          "The lights coincide every $144$ meters.",
+          "Total length of road is $1000$ meters.",
+          "Number of coincidences $= \\lfloor 1000 \\div 144 \\rfloor = \\lfloor 6.94 \\rfloor = 6$."
+        ],
+        "derivation": "$36 = 2^2 \\times 3^2 \\\\ 48 = 2^4 \\times 3 \\\\ LCM = 2^4 \\times 3^2 = 144 \\\\ 1000 \\div 144 = 6.944... \\\\ \\text{Number of coincidences} = 6$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Fundamental Theorem of Arithmetic",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T13:28:20.524936",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/430-1-1_Mathematics Basic.pdf",
+            "question_no": 32,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-3_Mathematics Basic.pdf",
+            "question_no": 33,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 35,
+            "paper_variant": "basic",
+            "question_type": "la"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_132820_f5000b_02"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "batch_id": "20260608_102950_28d5fa04",
+  "generated_at": "2026-06-08T10:29:50.351512",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "The discriminant of the quadratic equation $3x^2 - 5x + 2 = 0$ is",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Identify the coefficients $a$, $b$, and $c$ from the standard form $ax^2 + bx + c = 0$.",
+          "The coefficients are $a = 3$, $b = -5$, and $c = 2$.",
+          "Use the formula for the discriminant $D = b^2 - 4ac$.",
+          "Substitute the values into the formula: $D = (-5)^2 - 4(3)(2)$.",
+          "Calculate the result: $D = 25 - 24 = 1$."
+        ],
+        "derivation": "$a = 3, b = -5, c = 2 \\\\ D = b^2 - 4ac \\\\ D = (-5)^2 - 4(3)(2) \\\\ D = 25 - 24 \\\\ D = 1$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of Roots",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 25",
+        "(B) 1",
+        "(C) 49",
+        "(D) -1"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-08T10:29:50.351349",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260608_102950_cf8765_01"
+    }
+  ]
+}

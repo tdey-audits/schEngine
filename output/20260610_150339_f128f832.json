@@ -1,0 +1,96 @@
+{
+  "batch_id": "20260610_150339_f128f832",
+  "generated_at": "2026-06-10T15:03:39.984354",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "distance formula",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "The distance of a point $P(x, y)$ from the origin is given by $5$ units. If the ordinate of the point is $4$ times its abscissa, find the distance of point $P$ from the point $Q(0, 0)$ in terms of its coordinates, and identify the possible x-coordinate of $P$ if $x > 0$.",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Let the coordinates of point $P$ be $(x, 4x)$ since the ordinate is $4$ times the abscissa.",
+          "The distance of $P(x, 4x)$ from the origin $(0, 0)$ is given as $5$.",
+          "Using the distance formula: $\\sqrt{(x-0)^2 + (4x-0)^2} = 5$.",
+          "Squaring both sides: $x^2 + 16x^2 = 25$.",
+          "Simplify to $17x^2 = 25$ or $x^2 = \\frac{25}{17}$.",
+          "Since $x > 0$, $x = \\frac{5}{\\sqrt{17}}$."
+        ],
+        "derivation": "$P = (x, 4x) \\\\ OP = \\sqrt{x^2 + (4x)^2} = 5 \\\\ \\sqrt{x^2 + 16x^2} = 5 \\\\ \\sqrt{17x^2} = 5 \\\\ x\\sqrt{17} = 5 \\\\ x = \\frac{5}{\\sqrt{17}}$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "distance formula",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $1$",
+        "(B) $\\frac{5}{\\sqrt{17}}$",
+        "(C) $\\sqrt{17}$",
+        "(D) $5$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T15:03:39.984275",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_7 (Coordinate Geometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 12,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 6,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.1",
+            "question_no": 1,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.1",
+            "question_no": 2,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.1",
+            "question_no": 3,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150339_35dcb2_01"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "batch_id": "20260609_111432_cd120e7c",
+  "generated_at": "2026-06-09T11:14:32.818909",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Polynomials",
+  "subtopic": "division algorithm for polynomials",
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "An engineer is designing a robotic path for a manufacturing unit. The trajectory of the robot is modeled by a polynomial $p(x) = x^4 - 6x^3 + 16x^2 - 25x + 10$. Due to a sensor constraint, the path must be analyzed relative to a base movement polynomial $g(x) = x^2 - 2x + k$. When $p(x)$ is divided by $g(x)$, the resulting remainder is found to be of the form $ax + b$. Based on this division algorithm, answer the following questions:",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "If the division of $p(x)$ by $g(x)$ leaves a remainder $x + a$, what must be the value of $k$?",
+          "answer": "(C)",
+          "options": [
+            "(A) $3$",
+            "(B) $4$",
+            "(C) $5$",
+            "(D) $2$"
+          ],
+          "solution": {
+            "steps": [
+              "Perform long division of $x^4 - 6x^3 + 16x^2 - 25x + 10$ by $x^2 - 2x + k$.",
+              "The quotient is $x^2 - 4x + (10 - k)$.",
+              "The remainder term is calculated as $(10 - k - 8)x + (10 - k(10 - k)) = (2 - k)x + (10 - 10k + k^2)$.",
+              "Equating the remainder to $x + a$, we compare coefficients.",
+              "Coefficient of $x$: $2 - k = 1 \\Rightarrow k = 1$. Wait, re-evaluating: $(2-k)x + (10-k(10-k))$. For remainder to be $x+a$, $2-k=1 \\Rightarrow k=1$. Let's re-check division: $x^4-2x^3+kx^2$. Subtract: $-4x^3+(16-k)x^2-25x$. Next term $-4x$: $-4x^3+8x^2-4kx$. Subtract: $(8-k)x^2+(4k-25)x+10$. Next term $(8-k)$: $(8-k)x^2 - 2(8-k)x + k(8-k)$. Remainder: $(4k-25+16-2k)x + (10-8k+k^2) = (2k-9)x + (k^2-8k+10)$.",
+              "Set $2k-9 = 1 \\Rightarrow 2k=10 \\Rightarrow k=5$."
+            ],
+            "derivation": "$p(x) = (x^2-2x+k)(x^2-4x+(8-k)) + (2k-9)x + (k^2-8k+10) \\\\ 2k-9 = 1 \\Rightarrow 2k = 10 \\Rightarrow k = 5$"
+          }
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Using the value of $k$ found in the previous step, find the value of the constant '$a$' in the remainder $x + a$.",
+          "answer": "-5",
+          "solution": {
+            "steps": [
+              "From previous steps, remainder is $(2k-9)x + (k^2-8k+10)$.",
+              "Substitute $k=5$ into the constant part of the remainder: $a = k^2 - 8k + 10$.",
+              "$a = (5)^2 - 8(5) + 10 = 25 - 40 + 10 = -5$."
+            ],
+            "derivation": "$a = k^2 - 8k + 10 \\\\ a = 5^2 - 8(5) + 10 = 25 - 40 + 10 = -5$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "mcq",
+          "question": "What is the quotient obtained when $p(x)$ is divided by $x^2 - 2x + 5$?",
+          "answer": "(A)",
+          "options": [
+            "(A) $x^2 - 4x + 3$",
+            "(B) $x^2 + 4x + 3$",
+            "(C) $x^2 - 4x - 3$",
+            "(D) $x^2 + 4x - 3$"
+          ],
+          "solution": {
+            "steps": [
+              "The quotient is $x^2 - 4x + (8-k)$.",
+              "Substitute $k=5$.",
+              "Quotient $= x^2 - 4x + (8-5) = x^2 - 4x + 3$."
+            ],
+            "derivation": "$Q(x) = x^2 - 4x + 8 - k \\\\ Q(x) = x^2 - 4x + 8 - 5 = x^2 - 4x + 3$"
+          }
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "If the remainder of the division of $p(x)$ by $g(x)$ were $0$, what would $g(x)$ be called with respect to $p(x)$?",
+          "answer": "Factor",
+          "solution": {
+            "steps": [
+              "According to the division algorithm, if $p(x) = g(x)q(x) + r(x)$ and $r(x) = 0$, then $p(x) = g(x)q(x)$.",
+              "This implies $g(x)$ is a factor of $p(x)$."
+            ],
+            "derivation": "$r(x) = 0 \\Rightarrow p(x) = g(x)q(x) \\\\ \\therefore g(x) \\text{ is a factor of } p(x)$"
+          }
+        }
+      ],
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T11:14:32.818570",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 5,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_111432_57a82b_01"
+    }
+  ]
+}

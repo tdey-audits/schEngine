@@ -1,0 +1,125 @@
+{
+  "batch_id": "20260604_133001_4e702261",
+  "generated_at": "2026-06-04T13:30:01.546546",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $\\sin A = \\cos A$, where $0 < A < 90^\\circ$, find the value of $A$.",
+      "answer": "$45^\\circ$",
+      "solution": {
+        "steps": [
+          "Divide both sides by $\\cos A$ to get $\\tan A = 1$.",
+          "Identify the angle where $\\tan A = 1$ in the given range."
+        ],
+        "derivation": "\\frac{\\sin A}{\\cos A} = 1 \\implies \\tan A = 1 \\implies A = \\tan^{-1}(1) = 45^\\circ"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:30:01.546282",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133001_9410fb_01"
+    },
+    {
+      "question": "Evaluate $\\frac{\\tan 65^\\circ}{\\cot 25^\\circ}$.",
+      "answer": "1",
+      "solution": {
+        "steps": [
+          "Use the complementary angle identity $\\cot \\theta = \\tan(90^\\circ - \\theta)$.",
+          "Substitute $\\cot 25^\\circ = \\tan(90^\\circ - 25^\\circ) = \\tan 65^\\circ$ and simplify."
+        ],
+        "derivation": "\\frac{\\tan 65^\\circ}{\\tan(90^\\circ - 25^\\circ)} = \\frac{\\tan 65^\\circ}{\\tan 65^\\circ} = 1"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Complementary Angles",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:30:01.546362",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133001_a6ab6f_02"
+    },
+    {
+      "question": "Given $15 \\cot A = 8$, find the value of $\\sin A$.",
+      "answer": "$\\frac{15}{17}$",
+      "solution": {
+        "steps": [
+          "Find $\\cot A = \\frac{8}{15}$. Using the ratio $\\frac{\\text{adjacent}}{\\text{opposite}}$, the hypotenuse is $\\sqrt{8^2 + 15^2}$.",
+          "Calculate hypotenuse $= \\sqrt{64 + 225} = 17$, then $\\sin A = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{15}{17}$."
+        ],
+        "derivation": "\\cot A = \\frac{8}{15} \\implies \\text{hyp} = \\sqrt{8^2 + 15^2} = 17 \\implies \\sin A = \\frac{15}{17}"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:30:01.546386",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133001_927754_03"
+    },
+    {
+      "question": "Find the value of $2 \\tan^2 45^\\circ + \\cos^2 30^\\circ - \\sin^2 60^\\circ$.",
+      "answer": "2",
+      "solution": {
+        "steps": [
+          "Substitute the standard values: $\\tan 45^\\circ = 1$, $\\cos 30^\\circ = \\frac{\\sqrt{3}}{2}$, $\\sin 60^\\circ = \\frac{\\sqrt{3}}{2}$.",
+          "Simplify the expression $2(1)^2 + (\\frac{\\sqrt{3}}{2})^2 - (\\frac{\\sqrt{3}}{2})^2$."
+        ],
+        "derivation": "2(1)^2 + \\frac{3}{4} - \\frac{3}{4} = 2 + 0 = 2"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:30:01.546403",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133001_104d36_04"
+    },
+    {
+      "question": "Prove that $\\sec^2 \\theta - 1 = \\tan^2 \\theta$.",
+      "answer": "Proof based on identity $1 + \\tan^2 \\theta = \\sec^2 \\theta$",
+      "solution": {
+        "steps": [
+          "Start with the fundamental identity $1 + \\tan^2 \\theta = \\sec^2 \\theta$.",
+          "Subtract 1 from both sides to isolate $\\tan^2 \\theta$."
+        ],
+        "derivation": "1 + \\tan^2 \\theta = \\sec^2 \\theta \\implies \\tan^2 \\theta = \\sec^2 \\theta - 1"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:30:01.546419",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133001_56b913_05"
+    }
+  ]
+}

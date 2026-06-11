@@ -1,0 +1,70 @@
+{
+  "batch_id": "20260604_122546_fa5bf332",
+  "generated_at": "2026-06-04T12:25:46.973361",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 2,
+  "questions": [
+    {
+      "question": "Two water taps together can fill a tank in $9\\frac{3}{8}$ hours. The tap of larger diameter takes 10 hours less than the smaller one to fill the tank separately. Find the time in which each tap can separately fill the tank.",
+      "answer": "Larger tap: $15$ hours, Smaller tap: $25$ hours",
+      "solution": {
+        "steps": [
+          "Let the time taken by the smaller tap to fill the tank be $x$ hours. Then the larger tap takes $(x - 10)$ hours.",
+          "Part of tank filled by smaller tap in 1 hour = $\\frac{1}{x}$. Part of tank filled by larger tap in 1 hour = $\\frac{1}{x - 10}$.",
+          "Together they fill the tank in $9\\frac{3}{8} = \\frac{75}{8}$ hours. So, part filled together in 1 hour = $\\frac{1}{\\frac{75}{8}} = \\frac{8}{75}$.",
+          "Equation: $\\frac{1}{x} + \\frac{1}{x - 10} = \\frac{8}{75}$.",
+          "Multiply both sides by $75x(x - 10)$: $75(x - 10) + 75x = 8x(x - 10)$.",
+          "Simplify: $75x - 750 + 75x = 8x^2 - 80x$ => $150x - 750 = 8x^2 - 80x$.",
+          "Bring all terms to one side: $0 = 8x^2 - 80x - 150x + 750$ => $8x^2 - 230x + 750 = 0$.",
+          "Divide by 2: $4x^2 - 115x + 375 = 0$. Solve by quadratic formula: $x = \\frac{115 \\pm \\sqrt{115^2 - 4 \\cdot 4 \\cdot 375}}{2 \\cdot 4} = \\frac{115 \\pm \\sqrt{13225 - 6000}}{8} = \\frac{115 \\pm \\sqrt{7225}}{8} = \\frac{115 \\pm 85}{8}$.",
+          "Thus $x = \\frac{115 + 85}{8} = \\frac{200}{8} = 25$ or $x = \\frac{115 - 85}{8} = \\frac{30}{8} = 3.75$.",
+          "If $x = 3.75$, then $x - 10 = -6.25$, which is not possible (time cannot be negative). Hence $x = 25$ hours for smaller tap and $x - 10 = 15$ hours for larger tap."
+        ],
+        "derivation": "Let $x$ = time for smaller tap.\n$\\frac{1}{x} + \\frac{1}{x-10} = \\frac{8}{75}$\n$75(x-10) + 75x = 8x(x-10)$\n$150x - 750 = 8x^2 - 80x$\n$8x^2 - 230x + 750 = 0$\n$4x^2 - 115x + 375 = 0$\n$x = \\frac{115 \\pm \\sqrt{13225 - 6000}}{8} = \\frac{115 \\pm 85}{8}$\n$x = 25$ or $x = 3.75$ (rejected)\nThus smaller tap = 25 hours, larger tap = 15 hours."
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Word Problems (Time and Work)",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T12:25:46.973287",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_122546_ea2dfa"
+    },
+    {
+      "question": "If the roots of the quadratic equation $(a - b)x^2 + (b - c)x + (c - a) = 0$ are equal, prove that $2a = b + c$.",
+      "answer": "Proved: $2a = b + c$",
+      "solution": {
+        "steps": [
+          "The given equation is $(a - b)x^2 + (b - c)x + (c - a) = 0$.",
+          "For equal roots, the discriminant $D = 0$.",
+          "Here, $A = (a - b)$, $B = (b - c)$, $C = (c - a)$.",
+          "Compute discriminant: $D = B^2 - 4AC = (b - c)^2 - 4(a - b)(c - a)$.",
+          "Expand $(b - c)^2 = b^2 - 2bc + c^2$.",
+          "Expand $4(a - b)(c - a) = 4[(a - b)(c - a)] = 4[ac - a^2 - bc + ab] = 4ac - 4a^2 - 4bc + 4ab$.",
+          "Set $D = 0$: $b^2 - 2bc + c^2 - (4ac - 4a^2 - 4bc + 4ab) = 0$.",
+          "Simplify: $b^2 - 2bc + c^2 - 4ac + 4a^2 + 4bc - 4ab = 0$.",
+          "Combine like terms: $b^2 + c^2 + 4a^2 + (-2bc + 4bc) - 4ac - 4ab = b^2 + c^2 + 4a^2 + 2bc - 4ac - 4ab = 0$.",
+          "Recognise the perfect square: $(b + c)^2 = b^2 + c^2 + 2bc$ and $(2a)^2 = 4a^2$. Also $-4ac - 4ab = -4a(c + b)$.",
+          "Rewrite as: $(b + c)^2 + 4a^2 - 4a(b + c) = 0$ => $(b + c)^2 - 4a(b + c) + (2a)^2 = 0$.",
+          "This is $(b + c - 2a)^2 = 0$, hence $b + c - 2a = 0$, so $2a = b + c$."
+        ],
+        "derivation": "$D = (b - c)^2 - 4(a - b)(c - a) = 0$\n$b^2 - 2bc + c^2 - 4(ac - a^2 - bc + ab) = 0$\n$b^2 - 2bc + c^2 - 4ac + 4a^2 + 4bc - 4ab = 0$\n$b^2 + c^2 + 4a^2 + 2bc - 4ac - 4ab = 0$\n$(b + c)^2 + (2a)^2 - 4a(b + c) = 0$\n$(b + c - 2a)^2 = 0$\n$\\therefore 2a = b + c$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of Roots (Equal Roots Proof)",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T12:25:46.973340",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_122546_902d36"
+    }
+  ]
+}

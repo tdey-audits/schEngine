@@ -1,0 +1,44 @@
+{
+  "batch_id": "20260604_133328_cd49ae25",
+  "generated_at": "2026-06-04T13:33:28.690365",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": "sum of n terms of an AP",
+  "difficulty": "medium",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The sum of the first $n$ terms of an arithmetic progression is given by $S_n = \\frac{n}{2}[2a + (n-1)d]$, where $a$ is the first term and $d$ is the common difference.\nReason (R): The sum of the first $n$ terms of an AP can be calculated as $S_n = \\frac{n}{2}(\\text{first term} + \\text{last term})$.",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "The formula $S_n = \\frac{n}{2}[2a + (n-1)d]$ is the standard formula for the sum of $n$ terms of an AP, making Assertion (A) true.",
+          "The formula $S_n = \\frac{n}{2}(a + l)$ where $l$ is the last term ($a_n$) is also a valid and standard formula for the sum of $n$ terms, making Reason (R) true.",
+          "While both are true, Reason (R) is a different formulaic representation and does not act as the logical explanation for the derivation of the formula provided in the Assertion."
+        ],
+        "derivation": "S_n = \\frac{n}{2}(a + a_n) \\implies S_n = \\frac{n}{2}(a + a + (n-1)d) = \\frac{n}{2}(2a + (n-1)d)"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "sum of n terms of an AP",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "medium",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:33:28.690258",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133328_913470_01"
+    }
+  ]
+}

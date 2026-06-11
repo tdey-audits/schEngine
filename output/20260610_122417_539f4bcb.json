@@ -1,0 +1,128 @@
+{
+  "batch_id": "20260610_122417_539f4bcb",
+  "generated_at": "2026-06-10T12:24:17.448492",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "factorisation method",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "The roots of the quadratic equation $x^2 - 7x + 10 = 0$ are",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "To solve $x^2 - 7x + 10 = 0$, split the middle term $-7x$ into two parts such that their sum is $-7$ and product is $10$.",
+          "The factors of $10$ that add to $-7$ are $-5$ and $-2$.",
+          "Rewrite the equation as $x^2 - 5x - 2x + 10 = 0$.",
+          "Factor by grouping: $x(x - 5) - 2(x - 5) = 0$.",
+          "$(x - 5)(x - 2) = 0$.",
+          "Setting each factor to zero, we get $x = 5$ or $x = 2$."
+        ],
+        "derivation": "$x^2 - 7x + 10 = 0 \\\\ x^2 - 5x - 2x + 10 = 0 \\\\ x(x - 5) - 2(x - 5) = 0 \\\\ (x - 5)(x - 2) = 0 \\\\ x = 5, 2$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $2, -5$",
+        "(B) $-2, 5$",
+        "(C) $2, 5$",
+        "(D) $-2, -5$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T12:24:17.448178",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 2,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122417_f7dcef_01"
+    },
+    {
+      "question": "Which of the following is a factor of the quadratic equation $6x^2 + 11x + 3 = 0$?",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "To factorise $6x^2 + 11x + 3 = 0$, find two numbers whose product is $6 \\times 3 = 18$ and whose sum is $11$.",
+          "The numbers are $9$ and $2$.",
+          "Rewrite the middle term: $6x^2 + 9x + 2x + 3 = 0$.",
+          "Factor by grouping: $3x(2x + 3) + 1(2x + 3) = 0$.",
+          "The factors are $(3x + 1)$ and $(2x + 3)$."
+        ],
+        "derivation": "$6x^2 + 11x + 3 = 0 \\\\ 6x^2 + 9x + 2x + 3 = 0 \\\\ 3x(2x + 3) + 1(2x + 3) = 0 \\\\ (3x + 1)(2x + 3) = 0$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $(3x + 1)$",
+        "(B) $(3x - 1)$",
+        "(C) $(2x - 3)$",
+        "(D) $(6x + 1)$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T12:24:17.448300",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 2,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122417_0d147b_02"
+    }
+  ]
+}

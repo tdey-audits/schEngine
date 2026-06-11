@@ -1,0 +1,79 @@
+{
+  "batch_id": "20260604_145840_ee8140ee",
+  "generated_at": "2026-06-04T14:58:40.151372",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Coordinate Geometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the ratio in which the $y$-axis divides the line segment joining the points $A(5, -6)$ and $B(-1, -4)$. Also, find the point of intersection.",
+      "answer": "The ratio is $5:1$ and the point of intersection is $(0, -13/3)$.",
+      "solution": {
+        "steps": [
+          "Let the $y$-axis divide the line segment $AB$ at point $P(0, y)$ in the ratio $k:1$.",
+          "Using the section formula, the coordinates of $P$ are given by $( \\frac{m_1x_2 + m_2x_1}{m_1 + m_2}, \\frac{m_1y_2 + m_2y_1}{m_1 + m_2} )$.",
+          "Since $P$ lies on the $y$-axis, its $x$-coordinate must be $0$.",
+          "Setting the $x$-coordinate expression to $0$ allows us to solve for $k$.",
+          "Substitute the value of $k$ into the $y$-coordinate expression to find the value of $y$."
+        ],
+        "derivation": "P(x, y) = ( \\frac{k(-1) + 1(5)}{k+1}, \\frac{k(-4) + 1(-6)}{k+1} ) \\ x = \\frac{-k + 5}{k+1} = 0 \\ -k + 5 = 0 \\ k = 5 \\ \\text{Ratio} = 5:1 \\ y = \\frac{5(-4) + 1(-6)}{5+1} = \\frac{-20 - 6}{6} = \\frac{-26}{6} = -\\frac{13}{3} \\ \\text{Point } P = (0, -13/3)"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Section Formula",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "diagram": {
+        "required": true,
+        "type": "coordinate",
+        "caption": "Division of segment AB by y-axis",
+        "elements": [
+          {
+            "kind": "axis"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 5,
+            "y": -6,
+            "label": "A(5, -6)",
+            "position": "right"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": -1,
+            "y": -4,
+            "label": "B(-1, -4)",
+            "position": "left"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 0,
+            "y": -4.33,
+            "label": "P(0, y)",
+            "position": "above right"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "B"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:58:40.151298",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145840_9446b9_01"
+    }
+  ]
+}

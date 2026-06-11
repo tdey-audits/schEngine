@@ -1,0 +1,125 @@
+{
+  "batch_id": "20260604_140835_3b285251",
+  "generated_at": "2026-06-04T14:08:35.788492",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the roots of the quadratic equation $x^2 - 3x - 10 = 0$ by the method of factorization.",
+      "answer": "$x = 5, x = -2$",
+      "solution": {
+        "steps": [
+          "Split the middle term $-3x$ into $-5x + 2x$ such that their product is $-10x^2$.",
+          "Factorize the expression by grouping terms and solve for x."
+        ],
+        "derivation": "x^2 - 5x + 2x - 10 = 0 \\implies x(x-5) + 2(x-5) = 0 \\implies (x-5)(x+2) = 0 \\implies x = 5, -2"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Factorization Method",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:35.788385",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140835_32871b_01"
+    },
+    {
+      "question": "Find the value of $k$ for which the quadratic equation $2x^2 + kx + 3 = 0$ has two equal real roots.",
+      "answer": "$k = \\pm 2\\sqrt{6}$",
+      "solution": {
+        "steps": [
+          "Use the condition for equal roots, which is the discriminant $D = b^2 - 4ac = 0$.",
+          "Substitute $a=2, b=k, c=3$ into the formula and solve for $k$."
+        ],
+        "derivation": "D = k^2 - 4(2)(3) = 0 \\implies k^2 - 24 = 0 \\implies k^2 = 24 \\implies k = \\pm \\sqrt{24} = \\pm 2\\sqrt{6}"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of Roots",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:35.788421",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140835_8d3961_02"
+    },
+    {
+      "question": "Check whether $x(x + 3) + 1 = (x - 2)(x + 2)$ is a quadratic equation.",
+      "answer": "No, it is not a quadratic equation.",
+      "solution": {
+        "steps": [
+          "Expand both sides of the equation to simplify.",
+          "Check if the resulting equation is of the form $ax^2 + bx + c = 0$ where $a \\neq 0$."
+        ],
+        "derivation": "x^2 + 3x + 1 = x^2 - 4 \\implies 3x + 1 = -4 \\implies 3x + 5 = 0. \\text{ Since the degree is 1, it is linear, not quadratic.}"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Introduction to Quadratic Equations",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:35.788429",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140835_9d55a2_03"
+    },
+    {
+      "question": "Find the roots of the equation $2x^2 - x + \\frac{1}{8} = 0$ by using the quadratic formula.",
+      "answer": "$x = \\frac{1}{4}$",
+      "solution": {
+        "steps": [
+          "Multiply the entire equation by 8 to simplify the coefficients.",
+          "Apply the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$."
+        ],
+        "derivation": "16x^2 - 8x + 1 = 0. \\text{ Here } a=16, b=-8, c=1. \\implies x = \\frac{8 \\pm \\sqrt{64 - 64}}{32} = \\frac{8}{32} = \\frac{1}{4}"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Quadratic Formula",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:35.788435",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140835_be2f05_04"
+    },
+    {
+      "question": "The sum of two numbers is 27 and their product is 182. Form the quadratic equation representing this scenario.",
+      "answer": "$x^2 - 27x + 182 = 0$",
+      "solution": {
+        "steps": [
+          "Let one number be $x$, then the other number is $27 - x$.",
+          "Set up the equation based on their product $x(27 - x) = 182$ and simplify."
+        ],
+        "derivation": "x(27 - x) = 182 \\implies 27x - x^2 = 182 \\implies x^2 - 27x + 182 = 0"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Word Problems",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:35.788441",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140835_0aa603_05"
+    }
+  ]
+}

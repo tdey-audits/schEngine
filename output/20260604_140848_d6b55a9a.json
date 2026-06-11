@@ -1,0 +1,120 @@
+{
+  "batch_id": "20260604_140848_d6b55a9a",
+  "generated_at": "2026-06-04T14:08:48.121218",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A motorboat whose speed is $18$ km/h in still water takes $1$ hour more to go $24$ km upstream than to return downstream to the same spot. Find the speed of the stream.",
+      "answer": "$6$ km/h",
+      "solution": {
+        "steps": [
+          "Let the speed of the stream be $x$ km/h.",
+          "Speed upstream = $(18-x)$ km/h; Speed downstream = $(18+x)$ km/h.",
+          "Time taken upstream $T_1 = \\frac{24}{18-x}$ and time taken downstream $T_2 = \\frac{24}{18+x}$.",
+          "Set up the equation: $T_1 - T_2 = 1$.",
+          "Solve the resulting quadratic equation $x^2 + 48x - 324 = 0$.",
+          "Factorize to find $x = 6$ or $x = -54$. Since speed cannot be negative, $x=6$."
+        ],
+        "derivation": "\\frac{24}{18-x} - \\frac{24}{18+x} = 1 \\implies 24(18+x - 18 + x) = (18-x)(18+x) \\implies 48x = 324 - x^2 \\implies x^2 + 48x - 324 = 0 \\implies (x+54)(x-6) = 0"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Word problems involving speed, distance, and time",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:48.121114",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140848_f72aa2_01"
+    },
+    {
+      "question": "The sum of the areas of two squares is $468$ m$^2$. If the difference of their perimeters is $24$ m, find the sides of the two squares.",
+      "answer": "$12$ m and $18$ m",
+      "solution": {
+        "steps": [
+          "Let sides of squares be $x$ and $y$ ($x > y$).",
+          "Perimeters are $4x$ and $4y$. Given $4x - 4y = 24$, so $x - y = 6 \\implies x = y + 6$.",
+          "Sum of areas: $x^2 + y^2 = 468$.",
+          "Substitute $x$: $(y+6)^2 + y^2 = 468$.",
+          "Expand and simplify: $y^2 + 12y + 36 + y^2 = 468 \\implies 2y^2 + 12y - 432 = 0$.",
+          "Simplify to $y^2 + 6y - 216 = 0$ and solve for $y$ using the quadratic formula or factoring."
+        ],
+        "derivation": "y^2 + 6y - 216 = 0 \\implies (y+18)(y-12) = 0 \\implies y = 12 \\text{ (since side > 0)}, x = 12+6 = 18"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Geometric problems",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:48.121150",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140848_0c8ed1_02"
+    },
+    {
+      "question": "A peacock is sitting on the top of a pillar, which is $9$ m high. From a point $27$ m away from the bottom of the pillar, a snake is coming to its hole at the base of the pillar. Seeing the snake, the peacock pounces on it. If their speeds are equal, at what distance from the hole is the snake caught?",
+      "answer": "$12$ m",
+      "solution": {
+        "steps": [
+          "Let the snake be caught at distance $x$ from the hole. The snake travels $27-x$ distance.",
+          "The peacock flies from the top of the pillar to the point of catch. By Pythagoras theorem, distance covered by peacock = $\\sqrt{9^2 + x^2}$.",
+          "Since speeds are equal and they start at the same time, distances are equal: $27 - x = \\sqrt{81 + x^2}$.",
+          "Square both sides: $(27-x)^2 = 81 + x^2$.",
+          "Expand: $729 - 54x + x^2 = 81 + x^2$.",
+          "Solve for $x$: $54x = 648 \\implies x = 12$."
+        ],
+        "derivation": "729 - 54x = 81 \\implies 54x = 648 \\implies x = \\frac{648}{54} = 12"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Application of quadratic equations in geometry",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:48.121158",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140848_785dc1_03"
+    },
+    {
+      "question": "A shopkeeper buys a number of books for $80$ rupees. If he had bought $4$ more books for the same amount, each book would have cost $1$ rupee less. How many books did he buy?",
+      "answer": "$16$ books",
+      "solution": {
+        "steps": [
+          "Let the number of books be $x$.",
+          "Original cost per book = $\\frac{80}{x}$.",
+          "New number of books = $x+4$. New cost per book = $\\frac{80}{x+4}$.",
+          "Given the difference in price is 1: $\\frac{80}{x} - \\frac{80}{x+4} = 1$.",
+          "Simplify: $80(x+4) - 80x = x(x+4)$.",
+          "Form quadratic: $x^2 + 4x - 320 = 0$.",
+          "Solve: $(x+20)(x-16) = 0$. Since $x > 0$, $x = 16$."
+        ],
+        "derivation": "80x + 320 - 80x = x^2 + 4x \\implies x^2 + 4x - 320 = 0 \\implies x = \\frac{-4 \\pm \\sqrt{16 - 4(1)(-320)}}{2} = \\frac{-4 \\pm 36}{2}"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Word problems based on commercial mathematics",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:48.121163",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140848_a7952d_04"
+    }
+  ]
+}

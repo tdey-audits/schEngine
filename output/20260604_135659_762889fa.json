@@ -1,0 +1,119 @@
+{
+  "batch_id": "20260604_135659_762889fa",
+  "generated_at": "2026-06-04T13:56:59.580964",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Prove that the lengths of tangents drawn from an external point to a circle are equal.",
+      "answer": "PA = PB",
+      "solution": {
+        "steps": [
+          "Draw a circle with center O and an external point P.",
+          "Draw tangents PA and PB touching the circle at A and B respectively.",
+          "Join OA, OB, and OP.",
+          "Consider triangles OAP and OBP.",
+          "Show that the triangles are congruent by RHS congruence criterion.",
+          "Conclude that PA = PB by CPCT."
+        ],
+        "derivation": "In $\\triangle OAP$ and $\\triangle OBP$: $OA = OB$ (radii of the same circle). $\\angle OAP = \\angle OBP = 90^\\circ$ (tangent is perpendicular to radius at point of contact). $OP = OP$ (common side). Therefore, $\\triangle OAP \\cong \\triangle OBP$ by RHS criterion. Hence, $PA = PB$ by CPCT."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:59.580854",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135659_c56d41_01"
+    },
+    {
+      "question": "$PQ$ is a chord of length $8\\text{ cm}$ of a circle of radius $5\\text{ cm}$. The tangents at $P$ and $Q$ intersect at a point $T$. Find the length of $TP$.",
+      "answer": "TP = 20/3 cm",
+      "solution": {
+        "steps": [
+          "Let the center be O. Join OP and OQ.",
+          "Let OT intersect PQ at R. Since OP=OQ, $\\triangle OPQ$ is isosceles.",
+          "OT is the perpendicular bisector of PQ, so PR = 4 cm.",
+          "In $\\triangle OPR$, $OR = \\sqrt{OP^2 - PR^2} = \\sqrt{5^2 - 4^2} = 3\\text{ cm}$.",
+          "In $\\triangle OPT$, $\\angle OPT = 90^\\circ$. Using similar triangles $\\triangle PRT \\sim \\triangle OPT$.",
+          "Set up the ratio: $TP/OP = PR/OR$. Solve for TP."
+        ],
+        "derivation": "In $\\triangle OPT$, $PR \\perp OT$. Thus, $\\triangle PRT \\sim \\triangle OPT$ (AA similarity). Therefore, $TP/OP = PR/OR$. $TP/5 = 4/3$. $TP = 20/3\\text{ cm}$."
+      },
+      "topic": "Circles",
+      "subtopic": "Properties of tangents",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:59.580896",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135659_9230bd_02"
+    },
+    {
+      "question": "A quadrilateral $ABCD$ is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.",
+      "answer": "AB + CD = AD + BC",
+      "solution": {
+        "steps": [
+          "Use the property that tangents from an external point to a circle are equal.",
+          "Let the points of contact be P, Q, R, S on sides AB, BC, CD, DA respectively.",
+          "AP = AS, BP = BQ, CQ = CR, DR = DS.",
+          "Sum the left and right sides of these equations.",
+          "Group the terms to form the sides of the quadrilateral.",
+          "Conclude the result."
+        ],
+        "derivation": "AP=AS, BP=BQ, CR=CQ, DR=DS. $AB+CD = (AP+PB) + (CR+RD) = (AS+BQ) + (CQ+DS) = (AS+DS) + (BQ+CQ) = AD+BC$."
+      },
+      "topic": "Circles",
+      "subtopic": "Circumscribed quadrilaterals",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:59.580904",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135659_bef369_03"
+    },
+    {
+      "question": "Two concentric circles are of radii $5\\text{ cm}$ and $3\\text{ cm}$. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "answer": "8 cm",
+      "solution": {
+        "steps": [
+          "Let O be the common center. Let AB be the chord of the larger circle touching the smaller circle at point P.",
+          "Join OP. Since AB is a tangent to the smaller circle, OP $\\perp$ AB.",
+          "OP = 3 cm (radius of smaller circle). OA = 5 cm (radius of larger circle).",
+          "In right $\\triangle OPA$, use Pythagoras theorem to find AP.",
+          "AP = $\\sqrt{OA^2 - OP^2} = \\sqrt{5^2 - 3^2} = 4\\text{ cm}$.",
+          "Since the perpendicular from the center bisects the chord, AB = 2 * AP."
+        ],
+        "derivation": "In $\\triangle OPA$, $OA^2 = OP^2 + AP^2 \\implies 5^2 = 3^2 + AP^2 \\implies 25 = 9 + AP^2 \\implies AP^2 = 16 \\implies AP = 4\\text{ cm}$. Since $OP \\perp AB$, $AP = PB = 4\\text{ cm}$. Therefore, $AB = 4 + 4 = 8\\text{ cm}$."
+      },
+      "topic": "Circles",
+      "subtopic": "Concentric circles",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:59.580911",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135659_5969b4_04"
+    }
+  ]
+}

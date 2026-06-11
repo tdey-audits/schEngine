@@ -1,0 +1,105 @@
+{
+  "batch_id": "20260609_155927_273e9876",
+  "generated_at": "2026-06-09T15:59:27.804461",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): If $\\theta$ is an acute angle and $\\sin \\theta = \\cos \\theta$, then the value of $\\tan \\theta$ is $1$. \\nReason (R): For any angle $\\theta$ in a right-angled triangle, $\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Check the Assertion: Given $\\sin \\theta = \\cos \\theta$. Dividing by $\\cos \\theta$ (since $\\theta$ is acute, $\\cos \\theta \\neq 0$), we get $\\frac{\\sin \\theta}{\\cos \\theta} = 1$, which implies $\\tan \\theta = 1$. Thus, Assertion is true.",
+          "Check the Reason: The definition of the tangent ratio in a right triangle is indeed the ratio of the sine of the angle to the cosine of the angle, $\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}$. Thus, Reason is true.",
+          "Conclusion: The Reason correctly provides the mathematical definition used to derive the value in the Assertion."
+        ],
+        "derivation": "$\\sin \\theta = \\cos \\theta \\Rightarrow \\frac{\\sin \\theta}{\\cos \\theta} = 1 \\Rightarrow \\tan \\theta = 1 \\\\ \\text{Definition: } \\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{\\text{opposite}/\\text{hypotenuse}}{\\text{adjacent}/\\text{hypotenuse}} = \\frac{\\sin \\theta}{\\cos \\theta}$"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T15:59:27.804134",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_8 (Introduction to Trigonometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 15,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 12,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 15,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_155927_33d274_01"
+    }
+  ]
+}

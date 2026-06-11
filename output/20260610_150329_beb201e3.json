@@ -1,0 +1,97 @@
+{
+  "batch_id": "20260610_150329_beb201e3",
+  "generated_at": "2026-06-10T15:03:29.671554",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "quadratic formula",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "The value of $k$ for which the quadratic equation $x^2 - 8x + k = 0$ has real and equal roots is",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "For a quadratic equation $ax^2 + bx + c = 0$ to have real and equal roots, the discriminant $D$ must be equal to $0$.",
+          "The discriminant is given by $D = b^2 - 4ac$.",
+          "Identify the coefficients from the given equation: $a = 1$, $b = -8$, and $c = k$.",
+          "Substitute the values into the condition $b^2 - 4ac = 0$.",
+          "Solve the resulting linear equation for $k$: $(-8)^2 - 4(1)(k) = 0 \\Rightarrow 64 - 4k = 0 \\Rightarrow 4k = 64 \\Rightarrow k = 16$."
+        ],
+        "derivation": "$ax^2 + bx + c = 0 \\Rightarrow a=1, b=-8, c=k \\\\ D = b^2 - 4ac = 0 \\\\ (-8)^2 - 4(1)(k) = 0 \\\\ 64 - 4k = 0 \\\\ 4k = 64 \\\\ k = 16$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "quadratic formula",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 8",
+        "(B) 4",
+        "(C) 16",
+        "(D) 64"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T15:03:29.671481",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.1",
+            "question_no": 1,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.1",
+            "question_no": 2,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.1",
+            "question_no": 6,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150329_faaeec_01"
+    }
+  ]
+}

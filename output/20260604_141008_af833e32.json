@@ -1,0 +1,158 @@
+{
+  "batch_id": "20260604_141008_af833e32",
+  "generated_at": "2026-06-04T14:10:08.291419",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "la",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $\\sin \\theta = \\frac{3}{5}$, then the value of $\\cos \\theta$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Use the identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$",
+          "Substitute the value of $\\sin \\theta$",
+          "Solve for $\\cos \\theta$"
+        ],
+        "derivation": "\\cos^2 \\theta = 1 - \\sin^2 \\theta = 1 - (\\frac{3}{5})^2 = 1 - \\frac{9}{25} = \\frac{16}{25} \\implies \\cos \\theta = \\frac{4}{5}"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 1,
+      "type": "la",
+      "difficulty": "simple",
+      "options": [
+        "(A) 2/5",
+        "(B) 3/4",
+        "(C) 4/5",
+        "(D) 1/5"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:08.291314",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141008_88ec7f_01"
+    },
+    {
+      "question": "The value of $\\tan 45^\\circ + \\cot 45^\\circ$ is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Recall the trigonometric values for standard angles.",
+          "Substitute $\\tan 45^\\circ = 1$ and $\\cot 45^\\circ = 1$.",
+          "Add the values."
+        ],
+        "derivation": "\\tan 45^\\circ + \\cot 45^\\circ = 1 + 1 = 2"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 1,
+      "type": "la",
+      "difficulty": "simple",
+      "options": [
+        "(A) 1",
+        "(B) 2",
+        "(C) 0",
+        "(D) 3"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:08.291352",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141008_103abf_02"
+    },
+    {
+      "question": "If $3\\tan \\theta = 3$, then $\\theta$ is equal to:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Simplify the equation to find $\\tan \\theta$.",
+          "Identify the angle $\\theta$ for which $\\tan \\theta = 1$."
+        ],
+        "derivation": "3\\tan \\theta = 3 \\implies \\tan \\theta = 1 \\implies \\theta = 45^\\circ"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios",
+      "marks": 1,
+      "type": "la",
+      "difficulty": "simple",
+      "options": [
+        "(A) 30^\\circ",
+        "(B) 60^\\circ",
+        "(C) 45^\\circ",
+        "(D) 90^\\circ"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:08.291361",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141008_ff7449_03"
+    },
+    {
+      "question": "The value of $\\frac{\\sin 18^\\circ}{\\cos 72^\\circ}$ is:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Use the complementary angle identity $\\cos(90^\\circ - \\theta) = \\sin \\theta$.",
+          "Substitute $\\cos 72^\\circ = \\cos(90^\\circ - 18^\\circ) = \\sin 18^\\circ$.",
+          "Divide the terms."
+        ],
+        "derivation": "\\frac{\\sin 18^\\circ}{\\cos 72^\\circ} = \\frac{\\sin 18^\\circ}{\\sin 18^\\circ} = 1"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Complementary Angles",
+      "marks": 1,
+      "type": "la",
+      "difficulty": "simple",
+      "options": [
+        "(A) 1",
+        "(B) 0",
+        "(C) 2",
+        "(D) 1/2"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:08.291368",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141008_281746_04"
+    },
+    {
+      "question": "Which of the following is equal to $\\sec^2 \\theta - 1$?",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Recall the fundamental trigonometric identity $1 + \\tan^2 \\theta = \\sec^2 \\theta$.",
+          "Rearrange the identity to isolate $\\sec^2 \\theta - 1$."
+        ],
+        "derivation": "1 + \\tan^2 \\theta = \\sec^2 \\theta \\implies \\sec^2 \\theta - 1 = \\tan^2 \\theta"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 1,
+      "type": "la",
+      "difficulty": "simple",
+      "options": [
+        "(A) \\sin^2 \\theta",
+        "(B) \\cos^2 \\theta",
+        "(C) \\cot^2 \\theta",
+        "(D) \\tan^2 \\theta"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:08.291373",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141008_11278f_05"
+    }
+  ]
+}

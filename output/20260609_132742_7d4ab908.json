@@ -1,0 +1,224 @@
+{
+  "batch_id": "20260609_132742_7d4ab908",
+  "generated_at": "2026-06-09T13:27:42.656732",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The number $0.121121112...$ is an irrational number. \\\\ Reason (R): A number is irrational if its decimal expansion is non-terminating and non-repeating.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Identify the nature of the decimal expansion given in Assertion (A).",
+          "Observe that the decimal expansion $0.121121112...$ is non-terminating and non-recurring as the pattern of digits between the 2s is not fixed.",
+          "Apply the definition of irrational numbers: A number is irrational if and only if its decimal expansion is non-terminating and non-recurring.",
+          "Conclude that both the Assertion and the Reason are true, and the Reason correctly explains the Assertion."
+        ],
+        "derivation": "$0.121121112... \\text{ is non-terminating and non-repeating} \\Rightarrow \\text{It is an irrational number} \\Rightarrow \\text{Assertion (A) is true} \\Rightarrow \\text{Definition of irrational numbers confirms Reason (R) is true and explains A}$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Irrational Numbers",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T13:27:42.656298",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 19,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_132742_2079ce_01"
+    },
+    {
+      "question": "Assertion (A): The denominator of the rational number $17/80$ can be expressed in the form $2^n \\times 5^m$, where $n$ and $m$ are non-negative integers. \\\\ Reason (R): A rational number $p/q$ has a terminating decimal expansion if the prime factorization of $q$ is of the form $2^n \\times 5^m$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Find the prime factorization of the denominator $q = 80$.",
+          "$80 = 8 \times 10 = 2^3 \times 2 \times 5 = 2^4 \times 5^1$.",
+          "Check if $80$ is of the form $2^n \\times 5^m$. Here $n=4$ and $m=1$, which are non-negative integers.",
+          "Verify the theorem: A rational number $p/q$ has a terminating decimal expansion if and only if $q = 2^n \\times 5^m$.",
+          "Conclude that both A and R are true and R provides the theoretical basis for A."
+        ],
+        "derivation": "$q = 80 \\\\ 80 = 2 \times 40 = 2^2 \times 20 = 2^3 \times 10 = 2^4 \times 5^1 \\\\ 80 = 2^4 \times 5^1 \\Rightarrow n=4, m=1 \\\\ \\text{Since } q = 2^n \\times 5^m, \\text{ the decimal expansion terminates.}$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Decimal Expansion of Rational Numbers",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T13:27:42.656434",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 19,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_132742_60f950_02"
+    }
+  ]
+}

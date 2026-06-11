@@ -1,0 +1,125 @@
+{
+  "batch_id": "20260604_140759_1082d0bf",
+  "generated_at": "2026-06-04T14:07:59.119933",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Pair of Linear Equations in Two Variables",
+  "subtopic": "equations reducible to linear form",
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Solve for $x$ and $y$: $\\frac{2}{x} + \\frac{3}{y} = 13$ and $\\frac{5}{x} - \\frac{4}{y} = -2$.",
+      "answer": "$x = \\frac{1}{2}, y = \\frac{1}{3}$",
+      "solution": {
+        "steps": [
+          "Substitute $u = 1/x$ and $v = 1/y$ to convert the equations into standard linear form: $2u + 3v = 13$ and $5u - 4v = -2$.",
+          "Solve the system using elimination method to find $u=2$ and $v=3$, then invert to find $x$ and $y$."
+        ],
+        "derivation": "Multiply eq1 by 4 and eq2 by 3: $8u + 12v = 52$ and $15u - 12v = -6$. Adding them gives $23u = 46 \\implies u = 2$. Thus, $1/x = 2 \\implies x = 1/2$. Substituting $u=2$ into $2(2) + 3v = 13 \\implies 3v = 9 \\implies v = 3$. Thus, $1/y = 3 \\implies y = 1/3$."
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:59.119766",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140759_6bbeb5_01"
+    },
+    {
+      "question": "Find the values of $x$ and $y$ given: $\\frac{1}{2x} - \\frac{1}{y} = -1$ and $\\frac{1}{x} + \\frac{1}{2y} = 8$.",
+      "answer": "$x = 1/6, y = 1/14$",
+      "solution": {
+        "steps": [
+          "Let $u = 1/x$ and $v = 1/y$. The equations become $\\frac{1}{2}u - v = -1$ and $u + \\frac{1}{2}v = 8$.",
+          "Solve for $u$ and $v$ and find their reciprocals."
+        ],
+        "derivation": "Multiply eq1 by 2: $u - 2v = -2$. Multiply eq2 by 2: $2u + v = 16$. From eq2, $v = 16 - 2u$. Substitute into eq1: $u - 2(16 - 2u) = -2 \\implies u - 32 + 4u = -2 \\implies 5u = 30 \\implies u = 6$. Then $v = 16 - 12 = 4$. So $x = 1/6, y = 1/4$."
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:59.119820",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140759_36c3bc_02"
+    },
+    {
+      "question": "Solve the system: $\\frac{10}{x+y} + \\frac{2}{x-y} = 4$ and $\\frac{15}{x+y} - \\frac{5}{x-y} = -2$.",
+      "answer": "$x = 3, y = 2$",
+      "solution": {
+        "steps": [
+          "Let $u = 1/(x+y)$ and $v = 1/(x-y)$. The equations become $10u + 2v = 4$ and $15u - 5v = -2$.",
+          "Solve for $u, v$ and equate to $(x+y)$ and $(x-y)$ to solve for $x$ and $y$."
+        ],
+        "derivation": "Multiply first by 5 and second by 2: $50u + 10v = 20$ and $30u - 10v = -4$. Add: $80u = 16 \\implies u = 1/5$. Thus $x+y=5$. Substitute $u=1/5$ in $10(1/5) + 2v = 4 \\implies 2 + 2v = 4 \\implies v = 1$. Thus $x-y=1$. Adding gives $2x=6, x=3$; subtracting gives $2y=4, y=2$."
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:59.119833",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140759_e0e968_03"
+    },
+    {
+      "question": "Solve for $x$ and $y$: $\\frac{4}{x} + 3y = 8$ and $\\frac{6}{x} - 4y = -5$.",
+      "answer": "$x = 2, y = 0$",
+      "solution": {
+        "steps": [
+          "Let $u = 1/x$. The equations become $4u + 3y = 8$ and $6u - 4y = -5$.",
+          "Eliminate $y$ by multiplying the first by 4 and the second by 3."
+        ],
+        "derivation": "Eq1: $16u + 12y = 32$. Eq2: $18u - 12y = -15$. Adding: $34u = 17 \\implies u = 1/2$. Since $1/x = 1/2, x = 2$. Substitute $u=1/2$ into $4(1/2) + 3y = 8 \\implies 2 + 3y = 8 \\implies 3y = 6 \\implies y = 2$."
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:59.119843",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140759_0a2641_04"
+    },
+    {
+      "question": "Solve: $\\frac{1}{3x+y} + \\frac{1}{3x-y} = \\frac{3}{4}$ and $\\frac{1}{2(3x+y)} - \\frac{1}{2(3x-y)} = -\\frac{1}{8}$.",
+      "answer": "$x = 1, y = 1$",
+      "solution": {
+        "steps": [
+          "Let $u = 1/(3x+y)$ and $v = 1/(3x-y)$. Equations are $u + v = 3/4$ and $u/2 - v/2 = -1/8$.",
+          "Solve for $u$ and $v$ and then solve the resulting system for $x$ and $y$."
+        ],
+        "derivation": "Eq1: $u + v = 3/4$. Eq2: $u - v = -1/4$. Adding gives $2u = 2/4 = 1/2 \\implies u = 1/4$. Then $v = 1/2$. Thus $3x+y=4$ and $3x-y=2$. Adding gives $6x=6 \\implies x=1$. Substituting gives $3(1)+y=4 \\implies y=1$."
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:59.119853",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140759_fb0202_05"
+    }
+  ]
+}

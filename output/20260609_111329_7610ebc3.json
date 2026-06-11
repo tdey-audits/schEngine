@@ -1,0 +1,103 @@
+{
+  "batch_id": "20260609_111329_7610ebc3",
+  "generated_at": "2026-06-09T11:13:29.522436",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The quadratic equation $2x^2 + kx + 8 = 0$ has real and equal roots for $k = 8$ or $k = -8$. \\nReason (R): A quadratic equation $ax^2 + bx + c = 0$ has real and equal roots if and only if its discriminant $D = b^2 - 4ac$ is equal to $0$.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify the coefficients $a = 2$, $b = k$, and $c = 8$ from the given equation $2x^2 + kx + 8 = 0$.",
+          "Recall the condition for equal roots: $D = b^2 - 4ac = 0$.",
+          "Calculate the discriminant: $k^2 - 4 \\times 2 \\times 8 = k^2 - 64$.",
+          "Set $D = 0$ to solve for $k$: $k^2 - 64 = 0$, which gives $k^2 = 64$, so $k = \\pm 8$.",
+          "Evaluate the Assertion: The calculated values of $k$ are $8$ and $-8$, making the Assertion true.",
+          "Evaluate the Reason: The condition $D = 0$ is the standard definition for equal roots in a quadratic equation, which is true.",
+          "Check for correct explanation: The Reason correctly states the condition used to derive the values in the Assertion. However, the Assertion is $k=8$ or $k=-8$, which is true, but the Reason is the fundamental theorem. Wait, $k = \\pm 8$ is correct, so both are true and R is the correct explanation."
+        ],
+        "derivation": "$a = 2, b = k, c = 8 \\\\ D = b^2 - 4ac = k^2 - 4(2)(8) \\\\ D = k^2 - 64 \\\\ \\text{For equal roots, } D = 0 \\\\ k^2 - 64 = 0 \\\\ k^2 = 64 \\\\ k = \\pm 8$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of Roots",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T11:13:29.522138",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_111329_819f05_01"
+    }
+  ]
+}

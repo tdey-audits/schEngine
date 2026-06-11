@@ -1,0 +1,170 @@
+{
+  "batch_id": "20260604_145042_60a5d7ad",
+  "generated_at": "2026-06-04T14:50:42.164116",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Two concentric circles are of radii $5$ cm and $3$ cm. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "answer": "$8$ cm",
+      "solution": {
+        "steps": [
+          "Let $O$ be the common center. Let $AB$ be the chord of the larger circle that touches the smaller circle at point $P$.",
+          "Radius $OP$ is perpendicular to tangent $AB$, so $\\triangle OPA$ is a right-angled triangle with $\\angle OPA = 90^\\circ$.",
+          "Using Pythagoras theorem in $\\triangle OPA$, $AP = \\sqrt{OA^2 - OP^2} = \\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = 4$ cm.",
+          "Since the perpendicular from the center bisects the chord, $AB = 2 \\times AP = 2 \\times 4 = 8$ cm."
+        ],
+        "derivation": "$OA = 5, OP = 3 \\\\ AP = \\sqrt{5^2 - 3^2} = \\sqrt{16} = 4 \\\\ AB = 2 \\times AP = 2 \\times 4 = 8$ cm"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "caption": "Concentric circles with chord touching inner circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 1.2
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "B",
+            "label": "Chord"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "P",
+            "label": "3 cm"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "A",
+            "label": "5 cm"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:42.163869",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145042_2b3444_01"
+    },
+    {
+      "question": "If a quadrilateral $ABCD$ is drawn to circumscribe a circle, prove that $AB + CD = AD + BC$.",
+      "answer": "$AB + CD = AD + BC$",
+      "solution": {
+        "steps": [
+          "Let the circle touch the sides $AB$, $BC$, $CD$, and $DA$ at points $P$, $Q$, $R$, and $S$ respectively.",
+          "Using the theorem that tangents drawn from an external point to a circle are equal in length, we have $AP=AS$, $BP=BQ$, $CR=CQ$, and $DR=DS$.",
+          "Adding these four equations: $(AP+BP) + (CR+DR) = (AS+DS) + (BQ+CQ)$.",
+          "This simplifies to $AB + CD = AD + BC$."
+        ],
+        "derivation": "$AP = AS, BP = BQ, CR = CQ, DR = DS \\\\ (AP + BP) + (CR + DR) = (AS + DS) + (BQ + CQ) \\\\ AB + CD = AD + BC$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:42.163933",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145042_e32ee2_02"
+    },
+    {
+      "question": "A tangent $PQ$ at a point $P$ of a circle of radius $5$ cm meets a line through the center $O$ at a point $Q$ so that $OQ = 12$ cm. Find the length of $PQ$.",
+      "answer": "$\\sqrt{119}$ cm",
+      "solution": {
+        "steps": [
+          "The radius $OP$ is perpendicular to the tangent $PQ$ at the point of contact $P$.",
+          "In $\\triangle OPQ$, $\\angle OPQ = 90^\\circ$. By Pythagoras theorem, $OQ^2 = OP^2 + PQ^2$.",
+          "Substituting the values, $12^2 = 5^2 + PQ^2$.",
+          "$PQ^2 = 144 - 25 = 119$, so $PQ = \\sqrt{119}$ cm."
+        ],
+        "derivation": "$OP = 5, OQ = 12 \\\\ PQ^2 = 12^2 - 5^2 \\\\ PQ^2 = 144 - 25 = 119 \\\\ PQ = \\sqrt{119}$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:42.163952",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145042_17bb0b_03"
+    },
+    {
+      "question": "In $\\triangle ABC$, a circle is inscribed touching sides $AB$, $BC$, and $CA$ at $D$, $E$, and $F$ respectively. If $AB = 12$ cm, $BC = 8$ cm, and $AC = 10$ cm, find the lengths of $AD$, $BE$, and $CF$.",
+      "answer": "$AD = 7$ cm, $BE = 5$ cm, $CF = 3$ cm",
+      "solution": {
+        "steps": [
+          "Let $AD = AF = x$, $BD = BE = y$, and $CE = CF = z$.",
+          "We have $x+y = 12$, $y+z = 8$, and $z+x = 10$.",
+          "Adding these equations: $2(x+y+z) = 30 \\Rightarrow x+y+z = 15$.",
+          "Solving for each: $z = 15-12 = 3$, $x = 15-8 = 7$, $y = 15-10 = 5$."
+        ],
+        "derivation": "$x+y=12, y+z=8, z+x=10 \\\\ 2(x+y+z)=30 \\\\ z=15-12=3 \\\\ x=15-8=7 \\\\ y=15-10=5$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:42.163964",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145042_983747_04"
+    },
+    {
+      "question": "Two tangents $TP$ and $TQ$ are drawn to a circle with center $O$ from an external point $T$. Prove that $\\angle PTQ = 2\\angle OPQ$.",
+      "answer": "$\\angle PTQ = 2\\angle OPQ$",
+      "solution": {
+        "steps": [
+          "Let $\\angle PTQ = \\theta$. In $\\triangle TPQ$, $TP = TQ$ (tangents from external point).",
+          "Thus $\\angle TPQ = \\angle TQP = (180^\\circ - \\theta) / 2 = 90^\\circ - \\theta/2$.",
+          "Since $OP \\perp TP$, $\\angle OPT = 90^\\circ$.",
+          "Therefore, $\\angle OPQ = \\angle OPT - \\angle TPQ = 90^\\circ - (90^\\circ - \\theta/2) = \\theta/2$. Thus $\\angle PTQ = 2\\angle OPQ$."
+        ],
+        "derivation": "$\\angle TPQ = (180^\\circ - \\theta)/2 = 90^\\circ - \\theta/2 \\\\ \\angle OPQ = 90^\\circ - \\angle TPQ \\\\ \\angle OPQ = 90^\\circ - (90^\\circ - \\theta/2) = \\theta/2 \\\\ \\theta = 2\\angle OPQ$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:42.163976",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145042_9c1007_05"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "batch_id": "20260609_160154_b79b03b6",
+  "generated_at": "2026-06-09T16:01:54.373360",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Coordinate Geometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A city planning committee is mapping out a new park on a Cartesian plane where the origin $(0, 0)$ represents the City Hall. Three proposed landmarks are located at $A(2, 3)$, $B(6, 7)$, and $C(10, 3)$. A straight walking path is planned to connect $A$ and $C$. A secondary utility line is planned to pass through $B$ and the midpoint of the path $AC$.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "What is the length of the walking path $AC$?",
+          "answer": "(B)",
+          "options": [
+            "(A) $6$ units",
+            "(B) $8$ units",
+            "(C) $10$ units",
+            "(D) $4\\sqrt{2}$ units"
+          ],
+          "solution": {
+            "steps": [
+              "Identify coordinates: $A(2, 3)$ and $C(10, 3)$.",
+              "Apply distance formula $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.",
+              "$d = \\sqrt{(10 - 2)^2 + (3 - 3)^2} = \\sqrt{8^2 + 0^2} = 8$."
+            ],
+            "derivation": "d = \\sqrt{(10 - 2)^2 + (3 - 3)^2} = \\sqrt{8^2} = 8"
+          }
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Find the coordinates of the midpoint $M$ of the path $AC$.",
+          "answer": "$(6, 3)$",
+          "solution": {
+            "steps": [
+              "Use midpoint formula $M = (\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2})$.",
+              "$x = \\frac{2 + 10}{2} = 6$.",
+              "$y = \\frac{3 + 3}{2} = 3$."
+            ],
+            "derivation": "M = (\\frac{2 + 10}{2}, \\frac{3 + 3}{2}) = (6, 3)"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "mcq",
+          "question": "If the utility line connects $B(6, 7)$ and the midpoint $M(6, 3)$, what is the nature of this line?",
+          "answer": "(C)",
+          "options": [
+            "(A) Horizontal line",
+            "(B) Line passing through origin",
+            "(C) Vertical line",
+            "(D) Line with slope 1"
+          ],
+          "solution": {
+            "steps": [
+              "The points are $B(6, 7)$ and $M(6, 3)$.",
+              "Since the x-coordinates are the same ($x=6$), the line is vertical."
+            ],
+            "derivation": "x_1 = 6, x_2 = 6 \\Rightarrow \\text{Vertical line}"
+          }
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "Find the area of $\\triangle ABC$.",
+          "answer": "$16$ square units",
+          "solution": {
+            "steps": [
+              "Use area of triangle formula $\\frac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|$.",
+              "Area $= \\frac{1}{2}|2(7 - 3) + 6(3 - 3) + 10(3 - 7)|$.",
+              "Area $= \\frac{1}{2}|2(4) + 0 + 10(-4)| = \\frac{1}{2}|8 - 40| = \\frac{1}{2}|-32| = 16$."
+            ],
+            "derivation": "Area = \\frac{1}{2} |2(7 - 3) + 6(3 - 3) + 10(3 - 7)| = \\frac{1}{2} |8 + 0 - 40| = 16"
+          }
+        }
+      ],
+      "diagram": {
+        "required": true,
+        "type": "coordinate",
+        "caption": "Map of park landmarks",
+        "elements": [
+          {
+            "kind": "axis"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 2,
+            "y": 3,
+            "label": "A(2,3)",
+            "position": "below left"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 6,
+            "y": 7,
+            "label": "B(6,7)",
+            "position": "above"
+          },
+          {
+            "kind": "point",
+            "id": "C",
+            "x": 10,
+            "y": 3,
+            "label": "C(10,3)",
+            "position": "below right"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "C",
+            "label": "Path"
+          },
+          {
+            "kind": "segment",
+            "from": "B",
+            "to": "M",
+            "label": "Utility"
+          }
+        ]
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T16:01:54.373052",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_7 (Coordinate Geometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 38,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 18,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 20,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.4",
+            "question_no": 3,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160154_33b6c5_01"
+    }
+  ]
+}

@@ -1,0 +1,1014 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag Solutions} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{questions}
+\question \textbf{1.} Find the distance between the points $P(2, 3)$ and $Q(4, 1)$.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_092.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{2\sqrt{2} \text{units}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify coordinates $x_1 = 2, y_1 = 3$ and $x_2 = 4, y_2 = 1$.
+  \item Apply distance formula $d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+d = \sqrt{(4-2)^2 + (1-3)^2} \\
+d = \sqrt{2^2 + (-2)^2} \\
+d = \sqrt{4+4} \\
+d = \sqrt{8} = 2\sqrt{2}
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Distance Formula}
+\vspace{0.3cm}
+
+\question \textbf{2.} Determine the ratio in which the point $P(x, 2)$ divides the line segment joining the points $A(12, 5)$ and $B(4, -3)$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{3:5}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use section formula for y-coordinate: $y = \frac{m y_2 + n y_1}{m+n}$.
+  \item Substitute values and solve for the ratio $m:n$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+2 = \frac{m(-3) + n(5)}{m+n} \\
+2m + 2n = -3m + 5n \\
+5m = 3n \\
+\frac{m}{n} = \frac{3}{5}
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Section Formula}
+\vspace{0.3cm}
+
+\question \textbf{3.} Find the coordinates of the midpoint of the line segment joining the points $A(-5, 4)$ and $B(7, -8)$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{(1, -2)}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Apply midpoint formula $M = (\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2})$.
+  \item Calculate coordinates by substituting the given values.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+M = (\frac{-5+7}{2}, \frac{4-8}{2}) \\
+M = (\frac{2}{2}, \frac{-4}{2}) \\
+M = (1, -2)
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Midpoint Formula}
+\vspace{0.3cm}
+
+\question \textbf{4.} Find the value of $k$ if the point $P(0, 2)$ is equidistant from $A(3, k)$ and $B(k, 5)$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{k = 1}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the condition $PA^2 = PB^2$ since $PA = PB$.
+  \item Expand and solve the resulting equation for $k$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+(3-0)^2 + (k-2)^2 = (k-0)^2 + (5-2)^2 \\
+9 + k^2 - 4k + 4 = k^2 + 9 \\
+-4k + 4 = 0 \\
+k = 1
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Distance Formula Application}
+\vspace{0.3cm}
+
+\question \textbf{5.} If the coordinates of the vertices of a parallelogram $\text{ABCD}$ are $A(1, 2)$, $B(4, 3)$, $C(6, 6)$, find the coordinates of the fourth vertex $D(x, y)$.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_093.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{(3, 5)}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the property that diagonals of a parallelogram bisect each other.
+  \item Equate midpoints of $AC$ and $BD$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Midpoint of AC} = (\frac{1+6}{2}, \frac{2+6}{2}) = (3.5, 4) \\
+\frac{4+x}{2} = 3.5 \\
+\Rightarrow x = 3 \\
+\frac{3+y}{2} = 4 \\
+\Rightarrow y = 5
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Properties of Quadrilaterals}
+\vspace{0.3cm}
+
+\question \textbf{6.} Find the ratio in which the $y$-axis divides the line segment joining the points $A(5, -6)$ and $B(-1, -4)$. Also, find the point of intersection.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Ratio} 5:1, \text{Point} (0, -13/3)}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Assume the ratio is $k:1$. The coordinates of the point on the $y$-axis will be $(0, y)$.
+  \item Use the section formula for the $x$-coordinate to find $k$.
+  \item Substitute $k$ into the section formula for the $y$-coordinate to find the point.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+0 = \frac{k(-1) + 1(5)}{k+1} \\
+\Rightarrow -k + 5 = 0 \\
+\Rightarrow k = 5 \\
+\text{Ratio is } 5:1 \\
+y = \frac{5(-4) + 1(-6)}{5+1} = \frac{-20 - 6}{6} = \frac{-26}{6} = -\frac{13}{3} \\
+\text{Point is } (0, -\frac{13}{3})
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Section Formula}
+\vspace{0.3cm}
+
+\question \textbf{7.} Find the coordinates of a point $A$, where $AB$ is the diameter of a circle whose centre is $(2, -3)$ and $B$ is $(1, 4)$.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_094.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{A(3, -10)}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $A = (x, y)$. The centre $(2, -3)$ is the midpoint of the diameter $AB$.
+  \item Apply the midpoint formula: $x_m = \frac{x_1 + x_2}{2}$ and $y_m = \frac{y_1 + y_2}{2}$.
+  \item Solve for $x$ and $y$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{x + 1}{2} = 2 \\
+\Rightarrow x + 1 = 4 \\
+\Rightarrow x = 3 \\
+\frac{y + 4}{2} = -3 \\
+\Rightarrow y + 4 = -6 \\
+\Rightarrow y = -10 \\
+A = (3, -10)
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Midpoint Formula}
+\vspace{0.3cm}
+
+\question \textbf{8.} Find the value of $k$ for which the points $A(2, 3)$, $B(4, k)$, and $C(6, -3)$ are collinear.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{k = 0}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item For three points to be collinear, the area of the triangle formed by them must be $0$.
+  \item Use the area formula: $\frac{1}{2} |x_1(y_2-y_3) + x_2(y_3-y_1) + x_3(y_1-y_2)| = 0$.
+  \item Substitute the coordinates and solve for $k$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+2(k - (-3)) + 4(-3 - 3) + 6(3 - k) = 0 \\
+2(k + 3) + 4(-6) + 18 - 6k = 0 \\
+2k + 6 - 24 + 18 - 6k = 0 \\
+-4k = 0 \\
+\Rightarrow k = 0
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Area of Triangle}
+\vspace{0.3cm}
+
+\question \textbf{9.} Find the distance between the points $P(-6, 7)$ and $Q(-1, -5)$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{13 \text{units}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the distance formula: $d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.
+  \item Substitute the coordinates of $P$ and $Q$.
+  \item Calculate the square roots to find the distance.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+d = \sqrt{(-1 - (-6))^2 + (-5 - 7)^2} \\
+d = \sqrt{(5)^2 + (-12)^2} \\
+d = \sqrt{25 + 144} = \sqrt{169} \\
+d = 13 \text{ units}
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Distance Formula}
+\vspace{0.3cm}
+
+\question \textbf{10.} If the points $A(6, 1)$, $B(8, 2)$, $C(9, 4)$, and $D(p, 3)$ are the vertices of a parallelogram taken in order, find the value of $p$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{p = 7}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Diagonals of a parallelogram bisect each other, meaning their midpoints coincide.
+  \item Find the midpoint of diagonal $AC$ and diagonal $BD$.
+  \item Equate the midpoints and solve for $p$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Midpoint of } AC = (\frac{6+9}{2}, \frac{1+4}{2}) = (7.5, 2.5) \\
+\text{Midpoint of } BD = (\frac{8+p}{2}, \frac{2+3}{2}) = (\frac{8+p}{2}, 2.5) \\
+\frac{8+p}{2} = 7.5 \\
+\Rightarrow 8+p = 15 \\
+\Rightarrow p = 7
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Midpoint Formula}
+\vspace{0.3cm}
+
+\question \textbf{11.} Find the ratio in which the $y$-axis divides the line segment joining the points $A(5, -6)$ and $B(-1, -4)$. Also, find the point of intersection.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_096.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Ratio is} 5:1 \text{and the point of intersection is} (0, -13/3).}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the ratio be $k:1$.
+  \item The coordinates of the point on the $y$-axis are $(0, y)$.
+  \item Use the section formula for the $x$-coordinate to find $k$.
+  \item Substitute $k$ into the section formula to find the $y$-coordinate.
+  \item State the final ratio and the point.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+x = \frac{m_1x_2 + m_2x_1}{m_1 + m_2} \\
+\Rightarrow 0 = \frac{k(-1) + 1(5)}{k+1} \\
+\Rightarrow -k + 5 = 0 \\
+\Rightarrow k = 5 \\
+\text{Ratio is } 5:1 \\
+y = \frac{m_1y_2 + m_2y_1}{m_1 + m_2} = \frac{5(-4) + 1(-6)}{5+1} = \frac{-20 - 6}{6} = \frac{-26}{6} = -\frac{13}{3} \\
+\text{Point is } (0, -\frac{13}{3})
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Section Formula}
+\vspace{0.3cm}
+
+\question \textbf{12.} If the points $A(6, 1)$, $B(8, 2)$, $C(9, 4)$, and $D(p, 3)$ are the vertices of a parallelogram taken in order, find the value of $p$.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_097.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{p = 7}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the property that diagonals of a parallelogram bisect each other.
+  \item Find the midpoint of diagonal $AC$.
+  \item Find the midpoint of diagonal $BD$.
+  \item Equate the midpoints since they represent the same point.
+  \item Solve for $p$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Midpoint of } AC = (\frac{6+9}{2}, \frac{1+4}{2}) = (7.5, 2.5) \\
+\text{Midpoint of } BD = (\frac{8+p}{2}, \frac{2+3}{2}) = (\frac{8+p}{2}, 2.5) \\
+\frac{8+p}{2} = 7.5 \\
+\Rightarrow 8+p = 15 \\
+\Rightarrow p = 7
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Midpoint Formula}
+\vspace{0.3cm}
+
+\question \textbf{13.} Find the area of a triangle whose vertices are $(1, -1)$, $(-4, 6)$, and $(-3, -5)$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{24 \text{square units}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the coordinates $(x_1, y_1), (x_2, y_2), (x_3, y_3)$.
+  \item Use the area of triangle formula: $\frac{1}{2}|x_1(y_2-y_3) + x_2(y_3-y_1) + x_3(y_1-y_2)|$.
+  \item Substitute the values into the formula.
+  \item Perform the arithmetic calculation.
+  \item Express the final result in square units.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Area} = \frac{1}{2} |1(6 - (-5)) + (-4)(-5 - (-1)) + (-3)(-1 - 6)| \\
+= \frac{1}{2} |1(11) + (-4)(-4) + (-3)(-7)| \\
+= \frac{1}{2} |11 + 16 + 21| \\
+= \frac{1}{2} |48| = 24 \text{ Sq. units}
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Area of a Triangle}
+\vspace{0.3cm}
+
+\question \textbf{14.} Find the coordinates of the points which divide the line segment joining $A(-2, 2)$ and $B(2, 8)$ into four equal parts.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_098.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{(-1, 3.5), (0, 5), and (1, 6.5).}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify that four equal parts require three points of division $P, Q, R$.
+  \item Point $Q$ is the midpoint of $AB$.
+  \item Point $P$ is the midpoint of $AQ$.
+  \item Point $R$ is the midpoint of $QB$.
+  \item Calculate each midpoint using the midpoint formula.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+Q = (\frac{-2+2}{2}, \frac{2+8}{2}) = (0, 5) \\
+P = (\frac{-2+0}{2}, \frac{2+5}{2}) = (-1, 3.5) \\
+R = (\frac{0+2}{2}, \frac{5+8}{2}) = (1, 6.5)
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Section Formula}
+\vspace{0.3cm}
+
+\question \textbf{15.} If the circumference of a circle is $132 \text{ cm}$, then its radius is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall the formula for circumference $C = 2 \pi r$.
+  \item Substitute the given value $132 = 2 \times \frac{22}{7} \times r$.
+  \item Solve for $r$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+C = 2 \pi r \\
+\Rightarrow 132 = 2 \times \frac{22}{7} \times r \\
+\Rightarrow 132 = \frac{44}{7} r \\
+\Rightarrow r = \frac{132 \times 7}{44} \\
+\Rightarrow r = 3 \times 7 = 21 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Circumference of a circle}
+\vspace{0.3cm}
+
+\question \textbf{16.} The area of a circle whose diameter is $14 \text{ cm}$ is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Find the radius $r = \frac{d}{2} = \frac{14}{2} = 7 \text{ cm}$.
+  \item Use the area formula $A = \pi r^2$.
+  \item Calculate $A = \frac{22}{7} \times 7^2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+r = 7 \text{ cm} \\
+\Rightarrow A = \frac{22}{7} \times 7 \times 7 = 22 \text{imes} 7 = 154 \text{ cm}^2
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a circle}
+\vspace{0.3cm}
+
+\question \textbf{17.} The area of a quadrant of a circle with radius $r = 7 \text{ cm}$ is:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item A quadrant is $\frac{1}{4}$ of a circle.
+  \item Calculate total area $A = \pi r^2 = \frac{22}{7} \times 7^2 = 154 \text{ cm}^2$.
+  \item Divide by $4$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Area} = \frac{1}{4} \pi r^2 = \frac{1}{4} \times \frac{22}{7} \text{imes} 7 \text{imes} 7 = \frac{154}{4} = 38.5 \text{ cm}^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a sector}
+\vspace{0.3cm}
+
+\question \textbf{18.} If the perimeter of a semi-circular protractor is $36 \text{ cm}$, find its diameter.
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The perimeter of a semicircle is $\pi r + 2r$.
+  \item Set $\pi r + 2r = 36$.
+  \item Solve for $r$ and then find $d = 2r$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+r(\pi + 2) = 36 \\
+\Rightarrow r(\frac{22}{7} + 2) = 36 \\
+\Rightarrow r(\frac{36}{7}) = 36 \\
+\Rightarrow r = 7 \\
+\Rightarrow d = 2r = 14 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Perimeter of a semicircle}
+\vspace{0.3cm}
+
+\question \textbf{19.} The area of a sector of a circle with radius $6 \text{ cm}$ and central angle $60^\circ$ is:
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the formula $\text{Area} = \frac{\theta}{360} \times \pi r^2$.
+  \item Substitute $\theta = 60$ and $r = 6$.
+  \item Calculate the result.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Area} = \frac{60}{360} \times \pi \times 6^2 = \frac{1}{6} \times \pi \times 36 = 6\pi \text{ cm}^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a sector}
+\vspace{0.3cm}
+
+\question \textbf{20.} Assertion (A): The area of a circle with radius $7 \text{ cm}$ is $154 \text{ cm}^2$. Reason (R): The area of a circle is given by the formula $\pi r^2$, where $r$ is the radius.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall formula $\pi r^2$.
+  \item Substitute $r = 7$ and $\pi = 22/7$.
+  \item Calculate $22/7 \times 7 \times 7 = 154$.
+\end{enumerate}
+\textbf{Derivation:}
+Area = $\pi r^2 \\$ Area = $\frac{22}{7} \times 7 \times 7 \\$ Area = 22 $\times 7 = 154 \text{ cm}^2$
+\hfill \textit{Areas Related to Circles — Area of a Circle}
+\vspace{0.3cm}
+
+\question \textbf{21.} Assertion (A): The circumference of a circle with diameter $14 \text{ cm}$ is $44 \text{ cm}$. Reason (R): The circumference of a circle is given by $\pi d$, where $d$ is the diameter.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall formula $C = \pi d$.
+  \item Substitute $\pi = 22/7$ and $d = 14$.
+  \item Calculate $22/7 \times 14 = 44$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+C = \pi d \\
+C = \frac{22}{7} \times 14 \\
+C = 22 \times 2 = 44 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Circumference of a Circle}
+\vspace{0.3cm}
+
+\question \textbf{22.} Assertion (A): The area of a semicircle with radius $r$ is $\frac{1}{2} \pi r^2$. Reason (R): A semicircle is half of a full circle.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Area of full circle is $\pi r^2$.
+  \item Semicircle is exactly half of a circle.
+  \item Divide the area formula by $2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Area of semicircle} = \frac{1}{2} \times \text{Area of circle} \\
+\text{Area of semicircle} = \frac{1}{2} \pi r^2
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Semicircle}
+\vspace{0.3cm}
+
+\question \textbf{23.} Assertion (A): The length of an arc of a circle with radius $r$ and central angle $\theta$ is $\frac{\theta}{360} \times 2\pi r$. Reason (R): The circumference of a circle is $2\pi r$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Arc length is a fraction of the circumference.
+  \item The fraction is determined by the central angle $\theta$ over $360^\circ$.
+  \item Combine to get $\frac{\theta}{360} \times 2\pi r$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Arc Length} = \frac{\theta}{360^\circ} \times 2\pi r}
+\end{center}
+\hfill \textit{Areas Related to Circles — Length of an Arc}
+\vspace{0.3cm}
+
+\question \textbf{24.} Assertion (A): The area of a quadrant of a circle with radius $r$ is $\frac{1}{4} \pi r^2$. Reason (R): A quadrant is a sector with a central angle of $45^\circ$.
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The area of a quadrant is indeed $\frac{1}{4} \pi r^2$.
+  \item A quadrant implies a central angle of $90^\circ$, not $45^\circ$.
+  \item Therefore, Reason is false.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Area of sector} = \frac{\theta}{360^\circ} \times \pi r^2 \\
+\text{For quadrant, } \theta = 90^\circ \\
+\text{Area} = \frac{90}{360} \times \pi r^2 = \frac{1}{4} \pi r^2
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Sector}
+\vspace{0.3cm}
+
+\question \textbf{25.} Find the area of a sector of a circle with radius $6$ $cm$ if the angle of the sector is $60^\circ$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\frac{132}{7} cm^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the formula for the area of a sector $A = \frac{\theta}{360^\circ} \times \pi r^2$.
+  \item Substitute $\theta = 60^\circ$, $r = 6$ $cm$, and $\pi = \frac{22}{7}$ to calculate the area.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+A = \frac{60^\circ}{360^\circ} \times \frac{22}{7} \times 6^2 \\
+\Rightarrow A = \frac{1}{6} \times \frac{22}{7} \times 36 \\
+\Rightarrow A = 6 \times \frac{22}{7} = \frac{132}{7} \text{ cm}^2
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Sector}
+\vspace{0.3cm}
+
+\question \textbf{26.} The length of the minute hand of a clock is $14$ $cm$. Find the area swept by the minute hand in $5$ minutes.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\frac{154}{3} cm^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the angle swept by the minute hand in $5$ minutes: since it sweeps $360^\circ$ in $60$ minutes, in $5$ minutes it sweeps $\frac{360}{60} \times 5 = 30^\circ$.
+  \item Apply the area formula for a sector with $r = 14$ $cm$ and $\theta = 30^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\theta = \frac{360^\circ}{60} \times 5 = 30^\circ \\
+\Rightarrow \text{Area} = \frac{30^\circ}{360^\circ} \times \frac{22}{7} \times 14^2 \\
+\Rightarrow \text{Area} = \frac{1}{12} \times \frac{22}{7} \times 196 = \frac{1}{12} \times 22 \times 28 = \frac{616}{12} = \frac{154}{3} \text{ cm}^2
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Sector}
+\vspace{0.3cm}
+
+\question \textbf{27.} If the perimeter and the area of a circle are numerically equal, then find the radius of the circle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{2 \text{units}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Set the formula for circumference $2\pi r$ equal to the formula for area $\pi r^2$.
+  \item Solve the equation $2\pi r = \pi r^2$ for $r$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+2\pi r = \pi r^2 \\
+\Rightarrow 2 = r \text{ (since } r \neq 0 \text{)}
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area and Perimeter of a Circle}
+\vspace{0.3cm}
+
+\question \textbf{28.} Find the area of a quadrant of a circle whose circumference is $44$ $cm$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{38.5 cm^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the circumference $2\pi r = 44$ to find the radius $r$.
+  \item Calculate the area of the quadrant using $\frac{1}{4} \pi r^2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+2 \times \frac{22}{7} \times r = 44 \\
+\Rightarrow r = 7 \text{ cm} \\
+\Rightarrow \text{Area} = \frac{1}{4} \times \frac{22}{7} \times 7^2 \\
+\Rightarrow \text{Area} = \frac{1}{4} \times 22 \times 7 = \frac{154}{4} = 38.5 \text{ cm}^2
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Quadrant}
+\vspace{0.3cm}
+
+\question \textbf{29.} The radius of two circles are $8$ $cm$ and $6$ $cm$ respectively. Find the radius of the circle having area equal to the sum of the areas of the two circles.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{10 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Set the area of the new circle $\pi R^2$ equal to $\pi r_1^2 + \pi r_2^2$.
+  \item Solve $R^2 = 8^2 + 6^2$ to find $R$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\pi R^2 = \pi(8^2) + \pi(6^2) \\
+\Rightarrow R^2 = 64 + 36 = 100 \\
+\Rightarrow R = \sqrt{100} = 10 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of Combined Circles}
+\vspace{0.3cm}
+
+\question \textbf{30.} Find the area of a sector of a circle with radius $6$ $cm$ if the angle of the sector is $60^\circ$. Use $\pi = 3.14$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{18.84 cm^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the radius $r = 6$ $cm$ and central angle $\theta = 60^\circ$.
+  \item Use the formula for the area of a sector: $A = \frac{\theta}{360^\circ} \times \pi r^2$.
+  \item Substitute the values and calculate the final result.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+A = \frac{60}{360} \times 3.14 \times 6^2 \\
+A = \frac{1}{6} \times 3.14 \times 36 \\
+A = 3.14 \times 6 \\
+A = 18.84 \text{ cm}^2
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Sector}
+\vspace{0.3cm}
+
+\question \textbf{31.} In a circle of radius $10$ $cm$, a chord $AB$ subtends a right angle at the centre $O$. Find the area of the minor segment. (Use $\pi = 3.14$).
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_100.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{28.5 cm^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the area of the sector $OAB$ with $\theta = 90^\circ$.
+  \item Calculate the area of $\triangle OAB$ which is a right-angled triangle with base and height equal to $10$ $cm$.
+  \item Subtract the area of the triangle from the area of the sector to get the segment area.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Area of sector} = \frac{90}{360} \times 3.14 \times 10^2 = 78.5 \text{ cm}^2 \\
+\text{Area of } \triangle OAB = \frac{1}{2} \times 10 \times 10 = 50 \text{ cm}^2 \\
+\text{Area of segment} = 78.5 - 50 = 28.5 \text{ cm}^2
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Segment}
+\vspace{0.3cm}
+
+\question \textbf{32.} The length of the minute hand of a clock is $14$ $cm$. Find the area swept by the minute hand in $5$ minutes.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{51.33 cm^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Determine the angle swept in $60$ minutes ($360^\circ$), so in $5$ minutes it is $30^\circ$.
+  \item Use the radius $r = 14$ $cm$.
+  \item Apply the sector area formula.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\theta = \frac{360}{60} \times 5 = 30^\circ \\
+\text{Area} = \frac{30}{360} \times \frac{22}{7} \times 14 \times 14 \\
+\text{Area} = \frac{1}{12} \times 22 \times 2 \text{imes} 14 = \frac{616}{12} = 51.33 \text{ cm}^2
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Applications of Sector Area}
+\vspace{0.3cm}
+
+\question \textbf{33.} The diameters of two circles are $8$ $cm$ and $6$ $cm$ respectively. Find the radius of a circle whose area is equal to the sum of the areas of the two circles.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{5 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Find the radii of the two circles: $r_1 = 4$ $cm$, $r_2 = 3$ $cm$.
+  \item Equate the sum of areas $\pi r_1^2 + \pi r_2^2$ to $\pi R^2$.
+  \item Solve for $R$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\pi(4)^2 + \pi(3)^2 = \pi R^2 \\
+16\pi + 9\pi = \pi R^2 \\
+25\pi = \pi R^2 \\
+R^2 = 25 \\
+\Rightarrow R = 5 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Circle}
+\vspace{0.3cm}
+
+\question \textbf{34.} A horse is tethered to a peg at one corner of a square-shaped grass field of side $15$ $m$ by means of a $5$ $m$ long rope. Find the area of that part of the field in which the horse can graze.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{19.625 m^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the shape as a quadrant of a circle with radius $r = 5$ $m$.
+  \item The grazing area is the area of this quadrant.
+  \item Calculate $\frac{1}{4} \times \pi r^2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Area} = \frac{1}{4} \times 3.14 \times 5^2 \\
+\text{Area} = \frac{1}{4} \times 3.14 \times 25 \\
+\text{Area} = 0.785 \times 25 = 19.625 \text{ m}^2
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Sector}
+\vspace{0.3cm}
+
+\question \textbf{35.} A round table cover of radius $28$ $cm$ has a design in the middle leaving an equilateral triangle $ABC$ in the middle as shown in the figure. Find the area of the design (shaded region). Use $\sqrt{3} = 1.73$ and $\pi = \frac{22}{7}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Area of shaded region} = 1514.88 cm^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the area of the circle with $r = 28$ $cm$.
+  \item The triangle $ABC$ is equilateral inscribed in the circle. The side length $a$ of the equilateral triangle is $r\sqrt{3}$.
+  \item Calculate the area of the equilateral triangle using $\frac{\sqrt{3}}{4} a^2$.
+  \item Subtract the area of the triangle from the area of the circle to get the area of the shaded design.
+\end{enumerate}
+\textbf{Derivation:}
+Area\_\{circle\} = $\pi r^2 = \frac{22}{7} \times 28 \times 28 = 2464 \;$ cm\textasciicircum{}2 \textbackslash{}\textbackslash{} Side \textbackslash{}; a = 28$\sqrt{3} \;$ cm \textbackslash{}\textbackslash{} Area\_\{$\triangle$\} = $\frac{\sqrt{3}}{4} (28\sqrt{3})^2 = \frac{1.73}{4} \times 784 \times 3 = 1.73 \times 196 \times 3 = 1017.36 \;$ cm\textasciicircum{}2 \textbackslash{}\textbackslash{} Area\_\{shaded\} = 2464 - 1017.36 = 1446.64 \textbackslash{}; cm\textasciicircum{}2
+\hfill \textit{Areas Related to Circles — Area of Segment}
+\vspace{0.3cm}
+
+\question \textbf{36.} A car has two wipers which do not overlap. Each wiper has a blade of length $25$ $cm$ sweeping through an angle of $115^\circ$. Find the total area cleaned at each sweep of the blades. (Take $\pi = \frac{22}{7}$)
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Total area} = \frac{63250}{63} cm^2 \text{or approx} 1003.97 cm^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify that each wiper sweeps a sector of a circle.
+  \item Radius $r = 25$ $cm$ and central angle $\theta = 115^\circ$.
+  \item Area of one sector is $\frac{\theta}{360^\circ} \times \pi r^2$.
+  \item Multiply the area of one sector by $2$ since there are two wipers.
+\end{enumerate}
+\textbf{Derivation:}
+Area = 2 $\times \left( \frac{115}{360} \times \frac{22}{7} \times 25 \times 25 \right) \\$ Area = 2 $\times \left( \frac{23}{72} \times \frac{22}{7} \times 625 \right) \\$ Area = $\frac{23 \times 11 \times 625}{36 \times 7} \\$ Area = $\frac{158125}{252} \approx 627.48 \times 2 = 1254.96 \;$ cm\textasciicircum{}2
+\hfill \textit{Areas Related to Circles — Area of Sector}
+\vspace{0.3cm}
+
+\question \textbf{37.} In a circular park of radius $21$ $m$, a path of uniform width $3.5$ $m$ is constructed inside the park along the boundary. Find the cost of paving the path at the rate of $Rs. 50$ per $m^2$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Cost} = Rs. 20625}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The path forms an annulus (ring) between two circles.
+  \item Outer radius $R = 21$ $m$.
+  \item Inner radius $r = R - 3.5 = 17.5$ $m$.
+  \item Area of path = $\pi(R^2 - r^2)$.
+  \item Multiply the area by the rate $50$.
+\end{enumerate}
+\textbf{Derivation:}
+Area = $\frac{22}{7} (21^2 - 17.5^2) \\$ Area = $\frac{22}{7} (21 - 17.5)(21 + 17.5) \\$ Area = $\frac{22}{7} (3.5)(38.5) \\$ Area = 22 $\times 0.5 \times 38.5 = 11 \times 38.5 = 423.5 \; m^2 \\$ Cost = 423.5 $\times 50 = 21175$
+\hfill \textit{Areas Related to Circles — Area of Annulus}
+\vspace{0.3cm}
+
+\question \textbf{38.} A chord $AB$ of a circle of radius $15$ $cm$ subtends an angle of $60^\circ$ at the centre. Find the areas of the corresponding minor and major segments of the circle. (Use $\pi = 3.14$ and $\sqrt{3} = 1.73$)
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Minor segment} = 20.4375 cm^2, \text{Major segment} = 686.0625 cm^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the area of the minor sector with $\theta = 60^\circ$.
+  \item Calculate the area of $\triangle OAB$ where $OA = OB = 15$ and $\angle O = 60^\circ$ (which is equilateral).
+  \item Minor segment area = Area of sector - Area of $\triangle OAB$.
+  \item \(
+\text{Major segment area} = \text{Area of circle} - \text{Area of minor segment}.
+\)
+\end{enumerate}
+\textbf{Derivation:}
+Area\_\{sector\} = $\frac{60}{360} \times 3.14 \times 15^2 = \frac{1}{6} \times 3.14 \times 225 = 117.75 \;$ cm\textasciicircum{}2 \textbackslash{}\textbackslash{} Area\_\{$\triangle$\} = $\frac{\sqrt{3}}{4} \times 15^2 = \frac{1.73}{4} \times 225 = 97.3125 \;$ cm\textasciicircum{}2 \textbackslash{}\textbackslash{} Area\_\{minor\} = 117.75 - 97.3125 = 20.4375 \textbackslash{}; cm\textasciicircum{}2 \textbackslash{}\textbackslash{} Area\_\{circle\} = 3.14 $\times 225 = 706.5 \;$ cm\textasciicircum{}2 \textbackslash{}\textbackslash{} Area\_\{major\} = 706.5 - 20.4375 = 686.0625 \textbackslash{}; cm\textasciicircum{}2
+\hfill \textit{Areas Related to Circles — Area of Segment}
+\vspace{0.3cm}
+
+\question \textbf{39.} In $\triangle ABC$, if $DE \parallel BC$ such that $AD = 2$ cm, $DB = 3$ cm, and $AE = 4$ cm, find the length of $EC$.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_104.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Since $DE \parallel BC$, by Thales Theorem (BPT), we have $\frac{AD}{DB} = \frac{AE}{EC}$.
+  \item Substitute the given values: $\frac{2}{3} = \frac{4}{EC}$.
+  \item Solve for $EC$: $2 \times EC = 12$, so $EC = 6$ cm.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{AD}{DB} = \frac{AE}{EC} \\
+\Rightarrow \frac{2}{3} = \frac{4}{EC} \\
+\Rightarrow 2 \times EC = 12 \\
+\Rightarrow EC = 6
+\end{aligned}}
+\end{center}
+\hfill \textit{Triangles — Basic Proportionality Theorem}
+\vspace{0.3cm}
+
+\question \textbf{40.} If $\triangle ABC \sim \triangle PQR$ and $\frac{AB}{PQ} = \frac{1}{3}$, then the ratio $\frac{ar(\triangle ABC)}{ar(\triangle PQR)}$ is:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item According to the area of similar triangles theorem, the ratio of areas is equal to the square of the ratio of their corresponding sides.
+  \item The ratio of sides is $\frac{1}{3}$.
+  \item Square of the ratio is $(\frac{1}{3})^2 = \frac{1}{9}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\frac{ar(\triangle ABC)}{ar(\triangle PQR)} = (\frac{AB}{PQ})^2 = (\frac{1}{3})^2 = \frac{1}{9}}
+\end{center}
+\hfill \textit{Triangles — Areas of Similar Triangles}
+\vspace{0.3cm}
+
+\end{questions}
+
+\end{document}

@@ -1,0 +1,131 @@
+{
+  "batch_id": "20260604_135816_d011ffd2",
+  "generated_at": "2026-06-04T13:58:16.625497",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Polynomials",
+  "subtopic": "division algorithm for polynomials",
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "On dividing $x^3 - 3x^2 + x + 2$ by a polynomial $g(x)$, the quotient and remainder were $(x - 2)$ and $(-2x + 4)$ respectively. Find $g(x)$.",
+      "answer": "$g(x) = x^2 - x + 1$",
+      "solution": {
+        "steps": [
+          "Use the division algorithm: Dividend = Divisor \u00d7 Quotient + Remainder.",
+          "Substitute the given values: $x^3 - 3x^2 + x + 2 = g(x)(x - 2) + (-2x + 4)$.",
+          "Rearrange to find $g(x)(x - 2) = x^3 - 3x^2 + x + 2 + 2x - 4$.",
+          "Simplify and divide the resulting polynomial by $(x - 2)$."
+        ],
+        "derivation": "g(x)(x - 2) = x^3 - 3x^2 + 3x - 2 \\implies g(x) = \\frac{x^3 - 3x^2 + 3x - 2}{x - 2} = x^2 - x + 1"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:58:16.625304",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135816_e842e4_01"
+    },
+    {
+      "question": "Find all the zeroes of the polynomial $p(x) = 2x^4 - 3x^3 - 3x^2 + 6x - 2$, if you know that two of its zeroes are $\\sqrt{2}$ and $-\\sqrt{2}$.",
+      "answer": "Zeroes are $\\sqrt{2}, -\\sqrt{2}, 1, 0.5$",
+      "solution": {
+        "steps": [
+          "Since $\\pm\\sqrt{2}$ are zeroes, $(x - \\sqrt{2})(x + \\sqrt{2}) = x^2 - 2$ is a factor.",
+          "Divide $p(x)$ by $x^2 - 2$ to find the other quadratic factor.",
+          "Factorize the resulting quadratic quotient to find the remaining zeroes."
+        ],
+        "derivation": "\\frac{2x^4 - 3x^3 - 3x^2 + 6x - 2}{x^2 - 2} = 2x^2 - 3x + 1 = (2x - 1)(x - 1)"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:58:16.625387",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135816_632162_02"
+    },
+    {
+      "question": "What must be subtracted from $f(x) = x^4 + 2x^3 - 13x^2 - 12x + 21$ so that the resulting polynomial is exactly divisible by $g(x) = x^2 - 4x + 3$?",
+      "answer": "$-24x + 6$",
+      "solution": {
+        "steps": [
+          "Perform polynomial long division of $f(x)$ by $g(x)$.",
+          "Identify the remainder $r(x)$ obtained after division.",
+          "The value to be subtracted must be equal to the remainder $r(x)$."
+        ],
+        "derivation": "f(x) = (x^2 - 4x + 3)(x^2 + 6x + 8) + (-24x + 6). \\text{ Thus, subtract } (-24x + 6)."
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:58:16.625398",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135816_ff958e_03"
+    },
+    {
+      "question": "If the polynomial $x^4 + x^3 + 8x^2 + ax + b$ is divisible by $x^2 + 1$, find the values of $a$ and $b$.",
+      "answer": "a = 1, b = 7",
+      "solution": {
+        "steps": [
+          "Divide $x^4 + x^3 + 8x^2 + ax + b$ by $x^2 + 1$.",
+          "Perform the long division and determine the remainder in terms of $a$ and $b$.",
+          "Since it is divisible, set the remainder equal to 0 and solve for coefficients."
+        ],
+        "derivation": "\\text{Remainder} = x(a - 1) + (b - 7) = 0 \\implies a-1=0, b-7=0"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:58:16.625407",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135816_d25a0c_04"
+    },
+    {
+      "question": "Check whether $g(t) = t^2 - 3$ is a factor of $p(t) = 2t^4 + 3t^3 - 2t^2 - 9t - 12$ by applying the division algorithm.",
+      "answer": "Yes, it is a factor",
+      "solution": {
+        "steps": [
+          "Divide $p(t)$ by $g(t)$ using long division.",
+          "Observe the remainder.",
+          "If the remainder is 0, then $g(t)$ is a factor of $p(t)$."
+        ],
+        "derivation": "\\frac{2t^4 + 3t^3 - 2t^2 - 9t - 12}{t^2 - 3} = 2t^2 + 3t + 4, \\text{ Remainder } = 0"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:58:16.625414",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135816_568d6d_05"
+    }
+  ]
+}

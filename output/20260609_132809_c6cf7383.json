@@ -1,0 +1,211 @@
+{
+  "batch_id": "20260609_132809_c6cf7383",
+  "generated_at": "2026-06-09T13:28:09.267970",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Show that for any positive integer $n$, the number $7^n$ can never end with the digit $0$ or $5$.",
+      "answer": "The prime factorisation of $7^n$ contains only the prime $7$, which does not include $2$ or $5$.",
+      "solution": {
+        "steps": [
+          "For a number to end in $0$, its prime factorisation must contain the factors $2$ and $5$.",
+          "For a number to end in $5$, its prime factorisation must contain the factor $5$.",
+          "The prime factorisation of $7^n$ is $(7)^n = 7 \\times 7 \\times \\dots \\times 7$ ($n$ times).",
+          "Since the only prime factor in $7^n$ is $7$, the number cannot contain $2$ or $5$ as factors, hence it cannot end in $0$ or $5$."
+        ],
+        "derivation": "$7^n = (7)^n \\implies \\text{Prime factors of } 7^n \\text{ are only } \\{7\\} \\\\ \\text{For a number to end in } 0, \\text{ its prime factors must include } 2 \\times 5 \\\\ \\text{For a number to end in } 5, \\text{ its prime factors must include } 5 \\\\ \\text{Since } 2 \\notin \\{7\\} \\text{ and } 5 \\notin \\{7\\}, 7^n \\text{ cannot end in } 0 \\text{ or } 5$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Fundamental Theorem of Arithmetic",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-09T13:28:09.267544",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 26,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 28,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 30,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 12,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_132809_d6a100_01"
+    },
+    {
+      "question": "A merchant has three types of oil: $403$ litres of mustard oil, $465$ litres of sunflower oil, and $496$ litres of soyabean oil. He wants to pack these into tins of equal capacity such that each tin is filled completely. Find the maximum capacity of such a tin.",
+      "answer": "$31$ litres",
+      "solution": {
+        "steps": [
+          "To find the maximum capacity of the tin that can pack each type of oil completely, we must calculate the Highest Common Factor (HCF) of $403$, $465$, and $496$.",
+          "Prime factorise the numbers: $403 = 13 \\times 31$, $465 = 3 \\times 5 \\times 31$, and $496 = 2^4 \\times 31$.",
+          "The common prime factor present in all three numbers is $31$.",
+          "Thus, the HCF is $31$."
+        ],
+        "derivation": "$403 = 13 \\times 31 \\\\ 465 = 3 \\times 5 \\times 31 \\\\ 496 = 2^4 \\times 31 \\\\ \\text{HCF}(403, 465, 496) = 31"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "HCF and LCM",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-09T13:28:09.267701",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 26,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 28,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 30,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 12,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_132809_0e4bec_02"
+    }
+  ]
+}

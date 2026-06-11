@@ -1,0 +1,96 @@
+{
+  "batch_id": "20260610_150337_144cf81d",
+  "generated_at": "2026-06-10T15:03:37.588552",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Triangles",
+  "subtopic": "similarity of triangles",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In $\\triangle ABC$ and $\\triangle DEF$, it is given that $\\angle A = \\angle D$ and $\\angle B = \\angle E$. If the side lengths are $AB = 3$ $\\text{cm}$, $AC = 4$ $\\text{cm}$, $DE = 4.5$ $\\text{cm}$, and $EF = 6$ $\\text{cm}$, which of the following statements is true?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify that since $\\angle A = \\angle D$ and $\\angle B = \\angle E$, the triangles $\\triangle ABC$ and $\\triangle DEF$ are similar by the AA (Angle-Angle) similarity criterion.",
+          "State the property of similar triangles: their corresponding sides must be in the same ratio.",
+          "Check the ratio of the sides: $\\frac{AB}{DE} = \\frac{3}{4.5} = \\frac{2}{3}$.",
+          "Check the ratio $\\frac{AC}{DF} = \\frac{2}{3}$. Thus, $DF = AC \\times \\frac{3}{2} = 4 \\times 1.5 = 6$ $\\text{cm}$.",
+          "Check the ratio $\\frac{BC}{EF} = \\frac{2}{3}$. Thus, $BC = EF \\times \\frac{2}{3} = 6 \\times \\frac{2}{3} = 4$ $\\text{cm}$.",
+          "Conclude that $\\triangle ABC \\sim \\triangle DEF$ and verify the corresponding side relationships."
+        ],
+        "derivation": "$\\angle A = \\angle D, \\angle B = \\angle E \\Rightarrow \\triangle ABC \\sim \\triangle DEF \\text{ (by AA similarity)} \\\\ \\frac{AB}{DE} = \\frac{BC}{EF} = \\frac{AC}{DF} \\\\ \\frac{3}{4.5} = \\frac{BC}{6} = \\frac{4}{DF} \\\\ \\frac{2}{3} = \\frac{BC}{6} \\Rightarrow BC = 4 \\text{ cm} \\\\ \\frac{2}{3} = \\frac{4}{DF} \\Rightarrow DF = 6 \\text{ cm}$"
+      },
+      "topic": "Triangles",
+      "subtopic": "similarity of triangles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $\\triangle ABC \\sim \\triangle EDF$",
+        "(B) $\\triangle ABC \\sim \\triangle FED$",
+        "(C) $\\triangle ABC \\sim \\triangle DEF$",
+        "(D) $\\triangle ABC \\cong \\triangle DEF$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T15:03:37.588476",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_6 (Triangles).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 12,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 6,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 6,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.2",
+            "question_no": 12,
+            "question_type": "vsa",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 7,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.2",
+            "question_no": 8,
+            "question_type": "vsa",
+            "estimated_depth": "medium"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150337_4d26d8_01"
+    }
+  ]
+}

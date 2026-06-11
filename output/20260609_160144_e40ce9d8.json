@@ -1,0 +1,168 @@
+{
+  "batch_id": "20260609_160144_e40ce9d8",
+  "generated_at": "2026-06-09T16:01:44.297734",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A stadium designer is planning the seating arrangement for a new arena. The first row has $25$ seats, the second row has $29$ seats, the third row has $33$ seats, and so on. The seating follows an arithmetic progression. The arena has a total of $20$ rows.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "What is the common difference of the AP formed by the number of seats in the rows?",
+          "answer": "(B)",
+          "options": [
+            "(A) $3$",
+            "(B) $4$",
+            "(C) $5$",
+            "(D) $6$"
+          ],
+          "solution": {
+            "steps": [
+              "Identify the first few terms: $25, 29, 33, ...$",
+              "Calculate the difference between consecutive terms: $29 - 25 = 4$ and $33 - 29 = 4$."
+            ],
+            "derivation": "$d = a_2 - a_1 = 29 - 25 = 4$"
+          }
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Calculate the number of seats in the $20^{th}$ row.",
+          "answer": "$101$",
+          "solution": {
+            "steps": [
+              "Use the formula for the $n^{th}$ term: $a_n = a + (n-1)d$.",
+              "Substitute $a = 25$, $n = 20$, and $d = 4$."
+            ],
+            "derivation": "$a_{20} = 25 + (20-1)4 = 25 + 19 \times 4 = 25 + 76 = 101$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "mcq",
+          "question": "What is the total number of seats in the entire arena (sum of all $20$ rows)?",
+          "answer": "(C)",
+          "options": [
+            "(A) $1250$",
+            "(B) $1240$",
+            "(C) $1260$",
+            "(D) $1280$"
+          ],
+          "solution": {
+            "steps": [
+              "Use the sum formula: $S_n = \\frac{n}{2}(a + a_n)$.",
+              "Substitute $n = 20$, $a = 25$, and $a_{20} = 101$."
+            ],
+            "derivation": "$S_{20} = \\frac{20}{2}(25 + 101) = 10(126) = 1260$"
+          }
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "If a new section is added such that the $k^{th}$ row has $141$ seats, find the value of $k$.",
+          "answer": "$30$",
+          "solution": {
+            "steps": [
+              "Set $a_k = 141$ and solve for $k$ using $a_k = a + (k-1)d$.",
+              "Substitute $a=25$ and $d=4$."
+            ],
+            "derivation": "$141 = 25 + (k-1)4 \\Rightarrow 116 = (k-1)4 \\Rightarrow k-1 = 29 \\Rightarrow k = 30$"
+          }
+        }
+      ],
+      "topic": "Arithmetic Progressions",
+      "subtopic": "",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T16:01:44.297431",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_5 (Arithmetic Progressions).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 33,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 7,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 22,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160144_dc91da_01"
+    }
+  ]
+}

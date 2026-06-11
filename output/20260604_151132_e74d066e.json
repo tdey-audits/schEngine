@@ -1,0 +1,156 @@
+{
+  "batch_id": "20260604_151132_e74d066e",
+  "generated_at": "2026-06-04T15:11:32.335191",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Areas Related to Circles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the area of a sector of a circle with radius $6$ $cm$ if the angle of the sector is $60^\\circ$.",
+      "answer": "$\\frac{132}{7}$ $cm^2$",
+      "solution": {
+        "steps": [
+          "Use the formula for the area of a sector $A = \\frac{\\theta}{360^\\circ} \\times \\pi r^2$.",
+          "Substitute $\\theta = 60^\\circ$, $r = 6$ $cm$, and $\\pi = \\frac{22}{7}$ to calculate the area."
+        ],
+        "derivation": "A = \\frac{60^\\circ}{360^\\circ} \\times \\frac{22}{7} \\times 6^2 \\Rightarrow A = \\frac{1}{6} \\times \\frac{22}{7} \\times 36 \\Rightarrow A = 6 \\times \\frac{22}{7} = \\frac{132}{7} \\text{ cm}^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of a Sector",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:32.334862",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151132_c39f51_01"
+    },
+    {
+      "question": "The length of the minute hand of a clock is $14$ $cm$. Find the area swept by the minute hand in $5$ minutes.",
+      "answer": "$\\frac{154}{3}$ $cm^2$",
+      "solution": {
+        "steps": [
+          "Calculate the angle swept by the minute hand in $5$ minutes: since it sweeps $360^\\circ$ in $60$ minutes, in $5$ minutes it sweeps $\\frac{360}{60} \\times 5 = 30^\\circ$.",
+          "Apply the area formula for a sector with $r = 14$ $cm$ and $\\theta = 30^\\circ$."
+        ],
+        "derivation": "\\theta = \\frac{360^\\circ}{60} \\times 5 = 30^\\circ \\Rightarrow \\text{Area} = \\frac{30^\\circ}{360^\\circ} \\times \\frac{22}{7} \\times 14^2 \\Rightarrow \\text{Area} = \\frac{1}{12} \\times \\frac{22}{7} \\times 196 = \\frac{1}{12} \\times 22 \\times 28 = \\frac{616}{12} = \\frac{154}{3} \\text{ cm}^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of a Sector",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "caption": "Clock sector",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "A",
+            "label": "14 cm"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "B",
+            "label": "14 cm"
+          },
+          {
+            "kind": "arc",
+            "center": "O",
+            "radius": 2,
+            "start_angle": 60,
+            "end_angle": 90
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:32.334956",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151132_d45f94_02"
+    },
+    {
+      "question": "If the perimeter and the area of a circle are numerically equal, then find the radius of the circle.",
+      "answer": "$2$ units",
+      "solution": {
+        "steps": [
+          "Set the formula for circumference $2\\pi r$ equal to the formula for area $\\pi r^2$.",
+          "Solve the equation $2\\pi r = \\pi r^2$ for $r$."
+        ],
+        "derivation": "2\\pi r = \\pi r^2 \\Rightarrow 2 = r \\text{ (since } r \\neq 0 \\text{)}"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area and Perimeter of a Circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:32.334984",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151132_813eb9_03"
+    },
+    {
+      "question": "Find the area of a quadrant of a circle whose circumference is $44$ $cm$.",
+      "answer": "$38.5$ $cm^2$",
+      "solution": {
+        "steps": [
+          "Use the circumference $2\\pi r = 44$ to find the radius $r$.",
+          "Calculate the area of the quadrant using $\\frac{1}{4} \\pi r^2$."
+        ],
+        "derivation": "2 \\times \\frac{22}{7} \\times r = 44 \\Rightarrow r = 7 \\text{ cm} \\Rightarrow \\text{Area} = \\frac{1}{4} \\times \\frac{22}{7} \\times 7^2 \\Rightarrow \\text{Area} = \\frac{1}{4} \\times 22 \\times 7 = \\frac{154}{4} = 38.5 \\text{ cm}^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of a Quadrant",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:32.335004",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151132_c051e5_04"
+    },
+    {
+      "question": "The radius of two circles are $8$ $cm$ and $6$ $cm$ respectively. Find the radius of the circle having area equal to the sum of the areas of the two circles.",
+      "answer": "$10$ $cm$",
+      "solution": {
+        "steps": [
+          "Set the area of the new circle $\\pi R^2$ equal to $\\pi r_1^2 + \\pi r_2^2$.",
+          "Solve $R^2 = 8^2 + 6^2$ to find $R$."
+        ],
+        "derivation": "\\pi R^2 = \\pi(8^2) + \\pi(6^2) \\Rightarrow R^2 = 64 + 36 = 100 \\Rightarrow R = \\sqrt{100} = 10 \\text{ cm}"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of Combined Circles",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:32.335021",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151132_d2099d_05"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "batch_id": "20260610_104749_ee7f606d",
+  "generated_at": "2026-06-10T10:47:49.624725",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "vsa",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If the $HCF$ of $306$ and $657$ is $9$, find their $LCM$.",
+      "answer": "$22338$",
+      "solution": {
+        "steps": [
+          "Use the property that for any two positive integers $a$ and $b$, $HCF(a, b) \\times LCM(a, b) = a \\times b$.",
+          "Substitute the given values $a = 306$, $b = 657$, and $HCF = 9$ to calculate the $LCM$."
+        ],
+        "derivation": "$LCM(306, 657) = \\frac{306 \\times 657}{HCF(306, 657)} \\\\ LCM(306, 657) = \\frac{306 \\times 657}{9} \\\\ LCM(306, 657) = 34 \\times 657 = 22338$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Fundamental Theorem of Arithmetic",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-10T10:47:49.624365",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 21,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 23,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 24,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_104749_751990_01"
+    },
+    {
+      "question": "Without performing long division, state whether the decimal expansion of $\\frac{13}{3125}$ is terminating or non-terminating repeating. If terminating, find the number of decimal places after which it terminates.",
+      "answer": "Terminating; $5$ decimal places",
+      "solution": {
+        "steps": [
+          "Find the prime factorization of the denominator $3125$ and check if it is of the form $2^n \\times 5^m$.",
+          "Identify the higher exponent between $n$ and $m$ to determine the number of decimal places."
+        ],
+        "derivation": "$3125 = 5^5 = 2^0 \\times 5^5 \\\\ \\text{Since the denominator is of the form } 2^n \\times 5^m, \\text{ the decimal expansion is terminating.} \\\\ \\frac{13}{5^5} = \\frac{13 \\times 2^5}{2^5 \\times 5^5} = \\frac{13 \\times 32}{10^5} = \\frac{416}{100000} = 0.00416 \\\\ \\text{The decimal terminates after } 5 \\text{ places.}$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Rational Numbers and their Decimal Expansions",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-10T10:47:49.624490",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 21,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 23,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 24,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_104749_880a58_02"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "batch_id": "20260610_150425_2eed40cf",
+  "generated_at": "2026-06-10T15:04:25.828178",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "standard form and roots",
+  "difficulty": "medium",
+  "question_type": "sa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the values of $k$ for which the quadratic equation $(k + 1)x^2 - 2(k - 1)x + 1 = 0$ has two equal real roots.",
+      "answer": "$k = 0, 3$",
+      "solution": {
+        "steps": [
+          "Compare the given equation with the standard form $ax^2 + bx + c = 0$ to identify $a = (k + 1)$, $b = -2(k - 1)$, and $c = 1$.",
+          "Since the equation has equal real roots, the discriminant $D = b^2 - 4ac$ must be equal to $0$.",
+          "Substitute the values into the discriminant formula: $[-2(k - 1)]^2 - 4(k + 1)(1) = 0$.",
+          "Simplify the equation: $4(k^2 - 2k + 1) - 4(k + 1) = 0$, which leads to $k^2 - 2k + 1 - k - 1 = 0$, or $k^2 - 3k = 0$.",
+          "Solve the quadratic $k(k - 3) = 0$ to find the values $k = 0$ and $k = 3$."
+        ],
+        "derivation": "$ax^2 + bx + c = 0 \\Rightarrow a = (k + 1), b = -2(k - 1), c = 1 \\\\ D = b^2 - 4ac = 0 \\\\ [-2(k - 1)]^2 - 4(k + 1)(1) = 0 \\\\ 4(k^2 - 2k + 1) - 4k - 4 = 0 \\\\ 4k^2 - 8k + 4 - 4k - 4 = 0 \\\\ 4k^2 - 12k = 0 \\\\ 4k(k - 3) = 0 \\\\ k = 0, k = 3$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of roots",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-10T15:04:25.828105",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 30,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 27,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 28,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150425_90e42a_01"
+    }
+  ]
+}

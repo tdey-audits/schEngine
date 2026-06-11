@@ -1,0 +1,104 @@
+{
+  "batch_id": "20260604_145913_2f51e94d",
+  "generated_at": "2026-06-04T14:59:13.001201",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Coordinate Geometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "The vertices of $\triangle ABC$ are $A(4, 6)$, $B(1, 5)$, and $C(7, 2)$. A line is drawn to intersect sides $AB$ and $AC$ at points $D$ and $E$ respectively, such that $\\frac{AD}{AB} = \\frac{AE}{AC} = \\frac{1}{4}$. Find the coordinates of points $D$ and $E$ and show that the area of $\triangle ADE$ is $\\frac{1}{16}$ of the area of $\triangle ABC$.",
+      "answer": "Coordinates of $D$ are $(3.25, 5.75)$, $E$ are $(4.75, 5)$, and the ratio of areas is $\\frac{1}{16}$.",
+      "solution": {
+        "steps": [
+          "Use the section formula to find coordinates of $D$ on $AB$ dividing it in ratio $1:3$.",
+          "Use the section formula to find coordinates of $E$ on $AC$ dividing it in ratio $1:3$.",
+          "Calculate the area of $\triangle ABC$ using the determinant formula for coordinates.",
+          "Calculate the area of $\triangle ADE$ using the same formula.",
+          "Compare the two areas to verify the ratio is $1:16$."
+        ],
+        "derivation": "D = \\left( \\frac{1(1)+3(4)}{1+3}, \\frac{1(5)+3(6)}{1+3} \\right) = (3.25, 5.75) \\\\ E = \\left( \\frac{1(7)+3(4)}{1+3}, \\frac{1(2)+3(6)}{1+3} \\right) = (4.75, 5) \\\\ Area(ABC) = \\frac{1}{2} |4(5-2) + 1(2-6) + 7(6-5)| = \\frac{1}{2} |12 - 4 + 7| = 7.5 \\\\ Area(ADE) = \\frac{1}{2} |4(5.75-5) + 3.25(5-6) + 4.75(6-5.75)| = \\frac{1}{2} |3 - 3.25 + 1.1875| = 0.46875 \\\\ \\frac{Area(ADE)}{Area(ABC)} = \\frac{0.46875}{7.5} = \\frac{1}{16}"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Section Formula and Area of Triangle",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "diagram": {
+        "required": true,
+        "type": "coordinate",
+        "caption": "Triangle ABC with points D and E on sides AB and AC",
+        "scale": 1.0,
+        "elements": [
+          {
+            "kind": "axis"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 4,
+            "y": 6,
+            "label": "A(4,6)",
+            "position": "above"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 1,
+            "y": 5,
+            "label": "B(1,5)",
+            "position": "left"
+          },
+          {
+            "kind": "point",
+            "id": "C",
+            "x": 7,
+            "y": 2,
+            "label": "C(7,2)",
+            "position": "right"
+          },
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "kind": "point",
+            "id": "D",
+            "x": 3.25,
+            "y": 5.75,
+            "label": "D",
+            "position": "left"
+          },
+          {
+            "kind": "point",
+            "id": "E",
+            "x": 4.75,
+            "y": 5,
+            "label": "E",
+            "position": "right"
+          },
+          {
+            "kind": "segment",
+            "from": "D",
+            "to": "E"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:59:13.001124",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145913_61170f_01"
+    }
+  ]
+}

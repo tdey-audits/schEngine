@@ -1,0 +1,119 @@
+{
+  "batch_id": "20260609_155850_3b6bedc3",
+  "generated_at": "2026-06-09T15:58:50.585068",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Coordinate Geometry",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If the point $P(2, 1)$ is the midpoint of the line segment joining the points $A(k, 5)$ and $B(-3, m)$, and $2k + m = 11$, then the values of $k$ and $m$ are respectively:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Use the midpoint formula for the x-coordinate: $2 = \\frac{k + (-3)}{2}$.",
+          "Solve for $k$: $4 = k - 3$, so $k = 7$.",
+          "Use the midpoint formula for the y-coordinate: $1 = \\frac{5 + m}{2}$.",
+          "Solve for $m$: $2 = 5 + m$, so $m = -3$.",
+          "Verify with the given condition $2k + m = 11$: $2(7) + (-3) = 14 - 3 = 11$. The condition holds."
+        ],
+        "derivation": "$P(x, y) = (\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}) \\\\ \\frac{k - 3}{2} = 2 \\Rightarrow k - 3 = 4 \\Rightarrow k = 7 \\\\ \\frac{5 + m}{2} = 1 \\Rightarrow 5 + m = 2 \\Rightarrow m = -3 \\\\ 2(7) + (-3) = 14 - 3 = 11$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Midpoint Formula",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $7, -3$",
+        "(B) $-3, 7$",
+        "(C) $4, 3$",
+        "(D) $5, 1$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T15:58:50.584795",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_7 (Coordinate Geometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 2,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 18,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 20,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.4",
+            "question_no": 3,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_155850_41cb86_01"
+    }
+  ]
+}

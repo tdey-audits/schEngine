@@ -1,0 +1,848 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag Solutions} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{questions}
+\question \textbf{1.} In $\triangle PQR$, $S$ and $T$ are points on sides $PQ$ and $PR$ respectively such that $\angle PST = \angle PRQ$. If $PS = 2\text{ cm}$, $SQ = 3\text{ cm}$, and $PT = 2.5\text{ cm}$, find $TR$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{1.5\text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Show $\triangle PST \sim \triangle PRQ$ by AA similarity criterion.
+  \item Write the ratio of sides and solve for $TR$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\triangle PST \sim \triangle PRQ \\
+\implies \frac{PS}{PR} = \frac{PT}{PQ} \text{ is incorrect; use } \frac{PS}{PR} = \frac{PT}{PQ} \text{ is not needed, use } \frac{PS}{PT} = \frac{PT}{PR} \text{ is not right; use } \frac{PS}{PR} = \frac{PT}{PQ} \\
+\implies \frac{PS}{PT+TR} = \frac{PT}{PS+SQ} \\
+\implies \frac{2}{2.5+TR} = \frac{2.5}{5} \\
+\implies 10 = 6.25 + 2.5TR \\
+\implies 3.75 = 2.5TR \\
+\implies TR = 1.5\text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Triangles — Similarity of Triangles}
+\vspace{0.3cm}
+
+\question \textbf{2.} Diagonals of a trapezium $\text{ABCD}$ with $AB \parallel DC$ intersect each other at the point $O$. If $AB = 2CD$, find the ratio of the areas of triangles $\triangle AOB$ and $\triangle COD$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{4:1}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Prove $\triangle AOB \sim \triangle COD$ by AA similarity.
+  \item Use the ratio of areas theorem.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\triangle AOB \sim \triangle COD \\
+\implies \frac{\text{Area}(AOB)}{\text{Area}(COD)} = \left(\frac{AB}{CD}\right)^2 = \left(\frac{2CD}{CD}\right)^2 = 2^2 = 4
+\end{aligned}}
+\end{center}
+\hfill \textit{Triangles — Areas of Similar Triangles}
+\vspace{0.3cm}
+
+\question \textbf{3.} In $\triangle ABC$, $DE \parallel BC$ such that $AD = (4x - 3)$ cm, $AE = (8x - 7)$ cm, $BD = (3x - 1)$ cm, and $EC = (5x - 3)$ cm. Find the value of $x$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{x = 1}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Since $DE \parallel BC$, by Basic Proportionality Theorem (BPT), $\frac{AD}{DB} = \frac{AE}{EC}$.
+  \item Substitute the given values into the equation: $\frac{4x-3}{3x-1} = \frac{8x-7}{5x-3}$.
+  \item Cross-multiply to get: $(4x-3)(5x-3) = (8x-7)(3x-1)$.
+  \item Solve the resulting linear equation to find $x$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+20x^2 - 12x - 15x + 9 = 24x^2 - 8x - 21x + 7 \\
+\implies 20x^2 - 27x + 9 = 24x^2 - 29x + 7 \\
+\implies 4x^2 - 2x - 2 = 0 \\
+\implies 2x^2 - x - 1 = 0 \\
+\implies (2x+1)(x-1) = 0. \text{ Since } x > 1, x = 1.
+\end{aligned}}
+\end{center}
+\hfill \textit{Triangles — Basic Proportionality Theorem}
+\vspace{0.3cm}
+
+\question \textbf{4.} Two poles of heights $6$ m and $11$ m stand on a plane ground. If the distance between their feet is $12$ m, find the distance between their tops.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{13 m}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $AB = 6$ m and $CD = 11$ m be the two poles. The distance $BD = 12$ m.
+  \item Draw a line from $A$ parallel to $BD$ meeting $CD$ at $E$. Then $CE = CD - ED = 11 - 6 = 5$ m.
+  \item In right-angled triangle $\triangle AEC$, use the Pythagorean theorem to find the hypotenuse $AC$.
+  \item $AC^2 = AE^2 + CE^2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{AE = BD = 12 \text{ m}. CE = 11 - 6 = 5 \text{ m}. AC = \sqrt{12^2 + 5^2} = \sqrt{144 + 25} = \sqrt{169} = 13 \text{ m}.}
+\end{center}
+\hfill \textit{Triangles — Pythagoras Theorem}
+\vspace{0.3cm}
+
+\question \textbf{5.} In $\triangle PQR$, $S$ and $T$ are points on sides $PQ$ and $PR$ respectively such that $\angle PST = \angle PRQ$. Show that $\triangle PQR \sim \triangle PTS$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Proof}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the common angle in both triangles: $\angle QPR = \angle TPS$ (Common).
+  \item Use the given condition $\angle PST = \angle PRQ$.
+  \item Conclude similarity by AA (Angle-Angle) criterion.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{In } \triangle PQR \text{ and } \triangle PTS: \angle P = \angle P \text{ (Common)}, \angle PST = \angle PRQ \text{ (Given)}. \text{ Therefore, } \triangle PQR \sim \triangle PTS \text{ by AA similarity criterion.}}
+\end{center}
+\hfill \textit{Triangles — Criteria for Similarity of Triangles}
+\vspace{0.3cm}
+
+\question \textbf{6.} The areas of two similar triangles are $121$ cm$^2$ and $64$ cm$^2$ respectively. If the median of the first triangle is $12.1$ cm, find the corresponding median of the other triangle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{8.8 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the theorem: Ratio of areas of similar triangles is equal to the ratio of the squares of their corresponding medians.
+  \item Set up the equation: $\frac{\text{Area}_1}{\text{Area}_2} = \left(\frac{m_1}{m_2}\right)^2$.
+  \item Substitute values: $\frac{121}{64} = \left(\frac{12.1}{m_2}\right)^2$.
+  \item Take the square root and solve for $m_2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{11}{8} = \frac{12.1}{m_2} \\
+\implies m_2 = \frac{12.1 \times 8}{11} = 1.1 \times 8 = 8.8 \text{ cm}.
+\end{aligned}}
+\end{center}
+\hfill \textit{Triangles — Areas of Similar Triangles}
+\vspace{0.3cm}
+
+\question \textbf{7.} In $\triangle ABC$, $AD \perp BC$ such that $AD^2 = BD \cdot CD$. Prove that $\angle BAC = 90^\circ$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Proof}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Since $AD \perp BC$, we have two right triangles $\triangle ADB$ and $\triangle ADC$.
+  \item Express the sides using Pythagoras: $AB^2 = AD^2 + BD^2$ and $AC^2 = AD^2 + CD^2$.
+  \item Add them and use the given condition $AD^2 = BD \cdot CD$ to show $AB^2 + AC^2 = BC^2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{AB^2 + AC^2 = AD^2 + BD^2 + AD^2 + CD^2 = 2AD^2 + BD^2 + CD^2. \text{ Substitute } AD^2=BD \cdot CD: AB^2 + AC^2 = 2(BD \cdot CD) + BD^2 + CD^2 = (BD + CD)^2 = BC^2. \text{ By converse of Pythagoras, } \angle BAC = 90^\circ.}
+\end{center}
+\hfill \textit{Triangles — Pythagoras Theorem}
+\vspace{0.3cm}
+
+\question \textbf{8.} State and prove the Basic Proportionality Theorem (Thales Theorem).
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{If a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points}, \text{the other two sides are divided in the same ratio}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Draw a triangle ABC with a line DE parallel to BC intersecting AB at D and AC at E.
+  \item Construct perpendiculars DM on AC and EN on AB. Join BE and CD.
+  \item Calculate the area of triangles ADE, BDE, and CDE.
+  \item Use the property that triangles on the same base and between the same parallels have equal areas.
+  \item Divide the ratio of areas to prove the theorem.
+\end{enumerate}
+\textbf{Derivation:}
+In  $\triangle$ ADE  and  $\triangle$ BDE ,  $\frac{ar(ADE)}{ar(BDE)} = \frac{\frac{1}{2} \cdot AD \cdot EN}{\frac{1}{2} \cdot BD \cdot EN} = \frac{AD}{BD}$ . Similarly,  $\frac{ar(ADE)}{ar(CDE)} = \frac{AE}{CE}$ . Since  ar(BDE) = ar(CDE)  (same base  DE  and same parallels  DE $\parallel$ BC ), it follows that  $\frac{AD}{BD} = \frac{AE}{CE}$ .
+\hfill \textit{Triangles — Basic Proportionality Theorem}
+\vspace{0.3cm}
+
+\question \textbf{9.} Prove that the ratio of the areas of two similar triangles is equal to the square of the ratio of their corresponding sides.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\frac{ar(\triangle ABC)}{ar(\triangle PQR)} = (\frac{AB}{PQ})^2 = (\frac{BC}{QR})^2 = (\frac{AC}{PR})^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Draw two similar triangles ABC and PQR.
+  \item Draw altitudes AM $\perp$ BC and PN $\perp$ QR.
+  \item Express the ratio of areas as $\frac{\frac{1}{2} \cdot BC \cdot AM}{\frac{1}{2} \cdot QR \cdot PN}$.
+  \item Prove $\triangle ABM \sim \triangle PQN$ to show $\frac{AM}{PN} = \frac{AB}{PQ}$.
+  \item Substitute this ratio back into the area equation to get the square of the ratio.
+\end{enumerate}
+\textbf{Derivation:}
+ $\frac{ar(ABC)}{ar(PQR)} = \frac{BC \cdot AM}{QR \cdot PN} = \frac{BC}{QR} \cdot \frac{AM}{PN}$ . Since  $\triangle$ ABM $\sim \triangle$ PQN ,  $\frac{AM}{PN} = \frac{AB}{PQ}$ . Also  $\frac{AB}{PQ} = \frac{BC}{QR}  ($given similarity). Thus,  $\frac{ar(ABC)}{ar(PQR)} = \frac{BC}{QR} \cdot \frac{BC}{QR} = (\frac{BC}{QR})^2$ .
+\hfill \textit{Triangles — Areas of Similar Triangles}
+\vspace{0.3cm}
+
+\question \textbf{10.} In $\triangle ABC$, $AD \perp BC$ such that $AD^2 = BD \cdot CD$. Prove that $\triangle ABC$ is a right-angled triangle at $A$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\angle BAC = 90^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Observe the triangle split into two smaller triangles $\triangle ABD$ and $\triangle ACD$.
+  \item Write the ratio $\frac{AD}{BD} = \frac{CD}{AD}$.
+  \item Include the angle $\angle ADB = \angle ADC = 90^\circ$.
+  \item Prove $\triangle ABD \sim \triangle CAD$ by SAS similarity.
+  \item Equate corresponding angles $\angle BAD = \angle ACD$ and $\angle CAD = \angle ABD$.
+  \item Use the angle sum property of $\triangle ABC$ to show $\angle BAC = 90^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+Given  AD\textasciicircum{}2 = BD $\cdot$ CD $\implies \frac{AD}{BD} = \frac{CD}{AD}$ . In  $\triangle$ ABD  and  $\triangle$ CAD ,  $\angle$ ADB = $\angle$ ADC = 90\textasciicircum{}$\circ$ . By SAS similarity,  $\triangle$ ABD $\sim \triangle$ CAD . Thus  $\angle$ BAD = $\angle C$  and  $\angle$ CAD = $\angle B$ . In  $\triangle$ ABC ,  $\angle A + \angle B + \angle C = 180^\circ$ . Substituting gives  $\angle A + \angle$ CAD + $\angle$ BAD = 180\textasciicircum{}$\circ \implies 2\angle A = 180^\circ \implies \angle A = 90^\circ$ .
+\hfill \textit{Triangles — Similarity of Triangles}
+\vspace{0.3cm}
+
+\question \textbf{11.} A vertical stick $2$ m long casts a shadow $1$ m long on the ground. At the same time, a tower casts a shadow $5$ m long. Find the height of the tower using the properties of similar triangles.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{10 \text{meters}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify two triangles: one formed by the stick and its shadow, the other by the tower and its shadow.
+  \item State that at the same time, the angle of elevation of the sun is the same for both objects.
+  \item Identify that both triangles are right-angled and share an equal angle, thus they are similar by AA criterion.
+  \item Set up the proportion: $\frac{\text{Height of Stick}}{\text{Shadow of Stick}} = \frac{\text{Height of Tower}}{\text{Shadow of Tower}}$.
+  \item Substitute the given values and solve for the height of the tower.
+\end{enumerate}
+\textbf{Derivation:}
+Let height of tower be  h .  $\triangle$ ABC $\sim \triangle$ PQR  (where  ABC  is stick triangle and  PQR  is tower triangle). Therefore,  $\frac{2}{1} = \frac{h}{5}$ .  h = 2 $\times 5 = 10  m.$
+\hfill \textit{Triangles — Applications of Similar Triangles}
+\vspace{0.3cm}
+
+\question \textbf{12.} The distance of the point $P(3, 4)$ from the origin is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the distance formula from the origin $d = \sqrt{x^2 + y^2}$
+  \item Substitute $x=3$ and $y=4$
+  \item Calculate $\sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = \sqrt{3^2 + 4^2} = \sqrt{9+16} = \sqrt{25} = 5}
+\end{center}
+\hfill \textit{Coordinate Geometry — Distance Formula}
+\vspace{0.3cm}
+
+\question \textbf{13.} The coordinates of the midpoint of the line segment joining the points $A(2, 4)$ and $B(4, 6)$ are:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the midpoint formula $M = (\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2})$
+  \item Substitute the values: $x_1=2, x_2=4, y_1=4, y_2=6$
+  \item Calculate: $x = \frac{2+4}{2} = 3$ and $y = \frac{4+6}{2} = 5$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{M = (\frac{2+4}{2}, \frac{4+6}{2}) = (3, 5)}
+\end{center}
+\hfill \textit{Coordinate Geometry — Section Formula}
+\vspace{0.3cm}
+
+\question \textbf{14.} The abscissa of the point $(5, 8)$ is:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall that in a coordinate point $(x, y)$, $x$ is the abscissa and $y$ is the ordinate.
+  \item For the point $(5, 8)$, the $x$-coordinate is 5.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Abscissa} = x = 5}
+\end{center}
+\hfill \textit{Coordinate Geometry — Introduction to Cartesian Plane}
+\vspace{0.3cm}
+
+\question \textbf{15.} If the distance between points $(2, -2)$ and $(-1, x)$ is 5, then the value of $x$ is not asked, but what is the distance formula expression?
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The distance formula between two points $(x_1, y_1)$ and $(x_2, y_2)$ is $\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$
+  \item Substitute $x_1=2, y_1=-2, x_2=-1, y_2=x$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = \sqrt{(-1-2)^2 + (x - (-2))^2} = \sqrt{(-3)^2 + (x+2)^2}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Distance Formula}
+\vspace{0.3cm}
+
+\question \textbf{16.} The point which lies on the y-axis is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item A point on the y-axis has its $x$-coordinate equal to 0.
+  \item Check the options for $x=0$.
+\end{enumerate}
+\textbf{Derivation:}
+Point on y-axis is of the form (0, y).
+\hfill \textit{Coordinate Geometry — Introduction to Cartesian Plane}
+\vspace{0.3cm}
+
+\question \textbf{17.} Assertion (A): The point $(0, 5)$ lies on the y-axis. Reason (R): For any point on the y-axis, the x-coordinate is zero.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check the definition of y-axis points.
+  \item Verify if (0, 5) satisfies the condition x=0.
+  \item Conclude that R explains A.
+\end{enumerate}
+\textbf{Derivation:}
+A point  (x, y)  lies on the y-axis if and only if  x=0 . Since  (0, 5)  has  x=0 , it lies on the y-axis.
+\hfill \textit{Coordinate Geometry — Introduction to Coordinate Geometry}
+\vspace{0.3cm}
+
+\question \textbf{18.} Assertion (A): The distance of the point $P(3, 4)$ from the origin $(0, 0)$ is $5$ units. Reason (R): The distance of a point $(x, y)$ from the origin is calculated by $\sqrt{x^2 + y^2}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Apply the distance formula from the origin.
+  \item Substitute x=3 and y=4.
+  \item Calculate $\sqrt{3^2 + 4^2} = \sqrt{9+16} = \sqrt{25} = 5$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = \sqrt{(3-0)^2 + (4-0)^2} = \sqrt{3^2 + 4^2} = \sqrt{9+16} = 5}
+\end{center}
+\hfill \textit{Coordinate Geometry — Distance Formula}
+\vspace{0.3cm}
+
+\question \textbf{19.} Assertion (A): The midpoint of the line segment joining $(2, 4)$ and $(6, 8)$ is $(4, 6)$. Reason (R): The midpoint formula is $(\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2})$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify coordinates $(x_1, y_1) = (2, 4)$ and $(x_2, y_2) = (6, 8)$.
+  \item Use the midpoint formula.
+  \item Calculate $(\frac{2+6}{2}, \frac{4+8}{2}) = (4, 6)$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{M = (\frac{2+6}{2}, \frac{4+8}{2}) = (\frac{8}{2}, \frac{12}{2}) = (4, 6)}
+\end{center}
+\hfill \textit{Coordinate Geometry — Section Formula/Midpoint}
+\vspace{0.3cm}
+
+\question \textbf{20.} Assertion (A): The points $(1, 1), (2, 2)$ and $(3, 3)$ are collinear. Reason (R): Three points are collinear if the sum of distances between any two pairs is equal to the distance between the third pair.
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check the slopes: slope between (1,1) and (2,2) is (2-1)/(2-1) = 1.
+  \item Slope between (2,2) and (3,3) is (3-2)/(3-2) = 1.
+  \item Since slopes are equal, they are collinear.
+  \item R is a true statement, but typically collinearity is defined by slope or area = 0 in Class 10.
+\end{enumerate}
+\textbf{Derivation:}
+Slope\_\{AB\} = 1, Slope\_\{BC\} = 1. Since slopes are equal, points lie on the same line.
+\hfill \textit{Coordinate Geometry — Collinearity}
+\vspace{0.3cm}
+
+\question \textbf{21.} Assertion (A): The area of a triangle with vertices $(0, 0), (4, 0),$ and $(0, 3)$ is $6$ sq units. Reason (R): Area of a triangle with coordinates $(0, 0), (x_1, y_1), (x_2, y_2)$ is $\frac{1}{2}|x_1y_2 - x_2y_1|$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the simplified area formula for a triangle with one vertex at origin.
+  \item Substitute $(x_1, y_1) = (4, 0)$ and $(x_2, y_2) = (0, 3)$.
+  \item Calculate $\frac{1}{2}|(4)(3) - (0)(0)| = \frac{1}{2}(12) = 6$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Area} = \frac{1}{2}|4 \times 3 - 0 \times 0| = 6}
+\end{center}
+\hfill \textit{Coordinate Geometry — Area of Triangle}
+\vspace{0.3cm}
+
+\question \textbf{22.} Find the ratio in which the line segment joining the points $A(-3, 10)$ and $B(6, -8)$ is divided by the point $P(-1, 6)$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{2:7}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the section formula: $P(x, y) = \left( \frac{mx_2 + nx_1}{m+n}, \frac{my_2 + ny_1}{m+n} \right)$
+  \item Substitute the coordinates and assume ratio $k:1$
+  \item Solve for $k$ using the x-coordinate equation
+  \item Verify with the y-coordinate
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+-1 = \frac{k(6) + 1(-3)}{k+1} \\
+\implies -k - 1 = 6k - 3 \\
+\implies 2 = 7k \\
+\implies k = \frac{2}{7}
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Section Formula}
+\vspace{0.3cm}
+
+\question \textbf{23.} If the points $A(6, 1)$, $B(8, 2)$, $C(9, 4)$, and $D(p, 3)$ are the vertices of a parallelogram taken in order, find the value of $p$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{p = 7}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall that diagonals of a parallelogram bisect each other.
+  \item Find the midpoint of diagonal AC.
+  \item Find the midpoint of diagonal BD.
+  \item Equate the midpoints and solve for $p$.
+\end{enumerate}
+\textbf{Derivation:}
+Midpoint of AC = ($\frac{6+9}{2}, \frac{1+4}{2}) = (7.5, 2.5)$; Midpoint of BD = ($\frac{8+p}{2}, \frac{2+3}{2}) = (\frac{8+p}{2}, 2.5)$; $\frac{8+p}{2} = 7.5 \implies 8+p = 15 \implies p = 7$
+\hfill \textit{Coordinate Geometry — Midpoint Formula}
+\vspace{0.3cm}
+
+\question \textbf{24.} Find the distance between the points $P(a+b, b-a)$ and $Q(a-b, a+b)$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{2\sqrt{a^2+b^2}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Apply the distance formula: $d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$
+  \item Substitute the given coordinates.
+  \item Simplify the algebraic terms inside the square root.
+  \item Calculate the square root.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = \sqrt{((a-b)-(a+b))^2 + ((a+b)-(b-a))^2} = \sqrt{(-2b)^2 + (2a)^2} = \sqrt{4b^2 + 4a^2} = 2\sqrt{a^2+b^2}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Distance Formula}
+\vspace{0.3cm}
+
+\question \textbf{25.} Find the value of $y$ for which the distance between the points $P(2, -3)$ and $Q(10, y)$ is 10 units.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{y = 3 \text{or y} = -9}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the distance formula $PQ^2 = (x_2-x_1)^2 + (y_2-y_1)^2$.
+  \item Substitute the known values into the equation.
+  \item Solve the resulting quadratic equation for $y$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+10^2 = (10-2)^2 + (y-(-3))^2 \\
+\implies 100 = 64 + (y+3)^2 \\
+\implies 36 = (y+3)^2 \\
+\implies y+3 = \pm 6 \\
+\implies y = 3, -9
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Distance Formula}
+\vspace{0.3cm}
+
+\question \textbf{26.} Find the coordinates of a point $A$, where $AB$ is the diameter of a circle whose centre is $(2, -3)$ and $B$ is $(1, 4)$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{A(3, -10)}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $A$ be $(x, y)$. The centre $(2, -3)$ is the midpoint of diameter $AB$.
+  \item Use the midpoint formula: $\frac{x+1}{2} = 2$ and $\frac{y+4}{2} = -3$.
+  \item Solve for $x$ and $y$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+x+1 = 4 \\
+\implies x = 3; y+4 = -6 \\
+\implies y = -10. \text{Point A is } (3, -10)
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Midpoint Formula}
+\vspace{0.3cm}
+
+\question \textbf{27.} Find the ratio in which the point $P(x, 2)$ divides the line segment joining the points $A(12, 5)$ and $B(4, -3)$. Also, find the value of $x$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Ratio is} 3:5, x = 9}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the section formula for the y-coordinate to find the ratio k:1.
+  \item Set the y-coordinate formula equal to 2.
+  \item Solve for k.
+  \item Use the value of k to find the x-coordinate using the section formula.
+  \item State the final ratio and the value of x.
+\end{enumerate}
+\textbf{Derivation:}
+Let the ratio be  k:1 . The y-coordinate is given by  y = $\frac{m_1y_2 + m_2y_1}{m_1 + m_2}$ . Substituting values:  2 = $\frac{k(-3) + 1(5)}{k + 1} \implies 2k + 2 = -3k + 5 \implies 5k = 3 \implies k = 3/5$ . Thus, the ratio is  3:5 . For x:  x = $\frac{3(4) + 5(12)}{3 + 5} = \frac{12 + 60}{8} = \frac{72}{8} = 9$ .
+\hfill \textit{Coordinate Geometry — Section Formula}
+\vspace{0.3cm}
+
+\question \textbf{28.} If the points $A(6, 1)$, $B(8, 2)$, $C(9, 4)$, and $D(p, 3)$ are the vertices of a parallelogram taken in order, find the value of $p$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{p = 7}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall the property that diagonals of a parallelogram bisect each other.
+  \item Find the midpoint of diagonal AC.
+  \item Find the midpoint of diagonal BD in terms of p.
+  \item Equate the midpoints and solve for p.
+\end{enumerate}
+\textbf{Derivation:}
+Midpoint of AC =  ($\frac{6+9}{2}, \frac{1+4}{2}) = (7.5, 2.5)$ . Midpoint of BD =  ($\frac{8+p}{2}, \frac{2+3}{2}) = (\frac{8+p}{2}, 2.5)$ . Equating x-coordinates:  7.5 = $\frac{8+p}{2} \implies 15 = 8 + p \implies p = 7$ .
+\hfill \textit{Coordinate Geometry — Midpoint Formula}
+\vspace{0.3cm}
+
+\question \textbf{29.} Find the area of a quadrilateral whose vertices, taken in order, are $(-4, -2)$, $(-3, -5)$, $(3, -2)$, and $(2, 3)$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{28 sq. \text{units}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Divide the quadrilateral into two triangles by drawing a diagonal.
+  \item Use the area of triangle formula: $\frac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|$.
+  \item Calculate the area of triangle 1.
+  \item Calculate the area of triangle 2.
+  \item Add the two areas to get the total area.
+\end{enumerate}
+\textbf{Derivation:}
+Area of  $\triangle$ ABC  with vertices  (-4, -2), (-3, -5), (3, -2) :  $\frac{1}{2}|-4(-5 - (-2)) + (-3)(-2 - (-2)) + 3(-2 - (-5))| = \frac{1}{2}|12 + 0 + 9| = 10.5$ . Area of  $\triangle$ ADC  with vertices  (-4, -2), (2, 3), (3, -2) :  $\frac{1}{2}|-4(3 - (-2)) + 2(-2 - (-2)) + 3(-2 - 3)| = \frac{1}{2}|-20 + 0 - 15| = 17.5$ . Total Area =  10.5 + 17.5 = 28 .
+\hfill \textit{Coordinate Geometry — Area of Triangle}
+\vspace{0.3cm}
+
+\question \textbf{30.} Find the coordinates of the points which divide the line segment joining $A(-2, 2)$ and $B(2, 8)$ into four equal parts.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{(-1, 3.5), (0, 5), (1, 6.5)}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the midpoints needed to divide the segment into 4 parts.
+  \item Find the midpoint M of AB.
+  \item Find the midpoint of AM to get the first point.
+  \item Find the midpoint of MB to get the third point.
+  \item List all three points.
+\end{enumerate}
+\textbf{Derivation:}
+Midpoint  M  of  AB = ($\frac{-2+2}{2}, \frac{2+8}{2}) = (0, 5)$ . Midpoint  P  of  AM = ($\frac{-2+0}{2}, \frac{2+5}{2}) = (-1, 3.5)$ . Midpoint  Q  of  MB = ($\frac{0+2}{2}, \frac{5+8}{2}) = (1, 6.5)$ . The points are  (-1, 3.5), (0, 5), (1, 6.5) .
+\hfill \textit{Coordinate Geometry — Section Formula Application}
+\vspace{0.3cm}
+
+\question \textbf{31.} If $\sin \theta = \frac{3}{5}$, then the value of $\cos \theta$ is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the identity $\sin^2 \theta + \cos^2 \theta = 1$
+  \item Substitute the value of $\sin \theta$
+  \item Solve for $\cos \theta$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\cos^2 \theta = 1 - \sin^2 \theta = 1 - (\frac{3}{5})^2 = 1 - \frac{9}{25} = \frac{16}{25} \\
+\implies \cos \theta = \frac{4}{5}
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{32.} The value of $\tan 45^\circ + \cot 45^\circ$ is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall the trigonometric values for standard angles.
+  \item Substitute $\tan 45^\circ = 1$ and $\cot 45^\circ = 1$.
+  \item Add the values.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\tan 45^\circ + \cot 45^\circ = 1 + 1 = 2}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{33.} If $3\tan \theta = 3$, then $\theta$ is equal to:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Simplify the equation to find $\tan \theta$.
+  \item Identify the angle $\theta$ for which $\tan \theta = 1$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+3\tan \theta = 3 \\
+\implies \tan \theta = 1 \\
+\implies \theta = 45^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{34.} The value of $\frac{\sin 18^\circ}{\cos 72^\circ}$ is:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the complementary angle identity $\cos(90^\circ - \theta) = \sin \theta$.
+  \item Substitute $\cos 72^\circ = \cos(90^\circ - 18^\circ) = \sin 18^\circ$.
+  \item Divide the terms.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\frac{\sin 18^\circ}{\cos 72^\circ} = \frac{\sin 18^\circ}{\sin 18^\circ} = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Complementary Angles}
+\vspace{0.3cm}
+
+\question \textbf{35.} Which of the following is equal to $\sec^2 \theta - 1$?
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall the fundamental trigonometric identity $1 + \tan^2 \theta = \sec^2 \theta$.
+  \item Rearrange the identity to isolate $\sec^2 \theta - 1$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+1 + \tan^2 \theta = \sec^2 \theta \\
+\implies \sec^2 \theta - 1 = \tan^2 \theta
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{36.} Assertion (A): If $\sin \theta = \frac{1}{2}$, then $\theta = 30^\circ$. Reason (R): The value of $\sin \theta$ increases as $\theta$ increases from $0^\circ$ to $90^\circ$.
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check the validity of Assertion: For $\sin \theta = 1/2$, $\theta = 30^\circ$ is true.
+  \item Check the validity of Reason: The sine function is strictly increasing in the first quadrant, which is true.
+  \item Determine if R explains A: The fact that $\sin 30^\circ = 1/2$ is a specific value, its increasing nature is a general property, so R does not explain why $\sin 30^\circ$ is specifically $1/2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Assertion: } \sin 30^\circ = 0.5 \\
+\implies \text{True. Reason: } \frac{d}{d\theta}(\sin \theta) = \cos \theta > 0 \text{ for } \theta \in (0, 90^\circ) \\
+\implies \text{True.}
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{37.} Assertion (A): The value of $\cos \theta$ can never be $1.5$. Reason (R): The range of $\cos \theta$ is $[-1, 1]$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check the validity of Assertion: Since the range of cosine is $[-1, 1]$, $1.5$ is outside this range, so it is true.
+  \item Check the validity of Reason: By definition of trigonometric ratios in a right triangle, $\cos \theta = \text{base/hypotenuse} \le 1$.
+  \item Determine if R explains A: The range definition is the direct reason why $\cos \theta$ cannot exceed 1.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{-1 \le \cos \theta \le 1 \text{ for all } \theta \in \mathbb{R}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Basic Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{38.} Assertion (A): $\sin^2 \theta + \cos^2 \theta = 1$ for all $\theta$. Reason (R): $\tan^2 \theta - \sec^2 \theta = 1$.
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check the validity of Assertion: This is the fundamental Pythagorean identity, which is true.
+  \item Check the validity of Reason: The identity is $\sec^2 \theta - \tan^2 \theta = 1$. Therefore, $\tan^2 \theta - \sec^2 \theta = -1$. The reason is false.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sin^2 \theta + \cos^2 \theta = 1 \text{ (Identity)}; \sec^2 \theta - \tan^2 \theta = 1 \\
+\implies \tan^2 \theta - \sec^2 \theta = -1
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{39.} Assertion (A): If $\tan A = \cot A$, then $A = 45^\circ$. Reason (R): $\tan A = \cot(90^\circ - A)$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check the validity of Assertion: If $\tan A = \cot A$, then $\tan A = 1/\tan A$, so $\tan^2 A = 1$, $\tan A = 1$, $A = 45^\circ$. True.
+  \item Check the validity of Reason: This is the standard co-function identity.
+  \item Determine if R explains A: Yes, $\tan A = \cot A \implies \tan A = \tan(90^\circ - A) \implies A = 90^\circ - A \implies 2A = 90^\circ \implies A = 45^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan A = \cot A \\
+\iff \tan A = \tan(90^\circ - A) \\
+\iff A = 90^\circ - A \\
+\iff A = 45^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Complementary Angles}
+\vspace{0.3cm}
+
+\question \textbf{40.} Assertion (A): The value of $\sin 0^\circ$ is $0$. Reason (R): The value of $\cos 0^\circ$ is $0$.
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check the validity of Assertion: $\sin 0^\circ = 0$. True.
+  \item Check the validity of Reason: $\cos 0^\circ = 1$. False.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\sin 0^\circ = 0, \cos 0^\circ = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\end{questions}
+
+\end{document}

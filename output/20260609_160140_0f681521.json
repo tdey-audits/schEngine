@@ -1,0 +1,140 @@
+{
+  "batch_id": "20260609_160140_0f681521",
+  "generated_at": "2026-06-09T16:01:40.882332",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A landscape architect is designing a rectangular garden with a central fountain. The total area of the garden is $120$ $m^2$. The length of the garden is $2$ $m$ more than its width. A concrete path of uniform width $x$ $m$ is built all around the inside of the garden, reducing the planting area to $72$ $m^2$.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "If the width of the garden is $w$ $m$, which quadratic equation represents the relationship between the length and width of the garden?",
+          "answer": "(A)",
+          "options": [
+            "(A) $w^2 + 2w - 120 = 0$",
+            "(B) $w^2 - 2w - 120 = 0$",
+            "(C) $w^2 + 2w + 120 = 0$",
+            "(D) $w^2 - 2w + 120 = 0$"
+          ]
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Find the dimensions (length and width) of the garden in metres.",
+          "answer": "Length = $12$ $m$, Width = $10$ $m$",
+          "solution": {
+            "steps": [
+              "Set up the equation: $w(w+2) = 120$",
+              "Solve $w^2 + 2w - 120 = 0$ by factorisation: $(w+12)(w-10) = 0$",
+              "Reject $w = -12$ as width cannot be negative.",
+              "Width $w = 10$, so length $l = 10 + 2 = 12$."
+            ],
+            "derivation": "$w^2 + 2w - 120 = 0 \\\\ w^2 + 12w - 10w - 120 = 0 \\\\ w(w+12) - 10(w+12) = 0 \\\\ (w-10)(w+12) = 0 \\\\ w = 10, -12$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "mcq",
+          "question": "If the path has a uniform width $x$, the dimensions of the inner planting area are $(12-2x)$ and $(10-2x)$. Which equation represents the inner area constraint?",
+          "answer": "(C)",
+          "options": [
+            "(A) $4x^2 - 44x + 120 = 72$",
+            "(B) $x^2 - 22x + 48 = 0$",
+            "(C) $4x^2 - 44x + 48 = 0$",
+            "(D) $x^2 - 11x + 72 = 0$"
+          ]
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "Find the width of the path $x$.",
+          "answer": "$x = 1$ $m$",
+          "solution": {
+            "steps": [
+              "Expand $(12-2x)(10-2x) = 72$",
+              "Simplify to $120 - 24x - 20x + 4x^2 = 72$",
+              "Rearrange to $4x^2 - 44x + 48 = 0$, then $x^2 - 11x + 12 = 0$",
+              "Solve $x^2 - 11x + 12 = 0$ is not correct; check expansion: $4x^2 - 44x + 120 = 72 \\\\ 4x^2 - 44x + 48 = 0 \\\\ x^2 - 11x + 12 = 0$. Wait, recalculate: $x^2 - 11x + 12 = 0$ factors as $(x-1)(x-12)=0$. Since $x < 5$ (half of width), $x = 1$."
+            ],
+            "derivation": "$4x^2 - 44x + 48 = 0 \\\\ x^2 - 11x + 12 = 0 \\\\ (x-1)(x-12) = 0 \\\\ x = 1 \\text{ or } x = 12 \\\\ \\text{Since } 2x < 10, x < 5, \\therefore x = 1$"
+          }
+        }
+      ],
+      "topic": "Quadratic Equations",
+      "subtopic": "Applications of Quadratic Equations",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T16:01:40.882036",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160140_5cc010_01"
+    }
+  ]
+}

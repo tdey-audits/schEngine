@@ -1,0 +1,57 @@
+[
+  {
+    "question": "The discriminant of the quadratic equation $3x^2 - 4x + 1 = 0$ is",
+    "answer": "(C)",
+    "solution": {
+      "steps": [
+        "Identify the coefficients $a$, $b$, and $c$ from the standard form $ax^2 + bx + c = 0$.",
+        "The coefficients are $a = 3$, $b = -4$, and $c = 1$.",
+        "Use the formula for the discriminant $D = b^2 - 4ac$.",
+        "Substitute the values into the formula: $D = (-4)^2 - 4(3)(1)$.",
+        "Calculate the result: $16 - 12 = 4$."
+      ],
+      "derivation": "$a = 3, b = -4, c = 1 \\\\ D = b^2 - 4ac \\\\ D = (-4)^2 - 4(3)(1) \\\\ D = 16 - 12 \\\\ D = 4$"
+    },
+    "topic": "Quadratic Equations",
+    "subtopic": "Nature of Roots",
+    "marks": 1,
+    "type": "mcq",
+    "difficulty": "simple",
+    "options": [
+      "(A) 1",
+      "(B) 2",
+      "(C) 4",
+      "(D) 16"
+    ],
+    "metadata": {
+      "generated_at": "2026-06-08T10:01:26.384493",
+      "model": "google/gemini-3.1-flash-lite",
+      "retrieved_sources": [
+        "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+        "Chapter_4 (Quadratic Equations).pdf",
+        "Chapter_2 (Polynomials).pdf"
+      ],
+      "pyq_pattern_sources": [
+        {
+          "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+          "question_no": 14,
+          "paper_variant": "standard",
+          "question_type": "mcq"
+        },
+        {
+          "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+          "question_no": 16,
+          "paper_variant": "standard",
+          "question_type": "mcq"
+        },
+        {
+          "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+          "question_no": 4,
+          "paper_variant": "standard",
+          "question_type": "mcq"
+        }
+      ]
+    },
+    "id": "ncert_20260608_100126_baba70_01"
+  }
+]

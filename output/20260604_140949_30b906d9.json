@@ -1,0 +1,161 @@
+{
+  "batch_id": "20260604_140949_30b906d9",
+  "generated_at": "2026-06-04T14:09:49.398279",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Coordinate Geometry",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The point $(0, 5)$ lies on the y-axis. Reason (R): For any point on the y-axis, the x-coordinate is zero.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Check the definition of y-axis points.",
+          "Verify if (0, 5) satisfies the condition x=0.",
+          "Conclude that R explains A."
+        ],
+        "derivation": "A point $(x, y)$ lies on the y-axis if and only if $x=0$. Since $(0, 5)$ has $x=0$, it lies on the y-axis."
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Introduction to Coordinate Geometry",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:49.397772",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140949_ffdfa7_01"
+    },
+    {
+      "question": "Assertion (A): The distance of the point $P(3, 4)$ from the origin $(0, 0)$ is $5$ units. Reason (R): The distance of a point $(x, y)$ from the origin is calculated by $\\sqrt{x^2 + y^2}$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Apply the distance formula from the origin.",
+          "Substitute x=3 and y=4.",
+          "Calculate $\\sqrt{3^2 + 4^2} = \\sqrt{9+16} = \\sqrt{25} = 5$."
+        ],
+        "derivation": "d = \\sqrt{(3-0)^2 + (4-0)^2} = \\sqrt{3^2 + 4^2} = \\sqrt{9+16} = 5"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Distance Formula",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:49.397898",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140949_e65e11_02"
+    },
+    {
+      "question": "Assertion (A): The midpoint of the line segment joining $(2, 4)$ and $(6, 8)$ is $(4, 6)$. Reason (R): The midpoint formula is $(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2})$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Identify coordinates $(x_1, y_1) = (2, 4)$ and $(x_2, y_2) = (6, 8)$.",
+          "Use the midpoint formula.",
+          "Calculate $(\\frac{2+6}{2}, \\frac{4+8}{2}) = (4, 6)$."
+        ],
+        "derivation": "M = (\\frac{2+6}{2}, \\frac{4+8}{2}) = (\\frac{8}{2}, \\frac{12}{2}) = (4, 6)"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Section Formula/Midpoint",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:49.397938",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140949_e022e5_03"
+    },
+    {
+      "question": "Assertion (A): The points $(1, 1), (2, 2)$ and $(3, 3)$ are collinear. Reason (R): Three points are collinear if the sum of distances between any two pairs is equal to the distance between the third pair.",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Check the slopes: slope between (1,1) and (2,2) is (2-1)/(2-1) = 1.",
+          "Slope between (2,2) and (3,3) is (3-2)/(3-2) = 1.",
+          "Since slopes are equal, they are collinear.",
+          "R is a true statement, but typically collinearity is defined by slope or area = 0 in Class 10."
+        ],
+        "derivation": "Slope_{AB} = 1, Slope_{BC} = 1. Since slopes are equal, points lie on the same line."
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Collinearity",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:49.397967",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140949_6bcd0d_04"
+    },
+    {
+      "question": "Assertion (A): The area of a triangle with vertices $(0, 0), (4, 0),$ and $(0, 3)$ is $6$ sq units. Reason (R): Area of a triangle with coordinates $(0, 0), (x_1, y_1), (x_2, y_2)$ is $\\frac{1}{2}|x_1y_2 - x_2y_1|$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Use the simplified area formula for a triangle with one vertex at origin.",
+          "Substitute $(x_1, y_1) = (4, 0)$ and $(x_2, y_2) = (0, 3)$.",
+          "Calculate $\\frac{1}{2}|(4)(3) - (0)(0)| = \\frac{1}{2}(12) = 6$."
+        ],
+        "derivation": "Area = \\frac{1}{2}|4 \\times 3 - 0 \\times 0| = 6"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Area of Triangle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:49.397993",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140949_617861_05"
+    }
+  ]
+}

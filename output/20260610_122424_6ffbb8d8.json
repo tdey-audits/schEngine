@@ -1,0 +1,126 @@
+{
+  "batch_id": "20260610_122424_6ffbb8d8",
+  "generated_at": "2026-06-10T12:24:24.150447",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "quadratic formula",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "For a quadratic equation $2x^2 - 5x + k = 0$, if the discriminant is $1$, then the value of $k$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify the coefficients $a = 2$, $b = -5$, and $c = k$.",
+          "Use the formula for the discriminant $D = b^2 - 4ac$.",
+          "Substitute the given values into the formula: $1 = (-5)^2 - 4(2)(k)$.",
+          "Solve the resulting linear equation for $k$: $1 = 25 - 8k$, which implies $8k = 24$, so $k = 3$."
+        ],
+        "derivation": "$D = b^2 - 4ac \\\\ 1 = (-5)^2 - 4(2)(k) \\\\ 1 = 25 - 8k \\\\ 8k = 24 \\\\ k = 3$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "quadratic formula",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 2",
+        "(B) 4",
+        "(C) 3",
+        "(D) 5"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T12:24:24.150105",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122424_2cc4e3_01"
+    },
+    {
+      "question": "The roots of the quadratic equation $x^2 - 4x + 4 = 0$ are:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Identify the coefficients $a = 1$, $b = -4$, and $c = 4$.",
+          "Calculate the discriminant $D = b^2 - 4ac$.",
+          "Substitute values: $D = (-4)^2 - 4(1)(4) = 16 - 16 = 0$.",
+          "Since $D = 0$, the roots are real and equal, given by $x = -b / (2a)$.",
+          "Calculate the roots: $x = -(-4) / (2 \times 1) = 4 / 2 = 2$."
+        ],
+        "derivation": "$D = (-4)^2 - 4(1)(4) \\\\ D = 16 - 16 = 0 \\\\ x = \\frac{-(-4) \\pm \\sqrt{0}}{2(1)} \\\\ x = \\frac{4}{2} = 2$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "quadratic formula",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 1, 3",
+        "(B) 2, 2",
+        "(C) 0, 4",
+        "(D) 2, -2"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T12:24:24.150248",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122424_9829d8_02"
+    }
+  ]
+}

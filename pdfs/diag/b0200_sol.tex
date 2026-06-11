@@ -1,0 +1,925 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag Solutions} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{questions}
+\question \textbf{1.} A sum of Rs.~1600 is to be used to give 5 cash prizes to students of a school for their overall academic performance. If each prize is Rs.~20 less than its preceding prize, find the value of each of the prizes.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Rs.~}400, \text{Rs.~}380, \text{Rs.~}360, \text{Rs.~}340, \text{Rs.~}320}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the prizes be $a, a-20, a-40, a-60, a-80$.
+  \item Use the sum formula $S_n = \frac{n}{2}[2a + (n-1)d]$.
+  \item Substitute $n=5$, $S_5=1600$, and $d=-20$.
+  \item Solve for $a$.
+  \item List all 5 terms.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+1600 = \frac{5}{2}[2a + (5-1)(-20)] \\
+3200 = 5[2a - 80] \\
+640 = 2a - 80 \\
+2a = 720 \\
+\implies a = 360 \text{ (Wait, check: 5a + 10d = 1600/2*2 is wrong)} \\
+1600 = \frac{5}{2}(2a - 80) \\
+\implies 640 = 2a - 80 \\
+\implies 2a = 720 \\
+\implies a = 360
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Application of AP}
+\vspace{0.3cm}
+
+\question \textbf{2.} Find the sum of all three-digit numbers which leave a remainder of 3 when divided by 5.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{98550}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the first three-digit number $a$ such that $a \equiv 3 \pmod 5$, which is 103.
+  \item Identify the last three-digit number $l$ such that $l \equiv 3 \pmod 5$, which is 998.
+  \item Determine the number of terms $n$ using $a_n = a + (n-1)d$ where $d=5$.
+  \item Calculate $n = \frac{l-a}{d} + 1$.
+  \item Calculate the sum using $S_n = \frac{n}{2}(a + l)$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+a = 103, l = 998, d = 5 \\
+998 = 103 + (n-1)5 \\
+895 = (n-1)5 \\
+n-1 = 179 \\
+\implies n = 180 \\
+S_{180} = \frac{180}{2}(103 + 998) = 90(1101) = 99090
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Sum of n terms}
+\vspace{0.3cm}
+
+\question \textbf{3.} Assertion (A): The common difference of the AP $5, 2, -1, -4, \dots$ is $-3$. Reason (R): The common difference $d$ of an AP $a_1, a_2, a_3, \dots$ is given by $d = a_{n} - a_{n-1}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify terms $a_1=5, a_2=2$.
+  \item Calculate $d = 2 - 5 = -3$.
+  \item Verify Reason definition of common difference.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = a_2 - a_1 = 2 - 5 = -3}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Common Difference}
+\vspace{0.3cm}
+
+\question \textbf{4.} Find the sum of the first 20 terms of the AP: $1, 6, 11, 16, \dots$
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{970}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify $a=1$, $d=5$, $n=20$.
+  \item Use the formula $S_n = \frac{n}{2}[2a + (n-1)d]$.
+  \item Substitute and calculate.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{S_{20} = \frac{20}{2}[2(1) + (20-1)5] = 10[2 + 19(5)] = 10[2 + 95] = 10[97] = 970}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Sum of first n terms}
+\vspace{0.3cm}
+
+\question \textbf{5.} How many two-digit numbers are divisible by 3?
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{30}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the first number $a=12$ and last number $l=99$.
+  \item Use $a_n = a + (n-1)d$ where $d=3$.
+  \item Solve for $n$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+99 = 12 + (n-1)3 \\
+\implies 87 = (n-1)3 \\
+\implies 29 = n-1 \\
+\implies n = 30
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Nth term of an AP}
+\vspace{0.3cm}
+
+\question \textbf{6.} If the sum of first $n$ terms of an AP is $S_n = 3n^2 + n$, find the common difference.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{6}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Find $a_1 = S_1 = 3(1)^2 + 1 = 4$.
+  \item Find $S_2 = 3(2)^2 + 2 = 14$.
+  \item Find $a_2 = S_2 - S_1 = 14 - 4 = 10$.
+  \item Calculate $d = a_2 - a_1 = 10 - 4 = 6$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{a_1 = 4, a_2 = 10, d = 10 - 4 = 6}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Relationship between sum and terms}
+\vspace{0.3cm}
+
+\question \textbf{7.} The fourth term of an AP is 11 and the sum of the fifth and seventh terms is 34. Find the common difference.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{3}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Write $a + 3d = 11$ (eq 1).
+  \item Write $(a+4d) + (a+6d) = 34 \implies 2a + 10d = 34 \implies a + 5d = 17$ (eq 2).
+  \item Subtract (eq 1) from (eq 2) to find $d$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+(a+5d) - (a+3d) = 17 - 11 \\
+\implies 2d = 6 \\
+\implies d = 3
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — System of linear equations in AP}
+\vspace{0.3cm}
+
+\question \textbf{8.} Assertion (A): The common difference of an A.P. where $a_n = 3n + 7$ is 3. Reason (R): The common difference of an A.P. given by $a_n = An + B$ is always $A$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Find the first term by substituting $n=1$: $a_1 = 3(1) + 7 = 10$.
+  \item Find the second term by substituting $n=2$: $a_2 = 3(2) + 7 = 13$.
+  \item Calculate common difference $d = a_2 - a_1 = 13 - 10 = 3$.
+  \item Since $a_n = An + B$ implies $a_{n+1} - a_n = A(n+1) + B - (An + B) = A$, the reason is correct.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = a_{n+1} - a_n = [3(n+1) + 7] - [3n + 7] = 3n + 3 + 7 - 3n - 7 = 3}
+\end{center}
+\hfill \textit{Arithmetic Progressions — General term of an A.P.}
+\vspace{0.3cm}
+
+\question \textbf{9.} Find the sum of all two-digit numbers which are divisible by 6.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{735}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the first and last two-digit numbers divisible by 6: $a = 12$, $l = 96$.
+  \item Use the formula $a_n = a + (n-1)d$ to find $n$: $96 = 12 + (n-1)6$.
+  \item Solve for $n$: $84 = (n-1)6 \implies n-1 = 14 \implies n = 15$.
+  \item Use $S_n = \frac{n}{2}(a + l)$ to find the sum: $S_{15} = \frac{15}{2}(12 + 96)$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{n = \frac{96-12}{6} + 1 = 15; S_{15} = \frac{15}{2}(108) = 15 \times 54 = 735}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Sum of n terms of an A.P.}
+\vspace{0.3cm}
+
+\question \textbf{10.} If the 4th term of an A.P. is 0, prove that its 25th term is triple its 11th term.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{a_{25} = 3a_{11}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Express the 4th term: $a + 3d = 0 \implies a = -3d$.
+  \item Express the 25th term: $a_{25} = a + 24d$.
+  \item Substitute $a = -3d$ into $a_{25}$: $a_{25} = -3d + 24d = 21d$.
+  \item Express the 11th term: $a_{11} = a + 10d = -3d + 10d = 7d$.
+  \item Compare: $21d = 3(7d) \implies a_{25} = 3a_{11}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+a_4 = a+3d=0 \\
+\implies a=-3d. \\
+a_{25} = a+24d = -3d+24d = 21d. \\
+a_{11} = a+10d = -3d+10d = 7d. \\
+21d = 3 \times 7d.
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — General term properties}
+\vspace{0.3cm}
+
+\question \textbf{11.} In an A.P., the sum of first $n$ terms is $S_n = 3n^2 + 5n$. Find the common difference of the A.P.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{6}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Find $S_1$ (first term $a_1$): $S_1 = 3(1)^2 + 5(1) = 8$.
+  \item Find $S_2$ (sum of first two terms): $S_2 = 3(2)^2 + 5(2) = 12 + 10 = 22$.
+  \item Find the second term $a_2 = S_2 - S_1 = 22 - 8 = 14$.
+  \item Find the common difference $d = a_2 - a_1 = 14 - 8 = 6$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{a_1 = 8, a_2 = 14, d = 14-8 = 6}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Sum of n terms}
+\vspace{0.3cm}
+
+\question \textbf{12.} Find the value of $k$ for which $k-1, k+3, 3k-1$ are in Arithmetic Progression.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{k = 5}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item For three terms $x, y, z$ to be in A.P., $2y = x + z$.
+  \item Set up the equation: $2(k+3) = (k-1) + (3k-1)$.
+  \item Expand: $2k + 6 = 4k - 2$.
+  \item Solve for $k$: $6 + 2 = 4k - 2k \implies 8 = 2k \implies k = 4$ wait, recalculate: $2k+6 = 4k-2 \implies 8 = 2k \implies k=4$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+2(k+3) = k-1+3k-1 \\
+2k+6 = 4k-2 \\
+8 = 2k \\
+k = 4
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Properties of A.P.}
+\vspace{0.3cm}
+
+\question \textbf{13.} Assertion (A): The common difference of the Arithmetic Progression 5, 2, -1, -4, ... is -3. Reason (R): The common difference 'd' of an AP is given by the formula $d = a_{n} - a_{n-1}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the terms of the AP: $a_1 = 5$, $a_2 = 2$.
+  \item Calculate the common difference using $d = a_2 - a_1 = 2 - 5 = -3$.
+  \item Verify the Assertion: The calculated difference is -3, so Assertion (A) is true.
+  \item Verify the Reason: The formula $d = a_n - a_{n-1}$ is the standard definition of the common difference, so Reason (R) is true.
+  \item Conclusion: Since R correctly explains how to find the common difference used in A, (A) is the correct option.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = a_2 - a_1 = 2 - 5 = -3}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Common Difference}
+\vspace{0.3cm}
+
+\question \textbf{14.} Assertion (A): The common difference of the Arithmetic Progression $5, 2, -1, -4, \dots$ is $-3$. Reason (R): The common difference $d$ of an AP is given by $d = a_{n} - a_{n-1}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the common difference using the first two terms: $d = a_2 - a_1 = 2 - 5 = -3$.
+  \item Verify the common difference using the next two terms: $d = a_3 - a_2 = -1 - 2 = -3$.
+  \item The formula for common difference $d = a_n - a_{n-1}$ is the standard definition in an AP.
+  \item Since both the assertion is true and the reason correctly explains the calculation of the common difference, option (A) is correct.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = a_2 - a_1 = 2 - 5 = -3 \text{ and } d = a_3 - a_2 = -1 - 2 = -3}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Common Difference}
+\vspace{0.3cm}
+
+\question \textbf{15.} Assertion (A): The common difference of the Arithmetic Progression $5, 2, -1, -4, \dots$ is $-3$. Reason (R): The common difference $d$ of an AP is given by $a_{n} - a_{n-1}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the common difference using the first two terms: $d = a_2 - a_1 = 2 - 5 = -3$.
+  \item Verify with the next terms: $d = a_3 - a_2 = -1 - 2 = -3$.
+  \item The formula for common difference is indeed $d = a_n - a_{n-1}$.
+  \item Since both statements are true and the reason correctly explains the assertion, the answer is (A).
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = a_2 - a_1 = 2 - 5 = -3}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Common Difference}
+\vspace{0.3cm}
+
+\question \textbf{16.} Assertion (A): The common difference of the Arithmetic Progression $5, 2, -1, -4, \dots$ is $-3$.
+Reason (R): The common difference $d$ of an AP is given by $d = a_{n} - a_{n-1}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the terms of the AP: $a_1 = 5$, $a_2 = 2$.
+  \item Calculate the common difference using the formula $d = a_2 - a_1$.
+  \item Substitute the values: $d = 2 - 5 = -3$.
+  \item Verify that the Assertion is true and the Reason correctly defines the method to find the common difference.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = a_2 - a_1 = 2 - 5 = -3}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Common Difference}
+\vspace{0.3cm}
+
+\question \textbf{17.} Assertion (A): The common difference of the Arithmetic Progression $5, 2, -1, -4, \dots$ is $-3$. Reason (R): The common difference $d$ of an Arithmetic Progression is given by $d = a_{n} - a_{n-1}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the common difference using the first two terms: $d = a_2 - a_1 = 2 - 5 = -3$.
+  \item Verify the result with the next terms: $d = a_3 - a_2 = -1 - 2 = -3$.
+  \item Confirm that the formula $d = a_n - a_{n-1}$ is the standard definition for an AP.
+  \item Conclude that both A and R are true and R correctly explains A.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+d = a_2 - a_1 = 2 - 5 = -3 \\
+\implies \text{Assertion is true}. \text{Reason is the standard definition of common difference} \\
+\implies \text{Reason is true}.
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Common Difference}
+\vspace{0.3cm}
+
+\question \textbf{18.} Assertion (A): The common difference of the Arithmetic Progression $5, 2, -1, -4, ...$ is $-3$. Reason (R): The common difference $d$ of an AP is given by $d = a_{n} - a_{n-1}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the common difference by subtracting the first term from the second term.
+  \item Check if the formula $d = a_2 - a_1$ matches the given definition in the Reason.
+  \item Verify $2 - 5 = -3$.
+  \item Conclude that both statements are true and the reason explains the assertion.
+\end{enumerate}
+\textbf{Derivation:}
+d = a\_2 - a\_1 = 2 - 5 = -3. Since the definition d = a\_n - a\_\{n-1\} is the standard formula for common difference, both A and R are true and R explains A.
+\hfill \textit{Arithmetic Progressions — Common Difference}
+\vspace{0.3cm}
+
+\question \textbf{19.} Assertion (A): The common difference of the Arithmetic Progression $5, 2, -1, -4, \dots$ is $-3$. Reason (R): The common difference $d$ of an Arithmetic Progression $a_1, a_2, a_3, \dots$ is given by $d = a_n - a_{n-1}$ for $n > 1$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the first two terms of the given AP: $a_1 = 5$ and $a_2 = 2$.
+  \item Calculate the common difference using the formula $d = a_2 - a_1$.
+  \item Substitute the values: $d = 2 - 5 = -3$.
+  \item Confirm that the Assertion is true and the Reason provides the correct formula used to derive it.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = a_2 - a_1 = 2 - 5 = -3}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Common Difference}
+\vspace{0.3cm}
+
+\question \textbf{20.} Assertion (A): The common difference of the Arithmetic Progression 5, 2, -1, -4, ... is -3. Reason (R): The common difference $d$ of an Arithmetic Progression $a_1, a_2, a_3, ...$ is given by $d = a_{n} - a_{n-1}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the common difference from the sequence: $d = a_2 - a_1 = 2 - 5 = -3$.
+  \item Verify the definition of common difference provided in the Reason.
+  \item Since the calculation matches the statement and the definition is the standard mathematical formula, both A and R are true and R explains A.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = a_2 - a_1 = 2 - 5 = -3. \text{ Formula: } d = a_n - a_{n-1} \text{ holds true.}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Common Difference}
+\vspace{0.3cm}
+
+\question \textbf{21.} Assertion (A): The common difference of the Arithmetic Progression $5, 2, -1, -4, ...$ is $-3$. Reason (R): The common difference $d$ of an AP is given by $d = a_{n} - a_{n-1}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the common difference by subtracting the first term from the second term.
+  \item Check if the formula stated in the reason is the definition of the common difference for an AP.
+  \item Verify the calculation: $2 - 5 = -3$.
+\end{enumerate}
+\textbf{Derivation:}
+d = a\_2 - a\_1 = 2 - 5 = -3. Reason is the standard definition of common difference.
+\hfill \textit{Arithmetic Progressions — Common Difference}
+\vspace{0.3cm}
+
+\question \textbf{22.} Assertion (A): The common difference of the Arithmetic Progression $5, 2, -1, -4, ...$ is $-3$.
+Reason (R): The common difference $d$ of an Arithmetic Progression is given by $d = a_{n} - a_{n-1}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the terms of the AP: $a_1 = 5, a_2 = 2$.
+  \item Calculate the common difference using the formula $d = a_2 - a_1$.
+  \item Substitute values: $d = 2 - 5 = -3$.
+  \item Verify the reason: The formula $d = a_n - a_{n-1}$ is the standard definition of common difference in an AP.
+  \item Since both statements are true and the reason correctly explains the assertion, the answer is (A).
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = a_2 - a_1 = 2 - 5 = -3}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Common Difference}
+\vspace{0.3cm}
+
+\question \textbf{23.} Assertion (A): The sum of the first $n$ terms of an arithmetic progression is given by $S_n = \frac{n}{2}[2a + (n-1)d]$, where $a$ is the first term and $d$ is the common difference.
+Reason (R): The sum of the first $n$ terms of an AP can be calculated as $S_n = \frac{n}{2}(\text{first term} + \text{last term})$.
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The formula $S_n = \frac{n}{2}[2a + (n-1)d]$ is the standard formula for the sum of $n$ terms of an AP, making Assertion (A) true.
+  \item The formula $S_n = \frac{n}{2}(a + l)$ where $l$ is the last term ($a_n$) is also a valid and standard formula for the sum of $n$ terms, making Reason (R) true.
+  \item While both are true, Reason (R) is a different formulaic representation and does not act as the logical explanation for the derivation of the formula provided in the Assertion.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+S_n = \frac{n}{2}(a + a_n) \\
+\implies S_n = \frac{n}{2}(a + a + (n-1)d) = \frac{n}{2}(2a + (n-1)d)
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — sum of n terms of an AP}
+\vspace{0.3cm}
+
+\question \textbf{24.} Assertion (A): The common difference of the Arithmetic Progression $5, 2, -1, -4, \dots$ is $-3$. 
+Reason (R): The common difference $d$ of an AP $a_1, a_2, a_3, \dots$ is given by $d = a_{n} - a_{n-1}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check the validity of Assertion (A): Calculate $d = a_2 - a_1 = 2 - 5 = -3$. The assertion is true.
+  \item Check the validity of Reason (R): The definition of common difference $d = a_n - a_{n-1}$ is the standard formula used in NCERT. The reason is true.
+  \item Determine if R explains A: Since the common difference formula is exactly what was used to verify the assertion, R is the correct explanation of A.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+d = a_2 - a_1 = 2 - 5 = -3 \\
+\implies \text{Assertion is true}. \text{Formula } d = a_n - a_{n-1} \text{ is correct definition} \\
+\implies \text{Reason is true}.
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Common Difference}
+\vspace{0.3cm}
+
+\question \textbf{25.} Assertion (A): If the $n^{th}$ term of an Arithmetic Progression is given by $a_n = 3 + 4n$, then the common difference of the AP is 4. 
+Reason (R): The common difference $d$ of an AP is given by the difference between consecutive terms $a_n - a_{n-1}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Find the first term $a_1$ by substituting $n=1$ in $a_n = 3 + 4n$.
+  \item Find the second term $a_2$ by substituting $n=2$ in $a_n = 3 + 4n$.
+  \item Calculate the common difference $d = a_2 - a_1$.
+  \item Observe that the coefficient of $n$ in a linear expression of $n$ represents the common difference.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+a_1 = 3 + 4(1) = 7 \\
+a_2 = 3 + 4(2) = 11 \\
+d = a_2 - a_1 = 11 - 7 = 4 \\
+\text{Since } d = 4, \text{ Assertion is true.} \\
+\text{The formula } d = a_n - a_{n-1} \text{ is the standard definition, so Reason is true and is the correct explanation.}
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — general term of an AP}
+\vspace{0.3cm}
+
+\question \textbf{26.} Assertion (A): The sum of the first $n$ terms of an arithmetic progression is given by $S_n = 3n^2 + 5n$. The common difference of this AP is 6.
+Reason (R): For an AP where $S_n = an^2 + bn$, the common difference is always $2a$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item To find the common difference from the sum of $n$ terms, calculate $S_1$ and $S_2$.
+  \item $S_1 = a_1 = 3(1)^2 + 5(1) = 8$.
+  \item $S_2 = a_1 + a_2 = 3(2)^2 + 5(2) = 12 + 10 = 22$.
+  \item Calculate $a_2 = S_2 - S_1 = 22 - 8 = 14$.
+  \item Common difference $d = a_2 - a_1 = 14 - 8 = 6$. Assertion is true.
+  \item For a general sum $S_n = An^2 + Bn$, $a_n = S_n - S_{n-1} = A(n^2 - (n-1)^2) + B(n - (n-1)) = A(2n-1) + B = 2An - A + B$. Since $a_n$ is a linear function of $n$, the common difference is the coefficient of $n$, which is $2A$. Reason is true and correctly explains the assertion.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+S_n = 3n^2 + 5n \\
+a_n = S_n - S_{n-1} \\
+a_n = 3n^2 + 5n - [3(n-1)^2 + 5(n-1)] \\
+a_n = 3n^2 + 5n - [3(n^2 - 2n + 1) + 5n - 5] \\
+a_n = 3n^2 + 5n - 3n^2 + 6n - 3 - 5n + 5 \\
+a_n = 6n + 2 \\
+d = a_n - a_{n-1} = (6n + 2) - (6(n-1) + 2) = 6
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Sum of first n terms}
+\vspace{0.3cm}
+
+\question \textbf{27.} Assertion (A): The common difference of the Arithmetic Progression $5, 2, -1, -4, ...$ is $-3$. 
+Reason (R): The common difference $d$ of an Arithmetic Progression is calculated by the formula $d = a_{n} - a_{n-1}$ for any $n > 1$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the terms $a_1 = 5$ and $a_2 = 2$.
+  \item Calculate the common difference using $d = a_2 - a_1$.
+  \item Verify the result $d = 2 - 5 = -3$.
+  \item Confirm that the formula in Reason (R) is the definition of common difference and correctly explains the calculation in (A).
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = a_2 - a_1 = 2 - 5 = -3. \text{ Formula } d = a_n - a_{n-1} \text{ is standard.}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Common Difference}
+\vspace{0.3cm}
+
+\question \textbf{28.} If $\sin \theta = \frac{3}{5}$, then the value of $\cos \theta$ is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the identity $\sin^2 \theta + \cos^2 \theta = 1$.
+  \item Substitute the given value: $(\frac{3}{5})^2 + \cos^2 \theta = 1$.
+  \item Solve for $\cos^2 \theta = 1 - \frac{9}{25} = \frac{16}{25}$.
+  \item Take the square root to find $\cos \theta$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\cos \theta = \sqrt{1 - \sin^2 \theta} = \sqrt{1 - (\frac{3}{5})^2} = \sqrt{1 - \frac{9}{25}} = \sqrt{\frac{16}{25}} = \frac{4}{5}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{29.} The value of $\tan 30^\circ \cdot \cot 30^\circ$ is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall the trigonometric identity $\tan \theta \cdot \cot \theta = 1$ for any angle $\theta$.
+  \item Alternatively, substitute $\tan 30^\circ = \frac{1}{\sqrt{3}}$ and $\cot 30^\circ = \sqrt{3}$.
+  \item Multiply the values to get the result.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\tan 30^\circ \cdot \cot 30^\circ = \frac{1}{\sqrt{3}} \times \sqrt{3} = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{30.} If $A = 60^\circ$ and $B = 30^\circ$, then the value of $\sin(A+B)$ is:
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the sum of the angles: $A + B = 60^\circ + 30^\circ = 90^\circ$.
+  \item Evaluate the sine of the resultant angle: $\sin 90^\circ$.
+  \item Recall the standard trigonometric table value for $\sin 90^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\sin(60^\circ + 30^\circ) = \sin 90^\circ = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{31.} Assertion (A): The value of $\sin \theta$ is always less than 1. Reason (R): The value of $\sin \theta$ can never exceed 1 for any real value of $\theta$.
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Evaluate the assertion: The value of $\sin \theta$ can be equal to 1 when $\theta = 90^\circ$. Therefore, the statement 'always less than 1' is false.
+  \item Evaluate the reason: The range of $\sin \theta$ is $[-1, 1]$, meaning it can reach 1 but never exceed it. The reason statement is true.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Assertion: } \sin(90^\circ) = 1, \text{ so } \sin \theta \le 1. \text{ Reason: } -1 \le \sin \theta \le 1.}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{32.} Assertion (A): If $\tan \theta = \cot \theta$, then $\theta = 45^\circ$. Reason (R): $\tan \theta$ and $\cot \theta$ are reciprocal to each other.
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Evaluate the assertion: $\tan \theta = \cot \theta \implies \tan \theta = \frac{1}{\tan \theta} \implies \tan^2 \theta = 1 \implies \tan \theta = 1$ (for acute $\theta$). Thus, $\theta = 45^\circ$. Assertion is true.
+  \item Evaluate the reason: By definition, $\cot \theta = \frac{1}{\tan \theta}$. Reason is true.
+  \item Check if R explains A: While both are true, the assertion is solved by equating the ratios, not simply by the definition of reciprocals alone, though they are related.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan \theta = \frac{1}{\tan \theta} \\
+\implies \tan^2 \theta = 1 \\
+\implies \theta = 45^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Complementary Angles}
+\vspace{0.3cm}
+
+\question \textbf{33.} If $3 \cot \theta = 2$, find the value of $\frac{4 \sin \theta - 3 \cos \theta}{2 \sin \theta + 6 \cos \theta}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\frac{1}{3}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Given $3 \cot \theta = 2$, so $\cot \theta = \frac{2}{3} = \frac{\cos \theta}{\sin \theta}$.
+  \item Divide numerator and denominator of the expression by $\sin \theta$ to get $\frac{4 - 3 \cot \theta}{2 + 6 \cot \theta}$.
+  \item Substitute $\cot \theta = \frac{2}{3}$ and simplify.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\frac{4 \sin \theta - 3 \cos \theta}{2 \sin \theta + 6 \cos \theta} = \frac{4 - 3 \cot \theta}{2 + 6 \cot \theta} = \frac{4 - 3(2/3)}{2 + 6(2/3)} = \frac{4-2}{2+4} = \frac{2}{6} = \frac{1}{3}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{34.} Evaluate $\frac{\cos 45^\circ}{\sec 30^\circ + \text{cosec } 30^\circ}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\frac{3\sqrt{2} - \sqrt{6}}{8}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Substitute the standard values: $\cos 45^\circ = \frac{1}{\sqrt{2}}$, $\sec 30^\circ = \frac{2}{\sqrt{3}}$, and $\text{cosec } 30^\circ = 2$.
+  \item Simplify the denominator and rationalize the expression.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\frac{1/\sqrt{2}}{2/\sqrt{3} + 2} = \frac{1/\sqrt{2}}{(2 + 2\sqrt{3})/\sqrt{3}} = \frac{\sqrt{3}}{\sqrt{2}(2+2\sqrt{3})} = \frac{\sqrt{3}}{2\sqrt{2} + 2\sqrt{6}} = \frac{\sqrt{3}(2\sqrt{6} - 2\sqrt{2})}{8 - 24} = \frac{2\sqrt{18} - 2\sqrt{6}}{16} = \frac{6\sqrt{2} - 2\sqrt{6}}{16} = \frac{3\sqrt{2} - \sqrt{6}}{8}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{35.} If $7 \sin^2 \theta + 3 \cos^2 \theta = 4$, show that $\tan \theta = \frac{1}{\sqrt{3}}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\tan \theta = \frac{1}{\sqrt{3}}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the identity $\sin^2 \theta + \cos^2 \theta = 1$ to replace $\cos^2 \theta$.
+  \item Simplify the equation to isolate $\sin^2 \theta$ and $\cos^2 \theta$.
+  \item Divide by $\cos^2 \theta$ to get $\tan^2 \theta$.
+  \item Solve for $\tan \theta$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+7 \sin^2 \theta + 3(1 - \sin^2 \theta) = 4 \\
+7 \sin^2 \theta + 3 - 3 \sin^2 \theta = 4 \\
+4 \sin^2 \theta = 1 \\
+\sin^2 \theta = \frac{1}{4} \\
+\implies \cos^2 \theta = 1 - \frac{1}{4} = \frac{3}{4} \\
+\tan^2 \theta = \frac{\sin^2 \theta}{\cos^2 \theta} = \frac{1/4}{3/4} = \frac{1}{3} \\
+\tan \theta = \frac{1}{\sqrt{3}}
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{36.} Evaluate the following expression: $\frac{\cos 58^\circ}{\sin 32^\circ} + \frac{\sin 22^\circ}{\cos 68^\circ} - \frac{\cos 38^\circ \csc 52^\circ}{\tan 18^\circ \tan 35^\circ \tan 60^\circ \tan 72^\circ \tan 55^\circ}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{1 - \frac{1}{\sqrt{3}}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use complementary angle relations $\cos(90^\circ - \theta) = \sin \theta$ and $\tan(90^\circ - \theta) = \cot \theta$.
+  \item Simplify the individual terms in the expression.
+  \item Substitute the value of $\tan 60^\circ = \sqrt{3}$ and simplify the final result.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{\cos(90^\circ-32^\circ)}{\sin 32^\circ} + \frac{\sin(90^\circ-68^\circ)}{\cos 68^\circ} - \frac{\cos 38^\circ \cdot (1/\sin 52^\circ)}{\tan 18^\circ \tan 35^\circ \sqrt{3} \cot 18^\circ \cot 35^\circ} \\
+= \frac{\sin 32^\circ}{\sin 32^\circ} + \frac{\cos 68^\circ}{\cos 68^\circ} - \frac{\cos 38^\circ / \cos 38^\circ}{\sqrt{3}} \\
+= 1 + 1 - \frac{1}{\sqrt{3}} = 2 - \frac{1}{\sqrt{3}}
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Complementary Angles}
+\vspace{0.3cm}
+
+\question \textbf{37.} Prove the following trigonometric identity: $\frac{\cos \theta - \sin \theta + 1}{\cos \theta + \sin \theta - 1} = \csc \theta + \cot \theta$, using the identity $\csc^2 \theta = 1 + \cot^2 \theta$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\csc \theta + \cot \theta}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Divide the numerator and the denominator of the Left Hand Side (LHS) by $\sin \theta$.
+  \item Recall that $\frac{\cos \theta}{\sin \theta} = \cot \theta$, $\frac{\sin \theta}{\sin \theta} = 1$, and $\frac{1}{\sin \theta} = \csc \theta$.
+  \item Rearrange the terms to group $\csc \theta$ and $\cot \theta$ together.
+  \item Use the identity $1 = \csc^2 \theta - \cot^2 \theta$ to substitute the '1' in the denominator.
+  \item Factorize the denominator using the difference of squares identity $a^2 - b^2 = (a-b)(a+b)$.
+  \item Cancel the common term in the numerator and denominator to arrive at the RHS.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+LHS = \frac{\frac{\cos \theta}{\sin \theta} - \frac{\sin \theta}{\sin \theta} + \frac{1}{\sin \theta}}{\frac{\cos \theta}{\sin \theta} + \frac{\sin \theta}{\sin \theta} - \frac{1}{\sin \theta}} = \frac{\cot \theta - 1 + \csc \theta}{\cot \theta + 1 - \csc \theta} \\
+= \frac{\cot \theta + \csc \theta - (\csc^2 \theta - \cot^2 \theta)}{\cot \theta - \csc \theta + 1} \\
+= \frac{(\cot \theta + \csc \theta) - [(\csc \theta - \cot \theta)(\csc \theta + \cot \theta)]}{\cot \theta - \csc \theta + 1} \\
+= \frac{(\cot \theta + \csc \theta) [1 - (\csc \theta - \cot \theta)]}{\cot \theta - \csc \theta + 1} \\
+= \frac{(\cot \theta + \csc \theta) [1 - \csc \theta + \cot \theta]}{\cot \theta - \csc \theta + 1} \\
+= \cot \theta + \csc \theta = RHS
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{38.} A tower stands vertically on the ground. From a point on the ground, which is $15$ m away from the foot of the tower, the angle of elevation of the top of the tower is found to be $60^\circ$. The height of the tower is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the height of the tower be $h$.
+  \item Given distance from foot = $15$ m.
+  \item In $\triangle ABC$, $\tan(60^\circ) = \frac{\text{height}}{\text{base}}$.
+  \item $\sqrt{3} = \frac{h}{15}$
+  \item $h = 15\sqrt{3}$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan(60^\circ) = \frac{h}{15} \\
+\implies \sqrt{3} = \frac{h}{15} \\
+\implies h = 15\sqrt{3} \text{ m}
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Heights and Distances}
+\vspace{0.3cm}
+
+\question \textbf{39.} The angle of elevation of the top of a pole from a point on the ground is $30^\circ$. If the pole is $10$ m high, the distance of the point from the foot of the pole is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the distance be $x$.
+  \item Given height = $10$ m, angle = $30^\circ$.
+  \item $\tan(30^\circ) = \frac{10}{x}$
+  \item $\frac{1}{\sqrt{3}} = \frac{10}{x}$
+  \item $x = 10\sqrt{3}$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan(30^\circ) = \frac{10}{x} \\
+\implies \frac{1}{\sqrt{3}} = \frac{10}{x} \\
+\implies x = 10\sqrt{3}
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Heights and Distances}
+\vspace{0.3cm}
+
+\question \textbf{40.} If the length of a string of a kite flying at a height of $60$ m from the ground is $120$ m, then the angle of inclination of the string with the ground is:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the angle be $\theta$.
+  \item Height (opposite) = $60$ m, Hypotenuse = $120$ m.
+  \item $\sin(\theta) = \frac{60}{120}$
+  \item $\sin(\theta) = \frac{1}{2}$
+  \item $\theta = 30^\circ$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sin(\theta) = \frac{60}{120} = \frac{1}{2} \\
+\implies \theta = 30^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Heights and Distances}
+\vspace{0.3cm}
+
+\end{questions}
+
+\end{document}

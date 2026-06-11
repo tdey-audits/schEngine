@@ -1,0 +1,158 @@
+{
+  "batch_id": "20260609_111436_d58629f1",
+  "generated_at": "2026-06-09T11:14:36.797697",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Pair of Linear Equations in Two Variables",
+  "subtopic": "equations reducible to linear form",
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A water treatment plant uses two types of filtration units, Type A and Type B. The efficiency of the plant is modelled by the following equations involving the flow rates $x$ (in litres/sec) and $y$ (in litres/sec) through these units. The plant operator observes that the system follows the relations: $\\frac{2}{x} + \\frac{3}{y} = 13$ and $\\frac{5}{x} - \\frac{4}{y} = -2$, where $x, y \\neq 0$.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "If we substitute $u = \\frac{1}{x}$ and $v = \\frac{1}{y}$, what is the resulting linear equation from the first condition?",
+          "answer": "(A)",
+          "options": [
+            "(A) $2u + 3v = 13$",
+            "(B) $3u + 2v = 13$",
+            "(C) $2u + 3v = 1$",
+            "(D) $13u + 13v = 1$"
+          ]
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Find the values of $u$ and $v$.",
+          "answer": "$u = 2, v = 3$",
+          "solution": {
+            "steps": [
+              "Multiply the first equation $2u + 3v = 13$ by $4$ to get $8u + 12v = 52$.",
+              "Multiply the second equation $5u - 4v = -2$ by $3$ to get $15u - 12v = -6$.",
+              "Add the two new equations: $(8u + 15u) + (12v - 12v) = 52 - 6$.",
+              "$23u = 46 \\Rightarrow u = 2$.",
+              "Substitute $u=2$ into $2u + 3v = 13$: $2(2) + 3v = 13 \\Rightarrow 4 + 3v = 13 \\Rightarrow 3v = 9 \\Rightarrow v = 3$."
+            ],
+            "derivation": "$8u + 12v = 52 \\\\ 15u - 12v = -6 \\\\ 23u = 46 \\\\ u = 2 \\\\ 2(2) + 3v = 13 \\\\ 3v = 9 \\\\ v = 3$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "mcq",
+          "question": "What are the values of the flow rates $x$ and $y$?",
+          "answer": "(B)",
+          "options": [
+            "(A) $x = 3, y = 2$",
+            "(B) $x = \\frac{1}{2}, y = \\frac{1}{3}$",
+            "(C) $x = 2, y = 3$",
+            "(D) $x = \\frac{1}{3}, y = \\frac{1}{2}$"
+          ]
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "If the plant introduces a new constraint $\\frac{1}{x} + \\frac{1}{y} = k$ such that the system remains consistent with the previous solution, find the value of $k$.",
+          "answer": "$5$",
+          "solution": {
+            "steps": [
+              "We found $u = \\frac{1}{x} = 2$ and $v = \\frac{1}{y} = 3$.",
+              "The constraint is $u + v = k$.",
+              "Thus, $k = 2 + 3 = 5$."
+            ],
+            "derivation": "u = 2, v = 3 \\\\ k = u + v \\\\ k = 2 + 3 \\\\ k = 5"
+          }
+        }
+      ],
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "equations reducible to linear form",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T11:14:36.797386",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_111436_0d6478_01"
+    }
+  ]
+}

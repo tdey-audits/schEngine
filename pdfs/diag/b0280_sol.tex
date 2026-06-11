@@ -1,0 +1,831 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag Solutions} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{questions}
+\question \textbf{1.} Prove that the angle between the two tangents drawn from an external point to a circle is supplementary to the angle subtended by the line segment joining the points of contact at the centre.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Sum is} 180 \text{degrees}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let P be the external point and A, B be points of contact.
+  \item Consider the quadrilateral OAPB.
+  \item Use the property that the sum of angles in a quadrilateral is $360^\circ$ and tangents are perpendicular to radii.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\angle OAP = 90^\circ, \angle OBP = 90^\circ. \angle APB + \angle OAP + \angle OBP + \angle AOB = 360^\circ \\
+\Rightarrow \angle APB + 90^\circ + 90^\circ + \angle AOB = 360^\circ \\
+\Rightarrow \angle APB + \angle AOB = 180^\circ.
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{2.} If the circumference of a circle is $176\text{ cm}$, then its radius is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the formula for circumference $C = 2\pi r$.
+  \item Substitute $C = 176$ and $\pi = \frac{22}{7}$.
+  \item Solve for $r$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+176 = 2 \times \frac{22}{7} \times r \\
+\implies 176 = \frac{44}{7} \times r \\
+\implies r = \frac{176 \times 7}{44} = 4 \times 7 = 28\text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Circumference of a Circle}
+\vspace{0.3cm}
+
+\question \textbf{3.} The area of a circle whose diameter is $14\text{ cm}$ is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Find the radius $r = \frac{d}{2} = \frac{14}{2} = 7\text{ cm}$.
+  \item Use the area formula $A = \pi r^2$.
+  \item Substitute $r = 7$ and compute.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{A = \frac{22}{7} \times 7^2 = \frac{22}{7} \times 49 = 22 \times 7 = 154\text{ cm}^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Circle}
+\vspace{0.3cm}
+
+\question \textbf{4.} The area of a quadrant of a circle with radius $r$ is:
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item A quadrant is one-fourth of a circle.
+  \item Area of circle = $\pi r^2$.
+  \item Area of quadrant = $\frac{1}{4} \pi r^2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Area} = \frac{90^\circ}{360^\circ} \times \pi r^2 = \frac{1}{4} \pi r^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Sector}
+\vspace{0.3cm}
+
+\question \textbf{5.} If the perimeter of a semi-circular protractor is $36\text{ cm}$, its diameter is:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Perimeter of a semi-circle is $\pi r + 2r = r(\pi + 2)$.
+  \item Set $r(\frac{22}{7} + 2) = 36$.
+  \item Solve for $r$ and then diameter $d = 2r$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+r(\frac{22+14}{7}) = 36 \\
+\implies r(\frac{36}{7}) = 36 \\
+\implies r = 7. \text{ Thus, } d = 2 \times 7 = 14\text{ cm}.
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Perimeter of Semi-circle}
+\vspace{0.3cm}
+
+\question \textbf{6.} The area of a sector of a circle with radius $6\text{ cm}$ and central angle $60^\circ$ is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use formula $A = \frac{\theta}{360} \times \pi r^2$.
+  \item Substitute $\theta = 60$, $r = 6$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{A = \frac{60}{360} \times \pi \times 6^2 = \frac{1}{6} \times 36\pi = 6\pi\text{ cm}^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Sector}
+\vspace{0.3cm}
+
+\question \textbf{7.} Assertion (A): The area of a circle with radius $7$ cm is $154$ cm$^2$. Reason (R): The area of a circle is given by the formula $\pi r^2$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate area using $\pi r^2$
+  \item Area = $(22/7) \times 7 \times 7 = 154$ cm$^2$
+  \item Both statements are true and R is the correct explanation
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Area} = \pi r^2 = \frac{22}{7} \times 7^2 = 154}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Circle}
+\vspace{0.3cm}
+
+\question \textbf{8.} Assertion (A): The circumference of a circle is $44$ cm, then its radius is $7$ cm. Reason (R): Circumference of a circle is $2\pi r$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use $2\pi r = 44$
+  \item $2 \times (22/7) \times r = 44$
+  \item $r = (44 \times 7) / 44 = 7$ cm
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+2 \times \frac{22}{7} \times r = 44 \\
+\implies r = 7
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Circumference of a Circle}
+\vspace{0.3cm}
+
+\question \textbf{9.} Assertion (A): The area of a semicircle of radius $r$ is $\frac{1}{2}\pi r^2$. Reason (R): A semicircle is half of a circle.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Area of circle is $\pi r^2$
+  \item Semicircle is exactly half, so area is $(1/2)\pi r^2$
+  \item Both statements are true and R is the correct explanation
+\end{enumerate}
+\textbf{Derivation:}
+Area\_\{semicircle\} = $\frac{1}{2} \times$ Area\_\{circle\} = $\frac{1}{2}\pi r^2$
+\hfill \textit{Areas Related to Circles — Area of Semicircle}
+\vspace{0.3cm}
+
+\question \textbf{10.} Assertion (A): If the perimeter of a circle is equal to that of a square, then the area of the circle is greater than the area of the square. Reason (R): The area of a circle with a given perimeter is always the maximum possible area for any plane figure.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let perimeter be $P$. Circle $r = P/2$, Area = $P^2/4$. Square side = $P/4$, Area = $P^2/16$.
+  \item Since $4\pi \approx 12.56 < 16$, $P^2/12.56 > P^2/16$.
+  \item Both statements are correct.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{A_{\text{circle}} = \frac{P^2}{4\pi} > A_{\text{square}} = \frac{P^2}{16}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Comparison of Areas}
+\vspace{0.3cm}
+
+\question \textbf{11.} Assertion (A): The length of an arc of a sector of a circle with radius $r$ and angle $\theta$ is $\frac{\theta}{360} \times 2\pi r$. Reason (R): The circumference of a circle is $2\pi r$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item An arc is a fraction of the circumference determined by the angle $\theta$.
+  \item The fraction is $\theta/360$. Multiply by total circumference $2\pi r$.
+  \item Both are true and R explains the basis of the formula.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Arc Length} = \frac{\theta}{360} \times 2\pi r}
+\end{center}
+\hfill \textit{Areas Related to Circles — Length of an Arc}
+\vspace{0.3cm}
+
+\question \textbf{12.} Find the area of a sector of a circle with radius $6 \text{ cm}$ if the angle of the sector is $60^\circ$. (Use $\pi = \frac{22}{7}$)
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\frac{132}{7} \text{ cm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the formula for the area of a sector as $\frac{\theta}{360^\circ} \times \pi r^2$.
+  \item Substitute $r = 6$ and $\theta = 60^\circ$ into the formula and simplify.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Area} = \frac{60}{360} \times \frac{22}{7} \times 6^2 = \frac{1}{6} \times \frac{22}{7} \times 36 = 6 \times \frac{22}{7} = \frac{132}{7} \text{ cm}^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of Sector}
+\vspace{0.3cm}
+
+\question \textbf{13.} The length of the minute hand of a clock is $14 \text{ cm}$. Find the area swept by the minute hand in $5$ minutes.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\frac{154}{3} \text{ cm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the angle swept by the minute hand in 1 minute ($360^\circ/60 = 6^\circ$), so for 5 minutes, $\theta = 30^\circ$.
+  \item Apply the area of sector formula with $r = 14$ and $\theta = 30^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Area} = \frac{30}{360} \times \frac{22}{7} \times 14^2 = \frac{1}{12} \times \frac{22}{7} \times 196 = \frac{1}{12} \times 22 \times 28 = \frac{154}{3} \text{ cm}^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Application of Sector Area}
+\vspace{0.3cm}
+
+\question \textbf{14.} Find the area of a quadrant of a circle whose circumference is $44 \text{ cm}$. (Use $\pi = \frac{22}{7}$)
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{38.5 \text{ cm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the circumference formula $2\pi r = 44$ to find the radius $r$.
+  \item Calculate the area of the quadrant using $\frac{1}{4} \pi r^2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+2 \times \frac{22}{7} \times r = 44 \\
+\implies r = 7 \text{ cm}. \text{ Area} = \frac{1}{4} \times \frac{22}{7} \times 7^2 = \frac{1}{4} \times 22 \times 7 = 38.5 \text{ cm}^2
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of Circle Parts}
+\vspace{0.3cm}
+
+\question \textbf{15.} If the sum of the areas of two circles with radii $R_1$ and $R_2$ is equal to the area of a circle of radius $R$, prove that $R_1^2 + R_2^2 = R^2$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{R_1^2 + R_2^2 = R^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Write the equation based on the given condition: $\pi R_1^2 + \pi R_2^2 = \pi R^2$.
+  \item Divide the entire equation by $\text{ }$ to obtain the result.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\pi R_1^2 + \pi R_2^2 = \pi R^2 \\
+\implies \pi(R_1^2 + R_2^2) = \pi R^2 \\
+\implies R_1^2 + R_2^2 = R^2
+\end{aligned}}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of Circle}
+\vspace{0.3cm}
+
+\question \textbf{16.} A chord of a circle of radius $10 \text{ cm}$ subtends a right angle at the center. Find the area of the corresponding minor segment. (Use $\pi = 3.14$)
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{28.5 \text{ cm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the area of the sector: $\frac{90}{360} \times \pi r^2$.
+  \item Subtract the area of the triangle $\frac{1}{2} r^2 \sin(90^\circ)$ from the sector area.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Area} = \frac{90}{360} \times 3.14 \times 100 - \frac{1}{2} \times 10 \times 10 = 78.5 - 50 = 28.5 \text{ cm}^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of Segment}
+\vspace{0.3cm}
+
+\question \textbf{17.} Find the area of the shaded region in a circle of radius $14$ cm, where a sector subtends an angle of $60^{\circ}$ at the center. (Use $\pi = \frac{22}{7}$)
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{102.67 cm^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the formula for the area of a sector: $A = \frac{\theta}{360^{\circ}} \times \pi r^2$.
+  \item Substitute the given values: $\theta = 60^{\circ}$ and $r = 14$ cm.
+  \item Calculate the area: $\frac{60}{360} \times \frac{22}{7} \times 14 \times 14$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Area} = \frac{60}{360} \times \frac{22}{7} \times 14 \times 14 = \frac{1}{6} \times 22 \times 2 \times 14 = \frac{616}{6} = 102.67 \text{ cm}^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Sector}
+\vspace{0.3cm}
+
+\question \textbf{18.} The length of the minute hand of a clock is $14$ cm. Find the area swept by the minute hand in $5$ minutes.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\frac{154}{3} cm^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Determine the angle swept by the minute hand in $60$ minutes ($360^{\circ}$), so in $1$ minute it is $6^{\circ}$.
+  \item Calculate the angle for $5$ minutes: $5 \times 6^{\circ} = 30^{\circ}$.
+  \item Apply the sector area formula with $r = 14$ cm and $\theta = 30^{\circ}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Area} = \frac{30}{360} \times \frac{22}{7} \times 14 \times 14 = \frac{1}{12} \times 22 \times 2 \times 14 = \frac{616}{12} = \frac{154}{3} \text{ cm}^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Applications of Sector Area}
+\vspace{0.3cm}
+
+\question \textbf{19.} Find the area of a quadrant of a circle whose circumference is $44$ cm.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{38.5 cm^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the circumference formula $2\pi r = 44$ to find the radius.
+  \item Solve for $r$: $r = \frac{44}{2\pi} = \frac{22}{\pi} = 7$ cm.
+  \item Calculate the area of the quadrant: $\frac{1}{4} \pi r^2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{r = \frac{44 \times 7}{2 \times 22} = 7 \text{ cm}. \text{ Area} = \frac{1}{4} \times \frac{22}{7} \times 7 \times 7 = \frac{154}{4} = 38.5 \text{ cm}^2}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of a Quadrant}
+\vspace{0.3cm}
+
+\question \textbf{20.} A chord of a circle of radius $10$ cm subtends a right angle at the center. Find the area of the corresponding minor segment. (Use $\pi = 3.14$)
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{28.5 cm^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Find area of the sector: $\frac{90}{360} \times \pi r^2$.
+  \item Find area of the triangle formed by the chord and radii: $\frac{1}{2} \times r \times r$.
+  \item Subtract the triangle area from the sector area.
+\end{enumerate}
+\textbf{Derivation:}
+Area\_\{sector\} = 0.25 $\times 3.14 \times 100 = 78.5. \text{ Area}_{tri} = 0.5 \times 10 \times 10 = 50. \text{ Area}_{seg} = 78.5 - 50 = 28.5 \text{ cm}^2$
+\hfill \textit{Areas Related to Circles — Area of a Segment}
+\vspace{0.3cm}
+
+\question \textbf{21.} The radii of two circles are $8$ cm and $6$ cm respectively. Find the radius of the circle having area equal to the sum of the areas of the two circles.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{10 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Set up the equation: $\pi R^2 = \pi r_1^2 + \pi r_2^2$.
+  \item Simplify to $R^2 = r_1^2 + r_2^2$.
+  \item Substitute values $r_1=8, r_2=6$ and solve for $R$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{R^2 = 8^2 + 6^2 = 64 + 36 = 100. \text{ Therefore, } R = \sqrt{100} = 10 \text{ cm}.}
+\end{center}
+\hfill \textit{Areas Related to Circles — Areas of Circles}
+\vspace{0.3cm}
+
+\question \textbf{22.} A chord $AB$ of a circle of radius $15 \text{ cm}$ subtends an angle of $60^\circ$ at the centre. Find the areas of the corresponding minor and major segments of the circle. (Use $\pi = 3.14$ and $\sqrt{3} = 1.73$)
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Area of minor segment} = 20.4375 \text{ cm}^2; \text{Area of major segment} = 686.0625 \text{ cm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the radius $r = 15$ and central angle $\theta = 60^\circ$.
+  \item Calculate the area of sector $OAB = \frac{\theta}{360} \times \pi r^2$.
+  \item Calculate the area of $\triangle OAB$. Since $\theta = 60^\circ$ and $OA = OB$, it is an equilateral triangle, so Area $= \frac{\sqrt{3}}{4} r^2$.
+  \item Subtract the triangle area from the sector area to find the minor segment.
+  \item Subtract the minor segment area from the total circle area to find the major segment.
+\end{enumerate}
+\textbf{Derivation:}
+Area of sector  = $\frac{60}{360} \times 3.14 \times 15^2 = \frac{1}{6} \times 3.14 \times 225 = 117.75 \text{ cm}^2. \text{ Area of } \triangle$ OAB = $\frac{\sqrt{3}}{4} \times 15^2 = 0.4325 \times 225 = 97.3125 \text{ cm}^2. \text{ Minor segment} = 117.75 - 97.3125 = 20.4375 \text{ cm}^2. \text{ Area of circle} = 3.14 \times 15^2 = 706.5 \text{ cm}^2. \text{ Major segment} = 706.5 - 20.4375 = 686.0625 \text{ cm}^2.$ 
+\hfill \textit{Areas Related to Circles — Area of Segment}
+\vspace{0.3cm}
+
+\question \textbf{23.} An umbrella has 8 ribs which are equally spaced. Assuming the umbrella to be a flat circle of radius $45 \text{ cm}$, find the area between the two consecutive ribs of the umbrella.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Area} = \frac{22275}{28} \text{ cm}^2 \text{or approx} 795.54 \text{ cm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Determine the total number of sectors formed by 8 ribs, which is 8.
+  \item Calculate the central angle of each sector: $\theta = 360^\circ / 8 = 45^\circ$.
+  \item Use the formula for the area of a sector: $A = \frac{\theta}{360} \times \pi r^2$.
+  \item Substitute $r = 45$ and $\theta = 45^\circ$ into the formula.
+  \item Simplify the expression to get the final area.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Area} = \frac{45}{360} \times \frac{22}{7} \times 45 \times 45 = \frac{1}{8} \times \frac{22}{7} \times 2025 = \frac{11 \times 2025}{4 \times 7} = \frac{22275}{28} \text{ cm}^2.}
+\end{center}
+\hfill \textit{Areas Related to Circles — Area of Sector}
+\vspace{0.3cm}
+
+\question \textbf{24.} Find the area of the shaded region in a square $\text{ABCD}$ of side $14 \text{ cm}$, where four circles are drawn with centers at the four vertices of the square, each having a radius of $7 \text{ cm}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Area} = 42 \text{ cm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the area of the square $\text{ABCD} = \text{side}^2$.
+  \item Identify that each corner forms a quadrant of a circle of radius $7 \text{ cm}$.
+  \item Calculate the sum of the areas of the four quadrants, which is equivalent to the area of one full circle of radius $7 \text{ cm}$.
+  \item Subtract the area of the circle from the area of the square.
+  \item The remaining area is the shaded region.
+\end{enumerate}
+\textbf{Derivation:}
+Area of square  = 14 $\times 14 = 196 \text{ cm}^2. \text{ Area of 4 quadrants} = 4 \times (\frac{1}{4} \pi r^2) = \pi r^2 = \frac{22}{7} \times 7 \times 7 = 154 \text{ cm}^2. \text{ Shaded area} = 196 - 154 = 42 \text{ cm}^2.$ 
+\hfill \textit{Areas Related to Circles — Combination of Plane Figures}
+\vspace{0.3cm}
+
+\question \textbf{25.} A round table cover has six equal designs as shown in the figure. If the radius of the cover is $28 \text{ cm}$, find the cost of making the designs at the rate of $\text{ \text{Rs.~} } 0.35 \text{ per cm}^2$. (Use $\sqrt{3} = 1.7$)
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Cost} = \text{ \text{Rs.~} } 162.68}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recognize that each of the 6 designs forms a segment of a circle.
+  \item Central angle for each segment is $360^\circ / 6 = 60^\circ$.
+  \item Calculate the area of one segment: Area of sector - Area of equilateral triangle.
+  \item Multiply the area of one segment by 6 to get the total area of the designs.
+  \item Multiply the total area by the rate to find the cost.
+\end{enumerate}
+\textbf{Derivation:}
+Area of one segment  = $\frac{60}{360} \times \frac{22}{7} \times 28^2 - \frac{\sqrt{3}}{4} \times 28^2 = \frac{1}{6} \times \frac{22}{7} \times 784 - 1.7 \times 196 = 410.66 - 333.2 = 77.46 \text{ cm}^2. \text{ Total Area} = 6 \times 77.46 = 464.76 \text{ cm}^2. \text{ Cost} = 464.76 \times 0.35 = 162.666 \approx 162.68 \text{ ₹}.$ 
+\hfill \textit{Areas Related to Circles — Area of Segment}
+\vspace{0.3cm}
+
+\question \textbf{26.} The mean of the first 5 natural numbers is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the first 5 natural numbers: 1, 2, 3, 4, 5.
+  \item Sum the numbers: 1 + 2 + 3 + 4 + 5 = 15.
+  \item Divide the sum by the count of numbers: 15 / 5 = 3.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\bar{x} = \frac{1 + 2 + 3 + 4 + 5}{5} = \frac{15}{5} = 3}
+\end{center}
+\hfill \textit{Statistics — Mean}
+\vspace{0.3cm}
+
+\question \textbf{27.} Find the mode of the following data: 2, 3, 4, 3, 5, 3, 6, 3.
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Observe the frequency of each number.
+  \item The number 3 appears four times, which is more frequent than any other number.
+  \item Therefore, the mode is 3.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Mode is the observation with the highest frequency. Since 3 occurs 4 times, Mode = 3.}}
+\end{center}
+\hfill \textit{Statistics — Mode}
+\vspace{0.3cm}
+
+\question \textbf{28.} If the mean of $x, x+2, x+4, x+6, x+8$ is 24, find the value of $x$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Sum the observations: x + (x+2) + (x+4) + (x+6) + (x+8) = 5x + 20.
+  \item Divide by number of observations (5) and equate to mean (24).
+  \item Solve for x: (5x + 20) / 5 = 24 => x + 4 = 24 => x = 20.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{5x + 20}{5} = 24 \\
+\implies x + 4 = 24 \\
+\implies x = 20
+\end{aligned}}
+\end{center}
+\hfill \textit{Statistics — Mean}
+\vspace{0.3cm}
+
+\question \textbf{29.} The median of first 7 prime numbers is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item List the first 7 prime numbers: 2, 3, 5, 7, 11, 13, 17.
+  \item Since n=7 (odd), the median is the ((n+1)/2)th observation.
+  \item The 4th observation is 7.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Median} = \left(\frac{7+1}{2}\right)\text{th term} = \text{4th term} = 7}
+\end{center}
+\hfill \textit{Statistics — Median}
+\vspace{0.3cm}
+
+\question \textbf{30.} For a given distribution, if Mean = 20 and Mode = 20, find the Median using the empirical relationship.
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the empirical formula: Mode = 3(Median) - 2(Mean).
+  \item Substitute the given values: 20 = 3(Median) - 2(20).
+  \item \(
+20 = 3(\text{Median}) - 40 => 60 = 3(\text{Median}) => \text{Median} = 20.
+\)
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+20 = 3(\text{Median}) - 2(20) \\
+\implies 20 + 40 = 3(\text{Median}) \\
+\implies \text{Median} = 60/3 = 20
+\end{aligned}}
+\end{center}
+\hfill \textit{Statistics — Empirical Relationship}
+\vspace{0.3cm}
+
+\question \textbf{31.} Assertion (A): The mean of the first five natural numbers is 3. Reason (R): The mean of a set of observations is the sum of observations divided by the total number of observations.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item \(
+\text{Sum of first} 5 \text{natural numbers} = 1 + 2 + 3 + 4 + 5 = 15
+\)
+  \item \(
+\text{Mean} = Sum / \text{Number of observations} = 15 / 5 = 3
+\)
+  \item Assertion is true and Reason is the correct definition/formula.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Mean} = \frac{\sum x_i}{n} = \frac{1+2+3+4+5}{5} = \frac{15}{5} = 3}
+\end{center}
+\hfill \textit{Statistics — Mean of ungrouped data}
+\vspace{0.3cm}
+
+\question \textbf{32.} Assertion (A): The empirical relationship between mean, median, and mode is $3 \text{Median} = \text{Mode} + 2 \text{Mean}$. Reason (R): For a symmetric distribution, mean, median, and mode are equal.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The empirical formula is indeed 3 Median = Mode + 2 Mean.
+  \item In a perfectly symmetric distribution, mean = median = mode, which satisfies the formula.
+  \item Both statements are true and related to the central tendency properties.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{3 \text{Median} = \text{Mode} + 2 \text{Mean}}
+\end{center}
+\hfill \textit{Statistics — Relationship between mean, median and mode}
+\vspace{0.3cm}
+
+\question \textbf{33.} Assertion (A): The mode of the data 2, 3, 4, 3, 2, 3 is 3. Reason (R): Mode is the observation that occurs most frequently.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Count frequencies: 2 appears twice, 3 appears three times, 4 appears once.
+  \item The most frequent value is 3.
+  \item Assertion is true and Reason is the correct definition of mode.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Frequency of 2} = 2, \text{Frequency of 3} = 3, \text{Frequency of 4} = 1. \therefore \text{Mode} = 3}
+\end{center}
+\hfill \textit{Statistics — Mode of ungrouped data}
+\vspace{0.3cm}
+
+\question \textbf{34.} Assertion (A): If the mean of a distribution is 20 and the sum of observations is 100, then the number of observations is 5. Reason (R): The sum of observations = Mean $\times$ Number of observations.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item \(
+\text{Given Mean} = 20, Sum = 100.
+\)
+  \item Using formula: 100 = 20 * n => n = 100 / 20 = 5.
+  \item Assertion is true and Reason provides the correct formula used for calculation.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{n = \frac{\sum x_i}{\bar{x}} = \frac{100}{20} = 5}
+\end{center}
+\hfill \textit{Statistics — Mean of ungrouped data}
+\vspace{0.3cm}
+
+\question \textbf{35.} Assertion (A): The median of the data 5, 8, 12, 16, 20 is 12. Reason (R): The median is always the middle value when the data is arranged in ascending order.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Data: 5, 8, 12, 16, 20 (already in ascending order).
+  \item There are 5 observations (odd). Median is the (n+1)/2 th term.
+  \item 3rd term is 12. Assertion is true and Reason is the correct definition.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Median} = \left(\frac{n+1}{2}\right)^{\text{th}} \text{term} = \left(\frac{5+1}{2}\right)^{\text{th}} = 3^{\text{rd}} \text{term} = 12}
+\end{center}
+\hfill \textit{Statistics — Median of ungrouped data}
+\vspace{0.3cm}
+
+\question \textbf{36.} The mean of 5 observations is 15. If each observation is increased by 3, find the new mean.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{18}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the property that if each observation is increased by a constant k, the mean also increases by k.
+  \item Add the constant to the original mean.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Original Mean } (\bar{x}) = 15. \text{ New Mean } = \bar{x} + 3 = 15 + 3 = 18.}
+\end{center}
+\hfill \textit{Statistics — Mean of grouped/ungrouped data}
+\vspace{0.3cm}
+
+\question \textbf{37.} Find the class mark of the class interval 150-200.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{175}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the lower limit (L) and upper limit (U) of the interval.
+  \item Apply the formula: Class mark = (L + U) / 2.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Class mark} = \frac{150 + 200}{2} = \frac{350}{2} = 175.}
+\end{center}
+\hfill \textit{Statistics — Class intervals and class marks}
+\vspace{0.3cm}
+
+\question \textbf{38.} If the mode of a data set is 45 and the mean is 27, find the median using the empirical relationship.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{33}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item State the empirical formula: Mode = 3 Median - 2 Mean.
+  \item Substitute the given values and solve for Median.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+45 = 3(\text{Median}) - 2(27) \\
+\implies 45 = 3(\text{Median}) - 54 \\
+\implies 99 = 3(\text{Median}) \\
+\implies \text{Median} = 33.
+\end{aligned}}
+\end{center}
+\hfill \textit{Statistics — Relationship between Mean, Median and Mode}
+\vspace{0.3cm}
+
+\question \textbf{39.} The frequency of a class is 12 and the total number of observations is 40. Find the relative frequency of this class.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{0.3}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the formula for relative frequency: (Frequency of class) / (Total number of observations).
+  \item Calculate the division.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Relative Frequency} = \frac{12}{40} = \frac{3}{10} = 0.3.}
+\end{center}
+\hfill \textit{Statistics — Frequency distribution}
+\vspace{0.3cm}
+
+\question \textbf{40.} Given the data: 12, 15, 18, 12, 15, 12, 18. Find the range of the data.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{6}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the maximum and minimum values in the data set.
+  \item Subtract the minimum from the maximum.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Max} = 18, \text{Min} = 12. \text{Range} = 18 - 12 = 6.}
+\end{center}
+\hfill \textit{Statistics — Measures of dispersion}
+\vspace{0.3cm}
+
+\end{questions}
+
+\end{document}

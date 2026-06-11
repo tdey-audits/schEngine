@@ -1,0 +1,155 @@
+{
+  "batch_id": "20260604_140923_0d636bc6",
+  "generated_at": "2026-06-04T14:09:23.817670",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): If a line divides any two sides of a triangle in the same ratio, then the line is parallel to the third side. Reason (R): This is the Converse of Basic Proportionality Theorem.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Identify the statement as the definition of the converse of Thales Theorem (BPT).",
+          "Confirm that the reason correctly identifies the theorem name."
+        ],
+        "derivation": "A: \\text{Converse of BPT holds true.} \\ R: \\text{Definition of Converse of BPT.}"
+      },
+      "topic": "Triangles",
+      "subtopic": "Basic Proportionality Theorem",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:23.817453",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140923_29c03e_01"
+    },
+    {
+      "question": "Assertion (A): Two triangles are similar if their corresponding angles are equal. Reason (R): If two triangles are equiangular, they are similar by AAA similarity criterion.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Verify the AAA similarity criterion.",
+          "Check if equality of angles leads to similarity."
+        ],
+        "derivation": "A: \\text{Angle-Angle-Angle Similarity Criterion} \\ R: \\text{AAA creates proportional sides.}"
+      },
+      "topic": "Triangles",
+      "subtopic": "Similarity of Triangles",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:23.817511",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140923_d527d7_02"
+    },
+    {
+      "question": "Assertion (A): In $\\triangle ABC$, if $DE \\parallel BC$ such that $AD/DB = 1/2$ and $AE = 2 \\text{ cm}$, then $EC = 4 \\text{ cm}$. Reason (R): By Basic Proportionality Theorem, if $DE \\parallel BC$, then $AD/DB = AE/EC$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Apply BPT: $1/2 = 2/EC$.",
+          "Solve for $EC$: $EC = 4 \\text{ cm}$."
+        ],
+        "derivation": "\\frac{AD}{DB} = \\frac{AE}{EC} \\implies \\frac{1}{2} = \\frac{2}{EC} \\implies EC = 4"
+      },
+      "topic": "Triangles",
+      "subtopic": "Basic Proportionality Theorem",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:23.817528",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140923_68eb30_03"
+    },
+    {
+      "question": "Assertion (A): All congruent triangles are similar. Reason (R): All similar triangles are congruent.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Congruent triangles have same shape and size, so they are similar.",
+          "Similar triangles have same shape but not necessarily same size, so they are not always congruent."
+        ],
+        "derivation": "\\text{Congruence} \\implies \\text{Similarity (True)}. \\ \\text{Similarity} \\nRightarrow \\text{Congruence (False)}."
+      },
+      "topic": "Triangles",
+      "subtopic": "Similarity vs Congruence",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:23.817540",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140923_a98cca_04"
+    },
+    {
+      "question": "Assertion (A): The ratio of the areas of two similar triangles is equal to the square of the ratio of their corresponding sides. Reason (R): This is the Area of Similar Triangles Theorem.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Recall the theorem regarding areas of similar triangles.",
+          "Confirm that the statement matches the standard theorem."
+        ],
+        "derivation": "\\frac{\\text{Area}(\\triangle ABC)}{\\text{Area}(\\triangle PQR)} = \\left( \\frac{AB}{PQ} \\right)^2 = \\left( \\frac{BC}{QR} \\right)^2 = \\left( \\frac{AC}{PR} \\right)^2"
+      },
+      "topic": "Triangles",
+      "subtopic": "Areas of Similar Triangles",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:23.817550",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140923_32a84c_05"
+    }
+  ]
+}

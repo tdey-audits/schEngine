@@ -1,0 +1,259 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag} \\[0.3cm]
+  \textbf{Time Allowed: 3 Hours} \hfill \textbf{Maximum Marks: 80} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\noindent\textbf{General Instructions:}
+\begin{enumerate}
+  \item {\normalfont\normalcolor This question paper contains 40 questions. All questions are compulsory.}
+  \item {\normalfont\normalcolor Questions are grouped into sections A through E.}
+  \item {\normalfont\normalcolor Use of calculators is NOT permitted.}
+\end{enumerate}
+\bigskip
+\noindent\textbf{\large Section A: Multiple Choice \& Assertion-Reason (1 mark each)}
+
+\begin{questions}
+\question[1] To draw a pair of tangents to a circle which are inclined to each other at an angle of $60^{\circ}$, it is required to draw tangents at the endpoints of those two radii of the circle, the angle between which is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) $60^{\circ}$
+  \item (B) $90^{\circ}$
+  \item (C) $120^{\circ}$
+  \item (D) $180^{\circ}$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If a point $P$ is $10$ cm away from the centre of a circle of radius $6$ cm, the length of the tangent drawn from $P$ to the circle is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) $7$ cm
+  \item (B) $8$ cm
+  \item (C) $9$ cm
+  \item (D) $10$ cm
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] How many tangents can be drawn from an external point to a circle?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 1
+  \item (B) 2
+  \item (C) 0
+  \item (D) Infinite
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] To divide a line segment $AB$ in the ratio $3:4$, we draw a ray $AX$ such that $\angle BAX$ is acute. Then we mark points on $AX$ at equal distances. The minimum number of points to be marked is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 3
+  \item (B) 4
+  \item (C) 7
+  \item (D) 12
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The angle between a tangent to a circle and the radius passing through the point of contact is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) $45^{\circ}$
+  \item (B) $60^{\circ}$
+  \item (C) $90^{\circ}$
+  \item (D) $180^{\circ}$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If the radius of a sphere is $7 \text{ cm}$, then its surface area is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 308 cm\textasciicircum{}2
+  \item (B) 440 cm\textasciicircum{}2
+  \item (C) 616 cm\textasciicircum{}2
+  \item (D) 1232 cm\textasciicircum{}2
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The volume of a right circular cylinder with radius $3 \text{ cm}$ and height $7 \text{ cm}$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 154 cm\textasciicircum{}3
+  \item (B) 198 cm\textasciicircum{}3
+  \item (C) 264 cm\textasciicircum{}3
+  \item (D) 396 cm\textasciicircum{}3
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The length of the tangent drawn from an external point to a circle is always equal to the radius of the circle. Reason (R): The tangent at any point of a circle is perpendicular to the radius through the point of contact.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): To construct a pair of tangents to a circle from an external point, the angle between the tangents is supplementary to the angle subtended by the line segment joining the points of contact at the center. Reason (R): The sum of opposite angles in a cyclic quadrilateral is $180^\circ$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): It is impossible to construct a tangent to a circle from a point lying inside the circle. Reason (R): A tangent touches the circle at only one point.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The number of tangents that can be drawn from a point on the circle to the circle is exactly two. Reason (R): A point on the circle lies on the circumference.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): When constructing tangents to a circle from an external point $P$, we bisect the line segment $OP$ where $O$ is the center. Reason (R): The perpendicular bisector of $OP$ helps in finding the midpoint which acts as the center of a circle passing through $O$ and $P$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section B: Very Short Answer (2 marks each)}
+
+\begin{questions}
+\question[2] If $\tan A = \frac{4}{3}$, find the value of $\sin A + \cos A$.
+\vspace{0.15cm}
+
+\question[2] Evaluate: $\frac{2 \tan^2 45^\circ + \cos^2 30^\circ - \sin^2 60^\circ}{1}$
+\vspace{0.15cm}
+
+\question[2] If $\sin(A - B) = \frac{1}{2}$ and $\cos(A + B) = \frac{1}{2}$, where $0^\circ < A + B \le 90^\circ$ and $A > B$, find $A$ and $B$.
+\vspace{0.15cm}
+
+\question[2] Express $\cos A$ in terms of $\tan A$.
+\vspace{0.15cm}
+
+\question[2] Evaluate $\frac{\tan 65^\circ}{\cot 25^\circ}$.
+\vspace{0.15cm}
+
+\question[2] Draw a circle of radius $3 \text{ cm}$. Take two points $P$ and $Q$ on one of its extended diameter each at a distance of $7 \text{ cm}$ from its centre. Draw tangents to the circle from these two points $P$ and $Q$.
+\vspace{0.15cm}
+
+\question[2] Construct a tangent to a circle of radius $4 \text{ cm}$ from a point on the concentric circle of radius $6 \text{ cm}$ and measure its length.
+\vspace{0.15cm}
+
+\question[2] Draw a line segment $AB$ of length $8 \text{ cm}$. Taking $A$ as centre, draw a circle of radius $4 \text{ cm}$ and taking $B$ as centre, draw another circle of radius $3 \text{ cm}$. Construct tangents to each circle from the centre of the other circle.
+\vspace{0.15cm}
+
+\question[2] Draw a circle of radius $3.5 \text{ cm}$. Construct a pair of tangents to this circle which are inclined to each other at an angle of $60^\circ$.
+\vspace{0.15cm}
+
+\question[2] Draw a circle of radius $5 \text{ cm}$. Mark a point $P$ at a distance of $8 \text{ cm}$ from the centre. Construct the two tangents from $P$ to the circle.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section C: Short Answer (3 marks each)}
+
+\begin{questions}
+\question[3] If $\tan(A+B) = \sqrt{3}$ and $\tan(A-B) = \frac{1}{\sqrt{3}}$, where $0^\circ < A+B \le 90^\circ$ and $A > B$, find the values of $A$ and $B$.
+\vspace{0.15cm}
+
+\question[3] If $3\cot \theta = 2$, evaluate the value of $\frac{4\sin \theta - 3\cos \theta}{2\sin \theta + 6\cos \theta}$.
+\vspace{0.15cm}
+
+\question[3] Prove that $(\sin A + \csc A)^2 + (\cos A + \sec A)^2 = 7 + \tan^2 A + \cot^2 A$.
+\vspace{0.15cm}
+
+\question[3] If $\sin \theta + \sin^2 \theta = 1$, prove that $\cos^2 \theta + \cos^4 \theta = 1$.
+\vspace{0.15cm}
+
+\question[3] Evaluate: $\frac{\cos 45^\circ}{\sec 30^\circ + \csc 30^\circ}$.
+\vspace{0.15cm}
+
+\question[3] Draw a circle of radius $3 \text{ cm}$. Take two points $P$ and $Q$ on one of its extended diameters each at a distance of $7 \text{ cm}$ from its centre. Draw tangents to the circle from these two points $P$ and $Q$.
+\vspace{0.15cm}
+
+\question[3] Construct a tangent to a circle of radius $4 \text{ cm}$ from a point on the concentric circle of radius $6 \text{ cm}$ and measure its length.
+\vspace{0.15cm}
+
+\question[3] Draw a line segment $AB$ of length $8 \text{ cm}$. Taking $A$ as center, draw a circle of radius $4 \text{ cm}$ and taking $B$ as center, draw another circle of radius $3 \text{ cm}$. Construct tangents to each circle from the center of the other circle.
+\vspace{0.15cm}
+
+\question[3] Draw a circle of radius $3.5 \text{ cm}$. Construct a pair of tangents to this circle which are inclined to each other at an angle of $60^\circ$.
+\vspace{0.15cm}
+
+\question[3] Construct a triangle with sides $5 \text{ cm}, 6 \text{ cm}$ and $7 \text{ cm}$. Then construct a circle touching the side of $6 \text{ cm}$ at its midpoint and passing through the other vertex.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section D: Long Answer (4-5 marks each)}
+
+\begin{questions}
+\question[5] Prove that $\frac{\cos A - \sin A + 1}{\cos A + \sin A - 1} = \csc A + \cot A$, using the identity $\csc^2 A = 1 + \cot^2 A$.
+\vspace{0.15cm}
+
+\question[5] If $\sin \theta + \cos \theta = \sqrt{3}$, then prove that $\tan \theta + \cot \theta = 1$.
+\vspace{0.15cm}
+
+\question[5] Evaluate: $\frac{5 \cos^2 60^\circ + 4 \sec^2 30^\circ - \tan^2 45^\circ}{\sin^2 30^\circ + \cos^2 30^\circ}$
+\vspace{0.15cm}
+
+\question[5] If $\sec \theta = x + \frac{1}{4x}$, prove that $\sec \theta + \tan \theta = 2x$ or $\frac{1}{2x}$.
+\vspace{0.15cm}
+
+\question[5] Draw a circle of radius $3 \text{ cm}$. Take two points $P$ and $Q$ on one of its extended diameters each at a distance of $7 \text{ cm}$ from its centre. Draw tangents to the circle from these two points $P$ and $Q$.
+\vspace{0.15cm}
+
+\question[5] Construct a triangle $ABC$ with side $BC = 6 \text{ cm}$, $AB = 5 \text{ cm}$ and $\angle ABC = 60^\circ$. Then construct a triangle whose sides are $\frac{3}{4}$ of the corresponding sides of the triangle $ABC$. Finally, construct a tangent to the circumcircle of triangle $ABC$ at vertex $A$.
+\vspace{0.15cm}
+
+\question[5] Draw a pair of tangents to a circle of radius $4 \text{ cm}$, which are inclined to each other at an angle of $60^\circ$. Justify the construction.
+\vspace{0.15cm}
+
+\question[5] Draw two concentric circles of radii $3 \text{ cm}$ and $5 \text{ cm}$. Construct a tangent to the smaller circle from a point on the larger circle and measure its length. Verify the measurement by calculation.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+
+\end{document}

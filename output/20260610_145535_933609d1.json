@@ -1,0 +1,119 @@
+{
+  "batch_id": "20260610_145535_933609d1",
+  "generated_at": "2026-06-10T14:55:35.530989",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "distance formula",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If a point $P(x, y)$ is equidistant from the points $A(5, 1)$ and $B(-1, 5)$, and satisfies the linear relation $3x = ky$, find the value of $k$ given that $P$ lies on the line segment $AB$.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Since $P$ is equidistant from $A$ and $B$, it lies on the perpendicular bisector of $AB$.",
+          "The midpoint of $AB$ is $M = (\\frac{5-1}{2}, \\frac{1+5}{2}) = (2, 3)$.",
+          "Since $P$ lies on $AB$ and is equidistant from $A$ and $B$, $P$ must be the midpoint $M(2, 3)$.",
+          "Substitute $x = 2$ and $y = 3$ into the given relation $3x = ky$.",
+          "Calculate $3(2) = k(3) \\Rightarrow 6 = 3k \\Rightarrow k = 2$."
+        ],
+        "derivation": "$M = (\\frac{5-1}{2}, \\frac{1+5}{2}) = (2, 3) \\\\ P = M = (2, 3) \\\\ 3(2) = k(3) \\\\ 6 = 3k \\\\ k = 2$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "distance formula",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $1$",
+        "(B) $3$",
+        "(C) $2$",
+        "(D) $4$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T14:55:35.530907",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_7 (Coordinate Geometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 12,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 6,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 13,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 8,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.4",
+            "question_no": 3,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 18,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145535_a999ef_01"
+    }
+  ]
+}

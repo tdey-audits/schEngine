@@ -1,0 +1,115 @@
+{
+  "batch_id": "20260604_134356_1630d5a1",
+  "generated_at": "2026-06-04T13:43:56.310286",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Areas Related to Circles",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A chord $AB$ of a circle of radius $15 \\text{ cm}$ subtends an angle of $60^\\circ$ at the centre. Find the areas of the corresponding minor and major segments of the circle. (Use $\\pi = 3.14$ and $\\sqrt{3} = 1.73$)",
+      "answer": "Area of minor segment = $20.4375 \\text{ cm}^2$; Area of major segment = $686.0625 \\text{ cm}^2$",
+      "solution": {
+        "steps": [
+          "Identify the radius $r = 15$ and central angle $\\theta = 60^\\circ$.",
+          "Calculate the area of sector $OAB = \\frac{\\theta}{360} \\times \\pi r^2$.",
+          "Calculate the area of $\\triangle OAB$. Since $\\theta = 60^\\circ$ and $OA = OB$, it is an equilateral triangle, so Area $= \\frac{\\sqrt{3}}{4} r^2$.",
+          "Subtract the triangle area from the sector area to find the minor segment.",
+          "Subtract the minor segment area from the total circle area to find the major segment."
+        ],
+        "derivation": "Area of sector $= \\frac{60}{360} \\times 3.14 \\times 15^2 = \\frac{1}{6} \\times 3.14 \\times 225 = 117.75 \\text{ cm}^2. \\text{ Area of } \\triangle OAB = \\frac{\\sqrt{3}}{4} \\times 15^2 = 0.4325 \\times 225 = 97.3125 \\text{ cm}^2. \\text{ Minor segment} = 117.75 - 97.3125 = 20.4375 \\text{ cm}^2. \\text{ Area of circle} = 3.14 \\times 15^2 = 706.5 \\text{ cm}^2. \\text{ Major segment} = 706.5 - 20.4375 = 686.0625 \\text{ cm}^2."
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of Segment",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:56.309948",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134356_ed789b_01"
+    },
+    {
+      "question": "An umbrella has 8 ribs which are equally spaced. Assuming the umbrella to be a flat circle of radius $45 \\text{ cm}$, find the area between the two consecutive ribs of the umbrella.",
+      "answer": "Area = $\\frac{22275}{28} \\text{ cm}^2$ or approx $795.54 \\text{ cm}^2$",
+      "solution": {
+        "steps": [
+          "Determine the total number of sectors formed by 8 ribs, which is 8.",
+          "Calculate the central angle of each sector: $\\theta = 360^\\circ / 8 = 45^\\circ$.",
+          "Use the formula for the area of a sector: $A = \\frac{\\theta}{360} \\times \\pi r^2$.",
+          "Substitute $r = 45$ and $\\theta = 45^\\circ$ into the formula.",
+          "Simplify the expression to get the final area."
+        ],
+        "derivation": "Area $= \\frac{45}{360} \\times \\frac{22}{7} \\times 45 \\times 45 = \\frac{1}{8} \\times \\frac{22}{7} \\times 2025 = \\frac{11 \\times 2025}{4 \\times 7} = \\frac{22275}{28} \\text{ cm}^2."
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of Sector",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:56.310039",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134356_607cab_02"
+    },
+    {
+      "question": "Find the area of the shaded region in a square $ABCD$ of side $14 \\text{ cm}$, where four circles are drawn with centers at the four vertices of the square, each having a radius of $7 \\text{ cm}$.",
+      "answer": "Area = $42 \\text{ cm}^2$",
+      "solution": {
+        "steps": [
+          "Calculate the area of the square $ABCD = \\text{side}^2$.",
+          "Identify that each corner forms a quadrant of a circle of radius $7 \\text{ cm}$.",
+          "Calculate the sum of the areas of the four quadrants, which is equivalent to the area of one full circle of radius $7 \\text{ cm}$.",
+          "Subtract the area of the circle from the area of the square.",
+          "The remaining area is the shaded region."
+        ],
+        "derivation": "Area of square $= 14 \\times 14 = 196 \\text{ cm}^2. \\text{ Area of 4 quadrants} = 4 \\times (\\frac{1}{4} \\pi r^2) = \\pi r^2 = \\frac{22}{7} \\times 7 \\times 7 = 154 \\text{ cm}^2. \\text{ Shaded area} = 196 - 154 = 42 \\text{ cm}^2."
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Combination of Plane Figures",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:56.310066",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134356_7e7868_03"
+    },
+    {
+      "question": "A round table cover has six equal designs as shown in the figure. If the radius of the cover is $28 \\text{ cm}$, find the cost of making the designs at the rate of $\\text{ \u20b9 } 0.35 \\text{ per cm}^2$. (Use $\\sqrt{3} = 1.7$)",
+      "answer": "Cost = $\\text{ \u20b9 } 162.68$",
+      "solution": {
+        "steps": [
+          "Recognize that each of the 6 designs forms a segment of a circle.",
+          "Central angle for each segment is $360^\\circ / 6 = 60^\\circ$.",
+          "Calculate the area of one segment: Area of sector - Area of equilateral triangle.",
+          "Multiply the area of one segment by 6 to get the total area of the designs.",
+          "Multiply the total area by the rate to find the cost."
+        ],
+        "derivation": "Area of one segment $= \\frac{60}{360} \\times \\frac{22}{7} \\times 28^2 - \\frac{\\sqrt{3}}{4} \\times 28^2 = \\frac{1}{6} \\times \\frac{22}{7} \\times 784 - 1.7 \\times 196 = 410.66 - 333.2 = 77.46 \\text{ cm}^2. \\text{ Total Area} = 6 \\times 77.46 = 464.76 \\text{ cm}^2. \\text{ Cost} = 464.76 \\times 0.35 = 162.666 \\approx 162.68 \\text{ \u20b9}."
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of Segment",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:56.310086",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134356_3024a4_04"
+    }
+  ]
+}

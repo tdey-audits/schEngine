@@ -1,0 +1,13 @@
+{
+  "batch_id": "20260604_144951_f756b89f",
+  "generated_at": "2026-06-04T14:49:51.446525",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": null,
+  "question_type": null,
+  "question_count": 0,
+  "mechanisms": [],
+  "questions": []
+}

@@ -1,0 +1,156 @@
+{
+  "batch_id": "20260604_140832_44b4dece",
+  "generated_at": "2026-06-04T14:08:32.272232",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The quadratic equation $x^2 + 5x + 6 = 0$ has two distinct real roots. Reason (R): A quadratic equation $ax^2 + bx + c = 0$ has distinct real roots if its discriminant $D = b^2 - 4ac > 0$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Calculate the discriminant D.",
+          "Check if D > 0."
+        ],
+        "derivation": "D = b^2 - 4ac = (5)^2 - 4(1)(6) = 25 - 24 = 1. Since 1 > 0, the roots are distinct and real."
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of Roots",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:32.272117",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140832_813ca9_01"
+    },
+    {
+      "question": "Assertion (A): If $x = 2$ is a root of $x^2 - kx + 4 = 0$, then $k = 4$. Reason (R): A value $x = \\alpha$ is a root of the equation $f(x) = 0$ if $f(\\alpha) = 0$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Substitute x = 2 into the equation.",
+          "Solve for k."
+        ],
+        "derivation": "(2)^2 - k(2) + 4 = 0 \\implies 4 - 2k + 4 = 0 \\implies 8 = 2k \\implies k = 4."
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Roots of Quadratic Equation",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:32.272153",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140832_3f1866_02"
+    },
+    {
+      "question": "Assertion (A): The equation $(x-2)^2 + 1 = 2x - 3$ is a quadratic equation. Reason (R): Any equation of the form $ax^2 + bx + c = 0$ where $a \\neq 0$ is a quadratic equation.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Expand the LHS.",
+          "Simplify the equation to standard form.",
+          "Check if the highest power is 2."
+        ],
+        "derivation": "x^2 - 4x + 4 + 1 = 2x - 3 \\implies x^2 - 6x + 8 = 0. This is in the form ax^2 + bx + c = 0 with a = 1."
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Introduction to Quadratic Equations",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:32.272160",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140832_86c7cd_03"
+    },
+    {
+      "question": "Assertion (A): The quadratic equation $x^2 + 2x + 5 = 0$ has no real roots. Reason (R): For $x^2 + 2x + 5 = 0$, the discriminant is $-16$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Calculate discriminant D.",
+          "Evaluate nature of roots based on D."
+        ],
+        "derivation": "D = b^2 - 4ac = (2)^2 - 4(1)(5) = 4 - 20 = -16. Since D < 0, there are no real roots."
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of Roots",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:32.272166",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140832_fce6dd_04"
+    },
+    {
+      "question": "Assertion (A): The roots of $x^2 - 9 = 0$ are $3$ and $-3$. Reason (R): $x^2 - a^2 = (x-a)(x+a)$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Use factorisation method.",
+          "Solve for x."
+        ],
+        "derivation": "x^2 - 9 = 0 \\implies (x-3)(x+3) = 0. So, x = 3 or x = -3."
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Solving Quadratic Equations by Factorisation",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:32.272172",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140832_6fcc04_05"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "batch_id": "20260610_150327_268339d7",
+  "generated_at": "2026-06-10T15:03:27.670184",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "completing the square",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "To solve the quadratic equation $2x^2 - 5x + 2 = 0$ by the method of completing the square, what constant term must be added and subtracted to complete the square of the binomial expression?",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Divide the entire equation by the coefficient of $x^2$, which is $2$, to get $x^2 - \\frac{5}{2}x + 1 = 0$.",
+          "Identify the coefficient of $x$, which is $-\\frac{5}{2}$.",
+          "Calculate half of the coefficient of $x$, which is $\\frac{1}{2} \\times (-\\frac{5}{2}) = -\\frac{5}{4}$.",
+          "Square this value to find the constant to be added and subtracted: $(-\\frac{5}{4})^2 = \\frac{25}{16}$."
+        ],
+        "derivation": "$2x^2 - 5x + 2 = 0 \\\\ x^2 - \\frac{5}{2}x + 1 = 0 \\\\ x^2 - 2 \\times x \\times \\frac{5}{4} + 1 = 0 \\\\ x^2 - 2 \\times x \\times \\frac{5}{4} + (\\frac{5}{4})^2 - (\\frac{5}{4})^2 + 1 = 0 \\\\ (x - \\frac{5}{4})^2 - \\frac{25}{16} + 1 = 0$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "completing the square",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $\\frac{5}{4}$",
+        "(B) $\\frac{25}{16}$",
+        "(C) $\\frac{25}{4}$",
+        "(D) $\\frac{5}{2}$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T15:03:27.669911",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.1",
+            "question_no": 7,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.1",
+            "question_no": 1,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.1",
+            "question_no": 2,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150327_3f6b17_01"
+    }
+  ]
+}

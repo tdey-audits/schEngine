@@ -1,0 +1,133 @@
+{
+  "batch_id": "20260604_140959_75f4343c",
+  "generated_at": "2026-06-04T14:09:59.553764",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Coordinate Geometry",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the ratio in which the line segment joining the points $A(-3, 10)$ and $B(6, -8)$ is divided by the point $P(-1, 6)$.",
+      "answer": "2:7",
+      "solution": {
+        "steps": [
+          "Use the section formula: $P(x, y) = \\left( \\frac{mx_2 + nx_1}{m+n}, \\frac{my_2 + ny_1}{m+n} \\right)$",
+          "Substitute the coordinates and assume ratio $k:1$",
+          "Solve for $k$ using the x-coordinate equation",
+          "Verify with the y-coordinate"
+        ],
+        "derivation": "-1 = \\frac{k(6) + 1(-3)}{k+1} \\implies -k - 1 = 6k - 3 \\implies 2 = 7k \\implies k = \\frac{2}{7}"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Section Formula",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:59.553529",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140959_bc79e0_01"
+    },
+    {
+      "question": "If the points $A(6, 1)$, $B(8, 2)$, $C(9, 4)$, and $D(p, 3)$ are the vertices of a parallelogram taken in order, find the value of $p$.",
+      "answer": "p = 7",
+      "solution": {
+        "steps": [
+          "Recall that diagonals of a parallelogram bisect each other.",
+          "Find the midpoint of diagonal AC.",
+          "Find the midpoint of diagonal BD.",
+          "Equate the midpoints and solve for $p$."
+        ],
+        "derivation": "Midpoint of AC = (\\frac{6+9}{2}, \\frac{1+4}{2}) = (7.5, 2.5); Midpoint of BD = (\\frac{8+p}{2}, \\frac{2+3}{2}) = (\\frac{8+p}{2}, 2.5); \\frac{8+p}{2} = 7.5 \\implies 8+p = 15 \\implies p = 7"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Midpoint Formula",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:59.553597",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140959_3fa2ff_02"
+    },
+    {
+      "question": "Find the distance between the points $P(a+b, b-a)$ and $Q(a-b, a+b)$.",
+      "answer": "2\\sqrt{a^2+b^2}",
+      "solution": {
+        "steps": [
+          "Apply the distance formula: $d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$",
+          "Substitute the given coordinates.",
+          "Simplify the algebraic terms inside the square root.",
+          "Calculate the square root."
+        ],
+        "derivation": "d = \\sqrt{((a-b)-(a+b))^2 + ((a+b)-(b-a))^2} = \\sqrt{(-2b)^2 + (2a)^2} = \\sqrt{4b^2 + 4a^2} = 2\\sqrt{a^2+b^2}"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Distance Formula",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:59.553616",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140959_d1475c_03"
+    },
+    {
+      "question": "Find the value of $y$ for which the distance between the points $P(2, -3)$ and $Q(10, y)$ is 10 units.",
+      "answer": "y = 3 or y = -9",
+      "solution": {
+        "steps": [
+          "Use the distance formula $PQ^2 = (x_2-x_1)^2 + (y_2-y_1)^2$.",
+          "Substitute the known values into the equation.",
+          "Solve the resulting quadratic equation for $y$."
+        ],
+        "derivation": "10^2 = (10-2)^2 + (y-(-3))^2 \\implies 100 = 64 + (y+3)^2 \\implies 36 = (y+3)^2 \\implies y+3 = \\pm 6 \\implies y = 3, -9"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Distance Formula",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:59.553629",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140959_1c1d8f_04"
+    },
+    {
+      "question": "Find the coordinates of a point $A$, where $AB$ is the diameter of a circle whose centre is $(2, -3)$ and $B$ is $(1, 4)$.",
+      "answer": "A(3, -10)",
+      "solution": {
+        "steps": [
+          "Let $A$ be $(x, y)$. The centre $(2, -3)$ is the midpoint of diameter $AB$.",
+          "Use the midpoint formula: $\\frac{x+1}{2} = 2$ and $\\frac{y+4}{2} = -3$.",
+          "Solve for $x$ and $y$."
+        ],
+        "derivation": "x+1 = 4 \\implies x = 3; y+4 = -6 \\implies y = -10. \\text{Point A is } (3, -10)"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Midpoint Formula",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:59.553642",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140959_86f343_05"
+    }
+  ]
+}

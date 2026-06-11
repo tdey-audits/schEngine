@@ -1,0 +1,199 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag} \\[0.3cm]
+  \textbf{Time Allowed: 3 Hours} \hfill \textbf{Maximum Marks: 80} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\noindent\textbf{General Instructions:}
+\begin{enumerate}
+  \item {\normalfont\normalcolor This question paper contains 40 questions. All questions are compulsory.}
+  \item {\normalfont\normalcolor Questions are grouped into sections A through E.}
+  \item {\normalfont\normalcolor Use of calculators is NOT permitted.}
+\end{enumerate}
+\bigskip
+\noindent\textbf{\large Section A: Multiple Choice \& Assertion-Reason (1 mark each)}
+
+\begin{questions}
+\question[1] If $\sin A = \frac{3}{5}$, then the value of $\cos A$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 2/5
+  \item (B) 3/4
+  \item (C) 4/5
+  \item (D) 1/5
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The value of $\tan 45^\circ$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 0
+  \item (B) 1
+  \item $(C) \sqrt{3}$
+  \item $(D) 1/\sqrt{3}$
+\end{enumerate}
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section B: Very Short Answer (2 marks each)}
+
+\begin{questions}
+\question[1] If the probability of an event $E$ is $\frac{3}{7}$, what is the probability of the event 'not $E$'?
+\vspace{0.15cm}
+
+\question[1] A bag contains 5 red balls and some blue balls. If the probability of drawing a blue ball is twice that of drawing a red ball, find the number of blue balls in the bag.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section C: Short Answer (3 marks each)}
+
+\begin{questions}
+\question[3] A train travels 360 km at a uniform speed. If the speed had been 5 km/h more, it would have taken 1 hour less for the same journey. Find the speed of the train.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section D: Long Answer (4-5 marks each)}
+
+\begin{questions}
+\question[5] A train travels a distance of 480 km at a uniform speed. If the speed had been 8 km/h less, then it would have taken 3 hours more to cover the same distance. Find the original speed of the train. Also, find the time taken by the train to cover the distance at the original speed.
+\vspace{0.15cm}
+
+\question[5] A train travels a distance of 480 km at a uniform speed. If the speed had been 8 km/h less, then it would have taken 3 hours more to cover the same distance. Find the original speed of the train. Also, find the time taken at the original speed.
+\vspace{0.15cm}
+
+\question[5] A train travels a distance of 480 km at a uniform speed. If the speed had been 8 km/h less, then it would have taken 3 hours more to cover the same distance. Find the original speed of the train. Also, find the time taken at the original speed.
+\vspace{0.15cm}
+
+\question[5] A motorboat whose speed in still water is $18$ km/h takes $1$ hour more to go $24$ km upstream than to return downstream to the same spot. Find the speed of the stream.
+\vspace{0.15cm}
+
+\question[5] A motorboat whose speed in still water is 18 km/h takes 1 hour more to go 48 km upstream than to return to the same point downstream. Find the speed of the stream.
+\vspace{0.15cm}
+
+\question[5] Two dice are rolled simultaneously. Find the probability that the sum of the numbers on their faces is not a prime number.
+\vspace{0.15cm}
+
+\question[5] A bag contains 18 balls out of which $x$ balls are red and the rest are white. If a ball is drawn at random from the bag, the probability that it is not red is $\frac{4}{9}$. Find the number of red balls in the bag.
+\vspace{0.15cm}
+
+\question[5] A bag contains 12 balls of two colours: red and blue. The number of red balls is one more than the number of blue balls. Two balls are drawn at random from the bag. If the probability that both balls are red is $\frac{5}{22}$, find the number of red and blue balls in the bag. Also find the probability that both balls are of the same colour.
+\vspace{0.15cm}
+
+\question[5] A bag contains 24 balls, some of which are red, some are green, and the rest are blue. The probability of drawing a red ball is $\frac{1}{3}$ and the probability of drawing a green ball is $\frac{1}{4}$. One ball is drawn at random. Find the probability that the drawn ball is not blue. Also find the number of blue balls in the bag.
+\vspace{0.15cm}
+
+\question[5] A bag contains 100 balls numbered from 1 to 100. One ball is drawn at random. Using complementary events, find the probability that the number on the ball is not a perfect square or a perfect cube.
+\vspace{0.15cm}
+
+\question[5] A bag contains 12 red balls and some blue balls. The probability of drawing a blue ball is twice that of drawing a red ball. Find the number of blue balls in the bag. Also, find the probability of drawing a ball that is not blue.
+\vspace{0.15cm}
+
+\question[5] Two cards are drawn at random from a well-shuffled deck of 52 cards. Find the probability that at least one of them is a king.
+\vspace{0.15cm}
+
+\question[5] A bag contains 5 red, 6 blue, and 4 green balls. Three balls are drawn at random from the bag. Find the probability that at least one red ball and at least one blue ball are drawn.
+\vspace{0.15cm}
+
+\question[5] A bag contains 4 red, 5 green, and 6 blue balls. Three balls are drawn at random without replacement. What is the probability that at least one ball is red?
+\vspace{0.15cm}
+
+\question[5] A bag contains 15 white balls and some black balls. If the probability of drawing a black ball from the bag is thrice the probability of drawing a white ball, find the number of black balls in the bag. Also, find the probability of drawing a ball that is **not black** (i.e., a white ball).
+\vspace{0.15cm}
+
+\question[5] A bag contains 12 white balls and some black balls. The probability of drawing a black ball is twice that of drawing a white ball. If 4 white balls are added to the bag and 6 black balls are removed from it, find the probability of drawing a white ball from the remaining bag. Also find the probability that a ball drawn is not black.
+\vspace{0.15cm}
+
+\question[5] In a box, there are 36 tickets numbered from 1 to 36. A ticket is drawn at random. What is the probability that the number on the ticket is a multiple of 4 or 5? Also, find the probability that it is not a multiple of 4 or 5.
+\vspace{0.15cm}
+
+\question[5] A card is drawn at random from a well-shuffled pack of 52 playing cards. Find the probability that the card drawn is neither a king nor a queen.
+\vspace{0.15cm}
+
+\question[5] A bag contains 15 red balls and some green balls. If the probability of drawing a green ball is three times that of drawing a red ball, find the number of green balls in the bag. Also, find the probability of drawing a ball that is not red.
+\vspace{0.15cm}
+
+\question[5] A game consists of spinning an arrow which comes to rest pointing to one of the sectors numbered 1, 2, 3, 4, 5, 6, 7, 8 as shown in the figure (assume equal sized sectors). Two players, A and B, take turns to spin the arrow. If the arrow points to a number which is a multiple of 3, then A wins the round; otherwise, B wins the round. They agree that the game is fair if the probability of each player winning is $\frac{1}{2}$. Determine whether the game is fair. If it is not fair, how many consecutive sectors starting from 1 should be replaced by the number 9 so that the game becomes fair? Justify your answer using complementary events.
+\vspace{0.15cm}
+
+\question[5] A bag contains 20 red marbles and some blue marbles. If the probability of drawing a blue marble is double that of drawing a red marble, find the number of blue marbles in the bag. Also, find the probability of drawing a red marble and the probability of drawing a blue marble. If one marble is drawn at random from the bag, what is the probability that it is not blue?
+\vspace{0.15cm}
+
+\question[5] Two dice are thrown simultaneously. Find the probability that the sum of the numbers appearing on the dice is a composite number.
+\vspace{0.15cm}
+
+\question[5] A box contains 90 discs, numbered from 1 to 90. One disc is drawn at random from the box. What is the probability that the number on the drawn disc is a prime number? (Do not consider 1 as a prime number.) Also, find the probability that the number on the drawn disc is **not** a prime number.
+\vspace{0.15cm}
+
+\question[5] A student has to attempt a multiple-choice test with 5 questions. Each question has 4 options, of which exactly one is correct. The student does not know the answer to any question and decides to guess all answers uniformly at random. What is the probability that the student gets at least one question correct? Express your answer in simplest fractional form.
+\vspace{0.15cm}
+
+\question[5] In a shooting competition, a player's chance of hitting a target is $\frac{5}{8}$. What is the minimum number of shots he must fire so that the probability of hitting the target at least once is greater than $\frac{9}{10}$?
+\vspace{0.15cm}
+
+\question[5] Prove that $\frac{\cos \theta - \sin \theta + 1}{\cos \theta + \sin \theta - 1} = \csc \theta + \cot \theta$ using the identity $\csc^2 \theta = 1 + \cot^2 \theta$.
+\vspace{0.15cm}
+
+\question[5] If $\sin \theta + \cos \theta = \sqrt{2} \cos \theta$, then prove that $\cos \theta - \sin \theta = \sqrt{2} \sin \theta$.
+\vspace{0.15cm}
+
+\question[5] Prove that $(\sin \theta + \csc \theta)^2 + (\cos \theta + \sec \theta)^2 = 7 + \tan^2 \theta + \cot^2 \theta$.
+\vspace{0.15cm}
+
+\question[5] If $\tan \theta + \sin \theta = m$ and $\tan \theta - \sin \theta = n$, prove that $m^2 - n^2 = 4\sqrt{mn}$.
+\vspace{0.15cm}
+
+\question[5] If $\sec \theta + \tan \theta = p$, prove that $\sin \theta = \frac{p^2 - 1}{p^2 + 1}$.
+\vspace{0.15cm}
+
+\question[5] Prove that $\frac{\tan \theta}{1 - \cot \theta} + \frac{\cot \theta}{1 - \tan \theta} = 1 + \sec \theta \csc \theta$.
+\vspace{0.15cm}
+
+\question[5] If $x = a \sec \theta + b \tan \theta$ and $y = a \tan \theta + b \sec \theta$, prove that $x^2 - y^2 = a^2 - b^2$.
+\vspace{0.15cm}
+
+\question[5] Prove that $\sqrt{\frac{1 + \sin \theta}{1 - \sin \theta}} = \sec \theta + \tan \theta$.
+\vspace{0.15cm}
+
+\question[5] If $\cos \theta + \sin \theta = \sqrt{2} \sin \theta$, show that $\cos \theta - \sin \theta = \sqrt{2} \cos \theta$. (Note: check coefficients carefully)
+\vspace{0.15cm}
+
+\question[5] Prove that $\frac{\sin \theta - 2\sin^3 \theta}{2\cos^3 \theta - \cos \theta} = \tan \theta$.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+
+\end{document}

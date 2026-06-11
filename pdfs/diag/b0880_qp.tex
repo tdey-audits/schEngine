@@ -1,0 +1,410 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag} \\[0.3cm]
+  \textbf{Time Allowed: 3 Hours} \hfill \textbf{Maximum Marks: 80} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\noindent\textbf{General Instructions:}
+\begin{enumerate}
+  \item {\normalfont\normalcolor This question paper contains 40 questions. All questions are compulsory.}
+  \item {\normalfont\normalcolor Questions are grouped into sections A through E.}
+  \item {\normalfont\normalcolor Use of calculators is NOT permitted.}
+\end{enumerate}
+\bigskip
+\noindent\textbf{\large Section A: Multiple Choice \& Assertion-Reason (1 mark each)}
+
+\begin{questions}
+\question[1] If the quadratic equation $x^2 - 2(k+1)x + k^2 = 0$ has real and equal roots, the value of $k$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) $1/2$
+  \item (B) $-1$
+  \item (C) $-1/2$
+  \item (D) $0$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If the prime factorisation of a positive integer $n$ is given by $n = 2^3 \text{imes} 3^2 \text{imes} 5^a$ and it is known that the decimal expansion of the rational number $\frac{7}{n}$ terminates after exactly two decimal places, then the value of $a$ must be:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 1
+  \item (B) 2
+  \item (C) 3
+  \item (D) 0
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If the polynomial $p(x) = x^4 - 2x^3 + 3x^2 - ax + b$ is exactly divisible by the polynomial $g(x) = x^2 - 2x + 1$, then the values of $a$ and $b$ are respectively:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 2, 4
+  \item (B) 4, 1
+  \item (C) 4, 2
+  \item (D) 2, 2
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The pair of equations $\frac{4}{x} + 3y = 8$ and $\frac{6}{x} - 4y = -5$ is given. If these equations are transformed into a linear pair by substituting $u = \frac{1}{x}$, the value of $u$ satisfying the system is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) $\frac{1}{2}$
+  \item (B) $2$
+  \item (C) $\frac{1}{4}$
+  \item (D) $4$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If the sum of the first $n$ terms of an arithmetic progression is given by $S_n = 3n^2 + 5n$, and the $k^{th}$ term of this progression is $164$, then the value of $k$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 25
+  \item (B) 26
+  \item (C) 27
+  \item (D) 28
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The value of $k$ for which the quadratic equation $2x^2 - kx + k = 0$ has equal real roots is
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 8
+  \item (B) 4
+  \item (C) 2
+  \item (D) 0
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If one root of the quadratic equation $x^2 - 7x + m = 0$ is $4$, then the other root is
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 7
+  \item (B) 4
+  \item (C) 3
+  \item (D) 1
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The quadratic equation $x^2 + 2x + 5 = 0$ has
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) two distinct real roots
+  \item (B) no real roots
+  \item (C) two equal real roots
+  \item (D) more than two real roots
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The value of $p$ for which the equation $px^2 - 2x + 1 = 0$ is not a quadratic equation is
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 2
+  \item (B) 1
+  \item (C) -1
+  \item (D) 0
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Which of the following is a quadratic equation?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) $(x+1)^2 = 2(x-3)$
+  \item (B) $x^2 + 1/x^2 = 5$
+  \item (C) $(x+2)^3 = x^3 + 1$
+  \item (D) $x(x+1) = x^2 + 5$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If $\alpha$ and $\beta$ are the roots of $x^2 - 5x + 6 = 0$, then $\alpha^2 + \beta^2$ is
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 25
+  \item (B) 10
+  \item (C) 13
+  \item (D) 12
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The roots of the equation $x^2 - 3x - 10 = 0$ are
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) $2, -5$
+  \item (B) $5, -2$
+  \item (C) $5, 2$
+  \item (D) $-5, -2$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If the discriminant of $3x^2 - 2x + k = 0$ is $4$, the value of $k$ is
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 1
+  \item (B) 1/3
+  \item (C) 2
+  \item (D) 0
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The sum of the roots of the equation $2x^2 - 8x + 6 = 0$ is
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 4
+  \item (B) 8
+  \item (C) -4
+  \item (D) 3
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The quadratic equation $2x^2 + kx + 8 = 0$ has real and equal roots for $k = 8$ or $k = -8$. 
+Reason (R): A quadratic equation $ax^2 + bx + c = 0$ has real and equal roots if and only if its discriminant $D = b^2 - 4ac$ is equal to $0$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The number $\frac{7}{2^3 \times 5^2}$ has a terminating decimal expansion. Reason (R): For a rational number $\frac{p}{q}$ to have a terminating decimal expansion, the prime factorisation of the denominator $q$ must be of the form $2^n \times 5^m$, where $n$ and $m$ are non-negative integers.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Consider the following Assertion and Reason regarding the division algorithm for polynomials $p(x) = g(x)q(x) + r(x)$, where $p(x)$ is a polynomial of degree $4$ and $g(x)$ is a polynomial of degree $2$. \textbackslash{}\textbackslash{} \textbackslash{}\textbackslash{} Assertion (A): The degree of the quotient $q(x)$ must be exactly $2$. \textbackslash{}\textbackslash{} Reason (R): According to the division algorithm, the degree of the remainder $r(x)$ must be less than the degree of the divisor $g(x)$, and the degree of the product $g(x)q(x)$ must equal the degree of the dividend $p(x)$ if the remainder is zero or of lower degree.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The pair of equations $\frac{1}{x} + \frac{2}{y} = 4$ and $\frac{2}{x} + \frac{4}{y} = 12$ is inconsistent. 
+Reason (R): A pair of linear equations $a_1x + b_1y + c_1 = 0$ and $a_2x + b_2y + c_2 = 0$ is inconsistent if $\frac{a_1}{a_2} = \frac{b_1}{b_2} \neq \frac{c_1}{c_2}$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section B: Very Short Answer (2 marks each)}
+
+\begin{questions}
+\question[2] Find the value of $k$ for which the quadratic equation $(k-2)x^2 + 2(2k-3)x + (5k-6) = 0$ has real and equal roots.
+\vspace{0.15cm}
+
+\question[2] If the HCF of $120$ and $225$ is expressed in the form $225 \times 5 + 120 \times k$, find the value of $k$.
+\vspace{0.15cm}
+
+\question[2] If the polynomial $p(x) = x^4 - 6x^3 + 16x^2 - 25x + 10$ is divided by $g(x) = x^2 - 2x + k$ and the quotient is $x^2 - 4x + 8$, determine the value of the constant $k$ and the remainder $r(x)$.
+\vspace{0.15cm}
+
+\question[2] Find the value of $k$ for which the pair of equations $\frac{1}{x} + \frac{2}{y} = 4$ and $\frac{2}{x} + \frac{k}{y} = 10$ is inconsistent, given that $x, y \neq 0$.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section C: Short Answer (3 marks each)}
+
+\begin{questions}
+\question[3] Show that the square of any positive integer $n$ is of the form $3m$ or $3m + 1$ for some integer $m$, and use this result to determine if the square of an integer can be of the form $3m + 2$.
+\vspace{0.15cm}
+
+\question[3] Find the value of $k$ for which the quadratic equation $(k+1)x^2 - 2(k-1)x + 1 = 0$ has two equal real roots. Further, find the roots of the equation for this value of $k$.
+\vspace{0.15cm}
+
+\question[3] Show that for any positive integer $n$, the square of a positive integer cannot be of the form $5m + 2$ or $5m + 3$ for any integer $m$.
+\vspace{0.15cm}
+
+\question[3] If the polynomial $p(x) = x^4 - 6x^3 + 16x^2 - 25x + 10$ is divided by another polynomial $g(x) = x^2 - 2x + k$, the remainder is found to be of the form $x + a$. Find the values of $k$ and $a$.
+\vspace{0.15cm}
+
+\question[3] Solve the following pair of equations for $x$ and $y$ by reducing them to a linear form: $\frac{2}{x} + \frac{3}{y} = 13$ and $\frac{5}{x} - \frac{4}{y} = -2$, where $x \neq 0$ and $y \neq 0$.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section D: Long Answer (4-5 marks each)}
+
+\begin{questions}
+\question[4] A train travels at a certain average speed for a distance of $630 \text{ km}$. If the speed had been $15 \text{ km/h}$ more, the journey would have taken $2 \text{ hours}$ less. Find the original average speed of the train.
+\vspace{0.15cm}
+
+\question[4] Show that for any positive integer $n$, the expression $n^3 - n$ is always divisible by $6$.
+\vspace{0.15cm}
+
+\question[4] A rectangle has a length $x$ and a width $x-3$. If the area of this rectangle is numerically equal to the perimeter of a square with side $x$, find the quadratic equation representing this condition.
+\vspace{0.15cm}
+
+\question[4] A train travels at a certain average speed for a distance of $540 \text{ km}$. If the speed of the train is increased by $9 \text{ km/hr}$, the journey would have taken $2 \text{ hours}$ less. Find the original average speed of the train. Also, find the time taken if the train travels at the increased speed.
+\vspace{0.15cm}
+
+\question[4] Show that for any positive integer $n$, the expression $n^3 - n$ is always divisible by $6$. Use the Fundamental Theorem of Arithmetic or properties of divisibility to justify your answer.
+\vspace{0.15cm}
+
+\question[4] If the polynomial $p(x) = x^4 - 6x^3 + 16x^2 - 25x + 10$ is divided by another polynomial $g(x) = x^2 - 2x + k$, the remainder is found to be of the form $x + a$. Find the values of $k$ and $a$. Hence, determine all the zeros of the polynomial $p(x)$.
+\vspace{0.15cm}
+
+\question[4] A boat goes $30$ km upstream and $44$ km downstream in $10$ hours. In $13$ hours, it can go $40$ km upstream and $55$ km downstream. Determine the speed of the stream and that of the boat in still water.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section E: Case Study (4 marks each)}
+
+\begin{questions}
+\question[4] A group of students is designing a rectangular garden for a school project. The length of the garden is planned to be $3$ meters more than twice its width. They have a total of $20$ square meters of space available for the garden. Due to the placement of a nearby path, the actual area must be exactly $20$ square meters to maintain symmetry. Let the width of the garden be $x$ meters.
+\vspace{0.2cm}
+\begin{enumerate}[label=(\roman*)]
+  \item Which of the following quadratic equations correctly represents the area of the garden?
+  \begin{enumerate}[label=(\Alph*)]
+    \item (A) $2x^2 + 3x - 20 = 0$
+    \item (B) $x^2 + 3x - 20 = 0$
+    \item (C) $2x^2 + 3x - 20 = 0$
+    \item (D) $2x^2 - 3x - 20 = 0$
+  \end{enumerate}
+  \item Find the discriminant $D$ of the quadratic equation obtained in the previous part.
+  \item What is the width of the garden in meters?
+  \begin{enumerate}[label=(\Alph*)]
+    \item (A) $2.5$
+    \item (B) $4$
+    \item (C) $3$
+    \item (D) $2$
+  \end{enumerate}
+  \item Calculate the length of the garden based on the width found.
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[4] A packaging company produces two types of luxury gift boxes, Type A and Type B. The number of chocolates in Type A boxes is $120$ and in Type B boxes is $168$. The quality control manager decides to pack these chocolates into smaller identical packets such that each packet contains the same number of chocolates, and no chocolates are left over. Additionally, the company wants to estimate the total number of packets required if the total supply of chocolates consists of $120$ chocolates of Type A and $168$ chocolates of Type B. Let $H$ be the maximum number of chocolates that can be placed in each packet such that no chocolates are left over, and let $L$ be the least common multiple of the number of chocolates in the two types of boxes.
+\vspace{0.2cm}
+\begin{enumerate}[label=(\roman*)]
+  \item What is the maximum number of chocolates ($H$) that can be placed in each packet?
+  \begin{enumerate}[label=(\Alph*)]
+    \item (A) $12$
+    \item (B) $24$
+    \item (C) $36$
+    \item (D) $48$
+  \end{enumerate}
+  \item What is the value of $L$, the least common multiple of $120$ and $168$?
+  \begin{enumerate}[label=(\Alph*)]
+    \item (A) $420$
+    \item (B) $640$
+    \item (C) $840$
+    \item (D) $1020$
+  \end{enumerate}
+  \item If the company wants to pack all $120$ chocolates of Type A into packets of size $H$, how many packets are needed?
+  \item Is the decimal expansion of $\frac{120}{168}$ terminating or non-terminating repeating?
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[4] A landscape architect is designing a rectangular meditation garden. The length of the garden is $3$ m more than twice its width. A concrete path of uniform width $1$ m is constructed around the inside of the garden, reducing the area available for planting to $80$ m$^2$. Let the width of the garden be $x$ meters.
+\vspace{0.2cm}
+\begin{enumerate}[label=(\roman*)]
+  \item Which of the following quadratic equations represents the area of the inner planting region?
+  \begin{enumerate}[label=(\Alph*)]
+    \item (A) $2x^2 + x - 84 = 0$
+    \item (B) $2x^2 - x - 84 = 0$
+    \item (C) $2x^2 + 5x - 80 = 0$
+    \item (D) $2x^2 - 5x - 80 = 0$
+  \end{enumerate}
+  \item Find the dimensions (width and length) of the entire rectangular garden.
+  \item What is the discriminant of the quadratic equation $2x^2 - 3x - 82 = 0$?
+  \item If the outer area of the garden is $119$ m$^2$, find the width $x$.
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[4] A packaging unit at a local factory produces two types of high-quality metallic components in batches. The number of components in Batch $A$ and Batch $B$ are $120$ and $192$ respectively. The manager wants to pack these components into identical boxes such that each box contains the same number of items, and no components are left over. Additionally, the decimal representation of the ratio of the number of items in the two batches, $\frac{120}{192}$, is to be analyzed to ensure the packaging process meets specific efficiency standards.
+\vspace{0.2cm}
+\begin{enumerate}[label=(\roman*)]
+  \item What is the maximum number of components that can be packed in each box such that no components are left over?
+  \begin{enumerate}[label=(\Alph*)]
+    \item (A) $12$
+    \item (B) $16$
+    \item (C) $24$
+    \item (D) $48$
+  \end{enumerate}
+  \item Express the simplified form of the fraction $\frac{120}{192}$ as a rational number $\frac{p}{q}$ where $p$ and $q$ are coprime.
+  \item Without performing long division, determine the nature of the decimal expansion of $\frac{120}{192}$.
+  \begin{enumerate}[label=(\Alph*)]
+    \item (A) Terminating
+    \item (B) Non-terminating repeating
+    \item (C) Non-terminating non-repeating
+    \item (D) None of these
+  \end{enumerate}
+  \item If the total number of components $120$ and $192$ were to be used to form a new larger batch, calculate the LCM of the two numbers.
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[4] An engineer is designing a robotic path for a manufacturing unit. The trajectory of the robot is modeled by a polynomial $p(x) = x^4 - 6x^3 + 16x^2 - 25x + 10$. Due to a sensor constraint, the path must be analyzed relative to a base movement polynomial $g(x) = x^2 - 2x + k$. When $p(x)$ is divided by $g(x)$, the resulting remainder is found to be of the form $ax + b$. Based on this division algorithm, answer the following questions:
+\vspace{0.2cm}
+\begin{enumerate}[label=(\roman*)]
+  \item If the division of $p(x)$ by $g(x)$ leaves a remainder $x + a$, what must be the value of $k$?
+  \begin{enumerate}[label=(\Alph*)]
+    \item (A) $3$
+    \item (B) $4$
+    \item (C) $5$
+    \item (D) $2$
+  \end{enumerate}
+  \item Using the value of $k$ found in the previous step, find the value of the constant '$a$' in the remainder $x + a$.
+  \item What is the quotient obtained when $p(x)$ is divided by $x^2 - 2x + 5$?
+  \begin{enumerate}[label=(\Alph*)]
+    \item (A) $x^2 - 4x + 3$
+    \item (B) $x^2 + 4x + 3$
+    \item (C) $x^2 - 4x - 3$
+    \item (D) $x^2 + 4x - 3$
+  \end{enumerate}
+  \item If the remainder of the division of $p(x)$ by $g(x)$ were $0$, what would $g(x)$ be called with respect to $p(x)$?
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[4] A water treatment plant uses two types of filtration units, Type A and Type B. The efficiency of the plant is modelled by the following equations involving the flow rates $x$ (in litres/sec) and $y$ (in litres/sec) through these units. The plant operator observes that the system follows the relations: $\frac{2}{x} + \frac{3}{y} = 13$ and $\frac{5}{x} - \frac{4}{y} = -2$, where $x, y \neq 0$.
+\vspace{0.2cm}
+\begin{enumerate}[label=(\roman*)]
+  \item If we substitute $u = \frac{1}{x}$ and $v = \frac{1}{y}$, what is the resulting linear equation from the first condition?
+  \begin{enumerate}[label=(\Alph*)]
+    \item (A) $2u + 3v = 13$
+    \item (B) $3u + 2v = 13$
+    \item (C) $2u + 3v = 1$
+    \item (D) $13u + 13v = 1$
+  \end{enumerate}
+  \item Find the values of $u$ and $v$.
+  \item What are the values of the flow rates $x$ and $y$?
+  \begin{enumerate}[label=(\Alph*)]
+    \item (A) $x = 3, y = 2$
+    \item (B) $x = \frac{1}{2}, y = \frac{1}{3}$
+    \item (C) $x = 2, y = 3$
+    \item (D) $x = \frac{1}{3}, y = \frac{1}{2}$
+  \end{enumerate}
+  \item If the plant introduces a new constraint $\frac{1}{x} + \frac{1}{y} = k$ such that the system remains consistent with the previous solution, find the value of $k$.
+\end{enumerate}
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+
+\end{document}

@@ -1,0 +1,119 @@
+{
+  "batch_id": "20260609_155348_31098446",
+  "generated_at": "2026-06-09T15:53:48.753899",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": "euclid division lemma",
+  "difficulty": "hard",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "By Euclid's division lemma, if a positive integer $a$ is divided by $3$, it can be represented as $3q$, $3q+1$, or $3q+2$. If $a$ is an integer such that $a^2$ is not divisible by $3$, which of the following is a possible form of $a$?",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Analyze the square of each form of $a$ based on Euclid's division lemma for $b=3$.",
+          "Case 1: If $a = 3q$, then $a^2 = (3q)^2 = 9q^2 = 3(3q^2)$, which is divisible by $3$.",
+          "Case 2: If $a = 3q+1$, then $a^2 = (3q+1)^2 = 9q^2 + 6q + 1 = 3(3q^2 + 2q) + 1$, which leaves a remainder of $1$ when divided by $3$ (not divisible).",
+          "Case 3: If $a = 3q+2$, then $a^2 = (3q+2)^2 = 9q^2 + 12q + 4 = 9q^2 + 12q + 3 + 1 = 3(3q^2 + 4q + 1) + 1$, which leaves a remainder of $1$ when divided by $3$ (not divisible).",
+          "Since the question asks for a form where $a^2$ is not divisible by $3$, both $3q+1$ and $3q+2$ are valid candidates. Checking the options, $3q+1$ is provided."
+        ],
+        "derivation": "$a = 3q \\Rightarrow a^2 = 9q^2 = 3(3q^2) \\text{ (Divisible by } 3) \\\\ a = 3q+1 \\Rightarrow a^2 = 9q^2 + 6q + 1 = 3(3q^2 + 2q) + 1 \\text{ (Not divisible by } 3) \\\\ a = 3q+2 \\Rightarrow a^2 = 9q^2 + 12q + 4 = 3(3q^2 + 4q + 1) + 1 \\text{ (Not divisible by } 3)$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Euclid's division lemma",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "hard",
+      "options": [
+        "(A) $3q$",
+        "(B) $3q+1$",
+        "(C) $3q+3$",
+        "(D) $9q^2$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T15:53:48.753611",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 1,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 6,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 5,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 8,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 13,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 3,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_155348_978184_01"
+    }
+  ]
+}

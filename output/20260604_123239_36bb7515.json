@@ -1,0 +1,40 @@
+{
+  "batch_id": "20260604_123239_36bb7515",
+  "generated_at": "2026-06-04T12:32:39.581998",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "The roots of the quadratic equation $x^2 - 7x + 10 = 0$ are:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Identify the coefficients: $a = 1$, $b = -7$, $c = 10$.",
+          "Calculate the discriminant: $D = b^2 - 4ac = (-7)^2 - 4(1)(10) = 49 - 40 = 9 > 0$.",
+          "Since $D > 0$, roots are real and distinct.",
+          "Use quadratic formula: $x = \\frac{-b \\pm \\sqrt{D}}{2a} = \\frac{7 \\pm 3}{2}$.",
+          "So $x = \\frac{7+3}{2} = 5$ and $x = \\frac{7-3}{2} = 2$."
+        ],
+        "derivation": "$$x = \\frac{7 \\pm \\sqrt{49 - 40}}{2} = \\frac{7 \\pm 3}{2} \\Rightarrow x = 5, 2$$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Quadratic Formula and Nature of Roots",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 2, 5",
+        "(B) -2, -5",
+        "(C) 2, -5",
+        "(D) -2, 5"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T12:32:39.581829",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_123239_518e11"
+    }
+  ]
+}

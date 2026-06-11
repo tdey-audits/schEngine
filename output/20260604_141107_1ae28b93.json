@@ -1,0 +1,125 @@
+{
+  "batch_id": "20260604_141107_1ae28b93",
+  "generated_at": "2026-06-04T14:11:07.123678",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Surface Areas and Volumes",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Two cubes each of volume $64 \\text{ cm}^3$ are joined end to end. Find the surface area of the resulting cuboid.",
+      "answer": "$160 \\text{ cm}^2$",
+      "solution": {
+        "steps": [
+          "Determine the side of the cube using the volume formula $a^3 = 64$.",
+          "Identify the dimensions of the new cuboid ($l=8, b=4, h=4$) and calculate the surface area using $2(lb + bh + lh)$."
+        ],
+        "derivation": "a = \\sqrt[3]{64} = 4 \\text{ cm}. \\text{ New dimensions: } l=8, b=4, h=4. \\text{ SA} = 2(8 \\times 4 + 4 \\times 4 + 8 \\times 4) = 2(32 + 16 + 32) = 2(80) = 160 \\text{ cm}^2."
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Combination of solids",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:07.123483",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141107_0e748d_01"
+    },
+    {
+      "question": "A metallic sphere of radius $4.2 \\text{ cm}$ is melted and recast into the shape of a cylinder of radius $6 \\text{ cm}$. Find the height of the cylinder.",
+      "answer": "$2.744 \\text{ cm}$",
+      "solution": {
+        "steps": [
+          "Equate the volume of the sphere to the volume of the cylinder: $\\frac{4}{3}\\pi r_1^3 = \\pi r_2^2 h$.",
+          "Solve for $h$ by substituting the given values."
+        ],
+        "derivation": "\\frac{4}{3} \\pi (4.2)^3 = \\pi (6)^2 h \\Rightarrow h = \\frac{4 \\times 74.088}{3 \\times 36} = 2.744 \\text{ cm}."
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Conversion of solids",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:07.123534",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141107_31fbc1_02"
+    },
+    {
+      "question": "The slant height of a frustum of a cone is $4 \\text{ cm}$ and the perimeters of its circular ends are $18 \\text{ cm}$ and $6 \\text{ cm}$. Find the curved surface area of the frustum.",
+      "answer": "$48 \\text{ cm}^2$",
+      "solution": {
+        "steps": [
+          "Use the formula for curved surface area of a frustum: $CSA = \\pi (r_1 + r_2)l$.",
+          "Since $2\\pi r_1 = 18$ and $2\\pi r_2 = 6$, note that $\\pi(r_1 + r_2) = \\frac{18+6}{2} = 12$."
+        ],
+        "derivation": "\\pi(r_1 + r_2) = \\frac{18+6}{2} = 12. \\text{ CSA} = 12 \\times 4 = 48 \\text{ cm}^2."
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Frustum of a cone",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:07.123548",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141107_1bc760_03"
+    },
+    {
+      "question": "A solid is in the form of a right circular cone mounted on a hemisphere. If the radius of the hemisphere and the cone is $3.5 \\text{ cm}$ and the height of the cone is $4 \\text{ cm}$, find the volume of the solid. (Use $\\pi = 22/7$)",
+      "answer": "$154 \\text{ cm}^3$",
+      "solution": {
+        "steps": [
+          "Volume of solid = Volume of cone + Volume of hemisphere.",
+          "Apply $V = \\frac{1}{3}\\pi r^2 h + \\frac{2}{3}\\pi r^3$."
+        ],
+        "derivation": "V = \\frac{1}{3} \\times \\frac{22}{7} \\times (3.5)^2 \\times 4 + \\frac{2}{3} \\times \\frac{22}{7} \\times (3.5)^3 = 51.33 + 89.83 \\approx 154 \\text{ cm}^3."
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Combination of solids",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:07.123557",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141107_285c3a_04"
+    },
+    {
+      "question": "The diameter of a metallic ball is $4.2 \\text{ cm}$. What is the mass of the ball, if the density of the metal is $8.9 \\text{ g/cm}^3$?",
+      "answer": "$345.39 \\text{ g}$",
+      "solution": {
+        "steps": [
+          "Calculate the volume of the sphere using $V = \\frac{4}{3}\\pi r^3$ where $r = 2.1 \\text{ cm}$.",
+          "Calculate mass using $\\text{Mass} = \\text{Density} \\times \\text{Volume}$."
+        ],
+        "derivation": "V = \\frac{4}{3} \\times \\frac{22}{7} \\times (2.1)^3 = 38.808 \\text{ cm}^3. \\text{ Mass} = 38.808 \\times 8.9 = 345.3912 \\text{ g}."
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Volume of sphere",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:07.123566",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141107_107db0_05"
+    }
+  ]
+}

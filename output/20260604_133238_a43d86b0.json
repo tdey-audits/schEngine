@@ -1,0 +1,137 @@
+{
+  "batch_id": "20260604_133238_a43d86b0",
+  "generated_at": "2026-06-04T13:32:38.713559",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The common difference of the AP $5, 2, -1, -4, \\dots$ is $-3$. Reason (R): The common difference $d$ of an AP $a_1, a_2, a_3, \\dots$ is given by $d = a_{n} - a_{n-1}$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Identify terms $a_1=5, a_2=2$.",
+          "Calculate $d = 2 - 5 = -3$.",
+          "Verify Reason definition of common difference."
+        ],
+        "derivation": "d = a_2 - a_1 = 2 - 5 = -3"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Common Difference",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "medium",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:38.713366",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133238_aa6087_01"
+    },
+    {
+      "question": "Find the sum of the first 20 terms of the AP: $1, 6, 11, 16, \\dots$",
+      "answer": "$970$",
+      "solution": {
+        "steps": [
+          "Identify $a=1$, $d=5$, $n=20$.",
+          "Use the formula $S_n = \\frac{n}{2}[2a + (n-1)d]$.",
+          "Substitute and calculate."
+        ],
+        "derivation": "S_{20} = \\frac{20}{2}[2(1) + (20-1)5] = 10[2 + 19(5)] = 10[2 + 95] = 10[97] = 970"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of first n terms",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:38.713425",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133238_701a55_02"
+    },
+    {
+      "question": "How many two-digit numbers are divisible by 3?",
+      "answer": "$30$",
+      "solution": {
+        "steps": [
+          "Identify the first number $a=12$ and last number $l=99$.",
+          "Use $a_n = a + (n-1)d$ where $d=3$.",
+          "Solve for $n$."
+        ],
+        "derivation": "99 = 12 + (n-1)3 \\implies 87 = (n-1)3 \\implies 29 = n-1 \\implies n = 30"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Nth term of an AP",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:38.713442",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133238_65dff1_03"
+    },
+    {
+      "question": "If the sum of first $n$ terms of an AP is $S_n = 3n^2 + n$, find the common difference.",
+      "answer": "$6$",
+      "solution": {
+        "steps": [
+          "Find $a_1 = S_1 = 3(1)^2 + 1 = 4$.",
+          "Find $S_2 = 3(2)^2 + 2 = 14$.",
+          "Find $a_2 = S_2 - S_1 = 14 - 4 = 10$.",
+          "Calculate $d = a_2 - a_1 = 10 - 4 = 6$."
+        ],
+        "derivation": "a_1 = 4, a_2 = 10, d = 10 - 4 = 6"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Relationship between sum and terms",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:38.713453",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133238_ee1854_04"
+    },
+    {
+      "question": "The fourth term of an AP is 11 and the sum of the fifth and seventh terms is 34. Find the common difference.",
+      "answer": "$3$",
+      "solution": {
+        "steps": [
+          "Write $a + 3d = 11$ (eq 1).",
+          "Write $(a+4d) + (a+6d) = 34 \\implies 2a + 10d = 34 \\implies a + 5d = 17$ (eq 2).",
+          "Subtract (eq 1) from (eq 2) to find $d$."
+        ],
+        "derivation": "(a+5d) - (a+3d) = 17 - 11 \\implies 2d = 6 \\implies d = 3"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "System of linear equations in AP",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:38.713462",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133238_ac69fe_05"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "batch_id": "20260610_103615_966f9826",
+  "generated_at": "2026-06-10T10:36:15.135591",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": "euclid division lemma",
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): For any two positive integers $a$ and $b$, there exist unique integers $q$ and $r$ such that $a = bq + r$, where $0 \\leq r < b$. \\nReason (R): Euclid's division lemma states that for any two positive integers $a$ and $b$, there exist unique integers $q$ and $r$ such that $a = bq + r$, where $0 \\leq r < b$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Identify that the statement given in the Assertion is the definition of Euclid's division lemma.",
+          "Identify that the statement given in the Reason is also the exact definition of Euclid's division lemma.",
+          "Since the Reason is the formal definition that explains the Assertion, both are true and the Reason is the correct explanation."
+        ],
+        "derivation": "A = \\text{True} \\\\ R = \\text{True} \\\\ \\text{Since R is the definition, it explains A} \\\\ \\text{Answer} = (A)"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Euclid division lemma",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T10:36:15.135226",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 19,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ]
+      },
+      "id": "ncert_20260610_103615_9b6bb4_01"
+    }
+  ]
+}

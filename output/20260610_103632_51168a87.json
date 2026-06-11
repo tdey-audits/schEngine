@@ -1,0 +1,109 @@
+{
+  "batch_id": "20260610_103632_51168a87",
+  "generated_at": "2026-06-10T10:36:32.893462",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "standard form and roots",
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A group of students is designing a rectangular community vegetable garden. The length of the garden is $3$ m more than its width. The total area of the garden is $70$ m$^2$. Let the width of the garden be $x$ m. Based on this information, answer the following questions:",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "Which of the following quadratic equations represents the given situation?",
+          "answer": "(B)",
+          "options": [
+            "(A) $x^2 + 3x - 35 = 0$",
+            "(B) $x^2 + 3x - 70 = 0$",
+            "(C) $x^2 - 3x - 70 = 0$",
+            "(D) $x^2 + 70x - 3 = 0$"
+          ]
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Find the roots of the quadratic equation obtained in part (i) using the discriminant method.",
+          "answer": "$x = 7$ and $x = -10$",
+          "solution": {
+            "steps": [
+              "Identify coefficients: $a = 1, b = 3, c = -70$.",
+              "Calculate discriminant $D = b^2 - 4ac = (3)^2 - 4(1)(-70) = 9 + 280 = 289$.",
+              "Use quadratic formula $x = \\frac{-b \\pm \\sqrt{D}}{2a}$.",
+              "Calculate $x = \\frac{-3 \\pm \\sqrt{289}}{2} = \\frac{-3 \\pm 17}{2}$.",
+              "Solve for $x$: $x_1 = \\frac{14}{2} = 7$ and $x_2 = \\frac{-20}{2} = -10$."
+            ],
+            "derivation": "$D = (3)^2 - 4(1)(-70) = 9 + 280 = 289 \\\\ x = \\frac{-3 \\pm \\sqrt{289}}{2} \\\\ x = \\frac{-3 \\pm 17}{2} \\\\ x = 7, -10$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "vsa",
+          "question": "Considering the context of the garden dimensions, which value of $x$ is valid and why?",
+          "answer": "$x = 7$ m, because width cannot be negative.",
+          "solution": {
+            "steps": [
+              "The solutions are $7$ and $-10$.",
+              "Since $x$ represents the width of a physical object (garden), it must be a positive value.",
+              "Therefore, $x = 7$ is the only acceptable solution."
+            ]
+          }
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "What are the final dimensions (length and width) of the garden?",
+          "answer": "Width = $7$ m, Length = $10$ m",
+          "solution": {
+            "steps": [
+              "Width $x = 7$ m.",
+              "Length $l = x + 3 = 7 + 3 = 10$ m.",
+              "Check: Area = $7 \\times 10 = 70$ m$^2$, which matches the given data."
+            ]
+          }
+        }
+      ],
+      "topic": "Quadratic Equations",
+      "subtopic": "standard form and roots",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-10T10:36:32.893170",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ]
+      },
+      "id": "ncert_20260610_103632_e34e85_01"
+    }
+  ]
+}

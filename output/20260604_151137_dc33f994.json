@@ -1,0 +1,203 @@
+{
+  "batch_id": "20260604_151137_dc33f994",
+  "generated_at": "2026-06-04T15:11:37.917854",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Areas Related to Circles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the area of a sector of a circle with radius $6$ $cm$ if the angle of the sector is $60^\\circ$. Use $\\pi = 3.14$.",
+      "answer": "$18.84$ $cm^2$",
+      "solution": {
+        "steps": [
+          "Identify the radius $r = 6$ $cm$ and central angle $\\theta = 60^\\circ$.",
+          "Use the formula for the area of a sector: $A = \\frac{\\theta}{360^\\circ} \\times \\pi r^2$.",
+          "Substitute the values and calculate the final result."
+        ],
+        "derivation": "$A = \\frac{60}{360} \\times 3.14 \\times 6^2 \\\\ A = \\frac{1}{6} \\times 3.14 \\times 36 \\\\ A = 3.14 \\times 6 \\\\ A = 18.84 \\text{ cm}^2$"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of a Sector",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:37.917719",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151137_6a5855_01"
+    },
+    {
+      "question": "In a circle of radius $10$ $cm$, a chord $AB$ subtends a right angle at the centre $O$. Find the area of the minor segment. (Use $\\pi = 3.14$).",
+      "answer": "$28.5$ $cm^2$",
+      "solution": {
+        "steps": [
+          "Calculate the area of the sector $OAB$ with $\\theta = 90^\\circ$.",
+          "Calculate the area of $\\triangle OAB$ which is a right-angled triangle with base and height equal to $10$ $cm$.",
+          "Subtract the area of the triangle from the area of the sector to get the segment area."
+        ],
+        "derivation": "\\text{Area of sector} = \\frac{90}{360} \\times 3.14 \\times 10^2 = 78.5 \\text{ cm}^2 \\\\ \\text{Area of } \\triangle OAB = \\frac{1}{2} \\times 10 \\times 10 = 50 \\text{ cm}^2 \\\\ \\text{Area of segment} = 78.5 - 50 = 28.5 \\text{ cm}^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of a Segment",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "caption": "Minor segment of a circle",
+        "elements": [
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 2,
+            "y": 0,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 0,
+            "y": 2,
+            "label": "B"
+          },
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "A",
+            "label": "10cm"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "B",
+            "label": "10cm"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "B"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:37.917761",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151137_4f2272_02"
+    },
+    {
+      "question": "The length of the minute hand of a clock is $14$ $cm$. Find the area swept by the minute hand in $5$ minutes.",
+      "answer": "$51.33$ $cm^2$",
+      "solution": {
+        "steps": [
+          "Determine the angle swept in $60$ minutes ($360^\\circ$), so in $5$ minutes it is $30^\\circ$.",
+          "Use the radius $r = 14$ $cm$.",
+          "Apply the sector area formula."
+        ],
+        "derivation": "\\theta = \\frac{360}{60} \\times 5 = 30^\\circ \\\\ \\text{Area} = \\frac{30}{360} \\times \\frac{22}{7} \\times 14 \\times 14 \\\\ \\text{Area} = \\frac{1}{12} \\times 22 \\times 2 \times 14 = \\frac{616}{12} = 51.33 \\text{ cm}^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Applications of Sector Area",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:37.917771",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151137_6475a9_03"
+    },
+    {
+      "question": "The diameters of two circles are $8$ $cm$ and $6$ $cm$ respectively. Find the radius of a circle whose area is equal to the sum of the areas of the two circles.",
+      "answer": "$5$ $cm$",
+      "solution": {
+        "steps": [
+          "Find the radii of the two circles: $r_1 = 4$ $cm$, $r_2 = 3$ $cm$.",
+          "Equate the sum of areas $\\pi r_1^2 + \\pi r_2^2$ to $\\pi R^2$.",
+          "Solve for $R$."
+        ],
+        "derivation": "\\pi(4)^2 + \\pi(3)^2 = \\pi R^2 \\\\ 16\\pi + 9\\pi = \\pi R^2 \\\\ 25\\pi = \\pi R^2 \\\\ R^2 = 25 \\Rightarrow R = 5 \\text{ cm}"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of a Circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:37.917778",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151137_adbecd_04"
+    },
+    {
+      "question": "A horse is tethered to a peg at one corner of a square-shaped grass field of side $15$ $m$ by means of a $5$ $m$ long rope. Find the area of that part of the field in which the horse can graze.",
+      "answer": "$19.625$ $m^2$",
+      "solution": {
+        "steps": [
+          "Identify the shape as a quadrant of a circle with radius $r = 5$ $m$.",
+          "The grazing area is the area of this quadrant.",
+          "Calculate $\\frac{1}{4} \\times \\pi r^2$."
+        ],
+        "derivation": "\\text{Area} = \\frac{1}{4} \\times 3.14 \\times 5^2 \\\\ \\text{Area} = \\frac{1}{4} \\times 3.14 \\times 25 \\\\ \\text{Area} = 0.785 \\times 25 = 19.625 \\text{ m}^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of a Sector",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "caption": "Horse grazing area",
+        "elements": [
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "kind": "arc",
+            "center": "A",
+            "radius": 1,
+            "start_angle": 0,
+            "end_angle": 90
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:37.917784",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151137_c6f860_05"
+    }
+  ]
+}

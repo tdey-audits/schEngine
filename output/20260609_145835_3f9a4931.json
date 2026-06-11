@@ -1,0 +1,145 @@
+{
+  "batch_id": "20260609_145835_3f9a4931",
+  "generated_at": "2026-06-09T14:58:35.074712",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "standard form and roots",
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A solar energy startup is designing a rectangular field for solar panels. The length of the field is $3$ m more than twice its width. The area of the field is $90$ m$^2$. Let the width of the field be $x$ meters.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "Which of the following quadratic equations represents the given situation?",
+          "answer": "(A)",
+          "options": [
+            "(A) $2x^2 + 3x - 90 = 0$",
+            "(B) $2x^2 - 3x - 90 = 0$",
+            "(C) $x^2 + 3x - 90 = 0$",
+            "(D) $2x^2 + 3x + 90 = 0$"
+          ]
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Find the width of the rectangular field.",
+          "answer": "$6$ m",
+          "solution": {
+            "steps": [
+              "Set up the equation $x(2x + 3) = 90$.",
+              "Expand to get $2x^2 + 3x - 90 = 0$.",
+              "Factorise the quadratic: $2x^2 + 15x - 12x - 90 = 0$.",
+              "$x(2x + 15) - 6(2x + 15) = 0$.",
+              "$(x - 6)(2x + 15) = 0$.",
+              "Since width cannot be negative, $x = 6$."
+            ],
+            "derivation": "$2x^2 + 3x - 90 = 0 \\\\ 2x^2 + 15x - 12x - 90 = 0 \\\\ x(2x + 15) - 6(2x + 15) = 0 \\\\ (x - 6)(2x + 15) = 0 \\\\ x = 6, x = -7.5 \\\\ x = 6$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "mcq",
+          "question": "What is the length of the rectangular field?",
+          "answer": "(C)",
+          "options": [
+            "(A) $12$ m",
+            "(B) $14$ m",
+            "(C) $15$ m",
+            "(D) $18$ m"
+          ]
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "Calculate the discriminant $D$ of the quadratic equation formed in part (i).",
+          "answer": "$729$",
+          "solution": {
+            "steps": [
+              "Identify $a=2$, $b=3$, $c=-90$.",
+              "Use $D = b^2 - 4ac$.",
+              "$D = (3)^2 - 4(2)(-90)$.",
+              "$D = 9 + 720 = 729$."
+            ],
+            "derivation": "$D = b^2 - 4ac \\\\ D = (3)^2 - 4(2)(-90) \\\\ D = 9 + 720 \\\\ D = 729$"
+          }
+        }
+      ],
+      "topic": "Quadratic Equations",
+      "subtopic": "standard form and roots",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T14:58:35.074402",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_145835_7c6d5f_01"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "batch_id": "20260604_133458_63857c3d",
+  "generated_at": "2026-06-04T13:34:58.519099",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 3,
+  "mechanisms": [
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $\\sin \\theta = \\frac{3}{5}$, then the value of $\\cos \\theta$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Use the identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$.",
+          "Substitute the given value: $(\\frac{3}{5})^2 + \\cos^2 \\theta = 1$.",
+          "Solve for $\\cos^2 \\theta = 1 - \\frac{9}{25} = \\frac{16}{25}$.",
+          "Take the square root to find $\\cos \\theta$."
+        ],
+        "derivation": "\\cos \\theta = \\sqrt{1 - \\sin^2 \\theta} = \\sqrt{1 - (\\frac{3}{5})^2} = \\sqrt{1 - \\frac{9}{25}} = \\sqrt{\\frac{16}{25}} = \\frac{4}{5}"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 2/5",
+        "(B) 3/4",
+        "(C) 4/5",
+        "(D) 5/3"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:34:58.518896",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133458_adfbca_01"
+    },
+    {
+      "question": "The value of $\\tan 30^\\circ \\cdot \\cot 30^\\circ$ is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Recall the trigonometric identity $\\tan \\theta \\cdot \\cot \\theta = 1$ for any angle $\\theta$.",
+          "Alternatively, substitute $\\tan 30^\\circ = \\frac{1}{\\sqrt{3}}$ and $\\cot 30^\\circ = \\sqrt{3}$.",
+          "Multiply the values to get the result."
+        ],
+        "derivation": "\\tan 30^\\circ \\cdot \\cot 30^\\circ = \\frac{1}{\\sqrt{3}} \\times \\sqrt{3} = 1"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 0",
+        "(B) 1",
+        "(C) 1/2",
+        "(D) \\sqrt{3}"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:34:58.518976",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133458_511752_02"
+    },
+    {
+      "question": "If $A = 60^\\circ$ and $B = 30^\\circ$, then the value of $\\sin(A+B)$ is:",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Calculate the sum of the angles: $A + B = 60^\\circ + 30^\\circ = 90^\\circ$.",
+          "Evaluate the sine of the resultant angle: $\\sin 90^\\circ$.",
+          "Recall the standard trigonometric table value for $\\sin 90^\\circ$."
+        ],
+        "derivation": "\\sin(60^\\circ + 30^\\circ) = \\sin 90^\\circ = 1"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 0",
+        "(B) 1/2",
+        "(C) \\frac{\\sqrt{3}}{2}",
+        "(D) 1"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:34:58.519001",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133458_a052f4_03"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "batch_id": "20260609_132829_d1925a4c",
+  "generated_at": "2026-06-09T13:28:29.310182",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In an Arithmetic Progression, the sum of the first $n$ terms is denoted by $S_n$. If the sum of the first $5$ terms is $40$ and the sum of the first $10$ terms is $155$, find the $n^{th}$ term of the AP. Furthermore, determine the value of $n$ for which the $n^{th}$ term is $101$.",
+      "answer": "a_n = 3n + 5, n = 32",
+      "solution": {
+        "steps": [
+          "Use the formula $S_n = \\frac{n}{2} [2a + (n-1)d]$ to write equations for $S_5$ and $S_{10}$.",
+          "For $S_5 = 40$: $\\frac{5}{2}(2a + 4d) = 40 \\Rightarrow 5(a + 2d) = 40 \\Rightarrow a + 2d = 8$.",
+          "For $S_{10} = 155$: $\\frac{10}{2}(2a + 9d) = 155 \\Rightarrow 5(2a + 9d) = 155 \\Rightarrow 2a + 9d = 31$.",
+          "Solve the system of two linear equations: $2a + 4d = 16$ and $2a + 9d = 31$.",
+          "Subtract the equations to find $5d = 15 \\Rightarrow d = 3$, then substitute back to find $a + 2(3) = 8 \\Rightarrow a = 2$.",
+          "Calculate the $n^{th}$ term: $a_n = a + (n-1)d = 2 + (n-1)3 = 2 + 3n - 3 = 3n - 1$. Wait, re-calculating: $a=2, d=3 \\Rightarrow a_n = 2 + (n-1)3 = 3n - 1$. Check: $S_5 = \\frac{5}{2}(4 + 4(3)) = \\frac{5}{2}(16) = 40$ (Correct). $S_{10} = \\frac{10}{2}(4 + 9(3)) = 5(31) = 155$ (Correct).",
+          "Set $a_n = 101$: $3n - 1 = 101 \\Rightarrow 3n = 102 \\Rightarrow n = 34$."
+        ],
+        "derivation": "$S_5 = \\frac{5}{2}(2a + 4d) = 40 \\Rightarrow a + 2d = 8 \\quad (i) \\\\ S_{10} = \\frac{10}{2}(2a + 9d) = 155 \\Rightarrow 2a + 9d = 31 \\quad (ii) \\\\ \\text{From } (i), a = 8 - 2d \\\\ \\text{Substitute into } (ii): 2(8 - 2d) + 9d = 31 \\\\ 16 - 4d + 9d = 31 \\\\ 5d = 15 \\Rightarrow d = 3 \\\\ a = 8 - 2(3) = 2 \\\\ a_n = a + (n-1)d = 2 + (n-1)3 = 3n - 1 \\\\ 3n - 1 = 101 \\Rightarrow 3n = 102 \\Rightarrow n = 34$"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of first n terms of an AP",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T13:28:29.309883",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_5 (Arithmetic Progressions).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 33,
+            "paper_variant": "standard",
+            "question_type": "la"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 7,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 3,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_132829_d8b914_01"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "batch_id": "20260604_140901_b171ac22",
+  "generated_at": "2026-06-04T14:09:01.654196",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the $10^{th}$ term of the Arithmetic Progression $5, 8, 11, 14, \\dots$",
+      "answer": "$32$",
+      "solution": {
+        "steps": [
+          "Identify the first term $a = 5$ and the common difference $d = 8 - 5 = 3$.",
+          "Use the formula $a_n = a + (n-1)d$ to calculate the $10^{th}$ term."
+        ],
+        "derivation": "a_n = a + (n-1)d \\\\ a_{10} = 5 + (10 - 1)3 \\\\ a_{10} = 5 + 9 \\times 3 \\\\ a_{10} = 5 + 27 = 32"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "nth term of an AP",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:01.653989",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140901_ed49a9_01"
+    },
+    {
+      "question": "Which term of the Arithmetic Progression $21, 18, 15, \\dots$ is $-81$?",
+      "answer": "$35^{th}$ term",
+      "solution": {
+        "steps": [
+          "Identify $a = 21$ and $d = 18 - 21 = -3$.",
+          "Set $a_n = -81$ and solve the equation $-81 = 21 + (n-1)(-3)$ for $n$."
+        ],
+        "derivation": "-81 = 21 - 3n + 3 \\\\ -81 = 24 - 3n \\\\ 3n = 24 + 81 \\\\ 3n = 105 \\\\ n = 35"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "nth term of an AP",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:01.654053",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140901_0f7838_02"
+    },
+    {
+      "question": "Find the sum of the first $20$ terms of the Arithmetic Progression $1, 6, 11, 16, \\dots$",
+      "answer": "$970$",
+      "solution": {
+        "steps": [
+          "Identify $a = 1$, $d = 5$, and $n = 20$.",
+          "Use the sum formula $S_n = \\frac{n}{2}[2a + (n-1)d]$."
+        ],
+        "derivation": "S_{20} = \\frac{20}{2}[2(1) + (20-1)5] \\\\ S_{20} = 10[2 + 19 \\times 5] \\\\ S_{20} = 10[2 + 95] \\\\ S_{20} = 10 \\times 97 = 970"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of first n terms",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:01.654069",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140901_7bb305_03"
+    },
+    {
+      "question": "In an Arithmetic Progression, if the first term is $7$ and the common difference is $4$, find the sum of the first $10$ terms.",
+      "answer": "$250$",
+      "solution": {
+        "steps": [
+          "State the given values: $a = 7$, $d = 4$, $n = 10$.",
+          "Substitute these values into $S_n = \\frac{n}{2}[2a + (n-1)d]$."
+        ],
+        "derivation": "S_{10} = \\frac{10}{2}[2(7) + (10-1)4] \\\\ S_{10} = 5[14 + 9 \\times 4] \\\\ S_{10} = 5[14 + 36] \\\\ S_{10} = 5 \\times 50 = 250"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of first n terms",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:01.654081",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140901_4714c0_04"
+    },
+    {
+      "question": "If the $4^{th}$ term of an Arithmetic Progression is $14$ and the $12^{th}$ term is $38$, find the first term $a$.",
+      "answer": "$5$",
+      "solution": {
+        "steps": [
+          "Write equations based on $a_n = a + (n-1)d$: $a + 3d = 14$ and $a + 11d = 38$.",
+          "Subtract the two equations to find $d$ and then solve for $a$."
+        ],
+        "derivation": "(a + 11d) - (a + 3d) = 38 - 14 \\\\ 8d = 24 \\\\ d = 3 \\\\ a + 3(3) = 14 \\\\ a + 9 = 14 \\\\ a = 5"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "nth term of an AP",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:01.654092",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140901_24aae7_05"
+    }
+  ]
+}

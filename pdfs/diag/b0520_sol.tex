@@ -1,0 +1,893 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag Solutions} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{questions}
+\question \textbf{1.} For the equation $\frac{2}{x} + \frac{3}{y} = 13$ and $\frac{5}{x} - \frac{4}{y} = -2$, if we substitute $u = \frac{1}{x}$ and $v = \frac{1}{y}$, what will be the resulting linear equation from the first expression?
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Substitute $\frac{1}{x} = u$ and $\frac{1}{y} = v$ into the given equation.
+  \item The term $\frac{2}{x}$ becomes $2u$.
+  \item The term $\frac{3}{y}$ becomes $3v$.
+  \item The resulting equation is $2u + 3v = 13$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+2(\frac{1}{x}) + 3(\frac{1}{y}) = 13 \\
+\implies 2u + 3v = 13
+\end{aligned}}
+\end{center}
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{2.} If $\frac{1}{x+y} = a$ and $\frac{1}{x-y} = b$, the equation $\frac{5}{x+y} - \frac{2}{x-y} = 1$ reduces to which of the following linear forms?
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Substitute $a$ for $\frac{1}{x+y}$ and $b$ for $\frac{1}{x-y}$.
+  \item Substitute the variables into the equation $5(\frac{1}{x+y}) - 2(\frac{1}{x-y}) = 1$.
+  \item The resulting equation is $5a - 2b = 1$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{5a - 2b = 1}
+\end{center}
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{3.} Given the equation $\frac{7}{x-1} + \frac{1}{y-2} = 3$, what substitution would convert this into a linear equation?
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the variable parts in the denominators.
+  \item Let $u = \frac{1}{x-1}$ and $v = \frac{1}{y-2}$.
+  \item The equation becomes $7u + v = 3$, which is linear in $u$ and $v$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{u = \frac{1}{x-1}, v = \frac{1}{y-2}}
+\end{center}
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{4.} For the system $\frac{10}{x+y} + \frac{2}{x-y} = 4$ and $\frac{15}{x+y} - \frac{5}{x-y} = -2$, if $u = \frac{1}{x+y}$ and $v = \frac{1}{x-y}$, what is the coefficient of $v$ in the second equation?
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Substitute $v = \frac{1}{x-y}$ into the second equation $\frac{15}{x+y} - \frac{5}{x-y} = -2$.
+  \item This results in $15u - 5v = -2$.
+  \item The coefficient of $v$ is -5.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+15u - 5v = -2 \\
+\implies \text{coefficient of } v = -5
+\end{aligned}}
+\end{center}
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{5.} Which of the following represents the linear form of $\frac{x+y}{xy} = 2$?
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Divide each term in the numerator by the denominator: $\frac{x}{xy} + \frac{y}{xy} = 2$.
+  \item Simplify the fractions: $\frac{1}{y} + \frac{1}{x} = 2$.
+  \item This is equivalent to $\frac{1}{x} + \frac{1}{y} = 2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{x}{xy} + \frac{y}{xy} = 2 \\
+\implies \frac{1}{y} + \frac{1}{x} = 2
+\end{aligned}}
+\end{center}
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{6.} Assertion (A): The equation $\frac{2}{x} + \frac{3}{y} = 13$ can be reduced to a linear equation in two variables by substituting $u = \frac{1}{x}$ and $v = \frac{1}{y}$. Reason (R): Any equation of the form $\frac{a}{x} + \frac{b}{y} = c$ where $x, y \neq 0$ is a linear equation. Select the correct option.
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The substitution $u = 1/x$ and $v = 1/y$ converts $2/x + 3/y = 13$ into $2u + 3v = 13$, which is linear. Thus (A) is true.
+  \item The equation $a/x + b/y = c$ is not linear as the variables are in the denominator. Thus (R) is false.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+2u + 3v = 13 \\
+\implies \text{Linear form}
+\end{aligned}}
+\end{center}
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{7.} Assertion (A): For the system $\frac{1}{x} + \frac{1}{y} = 5$ and $\frac{1}{x} - \frac{1}{y} = 1$, the values are $x = 1/3, y = 1/2$. Reason (R): Adding the two equations eliminates the term involving $1/y$. Select the correct option.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $u = 1/x, v = 1/y$. Equations become $u+v=5$ and $u-v=1$.
+  \item Adding gives $2u=6 \implies u=3 \implies x=1/3$.
+  \item Subtracting gives $2v=4 \implies v=2 \implies y=1/2$. (A) is true.
+  \item Adding the equations eliminates $v$. (R) is true and explains (A).
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+u+v=5, u-v=1 \\
+\implies 2u=6 \\
+\implies u=3; 2v=4 \\
+\implies v=2
+\end{aligned}}
+\end{center}
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{8.} Assertion (A): The equation $\frac{5}{x-1} + \frac{1}{y-2} = 2$ is reducible to linear form using $u = \frac{1}{x-1}$ and $v = \frac{1}{y-2}$. Reason (R): The substitution must always be linear functions of $x$ and $y$. Select the correct option.
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item (A) is true because $5u + v = 2$ is linear.
+  \item (R) is true because we reduce to linear form to solve, but it is not the reason for the specific substitution choice in (A).
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{5(\frac{1}{x-1}) + 1(\frac{1}{y-2}) = 2}
+\end{center}
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{9.} Assertion (A): The pair $\frac{4}{x} + 3y = 14$ and $\frac{3}{x} - 4y = 23$ has $x = 1/5$. Reason (R): Substituting $u = 1/x$ reduces the system to $4u + 3y = 14$ and $3u - 4y = 23$. Select the correct option.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item (R) is true as it correctly defines the substitution.
+  \item Solving $4u + 3y = 14$ and $3u - 4y = 23$: Multiply first by 4, second by 3: $16u + 12y = 56$ and $9u - 12y = 69$.
+  \item Adding: $25u = 125 \implies u = 5 \implies 1/x = 5 \implies x = 1/5$. (A) is true.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+16u+12y=56; 9u-12y=69 \\
+\implies 25u=125 \\
+\implies u=5
+\end{aligned}}
+\end{center}
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{10.} Assertion (A): For $\frac{2}{\sqrt{x}} + \frac{3}{\sqrt{y}} = 2$ and $\frac{4}{\sqrt{x}} - \frac{9}{\sqrt{y}} = -1$, the value of $u = \frac{1}{\sqrt{x}}$ is $1/2$. Reason (R): A linear equation must have variables with power 1. Select the correct option.
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item (A) is true: $2u + 3v = 2$ and $4u - 9v = -1$. Multiply 1st by 3: $6u + 9v = 6$. Adding to 2nd: $10u = 5 \implies u = 1/2$.
+  \item (R) is true as linear equations are defined by degree 1, but it is not the reason why $u=1/2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+2u+3v=2; 4u-9v=-1 \\
+\implies 6u+9v=6 \\
+\implies 10u=5 \\
+\implies u=1/2
+\end{aligned}}
+\end{center}
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{11.} Solve for $x$ and $y$: $\frac{2}{x} + \frac{3}{y} = 13$ and $\frac{5}{x} - \frac{4}{y} = -2$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{x = \frac{1}{2}, y = \frac{1}{3}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Substitute $u = 1/x$ and $v = 1/y$ to convert the equations into standard linear form: $2u + 3v = 13$ and $5u - 4v = -2$.
+  \item Solve the system using elimination method to find $u=2$ and $v=3$, then invert to find $x$ and $y$.
+\end{enumerate}
+\textbf{Derivation:}
+Multiply eq1 by 4 and eq2 by 3:  8u + 12v = 52  and  15u - 12v = -6 . Adding them gives  23u = 46 $\implies u = 2$ . Thus,  1/x = 2 $\implies x = 1/2$ . Substituting  u=2  into  2(2) + 3v = 13 $\implies 3v = 9 \implies v = 3$ . Thus,  1/y = 3 $\implies y = 1/3$ .
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{12.} Find the values of $x$ and $y$ given: $\frac{1}{2x} - \frac{1}{y} = -1$ and $\frac{1}{x} + \frac{1}{2y} = 8$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{x = 1/6, y = 1/14}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $u = 1/x$ and $v = 1/y$. The equations become $\frac{1}{2}u - v = -1$ and $u + \frac{1}{2}v = 8$.
+  \item Solve for $u$ and $v$ and find their reciprocals.
+\end{enumerate}
+\textbf{Derivation:}
+Multiply eq1 by 2:  u - 2v = -2 . Multiply eq2 by 2:  2u + v = 16 . From eq2,  v = 16 - 2u . Substitute into eq1:  u - 2(16 - 2u) = -2 $\implies u - 32 + 4u = -2 \implies 5u = 30 \implies u = 6$ . Then  v = 16 - 12 = 4 . So  x = 1/6, y = 1/4 .
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{13.} Solve the system: $\frac{10}{x+y} + \frac{2}{x-y} = 4$ and $\frac{15}{x+y} - \frac{5}{x-y} = -2$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{x = 3, y = 2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $u = 1/(x+y)$ and $v = 1/(x-y)$. The equations become $10u + 2v = 4$ and $15u - 5v = -2$.
+  \item Solve for $u, v$ and equate to $(x+y)$ and $(x-y)$ to solve for $x$ and $y$.
+\end{enumerate}
+\textbf{Derivation:}
+Multiply first by 5 and second by 2:  50u + 10v = 20  and  30u - 10v = -4 . Add:  80u = 16 $\implies u = 1/5$ . Thus  x+y=5 . Substitute  u=1/5  in  10(1/5) + 2v = 4 $\implies 2 + 2v = 4 \implies v = 1$ . Thus  x-y=1 . Adding gives  2x=6, x=3 ; subtracting gives  2y=4, y=2 .
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{14.} Solve for $x$ and $y$: $\frac{4}{x} + 3y = 8$ and $\frac{6}{x} - 4y = -5$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{x = 2, y = 0}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $u = 1/x$. The equations become $4u + 3y = 8$ and $6u - 4y = -5$.
+  \item Eliminate $y$ by multiplying the first by 4 and the second by 3.
+\end{enumerate}
+\textbf{Derivation:}
+Eq1:  16u + 12y = 32 . Eq2:  18u - 12y = -15 . Adding:  34u = 17 $\implies u = 1/2$ . Since  1/x = 1/2, x = 2 . Substitute  u=1/2  into  4(1/2) + 3y = 8 $\implies 2 + 3y = 8 \implies 3y = 6 \implies y = 2$ .
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{15.} Solve: $\frac{1}{3x+y} + \frac{1}{3x-y} = \frac{3}{4}$ and $\frac{1}{2(3x+y)} - \frac{1}{2(3x-y)} = -\frac{1}{8}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{x = 1, y = 1}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $u = 1/(3x+y)$ and $v = 1/(3x-y)$. Equations are $u + v = 3/4$ and $u/2 - v/2 = -1/8$.
+  \item Solve for $u$ and $v$ and then solve the resulting system for $x$ and $y$.
+\end{enumerate}
+\textbf{Derivation:}
+Eq1:  u + v = 3/4 . Eq2:  u - v = -1/4 . Adding gives  2u = 2/4 = 1/2 $\implies u = 1/4$ . Then  v = 1/2 . Thus  3x+y=4  and  3x-y=2 . Adding gives  6x=6 $\implies x=1$ . Substituting gives  3(1)+y=4 $\implies y=1$ .
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{16.} Solve the following pair of equations by reducing them to a linear form: $\frac{2}{x} + \frac{3}{y} = 13$ and $\frac{5}{x} - \frac{4}{y} = -2$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{x = \frac{1}{2}, y = \frac{1}{3}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Substitute $u = \frac{1}{x}$ and $v = \frac{1}{y}$ to transform the equations into linear form.
+  \item The equations become $2u + 3v = 13$ and $5u - 4v = -2$.
+  \item Solve the system of linear equations using the elimination method.
+  \item Back-substitute the values of $u$ and $v$ to find $x$ and $y$.
+\end{enumerate}
+\textbf{Derivation:}
+Multiply first by 4 and second by 3:  8u + 12v = 52  and  15u - 12v = -6 . Adding them gives  23u = 46 , so  u = 2 . Then  2(2) + 3v = 13 $\implies 3v = 9 \implies v = 3$ . Thus  x = 1/2, y = 1/3 .
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{17.} A boat goes 30 km upstream and 44 km downstream in 10 hours. In 13 hours, it can go 40 km upstream and 55 km downstream. Determine the speed of the stream and the speed of the boat in still water.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Speed of boat} = 8 km/hr, \text{Speed of stream} = 3 km/hr}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let speed of boat be $x$ km/hr and stream be $y$ km/hr. Upstream speed is $x-y$, downstream is $x+y$.
+  \item Form equations: $\frac{30}{x-y} + \frac{44}{x+y} = 10$ and $\frac{40}{x-y} + \frac{55}{x+y} = 13$.
+  \item Substitute $u = \frac{1}{x-y}$ and $v = \frac{1}{x+y}$ and solve for $u$ and $v$.
+  \item Calculate $x$ and $y$ from $u$ and $v$.
+\end{enumerate}
+\textbf{Derivation:}
+ 30u + 44v = 10 $\implies 15u + 22v = 5$  and  40u + 55v = 13 $\implies 8u + 11v = 2.6$ . Solving gives  u=1/5, v=1/11 . Thus  x-y=5, x+y=11 . Adding gives  2x=16 $\implies x=8, y=3$ .
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{18.} Solve for $x$ and $y$: $\frac{1}{2(2x+3y)} + \frac{12}{7(3x-2y)} = \frac{1}{2}$ and $\frac{7}{2x+3y} + \frac{4}{3x-2y} = 2$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{x = 2, y = 1}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $u = \frac{1}{2x+3y}$ and $v = \frac{1}{3x-2y}$.
+  \item The equations become $\frac{1}{2}u + \frac{12}{7}v = \frac{1}{2}$ and $7u + 4v = 2$.
+  \item Simplify the first into $7u + 24v = 7$.
+  \item Solve the system $7u + 24v = 7$ and $7u + 4v = 2$ to find $u$ and $v$, then solve for $x, y$.
+\end{enumerate}
+\textbf{Derivation:}
+Subtracting equations:  (24-4)v = 7-2 $\implies 20v = 5 \implies v = 1/4$ . Then  7u + 1 = 2 $\implies u = 1/7$ .  2x+3y=7, 3x-2y=4 . Solving gives  x=2, y=1 .
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{19.} Roohi travels 300 km to her home partly by train and partly by bus. She takes 4 hours if she travels 60 km by train and the rest by bus. If she travels 100 km by train and the rest by bus, she takes 10 minutes longer. Find the speed of the train and the bus.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Speed of train} = 60 km/hr, \text{Speed of bus} = 80 km/hr}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let speed of train be $x$ and bus be $y$. Time taken = distance/speed.
+  \item Equations: $\frac{60}{x} + \frac{240}{y} = 4$ and $\frac{100}{x} + \frac{200}{y} = 4 + \frac{1}{6}$.
+  \item Use substitution $u=1/x, v=1/y$ to solve the linear system.
+  \item Solve for $x$ and $y$.
+\end{enumerate}
+\textbf{Derivation:}
+ 60u + 240v = 4 $\implies 15u + 60v = 1$ .  100u + 200v = 25/6 $\implies 24u + 48v = 1$ . Solving yields  u=1/60, v=1/80 . Hence  x=60, y=80 .
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{20.} Solve the system: $\frac{x+y}{xy} = 2$ and $\frac{x-y}{xy} = 6$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{x = -1/2, y = 1/4}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Divide by $xy$ to get $\frac{1}{y} + \frac{1}{x} = 2$ and $\frac{1}{y} - \frac{1}{x} = 6$.
+  \item Let $u = \frac{1}{x}$ and $v = \frac{1}{y}$.
+  \item The system becomes $v + u = 2$ and $v - u = 6$.
+  \item Solve for $u$ and $v$ and then for $x$ and $y$.
+\end{enumerate}
+\textbf{Derivation:}
+Adding:  2v = 8 $\implies v = 4$ . Subtracting:  2u = -4 $\implies u = -2$ . Thus  1/y = 4 $\implies y = 1/4$  and  1/x = -2 $\implies x = -1/2$ .
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{21.} Solve the following system of equations by reducing them to linear form: $\frac{10}{x+y} + \frac{2}{x-y} = 4$ and $\frac{15}{x+y} - \frac{5}{x-y} = -2$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{x=3, y=2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $u = \frac{1}{x+y}$ and $v = \frac{1}{x-y}$.
+  \item Substitute into equations to get: $10u + 2v = 4$ and $15u - 5v = -2$.
+  \item Multiply first eq by 5 and second by 2: $50u + 10v = 20$ and $30u - 10v = -4$.
+  \item Add equations to get $80u = 16$, so $u = 1/5$.
+  \item Substitute $u=1/5$ into $10(1/5) + 2v = 4$ to get $2 + 2v = 4$, so $v = 1$.
+  \item Solve $x+y=5$ and $x-y=1$ to get $x=3, y=2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+10u + 2v = 4 \\
+\implies 5u + v = 2 \\
+\implies v = 2 - 5u. \\
+15u - 5(2 - 5u) = -2 \\
+\implies 15u - 10 + 25u = -2 \\
+\implies 40u = 8 \\
+\implies u = 1/5. \\
+v = 2 - 5(1/5) = 1. \\
+\frac{1}{x+y} = 1/5 \\
+\implies x+y=5; \quad \frac{1}{x-y} = 1 \\
+\implies x-y=1. \\
+(x+y) + (x-y) = 5+1 \\
+\implies 2x = 6 \\
+\implies x=3. \\
+3+y=5 \\
+\implies y=2.
+\end{aligned}}
+\end{center}
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{22.} A boat goes 30 km upstream and 44 km downstream in 10 hours. In 13 hours, it can go 40 km upstream and 55 km downstream. Determine the speed of the stream and that of the boat in still water.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Speed of boat} = 8 km/hr, \text{Speed of stream} = 3 km/hr}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let speed of boat be $x$ km/hr and stream be $y$ km/hr.
+  \item Speed downstream is $x+y$, upstream is $x-y$.
+  \item Equations: $\frac{30}{x-y} + \frac{44}{x+y} = 10$ and $\frac{40}{x-y} + \frac{55}{x+y} = 13$.
+  \item Let $u = 1/(x-y)$ and $v = 1/(x+y)$.
+  \item Solve $30u + 44v = 10$ and $40u + 55v = 13$.
+  \item Find $u=1/5, v=1/11$, then solve $x-y=5$ and $x+y=11$.
+\end{enumerate}
+\textbf{Derivation:}
+30u + 44v = 10 $\implies 15u + 22v = 5. \\ 40u + 55v = 13. \\$ Multiply (1) by 8: 120u + 176v = 40. \textbackslash{}\textbackslash{} Multiply (2) by 3: 120u + 165v = 39. \textbackslash{}\textbackslash{} Subtract: 11v = 1 $\implies v = 1/11. \\ 15u + 2 = 5 \implies 15u = 3 \implies u = 1/5. \\ x+y=11, x-y=5 \implies 2x=16, x=8$; y=3.
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{23.} Solve for $x$ and $y$: $\frac{1}{2(2x+3y)} + \frac{12}{7(3x-2y)} = \frac{1}{2}$ and $\frac{7}{2x+3y} + \frac{4}{3x-2y} = 2$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{x=2, y=1/3 (\text{or similar system solution})}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $u = \frac{1}{2x+3y}$ and $v = \frac{1}{3x-2y}$.
+  \item Substitute to get: $\frac{1}{2}u + \frac{12}{7}v = \frac{1}{2}$ and $7u + 4v = 2$.
+  \item Simplify first eq: $7u + 24v = 7$.
+  \item Subtract $(7u + 4v = 2)$ from $(7u + 24v = 7)$ to get $20v = 5 \implies v = 1/4$.
+  \item Substitute $v=1/4$ into $7u + 4(1/4) = 2 \implies 7u = 1 \implies u = 1/7$.
+  \item Solve $2x+3y=7$ and $3x-2y=4$ using elimination.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+2x+3y=7 \dots(i) \\
+3x-2y=4 \dots(ii) \\
+(i)\times 2 + (ii)\times 3 \\
+\implies 4x+6y+9x-6y = 14+12 \\
+\implies 13x=26 \\
+\implies x=2. \\
+2(2)+3y=7 \\
+\implies 3y=3 \\
+\implies y=1.
+\end{aligned}}
+\end{center}
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{24.} Two women and five men can together finish an embroidery work in 4 days, while three women and six men can finish it in 3 days. Find the time taken by 1 woman alone to finish the work, and also that taken by 1 man alone.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Woman} = 18 \text{days}, Man = 36 \text{days}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let 1 woman take $x$ days and 1 man take $y$ days.
+  \item Work done by 1 woman in 1 day = $1/x$, man = $1/y$.
+  \item Equations: $4(2/x + 5/y) = 1$ and $3(3/x + 6/y) = 1$.
+  \item $8/x + 20/y = 1$ and $9/x + 18/y = 1$.
+  \item Let $u=1/x, v=1/y$. Solve $8u + 20v = 1$ and $9u + 18v = 1$.
+  \item Solve for $u, v$ and reciprocate to find $x, y$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+8u + 20v = 1 \dots(1) \\
+9u + 18v = 1 \dots(2) \\
+72u + 180v = 9 \\
+72u + 144v = 8 \\
+36v = 1 \\
+\implies v = 1/36. \\
+9u + 18(1/36) = 1 \\
+\implies 9u = 1/2 \\
+\implies u = 1/18. \\
+x = 18, y = 36.
+\end{aligned}}
+\end{center}
+\hfill \textit{Pair of Linear Equations in Two Variables — Equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{25.} Which of the following is a quadratic equation?
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item A quadratic equation is of the form $ax^2 + bx + c = 0$ where $a \neq 0$.
+  \item Check each option: (A) has $x^2$ on both sides cancelling out, (B) $x^3$ term makes it cubic, (C) simplifies to $x^2 - 3x + 2 = 0$, (D) has $1/x$ which is not polynomial.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+x(x+1) + 8 = (x+2)(x-2) \\
+\implies x^2 + x + 8 = x^2 - 4 \\
+\implies x + 12 = 0 \text{ (Linear). } (x+2)^2 = 2(x+3) \\
+\implies x^2 + 4x + 4 = 2x + 6 \\
+\implies x^2 + 2x - 2 = 0
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Introduction to Quadratic Equations}
+\vspace{0.3cm}
+
+\question \textbf{26.} The discriminant of the quadratic equation $2x^2 - 4x + 3 = 0$ is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify $a=2, b=-4, c=3$.
+  \item Use the formula $D = b^2 - 4ac$.
+  \item Calculate $D = (-4)^2 - 4(2)(3) = 16 - 24 = -8$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{D = b^2 - 4ac = (-4)^2 - 4(2)(3) = 16 - 24 = -8}
+\end{center}
+\hfill \textit{Quadratic Equations — Nature of Roots}
+\vspace{0.3cm}
+
+\question \textbf{27.} If $1/2$ is a root of the equation $x^2 - kx - 5/4 = 0$, then the value of $k$ is:
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Substitute $x = 1/2$ into the equation.
+  \item $(1/2)^2 - k(1/2) - 5/4 = 0$.
+  \item $1/4 - k/2 - 5/4 = 0 \implies -4/4 - k/2 = 0 \implies -1 = k/2 \implies k = -2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\left(\frac{1}{2}\right)^2 - k\left(\frac{1}{2}\right) - \frac{5}{4} = 0 \\
+\implies \frac{1}{4} - \frac{k}{2} - \frac{5}{4} = 0 \\
+\implies -1 - \frac{k}{2} = 0 \\
+\implies k = -2
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Roots of a Quadratic Equation}
+\vspace{0.3cm}
+
+\question \textbf{28.} The quadratic equation $x^2 + kx + 1 = 0$ has equal roots if:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item For equal roots, discriminant $D = 0$.
+  \item $b^2 - 4ac = 0$.
+  \item $k^2 - 4(1)(1) = 0 \implies k^2 = 4 \implies k = \pm 2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+D = k^2 - 4(1)(1) = 0 \\
+\implies k^2 = 4 \\
+\implies k = \pm 2
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Nature of Roots}
+\vspace{0.3cm}
+
+\question \textbf{29.} The roots of the quadratic equation $x^2 - 9 = 0$ are:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Factor the equation: $x^2 - 3^2 = 0$.
+  \item $(x - 3)(x + 3) = 0$.
+  \item Therefore, $x = 3$ or $x = -3$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+x^2 = 9 \\
+\implies x = \pm \sqrt{9} \\
+\implies x = \pm 3
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Solving Quadratic Equations by Factorization}
+\vspace{0.3cm}
+
+\question \textbf{30.} Assertion (A): The quadratic equation $x^2 + 5x + 6 = 0$ has two distinct real roots. Reason (R): A quadratic equation $ax^2 + bx + c = 0$ has distinct real roots if its discriminant $D = b^2 - 4ac > 0$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the discriminant D.
+  \item Check if D > 0.
+\end{enumerate}
+\textbf{Derivation:}
+D = b\textasciicircum{}2 - 4ac = (5)\textasciicircum{}2 - 4(1)(6) = 25 - 24 = 1. Since 1 > 0, the roots are distinct and real.
+\hfill \textit{Quadratic Equations — Nature of Roots}
+\vspace{0.3cm}
+
+\question \textbf{31.} Assertion (A): If $x = 2$ is a root of $x^2 - kx + 4 = 0$, then $k = 4$. Reason (R): A value $x = \alpha$ is a root of the equation $f(x) = 0$ if $f(\alpha) = 0$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Substitute x = 2 into the equation.
+  \item Solve for k.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+(2)^2 - k(2) + 4 = 0 \\
+\implies 4 - 2k + 4 = 0 \\
+\implies 8 = 2k \\
+\implies k = 4.
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Roots of Quadratic Equation}
+\vspace{0.3cm}
+
+\question \textbf{32.} Assertion (A): The equation $(x-2)^2 + 1 = 2x - 3$ is a quadratic equation. Reason (R): Any equation of the form $ax^2 + bx + c = 0$ where $a \neq 0$ is a quadratic equation.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Expand the LHS.
+  \item Simplify the equation to standard form.
+  \item Check if the highest power is 2.
+\end{enumerate}
+\textbf{Derivation:}
+x\textasciicircum{}2 - 4x + 4 + 1 = 2x - 3 $\implies x^2 - 6x + 8 = 0.$ This is in the form ax\textasciicircum{}2 + bx + c = 0 with a = 1.
+\hfill \textit{Quadratic Equations — Introduction to Quadratic Equations}
+\vspace{0.3cm}
+
+\question \textbf{33.} Assertion (A): The quadratic equation $x^2 + 2x + 5 = 0$ has no real roots. Reason (R): For $x^2 + 2x + 5 = 0$, the discriminant is $-16$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate discriminant D.
+  \item Evaluate nature of roots based on D.
+\end{enumerate}
+\textbf{Derivation:}
+D = b\textasciicircum{}2 - 4ac = (2)\textasciicircum{}2 - 4(1)(5) = 4 - 20 = -16. Since D < 0, there are no real roots.
+\hfill \textit{Quadratic Equations — Nature of Roots}
+\vspace{0.3cm}
+
+\question \textbf{34.} Assertion (A): The roots of $x^2 - 9 = 0$ are $3$ and $-3$. Reason (R): $x^2 - a^2 = (x-a)(x+a)$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use factorisation method.
+  \item Solve for x.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+x^2 - 9 = 0 \\
+\implies (x-3)(x+3) = 0. So, x = 3 \text{or x} = -3.
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Solving Quadratic Equations by Factorisation}
+\vspace{0.3cm}
+
+\question \textbf{35.} Find the roots of the quadratic equation $x^2 - 3x - 10 = 0$ by the method of factorization.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{x = 5, x = -2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Split the middle term $-3x$ into $-5x + 2x$ such that their product is $-10x^2$.
+  \item Factorize the expression by grouping terms and solve for x.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+x^2 - 5x + 2x - 10 = 0 \\
+\implies x(x-5) + 2(x-5) = 0 \\
+\implies (x-5)(x+2) = 0 \\
+\implies x = 5, -2
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Factorization Method}
+\vspace{0.3cm}
+
+\question \textbf{36.} Find the value of $k$ for which the quadratic equation $2x^2 + kx + 3 = 0$ has two equal real roots.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{k = \pm 2\sqrt{6}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the condition for equal roots, which is the discriminant $D = b^2 - 4ac = 0$.
+  \item Substitute $a=2, b=k, c=3$ into the formula and solve for $k$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+D = k^2 - 4(2)(3) = 0 \\
+\implies k^2 - 24 = 0 \\
+\implies k^2 = 24 \\
+\implies k = \pm \sqrt{24} = \pm 2\sqrt{6}
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Nature of Roots}
+\vspace{0.3cm}
+
+\question \textbf{37.} Check whether $x(x + 3) + 1 = (x - 2)(x + 2)$ is a quadratic equation.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{No, \text{it is not a quadratic equation}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Expand both sides of the equation to simplify.
+  \item Check if the resulting equation is of the form $ax^2 + bx + c = 0$ where $a \neq 0$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+x^2 + 3x + 1 = x^2 - 4 \\
+\implies 3x + 1 = -4 \\
+\implies 3x + 5 = 0. \text{ Since the degree is 1, it is linear, not quadratic.}
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Introduction to Quadratic Equations}
+\vspace{0.3cm}
+
+\question \textbf{38.} Find the roots of the equation $2x^2 - x + \frac{1}{8} = 0$ by using the quadratic formula.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{x = \frac{1}{4}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Multiply the entire equation by 8 to simplify the coefficients.
+  \item Apply the quadratic formula $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+16x^2 - 8x + 1 = 0. \text{ Here } a=16, b=-8, c=1. \\
+\implies x = \frac{8 \pm \sqrt{64 - 64}}{32} = \frac{8}{32} = \frac{1}{4}
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Quadratic Formula}
+\vspace{0.3cm}
+
+\question \textbf{39.} The sum of two numbers is 27 and their product is 182. Form the quadratic equation representing this scenario.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{x^2 - 27x + 182 = 0}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let one number be $x$, then the other number is $27 - x$.
+  \item Set up the equation based on their product $x(27 - x) = 182$ and simplify.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+x(27 - x) = 182 \\
+\implies 27x - x^2 = 182 \\
+\implies x^2 - 27x + 182 = 0
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Word Problems}
+\vspace{0.3cm}
+
+\question \textbf{40.} Find the roots of the quadratic equation $2x^2 - x + \frac{1}{8} = 0$ by the method of factorization.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{x = \frac{1}{4}, \frac{1}{4}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Multiply the entire equation by 8 to eliminate the fraction: $16x^2 - 8x + 1 = 0$.
+  \item Split the middle term: $16x^2 - 4x - 4x + 1 = 0$.
+  \item Factor by grouping: $4x(4x - 1) - 1(4x - 1) = 0$.
+  \item Solve for x: $(4x - 1)^2 = 0$, thus $x = 1/4$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+16x^2 - 8x + 1 = 0 \\
+16x^2 - 4x - 4x + 1 = 0 \\
+4x(4x - 1) - 1(4x - 1) = 0 \\
+(4x - 1)(4x - 1) = 0 \\
+x = 1/4
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Factorization Method}
+\vspace{0.3cm}
+
+\end{questions}
+
+\end{document}

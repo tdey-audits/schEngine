@@ -1,0 +1,110 @@
+{
+  "batch_id": "20260604_145609_32268af9",
+  "generated_at": "2026-06-04T14:56:09.740388",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The length of a tangent drawn from an external point to a circle is always equal to the radius of the circle. Reason (R): The tangent at any point of a circle is perpendicular to the radius through the point of contact.",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Evaluate Assertion (A): The length of a tangent from an external point is not necessarily equal to the radius; they are independent.",
+          "Evaluate Reason (R): This is a standard theorem stating that the tangent at any point of a circle is perpendicular to the radius through the point of contact.",
+          "Conclusion: Assertion is false, but Reason is true."
+        ],
+        "derivation": "$A \\text{ is false, } R \\text{ is true. } \\text{Therefore, } (D) \\text{ is the correct option.}$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:56:09.740164",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145609_dac76a_01"
+    },
+    {
+      "question": "Assertion (A): If a quadrilateral $ABCD$ circumscribes a circle, then $AB + CD = AD + BC$. Reason (R): The lengths of tangents drawn from an external point to a circle are equal.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Analyze Reason (R): This is the fundamental theorem that tangents from an external point to a circle are equal in length.",
+          "Analyze Assertion (A): Using the theorem in R, let the contact points be $P, Q, R, S$ on sides $AB, BC, CD, DA$. Then $AP=AS, BP=BQ, CQ=CR, DR=DS$. Summing these shows $AB+CD = AD+BC$.",
+          "Conclusion: Both are true and R explains A."
+        ],
+        "derivation": "$AP=AS, BP=BQ, CQ=CR, DR=DS \\\\ AP+BP+CR+DR = AS+DS+BQ+CQ \\\\ AB+CD = AD+BC$"
+      },
+      "topic": "Circles",
+      "subtopic": "Properties of tangents",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "caption": "Quadrilateral ABCD circumscribing a circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": 1
+          },
+          {
+            "kind": "polygon",
+            "points": [
+              {
+                "x": -2,
+                "y": 2
+              },
+              {
+                "x": 2,
+                "y": 2
+              },
+              {
+                "x": 2,
+                "y": -2
+              },
+              {
+                "x": -2,
+                "y": -2
+              }
+            ],
+            "label": "ABCD"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:56:09.740260",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145609_27977f_02"
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "batch_id": "20260604_144959_cdd9843d",
+  "generated_at": "2026-06-04T14:49:59.292070",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "In $\\triangle ABC$, a circle is inscribed touching sides $AB$, $BC$, and $CA$ at points $P$, $Q$, and $R$ respectively. If $AB = 12$ cm, $BC = 8$ cm, and $AC = 10$ cm, find the length of $AP$.",
+      "answer": "$7$ cm",
+      "solution": {
+        "steps": [
+          "Let $AP = AR = x$, $BP = BQ = y$, and $CQ = CR = z$.",
+          "Set up the system of equations based on side lengths: $x+y=12$, $y+z=8$, $z+x=10$. Solve for $x$."
+        ],
+        "derivation": "$x+y=12, \\ y+z=8, \\ z+x=10 \\\\ (x+y+z) = (12+8+10)/2 = 15 \\\\ x = 15 - (y+z) = 15 - 8 = 7$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "label": "P"
+          },
+          {
+            "kind": "point",
+            "id": "Q",
+            "label": "Q"
+          },
+          {
+            "kind": "point",
+            "id": "R",
+            "label": "R"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:49:59.291798",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_144959_98fbb5_01"
+    },
+    {
+      "question": "From a point $P$, $10$ cm away from the centre of a circle, the length of the tangent drawn to the circle is $8$ cm. Find the radius of the circle.",
+      "answer": "$6$ cm",
+      "solution": {
+        "steps": [
+          "Use the property that the tangent is perpendicular to the radius at the point of contact.",
+          "Apply Pythagoras theorem in the right-angled triangle formed by the radius, tangent, and the line from the centre to $P$."
+        ],
+        "derivation": "$r^2 + 8^2 = 10^2 \\\\ r^2 + 64 = 100 \\\\ r^2 = 36 \\\\ r = 6 \\text{ cm}$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 1.5
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "label": "O"
+          },
+          {
+            "kind": "point",
+            "id": "T",
+            "label": "T"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "label": "P"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "T",
+            "label": "r"
+          },
+          {
+            "kind": "segment",
+            "from": "T",
+            "to": "P",
+            "label": "8"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "P",
+            "label": "10"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:49:59.291869",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_144959_16e356_02"
+    },
+    {
+      "question": "Two concentric circles are of radii $5$ cm and $3$ cm. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "answer": "$8$ cm",
+      "solution": {
+        "steps": [
+          "Let $O$ be the centre, $AB$ be the chord of the larger circle tangent to the smaller circle at $M$.",
+          "In $\\triangle OMA$, use Pythagoras theorem to find $AM$, then $AB = 2 \\times AM$."
+        ],
+        "derivation": "$OM = 3, \\ OA = 5 \\\\ AM = \\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = 4 \\\\ AB = 2 \\times 4 = 8 \\text{ cm}$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 1
+          },
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "label": "O"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "B",
+            "label": "chord"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:49:59.291892",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_144959_1bf95f_03"
+    },
+    {
+      "question": "If tangents $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\\circ$, find $\\angle POA$.",
+      "answer": "$50^\\circ$",
+      "solution": {
+        "steps": [
+          "The line $OP$ bisects the angle $\\angle APB$. Thus $\\angle APO = 40^\\circ$.",
+          "In $\\triangle OAP$, $\\angle OAP = 90^\\circ$. Therefore $\\angle POA = 90^\\circ - 40^\\circ$."
+        ],
+        "derivation": "\\angle APB = 80^\\circ \\Rightarrow \\angle APO = 40^\\circ \\\\ \\angle OAP = 90^\\circ \\\\ \\angle POA = 180^\\circ - 90^\\circ - 40^\\circ = 50^\\circ"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 1
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "label": "B"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "label": "P"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:49:59.291908",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_144959_7493f8_04"
+    },
+    {
+      "question": "A quadrilateral $ABCD$ is drawn to circumscribe a circle. If $AB = 6$ cm, $BC = 7$ cm, and $CD = 4$ cm, find the length of $AD$.",
+      "answer": "$3$ cm",
+      "solution": {
+        "steps": [
+          "Use the property that for a circumscribed quadrilateral, the sums of opposite sides are equal.",
+          "$AB + CD = BC + AD$."
+        ],
+        "derivation": "6 + 4 = 7 + AD \\\\ 10 = 7 + AD \\\\ AD = 3 \\text{ cm}"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 1
+          },
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:49:59.291921",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_144959_2725f3_05"
+    }
+  ]
+}

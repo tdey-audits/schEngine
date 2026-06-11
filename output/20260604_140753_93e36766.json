@@ -1,0 +1,158 @@
+{
+  "batch_id": "20260604_140753_93e36766",
+  "generated_at": "2026-06-04T14:07:53.355524",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Pair of Linear Equations in Two Variables",
+  "subtopic": "equations reducible to linear form",
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The equation $\\frac{2}{x} + \\frac{3}{y} = 13$ can be reduced to a linear equation in two variables by substituting $u = \\frac{1}{x}$ and $v = \\frac{1}{y}$. Reason (R): Any equation of the form $\\frac{a}{x} + \\frac{b}{y} = c$ where $x, y \\neq 0$ is a linear equation. Select the correct option.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "The substitution $u = 1/x$ and $v = 1/y$ converts $2/x + 3/y = 13$ into $2u + 3v = 13$, which is linear. Thus (A) is true.",
+          "The equation $a/x + b/y = c$ is not linear as the variables are in the denominator. Thus (R) is false."
+        ],
+        "derivation": "2u + 3v = 13 \\implies \\text{Linear form}"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:53.355150",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140753_325592_01"
+    },
+    {
+      "question": "Assertion (A): For the system $\\frac{1}{x} + \\frac{1}{y} = 5$ and $\\frac{1}{x} - \\frac{1}{y} = 1$, the values are $x = 1/3, y = 1/2$. Reason (R): Adding the two equations eliminates the term involving $1/y$. Select the correct option.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Let $u = 1/x, v = 1/y$. Equations become $u+v=5$ and $u-v=1$.",
+          "Adding gives $2u=6 \\implies u=3 \\implies x=1/3$.",
+          "Subtracting gives $2v=4 \\implies v=2 \\implies y=1/2$. (A) is true.",
+          "Adding the equations eliminates $v$. (R) is true and explains (A)."
+        ],
+        "derivation": "u+v=5, u-v=1 \\implies 2u=6 \\implies u=3; 2v=4 \\implies v=2"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:53.355242",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140753_216fe7_02"
+    },
+    {
+      "question": "Assertion (A): The equation $\\frac{5}{x-1} + \\frac{1}{y-2} = 2$ is reducible to linear form using $u = \\frac{1}{x-1}$ and $v = \\frac{1}{y-2}$. Reason (R): The substitution must always be linear functions of $x$ and $y$. Select the correct option.",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "(A) is true because $5u + v = 2$ is linear.",
+          "(R) is true because we reduce to linear form to solve, but it is not the reason for the specific substitution choice in (A)."
+        ],
+        "derivation": "5(\\frac{1}{x-1}) + 1(\\frac{1}{y-2}) = 2"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:53.355269",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140753_1cf137_03"
+    },
+    {
+      "question": "Assertion (A): The pair $\\frac{4}{x} + 3y = 14$ and $\\frac{3}{x} - 4y = 23$ has $x = 1/5$. Reason (R): Substituting $u = 1/x$ reduces the system to $4u + 3y = 14$ and $3u - 4y = 23$. Select the correct option.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "(R) is true as it correctly defines the substitution.",
+          "Solving $4u + 3y = 14$ and $3u - 4y = 23$: Multiply first by 4, second by 3: $16u + 12y = 56$ and $9u - 12y = 69$.",
+          "Adding: $25u = 125 \\implies u = 5 \\implies 1/x = 5 \\implies x = 1/5$. (A) is true."
+        ],
+        "derivation": "16u+12y=56; 9u-12y=69 \\implies 25u=125 \\implies u=5"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:53.355290",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140753_76b133_04"
+    },
+    {
+      "question": "Assertion (A): For $\\frac{2}{\\sqrt{x}} + \\frac{3}{\\sqrt{y}} = 2$ and $\\frac{4}{\\sqrt{x}} - \\frac{9}{\\sqrt{y}} = -1$, the value of $u = \\frac{1}{\\sqrt{x}}$ is $1/2$. Reason (R): A linear equation must have variables with power 1. Select the correct option.",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "(A) is true: $2u + 3v = 2$ and $4u - 9v = -1$. Multiply 1st by 3: $6u + 9v = 6$. Adding to 2nd: $10u = 5 \\implies u = 1/2$.",
+          "(R) is true as linear equations are defined by degree 1, but it is not the reason why $u=1/2$."
+        ],
+        "derivation": "2u+3v=2; 4u-9v=-1 \\implies 6u+9v=6 \\implies 10u=5 \\implies u=1/2"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:53.355309",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140753_206e3e_05"
+    }
+  ]
+}

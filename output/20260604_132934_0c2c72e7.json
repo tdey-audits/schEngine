@@ -1,0 +1,66 @@
+{
+  "batch_id": "20260604_132934_0c2c72e7",
+  "generated_at": "2026-06-04T13:29:34.417148",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Prove the following trigonometric identity: $\\frac{\\tan \\theta}{1 - \\cot \\theta} + \\frac{\\cot \\theta}{1 - \\tan \\theta} = 1 + \\sec \\theta \\csc \\theta$.",
+      "answer": "$1 + \\sec \\theta \\csc \\theta$",
+      "solution": {
+        "steps": [
+          "Convert all terms into $\\sin \\theta$ and $\\cos \\theta$.",
+          "Simplify the denominators by taking common denominators.",
+          "Apply the identity $(a-b)^3 = a^3 - b^3$ or group terms after simplification.",
+          "Use the identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$.",
+          "Separate the fraction to reach the final RHS."
+        ],
+        "derivation": "LHS = \\frac{\\frac{\\sin \\theta}{\\cos \\theta}}{1 - \\frac{\\cos \\theta}{\\sin \\theta}} + \\frac{\\frac{\\cos \\theta}{\\sin \\theta}}{1 - \\frac{\\sin \\theta}{\\cos \\theta}} = \\frac{\\sin^2 \\theta}{\\cos \\theta(\\sin \\theta - \\cos \\theta)} + \\frac{\\cos^2 \\theta}{\\sin \\theta(\\cos \\theta - \\sin \\theta)} = \\frac{\\sin^3 \\theta - \\cos^3 \\theta}{\\sin \\theta \\cos \\theta (\\sin \\theta - \\cos \\theta)} = \\frac{(\\sin \\theta - \\cos \\theta)(\\sin^2 \\theta + \\cos^2 \\theta + \\sin \\theta \\cos \\theta)}{\\sin \\theta \\cos \\theta (\\sin \\theta - \\cos \\theta)} = \\frac{1 + \\sin \\theta \\cos \\theta}{\\sin \\theta \\cos \\theta} = \\frac{1}{\\sin \\theta \\cos \\theta} + 1 = \\sec \\theta \\csc \\theta + 1 = RHS"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:34.417040",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132934_5d607d_01"
+    },
+    {
+      "question": "If $\\sec \\theta + \\tan \\theta = p$, show that $\\frac{p^2 - 1}{p^2 + 1} = \\sin \\theta$.",
+      "answer": "$\\sin \\theta$",
+      "solution": {
+        "steps": [
+          "Substitute $p = \\sec \\theta + \\tan \\theta$ into the expression $\\frac{p^2 - 1}{p^2 + 1}$.",
+          "Expand the numerator using $(\\sec \\theta + \\tan \\theta)^2 - 1$.",
+          "Apply the identity $\\sec^2 \\theta - 1 = \\tan^2 \\theta$ in the numerator.",
+          "Expand the denominator using $(\\sec \\theta + \\tan \\theta)^2 + 1 = \\sec^2 \\theta + \\tan^2 \\theta + 2 \\sec \\theta \\tan \\theta + 1$.",
+          "Use $1 + \\tan^2 \\theta = \\sec^2 \\theta$ to simplify the denominator.",
+          "Cancel common terms to arrive at $\\sin \\theta$."
+        ],
+        "derivation": "p^2 - 1 = (\\sec \\theta + \\tan \\theta)^2 - 1 = \\sec^2 \\theta + \\tan^2 \\theta + 2 \\sec \\theta \\tan \\theta - 1 = (\\sec^2 \\theta - 1) + \\tan^2 \\theta + 2 \\sec \\theta \\tan \\theta = 2 \\tan^2 \\theta + 2 \\sec \\theta \\tan \\theta = 2 \\tan \\theta(\\tan \\theta + \\sec \\theta). \\\\ p^2 + 1 = (\\sec \\theta + \\tan \\theta)^2 + 1 = \\sec^2 \\theta + \\tan^2 \\theta + 2 \\sec \\theta \\tan \\theta + 1 = \\sec^2 \\theta + (\\tan^2 \\theta + 1) + 2 \\sec \\theta \\tan \\theta = 2 \\sec^2 \\theta + 2 \\sec \\theta \\tan \\theta = 2 \\sec \\theta(\\sec \\theta + \\tan \\theta). \\\\ \\frac{p^2 - 1}{p^2 + 1} = \\frac{2 \\tan \\theta(\\sec \\theta + \\tan \\theta)}{2 \\sec \\theta(\\sec \\theta + \\tan \\theta)} = \\frac{\\tan \\theta}{\\sec \\theta} = \\frac{\\sin \\theta}{\\cos \\theta} \\cdot \\cos \\theta = \\sin \\theta"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:34.417088",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132934_a94bbe_02"
+    }
+  ]
+}

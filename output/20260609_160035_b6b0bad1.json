@@ -1,0 +1,112 @@
+{
+  "batch_id": "20260609_160035_b6b0bad1",
+  "generated_at": "2026-06-09T16:00:35.002217",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $7 \\sin^2 \\theta + 3 \\cos^2 \\theta = 4$, show that $\\tan \\theta = \\frac{1}{\\sqrt{3}}$.",
+      "answer": "$\\tan \\theta = \\frac{1}{\\sqrt{3}}$",
+      "solution": {
+        "steps": [
+          "Use the Pythagorean identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$ to express the equation in terms of a single trigonometric ratio.",
+          "Substitute $\\cos^2 \\theta = 1 - \\sin^2 \\theta$ into the given equation and simplify to find the value of $\\sin^2 \\theta$.",
+          "Calculate $\\cos^2 \\theta$ using the identity and then find $\\tan^2 \\theta = \\frac{\\sin^2 \\theta}{\\cos^2 \\theta}$.",
+          "Take the square root to find $\\tan \\theta$."
+        ],
+        "derivation": "$7 \\sin^2 \\theta + 3 \\cos^2 \\theta = 4 \\\\ 7 \\sin^2 \\theta + 3(1 - \\sin^2 \\theta) = 4 \\\\ 7 \\sin^2 \\theta + 3 - 3 \\sin^2 \\theta = 4 \\\\ 4 \\sin^2 \\theta = 1 \\\\ \\sin^2 \\theta = \\frac{1}{4} \\\\ \\cos^2 \\theta = 1 - \\frac{1}{4} = \\frac{3}{4} \\\\ \\tan^2 \\theta = \\frac{\\sin^2 \\theta}{\\cos^2 \\theta} = \\frac{1/4}{3/4} = \\frac{1}{3} \\\\ \\tan \\theta = \\frac{1}{\\sqrt{3}}$"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-09T16:00:35.001949",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_8 (Introduction to Trigonometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 28,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 30,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 30,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 15,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 13,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160035_0d1624_01"
+    }
+  ]
+}

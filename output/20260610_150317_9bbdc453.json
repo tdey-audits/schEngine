@@ -1,0 +1,94 @@
+{
+  "batch_id": "20260610_150317_9bbdc453",
+  "generated_at": "2026-06-10T15:03:17.086301",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Pair of Linear Equations in Two Variables",
+  "subtopic": "graphical method",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "The pair of linear equations $x = 5$ and $y = -3$ graphically represents lines which are",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Identify the nature of the lines. The equation $x = 5$ represents a vertical line parallel to the $y$-axis passing through $(5, 0)$.",
+          "The equation $y = -3$ represents a horizontal line parallel to the $x$-axis passing through $(0, -3)$.",
+          "Observe that a vertical line and a horizontal line must intersect at exactly one point.",
+          "The point of intersection is found by taking the $x$-coordinate from the first equation and the $y$-coordinate from the second equation, which is $(5, -3)$."
+        ],
+        "derivation": "$x = 5 \\text{ is a vertical line} \\\\ y = -3 \\text{ is a horizontal line} \\\\ \\text{A vertical line and a horizontal line intersect at point } (5, -3) \\\\ \\text{Therefore, they are intersecting lines at } (5, -3)$"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "graphical method",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) parallel to each other",
+        "(B) intersecting at (5, -3)",
+        "(C) coincident",
+        "(D) intersecting at (-3, 5)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T15:03:17.086231",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.1",
+            "question_no": 5,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.1",
+            "question_no": 10,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.1",
+            "question_no": 6,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150317_f2536a_01"
+    }
+  ]
+}

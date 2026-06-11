@@ -1,0 +1,118 @@
+{
+  "batch_id": "20260604_141052_1c468a46",
+  "generated_at": "2026-06-04T14:10:52.381390",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Constructions",
+  "subtopic": "construction of tangents",
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Draw a circle of radius $3 \\text{ cm}$. Take two points $P$ and $Q$ on one of its extended diameters each at a distance of $7 \\text{ cm}$ from its centre. Draw tangents to the circle from these two points $P$ and $Q$.",
+      "answer": "Two pairs of tangents constructed from points P and Q, each pair having equal lengths of $\\sqrt{7^2 - 3^2} = \\sqrt{40} \\approx 6.32 \\text{ cm}$.",
+      "solution": {
+        "steps": [
+          "Draw a circle with center O and radius 3 cm.",
+          "Draw a diameter and extend it on both sides to locate P and Q such that OP = OQ = 7 cm.",
+          "Bisect OP and OQ to find midpoints M and N.",
+          "Using M as center and MO as radius, draw a circle to intersect the original circle at points A and B.",
+          "Using N as center and NO as radius, draw a circle to intersect the original circle at points C and D.",
+          "Join PA, PB, QC, and QD to get the required tangents."
+        ],
+        "derivation": "Length of tangent = $\\sqrt{d^2 - r^2} = \\sqrt{7^2 - 3^2} = \\sqrt{49 - 9} = \\sqrt{40} \\text{ cm}$."
+      },
+      "topic": "Constructions",
+      "subtopic": "Construction of tangents to a circle",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:52.381278",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141052_812b05_01"
+    },
+    {
+      "question": "Construct a triangle $ABC$ with side $BC = 6 \\text{ cm}$, $AB = 5 \\text{ cm}$ and $\\angle ABC = 60^\\circ$. Then construct a triangle whose sides are $\\frac{3}{4}$ of the corresponding sides of the triangle $ABC$. Finally, construct a tangent to the circumcircle of triangle $ABC$ at vertex $A$.",
+      "answer": "A scaled triangle $A'BC'$ and a tangent line touching the circumcircle at A.",
+      "solution": {
+        "steps": [
+          "Construct triangle ABC with given dimensions.",
+          "Draw an acute angle at B and divide the line into 4 segments to construct the similar triangle A'BC'.",
+          "Find the circumcenter O by drawing perpendicular bisectors of AB and BC.",
+          "Draw the circumcircle with center O passing through A, B, and C.",
+          "Construct a line perpendicular to radius OA at point A to get the tangent."
+        ],
+        "derivation": "The tangent at A is perpendicular to the radius OA, hence $\\angle OAT = 90^\\circ$."
+      },
+      "topic": "Constructions",
+      "subtopic": "Construction of tangents and similar triangles",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:52.381316",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141052_0cb4ea_02"
+    },
+    {
+      "question": "Draw a pair of tangents to a circle of radius $4 \\text{ cm}$, which are inclined to each other at an angle of $60^\\circ$. Justify the construction.",
+      "answer": "Tangents constructed such that the angle between them is 60 degrees.",
+      "solution": {
+        "steps": [
+          "Draw a circle of radius 4 cm with center O.",
+          "Draw a radius OA.",
+          "Draw a radius OB such that $\\angle AOB = 180^\\circ - 60^\\circ = 120^\\circ$.",
+          "At point A, construct a line perpendicular to OA.",
+          "At point B, construct a line perpendicular to OB.",
+          "The point where these two lines intersect is P. $\\angle APB$ will be $60^\\circ$."
+        ],
+        "derivation": "In quadrilateral OAPB, $\\angle OAP = 90^\\circ$, $\\angle OBP = 90^\\circ$, and $\\angle AOB = 120^\\circ$. Thus $\\angle APB = 360^\\circ - (90^\\circ + 90^\\circ + 120^\\circ) = 60^\\circ$."
+      },
+      "topic": "Constructions",
+      "subtopic": "Construction of tangents",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:52.381325",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141052_380b77_03"
+    },
+    {
+      "question": "Draw two concentric circles of radii $3 \\text{ cm}$ and $5 \\text{ cm}$. Construct a tangent to the smaller circle from a point on the larger circle and measure its length. Verify the measurement by calculation.",
+      "answer": "Length of tangent is 4 cm.",
+      "solution": {
+        "steps": [
+          "Draw two concentric circles with center O and radii 3 cm and 5 cm.",
+          "Mark a point P on the circumference of the larger circle.",
+          "Join OP (length 5 cm).",
+          "Bisect OP at M.",
+          "Draw a circle with center M and radius MO, cutting the smaller circle at A and B.",
+          "Join PA and PB, which are the required tangents."
+        ],
+        "derivation": "In right $\\triangle OAP$, $OA = 3 \\text{ cm}$, $OP = 5 \\text{ cm}$. By Pythagoras theorem, $PA = \\sqrt{OP^2 - OA^2} = \\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = \\sqrt{16} = 4 \\text{ cm}$."
+      },
+      "topic": "Constructions",
+      "subtopic": "Construction of tangents",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:52.381331",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141052_f3a6b0_04"
+    }
+  ]
+}

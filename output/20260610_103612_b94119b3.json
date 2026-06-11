@@ -1,0 +1,58 @@
+{
+  "batch_id": "20260610_103612_b94119b3",
+  "generated_at": "2026-06-10T10:36:12.344741",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "standard form and roots",
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The quadratic equation $2x^2 - 5x + 3 = 0$ has two distinct real roots. \\\\ Reason (R): A quadratic equation $ax^2 + bx + c = 0$ has distinct real roots if its discriminant $D = b^2 - 4ac > 0$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Identify the coefficients $a = 2$, $b = -5$, and $c = 3$ from the given equation.",
+          "Calculate the discriminant $D$ using the formula $D = b^2 - 4ac$.",
+          "Substitute the values: $D = (-5)^2 - 4(2)(3) = 25 - 24 = 1$.",
+          "Since $D = 1 > 0$, the quadratic equation has two distinct real roots, making Assertion (A) true.",
+          "The definition of the nature of roots based on the discriminant is a standard mathematical property, making Reason (R) true and the correct explanation of (A)."
+        ],
+        "derivation": "$D = b^2 - 4ac \\\\ D = (-5)^2 - 4 \\times 2 \\times 3 \\\\ D = 25 - 24 \\\\ D = 1 \\\\ 1 > 0 \\Rightarrow \\text{distinct real roots}$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "standard form and roots",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T10:36:12.344515",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ]
+      },
+      "id": "ncert_20260610_103612_f41554_01"
+    }
+  ]
+}

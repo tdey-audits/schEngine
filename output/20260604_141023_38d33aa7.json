@@ -1,0 +1,130 @@
+{
+  "batch_id": "20260604_141023_38d33aa7",
+  "generated_at": "2026-06-04T14:10:23.674328",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $\\tan(A+B) = \\sqrt{3}$ and $\\tan(A-B) = \\frac{1}{\\sqrt{3}}$, where $0^\\circ < A+B \\le 90^\\circ$ and $A > B$, find the values of $A$ and $B$.",
+      "answer": "$A = 45^\\circ, B = 15^\\circ$",
+      "solution": {
+        "steps": [
+          "Use the values of tangent from the trigonometric table for $A+B$ and $A-B$.",
+          "Set up a system of linear equations in $A$ and $B$.",
+          "Solve the system using elimination method."
+        ],
+        "derivation": "$\\tan(A+B) = \\sqrt{3} \\implies A+B = 60^\\circ \\quad (1) \\\\ \\tan(A-B) = \\frac{1}{\\sqrt{3}} \\implies A-B = 30^\\circ \\quad (2) \\\\ (1)+(2): 2A = 90^\\circ \\implies A = 45^\\circ \\\\ (1)-(2): 2B = 30^\\circ \\implies B = 15^\\circ$"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:23.674224",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141023_a369a5_01"
+    },
+    {
+      "question": "If $3\\cot \\theta = 2$, evaluate the value of $\\frac{4\\sin \\theta - 3\\cos \\theta}{2\\sin \\theta + 6\\cos \\theta}$.",
+      "answer": "$\\frac{1}{3}$",
+      "solution": {
+        "steps": [
+          "Given $3\\cot \\theta = 2$, find $\\cot \\theta = \\frac{2}{3}$.",
+          "Divide numerator and denominator by $\\sin \\theta$ to express in terms of $\\cot \\theta$.",
+          "Substitute the value of $\\cot \\theta$ and simplify."
+        ],
+        "derivation": "$\\frac{4\\sin \\theta - 3\\cos \\theta}{2\\sin \\theta + 6\\cos \\theta} = \\frac{4 - 3\\cot \\theta}{2 + 6\\cot \\theta} \\\\ = \\frac{4 - 3(2/3)}{2 + 6(2/3)} \\\\ = \\frac{4-2}{2+4} = \\frac{2}{6} = \\frac{1}{3}$"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:23.674257",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141023_3d7cc3_02"
+    },
+    {
+      "question": "Prove that $(\\sin A + \\csc A)^2 + (\\cos A + \\sec A)^2 = 7 + \\tan^2 A + \\cot^2 A$.",
+      "answer": "Proof completed.",
+      "solution": {
+        "steps": [
+          "Expand both squares using $(a+b)^2 = a^2 + b^2 + 2ab$.",
+          "Group $\\sin^2 A + \\cos^2 A = 1$ and use identities $\\csc^2 A = 1 + \\cot^2 A$ and $\\sec^2 A = 1 + \\tan^2 A$.",
+          "Simplify the product terms $2\\sin A \\csc A$ and $2\\cos A \\sec A$ to 2."
+        ],
+        "derivation": "LHS = $\\sin^2 A + \\csc^2 A + 2 + \\cos^2 A + \\sec^2 A + 2 \\\\ = (\\sin^2 A + \\cos^2 A) + 4 + (1+\\cot^2 A) + (1+\\tan^2 A) \\\\ = 1 + 4 + 1 + 1 + \\tan^2 A + \\cot^2 A = 7 + \\tan^2 A + \\cot^2 A = RHS$"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:23.674265",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141023_9ce9be_03"
+    },
+    {
+      "question": "If $\\sin \\theta + \\sin^2 \\theta = 1$, prove that $\\cos^2 \\theta + \\cos^4 \\theta = 1$.",
+      "answer": "Proof completed.",
+      "solution": {
+        "steps": [
+          "From $\\sin \\theta + \\sin^2 \\theta = 1$, express $\\sin \\theta = 1 - \\sin^2 \\theta$.",
+          "Substitute $\\sin \\theta = \\cos^2 \\theta$.",
+          "Square both sides to get $\\sin^2 \\theta = \\cos^4 \\theta$ and substitute into the identity."
+        ],
+        "derivation": "$\\sin \\theta = 1 - \\sin^2 \\theta \\implies \\sin \\theta = \\cos^2 \\theta \\\\ \\text{Square both sides: } \\sin^2 \\theta = \\cos^4 \\theta \\\\ \\text{Substitute into } \\cos^2 \\theta + \\cos^4 \\theta: \\sin \\theta + \\sin^2 \\theta = 1$"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:23.674271",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141023_778478_04"
+    },
+    {
+      "question": "Evaluate: $\\frac{\\cos 45^\\circ}{\\sec 30^\\circ + \\csc 30^\\circ}$.",
+      "answer": "$\\frac{3\\sqrt{2} - \\sqrt{6}}{8}$",
+      "solution": {
+        "steps": [
+          "Substitute the standard trigonometric values: $\\cos 45^\\circ = 1/\\sqrt{2}$, $\\sec 30^\\circ = 2/\\sqrt{3}$, $\\csc 30^\\circ = 2$.",
+          "Simplify the denominator.",
+          "Rationalize the resulting expression."
+        ],
+        "derivation": "$\\frac{1/\\sqrt{2}}{2/\\sqrt{3} + 2} = \\frac{1/\\sqrt{2}}{(2 + 2\\sqrt{3})/\\sqrt{3}} = \\frac{\\sqrt{3}}{\\sqrt{2}(2+2\\sqrt{3})} \\\\ = \\frac{\\sqrt{3}}{2\\sqrt{2} + 2\\sqrt{6}} = \\frac{\\sqrt{3}(2\\sqrt{6}-2\\sqrt{2})}{4(6-2)} = \\frac{6\\sqrt{2}-2\\sqrt{6}}{16} = \\frac{3\\sqrt{2}-\\sqrt{6}}{8}$"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:23.674277",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141023_58c33b_05"
+    }
+  ]
+}

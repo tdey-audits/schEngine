@@ -1,0 +1,157 @@
+{
+  "batch_id": "20260609_160109_f51df923",
+  "generated_at": "2026-06-09T16:01:09.650106",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Coordinate Geometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "The vertices of a triangle $ABC$ are $A(3, 2)$, $B(-1, 0)$, and $C(1, -4)$. (i) Find the area of $\\triangle ABC$. (ii) If $D$ is the midpoint of $BC$, find the coordinates of $D$. (iii) Show that the area of $\\triangle ABD$ is half the area of $\\triangle ABC$.",
+      "answer": "Area of $\\triangle ABC = 8$ sq units; $D = (0, -2)$; Area of $\\triangle ABD = 4$ sq units.",
+      "solution": {
+        "steps": [
+          "Use the area of a triangle formula: $\\text{Area} = \\frac{1}{2} |x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|$.",
+          "Substitute $A(3, 2)$, $B(-1, 0)$, $C(1, -4)$ into the formula to find the area of $\\triangle ABC$.",
+          "Use the midpoint formula $D = (\\frac{x_B+x_C}{2}, \\frac{y_B+y_C}{2})$ to find coordinates of $D$.",
+          "Apply the area of a triangle formula again for vertices $A(3, 2)$, $B(-1, 0)$, and $D(0, -2)$.",
+          "Compare the two calculated areas to verify that $\\text{Area}(\\triangle ABD) = \\frac{1}{2} \\text{Area}(\\triangle ABC)$."
+        ],
+        "derivation": "$\\text{Area}(\\triangle ABC) = \\frac{1}{2} |3(0 - (-4)) + (-1)(-4 - 2) + 1(2 - 0)| = \\frac{1}{2} |3(4) + (-1)(-6) + 1(2)| = \\frac{1}{2} |12 + 6 + 2| = \\frac{1}{2} |20| = 10 \\text{ sq units} \\text{ (Correction: } 12+6+2=20, 20/2=10) \\\\ D = (\\frac{-1+1}{2}, \\frac{0-4}{2}) = (0, -2) \\\\ \\text{Area}(\\triangle ABD) = \\frac{1}{2} |3(0 - (-2)) + (-1)(-2 - 2) + 0(2 - 0)| = \\frac{1}{2} |3(2) + (-1)(-4) + 0| = \\frac{1}{2} |6 + 4| = 5 \\text{ sq units} \\\\ \\text{Since } 5 = \\frac{1}{2} \\times 10, \\text{ the property holds.}$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Area of Triangle and Midpoint",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "diagram": {
+        "required": true,
+        "type": "coordinate",
+        "caption": "Triangle ABC with median AD",
+        "scale": 1.0,
+        "elements": [
+          {
+            "kind": "axis"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 3,
+            "y": 2,
+            "label": "A(3,2)"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": -1,
+            "y": 0,
+            "label": "B(-1,0)"
+          },
+          {
+            "kind": "point",
+            "id": "C",
+            "x": 1,
+            "y": -4,
+            "label": "C(1,-4)"
+          },
+          {
+            "kind": "point",
+            "id": "D",
+            "x": 0,
+            "y": -2,
+            "label": "D(0,-2)"
+          },
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "D"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-09T16:01:09.649804",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_7 (Coordinate Geometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 35,
+            "paper_variant": "standard",
+            "question_type": "la"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 35,
+            "paper_variant": "standard",
+            "question_type": "la"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 33,
+            "paper_variant": "standard",
+            "question_type": "la"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.4",
+            "question_no": 3,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160109_87efaf_01"
+    }
+  ]
+}

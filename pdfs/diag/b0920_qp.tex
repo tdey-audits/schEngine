@@ -1,0 +1,255 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag} \\[0.3cm]
+  \textbf{Time Allowed: 3 Hours} \hfill \textbf{Maximum Marks: 80} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\noindent\textbf{General Instructions:}
+\begin{enumerate}
+  \item {\normalfont\normalcolor This question paper contains 36 questions. All questions are compulsory.}
+  \item {\normalfont\normalcolor Questions are grouped into sections A through E.}
+  \item {\normalfont\normalcolor Use of calculators is NOT permitted.}
+\end{enumerate}
+\bigskip
+\noindent\textbf{\large Section A: Multiple Choice \& Assertion-Reason (1 mark each)}
+
+\begin{questions}
+\question[1] If $x = 2$ is a root of $x^2 + kx + 4 = 0$, the value of $k$ is
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 4
+  \item (B) 2
+  \item (C) -4
+  \item (D) -2
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If the HCF of two numbers $a$ and $b$ is $12$ and their product is $1800$, then their LCM is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 120
+  \item (B) 140
+  \item (C) 150
+  \item (D) 160
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The decimal expansion of the rational number $\frac{43}{2^4 \times 5^3}$ will terminate after how many places of decimal?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 3
+  \item (B) 4
+  \item (C) 2
+  \item (D) 1
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If $p$ and $q$ are two prime numbers, then the HCF of $p^3q^2$ and $p^2q$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) p\textasciicircum{}2q
+  \item (B) p\textasciicircum{}3q\textasciicircum{}2
+  \item (C) pq
+  \item (D) p\textasciicircum{}2q\textasciicircum{}2
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If two positive integers $a$ and $b$ are written as $a = x^3y^2$ and $b = xy^3$, where $x, y$ are prime numbers, then $LCM(a, b)$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) xy
+  \item (B) x\textasciicircum{}2y\textasciicircum{}2
+  \item (C) x\textasciicircum{}3y\textasciicircum{}3
+  \item (D) x\textasciicircum{}4y\textasciicircum{}5
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The smallest number which is divisible by both $306$ and $657$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 12338
+  \item (B) 22338
+  \item (C) 21338
+  \item (D) 23338
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The discriminant of the quadratic equation $x^2 - 5x + 6 = 0$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 1
+  \item (B) -1
+  \item (C) 49
+  \item (D) 0
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The discriminant of the quadratic equation $2x^2 - 3x + 1 = 0$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 1
+  \item (B) -1
+  \item (C) 9
+  \item (D) -7
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The discriminant of the quadratic equation $2x^2 - 3x + 5 = 0$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) $31$
+  \item (B) $-31$
+  \item (C) $41$
+  \item (D) $-41$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The roots of the quadratic equation $x^2 - 7x + 10 = 0$ are:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 2, 5
+  \item (B) -2, -5
+  \item (C) 2, -5
+  \item (D) -2, 5
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Which of the following is the discriminant of the quadratic equation $2x^2 - 4x + 3 = 0$?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) $\sqrt{40}$
+  \item (B) $4$
+  \item (C) $16 - 24$
+  \item (D) $0$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The quadratic equation $2x^2 - 5x + 3 = 0$ has two distinct real roots.
+Reason (R): For a quadratic equation $ax^2 + bx + c = 0$, if $b^2 - 4ac > 0$, then the equation has two distinct real roots.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The quadratic equation $x^2 - 3x + 5 = 0$ has no real roots.
+Reason (R): For a quadratic equation $ax^2+bx+c=0$, if discriminant $D = b^2 - 4ac < 0$, then the equation has no real roots.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section B: Very Short Answer (2 marks each)}
+
+\begin{questions}
+\question[1] Find the discriminant of the quadratic equation $2x^2 - 4x + 3 = 0$.
+\vspace{0.15cm}
+
+\question[1] Find the discriminant of the quadratic equation $2x^2 - 3x + 1 = 0$.
+\vspace{0.15cm}
+
+\question[1] Find the discriminant of the quadratic equation $2x^2 - 4x + 3 = 0$.
+\vspace{0.15cm}
+
+\question[2] Find the discriminant of the quadratic equation $2x^2 - 4x + 3 = 0$. Hence, determine the nature of its roots.
+\vspace{0.15cm}
+
+\question[2] Find the nature of the roots of the quadratic equation $2x^2 - 4x + 3 = 0$.
+\vspace{0.15cm}
+
+\question[2] Find the nature of the roots of the quadratic equation $2x^2 - 4x + 3 = 0$.
+\vspace{0.15cm}
+
+\question[2] Find the discriminant of the quadratic equation $3x^2 - 5x + 2 = 0$ and hence determine the nature of its roots.
+\vspace{0.15cm}
+
+\question[2] Find the discriminant of the quadratic equation $3x^2 - 6x + 2 = 0$ and hence determine the nature of its roots.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section C: Short Answer (3 marks each)}
+
+\begin{questions}
+\question[3] A train travels 360 km at a uniform speed. If the speed had been 5 km/h more, it would have taken 1 hour less for the same journey. Find the speed of the train.
+\vspace{0.15cm}
+
+\question[3] The speed of a boat in still water is 8 km/h. It takes the same time to travel 15 km upstream as it takes to travel 25 km downstream. Find the speed of the stream.
+\vspace{0.15cm}
+
+\question[3] The sum of the squares of two consecutive positive integers is 365. Find the integers.
+\vspace{0.15cm}
+
+\question[3] The sum of two numbers is 15. If the sum of their reciprocals is $\frac{3}{10}$, find the numbers.
+\vspace{0.15cm}
+
+\question[3] A train travels 360 km at a uniform speed. If the speed had been 5 km/h more, it would have taken 1 hour less for the same journey. Find the speed of the train.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section D: Long Answer (4-5 marks each)}
+
+\begin{questions}
+\question[4] If the polynomial $p(x) = x^4 - 6x^3 + 16x^2 - 25x + 10$ is divided by $g(x) = x^2 - 2x + k$, the remainder is found to be $x + a$. What is the value of $k$?
+\vspace{0.15cm}
+
+\question[1] When $f(x) = x^3 - 3x^2 + 5x - 3$ is divided by $g(x) = x^2 - 2$, the quotient $q(x)$ is:
+\vspace{0.15cm}
+
+\question[1] If $g(x)$ is the divisor of $p(x) = 2x^4 - 3x^3 - 3x^2 + 6x - 2$ and the quotient $q(x) = 2x^2 - 3x + 1$ with $r(x) = 0$, what is the divisor $g(x)$?
+\vspace{0.15cm}
+
+\question[1] For a polynomial $p(x)$, if $p(x) = (x^2 - 4)q(x) + (2x + 1)$, what is the remainder when $p(x)$ is divided by $(x - 2)$?
+\vspace{0.15cm}
+
+\question[1] A polynomial $p(x)$ of degree $3$ is divided by $(x^2 - 1)$ resulting in a quotient $(x - 1)$ and a remainder $(2x + 3)$. Find the polynomial $p(x)$.
+\vspace{0.15cm}
+
+\question[5] A train travels a distance of 480 km at a uniform speed. If the speed had been 8 km/h less, then it would have taken 3 hours more to cover the same distance. Find the original speed of the train. Also, find the time taken by the train to cover the distance at the original speed.
+\vspace{0.15cm}
+
+\question[5] A train travels a distance of 480 km at a uniform speed. If the speed had been 8 km/h less, then it would have taken 3 hours more to cover the same distance. Find the original speed of the train. Also, find the time taken at the original speed.
+\vspace{0.15cm}
+
+\question[5] A train travels a distance of 480 km at a uniform speed. If the speed had been 8 km/h less, then it would have taken 3 hours more to cover the same distance. Find the original speed of the train. Also, find the time taken at the original speed.
+\vspace{0.15cm}
+
+\question[5] A motorboat whose speed in still water is $18$ km/h takes $1$ hour more to go $24$ km upstream than to return downstream to the same spot. Find the speed of the stream.
+\vspace{0.15cm}
+
+\question[5] A motorboat whose speed in still water is 18 km/h takes 1 hour more to go 48 km upstream than to return to the same point downstream. Find the speed of the stream.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+
+\end{document}

@@ -1,0 +1,859 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag Solutions} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{questions}
+\question \textbf{1.} If $\cos \theta = 0$, then the value of $\theta$ (where $0^\circ \leq \theta \leq 90^\circ$) is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Look for the angle where cosine is zero
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\cos 90^\circ = 0 \\
+\implies \theta = 90^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{2.} The value of $\sin^2 30^\circ + \cos^2 30^\circ$ is:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the identity $\sin^2 \theta + \cos^2 \theta = 1$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\sin^2 \theta + \cos^2 \theta = 1 \text{ for any } \theta}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{3.} If $\sec \theta = 2$, then $\theta$ is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall that $\sec \theta = 1/\cos \theta$
+  \item Identify the angle where $\cos \theta = 1/2$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sec \theta = 2 \\
+\implies \cos \theta = 1/2 \\
+\implies \theta = 60^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{4.} The value of $\frac{\tan 30^\circ}{\cot 60^\circ}$ is:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Substitute values: $\tan 30^\circ = 1/\sqrt{3}$ and $\cot 60^\circ = 1/\sqrt{3}$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\frac{1/\sqrt{3}}{1/\sqrt{3}} = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{5.} Which of the following is equal to $\cos \theta$?
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use complementary angle identities: $\cos \theta = \sin(90^\circ - \theta)$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\cos \theta = \sin(90^\circ - \theta)}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Complementary Angles}
+\vspace{0.3cm}
+
+\question \textbf{6.} If $3\tan \theta = 3$, then $\theta$ is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Simplify the equation to $\tan \theta = 1$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+3\tan \theta = 3 \\
+\implies \tan \theta = 1 \\
+\implies \theta = 45^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{7.} The value of $\sin 0^\circ + \cos 0^\circ$ is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Evaluate $\sin 0^\circ = 0$ and $\cos 0^\circ = 1$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{0 + 1 = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{8.} If $\sin \theta = \cos \theta$, then $\theta$ is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Divide both sides by $\cos \theta$ to get $\tan \theta = 1$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sin \theta / \cos \theta = 1 \\
+\implies \tan \theta = 1 \\
+\implies \theta = 45^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{9.} Assertion (A): For an acute angle $\theta$, if $\sin \theta = \cos \theta$, then $\theta = 45^\circ$. 
+Reason (R): The value of $\sin \theta$ is equal to $\cos \theta$ only at $\theta = 45^\circ$ in the interval $0^\circ \le \theta \le 90^\circ$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall the values of trigonometric ratios.
+  \item $\sin 45^\circ = \frac{1}{\sqrt{2}}$ and $\cos 45^\circ = \frac{1}{\sqrt{2}}$.
+  \item Since both are equal, the assertion is true and the reason correctly explains it.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sin \theta = \cos \theta \\
+\implies \frac{\sin \theta}{\cos \theta} = 1 \\
+\implies \tan \theta = 1 \\
+\implies \theta = 45^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{10.} Assertion (A): The value of $2 \sin^2 30^\circ - 3 \cos^2 45^\circ + 1$ is $0$. 
+Reason (R): The value of $\sin 30^\circ = 1/2$ and $\cos 45^\circ = 1/\sqrt{2}$.
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate $2(1/2)^2 - 3(1/\sqrt{2})^2 + 1$.
+  \item $2(1/4) - 3(1/2) + 1 = 0.5 - 1.5 + 1 = 0$.
+  \item Wait, the calculation results in 0, so the Assertion is true. Re-evaluating: $0.5 - 1.5 + 1 = 0$. Both are true.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{2(\frac{1}{4}) - 3(\frac{1}{2}) + 1 = \frac{1}{2} - \frac{3}{2} + 1 = -1 + 1 = 0}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{11.} Assertion (A): The value of $\sin \theta$ can be $2$ for some angle $\theta$. 
+Reason (R): The range of $\sin \theta$ is $[-1, 1]$.
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The range of $\sin \theta$ is $[-1, 1]$, meaning it cannot exceed 1.
+  \item Assertion is false as $\sin \theta$ cannot be 2.
+  \item Reason is true.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{-1 \le \sin \theta \le 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{12.} Assertion (A): In a right-angled triangle, if $\tan A = 3/4$, then $\sin A = 3/5$. 
+Reason (R): $\sin A = \frac{\text{Opposite}}{\text{Hypotenuse}}$ and $\tan A = \frac{\text{Opposite}}{\text{Adjacent}}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Using $\tan A = 3/4$, let opposite side = $3k$ and adjacent = $4k$.
+  \item Hypotenuse = $\sqrt{(3k)^2 + (4k)^2} = 5k$.
+  \item $\sin A = 3k/5k = 3/5$.
+  \item Assertion and Reason are both true and linked.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Hypotenuse} = \sqrt{3^2 + 4^2} = 5; \sin A = \frac{3}{5}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{13.} Assertion (A): The value of $\cos 0^\circ \cdot \cos 1^\circ \cdot \cos 2^\circ \dots \cos 90^\circ$ is $1$. 
+Reason (R): $\cos 90^\circ = 0$.
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The expression is a product of terms including $\cos 90^\circ$.
+  \item Since $\cos 90^\circ = 0$, the entire product is $0$.
+  \item Assertion is false, Reason is true.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\cos 0^\circ \cdot \dots \cdot 0 = 0}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{14.} If $\tan A = \frac{3}{4}$, find the value of $\sin A \cos A$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\frac{12}{25}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the definition of tangent in a right triangle: $\tan A = \frac{\text{Opposite}}{\text{Adjacent}} = \frac{3}{4}$.
+  \item Find the hypotenuse using Pythagoras theorem: $h = \sqrt{3^2 + 4^2} = 5$. Then $\sin A = \frac{3}{5}$ and $\cos A = \frac{4}{5}$.
+  \item Calculate the product $\sin A \cos A = \frac{3}{5} \times \frac{4}{5} = \frac{12}{25}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan A = \frac{3}{4} \\
+\implies \text{Opp} = 3k, \text{Adj} = 4k \\
+\text{Hyp} = \sqrt{(3k)^2 + (4k)^2} = 5k \\
+\sin A = \frac{3}{5}, \cos A = \frac{4}{5} \\
+\sin A \cos A = \frac{3}{5} \times \frac{4}{5} = \frac{12}{25}
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{15.} Evaluate: $\frac{\tan 65^\circ}{\cot 25^\circ} + \sin^2 30^\circ$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{1.25}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the complementary angle identity $\tan(90^\circ - \theta) = \cot \theta$ to simplify the first term.
+  \item Substitute the value of $\sin 30^\circ = \frac{1}{2}$ and compute the sum.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{\tan(90^\circ - 25^\circ)}{\cot 25^\circ} + \left(\frac{1}{2}\right)^2 \\
+= \frac{\cot 25^\circ}{\cot 25^\circ} + \frac{1}{4} \\
+= 1 + 0.25 = 1.25
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Complementary Angles}
+\vspace{0.3cm}
+
+\question \textbf{16.} If $4 \tan \theta = 3$, evaluate $\frac{4 \sin \theta - \cos \theta}{4 \sin \theta + \cos \theta}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\frac{1}{2}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Divide numerator and denominator by $\cos \theta$ to express in terms of $\tan \theta$.
+  \item Substitute $\tan \theta = \frac{3}{4}$ into the expression.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{4 \sin \theta / \cos \theta - 1}{4 \sin \theta / \cos \theta + 1} = \frac{4 \tan \theta - 1}{4 \tan \theta + 1} \\
+= \frac{4(3/4) - 1}{4(3/4) + 1} = \frac{3 - 1}{3 + 1} = \frac{2}{4} = \frac{1}{2}
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{17.} If $\cos(A + B) = 0$ and $\sin(A - B) = \frac{1}{2}$, find the values of $A$ and $B$, where $0^\circ < A + B \leq 90^\circ$ and $A > B$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{A = 60^\circ, B = 30^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Since $\cos(A + B) = 0$, then $A + B = 90^\circ$.
+  \item Since $\sin(A - B) = 1/2$, then $A - B = 30^\circ$. Solve the system of linear equations.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+A + B = 90^\circ \\
+A - B = 30^\circ \\
+2A = 120^\circ \\
+\implies A = 60^\circ \\
+60^\circ + B = 90^\circ \\
+\implies B = 30^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{18.} Given $\sec \theta = \frac{13}{5}$, calculate $\cot \theta$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\frac{5}{12}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use $\sec \theta = \frac{\text{Hypotenuse}}{\text{Adjacent}} = \frac{13}{5}$. Find the opposite side using Pythagoras theorem.
+  \item Calculate $\cot \theta = \frac{\text{Adjacent}}{\text{Opposite}}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Opp} = \sqrt{13^2 - 5^2} = \sqrt{169 - 25} = \sqrt{144} = 12 \\
+\cot \theta = \frac{\text{Adjacent}}{\text{Opposite}} = \frac{5}{12}
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{19.} If $\sin(A + B) = 1$ and $\cos(A - B) = \frac{\sqrt{3}}{2}$, where $0^\circ < A + B \leq 90^\circ$ and $A > B$, find the values of $A$ and $B$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{A = 60^\circ, B = 30^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the given trigonometric values to equate the angles.
+  \item Set up a system of linear equations in terms of A and B.
+  \item Solve the system using the elimination method.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sin(A+B) = 1 = \sin 90^\circ \\
+\implies A+B = 90^\circ \quad (1) \\
+\cos(A-B) = \frac{\sqrt{3}}{2} = \cos 30^\circ \\
+\implies A-B = 30^\circ \quad (2) \\
+\text{Adding (1) and (2): } 2A = 120^\circ \\
+\implies A = 60^\circ \\
+\text{Substituting A in (1): } 60^\circ + B = 90^\circ \\
+\implies B = 30^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{20.} Evaluate the following expression: $\frac{5 \cos^2 60^\circ + 4 \sec^2 30^\circ - \tan^2 45^\circ}{\sin^2 30^\circ + \cos^2 30^\circ}$
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{67/12}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Substitute the exact values of the trigonometric ratios from the standard table.
+  \item Simplify the numerator by squaring and performing multiplication.
+  \item Use the identity $\sin^2 \theta + \cos^2 \theta = 1$ for the denominator.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Numerator: } 5(\frac{1}{2})^2 + 4(\frac{2}{\sqrt{3}})^2 - (1)^2 = 5(\frac{1}{4}) + 4(\frac{4}{3}) - 1 \\
+= \frac{5}{4} + \frac{16}{3} - 1 = \frac{15 + 64 - 12}{12} = \frac{67}{12} \\
+\text{Denominator: } (\frac{1}{2})^2 + (\frac{\sqrt{3}}{2})^2 = \frac{1}{4} + \frac{3}{4} = 1 \\
+\text{Total: } \frac{67/12}{1} = \frac{67}{12}
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{21.} If $15 \cot A = 8$, find the values of $\sin A$ and $\sec A$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\sin A = 15/17, \sec A = 17/8}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Determine the ratio $\cot A = \frac{8}{15}$.
+  \item Use the definition $\cot A = \frac{\text{adjacent}}{\text{opposite}}$ to find the third side (hypotenuse) using Pythagoras theorem.
+  \item Calculate the required ratios $\sin A$ and $\sec A$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\cot A = \frac{8}{15} = \frac{\text{base}}{\text{perpendicular}} \\
+\text{Hypotenuse}^2 = 8^2 + 15^2 = 64 + 225 = 289 \\
+\implies \text{Hypotenuse} = 17 \\
+\sin A = \frac{\text{perpendicular}}{\text{hypotenuse}} = \frac{15}{17} \\
+\sec A = \frac{\text{hypotenuse}}{\text{base}} = \frac{17}{8}
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{22.} Prove that $\frac{\tan \theta}{1 - \cot \theta} + \frac{\cot \theta}{1 - \tan \theta} = 1 + \sec \theta \operatorname{cosec} \theta$. Hence, or otherwise, evaluate the expression if $\tan \theta = 2$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{1 + \sec \theta \operatorname{cosec} \theta = 3.5}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Convert all terms into $\sin \theta$ and $\cos \theta$.
+  \item Simplify the denominators by taking common denominators within the fractions.
+  \item Combine the fractions by finding a common denominator for the entire expression.
+  \item Use the identity $\sin^2 \theta + \cos^2 \theta = 1$ to simplify the numerator.
+  \item Separate the terms to match the required RHS.
+  \item Substitute $\tan \theta = 2$ into the result.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{\frac{\sin \theta}{\cos \theta}}{1 - \frac{\cos \theta}{\sin \theta}} + \frac{\frac{\cos \theta}{\sin \theta}}{1 - \frac{\sin \theta}{\cos \theta}} = \frac{\sin^2 \theta}{\cos \theta(\sin \theta - \cos \theta)} + \frac{\cos^2 \theta}{\sin \theta(\cos \theta - \sin \theta)} \\
+= \frac{\sin^3 \theta - \cos^3 \theta}{\sin \theta \cos \theta(\sin \theta - \cos \theta)} = \frac{(\sin \theta - \cos \theta)(\sin^2 \theta + \cos^2 \theta + \sin \theta \cos \theta)}{\sin \theta \cos \theta(\sin \theta - \cos \theta)} \\
+= \frac{1 + \sin \theta \cos \theta}{\sin \theta \cos \theta} = \sec \theta \operatorname{cosec} \theta + 1. \text{ For } \tan \theta = 2, \cot \theta = 0.5, \sec \theta = \sqrt{5}, \operatorname{cosec} \theta = \frac{\sqrt{5}}{2}. \text{ Result } = 1 + \frac{5}{2} = 3.5
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{23.} A vertical tower stands on a horizontal plane and is surmounted by a vertical flagstaff of height $6$ m. At a point on the plane, the angle of elevation of the bottom of the flagstaff is $30^\circ$ and that of the top of the flagstaff is $60^\circ$. Find the height of the tower.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{3 \text{ m}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the height of the tower be $h$ m and the distance from the point to the base of the tower be $x$ m.
+  \item Form the first equation using $\tan 30^\circ$ for the tower height $h$.
+  \item Form the second equation using $\tan 60^\circ$ for the total height $(h + 6)$.
+  \item Express $x$ in terms of $h$ from the first equation.
+  \item Substitute $x$ into the second equation and solve for $h$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan 30^\circ = \frac{h}{x} \\
+\implies \frac{1}{\sqrt{3}} = \frac{h}{x} \\
+\implies x = h\sqrt{3} \\
+\tan 60^\circ = \frac{h+6}{x} \\
+\implies \sqrt{3} = \frac{h+6}{h\sqrt{3}} \\
+\sqrt{3}(h\sqrt{3}) = h+6 \\
+3h = h + 6 \\
+\implies 2h = 6 \\
+\implies h = 3
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Applications of Trigonometry (Heights and Distances)}
+\vspace{0.3cm}
+
+\question \textbf{24.} If $\sin A = \frac{3}{5}$, then the value of $\cos A$ is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use identity $\sin^2 A + \cos^2 A = 1$
+  \item Substitute $\sin A = 3/5$
+  \item Solve for $\cos A$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\cos A = \sqrt{1 - \sin^2 A} = \sqrt{1 - (3/5)^2} = \sqrt{1 - 9/25} = \sqrt{16/25} = 4/5}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{25.} The value of $\tan 45^\circ$ is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall the trigonometric table for standard angles
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\tan 45^\circ = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Standard Angles}
+\vspace{0.3cm}
+
+\question \textbf{26.} In a right triangle $ABC$ right-angled at $B$, if $AB=3$ cm and $BC=4$ cm, then $\sin A$ is:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Find hypotenuse $AC$ using Pythagoras theorem
+  \item Use definition $\sin A = \frac{\text{Opposite}}{\text{Hypotenuse}} = \frac{BC}{AC}$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{AC = \sqrt{3^2 + 4^2} = 5; \sin A = 4/5}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{27.} The value of $\cos^2 30^\circ + \sin^2 30^\circ$ is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Apply the identity $\sin^2 \theta + \cos^2 \theta = 1$ for any angle $\theta$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\cos^2 30^\circ + \sin^2 30^\circ = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{28.} If $\tan \theta = \frac{1}{\sqrt{3}}$, then the value of $\theta$ is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Refer to trigonometric ratio table for $\tan$ values
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan 30^\circ = 1/\sqrt{3} \\
+\implies \theta = 30^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Standard Angles}
+\vspace{0.3cm}
+
+\question \textbf{29.} The value of $\frac{\sin 18^\circ}{\cos 72^\circ}$ is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use complementary angle formula $\cos(90-A) = \sin A$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\frac{\sin 18^\circ}{\cos(90^\circ - 18^\circ)} = \frac{\sin 18^\circ}{\sin 18^\circ} = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Complementary Angles}
+\vspace{0.3cm}
+
+\question \textbf{30.} If $3\cot A = 4$, then $\tan A$ is:
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use relation $\tan A = 1/\cot A$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\cot A = 4/3 \\
+\implies \tan A = 1/(4/3) = 3/4
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{31.} The value of $9\sec^2 A - 9\tan^2 A$ is:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Factor out 9
+  \item Use identity $1 + \tan^2 A = \sec^2 A$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{9(\sec^2 A - \tan^2 A) = 9(1) = 9}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{32.} If $\cos \theta = 0$, then the value of $\theta$ is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check table for $\cos$ values
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\cos 90^\circ = 0 \\
+\implies \theta = 90^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Standard Angles}
+\vspace{0.3cm}
+
+\question \textbf{33.} The value of $\sin 0^\circ + \cos 0^\circ$ is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Plug in values from table
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{0 + 1 = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Standard Angles}
+\vspace{0.3cm}
+
+\question \textbf{34.} Assertion (A): The value of $\sin \theta$ can be $\frac{4}{3}$. Reason (R): The value of $\sin \theta$ is always less than or equal to 1.
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check the range of sine function.
+  \item Since $-1 \leq \sin \theta \leq 1$, the value 4/3 (which is 1.33) is impossible.
+  \item The assertion is false because 4/3 > 1.
+  \item The reason is a standard trigonometric identity/property.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Assertion: } \sin \theta = \frac{4}{3} > 1 \\
+\implies \text{False}. \text{Reason: } -1 \leq \sin \theta \leq 1 \\
+\implies \text{True}.
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{35.} Assertion (A): If $\tan \theta = 1$, then $\theta = 45^\circ$. Reason (R): $\tan \theta = 1$ only for $\theta = 45^\circ$ in the range $0^\circ \leq \theta < 90^\circ$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall the trigonometric table for tan values.
+  \item The value of tan is 1 at 45 degrees.
+  \item Since the range is restricted to 0 to 90, 45 is the unique solution.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan 45^\circ = 1. \text{ In } [0, 90), \tan \theta = 1 \\
+\iff \theta = 45^\circ.
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{36.} Assertion (A): The value of $\cos^2 30^\circ + \sin^2 30^\circ$ is 1. Reason (R): $\sin^2 \theta + \cos^2 \theta = 1$ for all $\theta$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the trigonometric identity $\sin^2 \theta + \cos^2 \theta = 1$.
+  \item Since the angle is the same (30 degrees) for both terms, the identity holds.
+  \item Reason is the correct mathematical explanation for the Assertion.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sin^2 \theta + \cos^2 \theta = 1 \\
+\implies \sin^2 30^\circ + \cos^2 30^\circ = 1.
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{37.} Assertion (A): As $\theta$ increases from $0^\circ$ to $90^\circ$, the value of $\sin \theta$ increases. Reason (R): $\sin 0^\circ = 0$ and $\sin 90^\circ = 1$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Evaluate sin 0 = 0 and sin 90 = 1.
+  \item Verify the trend of sine function in the first quadrant.
+  \item The reason correctly explains why the assertion is true.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{0 < 0.5 < 0.707 < 0.866 < 1 \text{ for } 0^\circ < 30^\circ < 45^\circ < 60^\circ < 90^\circ.}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{38.} Assertion (A): $\sec^2 \theta - 1 = \tan^2 \theta$. Reason (R): $\sec^2 \theta + \tan^2 \theta = 1$ is a standard identity.
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check the validity of Assertion: $1 + \tan^2 \theta = \sec^2 \theta$ is true, so $\sec^2 \theta - 1 = \tan^2 \theta$ is true.
+  \item Check the validity of Reason: The standard identity is $1 + \tan^2 \theta = \sec^2 \theta$, not $\sec^2 \theta + \tan^2 \theta = 1$.
+  \item Conclusion: Assertion is true, Reason is false.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Identity: } 1 + \tan^2 \theta = \sec^2 \theta \\
+\implies \sec^2 \theta - 1 = \tan^2 \theta.
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{39.} If $\tan A = \frac{4}{3}$, find the value of $\sin A + \cos A$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{7/5}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the definition of tangent in a right-angled triangle to find the hypotenuse.
+  \item Calculate sin A and cos A and sum them.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Given } \tan A = \frac{P}{B} = \frac{4}{3}. \text{ Let } P=4k, B=3k. \text{ By Pythagoras theorem, } H = \sqrt{(4k)^2 + (3k)^2} = 5k. \sin A = \frac{4}{5}, \cos A = \frac{3}{5}. \sin A + \cos A = \frac{4}{5} + \frac{3}{5} = \frac{7}{5}.}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{40.} Evaluate $\frac{2 \tan^2 45^\circ + \cos^2 30^\circ - \sin^2 60^\circ}{1}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Substitute the standard trigonometric values for 45, 30, and 60 degrees.
+  \item Simplify the expression.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\tan 45^\circ = 1, \cos 30^\circ = \frac{\sqrt{3}}{2}, \sin 60^\circ = \frac{\sqrt{3}}{2}. \text{ Expression} = 2(1)^2 + (\frac{\sqrt{3}}{2})^2 - (\frac{\sqrt{3}}{2})^2 = 2(1) + 0 = 2.}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\end{questions}
+
+\end{document}

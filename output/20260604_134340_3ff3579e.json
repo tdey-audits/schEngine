@@ -1,0 +1,160 @@
+{
+  "batch_id": "20260604_134340_3ff3579e",
+  "generated_at": "2026-06-04T13:43:40.968069",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Areas Related to Circles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The area of a circle with radius $7$ cm is $154$ cm$^2$. Reason (R): The area of a circle is given by the formula $\\pi r^2$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Calculate area using $\\pi r^2$",
+          "Area = $(22/7) \\times 7 \\times 7 = 154$ cm$^2$",
+          "Both statements are true and R is the correct explanation"
+        ],
+        "derivation": "Area = \\pi r^2 = \\frac{22}{7} \\times 7^2 = 154"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of a Circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:40.967748",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134340_643141_01"
+    },
+    {
+      "question": "Assertion (A): The circumference of a circle is $44$ cm, then its radius is $7$ cm. Reason (R): Circumference of a circle is $2\\pi r$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Use $2\\pi r = 44$",
+          "$2 \\times (22/7) \\times r = 44$",
+          "$r = (44 \\times 7) / 44 = 7$ cm"
+        ],
+        "derivation": "2 \\times \\frac{22}{7} \\times r = 44 \\implies r = 7"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Circumference of a Circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:40.967834",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134340_228bf2_02"
+    },
+    {
+      "question": "Assertion (A): The area of a semicircle of radius $r$ is $\\frac{1}{2}\\pi r^2$. Reason (R): A semicircle is half of a circle.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Area of circle is $\\pi r^2$",
+          "Semicircle is exactly half, so area is $(1/2)\\pi r^2$",
+          "Both statements are true and R is the correct explanation"
+        ],
+        "derivation": "Area_{semicircle} = \\frac{1}{2} \\times Area_{circle} = \\frac{1}{2}\\pi r^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of Semicircle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:40.967858",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134340_e8c52d_03"
+    },
+    {
+      "question": "Assertion (A): If the perimeter of a circle is equal to that of a square, then the area of the circle is greater than the area of the square. Reason (R): The area of a circle with a given perimeter is always the maximum possible area for any plane figure.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Let perimeter be $P$. Circle $r = P/2\\pi$, Area = $P^2/4\\pi$. Square side = $P/4$, Area = $P^2/16$.",
+          "Since $4\\pi \\approx 12.56 < 16$, $P^2/12.56 > P^2/16$.",
+          "Both statements are correct."
+        ],
+        "derivation": "A_{circle} = \\frac{P^2}{4\\pi} > A_{square} = \\frac{P^2}{16}"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Comparison of Areas",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:40.967877",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134340_f9d3b3_04"
+    },
+    {
+      "question": "Assertion (A): The length of an arc of a sector of a circle with radius $r$ and angle $\\theta$ is $\\frac{\\theta}{360} \\times 2\\pi r$. Reason (R): The circumference of a circle is $2\\pi r$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "An arc is a fraction of the circumference determined by the angle $\\theta$.",
+          "The fraction is $\\theta/360$. Multiply by total circumference $2\\pi r$.",
+          "Both are true and R explains the basis of the formula."
+        ],
+        "derivation": "Arc Length = \\frac{\\theta}{360} \\times 2\\pi r"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Length of an Arc",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:40.967893",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134340_27160f_05"
+    }
+  ]
+}

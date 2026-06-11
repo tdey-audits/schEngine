@@ -1,0 +1,265 @@
+{
+  "batch_id": "20260604_132643_b007ec70",
+  "generated_at": "2026-06-04T13:26:43.831258",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 10,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Prove that $\\frac{\\cos \\theta - \\sin \\theta + 1}{\\cos \\theta + \\sin \\theta - 1} = \\csc \\theta + \\cot \\theta$ using the identity $\\csc^2 \\theta = 1 + \\cot^2 \\theta$.",
+      "answer": "$\\csc \\theta + \\cot \\theta$",
+      "solution": {
+        "steps": [
+          "Divide numerator and denominator by $\\sin \\theta$.",
+          "Rewrite the expression in terms of $\\cot \\theta$ and $\\csc \\theta$.",
+          "Substitute $1 = \\csc^2 \\theta - \\cot^2 \\theta$ in the numerator.",
+          "Factorize the numerator using the difference of squares.",
+          "Simplify by canceling the common factor."
+        ],
+        "derivation": "\\frac{\\cot \\theta - 1 + \\csc \\theta}{\\cot \\theta + 1 - \\csc \\theta} = \\frac{\\cot \\theta + \\csc \\theta - (\\csc^2 \\theta - \\cot^2 \\theta)}{\\cot \\theta - \\csc \\theta + 1} = \\frac{(\\cot \\theta + \\csc \\theta) - (\\csc \\theta - \\cot \\theta)(\\csc \\theta + \\cot \\theta)}{\\cot \\theta - \\csc \\theta + 1} = \\frac{(\\cot \\theta + \\csc \\theta)(1 - \\csc \\theta + \\cot \\theta)}{\\cot \\theta - \\csc \\theta + 1} = \\cot \\theta + \\csc \\theta"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:26:43.831085",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132643_72a153_01"
+    },
+    {
+      "question": "If $\\sin \\theta + \\cos \\theta = \\sqrt{2} \\cos \\theta$, then prove that $\\cos \\theta - \\sin \\theta = \\sqrt{2} \\sin \\theta$.",
+      "answer": "Proof",
+      "solution": {
+        "steps": [
+          "Square both sides of the given equation.",
+          "Use $\\sin^2 \\theta + \\cos^2 \\theta = 1$.",
+          "Solve for $\\cos \\theta$ in terms of $\\sin \\theta$.",
+          "Substitute this into the required expression.",
+          "Verify equality."
+        ],
+        "derivation": "(\\sin \\theta + \\cos \\theta)^2 = 2\\cos^2 \\theta \\implies 1 + 2\\sin \\theta \\cos \\theta = 2\\cos^2 \\theta \\implies 2\\sin \\theta \\cos \\theta = 2\\cos^2 \\theta - 1. \\text{ Now, } (\\cos \\theta - \\sin \\theta)^2 = \\cos^2 \\theta + \\sin^2 \\theta - 2\\sin \\theta \\cos \\theta = 1 - (2\\cos^2 \\theta - 1) = 2 - 2\\cos^2 \\theta = 2\\sin^2 \\theta. \\therefore \\cos \\theta - \\sin \\theta = \\sqrt{2} \\sin \\theta."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:26:43.831126",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132643_d083a4_02"
+    },
+    {
+      "question": "Prove that $(\\sin \\theta + \\csc \\theta)^2 + (\\cos \\theta + \\sec \\theta)^2 = 7 + \\tan^2 \\theta + \\cot^2 \\theta$.",
+      "answer": "Proof",
+      "solution": {
+        "steps": [
+          "Expand both squares using $(a+b)^2 = a^2 + b^2 + 2ab$.",
+          "Group $\\sin^2 \\theta + \\cos^2 \\theta = 1$.",
+          "Use $\\csc \\theta = 1/\\sin \\theta$ and $\\sec \\theta = 1/\\cos \\theta$ to simplify $2\\sin \\theta \\csc \\theta$ and $2\\cos \\theta \\sec \\theta$.",
+          "Use $\\csc^2 \\theta = 1 + \\cot^2 \\theta$ and $\\sec^2 \\theta = 1 + \\tan^2 \\theta$.",
+          "Combine all constants."
+        ],
+        "derivation": "(\\sin^2 \\theta + \\csc^2 \\theta + 2) + (\\cos^2 \\theta + \\sec^2 \\theta + 2) = (\\sin^2 \\theta + \\cos^2 \\theta) + 4 + (1 + \\cot^2 \\theta) + (1 + \\tan^2 \\theta) = 1 + 4 + 1 + 1 + \\tan^2 \\theta + \\cot^2 \\theta = 7 + \\tan^2 \\theta + \\cot^2 \\theta."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:26:43.831137",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132643_207f01_03"
+    },
+    {
+      "question": "If $\\tan \\theta + \\sin \\theta = m$ and $\\tan \\theta - \\sin \\theta = n$, prove that $m^2 - n^2 = 4\\sqrt{mn}$.",
+      "answer": "Proof",
+      "solution": {
+        "steps": [
+          "Calculate $m^2 - n^2 = (m+n)(m-n)$.",
+          "Substitute values to find $m+n = 2\\tan \\theta$ and $m-n = 2\\sin \\theta$.",
+          "Find $m^2 - n^2 = 4 \\tan \\theta \\sin \\theta$.",
+          "Calculate $4\\sqrt{mn} = 4\\sqrt{(\\tan \\theta + \\sin \\theta)(\\tan \\theta - \\sin \\theta)}$.",
+          "Simplify the root using $\\tan^2 \\theta - \\sin^2 \\theta$."
+        ],
+        "derivation": "m^2 - n^2 = (\\tan \\theta + \\sin \\theta)^2 - (\\tan \\theta - \\sin \\theta)^2 = 4 \\tan \\theta \\sin \\theta. \\text{ Also, } 4\\sqrt{(\\tan^2 \\theta - \\sin^2 \\theta)} = 4\\sqrt{\\tan^2 \\theta(1 - \\cos^2 \\theta)} = 4\\sqrt{\\tan^2 \\theta \\sin^2 \\theta} = 4 \\tan \\theta \\sin \\theta."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:26:43.831144",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132643_f5d118_04"
+    },
+    {
+      "question": "If $\\sec \\theta + \\tan \\theta = p$, prove that $\\sin \\theta = \\frac{p^2 - 1}{p^2 + 1}$.",
+      "answer": "Proof",
+      "solution": {
+        "steps": [
+          "Use the identity $\\sec^2 \\theta - \\tan^2 \\theta = 1$.",
+          "Factorize to get $(\\sec \\theta - \\tan \\theta)(\\sec \\theta + \\tan \\theta) = 1$.",
+          "Express $\\sec \\theta - \\tan \\theta = 1/p$.",
+          "Solve for $\\sec \\theta$ and $\\tan \\theta$ in terms of $p$.",
+          "Calculate $\\sin \\theta = \\tan \\theta / \\sec \\theta$."
+        ],
+        "derivation": "\\sec \\theta + \\tan \\theta = p, \\sec \\theta - \\tan \\theta = 1/p. \\implies 2\\sec \\theta = p + 1/p = (p^2+1)/p, 2\\tan \\theta = p - 1/p = (p^2-1)/p. \\sin \\theta = \\frac{\\tan \\theta}{\\sec \\theta} = \\frac{(p^2-1)/2p}{(p^2+1)/2p} = \\frac{p^2-1}{p^2+1}."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:26:43.831150",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132643_569c36_05"
+    },
+    {
+      "question": "Prove that $\\frac{\\tan \\theta}{1 - \\cot \\theta} + \\frac{\\cot \\theta}{1 - \\tan \\theta} = 1 + \\sec \\theta \\csc \\theta$.",
+      "answer": "Proof",
+      "solution": {
+        "steps": [
+          "Convert all terms to $\\sin \\theta$ and $\\cos \\theta$.",
+          "Simplify the complex fractions.",
+          "Find a common denominator.",
+          "Use the identity $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$.",
+          "Simplify the expression to the final form."
+        ],
+        "derivation": "\\frac{\\frac{\\sin}{\\cos}}{1 - \\frac{\\cos}{\\sin}} + \\frac{\\frac{\\cos}{\\sin}}{1 - \\frac{\\sin}{\\cos}} = \\frac{\\sin^2}{\\cos(\\sin-\\cos)} - \\frac{\\cos^2}{\\sin(\\sin-\\cos)} = \\frac{\\sin^3 - \\cos^3}{\\sin \\cos(\\sin-\\cos)} = \\frac{(\\sin-\\cos)(\\sin^2+\\cos^2+\\sin \\cos)}{\\sin \\cos(\\sin-\\cos)} = \\frac{1+\\sin \\cos}{\\sin \\cos} = \\sec \\theta \\csc \\theta + 1."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:26:43.831156",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132643_5bc11e_06"
+    },
+    {
+      "question": "If $x = a \\sec \\theta + b \\tan \\theta$ and $y = a \\tan \\theta + b \\sec \\theta$, prove that $x^2 - y^2 = a^2 - b^2$.",
+      "answer": "Proof",
+      "solution": {
+        "steps": [
+          "Square the expressions for $x$ and $y$.",
+          "Subtract $y^2$ from $x^2$.",
+          "Group terms with $a^2$ and $b^2$.",
+          "Use $\\sec^2 \\theta - \\tan^2 \\theta = 1$.",
+          "Simplify the resulting expression."
+        ],
+        "derivation": "x^2 = a^2 \\sec^2 \\theta + b^2 \\tan^2 \\theta + 2ab \\sec \\theta \\tan \\theta. y^2 = a^2 \\tan^2 \\theta + b^2 \\sec^2 \\theta + 2ab \\sec \\theta \\tan \\theta. x^2 - y^2 = a^2(\\sec^2 \\theta - \\tan^2 \\theta) - b^2(\\sec^2 \\theta - \\tan^2 \\theta) = a^2(1) - b^2(1) = a^2 - b^2."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:26:43.831161",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132643_1f3c71_07"
+    },
+    {
+      "question": "Prove that $\\sqrt{\\frac{1 + \\sin \\theta}{1 - \\sin \\theta}} = \\sec \\theta + \\tan \\theta$.",
+      "answer": "Proof",
+      "solution": {
+        "steps": [
+          "Rationalize the denominator inside the square root.",
+          "Use $(1+\\sin \\theta)(1+\\sin \\theta) = (1+\\sin \\theta)^2$.",
+          "Use $(1-\\sin \\theta)(1+\\sin \\theta) = 1-\\sin^2 \\theta = \\cos^2 \\theta$.",
+          "Remove the square root.",
+          "Split the fraction."
+        ],
+        "derivation": "\\sqrt{\\frac{(1+\\sin \\theta)^2}{(1-\\sin \\theta)(1+\\sin \\theta)}} = \\sqrt{\\frac{(1+\\sin \\theta)^2}{\\cos^2 \\theta}} = \\frac{1+\\sin \\theta}{\\cos \\theta} = \\frac{1}{\\cos \\theta} + \\frac{\\sin \\theta}{\\cos \\theta} = \\sec \\theta + \\tan \\theta."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:26:43.831167",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132643_a017ff_08"
+    },
+    {
+      "question": "If $\\cos \\theta + \\sin \\theta = \\sqrt{2} \\sin \\theta$, show that $\\cos \\theta - \\sin \\theta = \\sqrt{2} \\cos \\theta$. (Note: check coefficients carefully)",
+      "answer": "Proof",
+      "solution": {
+        "steps": [
+          "Start with $\\cos \\theta = (\\sqrt{2}-1)\\sin \\theta$.",
+          "Multiply both sides by $(\\sqrt{2}+1)$.",
+          "Use difference of squares on the right side.",
+          "Simplify to get $\\sin \\theta = (\\sqrt{2}+1)\\cos \\theta$.",
+          "Rearrange to verify the target equation."
+        ],
+        "derivation": "\\cos \\theta = (\\sqrt{2}-1)\\sin \\theta \\implies \\cos \\theta(\\sqrt{2}+1) = (\\sqrt{2}-1)(\\sqrt{2}+1)\\sin \\theta \\implies \\sqrt{2}\\cos \\theta + \\cos \\theta = (2-1)\\sin \\theta \\implies \\sqrt{2}\\cos \\theta = \\sin \\theta - \\cos \\theta."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:26:43.831172",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132643_e26741_09"
+    },
+    {
+      "question": "Prove that $\\frac{\\sin \\theta - 2\\sin^3 \\theta}{2\\cos^3 \\theta - \\cos \\theta} = \\tan \\theta$.",
+      "answer": "Proof",
+      "solution": {
+        "steps": [
+          "Factor out $\\sin \\theta$ from the numerator.",
+          "Factor out $\\cos \\theta$ from the denominator.",
+          "Use the identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$ in the numerator.",
+          "Substitute $1 = \\sin^2 \\theta + \\cos^2 \\theta$ and simplify.",
+          "Conclude the proof."
+        ],
+        "derivation": "\\frac{\\sin \\theta(1 - 2\\sin^2 \\theta)}{\\cos \\theta(2\\cos^2 \\theta - 1)} = \\tan \\theta \\left[ \\frac{\\sin^2 \\theta + \\cos^2 \\theta - 2\\sin^2 \\theta}{2\\cos^2 \\theta - (\\sin^2 \\theta + \\cos^2 \\theta)} \\right] = \\tan \\theta \\left[ \\frac{\\cos^2 \\theta - \\sin^2 \\theta}{\\cos^2 \\theta - \\sin^2 \\theta} \\right] = \\tan \\theta."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:26:43.831177",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132643_6a4abe_10"
+    }
+  ]
+}

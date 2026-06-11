@@ -1,0 +1,69 @@
+{
+  "batch_id": "20260604_122102_64d5704d",
+  "generated_at": "2026-06-04T12:21:02.267366",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "question_count": 2,
+  "questions": [
+    {
+      "question": "Assertion (A): The decimal expansion of $\\frac{7}{250}$ is terminating.\nReason (R): A rational number $\\frac{p}{q}$ has a terminating decimal expansion if the prime factorisation of $q$ is of the form $2^n 5^m$, where $n$ and $m$ are non-negative integers.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Simplify the fraction $\\frac{7}{250}$ and check its denominator.",
+          "Prime factorise the denominator 250: $250 = 2 \\times 125 = 2 \\times 5^3$.",
+          "Since the denominator is of the form $2^1 \\times 5^3$, the decimal expansion terminates.",
+          "Reason R correctly states the condition for a terminating decimal expansion.",
+          "Both A and R are true, and R correctly explains A."
+        ],
+        "derivation": "$$250 = 2 \\times 5^3 = 2^1 \\times 5^3$$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Terminating and non-terminating decimals",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T12:21:02.267274",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_122102_cbb29f"
+    },
+    {
+      "question": "Assertion (A): The HCF of two consecutive odd numbers is always 1.\nReason (R): Two consecutive odd numbers are co-prime.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Consider two consecutive odd numbers, e.g., 3 and 5, or 7 and 9. Their common factors are only 1.",
+          "Since they differ by 2, any common divisor must divide 2, but both are odd, so the only common divisor is 1.",
+          "This means they are co-prime, and their HCF is 1.",
+          "Reason R states the same fact, making it the correct explanation of A."
+        ],
+        "derivation": "$$\\text{Let the numbers be } 2k+1 \\text{ and } 2k+3. \\\\ \\text{Any common divisor } d \\text{ divides } (2k+3) - (2k+1) = 2. \\\\ \\text{Since both numbers are odd, } d \\neq 2, \\text{ so } d=1.$$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "HCF and co-prime numbers",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T12:21:02.267337",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_122102_fd57f4"
+    }
+  ]
+}

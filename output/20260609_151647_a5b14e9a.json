@@ -1,0 +1,60 @@
+{
+  "batch_id": "20260609_151647_a5b14e9a",
+  "generated_at": "2026-06-09T15:16:47.459738",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Statistics",
+  "subtopic": "mean of grouped data",
+  "difficulty": "simple",
+  "question_type": "vsa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "For a given frequency distribution, the sum of frequencies $\\sum f_i = 50$ and the sum of the product of frequencies and class marks $\\sum f_i x_i = 1750$. Find the mean of the distribution.",
+      "answer": "$35$",
+      "solution": {
+        "steps": [
+          "Identify the formula for the mean of grouped data, which is $\\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i}$.",
+          "Substitute the given values $\\sum f_i x_i = 1750$ and $\\sum f_i = 50$ into the formula to calculate the mean."
+        ],
+        "derivation": "$\\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i} \\\\ \\bar{x} = \\frac{1750}{50} \\\\ \\bar{x} = 35$"
+      },
+      "topic": "Statistics",
+      "subtopic": "mean of grouped data",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-09T15:16:47.459464",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/430-1-1_Mathematics Basic.pdf",
+            "question_no": 22,
+            "paper_variant": "basic",
+            "question_type": "vsa"
+          },
+          {
+            "source": "basic/430-1-3_Mathematics Basic.pdf",
+            "question_no": 23,
+            "paper_variant": "basic",
+            "question_type": "vsa"
+          },
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 25,
+            "paper_variant": "basic",
+            "question_type": "vsa"
+          }
+        ]
+      },
+      "id": "ncert_20260609_151647_1e941b_01"
+    }
+  ]
+}

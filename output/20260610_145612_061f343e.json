@@ -1,0 +1,13 @@
+{
+  "batch_id": "20260610_145612_061f343e",
+  "generated_at": "2026-06-10T14:56:12.765794",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Pair of Linear Equations in Two Variables",
+  "subtopic": "graphical method",
+  "difficulty": null,
+  "question_type": null,
+  "question_count": 0,
+  "mechanisms": [],
+  "questions": []
+}

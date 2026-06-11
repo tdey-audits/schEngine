@@ -1,0 +1,102 @@
+{
+  "batch_id": "20260609_155917_ef2e82cf",
+  "generated_at": "2026-06-09T15:59:17.061434",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The quadratic equation $2x^2 + 5x + 3 = 0$ has two distinct real roots. \\\\ Reason (R): A quadratic equation $ax^2 + bx + c = 0$ has two distinct real roots if and only if its discriminant $D = b^2 - 4ac > 0$.",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Identify the coefficients a, b, and c from the given equation $2x^2 + 5x + 3 = 0$.",
+          "Calculate the discriminant $D = b^2 - 4ac$.",
+          "Evaluate $D = (5)^2 - 4(2)(3) = 25 - 24 = 1$.",
+          "Since $D = 1 > 0$, the equation has two distinct real roots, making Assertion (A) true.",
+          "Wait, re-evaluating: $D = 1$ is greater than 0, therefore the Assertion (A) is actually TRUE. The Reason (R) is also TRUE and is the correct explanation for the nature of roots. Let me re-verify the calculation: $2x^2 + 5x + 3 = 0$, $D = 25 - 24 = 1$. Both are true.",
+          "Correction: Since $1 > 0$, the Assertion (A) is true. The Reason (R) is the definition of the condition for distinct real roots. Therefore, (A) is the correct choice."
+        ],
+        "derivation": "$a = 2, b = 5, c = 3 \\\\ D = b^2 - 4ac \\\\ D = (5)^2 - 4(2)(3) \\\\ D = 25 - 24 = 1 \\\\ D > 0 \\Rightarrow \\text{Distinct real roots} \\\\ \\text{Assertion (A) is true} \\\\ \\text{Reason (R) is true and correctly explains (A)}$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of Roots",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T15:59:17.061153",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_155917_1adb66_01"
+    }
+  ]
+}

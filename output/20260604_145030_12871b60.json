@@ -1,0 +1,203 @@
+{
+  "batch_id": "20260604_145030_12871b60",
+  "generated_at": "2026-06-04T14:50:30.178533",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The length of a tangent drawn from an external point to a circle is always equal to the radius of the circle. Reason (R): A tangent to a circle is perpendicular to the radius at the point of contact.",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "The length of the tangent from an external point $P$ to a circle with centre $O$ is $\\sqrt{OP^2 - r^2}$, where $r$ is the radius.",
+          "This length is not necessarily equal to the radius $r$. Thus, Assertion (A) is false.",
+          "The theorem states that a tangent is perpendicular to the radius at the point of contact. Thus, Reason (R) is true."
+        ],
+        "derivation": "$Length = \\sqrt{OP^2 - r^2} \\neq r \\text{ in general} \\Rightarrow A \\text{ is false} \\\\ \\text{Theorem: Tangent } \\perp \\text{ radius at point of contact} \\Rightarrow R \\text{ is true}$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:30.177972",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145030_88e58a_01"
+    },
+    {
+      "question": "Assertion (A): The distance between two parallel tangents of a circle of radius $3$ $cm$ is $6$ $cm$. Reason (R): The distance between two parallel tangents is equal to the diameter of the circle.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Two parallel tangents touch the circle at the ends of a diameter.",
+          "The distance between them is the length of the diameter, which is $2 \\times \\text{radius}$.",
+          "Given radius $r = 3$ $cm$, diameter $= 2 \\times 3 = 6$ $cm$. Both A and R are true and R explains A."
+        ],
+        "derivation": "$d = 2r \\\\ d = 2 \\times 3 = 6 \\text{ cm} \\\\ A \\text{ is true, } R \\text{ is true, } R \\text{ explains } A$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:30.178105",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145030_d8a301_02"
+    },
+    {
+      "question": "Assertion (A): If the angle between two tangents drawn from a point $P$ to a circle of radius $a$ and centre $O$ is $60^\\circ$, then $OP = 2a$. Reason (R): The line joining the centre to the external point bisects the angle between the tangents.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Let the angle between tangents be $\\angle APB = 60^\\circ$. The line $OP$ bisects $\\angle APB$, so $\\angle APO = 30^\\circ$.",
+          "In $\\triangle OAP$ (right-angled at $A$), $\\sin(30^\\circ) = \\frac{OA}{OP} = \\frac{a}{OP}$.",
+          "Since $\\sin(30^\\circ) = \\frac{1}{2}$, we have $\\frac{1}{2} = \\frac{a}{OP}$, so $OP = 2a$. Both A and R are true and R explains A."
+        ],
+        "derivation": "$\\angle APO = \\frac{1}{2} \\times 60^\\circ = 30^\\circ \\\\ \\sin(30^\\circ) = \\frac{OA}{OP} = \\frac{a}{OP} \\\\ \\frac{1}{2} = \\frac{a}{OP} \\Rightarrow OP = 2a$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 4,
+            "y": 0,
+            "label": "P"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0.5,
+            "y": 0.866,
+            "label": "A"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "A",
+            "label": "a"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "P"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "A"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:30.178162",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145030_ece419_03"
+    },
+    {
+      "question": "Assertion (A): The number of tangents that can be drawn from a point inside a circle is zero. Reason (R): A tangent is a line that intersects the circle at only one point.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Any line passing through a point inside the circle is a secant, not a tangent.",
+          "Therefore, zero tangents can be drawn from an interior point. Assertion A is true.",
+          "By definition, a tangent intersects the circle at exactly one point. This definition explains why no tangent can be drawn from inside. Reason R is true and is the correct explanation."
+        ],
+        "derivation": "\\text{Point inside } \\Rightarrow \\text{No line intersects circle at exactly one point} \\\\ \\text{Tangent definition: cross at one point} \\\\ \\text{Both true, R explains A}"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:30.178200",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145030_ae418e_04"
+    },
+    {
+      "question": "Assertion (A): The tangents drawn at the ends of a diameter of a circle are parallel. Reason (R): The angles between the diameter and the tangents at the ends are $90^\\circ$, and since the sum of interior angles on the same side of the transversal is $180^\\circ$, they are parallel.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Let $AB$ be a diameter. Tangents at $A$ and $B$ are perpendicular to $AB$.",
+          "Therefore, both tangents make $90^\\circ$ with the diameter.",
+          "Since alternate interior angles are equal (or consecutive interior angles sum to $180^\\circ$), the tangents are parallel."
+        ],
+        "derivation": "\\angle T_1AB = 90^\\circ, \\angle T_2BA = 90^\\circ \\\\ \\angle T_1AB + \\angle T_2BA = 180^\\circ \\Rightarrow \\text{Parallel lines}"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:30.178229",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145030_0cf45c_05"
+    }
+  ]
+}

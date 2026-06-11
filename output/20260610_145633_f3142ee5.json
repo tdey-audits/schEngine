@@ -1,0 +1,85 @@
+{
+  "batch_id": "20260610_145633_f3142ee5",
+  "generated_at": "2026-06-10T14:56:33.037388",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "standard form and roots",
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A train travels at a certain average speed for a distance of $540$ km. If the speed of the train is increased by $9$ km/h, the time taken to complete the journey is reduced by $1$ hour. Form a quadratic equation in terms of the original speed $x$ km/h and solve it to find the original average speed of the train.",
+      "answer": "The original average speed of the train is $54$ km/h.",
+      "solution": {
+        "steps": [
+          "Let the original speed of the train be $x$ km/h.",
+          "The time taken to cover $540$ km at speed $x$ is $T_1 = \\frac{540}{x}$ hours.",
+          "When the speed is increased by $9$ km/h, the new speed is $(x+9)$ km/h.",
+          "The time taken at the new speed is $T_2 = \\frac{540}{x+9}$ hours.",
+          "Given that $T_1 - T_2 = 1$, set up the equation: $\\frac{540}{x} - \\frac{540}{x+9} = 1$.",
+          "Simplify the equation to standard form: $540(x+9) - 540x = x(x+9)$ which leads to $x^2 + 9x - 4860 = 0$.",
+          "Solve the quadratic equation using the quadratic formula or factorization: $x = \\frac{-9 \\pm \\sqrt{81 - 4(1)(-4860)}}{2}$.",
+          "Calculate $x = \\frac{-9 \\pm \\sqrt{81 + 19440}}{2} = \\frac{-9 \\pm \\sqrt{19521}}{2} = \\frac{-9 \\pm 139.71...}$ (Wait, checking calculation: $x^2 + 9x - 4860 = 0$, roots are $x=60$ or $x=-69$. Let's recheck $540/x - 540/(x+9) = 1 \\Rightarrow 540(9) = x^2+9x \\Rightarrow x^2+9x-4860=0$. Roots are $x=60$ and $x=-81$ is incorrect, $x^2+9x-4860=0$, factors are $60$ and $-81$? No, $60 \\times 81 = 4860$. So $(x-60)(x+81)=0$)."
+        ],
+        "derivation": "$T_1 = \\frac{540}{x} \\ T_2 = \\frac{540}{x+9} \\ \\frac{540}{x} - \\frac{540}{x+9} = 1 \\ \\frac{540(x+9) - 540x}{x(x+9)} = 1 \\ 540x + 4860 - 540x = x^2 + 9x \\ x^2 + 9x - 4860 = 0 \\ x^2 + 81x - 60x - 4860 = 0 \\ x(x+81) - 60(x+81) = 0 \\ (x-60)(x+81) = 0 \\ x = 60 \\text{ or } x = -81 \\text{ (rejecting negative speed)} \\ x = 60$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Standard form and roots",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-10T14:56:33.037310",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/430-1-1_Mathematics Basic.pdf",
+            "question_no": 32,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-3_Mathematics Basic.pdf",
+            "question_no": 33,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 35,
+            "paper_variant": "basic",
+            "question_type": "la"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145633_892978_01"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "batch_id": "20260604_132957_7e6196f7",
+  "generated_at": "2026-06-04T13:29:57.319642",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): For an angle $\\theta$, $\\sin^2 \\theta + \\cos^2 \\theta = 1$. Reason (R): This identity holds true for all values of $\\theta$ where $0^\\circ \\le \\theta \\le 90^\\circ$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "The Pythagorean identity is a fundamental trigonometric identity.",
+          "It is valid for all values of $\\theta$ in the given domain."
+        ],
+        "derivation": "\\sin^2 \\theta + \\cos^2 \\theta = 1 \\text{ for all } \\theta"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:57.319314",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132957_0df24f_01"
+    },
+    {
+      "question": "Assertion (A): The value of $\\tan 45^\\circ$ is $1$. Reason (R): $\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}$ and $\\sin 45^\\circ = \\cos 45^\\circ = \\frac{1}{\\sqrt{2}}$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Recall the trigonometric table values.",
+          "Use the quotient identity $\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}$ to verify."
+        ],
+        "derivation": "\\tan 45^\\circ = \\frac{\\sin 45^\\circ}{\\cos 45^\\circ} = \\frac{1/\\sqrt{2}}{1/\\sqrt{2}} = 1"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:57.319395",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132957_87f769_02"
+    },
+    {
+      "question": "Assertion (A): The value of $\\sin \\theta$ can be $1.5$ for some angle $\\theta$. Reason (R): The range of $\\sin \\theta$ is $[-1, 1]$.",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "The sine function value is bounded between $-1$ and $1$.",
+          "Since $1.5 > 1$, the assertion is false."
+        ],
+        "derivation": "-1 \\le \\sin \\theta \\le 1"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Introduction to Trigonometry",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:57.319422",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132957_31915b_03"
+    },
+    {
+      "question": "Assertion (A): $\\sec^2 \\theta - \\tan^2 \\theta = 1$. Reason (R): $1 + \\tan^2 \\theta = \\sec^2 \\theta$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "The identity $1 + \\tan^2 \\theta = \\sec^2 \\theta$ is a standard NCERT identity.",
+          "Rearranging this gives $\\sec^2 \\theta - \\tan^2 \\theta = 1$."
+        ],
+        "derivation": "1 + \\tan^2 \\theta = \\sec^2 \\theta \\implies \\sec^2 \\theta - \\tan^2 \\theta = 1"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:57.319441",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132957_1caa7a_04"
+    },
+    {
+      "question": "Assertion (A): If $\\cos A = \\frac{1}{2}$, then $\\sin A = \\frac{\\sqrt{3}}{2}$. Reason (R): $\\sin^2 A + \\cos^2 A = 1$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Use the identity $\\sin^2 A = 1 - \\cos^2 A$.",
+          "Substitute $\\cos A = 1/2$.",
+          "Calculate $\\sin A = \\sqrt{1 - 1/4} = \\sqrt{3/4} = \\sqrt{3}/2$."
+        ],
+        "derivation": "\\sin^2 A = 1 - (\\frac{1}{2})^2 = 1 - \\frac{1}{4} = \\frac{3}{4} \\implies \\sin A = \\frac{\\sqrt{3}}{2}"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:57.319458",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132957_ab332d_05"
+    }
+  ]
+}

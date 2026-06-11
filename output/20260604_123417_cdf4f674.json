@@ -1,0 +1,33 @@
+{
+  "batch_id": "20260604_123417_cdf4f674",
+  "generated_at": "2026-06-04T12:34:17.943257",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "The sum of two numbers is 15. If the sum of their reciprocals is $\\frac{3}{10}$, find the numbers.",
+      "answer": "The numbers are 10 and 5.",
+      "solution": {
+        "steps": [
+          "Let the numbers be $x$ and $15-x$. Their reciprocals sum to $\\frac{1}{x} + \\frac{1}{15-x} = \\frac{3}{10}$.",
+          "Multiply both sides by $10x(15-x)$: $10(15-x) + 10x = 3x(15-x)$, which simplifies to $150 = 45x - 3x^2$.",
+          "Rearrange into standard quadratic: $3x^2 - 45x + 150 = 0$. Divide by 3: $x^2 - 15x + 50 = 0$.",
+          "Factorise: $(x-10)(x-5)=0$, so $x=10$ or $x=5$. Thus the numbers are 10 and 5."
+        ],
+        "derivation": "Let numbers be $x$ and $15-x$.\n$\\frac{1}{x} + \\frac{1}{15-x} = \\frac{3}{10}$\n$10(15-x) + 10x = 3x(15-x)$\n$150 = 45x - 3x^2$\n$3x^2 - 45x + 150 = 0$\n$x^2 - 15x + 50 = 0$\n$(x-10)(x-5)=0$\n$x=10$ or $x=5$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Word problems",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T12:34:17.943065",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_123417_ddb58a"
+    }
+  ]
+}

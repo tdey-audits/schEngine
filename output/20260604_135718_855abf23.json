@@ -1,0 +1,131 @@
+{
+  "batch_id": "20260604_135718_855abf23",
+  "generated_at": "2026-06-04T13:57:18.837939",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Areas Related to Circles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the area of the shaded region in a circle of radius $14$ cm, where a sector subtends an angle of $60^{\\circ}$ at the center. (Use $\\pi = \\frac{22}{7}$)",
+      "answer": "102.67 \\text{ cm}^2",
+      "solution": {
+        "steps": [
+          "Identify the formula for the area of a sector: $A = \\frac{\\theta}{360^{\\circ}} \\times \\pi r^2$",
+          "Substitute the given values: $\\theta = 60^{\\circ}$, $r = 14$ cm, $\\pi = \\frac{22}{7}$",
+          "Calculate the area: $A = \\frac{60}{360} \\times \\frac{22}{7} \times 14 \times 14 = \\frac{1}{6} \times 22 \times 2 \times 14$",
+          "Simplify to get $\\frac{308}{3} \\approx 102.67 \\text{ cm}^2$"
+        ],
+        "derivation": "A = \\frac{60}{360} \\times \\frac{22}{7} \\times 14^2 = \\frac{1}{6} \\times \\frac{22}{7} \\times 196 = \\frac{1}{6} \\times 22 \\times 28 = \\frac{616}{6} = 102.67 \\text{ cm}^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of a sector",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:18.837685",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135718_c1c468_01"
+    },
+    {
+      "question": "The wheels of a car are of diameter $80$ cm each. How many complete revolutions does each wheel make in $10$ minutes when the car is traveling at a speed of $66$ km/hr?",
+      "answer": "4375 \\text{ revolutions}",
+      "solution": {
+        "steps": [
+          "Calculate the distance covered in 10 minutes: $Speed = 66 \\text{ km/hr} = 66000 \\text{ m/hr} = 1100 \\text{ m/min}$. Total distance = $1100 \\times 10 = 11000$ m.",
+          "Calculate the circumference of the wheel: $C = \\pi d = \\frac{22}{7} \\times 0.8$ m.",
+          "Divide total distance by circumference: $N = \\frac{11000}{\\pi \\times 0.8}$."
+        ],
+        "derivation": "N = \\frac{11000 \\times 7}{22 \\times 0.8} = \\frac{77000}{17.6} = 4375"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Circumference of a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:18.837761",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135718_e8ca96_02"
+    },
+    {
+      "question": "Find the area of a quadrant of a circle whose circumference is $44$ cm. (Use $\\pi = \\frac{22}{7}$)",
+      "answer": "38.5 \\text{ cm}^2",
+      "solution": {
+        "steps": [
+          "Use circumference $C = 2\\pi r = 44$ to find the radius $r$.",
+          "$2 \\times \\frac{22}{7} \\times r = 44 \\implies r = 7$ cm.",
+          "Area of quadrant = $\\frac{1}{4} \\pi r^2 = \\frac{1}{4} \\times \\frac{22}{7} \times 7 \times 7$."
+        ],
+        "derivation": "r = \\frac{44 \\times 7}{44} = 7 \\text{ cm}. \\text{ Area} = \\frac{1}{4} \\times \\frac{22}{7} \\times 49 = \\frac{1}{4} \\times 22 \\times 7 = \\frac{154}{4} = 38.5 \\text{ cm}^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of a quadrant",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:18.837780",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135718_e205ef_03"
+    },
+    {
+      "question": "In a circle of radius $21$ cm, an arc subtends an angle of $60^{\\circ}$ at the center. Find the length of the arc.",
+      "answer": "22 \\text{ cm}",
+      "solution": {
+        "steps": [
+          "Identify the formula for arc length: $L = \\frac{\\theta}{360^{\\circ}} \\times 2\\pi r$.",
+          "Substitute $\\theta = 60^{\\circ}$, $r = 21$ cm.",
+          "Calculate: $L = \\frac{60}{360} \\times 2 \\times \\frac{22}{7} \times 21$."
+        ],
+        "derivation": "L = \\frac{1}{6} \\times 2 \\times \\frac{22}{7} \times 21 = \\frac{1}{6} \\times 2 \\times 22 \\times 3 = \\frac{132}{6} = 22 \\text{ cm}"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Length of an arc",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:18.837793",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135718_530649_04"
+    },
+    {
+      "question": "The cost of fencing a circular field at the rate of $\u20b9 24$ per meter is $\u20b9 5280$. Find the radius of the field.",
+      "answer": "35 \\text{ m}",
+      "solution": {
+        "steps": [
+          "Find the total circumference by dividing total cost by rate: $C = \\frac{5280}{24}$.",
+          "$C = 220$ m.",
+          "Use $2\\pi r = 220$ to solve for $r$."
+        ],
+        "derivation": "2 \\times \\frac{22}{7} \\times r = 220 \\implies r = \\frac{220 \\times 7}{44} = 5 \\times 7 = 35 \\text{ m}"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Circumference of a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:18.837805",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135718_9c8855_05"
+    }
+  ]
+}

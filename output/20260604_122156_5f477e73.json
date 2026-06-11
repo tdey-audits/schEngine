@@ -1,0 +1,109 @@
+{
+  "batch_id": "20260604_122156_5f477e73",
+  "generated_at": "2026-06-04T12:21:56.187902",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Statistics",
+  "subtopic": null,
+  "question_count": 4,
+  "questions": [
+    {
+      "id": "ncert_20260604_122156_6adbf2",
+      "type": "mcq",
+      "question": "Which class interval contains the median of the distribution?",
+      "answer": "(C) 160-180",
+      "options": [
+        "(A) 140-160",
+        "(B) 120-140",
+        "(C) 160-180",
+        "(D) 180-200"
+      ],
+      "solution": {
+        "steps": [
+          "Compute cumulative frequencies (cf): 4, 11, 20, 32, 40, 46, 50.",
+          "n = 50, so n/2 = 25. Locate the class where cf first exceeds 25.",
+          "cf for 140-160 is 20 ( < 25). cf for 160-180 is 32 ( \u2265 25). Hence median class is 160-180."
+        ],
+        "derivation": "CF: 4, 7 \u2192 11, 9 \u2192 20, 12 \u2192 32, 8 \u2192 40, 6 \u2192 46, 4 \u2192 50. n/2 = 25 \u21d2 median class = 160-180."
+      },
+      "topic": "Statistics",
+      "subtopic": "",
+      "marks": 4,
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T12:21:56.187615",
+        "model": "deepseek/deepseek-v4-flash"
+      }
+    },
+    {
+      "id": "ncert_20260604_122156_db9f85",
+      "type": "vsa",
+      "question": "Calculate the median daily water consumption (in liters) using the formula.",
+      "answer": "166.67 liters",
+      "solution": {
+        "steps": [
+          "Identify: l = 160, n/2 = 25, cf = 20, f = 12, h = 20.",
+          "Apply median formula: Median = l + ((n/2 - cf)/f) \u00d7 h = 160 + ((25 - 20)/12) \u00d7 20.",
+          "Compute: 160 + (5/12) \u00d7 20 = 160 + 100/12 = 160 + 8.333... = 168.33 (approx)."
+        ],
+        "derivation": "Median = 160 + ((25 - 20)/12) \u00d7 20 = 160 + (5/12)\u00d720 = 160 + 100/12 = 160 + 8.333... = 168.33"
+      },
+      "topic": "Statistics",
+      "subtopic": "",
+      "marks": 4,
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T12:21:56.187764",
+        "model": "deepseek/deepseek-v4-flash"
+      }
+    },
+    {
+      "id": "ncert_20260604_122156_0574a0",
+      "type": "vsa",
+      "question": "If the municipality decides that households consuming more than 200 liters per day need a special water\u2011saving advisory, how many households fall into that category?",
+      "answer": "10 households",
+      "solution": {
+        "steps": [
+          "Consumption > 200 liters means the classes 200-220 and 220-240.",
+          "Number of households in 200-220 = 6, in 220-240 = 4.",
+          "Total = 6 + 4 = 10."
+        ],
+        "derivation": "6 + 4 = 10"
+      },
+      "topic": "Statistics",
+      "subtopic": "",
+      "marks": 4,
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T12:21:56.187808",
+        "model": "deepseek/deepseek-v4-flash"
+      }
+    },
+    {
+      "id": "ncert_20260604_122156_e13a3f",
+      "type": "mcq",
+      "question": "Suppose the mean consumption of the given data is 170 liters. Which of the following is likely true based on the relation between mean, median, and mode?",
+      "answer": "(B) The distribution is positively skewed.",
+      "options": [
+        "(A) The distribution is symmetric.",
+        "(B) The distribution is positively skewed.",
+        "(C) The distribution is negatively skewed.",
+        "(D) The mode is greater than 170."
+      ],
+      "solution": {
+        "steps": [
+          "Given mean \u2248 170, median \u2248 168.33. Since mean > median, data is positively skewed.",
+          "For positively skewed distribution, mode < median < mean."
+        ],
+        "derivation": "Mean (170) > Median (168.33) \u21d2 positive skew."
+      },
+      "topic": "Statistics",
+      "subtopic": "",
+      "marks": 4,
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T12:21:56.187844",
+        "model": "deepseek/deepseek-v4-flash"
+      }
+    }
+  ]
+}

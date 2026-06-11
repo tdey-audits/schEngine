@@ -1,0 +1,856 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag Solutions} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{questions}
+\question \textbf{1.} If $\sin(A - B) = \frac{1}{2}$ and $\cos(A + B) = \frac{1}{2}$, where $0^\circ < A + B \le 90^\circ$ and $A > B$, find $A$ and $B$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{A = 45^\circ, B = 15^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the angles for which sine is 1/2 and cosine is 1/2.
+  \item Solve the resulting linear equations for A and B.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sin(A-B) = \sin 30^\circ \\
+\implies A-B = 30^\circ. \cos(A+B) = \cos 60^\circ \\
+\implies A+B = 60^\circ. \text{Adding the equations, } 2A = 90^\circ \\
+\implies A = 45^\circ. \text{Then } 45^\circ + B = 60^\circ \\
+\implies B = 15^\circ.
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{2.} Show that $\tan A \cdot \tan(90^\circ - A) = 1$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{1}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Apply the complementary angle identity for tan.
+  \item Simplify the product.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\tan(90^\circ - A) = \cot A. \text{LHS} = \tan A \cdot \cot A = \tan A \cdot \frac{1}{\tan A} = 1 = \text{RHS}.}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Complementary Angles}
+\vspace{0.3cm}
+
+\question \textbf{3.} If $3 \cot \theta = 2$, find the value of $\frac{4 \sin \theta - 3 \cos \theta}{2 \sin \theta + 6 \cos \theta}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{1/3}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Find $\cot \theta = 2/3$.
+  \item Divide numerator and denominator by $\sin \theta$ to express in terms of $\cot \theta$ and substitute.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\cot \theta = \frac{2}{3}. \text{Expression} = \frac{\frac{4 \sin \theta}{\sin \theta} - \frac{3 \cos \theta}{\sin \theta}}{\frac{2 \sin \theta}{\sin \theta} + \frac{6 \cos \theta}{\sin \theta}} = \frac{4 - 3 \cot \theta}{2 + 6 \cot \theta}. \text{Substitute } \cot \theta = \frac{2}{3}: \frac{4 - 3(2/3)}{2 + 6(2/3)} = \frac{4-2}{2+4} = \frac{2}{6} = \frac{1}{3}.}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{4.} If $\sin(A + B) = 1$ and $\cos(A - B) = \frac{\sqrt{3}}{2}$, where $0^\circ < A + B \le 90^\circ$ and $A > B$, find the values of $A$ and $B$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{A = 60^\circ, B = 30^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the trigonometric table values for $\sin$ and $\cos$.
+  \item Set up the system of linear equations based on the given angles.
+  \item Solve for $A$ and $B$ by adding and subtracting the equations.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sin(A+B) = 1 \\
+\implies A+B = 90^\circ \quad (1) \\
+\cos(A-B) = \frac{\sqrt{3}}{2} \\
+\implies A-B = 30^\circ \quad (2) \\
+(1)+(2): 2A = 120^\circ \\
+\implies A = 60^\circ \\
+(1)-(2): 2B = 60^\circ \\
+\implies B = 30^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{5.} Evaluate the following expression: $\frac{2 \tan^2 45^\circ + \cos^2 30^\circ - \sin^2 60^\circ}{\sin 30^\circ + \cos 60^\circ}$
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Substitute the standard values for $\tan 45^\circ$, $\cos 30^\circ$, $\sin 60^\circ$, $\sin 30^\circ$, and $\cos 60^\circ$.
+  \item Simplify the numerator and the denominator separately.
+  \item Perform the final division.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Numerator: } 2(1)^2 + (\frac{\sqrt{3}}{2})^2 - (\frac{\sqrt{3}}{2})^2 = 2 + \frac{3}{4} - \frac{3}{4} = 2 \\
+\text{Denominator: } \frac{1}{2} + \frac{1}{2} = 1 \\
+\text{Result: } \frac{2}{1} = 2
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{6.} If $7 \sin^2 \theta + 3 \cos^2 \theta = 4$, show that $\tan \theta = \frac{1}{\sqrt{3}}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\tan \theta = \frac{1}{\sqrt{3}}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Express $\cos^2 \theta$ as $1 - \sin^2 \theta$ using the identity $\sin^2 \theta + \cos^2 \theta = 1$.
+  \item Solve the resulting linear equation for $\sin^2 \theta$.
+  \item Calculate $\tan \theta$ using the values of $\sin \theta$ and $\cos \theta$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+7 \sin^2 \theta + 3(1 - \sin^2 \theta) = 4 \\
+7 \sin^2 \theta + 3 - 3 \sin^2 \theta = 4 \\
+4 \sin^2 \theta = 1 \\
+\implies \sin^2 \theta = \frac{1}{4} \\
+\implies \sin \theta = \frac{1}{2} \\
+\cos^2 \theta = 1 - \frac{1}{4} = \frac{3}{4} \\
+\implies \cos \theta = \frac{\sqrt{3}}{2} \\
+\tan \theta = \frac{\sin \theta}{\cos \theta} = \frac{1/2}{\sqrt{3}/2} = \frac{1}{\sqrt{3}}
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{7.} Prove the following trigonometric identity: $\frac{\tan \theta}{1 - \cot \theta} + \frac{\cot \theta}{1 - \tan \theta} = 1 + \sec \theta \csc \theta$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{1 + \sec \theta \csc \theta}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Convert all terms into $\sin \theta$ and $\cos \theta$.
+  \item Simplify the denominators by taking common denominators.
+  \item Apply the identity $(a-b)^3 = a^3 - b^3$ or group terms after simplification.
+  \item Use the identity $\sin^2 \theta + \cos^2 \theta = 1$.
+  \item Separate the fraction to reach the final RHS.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{LHS = \frac{\frac{\sin \theta}{\cos \theta}}{1 - \frac{\cos \theta}{\sin \theta}} + \frac{\frac{\cos \theta}{\sin \theta}}{1 - \frac{\sin \theta}{\cos \theta}} = \frac{\sin^2 \theta}{\cos \theta(\sin \theta - \cos \theta)} + \frac{\cos^2 \theta}{\sin \theta(\cos \theta - \sin \theta)} = \frac{\sin^3 \theta - \cos^3 \theta}{\sin \theta \cos \theta (\sin \theta - \cos \theta)} = \frac{(\sin \theta - \cos \theta)(\sin^2 \theta + \cos^2 \theta + \sin \theta \cos \theta)}{\sin \theta \cos \theta (\sin \theta - \cos \theta)} = \frac{1 + \sin \theta \cos \theta}{\sin \theta \cos \theta} = \frac{1}{\sin \theta \cos \theta} + 1 = \sec \theta \csc \theta + 1 = RHS}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{8.} If $\sec \theta + \tan \theta = p$, show that $\frac{p^2 - 1}{p^2 + 1} = \sin \theta$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\sin \theta}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Substitute $p = \sec \theta + \tan \theta$ into the expression $\frac{p^2 - 1}{p^2 + 1}$.
+  \item Expand the numerator using $(\sec \theta + \tan \theta)^2 - 1$.
+  \item Apply the identity $\sec^2 \theta - 1 = \tan^2 \theta$ in the numerator.
+  \item Expand the denominator using $(\sec \theta + \tan \theta)^2 + 1 = \sec^2 \theta + \tan^2 \theta + 2 \sec \theta \tan \theta + 1$.
+  \item Use $1 + \tan^2 \theta = \sec^2 \theta$ to simplify the denominator.
+  \item Cancel common terms to arrive at $\sin \theta$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+p^2 - 1 = (\sec \theta + \tan \theta)^2 - 1 = \sec^2 \theta + \tan^2 \theta + 2 \sec \theta \tan \theta - 1 = (\sec^2 \theta - 1) + \tan^2 \theta + 2 \sec \theta \tan \theta = 2 \tan^2 \theta + 2 \sec \theta \tan \theta = 2 \tan \theta(\tan \theta + \sec \theta). \\
+p^2 + 1 = (\sec \theta + \tan \theta)^2 + 1 = \sec^2 \theta + \tan^2 \theta + 2 \sec \theta \tan \theta + 1 = \sec^2 \theta + (\tan^2 \theta + 1) + 2 \sec \theta \tan \theta = 2 \sec^2 \theta + 2 \sec \theta \tan \theta = 2 \sec \theta(\sec \theta + \tan \theta). \\
+\frac{p^2 - 1}{p^2 + 1} = \frac{2 \tan \theta(\sec \theta + \tan \theta)}{2 \sec \theta(\sec \theta + \tan \theta)} = \frac{\tan \theta}{\sec \theta} = \frac{\sin \theta}{\cos \theta} \cdot \cos \theta = \sin \theta
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{9.} If $\sin \theta = \frac{1}{2}$, then the value of $\cos \theta$ is
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the identity $\sin^2 \theta + \cos^2 \theta = 1$
+  \item Substitute $\sin \theta = 1/2$
+  \item Solve for $\cos \theta$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\cos^2 \theta = 1 - (1/2)^2 = 1 - 1/4 = 3/4 \\
+\implies \cos \theta = \frac{\sqrt{3}}{2}
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{10.} The value of $\tan 45^\circ$ is
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall the trigonometric table for standard angles
+  \item Identify the value of $\tan 45^\circ$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\tan 45^\circ = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{11.} If $\cos A = \frac{4}{5}$, then $\tan A$ is
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use $\cos A = \text{base/hypotenuse} = 4/5$
+  \item Find perpendicular using Pythagoras theorem: $p = \sqrt{5^2 - 4^2} = 3$
+  \item Calculate $\tan A = p/b = 3/4$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\tan A = \frac{\sqrt{1-\cos^2 A}}{\cos A} = \frac{3/5}{4/5} = \frac{3}{4}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{12.} What is the value of $\sin^2 30^\circ + \cos^2 30^\circ$?
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Apply the identity $\sin^2 \theta + \cos^2 \theta = 1$ for any angle $\theta$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\sin^2 30^\circ + \cos^2 30^\circ = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{13.} If $3 \cot \theta = 2$, then the value of $\tan \theta$ is
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Given $3 \cot \theta = 2$, so $\cot \theta = 2/3$
+  \item Use the reciprocal relation $\tan \theta = 1/\cot \theta$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\tan \theta = \frac{1}{2/3} = \frac{3}{2}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{14.} The value of $\frac{\sin 18^\circ}{\cos 72^\circ}$ is
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use complementary angle relation $\cos(90^\circ - \theta) = \sin \theta$
+  \item Set $\theta = 18^\circ$ so $\cos 72^\circ = \sin 18^\circ$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\frac{\sin 18^\circ}{\sin 18^\circ} = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Complementary Angles}
+\vspace{0.3cm}
+
+\question \textbf{15.} If $\sec \theta = 2$, then $\theta$ is
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall standard values for secant
+  \item Identify angle where $\cos \theta = 1/2$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sec \theta = 2 \\
+\implies \cos \theta = 1/2 \\
+\implies \theta = 60^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{16.} The value of $(1 + \tan^2 \theta) \cos^2 \theta$ is
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use identity $1 + \tan^2 \theta = \sec^2 \theta$
+  \item Multiply $\sec^2 \theta \cdot \cos^2 \theta$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\sec^2 \theta \cdot \cos^2 \theta = \frac{1}{\cos^2 \theta} \cdot \cos^2 \theta = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{17.} If $\sin A = \cos A$, then the value of $A$ is
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Set $\sin A = \cos A$
+  \item Divide by $\cos A$ to get $\tan A = 1$
+  \item Find angle where tangent is 1
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan A = 1 \\
+\implies A = 45^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{18.} The value of $\text{cosec}^2 \theta - 1$ is equal to
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the identity $1 + \cot^2 \theta = \text{cosec}^2 \theta$
+  \item Rearrange to solve for $\text{cosec}^2 \theta - 1$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{cosec}^2 \theta - 1 = \cot^2 \theta}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{19.} Assertion (A): For an angle $\theta$, $\sin^2 \theta + \cos^2 \theta = 1$. Reason (R): This identity holds true for all values of $\theta$ where $0^\circ \le \theta \le 90^\circ$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The Pythagorean identity is a fundamental trigonometric identity.
+  \item It is valid for all values of $\theta$ in the given domain.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\sin^2 \theta + \cos^2 \theta = 1 \text{ for all } \theta}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{20.} Assertion (A): The value of $\tan 45^\circ$ is $1$. Reason (R): $\tan \theta = \frac{\sin \theta}{\cos \theta}$ and $\sin 45^\circ = \cos 45^\circ = \frac{1}{\sqrt{2}}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall the trigonometric table values.
+  \item Use the quotient identity $\tan \theta = \frac{\sin \theta}{\cos \theta}$ to verify.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\tan 45^\circ = \frac{\sin 45^\circ}{\cos 45^\circ} = \frac{1/\sqrt{2}}{1/\sqrt{2}} = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{21.} Assertion (A): The value of $\sin \theta$ can be $1.5$ for some angle $\theta$. Reason (R): The range of $\sin \theta$ is $[-1, 1]$.
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The sine function value is bounded between $-1$ and $1$.
+  \item Since $1.5 > 1$, the assertion is false.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{-1 \le \sin \theta \le 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Introduction to Trigonometry}
+\vspace{0.3cm}
+
+\question \textbf{22.} Assertion (A): $\sec^2 \theta - \tan^2 \theta = 1$. Reason (R): $1 + \tan^2 \theta = \sec^2 \theta$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The identity $1 + \tan^2 \theta = \sec^2 \theta$ is a standard NCERT identity.
+  \item Rearranging this gives $\sec^2 \theta - \tan^2 \theta = 1$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+1 + \tan^2 \theta = \sec^2 \theta \\
+\implies \sec^2 \theta - \tan^2 \theta = 1
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{23.} Assertion (A): If $\cos A = \frac{1}{2}$, then $\sin A = \frac{\sqrt{3}}{2}$. Reason (R): $\sin^2 A + \cos^2 A = 1$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the identity $\sin^2 A = 1 - \cos^2 A$.
+  \item Substitute $\cos A = 1/2$.
+  \item Calculate $\sin A = \sqrt{1 - 1/4} = \sqrt{3/4} = \sqrt{3}/2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sin^2 A = 1 - (\frac{1}{2})^2 = 1 - \frac{1}{4} = \frac{3}{4} \\
+\implies \sin A = \frac{\sqrt{3}}{2}
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{24.} If $\sin A = \cos A$, where $0 < A < 90^\circ$, find the value of $A$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{45^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Divide both sides by $\cos A$ to get $\tan A = 1$.
+  \item Identify the angle where $\tan A = 1$ in the given range.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{\sin A}{\cos A} = 1 \\
+\implies \tan A = 1 \\
+\implies A = \tan^{-1}(1) = 45^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{25.} Evaluate $\frac{\tan 65^\circ}{\cot 25^\circ}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{1}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the complementary angle identity $\cot \theta = \tan(90^\circ - \theta)$.
+  \item Substitute $\cot 25^\circ = \tan(90^\circ - 25^\circ) = \tan 65^\circ$ and simplify.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\frac{\tan 65^\circ}{\tan(90^\circ - 25^\circ)} = \frac{\tan 65^\circ}{\tan 65^\circ} = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Complementary Angles}
+\vspace{0.3cm}
+
+\question \textbf{26.} Given $15 \cot A = 8$, find the value of $\sin A$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\frac{15}{17}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Find $\cot A = \frac{8}{15}$. Using the ratio $\frac{\text{adjacent}}{\text{opposite}}$, the hypotenuse is $\sqrt{8^2 + 15^2}$.
+  \item Calculate hypotenuse $= \sqrt{64 + 225} = 17$, then $\sin A = \frac{\text{opposite}}{\text{hypotenuse}} = \frac{15}{17}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\cot A = \frac{8}{15} \\
+\implies \text{hyp} = \sqrt{8^2 + 15^2} = 17 \\
+\implies \sin A = \frac{15}{17}
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{27.} Find the value of $2 \tan^2 45^\circ + \cos^2 30^\circ - \sin^2 60^\circ$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Substitute the standard values: $\tan 45^\circ = 1$, $\cos 30^\circ = \frac{\sqrt{3}}{2}$, $\sin 60^\circ = \frac{\sqrt{3}}{2}$.
+  \item Simplify the expression $2(1)^2 + (\frac{\sqrt{3}}{2})^2 - (\frac{\sqrt{3}}{2})^2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{2(1)^2 + \frac{3}{4} - \frac{3}{4} = 2 + 0 = 2}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{28.} Prove that $\sec^2 \theta - 1 = \tan^2 \theta$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Proof based on identity} 1 + \tan^2 \theta = \sec^2 \theta}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Start with the fundamental identity $1 + \tan^2 \theta = \sec^2 \theta$.
+  \item Subtract 1 from both sides to isolate $\tan^2 \theta$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+1 + \tan^2 \theta = \sec^2 \theta \\
+\implies \tan^2 \theta = \sec^2 \theta - 1
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{29.} If $\sqrt{3} \tan \theta = 1$, find the value of $\sin^2 \theta - \cos^2 \theta$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{-\frac{1}{2}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Find the value of $\tan \theta$ from the given equation.
+  \item Determine the angle $\theta$ or use the ratio to find $\sin \theta$ and $\cos \theta$.
+  \item Substitute the values into the expression $\sin^2 \theta - \cos^2 \theta$ and simplify.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan \theta = \frac{1}{\sqrt{3}} \\
+\implies \theta = 30^\circ. \\
+\sin 30^\circ = \frac{1}{2}, \cos 30^\circ = \frac{\sqrt{3}}{2}. \\
+\sin^2 30^\circ - \cos^2 30^\circ = (\frac{1}{2})^2 - (\frac{\sqrt{3}}{2})^2 = \frac{1}{4} - \frac{3}{4} = -\frac{2}{4} = -\frac{1}{2}.
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{30.} Prove that $\frac{\cos A}{1 + \sin A} + \frac{1 + \sin A}{\cos A} = 2 \sec A$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Proved}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Take the common denominator $(1 + \sin A)\cos A$.
+  \item Expand the numerator using algebraic identity $(a+b)^2 = a^2 + 2ab + b^2$.
+  \item Use the identity $\sin^2 A + \cos^2 A = 1$ to simplify the expression and arrive at the result.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+LHS = \frac{\cos^2 A + (1 + \sin A)^2}{(1 + \sin A)\cos A} = \frac{\cos^2 A + 1 + 2\sin A + \sin^2 A}{(1 + \sin A)\cos A} \\
+= \frac{(\cos^2 A + \sin^2 A) + 1 + 2\sin A}{(1 + \sin A)\cos A} = \frac{1 + 1 + 2\sin A}{(1 + \sin A)\cos A} \\
+= \frac{2 + 2\sin A}{(1 + \sin A)\cos A} = \frac{2(1 + \sin A)}{(1 + \sin A)\cos A} = \frac{2}{\cos A} = 2 \sec A = RHS.
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{31.} If $\tan A = \frac{3}{4}$, find all other trigonometric ratios for angle $A$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\sin A = \frac{3}{5}, \cos A = \frac{4}{5}, \csc A = \frac{5}{3}, \sec A = \frac{5}{4}, \cot A = \frac{4}{3}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Consider a right triangle where $\tan A = \frac{\text{Opposite}}{\text{Adjacent}} = \frac{3k}{4k}$.
+  \item Use the Pythagorean theorem to find the hypotenuse.
+  \item Calculate the remaining ratios using the sides of the triangle.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Let } P = 3, B = 4. \text{ By Pythagoras, } H = \sqrt{3^2 + 4^2} = \sqrt{25} = 5. \\
+\sin A = \frac{P}{H} = \frac{3}{5}, \cos A = \frac{B}{H} = \frac{4}{5}, \csc A = \frac{1}{\sin A} = \frac{5}{3}, \sec A = \frac{1}{\cos A} = \frac{5}{4}, \cot A = \frac{1}{\tan A} = \frac{4}{3}.
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{32.} Prove that $\frac{\tan \theta}{1 - \cot \theta} + \frac{\cot \theta}{1 - \tan \theta} = 1 + \sec \theta \csc \theta$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{1 + \sec \theta \csc \theta}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Convert all terms into terms of $\sin \theta$ and $\cos \theta$.
+  \item Simplify the fractions by finding a common denominator for the terms.
+  \item Use the identity $\sin^2 \theta + \cos^2 \theta = 1$.
+  \item Factor the numerator using the difference of cubes formula $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$.
+  \item Cancel the common factors and simplify the expression to the final form.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{LHS = \frac{\frac{\sin \theta}{\cos \theta}}{1 - \frac{\cos \theta}{\sin \theta}} + \frac{\frac{\cos \theta}{\sin \theta}}{1 - \frac{\sin \theta}{\cos \theta}} = \frac{\sin^2 \theta}{\cos \theta(\sin \theta - \cos \theta)} + \frac{\cos^2 \theta}{\sin \theta(\cos \theta - \sin \theta)} = \frac{\sin^3 \theta - \cos^3 \theta}{\sin \theta \cos \theta (\sin \theta - \cos \theta)} = \frac{(\sin \theta - \cos \theta)(\sin^2 \theta + \cos^2 \theta + \sin \theta \cos \theta)}{\sin \theta \cos \theta (\sin \theta - \cos \theta)} = \frac{1 + \sin \theta \cos \theta}{\sin \theta \cos \theta} = \frac{1}{\sin \theta \cos \theta} + 1 = \csc \theta \sec \theta + 1 = RHS}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{33.} If $\sec \theta + \tan \theta = p$, prove that $\sin \theta = \frac{p^2 - 1}{p^2 + 1}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\sin \theta = \frac{p^2 - 1}{p^2 + 1}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the identity $\sec^2 \theta - \tan^2 \theta = 1$ to find $\sec \theta - \tan \theta$.
+  \item Since $(\sec \theta + \tan \theta)(\sec \theta - \tan \theta) = 1$, then $\sec \theta - \tan \theta = 1/p$.
+  \item Solve the system of two linear equations to find $\sec \theta$ and $\tan \theta$ in terms of $p$.
+  \item Calculate $p^2 - 1$ and $p^2 + 1$ using the expressions found.
+  \item Divide $(p^2 - 1)$ by $(p^2 + 1)$ and simplify to show it equals $\sin \theta$.
+\end{enumerate}
+\textbf{Derivation:}
+Given  p = $\sec \theta + \tan \theta$ . We know  $\sec^2 \theta - \tan^2 \theta = 1 \implies (\sec \theta - \tan \theta) = \frac{1}{p}$ . Adding equations:  2$\sec \theta = p + \frac{1}{p} = \frac{p^2+1}{p} \implies \cos \theta = \frac{2p}{p^2+1}$ . Subtracting equations:  2$\tan \theta = p - \frac{1}{p} = \frac{p^2-1}{p} \implies \tan \theta = \frac{p^2-1}{2p}$ . Since  $\sin \theta = \tan \theta \cdot \cos \theta = \frac{p^2-1}{2p} \cdot \frac{2p}{p^2+1} = \frac{p^2-1}{p^2+1}$ .
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{34.} If $\sin \theta = \frac{1}{2}$, then the value of $\cos \theta$ is
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the identity $\sin^2 \theta + \cos^2 \theta = 1$
+  \item Substitute $\sin \theta = 1/2$
+  \item Solve for $\cos \theta$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\cos^2 \theta = 1 - (1/2)^2 = 1 - 1/4 = 3/4 \\
+\implies \cos \theta = \frac{\sqrt{3}}{2}
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{35.} The value of $\tan 45^\circ$ is
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall the trigonometric table for standard angles
+  \item Identify the value of $\tan 45^\circ$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\tan 45^\circ = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{36.} If $\cos A = \frac{4}{5}$, then $\tan A$ is
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use $\cos A = \text{base/hypotenuse} = 4/5$
+  \item Find perpendicular using Pythagoras theorem: $p = \sqrt{5^2 - 4^2} = 3$
+  \item Calculate $\tan A = p/b = 3/4$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\tan A = \frac{\sqrt{1-\cos^2 A}}{\cos A} = \frac{3/5}{4/5} = \frac{3}{4}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{37.} What is the value of $\sin^2 30^\circ + \cos^2 30^\circ$?
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Apply the identity $\sin^2 \theta + \cos^2 \theta = 1$ for any angle $\theta$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\sin^2 30^\circ + \cos^2 30^\circ = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{38.} If $3 \cot \theta = 2$, then the value of $\tan \theta$ is
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Given $3 \cot \theta = 2$, so $\cot \theta = 2/3$
+  \item Use the reciprocal relation $\tan \theta = 1/\cot \theta$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\tan \theta = \frac{1}{2/3} = \frac{3}{2}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{39.} The value of $\frac{\sin 18^\circ}{\cos 72^\circ}$ is
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use complementary angle relation $\cos(90^\circ - \theta) = \sin \theta$
+  \item Set $\theta = 18^\circ$ so $\cos 72^\circ = \sin 18^\circ$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\frac{\sin 18^\circ}{\sin 18^\circ} = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Complementary Angles}
+\vspace{0.3cm}
+
+\question \textbf{40.} If $\sec \theta = 2$, then $\theta$ is
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall standard values for secant
+  \item Identify angle where $\cos \theta = 1/2$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sec \theta = 2 \\
+\implies \cos \theta = 1/2 \\
+\implies \theta = 60^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\end{questions}
+
+\end{document}

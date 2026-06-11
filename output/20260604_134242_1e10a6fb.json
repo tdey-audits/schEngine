@@ -1,0 +1,167 @@
+{
+  "batch_id": "20260604_134242_1e10a6fb",
+  "generated_at": "2026-06-04T13:42:42.851933",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Some Applications of Trigonometry",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A tower stands vertically on the ground. From a point on the ground, which is $15$ m away from the foot of the tower, the angle of elevation of the top of the tower is found to be $60^\\circ$. The height of the tower is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Let the height of the tower be $h$.",
+          "Given distance from foot = $15$ m.",
+          "In $\\triangle ABC$, $\\tan(60^\\circ) = \\frac{\\text{height}}{\\text{base}}$.",
+          "$\\sqrt{3} = \\frac{h}{15}$",
+          "$h = 15\\sqrt{3}$"
+        ],
+        "derivation": "\\tan(60^\\circ) = \\frac{h}{15} \\implies \\sqrt{3} = \\frac{h}{15} \\implies h = 15\\sqrt{3} \\text{ m}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $5\\sqrt{3}$ m",
+        "(B) $15$ m",
+        "(C) $15\\sqrt{3}$ m",
+        "(D) $30$ m"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:42:42.851644",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134242_e7ca13_01"
+    },
+    {
+      "question": "The angle of elevation of the top of a pole from a point on the ground is $30^\\circ$. If the pole is $10$ m high, the distance of the point from the foot of the pole is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Let the distance be $x$.",
+          "Given height = $10$ m, angle = $30^\\circ$.",
+          "$\\tan(30^\\circ) = \\frac{10}{x}$",
+          "$\\frac{1}{\\sqrt{3}} = \\frac{10}{x}$",
+          "$x = 10\\sqrt{3}$"
+        ],
+        "derivation": "\\tan(30^\\circ) = \\frac{10}{x} \\implies \\frac{1}{\\sqrt{3}} = \\frac{10}{x} \\implies x = 10\\sqrt{3}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $10$ m",
+        "(B) $10\\sqrt{3}$ m",
+        "(C) $\\frac{10}{\\sqrt{3}}$ m",
+        "(D) $20$ m"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:42:42.851723",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134242_83c685_02"
+    },
+    {
+      "question": "If the length of a string of a kite flying at a height of $60$ m from the ground is $120$ m, then the angle of inclination of the string with the ground is:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Let the angle be $\\theta$.",
+          "Height (opposite) = $60$ m, Hypotenuse = $120$ m.",
+          "$\\sin(\\theta) = \\frac{60}{120}$",
+          "$\\sin(\\theta) = \\frac{1}{2}$",
+          "$\\theta = 30^\\circ$"
+        ],
+        "derivation": "\\sin(\\theta) = \\frac{60}{120} = \\frac{1}{2} \\implies \\theta = 30^\\circ"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $30^\\circ$",
+        "(B) $45^\\circ$",
+        "(C) $60^\\circ$",
+        "(D) $90^\\circ$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:42:42.851745",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134242_8b4946_03"
+    },
+    {
+      "question": "A $1.5$ m tall boy is standing at some distance from a $30$ m tall building. The angle of elevation from his eyes to the top of the building is $45^\\circ$. The height above his eye level is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Height of building = $30$ m.",
+          "Height of boy = $1.5$ m.",
+          "Height above eye level = $30 - 1.5 = 28.5$ m.",
+          "Since angle is $45^\\circ$, height = base distance."
+        ],
+        "derivation": "h = 30 - 1.5 = 28.5 \\text{ m}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $30$ m",
+        "(B) $28.5$ m",
+        "(C) $31.5$ m",
+        "(D) $1.5$ m"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:42:42.851761",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134242_3ab92b_04"
+    },
+    {
+      "question": "The shadow of a tower standing on a level ground is found to be $40$ m longer when the Sun's altitude is $30^\\circ$ than when it is $60^\\circ$. The height of the tower is not required, but if we consider a simpler case where the shadow is $h\\sqrt{3}$ when angle is $30^\\circ$, what is the height $h$ if the shadow is $30$ m?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "$\\tan(30^\\circ) = \\frac{h}{30}$",
+          "$\\frac{1}{\\sqrt{3}} = \\frac{h}{30}$",
+          "$h = \\frac{30}{\\sqrt{3}} = 10\\sqrt{3}$"
+        ],
+        "derivation": "h = 30 \\times \\tan(30^\\circ) = 30 \\times \\frac{1}{\\sqrt{3}} = 10\\sqrt{3}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $30\\sqrt{3}$ m",
+        "(B) $30$ m",
+        "(C) $10\\sqrt{3}$ m",
+        "(D) $10$ m"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:42:42.851779",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134242_4c78ba_05"
+    }
+  ]
+}

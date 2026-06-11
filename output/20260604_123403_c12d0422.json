@@ -1,0 +1,33 @@
+{
+  "batch_id": "20260604_123403_c12d0422",
+  "generated_at": "2026-06-04T12:34:03.763416",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "The speed of a boat in still water is 8 km/h. It takes the same time to travel 15 km upstream as it takes to travel 25 km downstream. Find the speed of the stream.",
+      "answer": "2 km/h",
+      "solution": {
+        "steps": [
+          "Step 1: Let the speed of the stream be $x$ km/h. Then, speed upstream $= (8 - x)$ km/h and speed downstream $= (8 + x)$ km/h.",
+          "Step 2: Time upstream $= \\frac{15}{8-x}$ hours, time downstream $= \\frac{25}{8+x}$ hours. Since both times are equal, we have $\\frac{15}{8-x} = \\frac{25}{8+x}$.",
+          "Step 3: Cross-multiplying gives $15(8+x) = 25(8-x)$. Simplify: $120 + 15x = 200 - 25x$. So $15x + 25x = 200 - 120$, i.e. $40x = 80$, hence $x = 2$.",
+          "Step 4: Verify: upstream speed = 6 km/h, time = 15/6 = 2.5 h; downstream speed = 10 km/h, time = 25/10 = 2.5 h. Thus the speed of the stream is 2 km/h."
+        ],
+        "derivation": "Let speed of stream $= x$ km/h. Upstream speed $= 8-x$, downstream $= 8+x$.\n$\\frac{15}{8-x} = \\frac{25}{8+x} \\implies 15(8+x)=25(8-x) \\implies 120+15x=200-25x \\implies 40x=80 \\implies x=2$."
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Word Problems (speed and time)",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T12:34:03.763302",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_123403_54aecb"
+    }
+  ]
+}

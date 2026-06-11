@@ -1,0 +1,557 @@
+{
+  "batch_id": "20260609_144020_f29174de",
+  "generated_at": "2026-06-09T14:40:20.899496",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 10,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Which of the following is a quadratic equation?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Expand each option to check for the highest power of $x$.",
+          "A quadratic equation must be in the form $ax^2 + bx + c = 0$ where $a \\neq 0$.",
+          "Option (C) results in $x^2 + 3x + 1 = x^2 - 4x + 4$, which simplifies to $7x - 3 = 0$ (Linear). Wait, let's recheck.",
+          "Actually, checking $x^2 - 2x = (-2)(3-x) \\Rightarrow x^2 - 2x = -6 + 2x \\Rightarrow x^2 - 4x + 6 = 0$."
+        ],
+        "derivation": "$x^2 - 2x = -6 + 2x \\Rightarrow x^2 - 4x + 6 = 0$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Introduction",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $(x+1)^2 = 2(x-3)$",
+        "(B) $x^2 + 3x + 1 = (x-2)^2$",
+        "(C) $x(x+1) + 8 = (x+2)(x-2)$",
+        "(D) $x^3 - x^2 = (x-1)^3$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:40:20.899222",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260609_144020_bbbfc5_01"
+    },
+    {
+      "question": "The discriminant of the quadratic equation $2x^2 - 4x + 3 = 0$ is",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Identify $a=2, b=-4, c=3$.",
+          "Use the formula $D = b^2 - 4ac$.",
+          "$D = (-4)^2 - 4(2)(3) = 16 - 24 = -8$."
+        ],
+        "derivation": "$D = (-4)^2 - 4 \\times 2 \\times 3 = 16 - 24 = -8$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of Roots",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $8$",
+        "(B) $-8$",
+        "(C) $4$",
+        "(D) $-4$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:40:20.899277",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260609_144020_51e76e_02"
+    },
+    {
+      "question": "If $x = 1/2$ is a root of the equation $x^2 + kx - 5/4 = 0$, then the value of $k$ is",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Substitute $x = 1/2$ into the equation.",
+          "$(1/2)^2 + k(1/2) - 5/4 = 0$.",
+          "$1/4 + k/2 - 5/4 = 0 \\Rightarrow k/2 - 1 = 0 \\Rightarrow k = 2$."
+        ],
+        "derivation": "$1/4 + k/2 - 5/4 = 0 \\Rightarrow k/2 = 4/4 \\Rightarrow k/2 = 1 \\Rightarrow k = 2$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Roots of an equation",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $2$",
+        "(B) $-2$",
+        "(C) $1$",
+        "(D) $-1$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:40:20.899291",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260609_144020_65449e_03"
+    },
+    {
+      "question": "The quadratic equation $x^2 + 4x + k = 0$ has real and equal roots if",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "For real and equal roots, $D = 0$.",
+          "$b^2 - 4ac = 0$.",
+          "$4^2 - 4(1)(k) = 0 \\Rightarrow 16 - 4k = 0 \\Rightarrow k = 4$."
+        ],
+        "derivation": "$16 - 4k = 0 \\Rightarrow 4k = 16 \\Rightarrow k = 4$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of Roots",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $k=2$",
+        "(B) $k=16$",
+        "(C) $k=4$",
+        "(D) $k=8$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:40:20.899302",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260609_144020_75eb32_04"
+    },
+    {
+      "question": "If the equation $x^2 + 5kx + 16 = 0$ has no real roots, then",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "For no real roots, $D < 0$.",
+          "$b^2 - 4ac < 0$.",
+          "$(5k)^2 - 4(1)(16) < 0 \\Rightarrow 25k^2 - 64 < 0 \\Rightarrow k^2 < 64/25 \\Rightarrow -8/5 < k < 8/5$."
+        ],
+        "derivation": "$25k^2 < 64 \\Rightarrow k^2 < 64/25 \\Rightarrow |k| < 8/5$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of Roots",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $k > 8/5$",
+        "(B) $k < 8/5$",
+        "(C) $k = 8/5$",
+        "(D) $-8/5 < k < 8/5$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:40:20.899311",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260609_144020_29543f_05"
+    },
+    {
+      "question": "The roots of the equation $x^2 - 3x - 10 = 0$ are",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Factorise $x^2 - 3x - 10 = 0$.",
+          "$x^2 - 5x + 2x - 10 = 0$.",
+          "$x(x-5) + 2(x-5) = 0 \\Rightarrow (x-5)(x+2) = 0$."
+        ],
+        "derivation": "$x = 5, x = -2$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Factorisation",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $2, -5$",
+        "(B) $5, -2$",
+        "(C) $2, 5$",
+        "(D) $-2, -5$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:40:20.899320",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260609_144020_d40616_06"
+    },
+    {
+      "question": "Which constant must be added to $x^2 + 6x$ to make it a perfect square?",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "The coefficient of $x$ is $6$.",
+          "Half of the coefficient is $3$.",
+          "Square of $3$ is $9$."
+        ],
+        "derivation": "$(6/2)^2 = 3^2 = 9$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Completing the square",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $3$",
+        "(B) $9$",
+        "(C) $6$",
+        "(D) $36$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:40:20.899328",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260609_144020_4d6c5d_07"
+    },
+    {
+      "question": "The sum of the roots of the quadratic equation $3x^2 - 5x + 2 = 0$ is",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "For $ax^2 + bx + c = 0$, sum of roots $= -b/a$.",
+          "Here $a=3, b=-5$.",
+          "Sum $= -(-5)/3 = 5/3$."
+        ],
+        "derivation": "Sum $= -b/a = -(-5)/3 = 5/3$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Relationship between roots and coefficients",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $2/3$",
+        "(B) $-5/3$",
+        "(C) $5/3$",
+        "(D) $-2/3$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:40:20.899345",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260609_144020_5c12d7_08"
+    },
+    {
+      "question": "If one root of $x^2 - 8x + m = 0$ is $3$, then the value of $m$ is",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Substitute $x=3$ into the equation.",
+          "$3^2 - 8(3) + m = 0$.",
+          "$9 - 24 + m = 0 \\Rightarrow -15 + m = 0 \\Rightarrow m = 15$."
+        ],
+        "derivation": "$9 - 24 + m = 0 \\Rightarrow m = 15$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Roots of an equation",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $5$",
+        "(B) $-15$",
+        "(C) $8$",
+        "(D) $15$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:40:20.899358",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260609_144020_8cd251_09"
+    },
+    {
+      "question": "The equation $(x+1)^2 - x^2 = 0$ has how many real roots?",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Expand $(x+1)^2 - x^2 = 0$.",
+          "$x^2 + 2x + 1 - x^2 = 0$.",
+          "$2x + 1 = 0 \\Rightarrow x = -1/2$.",
+          "This is a linear equation, so it has exactly one root."
+        ],
+        "derivation": "$2x + 1 = 0 \\Rightarrow x = -0.5$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Introduction",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $1$",
+        "(B) $2$",
+        "(C) $0$",
+        "(D) $3$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:40:20.899370",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260609_144020_00ef3a_10"
+    }
+  ]
+}

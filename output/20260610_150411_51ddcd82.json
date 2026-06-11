@@ -1,0 +1,89 @@
+{
+  "batch_id": "20260610_150411_51ddcd82",
+  "generated_at": "2026-06-10T15:04:11.243248",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "standard form and roots",
+  "difficulty": "simple",
+  "question_type": "vsa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the value of $k$ for which the quadratic equation $2x^2 - kx + 8 = 0$ has real and equal roots.",
+      "answer": "$k = 8$ or $k = -8$",
+      "solution": {
+        "steps": [
+          "Identify the coefficients $a = 2$, $b = -k$, and $c = 8$ from the standard form $ax^2 + bx + c = 0$.",
+          "For real and equal roots, the discriminant $D = b^2 - 4ac$ must be equal to $0$.",
+          "Substitute the coefficients into the discriminant formula: $(-k)^2 - 4(2)(8) = 0$.",
+          "Solve the resulting equation $k^2 - 64 = 0$ to find the values of $k$."
+        ],
+        "derivation": "$D = b^2 - 4ac = 0 \\ (-k)^2 - 4(2)(8) = 0 \\ k^2 - 64 = 0 \\ k^2 = 64 \\ k = \\pm 8$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of roots",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-10T15:04:11.243171",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 23,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 24,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 21,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.2",
+            "question_no": 5,
+            "question_type": "vsa",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.2",
+            "question_no": 4,
+            "question_type": "vsa",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.2",
+            "question_no": 2,
+            "question_type": "vsa",
+            "estimated_depth": "medium"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150411_cca060_01"
+    }
+  ]
+}

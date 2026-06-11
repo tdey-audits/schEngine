@@ -1,0 +1,125 @@
+{
+  "batch_id": "20260604_134409_dfde9795",
+  "generated_at": "2026-06-04T13:44:09.732197",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Statistics",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "The mean of 5 observations is 15. If each observation is increased by 3, find the new mean.",
+      "answer": "18",
+      "solution": {
+        "steps": [
+          "Use the property that if each observation is increased by a constant k, the mean also increases by k.",
+          "Add the constant to the original mean."
+        ],
+        "derivation": "\\text{Original Mean } (\\bar{x}) = 15. \\text{ New Mean } = \\bar{x} + 3 = 15 + 3 = 18."
+      },
+      "topic": "Statistics",
+      "subtopic": "Mean of grouped/ungrouped data",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:09.731760",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134409_1681a2_01"
+    },
+    {
+      "question": "Find the class mark of the class interval 150-200.",
+      "answer": "175",
+      "solution": {
+        "steps": [
+          "Identify the lower limit (L) and upper limit (U) of the interval.",
+          "Apply the formula: Class mark = (L + U) / 2."
+        ],
+        "derivation": "\\text{Class mark} = \\frac{150 + 200}{2} = \\frac{350}{2} = 175."
+      },
+      "topic": "Statistics",
+      "subtopic": "Class intervals and class marks",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:09.731886",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134409_9ffc04_02"
+    },
+    {
+      "question": "If the mode of a data set is 45 and the mean is 27, find the median using the empirical relationship.",
+      "answer": "33",
+      "solution": {
+        "steps": [
+          "State the empirical formula: Mode = 3 Median - 2 Mean.",
+          "Substitute the given values and solve for Median."
+        ],
+        "derivation": "45 = 3(\\text{Median}) - 2(27) \\implies 45 = 3(\\text{Median}) - 54 \\implies 99 = 3(\\text{Median}) \\implies \\text{Median} = 33."
+      },
+      "topic": "Statistics",
+      "subtopic": "Relationship between Mean, Median and Mode",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:09.731924",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134409_4b50de_03"
+    },
+    {
+      "question": "The frequency of a class is 12 and the total number of observations is 40. Find the relative frequency of this class.",
+      "answer": "0.3",
+      "solution": {
+        "steps": [
+          "Use the formula for relative frequency: (Frequency of class) / (Total number of observations).",
+          "Calculate the division."
+        ],
+        "derivation": "\\text{Relative Frequency} = \\frac{12}{40} = \\frac{3}{10} = 0.3."
+      },
+      "topic": "Statistics",
+      "subtopic": "Frequency distribution",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:09.731950",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134409_8c964f_04"
+    },
+    {
+      "question": "Given the data: 12, 15, 18, 12, 15, 12, 18. Find the range of the data.",
+      "answer": "6",
+      "solution": {
+        "steps": [
+          "Identify the maximum and minimum values in the data set.",
+          "Subtract the minimum from the maximum."
+        ],
+        "derivation": "\\text{Max} = 18, \\text{Min} = 12. \\text{Range} = 18 - 12 = 6."
+      },
+      "topic": "Statistics",
+      "subtopic": "Measures of dispersion",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:09.731976",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134409_3f8b5e_05"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "batch_id": "20260604_134316_b1fe6d42",
+  "generated_at": "2026-06-04T13:43:16.323577",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The length of a tangent drawn from an external point to a circle is equal to the length of another tangent drawn from the same point. Reason (R): The lengths of tangents drawn from an external point to a circle are equal.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Identify the theorem: The lengths of tangents drawn from an external point to a circle are equal.",
+          "Check Assertion: It states the definition of the theorem.",
+          "Check Reason: It states the theorem itself.",
+          "Conclusion: R explains A correctly."
+        ],
+        "derivation": "A: \\text{True}, R: \\text{True}, R \\implies A"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:16.323295",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134316_d54323_01"
+    },
+    {
+      "question": "Assertion (A): The tangent at any point of a circle is perpendicular to the radius through the point of contact. Reason (R): The perpendicular distance from the center of the circle to the tangent is equal to the radius.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Recall NCERT Theorem 10.1: The tangent at any point of a circle is perpendicular to the radius through the point of contact.",
+          "Verify Reason: The shortest distance from the center to the tangent is the radius, identifying the perpendicularity.",
+          "Conclusion: Both are true and R explains A."
+        ],
+        "derivation": "\\text{Radius} \\perp \\text{Tangent at point of contact}"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:16.323370",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134316_f9e074_02"
+    },
+    {
+      "question": "Assertion (A): The number of tangents that can be drawn from a point inside a circle is zero. Reason (R): A point inside a circle lies in the interior, and any line passing through it will be a secant, not a tangent.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Analyze A: A point inside the circle does not permit any tangent as a tangent must touch the circle at only one point.",
+          "Analyze R: Any line through an interior point intersects the circle at two points (secant).",
+          "Conclusion: Both true and R explains A."
+        ],
+        "derivation": "\\text{No tangent from interior point.}"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:16.323389",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134316_4564bd_03"
+    },
+    {
+      "question": "Assertion (A): If the angle between two tangents drawn from a point P to a circle of radius $r$ and center O is $60^\\circ$, then $OP = 2r$. Reason (R): The line segment from the center to the external point bisects the angle between the tangents.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "In $\\triangle OAP$ (where A is point of contact), $\\angle OPA = 30^\\circ$ (bisected angle).",
+          "$\\sin(30^\\circ) = \\frac{OA}{OP} = \\frac{r}{OP}$.",
+          "$\\frac{1}{2} = \\frac{r}{OP} \\implies OP = 2r$.",
+          "Conclusion: Both are true and R explains A."
+        ],
+        "derivation": "\\sin(30^\\circ) = \\frac{r}{OP} \\implies OP = 2r"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:16.323404",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134316_82f79c_04"
+    },
+    {
+      "question": "Assertion (A): The length of the tangent from a point $A$ at a distance of $5 \\text{ cm}$ from the center of the circle is $4 \\text{ cm}$. The radius of the circle is $3 \\text{ cm}$. Reason (R): In a right triangle formed by radius, tangent, and hypotenuse (distance to center), $r^2 + t^2 = d^2$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Use Pythagoras Theorem: $r^2 + t^2 = d^2$.",
+          "$r^2 + 4^2 = 5^2$.",
+          "$r^2 + 16 = 25 \\implies r^2 = 9 \\implies r = 3$.",
+          "Conclusion: Both are true and R explains A."
+        ],
+        "derivation": "3^2 + 4^2 = 9 + 16 = 25 = 5^2"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:16.323417",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134316_121ecd_05"
+    }
+  ]
+}

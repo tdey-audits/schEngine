@@ -1,0 +1,157 @@
+{
+  "batch_id": "20260604_135644_461a016f",
+  "generated_at": "2026-06-04T13:56:44.848113",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The length of a tangent drawn from an external point to a circle is always equal to the radius of the circle.\nReason (R): The tangent at any point of a circle is perpendicular to the radius through the point of contact.",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Check Assertion: The length of a tangent from an external point is not necessarily equal to the radius; they are independent.",
+          "Check Reason: This is a standard theorem (Theorem 10.1 of NCERT).",
+          "Conclusion: Assertion is false, Reason is true."
+        ],
+        "derivation": "A: False, R: True"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:44.847756",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135644_a78394_01"
+    },
+    {
+      "question": "Assertion (A): If the distance between the centres of two circles of radii $r_1$ and $r_2$ is $d$, then they touch each other externally if $d = r_1 + r_2$.\nReason (R): The distance between the centres of two circles is the sum of their radii when they touch internally.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Check Assertion: If two circles touch externally, the distance between their centres is indeed the sum of their radii. True.",
+          "Check Reason: If two circles touch internally, the distance between their centres is $|r_1 - r_2|$. False."
+        ],
+        "derivation": "A: True, R: False"
+      },
+      "topic": "Circles",
+      "subtopic": "Relative positions of circles",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:44.847848",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135644_f9d485_02"
+    },
+    {
+      "question": "Assertion (A): The number of tangents that can be drawn from a point inside a circle is zero.\nReason (R): A tangent to a circle intersects the circle at only one point.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Check Assertion: Points inside the circle cannot have tangents drawn to the circle. True.",
+          "Check Reason: By definition, a tangent touches the circle at exactly one point. True.",
+          "Conclusion: Reason explains why no tangent can be drawn from an internal point."
+        ],
+        "derivation": "A: True, R: True, R explains A"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:44.847877",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135644_84d8e1_03"
+    },
+    {
+      "question": "Assertion (A): The length of the tangent from a point $P$ at a distance of $10 \\text{ cm}$ from the centre of a circle of radius $6 \\text{ cm}$ is $8 \\text{ cm}$.\nReason (R): In a right triangle, the square of the hypotenuse equals the sum of the squares of the other two sides.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Check Assertion: $L = \\sqrt{d^2 - r^2} = \\sqrt{10^2 - 6^2} = \\sqrt{100 - 36} = \\sqrt{64} = 8$. True.",
+          "Check Reason: Pythagoras theorem is used to calculate the tangent length. True."
+        ],
+        "derivation": "L = \\sqrt{10^2 - 6^2} = 8"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:44.847894",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135644_d51ea9_04"
+    },
+    {
+      "question": "Assertion (A): Two parallel tangents can be drawn to a circle at the ends of a diameter.\nReason (R): Tangents at the ends of a diameter are perpendicular to the diameter.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Check Assertion: Tangents at ends of diameter are parallel. True.",
+          "Check Reason: Since the radius is perpendicular to the tangent at the point of contact, and the diameter is a straight line, the tangents are perpendicular to the diameter and thus parallel to each other. True."
+        ],
+        "derivation": "90^\\circ + 90^\\circ = 180^\\circ (Co-interior angles)"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:44.847912",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135644_dbc687_05"
+    }
+  ]
+}

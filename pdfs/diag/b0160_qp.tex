@@ -1,0 +1,295 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag} \\[0.3cm]
+  \textbf{Time Allowed: 3 Hours} \hfill \textbf{Maximum Marks: 80} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\noindent\textbf{General Instructions:}
+\begin{enumerate}
+  \item {\normalfont\normalcolor This question paper contains 40 questions. All questions are compulsory.}
+  \item {\normalfont\normalcolor Questions are grouped into sections A through E.}
+  \item {\normalfont\normalcolor Use of calculators is NOT permitted.}
+\end{enumerate}
+\bigskip
+\noindent\textbf{\large Section A: Multiple Choice \& Assertion-Reason (1 mark each)}
+
+\begin{questions}
+\question[1] The value of $(1 + \tan^2 \theta) \cos^2 \theta$ is
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 1
+  \item (B) 0
+  \item (C) 2
+  \item (D) -1
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If $\sin A = \cos A$, then the value of $A$ is
+\begin{enumerate}[label=(\Alph*)]
+  \item $(A) 30^\circ$
+  \item $(B) 45^\circ$
+  \item $(C) 60^\circ$
+  \item $(D) 0^\circ$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The value of $\text{cosec}^2 \theta - 1$ is equal to
+\begin{enumerate}[label=(\Alph*)]
+  \item $(A) \tan^2 \theta$
+  \item $(B) \sin^2 \theta$
+  \item $(C) \cos^2 \theta$
+  \item $(D) \cot^2 \theta$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The 4th term of an AP is 14 and the 12th term is 70. What is the first term $a$?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) -7
+  \item (B) 7
+  \item (C) -14
+  \item (D) 14
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If the sum of first $n$ terms of an AP is $S_n = 3n^2 + n$, what is the common difference $d$?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 3
+  \item (B) 4
+  \item (C) 6
+  \item (D) 2
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Which term of the AP: 21, 18, 15, ... is -81?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 34th
+  \item (B) 35th
+  \item (C) 36th
+  \item (D) 37th
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] In an AP, if $a=5$ and $d=3$, find the sum of the first 10 terms ($S_{10}$)?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 150
+  \item (B) 175
+  \item (C) 185
+  \item (D) 195
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If $k, 2k-1, 2k+1$ are three consecutive terms of an AP, find the value of $k$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 3
+  \item (B) 2
+  \item (C) 4
+  \item (D) 5
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Find the sum of all odd numbers between 0 and 50.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 600
+  \item (B) 625
+  \item (C) 650
+  \item (D) 675
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The 10th term from the end of the AP: 5, 8, 11, ..., 185 is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 150
+  \item (B) 152
+  \item (C) 155
+  \item (D) 158
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If the sum of first $n$ terms is $n^2$, then the $n$th term is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 2n+1
+  \item (B) 2n
+  \item (C) 2n-1
+  \item (D) n-1
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] How many two-digit numbers are divisible by 3?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 30
+  \item (B) 31
+  \item (C) 32
+  \item (D) 33
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] What is the common difference of an AP in which $a_{25} - a_{20} = 45$?
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 5
+  \item (B) 9
+  \item (C) 10
+  \item (D) 4.5
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): For an angle $\theta$, $\sin^2 \theta + \cos^2 \theta = 1$. Reason (R): This identity holds true for all values of $\theta$ where $0^\circ \le \theta \le 90^\circ$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The value of $\tan 45^\circ$ is $1$. Reason (R): $\tan \theta = \frac{\sin \theta}{\cos \theta}$ and $\sin 45^\circ = \cos 45^\circ = \frac{1}{\sqrt{2}}$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The value of $\sin \theta$ can be $1.5$ for some angle $\theta$. Reason (R): The range of $\sin \theta$ is $[-1, 1]$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): $\sec^2 \theta - \tan^2 \theta = 1$. Reason (R): $1 + \tan^2 \theta = \sec^2 \theta$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If $\cos A = \frac{1}{2}$, then $\sin A = \frac{\sqrt{3}}{2}$. Reason (R): $\sin^2 A + \cos^2 A = 1$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section B: Very Short Answer (2 marks each)}
+
+\begin{questions}
+\question[2] If $\sin A = \cos A$, where $0 < A < 90^\circ$, find the value of $A$.
+\vspace{0.15cm}
+
+\question[2] Evaluate $\frac{\tan 65^\circ}{\cot 25^\circ}$.
+\vspace{0.15cm}
+
+\question[2] Given $15 \cot A = 8$, find the value of $\sin A$.
+\vspace{0.15cm}
+
+\question[2] Find the value of $2 \tan^2 45^\circ + \cos^2 30^\circ - \sin^2 60^\circ$.
+\vspace{0.15cm}
+
+\question[2] Prove that $\sec^2 \theta - 1 = \tan^2 \theta$.
+\vspace{0.15cm}
+
+\question[2] Find the $11^{th}$ term of an Arithmetic Progression (AP) whose first term is $-3$ and the common difference is $4$.
+\vspace{0.15cm}
+
+\question[2] Which term of the AP $21, 18, 15, \dots$ is $-81$?
+\vspace{0.15cm}
+
+\question[2] Find the sum of the first $10$ multiples of $5$.
+\vspace{0.15cm}
+
+\question[2] If the $n^{th}$ term of an AP is given by $a_n = 3 + 2n$, find its common difference.
+\vspace{0.15cm}
+
+\question[2] Find the value of $k$ for which the terms $k-1, k+3, 3k-1$ are in Arithmetic Progression.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section C: Short Answer (3 marks each)}
+
+\begin{questions}
+\question[3] If $\sqrt{3} \tan \theta = 1$, find the value of $\sin^2 \theta - \cos^2 \theta$.
+\vspace{0.15cm}
+
+\question[3] Prove that $\frac{\cos A}{1 + \sin A} + \frac{1 + \sin A}{\cos A} = 2 \sec A$.
+\vspace{0.15cm}
+
+\question[3] If $\tan A = \frac{3}{4}$, find all other trigonometric ratios for angle $A$.
+\vspace{0.15cm}
+
+\question[3] Find the sum of all two-digit numbers which, when divided by 4, leave 1 as a remainder.
+\vspace{0.15cm}
+
+\question[3] If the sum of the first $n$ terms of an AP is $S_n = 3n^2 + 5n$, find the 16th term of the AP.
+\vspace{0.15cm}
+
+\question[3] The 4th term of an AP is 0. Prove that the 25th term of the AP is three times its 11th term.
+\vspace{0.15cm}
+
+\question[3] How many terms of the AP 24, 21, 18, ... must be taken so that their sum is 78?
+\vspace{0.15cm}
+
+\question[3] Find the middle term of the Arithmetic Progression 7, 13, 19, ..., 241.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section D: Long Answer (4-5 marks each)}
+
+\begin{questions}
+\question[5] Prove that $\frac{\tan \theta}{1 - \cot \theta} + \frac{\cot \theta}{1 - \tan \theta} = 1 + \sec \theta \csc \theta$.
+\vspace{0.15cm}
+
+\question[5] If $\sec \theta + \tan \theta = p$, prove that $\sin \theta = \frac{p^2 - 1}{p^2 + 1}$.
+\vspace{0.15cm}
+
+\question[5] The sum of the first $n$ terms of an Arithmetic Progression is given by $S_n = 3n^2 + 5n$. Find the $n^{th}$ term of this AP and hence find the $20^{th}$ term.
+\vspace{0.15cm}
+
+\question[5] In an AP, the sum of first 10 terms is $-150$ and the sum of its next 10 terms is $-550$. Find the Arithmetic Progression.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+
+\end{document}

@@ -1,0 +1,226 @@
+{
+  "batch_id": "20260610_111554_6558be14",
+  "generated_at": "2026-06-10T11:15:54.017482",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Pair of Linear Equations in Two Variables",
+  "subtopic": "equations reducible to linear form",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "For a pair of equations $\\frac{2}{x} + \\frac{3}{y} = 13$ and $\\frac{5}{x} - \\frac{4}{y} = -2$, where $x \\neq 0$ and $y \\neq 0$, the value of $x + y$ is:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Let $u = \\frac{1}{x}$ and $v = \\frac{1}{y}$.",
+          "Rewrite the equations as $2u + 3v = 13$ and $5u - 4v = -2$.",
+          "Solve the system of linear equations in $u$ and $v$ using elimination: multiply first by $4$ and second by $3$ to get $8u + 12v = 52$ and $15u - 12v = -6$.",
+          "Adding gives $23u = 46$, so $u = 2$.",
+          "Substitute $u = 2$ into $2u + 3v = 13$ to get $4 + 3v = 13$, which implies $3v = 9$, so $v = 3$.",
+          "Since $u = \\frac{1}{x} = 2$, $x = \\frac{1}{2}$. Since $v = \\frac{1}{y} = 3$, $y = \\frac{1}{3}$.",
+          "Calculate $x + y = \\frac{1}{2} + \\frac{1}{3} = \\frac{5}{6}$."
+        ],
+        "derivation": "$2u + 3v = 13 \\Rightarrow 8u + 12v = 52 \\\\ 5u - 4v = -2 \\Rightarrow 15u - 12v = -6 \\\\ 23u = 46 \\Rightarrow u = 2 \\\\ 2(2) + 3v = 13 \\Rightarrow 3v = 9 \\Rightarrow v = 3 \\\\ x = \\frac{1}{2}, y = \\frac{1}{3} \\\\ x + y = \\frac{1}{2} + \\frac{1}{3} = \\frac{5}{6}$"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "equations reducible to linear form",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $\\frac{5}{6}$",
+        "(B) $\\frac{1}{6}$",
+        "(C) $5$",
+        "(D) $6$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T11:15:54.017101",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 1,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_111554_971af3_01"
+    },
+    {
+      "question": "Given the equations $\\frac{7}{x+y} + \\frac{1}{x-y} = 3$ and $\\frac{21}{x+y} - \\frac{2}{x-y} = 1$, the value of $\\frac{1}{x+y}$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Let $p = \\frac{1}{x+y}$ and $q = \\frac{1}{x-y}$.",
+          "The equations become $7p + q = 3$ and $21p - 2q = 1$.",
+          "Multiply the first equation by $2$ to eliminate $q$: $14p + 2q = 6$.",
+          "Add this to the second equation: $(14p + 2q) + (21p - 2q) = 6 + 1$.",
+          "This simplifies to $35p = 7$.",
+          "Solving for $p$, we get $p = \\frac{7}{35} = \\frac{1}{5}$."
+        ],
+        "derivation": "$7p + q = 3 \\\\ 21p - 2q = 1 \\\\ 14p + 2q = 6 \\\\ 35p = 7 \\\\ p = \\frac{1}{5}$"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "equations reducible to linear form",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $\\frac{1}{3}$",
+        "(B) $\\frac{1}{4}$",
+        "(C) $\\frac{1}{5}$",
+        "(D) $\\frac{1}{7}$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T11:15:54.017242",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 1,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_111554_8bf4a7_02"
+    }
+  ]
+}

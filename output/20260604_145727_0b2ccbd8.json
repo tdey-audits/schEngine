@@ -1,0 +1,215 @@
+{
+  "batch_id": "20260604_145727_0b2ccbd8",
+  "generated_at": "2026-06-04T14:57:27.821104",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A tangent $PQ$ at a point $P$ of a circle of radius $5 \\text{ cm}$ meets a line through the centre $O$ at a point $Q$ so that $OQ = 13 \\text{ cm}$. The length of $PQ$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "The radius is perpendicular to the tangent at the point of contact.",
+          "In right $\\triangle OPQ$, by Pythagoras theorem, $OP^2 + PQ^2 = OQ^2$.",
+          "Substitute $OP = 5$ and $OQ = 13$ to find $PQ$."
+        ],
+        "derivation": "$OP \\perp PQ \\Rightarrow \\triangle OPQ \\text{ is a right triangle at } P. \\\\ OP^2 + PQ^2 = OQ^2 \\\\ 5^2 + PQ^2 = 13^2 \\\\ 25 + PQ^2 = 169 \\\\ PQ^2 = 144 \\\\ PQ = 12 \\text{ cm}$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $10 \\text{ cm}$",
+        "(B) $11 \\text{ cm}$",
+        "(C) $12 \\text{ cm}$",
+        "(D) $8 \\text{ cm}$"
+      ],
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O",
+            "position": "left"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 0,
+            "y": 2,
+            "label": "P",
+            "position": "top"
+          },
+          {
+            "kind": "point",
+            "id": "Q",
+            "x": 4,
+            "y": 2,
+            "label": "Q",
+            "position": "right"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "P",
+            "label": "5"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "Q",
+            "label": "13"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "Q",
+            "label": "PQ"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:27.820855",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145727_e2e7c6_01"
+    },
+    {
+      "question": "If tangents $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\\circ$, then $\\angle POA$ is equal to:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "In quadrilateral $OAPB$, $\\angle OAP = \\angle OBP = 90^\\circ$.",
+          "The sum of angles in a quadrilateral is $360^\\circ$.",
+          "$\\angle AOB = 180^\\circ - 80^\\circ = 100^\\circ$.",
+          "In $\\triangle OAP$ and $\\triangle OBP$, $\\angle POA = \\frac{1}{2} \\angle AOB$."
+        ],
+        "derivation": "\\angle AOB + \\angle APB = 180^\\circ \\\\ \\angle AOB + 80^\\circ = 180^\\circ \\\\ \\angle AOB = 100^\\circ \\\\ \\triangle OAP \\cong \\triangle OBP \\\\ \\angle POA = \\frac{1}{2} \\angle AOB = 50^\\circ"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents from an external point",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $50^\\circ$",
+        "(B) $60^\\circ$",
+        "(C) $70^\\circ$",
+        "(D) $80^\\circ$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:27.820928",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145727_f6f3fc_02"
+    },
+    {
+      "question": "The length of a tangent from a point $A$ at a distance of $5 \\text{ cm}$ from the centre of the circle is $4 \\text{ cm}$. The radius of the circle is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Let the radius be $r$.",
+          "The tangent, radius, and distance from center form a right triangle where the distance is the hypotenuse.",
+          "$r^2 + 4^2 = 5^2$."
+        ],
+        "derivation": "$r^2 + 16 = 25 \\\\ r^2 = 9 \\\\ r = 3 \\text{ cm}$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $2 \\text{ cm}$",
+        "(B) $3 \\text{ cm}$",
+        "(C) $4 \\text{ cm}$",
+        "(D) $5 \\text{ cm}$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:27.820953",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145727_b1c4f8_03"
+    },
+    {
+      "question": "Two concentric circles are of radii $5 \\text{ cm}$ and $3 \\text{ cm}$. The length of the chord of the larger circle which touches the smaller circle is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Let the larger circle have radius $R=5$ and smaller have $r=3$.",
+          "The chord is tangent to the inner circle, so the radius is perpendicular to the chord at the point of contact.",
+          "This forms a right triangle with hypotenuse $5$ and one leg $3$.",
+          "Find the half-length of the chord ($x$) using Pythagoras: $x^2 + 3^2 = 5^2$.",
+          "Total length is $2x$."
+        ],
+        "derivation": "$x^2 + 9 = 25 \\\\ x^2 = 16 \\\\ x = 4 \\\\ \\text{Length} = 2x = 8 \\text{ cm}$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $6 \\text{ cm}$",
+        "(B) $7 \\text{ cm}$",
+        "(C) $8 \\text{ cm}$",
+        "(D) $10 \\text{ cm}$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:27.820969",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145727_c5e639_04"
+    },
+    {
+      "question": "A quadrilateral $ABCD$ is drawn to circumscribe a circle. If $AB = 6 \\text{ cm}$, $BC = 7 \\text{ cm}$, and $CD = 4 \\text{ cm}$, then $AD$ is equal to:",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "For a quadrilateral circumscribing a circle, the sums of opposite sides are equal.",
+          "$AB + CD = BC + AD$."
+        ],
+        "derivation": "$6 + 4 = 7 + AD \\\\ 10 = 7 + AD \\\\ AD = 3 \\text{ cm}$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $2 \\text{ cm}$",
+        "(B) $4 \\text{ cm}$",
+        "(C) $5 \\text{ cm}$",
+        "(D) $3 \\text{ cm}$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:27.820984",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145727_da8517_05"
+    }
+  ]
+}

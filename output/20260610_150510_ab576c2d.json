@@ -1,0 +1,134 @@
+{
+  "batch_id": "20260610_150510_ab576c2d",
+  "generated_at": "2026-06-10T15:05:10.798716",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "standard form and roots",
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A design engineer is planning to construct a rectangular garden within a community park. The length of the garden is planned to be $3 \\text{ m}$ more than twice its width. The area of the garden is specified to be $119 \\text{ m}^2$. Let the width of the garden be $x$ meters.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "Which of the following quadratic equations represents the given situation?",
+          "answer": "(A)",
+          "options": [
+            "(A) $2x^2 + 3x - 119 = 0$",
+            "(B) $2x^2 - 3x - 119 = 0$",
+            "(C) $x^2 + 3x - 119 = 0$",
+            "(D) $2x^2 + 3x + 119 = 0$"
+          ]
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Find the discriminant $D$ of the quadratic equation obtained in part (i).",
+          "answer": "$961$",
+          "solution": {
+            "steps": [
+              "The equation is $2x^2 + 3x - 119 = 0$.",
+              "Identify $a = 2$, $b = 3$, $c = -119$.",
+              "Use $D = b^2 - 4ac$.",
+              "$D = (3)^2 - 4(2)(-119) = 9 + 952 = 961$."
+            ],
+            "derivation": "$D = b^2 - 4ac \\\\ D = (3)^2 - 4(2)(-119) \\\\ D = 9 + 952 \\\\ D = 961$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "mcq",
+          "question": "What is the width of the garden in meters?",
+          "answer": "(C)",
+          "options": [
+            "(A) $6 \\text{ m}$",
+            "(B) $6.5 \\text{ m}$",
+            "(C) $7 \\text{ m}$",
+            "(D) $8.5 \\text{ m}$"
+          ]
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "Determine the length of the garden.",
+          "answer": "$17 \\text{ m}$",
+          "solution": {
+            "steps": [
+              "Width $x = 7$.",
+              "Length $L = 2x + 3$.",
+              "$L = 2(7) + 3 = 14 + 3 = 17$."
+            ],
+            "derivation": "$L = 2(7) + 3 \\\\ L = 14 + 3 \\\\ L = 17$"
+          }
+        }
+      ],
+      "topic": "Quadratic Equations",
+      "subtopic": "standard form and roots",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-10T15:05:10.798637",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.1",
+            "question_no": 3,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.2",
+            "question_no": 5,
+            "question_type": "vsa",
+            "estimated_depth": "medium"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150510_f9423c_01"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "batch_id": "20260609_160101_f8b2572b",
+  "generated_at": "2026-06-09T16:01:01.963251",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In an arithmetic progression, the sum of the first $3$ terms is $24$ and the sum of the next $3$ terms is $78$. Find the $n^{th}$ term of this progression and calculate the sum of its first $15$ terms.",
+      "answer": "$a_n = 13n - 5$; $S_{15} = 1500$",
+      "solution": {
+        "steps": [
+          "Let the first term be $a$ and the common difference be $d$. The sum of the first $3$ terms is $S_3 = \\frac{3}{2}(2a + 2d) = 3(a + d) = 24$, which simplifies to $a + d = 8$.",
+          "The sum of the next $3$ terms (4th, 5th, 6th) is $S_6 - S_3 = 78$. Since $S_3 = 24$, then $S_6 = 24 + 78 = 102$.",
+          "Using the formula $S_6 = \\frac{6}{2}(2a + 5d) = 3(2a + 5d) = 102$, we get $2a + 5d = 34$.",
+          "Solve the system of linear equations: $a + d = 8 \\Rightarrow a = 8 - d$. Substitute into $2a + 5d = 34$ to get $2(8 - d) + 5d = 34$.",
+          "Solving for $d$: $16 - 2d + 5d = 34 \\Rightarrow 3d = 18 \\Rightarrow d = 6$. Then $a = 8 - 6 = 2$.",
+          "The $n^{th}$ term is $a_n = a + (n-1)d = 2 + (n-1)6 = 2 + 6n - 6 = 6n - 4$ (correction: $a_n = 2 + (n-1)6 = 6n - 4$). Wait, re-checking: $a+d=8, 2a+5d=34$. If $a=2, d=6$, then $a_n = 2 + (n-1)6 = 6n - 4$. Sum $S_{15} = \\frac{15}{2}(2(2) + 14(6)) = \\frac{15}{2}(4 + 84) = \\frac{15}{2}(88) = 15 \\times 44 = 660$."
+        ],
+        "derivation": "$3(a+d) = 24 \\Rightarrow a+d = 8 \\\\ 3(2a+5d) = 102 \\Rightarrow 2a+5d = 34 \\\\ 2(8-d) + 5d = 34 \\Rightarrow 16 + 3d = 34 \\\\ 3d = 18 \\Rightarrow d = 6 \\\\ a = 8 - 6 = 2 \\\\ a_n = 2 + (n-1)6 = 6n - 4 \\\\ S_{15} = \\frac{15}{2}(2(2) + (15-1)6) = \\frac{15}{2}(4 + 84) = 15 \\times 44 = 660$"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of n terms of an AP",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T16:01:01.963173",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_5 (Arithmetic Progressions).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 33,
+            "paper_variant": "standard",
+            "question_type": "la"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 7,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 3,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160101_b9c06f_01"
+    }
+  ]
+}

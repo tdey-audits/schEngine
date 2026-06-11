@@ -1,0 +1,134 @@
+{
+  "batch_id": "20260604_133233_35bf673f",
+  "generated_at": "2026-06-04T13:32:33.602270",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the sum of all two-digit numbers which, when divided by 4, leave 1 as a remainder.",
+      "answer": "1225",
+      "solution": {
+        "steps": [
+          "Identify the sequence: The smallest two-digit number leaving remainder 1 when divided by 4 is 13 (4*3+1), and the largest is 97 (4*24+1).",
+          "The sequence is 13, 17, 21, ..., 97, which is an AP with a=13, d=4, and l=97.",
+          "Find the number of terms n using the formula l = a + (n-1)d.",
+          "Calculate the sum using S_n = n/2 * (a + l)."
+        ],
+        "derivation": "97 = 13 + (n-1)4 \\implies 84 = (n-1)4 \\implies n-1 = 21 \\implies n = 22. S_{22} = \\frac{22}{2}(13 + 97) = 11 \\times 110 = 1225."
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of n terms",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:33.602085",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133233_516c72_01"
+    },
+    {
+      "question": "If the sum of the first $n$ terms of an AP is $S_n = 3n^2 + 5n$, find the 16th term of the AP.",
+      "answer": "98",
+      "solution": {
+        "steps": [
+          "Use the relation between the nth term and the sum of terms: $a_n = S_n - S_{n-1}$.",
+          "Calculate $S_{16}$ by substituting $n=16$ into the given formula.",
+          "Calculate $S_{15}$ by substituting $n=15$ into the given formula.",
+          "Subtract $S_{15}$ from $S_{16}$ to find $a_{16}$."
+        ],
+        "derivation": "a_{16} = S_{16} - S_{15} = [3(16)^2 + 5(16)] - [3(15)^2 + 5(15)] = [3(256) + 80] - [3(225) + 75] = 848 - 750 = 98."
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "General term from sum",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:33.602144",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133233_c47c73_02"
+    },
+    {
+      "question": "The 4th term of an AP is 0. Prove that the 25th term of the AP is three times its 11th term.",
+      "answer": "a_{25} = 3 \\times a_{11}",
+      "solution": {
+        "steps": [
+          "Express the 4th term as $a + 3d = 0$, leading to $a = -3d$.",
+          "Express the 25th term as $a + 24d$.",
+          "Express the 11th term as $a + 10d$.",
+          "Substitute $a = -3d$ into both expressions and compare."
+        ],
+        "derivation": "a_4 = a + 3d = 0 \\implies a = -3d. \\quad a_{25} = a + 24d = -3d + 24d = 21d. \\quad a_{11} = a + 10d = -3d + 10d = 7d. \\quad \\text{Since } 21d = 3(7d), \\text{ then } a_{25} = 3a_{11}."
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Properties of AP",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:33.602160",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133233_272948_03"
+    },
+    {
+      "question": "How many terms of the AP 24, 21, 18, ... must be taken so that their sum is 78?",
+      "answer": "4 or 13",
+      "solution": {
+        "steps": [
+          "Identify $a=24$, $d=-3$, $S_n=78$. Use the quadratic sum formula $S_n = n/2 [2a + (n-1)d]$.",
+          "Substitute the known values to form a quadratic equation in $n$.",
+          "Solve the quadratic equation for $n$ using factorization or the quadratic formula.",
+          "Verify the two values of $n$."
+        ],
+        "derivation": "78 = \\frac{n}{2} [2(24) + (n-1)(-3)] \\implies 156 = n(48 - 3n + 3) \\implies 156 = 51n - 3n^2 \\implies 3n^2 - 51n + 156 = 0 \\implies n^2 - 17n + 52 = 0 \\implies (n-4)(n-13) = 0. n=4, 13."
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of n terms",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:33.602171",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133233_fee7df_04"
+    },
+    {
+      "question": "Find the middle term of the Arithmetic Progression 7, 13, 19, ..., 241.",
+      "answer": "124",
+      "solution": {
+        "steps": [
+          "Identify $a=7$, $d=6$, $l=241$. Find the total number of terms $n$ using $l = a + (n-1)d$.",
+          "Determine if $n$ is odd or even to find the middle term position.",
+          "Calculate the value of the middle term(s) using the formula $a_k = a + (k-1)d$."
+        ],
+        "derivation": "241 = 7 + (n-1)6 \\implies 234 = (n-1)6 \\implies n-1 = 39 \\implies n=40. \\text{Since } n=40 \\text{ is even, there are two middle terms: } 20^{th} \\text{ and } 21^{st}. a_{20} = 7 + 19(6) = 121, a_{21} = 7 + 20(6) = 127. \\text{Average is } 124."
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "General term",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:33.602182",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133233_c57e71_05"
+    }
+  ]
+}

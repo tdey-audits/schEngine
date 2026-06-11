@@ -1,0 +1,200 @@
+{
+  "batch_id": "20260610_111618_772e1f7f",
+  "generated_at": "2026-06-10T11:16:18.123212",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In the given figure, $O$ is the centre of a circle. $PA$ and $PB$ are two tangents drawn from an external point $P$ to the circle. If $\\angle APB = 70^\\circ$, then the measure of $\\angle OAB$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "In $\\triangle PAB$, since $PA$ and $PB$ are tangents from the same external point, $PA = PB$. Thus, $\\triangle PAB$ is an isosceles triangle.",
+          "In isosceles $\\triangle PAB$, the base angles are equal: $\\angle PAB = \\angle PBA$.",
+          "Using the angle sum property in $\\triangle PAB$: $\\angle PAB + \\angle PBA + \\angle APB = 180^\\circ$.",
+          "Since $\\angle APB = 70^\\circ$, we have $2 \\cdot \\angle PAB = 180^\\circ - 70^\\circ = 110^\\circ$, so $\\angle PAB = 55^\\circ$.",
+          "The radius $OA$ is perpendicular to the tangent $PA$, so $\\angle OAP = 90^\\circ$.",
+          "The angle $\\angle OAB = \\angle OAP - \\angle PAB = 90^\\circ - 55^\\circ = 35^\\circ$."
+        ],
+        "derivation": "$PA = PB \\Rightarrow \\angle PAB = \\angle PBA \\\\ \\angle PAB + \\angle PBA + 70^\\circ = 180^\\circ \\\\ 2 \\angle PAB = 110^\\circ \\Rightarrow \\angle PAB = 55^\\circ \\\\ OA \\perp PA \\Rightarrow \\angle OAP = 90^\\circ \\\\ \\angle OAB = \\angle OAP - \\angle PAB = 90^\\circ - 55^\\circ = 35^\\circ$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "hard",
+      "options": [
+        "(A) 25^\\circ",
+        "(B) 30^\\circ",
+        "(C) 35^\\circ",
+        "(D) 45^\\circ"
+      ],
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "caption": "Tangents PA and PB from P to circle with centre O",
+        "elements": [
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O",
+            "position": "below"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 3,
+            "y": 0,
+            "label": "P",
+            "position": "right"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0,
+            "y": 2,
+            "label": "A",
+            "position": "above left"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 0,
+            "y": -2,
+            "label": "B",
+            "position": "below left"
+          },
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "A",
+            "label": "",
+            "label_position": ""
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "B",
+            "label": "",
+            "label_position": ""
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "A",
+            "label": "",
+            "label_position": ""
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "B",
+            "label": "",
+            "label_position": ""
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "B",
+            "label": "",
+            "label_position": ""
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-10T11:16:18.123003",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_12 (Areas Related to Circles).pdf",
+          "Chapter_10 (Circles).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 7,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 13,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Circles",
+            "exercise": "9.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.4",
+            "question_no": 7,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.4",
+            "question_no": 13,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Circles",
+            "exercise": "9.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.4",
+            "question_no": 16,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_111618_dc4e70_01"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "batch_id": "20260609_160028_14f2ccef",
+  "generated_at": "2026-06-09T16:00:28.121829",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In $\\triangle ABC$, point $D$ lies on side $BC$ such that $\\angle ADC = \\angle BAC$. If $AC = 6$ cm and $BC = 9$ cm, find the length of $CD$.",
+      "answer": "$4$ cm",
+      "solution": {
+        "steps": [
+          "Consider $\\triangle ABC$ and $\\triangle DAC$. Given $\\angle ADC = \\angle BAC$ and $\\angle C$ is common to both triangles.",
+          "By $AA$ similarity criterion, $\\triangle ABC \\sim \\triangle DAC$.",
+          "Since the triangles are similar, the ratios of their corresponding sides are equal: $\\frac{AC}{DC} = \\frac{BC}{AC}$.",
+          "Substitute the given values: $\\frac{6}{DC} = \\frac{9}{6}$, which simplifies to $DC = \\frac{36}{9} = 4$ cm."
+        ],
+        "derivation": "$In \\ \\triangle ABC \\ and \\ \\triangle DAC, \\angle ADC = \\angle BAC \\ (Given) \\ \\angle C = \\angle C \\ (Common) \\ \\therefore \\triangle ABC \\sim \\triangle DAC \\ (AA \\ similarity) \\ \\Rightarrow \\frac{AC}{DC} = \\frac{BC}{AC} \\ \\Rightarrow \\frac{6}{DC} = \\frac{9}{6} \\ \\Rightarrow 9 \\times DC = 36 \\ \\Rightarrow DC = 4 \\ cm$"
+      },
+      "topic": "Triangles",
+      "subtopic": "Similarity of Triangles",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "caption": "Triangle ABC with point D on BC",
+        "elements": [
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 2,
+            "y": 4,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 0,
+            "y": 0,
+            "label": "B"
+          },
+          {
+            "kind": "point",
+            "id": "C",
+            "x": 6,
+            "y": 0,
+            "label": "C"
+          },
+          {
+            "kind": "point",
+            "id": "D",
+            "x": 2.66,
+            "y": 0,
+            "label": "D"
+          },
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "D"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-09T16:00:28.121461",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_6 (Triangles).pdf",
+          "Chapter_7 (Coordinate Geometry).pdf",
+          "Chapter_11 (Constructions).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 30,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 12,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.3",
+            "question_no": 12,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160028_adaa2a_01"
+    }
+  ]
+}

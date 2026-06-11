@@ -1,0 +1,197 @@
+{
+  "batch_id": "20260604_151107_0f24f54b",
+  "generated_at": "2026-06-04T15:11:07.165904",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Coordinate Geometry",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the distance between the points $P(2, 3)$ and $Q(4, 1)$.",
+      "answer": "$2\\sqrt{2}$ units",
+      "solution": {
+        "steps": [
+          "Identify coordinates $x_1 = 2, y_1 = 3$ and $x_2 = 4, y_2 = 1$.",
+          "Apply distance formula $d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$."
+        ],
+        "derivation": "$d = \\sqrt{(4-2)^2 + (1-3)^2} \\\\ d = \\sqrt{2^2 + (-2)^2} \\\\ d = \\sqrt{4+4} \\\\ d = \\sqrt{8} = 2\\sqrt{2}$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Distance Formula",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "coordinate",
+        "elements": [
+          {
+            "kind": "axis"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 2,
+            "y": 3,
+            "label": "P(2,3)"
+          },
+          {
+            "kind": "point",
+            "id": "Q",
+            "x": 4,
+            "y": 1,
+            "label": "Q(4,1)"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "Q",
+            "label": "d"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:07.165428",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151107_accd14_01"
+    },
+    {
+      "question": "Determine the ratio in which the point $P(x, 2)$ divides the line segment joining the points $A(12, 5)$ and $B(4, -3)$.",
+      "answer": "$3:5$",
+      "solution": {
+        "steps": [
+          "Use section formula for y-coordinate: $y = \\frac{m y_2 + n y_1}{m+n}$.",
+          "Substitute values and solve for the ratio $m:n$."
+        ],
+        "derivation": "$2 = \\frac{m(-3) + n(5)}{m+n} \\\\ 2m + 2n = -3m + 5n \\\\ 5m = 3n \\\\ \\frac{m}{n} = \\frac{3}{5}$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Section Formula",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:07.165557",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151107_9313f5_02"
+    },
+    {
+      "question": "Find the coordinates of the midpoint of the line segment joining the points $A(-5, 4)$ and $B(7, -8)$.",
+      "answer": "$(1, -2)$",
+      "solution": {
+        "steps": [
+          "Apply midpoint formula $M = (\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2})$.",
+          "Calculate coordinates by substituting the given values."
+        ],
+        "derivation": "$M = (\\frac{-5+7}{2}, \\frac{4-8}{2}) \\\\ M = (\\frac{2}{2}, \\frac{-4}{2}) \\\\ M = (1, -2)$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Midpoint Formula",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:07.165599",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151107_dcc422_03"
+    },
+    {
+      "question": "Find the value of $k$ if the point $P(0, 2)$ is equidistant from $A(3, k)$ and $B(k, 5)$.",
+      "answer": "$k = 1$",
+      "solution": {
+        "steps": [
+          "Use the condition $PA^2 = PB^2$ since $PA = PB$.",
+          "Expand and solve the resulting equation for $k$."
+        ],
+        "derivation": "$(3-0)^2 + (k-2)^2 = (k-0)^2 + (5-2)^2 \\\\ 9 + k^2 - 4k + 4 = k^2 + 9 \\\\ -4k + 4 = 0 \\\\ k = 1$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Distance Formula Application",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:07.165628",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151107_10a3e4_04"
+    },
+    {
+      "question": "If the coordinates of the vertices of a parallelogram $ABCD$ are $A(1, 2)$, $B(4, 3)$, $C(6, 6)$, find the coordinates of the fourth vertex $D(x, y)$.",
+      "answer": "$(3, 5)$",
+      "solution": {
+        "steps": [
+          "Use the property that diagonals of a parallelogram bisect each other.",
+          "Equate midpoints of $AC$ and $BD$."
+        ],
+        "derivation": "Midpoint of $AC = (\\frac{1+6}{2}, \\frac{2+6}{2}) = (3.5, 4) \\\\ \\frac{4+x}{2} = 3.5 \\Rightarrow x = 3 \\\\ \\frac{3+y}{2} = 4 \\Rightarrow y = 5"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Properties of Quadrilaterals",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "elements": [
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 1,
+            "y": 2,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 4,
+            "y": 3,
+            "label": "B"
+          },
+          {
+            "kind": "point",
+            "id": "C",
+            "x": 6,
+            "y": 6,
+            "label": "C"
+          },
+          {
+            "kind": "point",
+            "id": "D",
+            "x": 3,
+            "y": 5,
+            "label": "D"
+          },
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:07.165654",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151107_2eabbc_05"
+    }
+  ]
+}

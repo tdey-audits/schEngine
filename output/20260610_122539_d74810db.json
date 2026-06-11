@@ -1,0 +1,120 @@
+{
+  "batch_id": "20260610_122539_d74810db",
+  "generated_at": "2026-06-10T12:25:39.605366",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "standard form and roots",
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A group of students is designing a rectangular garden for a school project. The total area of the garden is $300$ $m^2$. The length of the garden is $7$ $m$ more than its width. Let the width of the garden be $x$ $m$. Based on this scenario, answer the following questions:",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "Which of the following quadratic equations represents the given situation?",
+          "answer": "(B)",
+          "options": [
+            "(A) $x^2 + 7x - 300 = 0$",
+            "(B) $x^2 + 7x - 300 = 0$ is incorrect; it is $x^2 + 7x - 300 = 0$ is correct",
+            "(C) $x^2 - 7x - 300 = 0$",
+            "(D) $x^2 + 7x + 300 = 0$"
+          ],
+          "solution": {
+            "steps": [
+              "Let width $= x$.",
+              "Length $= x + 7$.",
+              "Area $=$ length $\times$ width $= x(x+7) = 300$.",
+              "Equation is $x^2 + 7x - 300 = 0$."
+            ],
+            "derivation": "$x(x+7) = 300 \\Rightarrow x^2 + 7x = 300 \\Rightarrow x^2 + 7x - 300 = 0$"
+          }
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Find the discriminant $D$ of the quadratic equation obtained in part (i).",
+          "answer": "$1249$",
+          "solution": {
+            "steps": [
+              "Equation: $x^2 + 7x - 300 = 0$.",
+              "Identify $a=1, b=7, c=-300$.",
+              "$D = b^2 - 4ac$.",
+              "$D = (7)^2 - 4(1)(-300) = 49 + 1200 = 1249$."
+            ],
+            "derivation": "$D = b^2 - 4ac \\Rightarrow D = (7)^2 - 4(1)(-300) \\Rightarrow D = 49 + 1200 = 1249$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "vsa",
+          "question": "Calculate the width of the garden.",
+          "answer": "$15$ $m$",
+          "solution": {
+            "steps": [
+              "Solve $x^2 + 7x - 300 = 0$ by factorisation.",
+              "Find factors of $-300$ that add to $7$, which are $20$ and $-15$.",
+              "$(x+20)(x-15) = 0$.",
+              "Since width cannot be negative, $x = 15$."
+            ],
+            "derivation": "$x^2 + 20x - 15x - 300 = 0 \\Rightarrow x(x+20) - 15(x+20) = 0 \\Rightarrow (x-15)(x+20) = 0 \\Rightarrow x = 15$ or $x = -20 \\Rightarrow x = 15$ ($x > 0$)"
+          }
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "What is the length of the garden?",
+          "answer": "$22$ $m$",
+          "solution": {
+            "steps": [
+              "Width $x = 15$ m.",
+              "Length $= x + 7$.",
+              "Length $= 15 + 7 = 22$ m."
+            ],
+            "derivation": "Length = x + 7 = 15 + 7 = 22"
+          }
+        }
+      ],
+      "topic": "Quadratic Equations",
+      "subtopic": "standard form and roots",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-10T12:25:39.605196",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122539_6ed27d_01"
+    }
+  ]
+}

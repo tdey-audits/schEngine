@@ -1,0 +1,223 @@
+{
+  "batch_id": "20260609_132731_42e7a094",
+  "generated_at": "2026-06-09T13:27:31.986914",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If two positive integers $a$ and $b$ are written as $a = x^3 y^2$ and $b = x y^3$, where $x$ and $y$ are prime numbers, then the result of $\\frac{HCF(a, b)}{LCM(a, b)}$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Find $HCF(a, b)$ by taking the lowest power of each common prime factor.",
+          "Find $LCM(a, b)$ by taking the highest power of each prime factor present.",
+          "Calculate the ratio $\\frac{HCF}{LCM}$ and simplify the expression."
+        ],
+        "derivation": "$HCF(a, b) = x^{\\min(3, 1)} \\times y^{\\min(2, 3)} = x^1 y^2 \\\\ LCM(a, b) = x^{\\max(3, 1)} \\times y^{\\max(2, 3)} = x^3 y^3 \\\\ \\frac{HCF(a, b)}{LCM(a, b)} = \\frac{x y^2}{x^3 y^3} = \\frac{1}{x^2 y}$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Fundamental Theorem of Arithmetic",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $xy$",
+        "(B) $x^2 y^2$",
+        "(C) $\\frac{1}{x^2 y}$",
+        "(D) $\\frac{1}{xy}$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T13:27:31.986517",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 1,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_132731_0e31b5_01"
+    },
+    {
+      "question": "The decimal expansion of the rational number $\\frac{147}{2^2 \\times 5^7 \\times 3}$ will terminate after how many places of decimals?",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Simplify the fraction by canceling the common factor $3$ from the numerator and denominator.",
+          "Factorize $147$ as $3 \\times 49$.",
+          "The denominator after simplification becomes $2^2 \\times 5^7$.",
+          "To make the denominator a power of $10$, multiply both numerator and denominator by $5^5$ to match powers of $2$ and $5$.",
+          "The number of decimal places is equal to the exponent of the power of $10$ in the denominator."
+        ],
+        "derivation": "\\frac{147}{2^2 \\times 5^7 \\times 3} = \\frac{49}{2^2 \\times 5^7} \\\\ \\text{The denominator is } 2^m \\times 5^n \\text{ where } m=2, n=7. \\\\ \\text{The number of decimal places is } \\max(m, n) = \\max(2, 7) = 7."
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Decimal Expansion",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $2$",
+        "(B) $7$",
+        "(C) $5$",
+        "(D) $9$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T13:27:31.986669",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 1,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_132731_9e5e11_02"
+    }
+  ]
+}

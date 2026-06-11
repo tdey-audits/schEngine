@@ -1,0 +1,154 @@
+{
+  "batch_id": "20260610_150345_05f92d85",
+  "generated_at": "2026-06-10T15:03:45.831848",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": "tangent to a circle",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In $\\triangle OPA$, $O$ is the centre of a circle and $PA$ is a tangent at point $A$. If the radius of the circle $OA = 6$ $\\text{cm}$ and the distance $OP = 10$ $\\text{cm}$, what is the length of the tangent $PA$?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify that a tangent to a circle is perpendicular to the radius at the point of contact, so $\\angle OAP = 90^\\circ$.",
+          "Observe that $\\triangle OAP$ is a right-angled triangle with hypotenuse $OP = 10$ $\\text{cm}$ and one leg $OA = 6$ $\\text{cm}$.",
+          "Apply the Pythagoras theorem: $OP^2 = OA^2 + PA^2$.",
+          "Substitute the values: $10^2 = 6^2 + PA^2 \\Rightarrow 100 = 36 + PA^2$.",
+          "Solve for $PA$: $PA^2 = 100 - 36 = 64$, so $PA = 8$ $\\text{cm}$."
+        ],
+        "derivation": "$OA \\perp PA \\Rightarrow \\angle OAP = 90^\\circ \\\\ OP^2 = OA^2 + PA^2 \\\\ 10^2 = 6^2 + PA^2 \\\\ 100 = 36 + PA^2 \\\\ PA^2 = 64 \\\\ PA = 8 \\text{ cm}$"
+      },
+      "topic": "Circles",
+      "subtopic": "tangent to a circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 4 cm",
+        "(B) 6 cm",
+        "(C) 8 cm",
+        "(D) 10 cm"
+      ],
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "caption": "Right-angled triangle formed by radius, tangent, and distance to centre.",
+        "elements": [
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0,
+            "y": 6,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 8,
+            "y": 6,
+            "label": "P"
+          },
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 6
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "A",
+            "label": "6 cm"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "P",
+            "label": "tangent"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "P",
+            "label": "10 cm"
+          },
+          {
+            "kind": "right_angle",
+            "points": [
+              "O",
+              "A",
+              "P"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-10T15:03:45.831550",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_10 (Circles).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 2,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 1,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Circles",
+            "exercise": "9.1",
+            "question_no": 9,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Circles",
+            "exercise": "9.1",
+            "question_no": 1,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Circles",
+            "exercise": "9.1",
+            "question_no": 6,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150345_c372e5_01"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "batch_id": "20260610_122427_16691c89",
+  "generated_at": "2026-06-10T12:24:27.744440",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "factorisation method",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "The roots of the quadratic equation $x^2 - 7x + 12 = 0$ are obtained by factorising the middle term. Which of the following is the correct pair of factors?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify the quadratic equation: $x^2 - 7x + 12 = 0$.",
+          "Find two numbers whose product is $12$ and sum is $-7$. These are $-3$ and $-4$.",
+          "Split the middle term: $x^2 - 3x - 4x + 12 = 0$.",
+          "Factor by grouping: $x(x - 3) - 4(x - 3) = 0$.",
+          "The factors are $(x - 3)(x - 4) = 0$."
+        ],
+        "derivation": "$x^2 - 7x + 12 = 0 \\\\ x^2 - 3x - 4x + 12 = 0 \\\\ x(x - 3) - 4(x - 3) = 0 \\\\ (x - 3)(x - 4) = 0$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $(x+3)(x+4)$",
+        "(B) $(x-2)(x-6)$",
+        "(C) $(x-3)(x-4)$",
+        "(D) $(x+3)(x-4)$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T12:24:27.744171",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 2,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122427_ff9794_01"
+    },
+    {
+      "question": "If $x = 5$ is one of the roots of the quadratic equation $x^2 - kx - 15 = 0$, then the value of $k$ is:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Since $x = 5$ is a root, it must satisfy the equation $x^2 - kx - 15 = 0$.",
+          "Substitute $x = 5$ into the equation: $(5)^2 - k(5) - 15 = 0$.",
+          "Simplify the expression: $25 - 5k - 15 = 0$.",
+          "$10 - 5k = 0$.",
+          "Solve for $k$: $5k = 10$, so $k = 2$."
+        ],
+        "derivation": "$x^2 - kx - 15 = 0 \\\\ (5)^2 - k(5) - 15 = 0 \\\\ 25 - 5k - 15 = 0 \\\\ 10 - 5k = 0 \\\\ 5k = 10 \\\\ k = 2$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $2$",
+        "(B) $-2$",
+        "(C) $5$",
+        "(D) $-5$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T12:24:27.744283",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 2,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122427_283c51_02"
+    }
+  ]
+}

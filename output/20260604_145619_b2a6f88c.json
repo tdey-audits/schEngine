@@ -1,0 +1,198 @@
+{
+  "batch_id": "20260604_145619_b2a6f88c",
+  "generated_at": "2026-06-04T14:56:19.207047",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Prove that the lengths of tangents drawn from an external point to a circle are equal.",
+      "answer": "The lengths of tangents $PA$ and $PB$ are equal as $\\triangle OAP \\cong \\triangle OBP$ by RHS congruence.",
+      "solution": {
+        "steps": [
+          "Draw a circle with center $O$ and an external point $P$.",
+          "Let $PA$ and $PB$ be two tangents from $P$ touching the circle at $A$ and $B$ respectively.",
+          "Join $OA$, $OB$, and $OP$.",
+          "In $\\triangle OAP$ and $\\triangle OBP$, observe that $OA = OB$ (radii of the same circle).",
+          "$OP = OP$ (common side).",
+          "$\\angle OAP = \\angle OBP = 90^\\circ$ (radius is perpendicular to tangent at point of contact).",
+          "By RHS congruence criterion, $\\triangle OAP \\cong \\triangle OBP$.",
+          "Hence, $PA = PB$ by CPCT."
+        ],
+        "derivation": "$In \\ \\triangle OAP \\ and \\ \\triangle OBP, \\\\ OA = OB \\ (radii), \\\\ OP = OP \\ (common), \\\\ \\angle OAP = \\angle OBP = 90^\\circ \\ (tangent \\perp radius), \\\\ \\triangle OAP \\cong \\triangle OBP \\ (RHS), \\\\ \\therefore PA = PB \\ (CPCT)$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "caption": "Tangents from external point P",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O",
+            "position": "below"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0,
+            "y": 2,
+            "label": "A",
+            "position": "above"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 1.73,
+            "y": -1,
+            "label": "B",
+            "position": "below right"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 4,
+            "y": 0,
+            "label": "P",
+            "position": "right"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "A",
+            "label": "r"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "B",
+            "label": "r"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "A",
+            "label": "tangent"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "B",
+            "label": "tangent"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "O"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:56:19.206862",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145619_71543f_01"
+    },
+    {
+      "question": "From a point $Q$, the length of the tangent to a circle is $24 \\ cm$ and the distance of $Q$ from the centre is $25 \\ cm$. Find the radius of the circle.",
+      "answer": "$7 \\ cm$",
+      "solution": {
+        "steps": [
+          "Let $O$ be the center of the circle and $P$ be the point of contact.",
+          "We are given $OQ = 25 \\ cm$ and $PQ = 24 \\ cm$.",
+          "Since the radius is perpendicular to the tangent at the point of contact, $\\triangle OPQ$ is a right-angled triangle with $\\angle OPQ = 90^\\circ$.",
+          "Using Pythagoras theorem: $OQ^2 = OP^2 + PQ^2$.",
+          "$25^2 = OP^2 + 24^2$.",
+          "$625 = OP^2 + 576$.",
+          "$OP^2 = 625 - 576 = 49$.",
+          "$OP = 7 \\ cm$."
+        ],
+        "derivation": "$OP^2 + PQ^2 = OQ^2 \\\\ OP^2 + 24^2 = 25^2 \\\\ OP^2 + 576 = 625 \\\\ OP^2 = 49 \\\\ OP = 7 \\ cm$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "simple",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "caption": "Right triangle formed by radius and tangent",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 1.5
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O",
+            "position": "below"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 0,
+            "y": 1.5,
+            "label": "P",
+            "position": "above left"
+          },
+          {
+            "kind": "point",
+            "id": "Q",
+            "x": 2,
+            "y": 1.5,
+            "label": "Q",
+            "position": "above right"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "P",
+            "label": "r"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "Q",
+            "label": "24 cm"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "Q",
+            "label": "25 cm"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:56:19.206945",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145619_34d077_02"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "batch_id": "20260604_122619_faf30c0a",
+  "generated_at": "2026-06-04T12:26:19.746139",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Polynomials",
+  "subtopic": "division algorithm for polynomials",
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "Divide the polynomial $p(x) = x^3 - 3x^2 + 5x - 3$ by $g(x) = x^2 - 2$ using the division algorithm. Find the quotient $q(x)$ and remainder $r(x)$.",
+      "answer": "Quotient: $x-3$, Remainder: $7x-9$",
+      "solution": {
+        "steps": [
+          "Step 1: Divide the leading term of $p(x)$ by the leading term of $g(x)$: $x^3 \\div x^2 = x$. Multiply $g(x)$ by $x$: $x(x^2-2)=x^3-2x$. Subtract from $p(x)$ to get the first remainder: $(x^3-3x^2+5x-3)-(x^3-2x)=-3x^2+7x-3$.",
+          "Step 2: Divide the leading term of the new polynomial by the leading term of $g(x)$: $-3x^2 \\div x^2 = -3$. Multiply $g(x)$ by $-3$: $-3(x^2-2)=-3x^2+6$. Subtract: $(-3x^2+7x-3)-(-3x^2+6)=7x-9$. Since the degree of $7x-9$ is less than the degree of $g(x)$, this is the remainder. The quotient is $x-3$."
+        ],
+        "derivation": "$$\n\\begin{array}{r|l}\nx^3 - 3x^2 + 5x - 3 & x^2 - 2 \\\\\n\\hline\nx^3 - 2x & x - 3 \\\\\n\\hline\n-3x^2 + 7x - 3 \\\\\n-3x^2 + 6 \\\\\n\\hline\n7x - 9\n\\end{array}\n$$"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "options": null,
+      "metadata": {
+        "generated_at": "2026-06-04T12:26:19.745978",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_122619_4ff48d"
+    }
+  ]
+}

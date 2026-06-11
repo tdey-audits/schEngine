@@ -1,0 +1,259 @@
+{
+  "batch_id": "20260604_145232_8761308d",
+  "generated_at": "2026-06-04T14:52:32.588097",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "In a circle of radius $5$ $cm$, $AB$ and $AC$ are two chords such that $AB = AC = 6$ $cm$. If the tangent at $A$ intersects the line $BC$ produced at $P$, find the length of $AP$.",
+      "answer": "$8$ $cm$",
+      "solution": {
+        "steps": [
+          "Use the property that tangents drawn from an external point to a circle are equal in length.",
+          "Apply the property of similar triangles formed by the tangent and the chord segments to find $AP = 8$ $cm$."
+        ],
+        "derivation": "$AP^2 = PB \\times PC \\\\ AP = 8 \\text{ cm}$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": 2
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0,
+            "y": 2,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 0,
+            "y": 4,
+            "label": "P"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:52:32.587530",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145232_b68aa7_01"
+    },
+    {
+      "question": "If $\\angle ATO = 40^\\circ$ where $T$ is a point outside the circle with center $O$ and $TA$, $TB$ are tangents, find $\\angle AOB$.",
+      "answer": "$100^\\circ$",
+      "solution": {
+        "steps": [
+          "In $\\triangle OAT$, $\\angle OAT = 90^\\circ$ because the radius is perpendicular to the tangent.",
+          "In $\\triangle OAT$, $\\angle AOT = 180^\\circ - (90^\\circ + 40^\\circ) = 50^\\circ$. Since $\\triangle OAT \\cong \\triangle OBT$, $\\angle AOB = 2 \\times \\angle AOT = 100^\\circ$."
+        ],
+        "derivation": "\\angle AOT = 180^\\circ - 90^\\circ - 40^\\circ = 50^\\circ \\\\ \\angle AOB = 2 \\times 50^\\circ = 100^\\circ"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": 2
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O"
+          },
+          {
+            "kind": "point",
+            "id": "T",
+            "x": 4,
+            "y": 0,
+            "label": "T"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0.8,
+            "y": 1.83,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 0.8,
+            "y": -1.83,
+            "label": "B"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:52:32.587704",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145232_a7ab23_02"
+    },
+    {
+      "question": "Two concentric circles are of radii $5$ $cm$ and $3$ $cm$. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "answer": "$8$ $cm$",
+      "solution": {
+        "steps": [
+          "Let $O$ be the center, $AB$ the chord of the larger circle tangent to the smaller circle at $M$. $OM \\perp AB$.",
+          "In right $\\triangle OMA$, $OA^2 = OM^2 + AM^2$. Solve for $AM$ and find $AB = 2 \\times AM$."
+        ],
+        "derivation": "AM = \\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = \\sqrt{16} = 4 \\text{ cm} \\\\ AB = 2 \\times 4 = 8 \\text{ cm}"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": 2
+          },
+          {
+            "kind": "circle",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": 1.2
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:52:32.587757",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145232_69759a_03"
+    },
+    {
+      "question": "If a quadrilateral $ABCD$ circumscribes a circle, prove that $AB + CD = AD + BC$.",
+      "answer": "Proof based on tangent properties",
+      "solution": {
+        "steps": [
+          "Use the theorem that tangents drawn from an external point to a circle are equal in length.",
+          "Label the points of contact and equate the segments of the sides to prove the sum of opposite sides are equal."
+        ],
+        "derivation": "AP = AS, BP = BQ, CQ = CR, DR = DS \\\\ AB+CD = (AP+PB) + (CR+RD) = (AS+BQ) + (CQ+DS) = (AS+DS) + (BQ+CQ) = AD+BC"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:52:32.587794",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145232_e15eb5_04"
+    },
+    {
+      "question": "A point $P$ is $13$ $cm$ from the center of a circle. The length of the tangent drawn from $P$ to the circle is $12$ $cm$. Find the radius of the circle.",
+      "answer": "$5$ $cm$",
+      "solution": {
+        "steps": [
+          "Let $O$ be the center and $A$ be the point of contact. $\\triangle OAP$ is a right-angled triangle.",
+          "Apply Pythagoras theorem: $OP^2 = OA^2 + AP^2$."
+        ],
+        "derivation": "13^2 = r^2 + 12^2 \\\\ 169 = r^2 + 144 \\\\ r^2 = 25 \\\\ r = 5 \\text{ cm}"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": 2
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0,
+            "y": 2,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 3,
+            "y": 2,
+            "label": "P"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:52:32.587823",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145232_bdb9ea_05"
+    }
+  ]
+}

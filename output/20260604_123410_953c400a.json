@@ -1,0 +1,33 @@
+{
+  "batch_id": "20260604_123410_953c400a",
+  "generated_at": "2026-06-04T12:34:10.097974",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "The sum of the squares of two consecutive positive integers is 365. Find the integers.",
+      "answer": "13 and 14",
+      "solution": {
+        "steps": [
+          "Let the two consecutive positive integers be $x$ and $x+1$.",
+          "According to the problem: $x^2 + (x+1)^2 = 365$.",
+          "Simplify: $x^2 + x^2 + 2x + 1 = 365$ \u21d2 $2x^2 + 2x - 364 = 0$ \u21d2 $x^2 + x - 182 = 0$.",
+          "Factorize: $(x + 14)(x - 13) = 0$ \u21d2 $x = 13$ or $x = -14$. Since positive, $x = 13$. Thus the integers are $13$ and $14$."
+        ],
+        "derivation": "\\begin{align*}\n&\\text{Let integers be }x,\\,x+1.\\\\\n&x^2+(x+1)^2=365\\\\\n&\\Rightarrow x^2+x^2+2x+1=365\\\\\n&\\Rightarrow 2x^2+2x-364=0\\\\\n&\\Rightarrow x^2+x-182=0\\\\\n&\\Rightarrow (x+14)(x-13)=0\\\\\n&\\Rightarrow x=13\\quad[\\because x>0]\\\\\n&\\therefore \\text{Integers are }13\\text{ and }14.\n\\end{align*}"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Word Problems",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T12:34:10.097831",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_123410_10da48"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "batch_id": "20260604_135757_4460fb5a",
+  "generated_at": "2026-06-04T13:57:57.065718",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Statistics",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "The following distribution shows the daily pocket allowance of 50 children of a locality. If the mean pocket allowance is \u20b918, find the missing frequency $f$ for the class interval 19-21: \n\nDaily allowance (in \u20b9): 11-13, 13-15, 15-17, 17-19, 19-21, 21-23, 23-25 \nNumber of children: 7, 6, 9, 13, f, 5, 4",
+      "answer": "f = 6",
+      "solution": {
+        "steps": [
+          "Determine the class marks ($x_i$) for each interval.",
+          "Assume a mean ($A$) to use the Assumed Mean Method.",
+          "Calculate the deviations $d_i = x_i - A$.",
+          "Calculate $f_i d_i$ and find $\\sum f_i$ and $\\sum f_i d_i$.",
+          "Apply the formula $\\text{Mean} = A + \\frac{\\sum f_i d_i}{\\sum f_i}$ and solve for $f$."
+        ],
+        "derivation": "\\text{Let } A = 18. \\sum f_i = 44 + f. \\sum f_i d_i = 2f - 20. 18 = 18 + \\frac{2f - 20}{44 + f} \\implies 0 = 2f - 20 \\implies f = 10"
+      },
+      "topic": "Statistics",
+      "subtopic": "Mean of Grouped Data",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:57.065455",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135757_4cfe75_01"
+    },
+    {
+      "question": "The annual profits earned by 30 shops of a shopping complex in a locality are given below: \nProfit (in lakhs): 0-10, 10-20, 20-30, 30-40, 40-50, 50-60 \nNumber of shops: 5, 8, 6, 4, 3, 4 \nDraw both 'less than' and 'more than' ogives for the given data on the same graph and find the median from the intersection point of the ogives.",
+      "answer": "Median = 24",
+      "solution": {
+        "steps": [
+          "Create a cumulative frequency table for 'less than' type.",
+          "Create a cumulative frequency table for 'more than' type.",
+          "Plot points $(10, 5), (20, 13), ...$ for less than ogive.",
+          "Plot points $(0, 30), (10, 25), ...$ for more than ogive.",
+          "Identify the x-coordinate of the intersection point."
+        ],
+        "derivation": "\\text{Intersection of } F_{<} \\text{ and } F_{>} \\text{ at } x=24 \\text{ gives the median.}"
+      },
+      "topic": "Statistics",
+      "subtopic": "Graphical Representation of Cumulative Frequency",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:57.065522",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135757_56e14d_02"
+    },
+    {
+      "question": "If the median of the following frequency distribution is 28.5, find the values of $x$ and $y$ if the total frequency is 60: \nClass Interval: 0-10, 10-20, 20-30, 30-40, 40-50, 50-60 \nFrequency: 5, x, 20, 15, y, 5",
+      "answer": "x = 8, y = 7",
+      "solution": {
+        "steps": [
+          "Set up the cumulative frequency table in terms of $x$ and $y$.",
+          "Use the total frequency equation $45 + x + y = 60$.",
+          "Identify the median class based on the given median 28.5.",
+          "Use the median formula: $M = l + \\left( \\frac{\\frac{N}{2} - cf}{f} \\right) \\times h$.",
+          "Substitute values and solve the system of two linear equations."
+        ],
+        "derivation": "45 + x + y = 60 \\implies x + y = 15; 28.5 = 20 + \\frac{30 - (5+x)}{20} \\times 10 \\implies 8.5 = \\frac{25-x}{2} \\implies 17 = 25 - x \\implies x = 8, y = 7"
+      },
+      "topic": "Statistics",
+      "subtopic": "Median of Grouped Data",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:57.065539",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135757_5cf376_03"
+    },
+    {
+      "question": "The frequency distribution of the heights of 50 students is given below. Find the modal height of the students: \nHeight (cm): 140-145, 145-150, 150-155, 155-160, 160-165 \nNumber of students: 8, 12, 15, 10, 5",
+      "answer": "151.67 cm",
+      "solution": {
+        "steps": [
+          "Identify the modal class (class with highest frequency).",
+          "Determine $l, f_1, f_0, f_2,$ and $h$.",
+          "Apply the mode formula: $\\text{Mode} = l + \\left( \\frac{f_1 - f_0}{2f_1 - f_0 - f_2} \\right) \\times h$.",
+          "Perform the arithmetic calculation.",
+          "State the final result with units."
+        ],
+        "derivation": "l=150, f_1=15, f_0=12, f_2=10, h=5. \\text{Mode} = 150 + \\frac{15-12}{30-12-10} \\times 5 = 150 + \\frac{3}{8} \\times 5 = 150 + 1.875 = 151.875"
+      },
+      "topic": "Statistics",
+      "subtopic": "Mode of Grouped Data",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:57.065552",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135757_03625c_04"
+    }
+  ]
+}

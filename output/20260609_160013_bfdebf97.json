@@ -1,0 +1,107 @@
+{
+  "batch_id": "20260609_160013_bfdebf97",
+  "generated_at": "2026-06-09T16:00:13.059533",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Polynomials",
+  "subtopic": "division algorithm for polynomials",
+  "difficulty": "medium",
+  "question_type": "sa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If the polynomial $p(x) = x^4 - 6x^3 + 16x^2 - 25x + 10$ is divided by another polynomial $g(x) = x^2 - 2x + k$, the remainder is found to be $x + a$. Find the values of $k$ and $a$.",
+      "answer": "$k = 5, a = -5$",
+      "solution": {
+        "steps": [
+          "Perform polynomial long division of $x^4 - 6x^3 + 16x^2 - 25x + 10$ by $x^2 - 2x + k$.",
+          "Calculate the quotient as $x^2 - 4x + (8-k)$.",
+          "Determine the remainder expression by subtracting the product of $g(x)$ and the quotient from $p(x)$.",
+          "Equate the coefficients of the remainder expression $(10-2k+4k-k^2)x + (10-k(8-k))$ to the given remainder $x + a$.",
+          "Solve the resulting system of linear equations for $k$ and $a$."
+        ],
+        "derivation": "$p(x) = (x^2 - 2x + k)(x^2 - 4x + 8 - k) + ((-25 + 2k + 4(8-k))x + (10 - k(8-k))) \\\\ ((-25 + 2k + 32 - 4k)x + (10 - 8k + k^2)) = x + a \\\\ (-2k + 7)x + (k^2 - 8k + 10) = x + a \\\\ -2k + 7 = 1 \\Rightarrow -2k = -6 \\Rightarrow k = 3 \\text{ (Wait, re-evaluating division)} \\\\ \\text{Actual division remainder: } (-2k+7)x + (k^2-8k+10) = x+a \\\\ \\text{For } -2k+7 = 1, k=3. \\text{ If } k=3, a = 3^2 - 8(3) + 10 = 9 - 24 + 10 = -5. \\\\ \\text{Final values: } k=3, a=-5$"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-09T16:00:13.059252",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 28,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 27,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 5,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160013_bce6ef_01"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "batch_id": "20260609_160008_7cf15e3c",
+  "generated_at": "2026-06-09T16:00:08.246974",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "vsa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In $\\triangle ABC$, a circle is inscribed such that it touches the sides $AB$, $BC$, and $AC$ at points $P$, $Q$, and $R$ respectively. If $AB = 12 \\text{ cm}$, $BC = 8 \\text{ cm}$, and $AC = 10 \\text{ cm}$, determine the lengths of the segments $AP$, $BQ$, and $CR$.",
+      "answer": "$AP = 7 \\text{ cm}$, $BQ = 5 \\text{ cm}$, $CR = 3 \\text{ cm}$",
+      "solution": {
+        "steps": [
+          "Let $AP = AR = x$, $BP = BQ = y$, and $CQ = CR = z$ based on the property that tangent lengths from an external point to a circle are equal.",
+          "Set up a system of linear equations: $x + y = 12$, $y + z = 8$, and $x + z = 10$. Solve for $x$, $y$, and $z$ by adding the equations and subtracting individual ones."
+        ],
+        "derivation": "$AP=AR=x, \\; BP=BQ=y, \\; CQ=CR=z \\\\ x+y=12, \\; y+z=8, \\; x+z=10 \\\\ (x+y)+(y+z)+(x+z) = 12+8+10 \\Rightarrow 2(x+y+z) = 30 \\Rightarrow x+y+z = 15 \\\\ x = (x+y+z) - (y+z) = 15 - 8 = 7 \\text{ cm} \\\\ y = (x+y+z) - (x+z) = 15 - 10 = 5 \\text{ cm} \\\\ z = (x+y+z) - (x+y) = 15 - 12 = 3 \\text{ cm}$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "hard",
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "caption": "Incircle of triangle ABC",
+        "scale": 1.0,
+        "elements": [
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 2,
+            "y": 4,
+            "label": "A",
+            "position": "above"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 0,
+            "y": 0,
+            "label": "B",
+            "position": "below left"
+          },
+          {
+            "kind": "point",
+            "id": "C",
+            "x": 5,
+            "y": 0,
+            "label": "C",
+            "position": "below right"
+          },
+          {
+            "kind": "circle",
+            "center": {
+              "x": 2.2,
+              "y": 1.2
+            },
+            "radius": 1.2
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 1,
+            "y": 2,
+            "label": "P",
+            "position": "left"
+          },
+          {
+            "kind": "point",
+            "id": "Q",
+            "x": 2.2,
+            "y": 0,
+            "label": "Q",
+            "position": "below"
+          },
+          {
+            "kind": "point",
+            "id": "R",
+            "x": 3.4,
+            "y": 2.4,
+            "label": "R",
+            "position": "right"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-09T16:00:08.246681",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_12 (Areas Related to Circles).pdf",
+          "Chapter_10 (Circles).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 25,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 23,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Circles",
+            "exercise": "9.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.4",
+            "question_no": 7,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.4",
+            "question_no": 13,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Circles",
+            "exercise": "9.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.4",
+            "question_no": 16,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160008_f4566f_01"
+    }
+  ]
+}

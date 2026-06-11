@@ -1,0 +1,114 @@
+{
+  "batch_id": "20260609_145926_eedfacbd",
+  "generated_at": "2026-06-09T14:59:26.102443",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "factorisation method",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Consider the quadratic equation $x^2 - (p+q)x + pq = 0$. If the roots of this equation are $x_1 = 3$ and $x_2 = 4$, and $p < q$, what is the value of the expression $q^2 - p^2$?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "The quadratic equation is $x^2 - (p+q)x + pq = 0$.",
+          "By comparing with the standard form $x^2 - (sum of roots)x + (product of roots) = 0$, we identify the sum of roots as $p+q$ and the product of roots as $pq$.",
+          "We are given the roots $x_1 = 3$ and $x_2 = 4$.",
+          "Thus, $p+q = 3+4 = 7$ and $pq = 3 \\times 4 = 12$.",
+          "Since $p < q$, we have $p=3$ and $q=4$.",
+          "Calculate $q^2 - p^2 = 4^2 - 3^2 = 16 - 9 = 7$."
+        ],
+        "derivation": "$x^2 - (p+q)x + pq = 0 \\\\ (x-p)(x-q) = 0 \\\\ \\text{Roots are } p \\text{ and } q. \\\\ \\text{Given } x_1=3, x_2=4 \\text{ and } p < q \\Rightarrow p=3, q=4. \\\\ q^2 - p^2 = 4^2 - 3^2 \\\\ = 16 - 9 \\\\ = 7$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 1",
+        "(B) 5",
+        "(C) 7",
+        "(D) 12"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T14:59:26.102067",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 2,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_145926_b42b69_01"
+    }
+  ]
+}

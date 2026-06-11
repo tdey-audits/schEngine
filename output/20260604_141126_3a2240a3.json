@@ -1,0 +1,159 @@
+{
+  "batch_id": "20260604_141126_3a2240a3",
+  "generated_at": "2026-06-04T14:11:26.467975",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Probability",
+  "subtopic": "complementary events",
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): If the probability of winning a game is 0.7, then the probability of losing the game is 0.3. Reason (R): The sum of the probabilities of all complementary events is 1.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Check if the events winning and losing are complementary.",
+          "Check if the sum of probabilities equals 1.",
+          "Verify the calculation 1 - 0.7 = 0.3."
+        ],
+        "derivation": "P(E) + P(not E) = 1 \\implies 0.7 + 0.3 = 1.0"
+      },
+      "topic": "Probability",
+      "subtopic": "complementary events",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:26.467719",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141126_e6aeae_01"
+    },
+    {
+      "question": "Assertion (A): The probability of an event happening is 0.45, then the probability of the event not happening is 0.65. Reason (R): For any event E, $P(\\bar{E}) = 1 - P(E)$.",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Identify the formula $P(\\bar{E}) = 1 - P(E)$.",
+          "Calculate $1 - 0.45 = 0.55$.",
+          "Since $0.55 \\neq 0.65$, Assertion is false."
+        ],
+        "derivation": "P(\\bar{E}) = 1 - 0.45 = 0.55"
+      },
+      "topic": "Probability",
+      "subtopic": "complementary events",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:26.467793",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141126_2c741c_02"
+    },
+    {
+      "question": "Assertion (A): If a fair coin is tossed, the probability of getting a head is 0.5 and the probability of not getting a head is 0.5. Reason (R): Getting a head and not getting a head are complementary events.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Identify the outcomes of a coin toss as Head and Tail.",
+          "Understand that not getting a head is equivalent to getting a tail.",
+          "Verify $P(H) = 0.5$ and $P(\\bar{H}) = 1 - 0.5 = 0.5$."
+        ],
+        "derivation": "P(H) = 1/2 = 0.5; P(\\text{not } H) = 1 - 0.5 = 0.5"
+      },
+      "topic": "Probability",
+      "subtopic": "complementary events",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:26.467812",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141126_c3b3ea_03"
+    },
+    {
+      "question": "Assertion (A): If the probability of selecting a red ball from a bag is 2/7, the probability of not selecting a red ball is 5/7. Reason (R): The probability of an impossible event is 1.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Check the complementary probability: $1 - 2/7 = 5/7$. Assertion is true.",
+          "Identify that the probability of an impossible event is 0, not 1. Reason is false."
+        ],
+        "derivation": "P(\\bar{E}) = 1 - 2/7 = 5/7"
+      },
+      "topic": "Probability",
+      "subtopic": "complementary events",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:26.467826",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141126_cdbe08_04"
+    },
+    {
+      "question": "Assertion (A): If $P(E) = 0.12$, then $P(\\bar{E}) = 0.88$. Reason (R): $P(E) + P(\\bar{E}) = 1$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Apply the formula $P(\\bar{E}) = 1 - P(E)$.",
+          "Calculate $1 - 0.12 = 0.88$.",
+          "Confirm that the reason provided is the definition of complementary events."
+        ],
+        "derivation": "0.12 + 0.88 = 1.00"
+      },
+      "topic": "Probability",
+      "subtopic": "complementary events",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:26.467838",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141126_e04b8e_05"
+    }
+  ]
+}

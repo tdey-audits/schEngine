@@ -1,0 +1,288 @@
+{
+  "batch_id": "20260604_132844_9eed3c0e",
+  "generated_at": "2026-06-04T13:28:44.288883",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 10,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $\\sin A = \\frac{3}{5}$, then the value of $\\cos A$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Use identity $\\sin^2 A + \\cos^2 A = 1$",
+          "Substitute $\\sin A = 3/5$",
+          "Solve for $\\cos A$"
+        ],
+        "derivation": "\\cos A = \\sqrt{1 - \\sin^2 A} = \\sqrt{1 - (3/5)^2} = \\sqrt{1 - 9/25} = \\sqrt{16/25} = 4/5"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 2/5",
+        "(B) 3/4",
+        "(C) 4/5",
+        "(D) 1/5"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:28:44.288714",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132844_8a6f87_01"
+    },
+    {
+      "question": "The value of $\\tan 45^\\circ$ is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Recall the trigonometric table for standard angles"
+        ],
+        "derivation": "\\tan 45^\\circ = 1"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 0",
+        "(B) 1",
+        "(C) \\sqrt{3}",
+        "(D) 1/\\sqrt{3}"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:28:44.288764",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132844_af7d06_02"
+    },
+    {
+      "question": "If $\\cos \\theta = 0$, then the value of $\\theta$ (where $0^\\circ \\leq \\theta \\leq 90^\\circ$) is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Look for the angle where cosine is zero"
+        ],
+        "derivation": "\\cos 90^\\circ = 0 \\implies \\theta = 90^\\circ"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 0^\\circ",
+        "(B) 45^\\circ",
+        "(C) 90^\\circ",
+        "(D) 30^\\circ"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:28:44.288774",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132844_fefd21_03"
+    },
+    {
+      "question": "The value of $\\sin^2 30^\\circ + \\cos^2 30^\\circ$ is:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Use the identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$"
+        ],
+        "derivation": "\\sin^2 \\theta + \\cos^2 \\theta = 1 \\text{ for any } \\theta"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 1",
+        "(B) 0",
+        "(C) 2",
+        "(D) 1/2"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:28:44.288781",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132844_656ac3_04"
+    },
+    {
+      "question": "If $\\sec \\theta = 2$, then $\\theta$ is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Recall that $\\sec \\theta = 1/\\cos \\theta$",
+          "Identify the angle where $\\cos \\theta = 1/2$"
+        ],
+        "derivation": "\\sec \\theta = 2 \\implies \\cos \\theta = 1/2 \\implies \\theta = 60^\\circ"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 30^\\circ",
+        "(B) 60^\\circ",
+        "(C) 45^\\circ",
+        "(D) 0^\\circ"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:28:44.288787",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132844_e248b8_05"
+    },
+    {
+      "question": "The value of $\\frac{\\tan 30^\\circ}{\\cot 60^\\circ}$ is:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Substitute values: $\\tan 30^\\circ = 1/\\sqrt{3}$ and $\\cot 60^\\circ = 1/\\sqrt{3}$"
+        ],
+        "derivation": "\\frac{1/\\sqrt{3}}{1/\\sqrt{3}} = 1"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 1",
+        "(B) 1/3",
+        "(C) 3",
+        "(D) 0"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:28:44.288793",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132844_780060_06"
+    },
+    {
+      "question": "Which of the following is equal to $\\cos \\theta$?",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Use complementary angle identities: $\\cos \\theta = \\sin(90^\\circ - \\theta)$"
+        ],
+        "derivation": "\\cos \\theta = \\sin(90^\\circ - \\theta)"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Complementary Angles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) \\sin \\theta",
+        "(B) 1/\\tan \\theta",
+        "(C) \\sin(90^\\circ + \\theta)",
+        "(D) \\sin(90^\\circ - \\theta)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:28:44.288799",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132844_6c27d0_07"
+    },
+    {
+      "question": "If $3\\tan \\theta = 3$, then $\\theta$ is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Simplify the equation to $\\tan \\theta = 1$"
+        ],
+        "derivation": "3\\tan \\theta = 3 \\implies \\tan \\theta = 1 \\implies \\theta = 45^\\circ"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 30^\\circ",
+        "(B) 45^\\circ",
+        "(C) 60^\\circ",
+        "(D) 90^\\circ"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:28:44.288805",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132844_92a00b_08"
+    },
+    {
+      "question": "The value of $\\sin 0^\\circ + \\cos 0^\\circ$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Evaluate $\\sin 0^\\circ = 0$ and $\\cos 0^\\circ = 1$"
+        ],
+        "derivation": "0 + 1 = 1"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 0",
+        "(B) 2",
+        "(C) 1",
+        "(D) -1"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:28:44.288810",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132844_bc1d89_09"
+    },
+    {
+      "question": "If $\\sin \\theta = \\cos \\theta$, then $\\theta$ is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Divide both sides by $\\cos \\theta$ to get $\\tan \\theta = 1$"
+        ],
+        "derivation": "\\sin \\theta / \\cos \\theta = 1 \\implies \\tan \\theta = 1 \\implies \\theta = 45^\\circ"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 30^\\circ",
+        "(B) 45^\\circ",
+        "(C) 60^\\circ",
+        "(D) 0^\\circ"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:28:44.288816",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132844_b0aeb3_10"
+    }
+  ]
+}

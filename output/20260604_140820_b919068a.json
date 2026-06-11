@@ -1,0 +1,119 @@
+{
+  "batch_id": "20260604_140820_b919068a",
+  "generated_at": "2026-06-04T14:08:20.625713",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Pair of Linear Equations in Two Variables",
+  "subtopic": "equations reducible to linear form",
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Solve the following system of equations by reducing them to linear form: $\\frac{10}{x+y} + \\frac{2}{x-y} = 4$ and $\\frac{15}{x+y} - \\frac{5}{x-y} = -2$.",
+      "answer": "$x=3, y=2$",
+      "solution": {
+        "steps": [
+          "Let $u = \\frac{1}{x+y}$ and $v = \\frac{1}{x-y}$.",
+          "Substitute into equations to get: $10u + 2v = 4$ and $15u - 5v = -2$.",
+          "Multiply first eq by 5 and second by 2: $50u + 10v = 20$ and $30u - 10v = -4$.",
+          "Add equations to get $80u = 16$, so $u = 1/5$.",
+          "Substitute $u=1/5$ into $10(1/5) + 2v = 4$ to get $2 + 2v = 4$, so $v = 1$.",
+          "Solve $x+y=5$ and $x-y=1$ to get $x=3, y=2$."
+        ],
+        "derivation": "10u + 2v = 4 \\implies 5u + v = 2 \\implies v = 2 - 5u. \\\\ 15u - 5(2 - 5u) = -2 \\implies 15u - 10 + 25u = -2 \\implies 40u = 8 \\implies u = 1/5. \\\\ v = 2 - 5(1/5) = 1. \\\\ \\frac{1}{x+y} = 1/5 \\implies x+y=5; \\quad \\frac{1}{x-y} = 1 \\implies x-y=1. \\\\ (x+y) + (x-y) = 5+1 \\implies 2x = 6 \\implies x=3. \\\\ 3+y=5 \\implies y=2."
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:20.625595",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140820_a6362c_01"
+    },
+    {
+      "question": "A boat goes 30 km upstream and 44 km downstream in 10 hours. In 13 hours, it can go 40 km upstream and 55 km downstream. Determine the speed of the stream and that of the boat in still water.",
+      "answer": "Speed of boat = 8 km/hr, Speed of stream = 3 km/hr",
+      "solution": {
+        "steps": [
+          "Let speed of boat be $x$ km/hr and stream be $y$ km/hr.",
+          "Speed downstream is $x+y$, upstream is $x-y$.",
+          "Equations: $\\frac{30}{x-y} + \\frac{44}{x+y} = 10$ and $\\frac{40}{x-y} + \\frac{55}{x+y} = 13$.",
+          "Let $u = 1/(x-y)$ and $v = 1/(x+y)$.",
+          "Solve $30u + 44v = 10$ and $40u + 55v = 13$.",
+          "Find $u=1/5, v=1/11$, then solve $x-y=5$ and $x+y=11$."
+        ],
+        "derivation": "30u + 44v = 10 \\implies 15u + 22v = 5. \\\\ 40u + 55v = 13. \\\\ Multiply (1) by 8: 120u + 176v = 40. \\\\ Multiply (2) by 3: 120u + 165v = 39. \\\\ Subtract: 11v = 1 \\implies v = 1/11. \\\\ 15u + 2 = 5 \\implies 15u = 3 \\implies u = 1/5. \\\\ x+y=11, x-y=5 \\implies 2x=16, x=8; y=3."
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:20.625631",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140820_c50e39_02"
+    },
+    {
+      "question": "Solve for $x$ and $y$: $\\frac{1}{2(2x+3y)} + \\frac{12}{7(3x-2y)} = \\frac{1}{2}$ and $\\frac{7}{2x+3y} + \\frac{4}{3x-2y} = 2$.",
+      "answer": "$x=2, y=1/3$ (or similar system solution)",
+      "solution": {
+        "steps": [
+          "Let $u = \\frac{1}{2x+3y}$ and $v = \\frac{1}{3x-2y}$.",
+          "Substitute to get: $\\frac{1}{2}u + \\frac{12}{7}v = \\frac{1}{2}$ and $7u + 4v = 2$.",
+          "Simplify first eq: $7u + 24v = 7$.",
+          "Subtract $(7u + 4v = 2)$ from $(7u + 24v = 7)$ to get $20v = 5 \\implies v = 1/4$.",
+          "Substitute $v=1/4$ into $7u + 4(1/4) = 2 \\implies 7u = 1 \\implies u = 1/7$.",
+          "Solve $2x+3y=7$ and $3x-2y=4$ using elimination."
+        ],
+        "derivation": "2x+3y=7 \\dots(i) \\\\ 3x-2y=4 \\dots(ii) \\\\ (i)\\times 2 + (ii)\\times 3 \\implies 4x+6y+9x-6y = 14+12 \\implies 13x=26 \\implies x=2. \\\\ 2(2)+3y=7 \\implies 3y=3 \\implies y=1."
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:20.625639",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140820_daab0d_03"
+    },
+    {
+      "question": "Two women and five men can together finish an embroidery work in 4 days, while three women and six men can finish it in 3 days. Find the time taken by 1 woman alone to finish the work, and also that taken by 1 man alone.",
+      "answer": "Woman = 18 days, Man = 36 days",
+      "solution": {
+        "steps": [
+          "Let 1 woman take $x$ days and 1 man take $y$ days.",
+          "Work done by 1 woman in 1 day = $1/x$, man = $1/y$.",
+          "Equations: $4(2/x + 5/y) = 1$ and $3(3/x + 6/y) = 1$.",
+          "$8/x + 20/y = 1$ and $9/x + 18/y = 1$.",
+          "Let $u=1/x, v=1/y$. Solve $8u + 20v = 1$ and $9u + 18v = 1$.",
+          "Solve for $u, v$ and reciprocate to find $x, y$."
+        ],
+        "derivation": "8u + 20v = 1 \\dots(1) \\\\ 9u + 18v = 1 \\dots(2) \\\\ 72u + 180v = 9 \\\\ 72u + 144v = 8 \\\\ 36v = 1 \\implies v = 1/36. \\\\ 9u + 18(1/36) = 1 \\implies 9u = 1/2 \\implies u = 1/18. \\\\ x = 18, y = 36."
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:20.625645",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140820_c1c2f7_04"
+    }
+  ]
+}

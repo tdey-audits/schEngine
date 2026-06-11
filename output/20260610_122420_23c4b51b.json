@@ -1,0 +1,124 @@
+{
+  "batch_id": "20260610_122420_23c4b51b",
+  "generated_at": "2026-06-10T12:24:20.554007",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "completing the square",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Which of the following constant terms should be added to the expression $x^2 + 8x$ to make it a perfect square trinomial?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "To complete the square for an expression of the form $x^2 + bx$, we add the square of half the coefficient of $x$.",
+          "Here, the coefficient of $x$ is $8$.",
+          "Half of $8$ is $4$.",
+          "The square of $4$ is $16$.",
+          "Therefore, adding $16$ results in $x^2 + 8x + 16 = (x + 4)^2$."
+        ],
+        "derivation": "$x^2 + bx + (b/2)^2 = (x + b/2)^2 \\\\ x^2 + 8x + (8/2)^2 = (x + 4)^2 \\\\ x^2 + 8x + 4^2 = (x + 4)^2 \\\\ x^2 + 8x + 16 = (x + 4)^2$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "completing the square",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 4",
+        "(B) 8",
+        "(C) 16",
+        "(D) 64"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T12:24:20.553710",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122420_c29e83_01"
+    },
+    {
+      "question": "In the process of solving $2x^2 - 12x + 5 = 0$ by the method of completing the square, the first step is to divide the entire equation by $2$. What is the resulting equation?",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "To use the method of completing the square, the coefficient of $x^2$ must be $1$.",
+          "Given equation: $2x^2 - 12x + 5 = 0$.",
+          "Divide every term by $2$: $(2x^2)/2 - (12x)/2 + 5/2 = 0/2$.",
+          "This simplifies to $x^2 - 6x + 2.5 = 0$."
+        ],
+        "derivation": "$2x^2 - 12x + 5 = 0 \\\\ \\frac{2x^2}{2} - \\frac{12x}{2} + \\frac{5}{2} = \\frac{0}{2} \\\\ x^2 - 6x + 2.5 = 0$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "completing the square",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $x^2 - 6x + 2.5 = 0$",
+        "(B) $x^2 - 12x + 5 = 0$",
+        "(C) $x^2 - 6x + 5 = 0$",
+        "(D) $x^2 - 24x + 10 = 0$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T12:24:20.553830",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122420_1709fc_02"
+    }
+  ]
+}

@@ -1,0 +1,948 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag Solutions} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{questions}
+\question \textbf{1.} A $1.5$ m tall boy is standing at some distance from a $30$ m tall building. The angle of elevation from his eyes to the top of the building is $45^\circ$. The height above his eye level is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Height of building = $30$ m.
+  \item Height of boy = $1.5$ m.
+  \item Height above eye level = $30 - 1.5 = 28.5$ m.
+  \item Since angle is $45^\circ$, height = base distance.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{h = 30 - 1.5 = 28.5 \text{ m}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Heights and Distances}
+\vspace{0.3cm}
+
+\question \textbf{2.} The shadow of a tower standing on a level ground is found to be $40$ m longer when the Sun's altitude is $30^\circ$ than when it is $60^\circ$. The height of the tower is not required, but if we consider a simpler case where the shadow is $h\sqrt{3}$ when angle is $30^\circ$, what is the height $h$ if the shadow is $30$ m?
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item $\tan(30^\circ) = \frac{h}{30}$
+  \item $\frac{1}{\sqrt{3}} = \frac{h}{30}$
+  \item $h = \frac{30}{\sqrt{3}} = 10\sqrt{3}$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{h = 30 \times \tan(30^\circ) = 30 \times \frac{1}{\sqrt{3}} = 10\sqrt{3}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Heights and Distances}
+\vspace{0.3cm}
+
+\question \textbf{3.} Assertion (A): The angle of elevation of the top of a tower from a point on the ground, which is $30 \text{ m}$ away from the foot of the tower, is $45^\circ$. The height of the tower is $30 \text{ m}$. Reason (R): In a right-angled triangle, $\tan(\theta) = \frac{\text{Opposite}}{\text{Adjacent}}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the tangent ratio: $\tan(45^\circ) = \frac{h}{30}$.
+  \item Since $\tan(45^\circ) = 1$, we get $1 = \frac{h}{30}$.
+  \item Thus, $h = 30 \text{ m}$.
+  \item The reason is the correct definition of the tangent ratio.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan(45^\circ) = \frac{\text{height}}{30} \\
+\implies 1 = \frac{h}{30} \\
+\implies h = 30
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Heights and Distances}
+\vspace{0.3cm}
+
+\question \textbf{4.} Assertion (A): If the length of the shadow of a vertical pole is equal to its height, then the angle of elevation of the Sun is $45^\circ$. Reason (R): The angle of elevation is the angle formed by the line of sight with the horizontal when the object is above the horizontal level.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let height be $h$ and shadow be $s$. Given $h = s$.
+  \item $\tan(\theta) = \frac{h}{s} = \frac{h}{h} = 1$.
+  \item $\theta = 45^\circ$.
+  \item Reason is the standard definition of angle of elevation.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan(\theta) = \frac{\text{height}}{\text{shadow}} = 1 \\
+\implies \theta = 45^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Heights and Distances}
+\vspace{0.3cm}
+
+\question \textbf{5.} Assertion (A): The length of a kite string making an angle of $30^\circ$ with the ground to reach a height of $50 \text{ m}$ is $100 \text{ m}$. Reason (R): $\sin(\theta) = \frac{\text{Opposite}}{\text{Hypotenuse}}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the sine ratio: $\sin(30^\circ) = \frac{50}{L}$.
+  \item Since $\sin(30^\circ) = 0.5$, we get $0.5 = \frac{50}{L}$.
+  \item Thus, $L = 100 \text{ m}$.
+  \item Reason is the standard definition of the sine ratio.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sin(30^\circ) = \frac{50}{L} \\
+\implies \frac{1}{2} = \frac{50}{L} \\
+\implies L = 100
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Heights and Distances}
+\vspace{0.3cm}
+
+\question \textbf{6.} Assertion (A): The angle of depression from a point $10 \text{ m}$ above sea level to a ship at sea is $30^\circ$. The distance of the ship from the base of the point is $10\sqrt{3} \text{ m}$. Reason (R): Angle of depression is equal to the angle of elevation by alternate interior angles.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The angle of depression equals the angle of elevation ($30^\circ$).
+  \item $\tan(30^\circ) = \frac{10}{d}$.
+  \item $\frac{1}{\sqrt{3}} = \frac{10}{d} \implies d = 10\sqrt{3}$.
+  \item Reason explains why the triangle is formed correctly.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan(30^\circ) = \frac{10}{d} \\
+\implies d = 10 \times \sqrt{3} = 10\sqrt{3}
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Heights and Distances}
+\vspace{0.3cm}
+
+\question \textbf{7.} Assertion (A): If a ladder $10 \text{ m}$ long is placed against a wall such that it makes an angle of $60^\circ$ with the ground, then the foot of the ladder is $5 \text{ m}$ away from the wall. Reason (R): $\cos(\theta) = \frac{\text{Adjacent}}{\text{Hypotenuse}}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the cosine ratio: $\cos(60^\circ) = \frac{\text{base}}{10}$.
+  \item Since $\cos(60^\circ) = 0.5$, we get $0.5 = \frac{\text{base}}{10}$.
+  \item Thus, $\text{base} = 5 \text{ m}$.
+  \item Reason is the standard definition of the cosine ratio.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\cos(60^\circ) = \frac{\text{base}}{10} \\
+\implies \frac{1}{2} = \frac{\text{base}}{10} \\
+\implies \text{base} = 5
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Heights and Distances}
+\vspace{0.3cm}
+
+\question \textbf{8.} A ladder $15 \text{ m}$ long makes an angle of $60^\circ$ with the wall. Find the distance of the foot of the ladder from the wall.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{7.5 \text{ m}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $L$ be the length of the ladder ($15 \text{ m}$) and $\theta$ be the angle with the wall ($60^\circ$). The distance of the foot from the wall is the side opposite to the angle of $60^\circ$ in the right triangle.
+  \item Using $\sin(60^\circ) = \frac{\text{opposite}}{\text{hypotenuse}}$, we have $\frac{\sqrt{3}}{2} = \frac{x}{15}$, leading to $x = 7.5\sqrt{3} \text{ m}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sin(60^\circ) = \frac{x}{15} \\
+\implies x = 15 \times \frac{\sqrt{3}}{2} \approx 12.99 \text{ m}
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Heights and Distances}
+\vspace{0.3cm}
+
+\question \textbf{9.} The angle of elevation of the top of a tower from a point on the ground, which is $30 \text{ m}$ away from the foot of the tower, is $30^\circ$. Find the height of the tower.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{10\sqrt{3} \text{ m}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $h$ be the height of the tower and $d = 30 \text{ m}$ be the distance from the foot.
+  \item Use $\tan(30^\circ) = \frac{h}{d}$ to solve for $h$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan(30^\circ) = \frac{h}{30} \\
+\implies \frac{1}{\sqrt{3}} = \frac{h}{30} \\
+\implies h = \frac{30}{\sqrt{3}} = 10\sqrt{3} \text{ m}
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Angles of Elevation}
+\vspace{0.3cm}
+
+\question \textbf{10.} A kite is flying at a height of $60 \text{ m}$ above the ground. The string attached to the kite is temporarily tied to a point on the ground. The inclination of the string with the ground is $60^\circ$. Find the length of the string.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{40\sqrt{3} \text{ m}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The height $h = 60 \text{ m}$ is the opposite side and the string $l$ is the hypotenuse.
+  \item Use $\sin(60^\circ) = \frac{h}{l}$ to find $l$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sin(60^\circ) = \frac{60}{l} \\
+\implies \frac{\sqrt{3}}{2} = \frac{60}{l} \\
+\implies l = \frac{120}{\sqrt{3}} = 40\sqrt{3} \text{ m}
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Heights and Distances}
+\vspace{0.3cm}
+
+\question \textbf{11.} From the top of a $7 \text{ m}$ high building, the angle of elevation of the top of a cable tower is $60^\circ$. If the distance between the building and the tower is $7\sqrt{3} \text{ m}$, find the height of the tower.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{28 \text{ m}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the tower height be $H = h + 7$, where $h$ is the height above the building level.
+  \item Use $\tan(60^\circ) = \frac{h}{7\sqrt{3}}$ to find $h$, then add $7$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan(60^\circ) = \frac{h}{7\sqrt{3}} \\
+\implies \sqrt{3} = \frac{h}{7\sqrt{3}} \\
+\implies h = 21 \\
+\implies H = 21 + 7 = 28 \text{ m}
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Angle of Elevation}
+\vspace{0.3cm}
+
+\question \textbf{12.} A $1.5 \text{ m}$ tall boy is standing at some distance from a $30 \text{ m}$ tall building. The angle of elevation from his eyes to the top of the building increases from $30^\circ$ to $60^\circ$ as he walks towards the building. Find the distance he walked.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{19\sqrt{3} \text{ m}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The height of the building above eye level is $30 - 1.5 = 28.5 \text{ m}$.
+  \item Calculate the horizontal distance for $30^\circ$ and $60^\circ$ using $\cot$ and find the difference.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = 28.5(\cot 30^\circ - \cot 60^\circ) = 28.5(\sqrt{3} - \frac{1}{\sqrt{3}}) = 28.5(\frac{2}{\sqrt{3}}) = \frac{57}{\sqrt{3}} = 19\sqrt{3} \text{ m}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Changing Angle of Elevation}
+\vspace{0.3cm}
+
+\question \textbf{13.} A vertical tower stands on a horizontal plane and is surmounted by a vertical flagstaff of height $6$ m. At a point on the plane, the angle of elevation of the bottom and the top of the flagstaff are $30^{\circ}$ and $60^{\circ}$ respectively. Find the height of the tower.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{3 m}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $h$ be the height of the tower and $x$ be the distance from the point to the tower base.
+  \item Use $\tan(30^{\circ}) = h/x$ to express $x$ in terms of $h$.
+  \item Use $\tan(60^{\circ}) = (h+6)/x$ and substitute $x$.
+  \item Solve the resulting linear equation for $h$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan 30^{\circ} = \frac{h}{x} \\
+\implies x = h\sqrt{3} \\
+\tan 60^{\circ} = \frac{h+6}{x} \\
+\implies \sqrt{3} = \frac{h+6}{h\sqrt{3}} \\
+3h = h + 6 \\
+\implies 2h = 6 \\
+\implies h = 3
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Heights and Distances}
+\vspace{0.3cm}
+
+\question \textbf{14.} A $1.5$ m tall boy is standing at some distance from a $30$ m tall building. The angle of elevation from his eyes to the top of the building increases from $30^{\circ}$ to $60^{\circ}$ as he walks towards the building. Find the distance he walked towards the building.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{19\sqrt{3} m}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the height above eye level: $30 - 1.5 = 28.5$ m.
+  \item Use $\tan(30^{\circ})$ to find the initial distance from the building.
+  \item Use $\tan(60^{\circ})$ to find the final distance from the building.
+  \item Subtract the two distances to find the distance walked.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Height } H = 28.5 \text{ m} \\
+d_1 = \frac{H}{\tan 30^{\circ}} = 28.5\sqrt{3} \\
+d_2 = \frac{H}{\tan 60^{\circ}} = \frac{28.5}{\sqrt{3}} = 9.5\sqrt{3} \\
+\text{Distance} = 28.5\sqrt{3} - 9.5\sqrt{3} = 19\sqrt{3}
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Heights and Distances}
+\vspace{0.3cm}
+
+\question \textbf{15.} The angle of elevation of the top of a lighthouse from a boat is $30^{\circ}$. If the boat moves $100$ m towards the lighthouse, the angle of elevation becomes $45^{\circ}$. Find the height of the lighthouse.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{50(\sqrt{3}+1) m}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $h$ be the height of the lighthouse and $y$ be the distance after moving.
+  \item Set up $\tan(45^{\circ}) = h/y$ which means $h = y$.
+  \item Set up $\tan(30^{\circ}) = h/(y+100)$.
+  \item Solve for $h$ by substituting $y = h$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+h = y \\
+\frac{h}{h+100} = \tan 30^{\circ} = \frac{1}{\sqrt{3}} \\
+h\sqrt{3} = h + 100 \\
+h(\sqrt{3}-1) = 100 \\
+h = \frac{100}{\sqrt{3}-1} = 50(\sqrt{3}+1)
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Heights and Distances}
+\vspace{0.3cm}
+
+\question \textbf{16.} A kite is flying at a height of $60$ m above the ground. The string attached to the kite is temporarily tied to a point on the ground. The inclination of the string with the ground is $60^{\circ}$. Find the length of the string, assuming that there is no slack in the string.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{40\sqrt{3} m}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the scenario as a right-angled triangle where the string is the hypotenuse.
+  \item The height is the side opposite to the $60^{\circ}$ angle.
+  \item Use the sine ratio: $\sin(60^{\circ}) = \text{Opposite} / \text{Hypotenuse}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sin 60^{\circ} = \frac{60}{L} \\
+\frac{\sqrt{3}}{2} = \frac{60}{L} \\
+L = \frac{120}{\sqrt{3}} = \frac{120\sqrt{3}}{3} = 40\sqrt{3}
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Heights and Distances}
+\vspace{0.3cm}
+
+\question \textbf{17.} From a point on the ground, the angles of elevation of the bottom and the top of a transmission tower fixed at the top of a $20$ m high building are $45^{\circ}$ and $60^{\circ}$ respectively. Find the height of the tower.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{20(\sqrt{3}-1) m}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $h$ be the height of the tower and $x$ be the distance from the point to the building.
+  \item Use $\tan(45^{\circ}) = 20/x$ to find $x$.
+  \item Use $\tan(60^{\circ}) = (20+h)/x$ to solve for $h$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan 45^{\circ} = \frac{20}{x} \\
+\implies x = 20 \\
+\tan 60^{\circ} = \frac{20+h}{20} \\
+\sqrt{3} = \frac{20+h}{20} \\
+20\sqrt{3} = 20 + h \\
+\implies h = 20(\sqrt{3}-1)
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Heights and Distances}
+\vspace{0.3cm}
+
+\question \textbf{18.} A vertical tower stands on a horizontal plane and is surmounted by a vertical flagstaff of height $h$. At a point on the plane, the angles of elevation of the bottom and the top of the flagstaff are $\alpha$ and $\beta$ respectively. Prove that the height of the tower is $\frac{h \tan \alpha}{\tan \beta - \tan \alpha}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Height of tower} = \frac{h \tan \alpha}{\tan \beta - \tan \alpha}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the height of the tower be $x$ and the distance of the point from the base be $d$.
+  \item In the triangle formed by the tower base, the point, and the ground, $\tan \alpha = \frac{x}{d} \implies d = \frac{x}{\tan \alpha}$.
+  \item In the triangle formed by the flagstaff top, the point, and the ground, the total height is $x+h$.
+  \item $\tan \beta = \frac{x+h}{d} \implies d = \frac{x+h}{\tan \beta}$.
+  \item Equate the two expressions for $d$: $\frac{x}{\tan \alpha} = \frac{x+h}{\tan \beta}$.
+  \item Solve for $x$ by cross-multiplying and rearranging terms.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+d = \frac{x}{\tan \alpha} = \frac{x+h}{\tan \beta} \\
+x \tan \beta = (x+h) \tan \alpha \\
+x \tan \beta - x \tan \alpha = h \tan \alpha \\
+x(\tan \beta - \tan \alpha) = h \tan \alpha \\
+x = \frac{h \tan \alpha}{\tan \beta - \tan \alpha}
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Angle of elevation}
+\vspace{0.3cm}
+
+\question \textbf{19.} From a point on the ground, the angles of elevation of the bottom and the top of a transmission tower fixed at the top of a $20 \text{ m}$ high building are $45^\circ$ and $60^\circ$ respectively. Find the height of the tower.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{20(\sqrt{3}-1) \text{ m}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $h$ be the height of the tower and $x$ be the distance from the point to the building.
+  \item Use $\tan 45^\circ = \frac{20}{x}$ to find $x$.
+  \item Use $\tan 60^\circ = \frac{20+h}{x}$ to relate $h$ and $x$.
+  \item Substitute $x=20$ into the second equation.
+  \item Solve for $h$ and rationalize if necessary.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan 45^\circ = \frac{20}{x} \\
+\implies 1 = \frac{20}{x} \\
+\implies x = 20 \\
+\tan 60^\circ = \frac{20+h}{20} \\
+\implies \sqrt{3} = \frac{20+h}{20} \\
+20\sqrt{3} = 20+h \\
+h = 20(\sqrt{3}-1) \text{ m}
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Height and Distance}
+\vspace{0.3cm}
+
+\question \textbf{20.} The angle of elevation of a cloud from a point $60 \text{ m}$ above a lake is $30^\circ$ and the angle of depression of the reflection of the cloud in the lake is $60^\circ$. Find the height of the cloud from the surface of the lake.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{120 \text{ m}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $H$ be the height of the cloud above the lake surface. The distance of the reflection below the lake surface is also $H$.
+  \item The height of the cloud above the observation point is $H-60$.
+  \item The depth of the reflection below the observation point is $H+60$.
+  \item Use $\tan 30^\circ = \frac{H-60}{d}$ and $\tan 60^\circ = \frac{H+60}{d}$.
+  \item Divide the two equations to eliminate $d$ and solve for $H$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{1}{\sqrt{3}} = \frac{H-60}{d} \\
+\implies d = \sqrt{3}(H-60) \\
+\sqrt{3} = \frac{H+60}{d} \\
+\implies d = \frac{H+60}{\sqrt{3}} \\
+\sqrt{3}(H-60) = \frac{H+60}{\sqrt{3}} \\
+3(H-60) = H+60 \\
+3H - 180 = H + 60 \\
+2H = 240 \\
+\implies H = 120 \text{ m}
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Reflection problems}
+\vspace{0.3cm}
+
+\question \textbf{21.} Two poles of equal heights are standing opposite each other side by side and opposite each other on either side of the road, which is $80 \text{ m}$ wide. From a point between them on the road, the angles of elevation of the top of the poles are $60^\circ$ and $30^\circ$ respectively. Find the height of the poles and the distances of the point from the poles.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Height} = 20\sqrt{3} \text{ m}, \text{Distances} = 20 \text{ m and } 60 \text{ m}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $h$ be the height of both poles and $x$ be the distance from one pole.
+  \item The distance from the other pole is $80-x$.
+  \item Use $\tan 60^\circ = \frac{h}{x}$ and $\tan 30^\circ = \frac{h}{80-x}$.
+  \item Express $h$ in terms of $x$ in both equations.
+  \item Equate and solve for $x$, then find $h$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+h = x\sqrt{3} \\
+h = \frac{80-x}{\sqrt{3}} \\
+x\sqrt{3} = \frac{80-x}{\sqrt{3}} \\
+3x = 80 - x \\
+4x = 80 \\
+\implies x=20 \\
+h = 20\sqrt{3} \text{ m}
+\end{aligned}}
+\end{center}
+\hfill \textit{Some Applications of Trigonometry — Two poles problem}
+\vspace{0.3cm}
+
+\question \textbf{22.} If the angle between two tangents drawn from a point $P$ to a circle of radius $r$ and center $O$ is $60^\circ$, then the length of $OP$ is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The line segment joining the center to the external point bisects the angle between the tangents.
+  \item The triangle formed by the center, the point of tangency, and the external point is a right-angled triangle.
+  \item Using trigonometry, $\sin(30^\circ) = r / OP$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sin(30^\circ) = \frac{r}{OP} \\
+\implies \frac{1}{2} = \frac{r}{OP} \\
+\implies OP = 2r
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{23.} A tangent $PQ$ at a point $P$ of a circle of radius $5 \text{ cm}$ meets a line through the center $O$ at a point $Q$ so that $OQ = 13 \text{ cm}$. The length of $PQ$ is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The tangent at any point of a circle is perpendicular to the radius through the point of contact.
+  \item This forms a right-angled triangle $OPQ$ where $OQ$ is the hypotenuse.
+  \item Apply the Pythagorean theorem: $PQ^2 = OQ^2 - OP^2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{PQ = \sqrt{13^2 - 5^2} = \sqrt{169 - 25} = \sqrt{144} = 12 \text{ cm}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{24.} The number of tangents that can be drawn from a point lying inside a circle is:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item A tangent touches the circle at exactly one point.
+  \item If a point is inside the circle, any line passing through it will intersect the circle at two points (a secant).
+  \item Therefore, no tangent can be drawn from an interior point.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Number of tangents} = 0}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{25.} If two tangents inclined at an angle of $80^\circ$ are drawn to a circle of radius $3 \text{ cm}$, then the angle between the two radii at the center is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The quadrilateral formed by the center, two points of contact, and the external point has angles summing to $360^\circ$.
+  \item The angles at the points of contact are $90^\circ$ each.
+  \item The angle at the center and the angle between tangents are supplementary.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Angle} = 180^\circ - 80^\circ = 100^\circ}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{26.} The length of a tangent from a point $A$ at a distance of $10 \text{ cm}$ from the center of the circle is $8 \text{ cm}$. The radius of the circle is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The radius, tangent, and the line to the external point form a right triangle.
+  \item The distance from the center is the hypotenuse ($10$), and the tangent is one leg ($8$).
+  \item Use $r^2 + 8^2 = 10^2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+r^2 = 100 - 64 = 36 \\
+\implies r = 6 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{27.} Assertion (A): The length of a tangent drawn from an external point to a circle is equal to the length of another tangent drawn from the same point. Reason (R): The lengths of tangents drawn from an external point to a circle are equal.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the theorem: The lengths of tangents drawn from an external point to a circle are equal.
+  \item Check Assertion: It states the definition of the theorem.
+  \item Check Reason: It states the theorem itself.
+  \item Conclusion: R explains A correctly.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+A: \text{True}, R: \text{True}, R \\
+\implies A
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{28.} Assertion (A): The tangent at any point of a circle is perpendicular to the radius through the point of contact. Reason (R): The perpendicular distance from the center of the circle to the tangent is equal to the radius.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall NCERT Theorem 10.1: The tangent at any point of a circle is perpendicular to the radius through the point of contact.
+  \item Verify Reason: The shortest distance from the center to the tangent is the radius, identifying the perpendicularity.
+  \item Conclusion: Both are true and R explains A.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Radius} \perp \text{Tangent at point of contact}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{29.} Assertion (A): The number of tangents that can be drawn from a point inside a circle is zero. Reason (R): A point inside a circle lies in the interior, and any line passing through it will be a secant, not a tangent.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Analyze A: A point inside the circle does not permit any tangent as a tangent must touch the circle at only one point.
+  \item Analyze R: Any line through an interior point intersects the circle at two points (secant).
+  \item Conclusion: Both true and R explains A.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{No tangent from interior point.}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{30.} Assertion (A): If the angle between two tangents drawn from a point P to a circle of radius $r$ and center O is $60^\circ$, then $OP = 2r$. Reason (R): The line segment from the center to the external point bisects the angle between the tangents.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item In $\triangle OAP$ (where A is point of contact), $\angle OPA = 30^\circ$ (bisected angle).
+  \item $\sin(30^\circ) = \frac{OA}{OP} = \frac{r}{OP}$.
+  \item $\frac{1}{2} = \frac{r}{OP} \implies OP = 2r$.
+  \item Conclusion: Both are true and R explains A.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sin(30^\circ) = \frac{r}{OP} \\
+\implies OP = 2r
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{31.} Assertion (A): The length of the tangent from a point $A$ at a distance of $5 \text{ cm}$ from the center of the circle is $4 \text{ cm}$. The radius of the circle is $3 \text{ cm}$. Reason (R): In a right triangle formed by radius, tangent, and hypotenuse (distance to center), $r^2 + t^2 = d^2$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use Pythagoras Theorem: $r^2 + t^2 = d^2$.
+  \item $r^2 + 4^2 = 5^2$.
+  \item $r^2 + 16 = 25 \implies r^2 = 9 \implies r = 3$.
+  \item Conclusion: Both are true and R explains A.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{3^2 + 4^2 = 9 + 16 = 25 = 5^2}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{32.} A tangent $PQ$ at a point $P$ of a circle of radius $5$ cm meets a line through the center $O$ at a point $Q$ so that $OQ = 13$ cm. Find the length of $PQ$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{12 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the property that the tangent at any point of a circle is perpendicular to the radius through the point of contact.
+  \item Apply the Pythagorean theorem in the right-angled triangle $OPQ$ where $\angle OPQ = 90^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+OP^2 + PQ^2 = OQ^2 \\
+\implies 5^2 + PQ^2 = 13^2 \\
+\implies 25 + PQ^2 = 169 \\
+\implies PQ^2 = 144 \\
+\implies PQ = 12 cm
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{33.} If tangents $PA$ and $PB$ from a point $P$ to a circle with center $O$ are inclined to each other at an angle of $80^\circ$, then find $\angle POA$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{50^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item In quadrilateral $\text{OAPB}$, $\angle OAP = \angle OBP = 90^\circ$. The sum of angles is $360^\circ$.
+  \item Find $\angle AOB = 180^\circ - 80^\circ = 100^\circ$. Since $\triangle OAP \cong \triangle OBP$, $\angle POA = \frac{1}{2} \angle AOB$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\angle AOB = 180^\circ - 80^\circ = 100^\circ. \text{Thus}, \angle POA = \frac{100^\circ}{2} = 50^\circ}
+\end{center}
+\hfill \textit{Circles — Tangents from an external point}
+\vspace{0.3cm}
+
+\question \textbf{34.} Two concentric circles are of radii $5$ cm and $3$ cm. Find the length of the chord of the larger circle which touches the smaller circle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{8 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $O$ be the center, and $AB$ be the chord of the larger circle tangent to the smaller circle at $M$. $OM \perp AB$.
+  \item In $\triangle OMA$, $OA=5$ and $OM=3$. Use Pythagoras to find $AM$, then $AB = 2AM$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{AM = \sqrt{OA^2 - OM^2} = \sqrt{5^2 - 3^2} = \sqrt{25-9} = 4. AB = 2 \times 4 = 8 cm.}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{35.} A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. If $AB = 6$ cm, $BC = 7$ cm, and $CD = 4$ cm, find the length of $AD$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{3 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the property that sums of opposite sides of a quadrilateral circumscribing a circle are equal.
+  \item Apply $AB + CD = BC + AD$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+6 + 4 = 7 + AD \\
+\implies 10 = 7 + AD \\
+\implies AD = 3 cm.
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{36.} If a point $P$ is $26$ cm away from the center $O$ of a circle and the length of the tangent $PT$ drawn from $P$ to the circle is $10$ cm, find the radius of the circle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{24 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item In $\triangle OTP$, $\angle OTP = 90^\circ$. $OT$ is the radius.
+  \item Use Pythagoras: $OT^2 + PT^2 = OP^2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+OT^2 + 10^2 = 26^2 \\
+\implies OT^2 + 100 = 676 \\
+\implies OT^2 = 576 \\
+\implies OT = 24 cm.
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{37.} A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{AB + CD = AD + BC}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the property that lengths of tangents drawn from an external point to a circle are equal.
+  \item Write equations for tangents from vertices A, B, C, and D.
+  \item Add the equations and group the terms to form the sides of the quadrilateral.
+\end{enumerate}
+\textbf{Derivation:}
+Let the circle touch sides AB, BC, CD, DA at P, Q, R, S respectively. AP=AS, BP=BQ, CR=CQ, DR=DS. Adding them: (AP+BP)+(CR+DR) = (AS+DS)+(BQ+CQ). Thus, AB+CD = AD+BC.
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{38.} From a point $Q$, the length of the tangent to a circle is $24$ cm and the distance of $Q$ from the centre is $25$ cm. Find the radius of the circle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{7 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify that the radius is perpendicular to the tangent at the point of contact.
+  \item This forms a right-angled triangle with the radius, tangent, and distance from the center as sides.
+  \item Apply the Pythagorean theorem to solve for the radius.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+r^2 + 24^2 = 25^2 \\
+\Rightarrow r^2 + 576 = 625 \\
+\Rightarrow r^2 = 49 \\
+\Rightarrow r = 7 \text{ cm}.
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{39.} Two concentric circles are of radii $5$ cm and $3$ cm. Find the length of the chord of the larger circle which touches the smaller circle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{8 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Draw a radius to the point of contact on the smaller circle, which acts as the perpendicular bisector of the chord.
+  \item Create a right triangle using the radius of the small circle, half the chord, and the radius of the large circle as the hypotenuse.
+  \item Calculate half the chord length and multiply by 2.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Half}-\ \text{chord} = \sqrt{5^2 - 3^2} = \sqrt{25-9} = \sqrt{16} = 4 \text{ cm}. \text{Total length} = 2 \times 4 = 8 \text{ cm}.}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{40.} If tangents $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\circ$, then find $\angle POA$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{50^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recognize that the line from the center to the external point bisects the angle between the tangents.
+  \item Consider the quadrilateral OAPB where angles at A and B are $90^\circ$.
+  \item Determine the angle $\angle APB$ is split in half and use the sum of angles in triangle OAP.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\angle APB = 80^\circ \\
+\Rightarrow \angle OPA = 40^\circ. \text{In } \triangle OAP, \angle OAP = 90^\circ. \angle POA = 180^\circ - 90^\circ - 40^\circ = 50^\circ.
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\end{questions}
+
+\end{document}

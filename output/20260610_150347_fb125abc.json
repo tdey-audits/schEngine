@@ -1,0 +1,94 @@
+{
+  "batch_id": "20260610_150347_fb125abc",
+  "generated_at": "2026-06-10T15:03:47.948785",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Areas Related to Circles",
+  "subtopic": "area of sector",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A circular pizza of radius $14$ $cm$ is cut into $8$ equal sectors. The area of each sector is:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "The area of a circle with radius $r$ is given by $A = \\pi r^2$.",
+          "Using $r = 14$ $cm$ and $\\pi = \\frac{22}{7}$, the total area is $A = \\frac{22}{7} \\times 14 \\times 14 = 616$ $cm^2$.",
+          "Since the pizza is cut into $8$ equal sectors, the area of each sector is the total area divided by $8$.",
+          "Area of one sector $= \\frac{616}{8} = 77$ $cm^2$."
+        ],
+        "derivation": "$A_{total} = \\pi r^2 = \\frac{22}{7} \\times 14 \\times 14 = 22 \\times 2 \\times 14 = 616 \\text{ cm}^2 \\\\ A_{sector} = \\frac{A_{total}}{8} = \\frac{616}{8} = 77 \\text{ cm}^2$"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "area of sector",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $77$ $cm^2$",
+        "(B) $154$ $cm^2$",
+        "(C) $308$ $cm^2$",
+        "(D) $616$ $cm^2$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T15:03:47.948714",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_12 (Areas Related to Circles).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 15,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.1",
+            "question_no": 1,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.1",
+            "question_no": 6,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.1",
+            "question_no": 2,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150347_180a0b_01"
+    }
+  ]
+}

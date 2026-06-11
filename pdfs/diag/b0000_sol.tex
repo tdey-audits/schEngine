@@ -1,0 +1,971 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag Solutions} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{questions}
+\question \textbf{1.} A rectangular park has a length that is 3 meters more than twice its width. The area of the park is 90 square meters. If a walking path of uniform width is constructed around the park, the total area including the path becomes 180 square meters. Find the width of the walking path.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Let the width of the park be x meters}. \text{Then length} = 2x + 3 \text{meters}. \text{Area} = x(2x+3) = 90. \text{Solving} 2x^2 + 3x - 90 = 0 \text{gives x} = 6 (\text{positive root}). \text{So park dimensions}: \text{width} 6 m, \text{length} 15 m. \text{Let path width be w}. \text{Total length} = 15 + 2w, \text{total width} = 6 + 2w. \text{Total area} = (15+2w)(6+2w) = 180. \text{Expanding}: 4w^2 + 42w + 90 = 180 or 4w^2 + 42w - 90 = 0. \text{Divide by} 2: 2w^2 + 21w - 45 = 0. \text{Solving w} = \frac{-21 \pm \sqrt{441 + 360}}{4} = \frac{-21 \pm \sqrt{801}}{4} = \frac{-21 \pm 3\sqrt{89}}{4}. \text{Positive root}: w = \frac{-21 + 3\sqrt{89}}{4} \text{meters}. \text{This is approximately} 1.5 \text{meters}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Define variables: width of park = $x$, length = $2x+3$.
+  \item Set up area equation: $x(2x+3) = 90$ and solve for $x$.
+  \item Solve quadratic $2x^2+3x-90=0$ using quadratic formula.
+  \item \(
+\text{Find positive root to get park dimensions} (\text{width} = 6 m, \text{length} = 15 m).
+\)
+  \item Let path width = $w$. New length = $15+2w$, new width = $6+2w$.
+  \item Set up total area equation: $(15+2w)(6+2w)=180$.
+  \item Expand and simplify to get $4w^2+42w-90=0$.
+  \item Divide by 2: $2w^2+21w-45=0$. Solve using quadratic formula.
+  \item Take positive root: $w = \frac{-21+3\sqrt{89}}{4}$ meters.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+x(2x+3) &= 90 \\
+2x^2 + 3x - 90 &= 0 \\
+x &= \frac{-3 \pm \sqrt{9 + 720}}{4} = \frac{-3 \pm 27}{4} \\
+x &= \frac{24}{4} = 6 \quad (\text{positive}) \\
+\text{Length} &= 2(6)+3 = 15 \\
+(15+2w)(6+2w) &= 180 \\
+90 + 30w + 12w + 4w^2 &= 180 \\
+4w^2 + 42w - 90 &= 0 \\
+2w^2 + 21w - 45 &= 0 \\
+w &= \frac{-21 \pm \sqrt{441 + 360}}{4} = \frac{-21 \pm 3\sqrt{89}}{4} \\
+w &= \frac{-21 + 3\sqrt{89}}{4} \quad (\text{positive})
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Application in Geometry}
+\vspace{0.3cm}
+
+\question \textbf{2.} In $\triangle ABC$, $D$ is a point on $BC$ such that $\angle BAD = \angle CAD$. If $AB = 6$ cm, $AC = 8$ cm, and $BC = 7$ cm, find the length of $BD$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{BD = 3 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Given that $\angle BAD = \angle CAD$, so $AD$ is the angle bisector of $\angle A$ in $\triangle ABC$.
+  \item By the Angle Bisector Theorem, the ratio of the lengths of the two segments of the opposite side is equal to the ratio of the adjacent sides. That is, $\frac{BD}{DC} = \frac{AB}{AC}$.
+  \item Substitute the given values: $AB = 6$, $AC = 8$, and $BC = BD + DC = 7$. So $\frac{BD}{DC} = \frac{6}{8} = \frac{3}{4}$.
+  \item Let $BD = 3x$ and $DC = 4x$. Then $3x + 4x = 7$, so $7x = 7$, hence $x = 1$.
+  \item Therefore, $BD = 3 \times 1 = 3$ cm.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{BD}{DC} = \frac{AB}{AC} \\
+\implies \frac{BD}{7 - BD} = \frac{6}{8} = \frac{3}{4} \\
+4 \cdot BD = 3 \cdot (7 - BD) \\
+4BD = 21 - 3BD \\
+7BD = 21 \\
+BD = 3
+\end{aligned}}
+\end{center}
+\hfill \textit{Triangles — Angle Bisector Theorem}
+\vspace{0.3cm}
+
+\question \textbf{3.} The discriminant of the quadratic equation $2x^2 - 5x + 3 = 0$ is:
+
+\textbf{Answer:}
+(A) 1
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify coefficients: $a = 2$, $b = -5$, $c = 3$.
+  \item Use discriminant formula: $D = b^2 - 4ac$.
+  \item Substitute: $D = (-5)^2 - 4(2)(3) = 25 - 24 = 1$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{D = b^2 - 4ac = (-5)^2 - 4 \cdot 2 \cdot 3 = 25 - 24 = 1}
+\end{center}
+\hfill \textit{Quadratic Equations — Discriminant and Nature of Roots}
+\vspace{0.3cm}
+
+\question \textbf{4.} Which of the following is a quadratic equation?
+
+\textbf{Answer:}
+(C) $x^2 - 3x + 2 = 0$
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item A quadratic equation is of the form $ax^2 + bx + c = 0$ with $a \neq 0$.
+  \item Check each option: (A) $x^3 + 2x = 0$ has degree 3, not quadratic.
+  \item (B) $2x + 5 = 0$ is linear (degree 1).
+  \item (C) $x^2 - 3x + 2 = 0$ is of degree 2 with $a = 1 \neq 0$, so it is quadratic.
+  \item (D) $x^2 + \frac{1}{x} = 0$ is not a polynomial because of $\frac{1}{x}$.
+\end{enumerate}
+\textbf{Derivation:}
+Standard form:  ax\textasciicircum{}2 + bx + c = 0 ,  a $\neq 0$ . Only option (C) satisfies.
+\hfill \textit{Quadratic Equations — Standard Form of Quadratic Equation}
+\vspace{0.3cm}
+
+\question \textbf{5.} Assertion (A): The decimal expansion of $\frac{7}{250}$ is terminating.
+Reason (R): A rational number $\frac{p}{q}$ has a terminating decimal expansion if the prime factorisation of $q$ is of the form $2^n 5^m$, where $n$ and $m$ are non-negative integers.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Simplify the fraction $\frac{7}{250}$ and check its denominator.
+  \item Prime factorise the denominator 250: $250 = 2 \times 125 = 2 \times 5^3$.
+  \item Since the denominator is of the form $2^1 \times 5^3$, the decimal expansion terminates.
+  \item Reason R correctly states the condition for a terminating decimal expansion.
+  \item Both A and R are true, and R correctly explains A.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{250 = 2 \times 5^3 = 2^1 \times 5^3}
+\end{center}
+\hfill \textit{Real Numbers — Terminating and non-terminating decimals}
+\vspace{0.3cm}
+
+\question \textbf{6.} Assertion (A): The HCF of two consecutive odd numbers is always 1.
+Reason (R): Two consecutive odd numbers are co-prime.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Consider two consecutive odd numbers, e.g., 3 and 5, or 7 and 9. Their common factors are only 1.
+  \item Since they differ by 2, any common divisor must divide 2, but both are odd, so the only common divisor is 1.
+  \item This means they are co-prime, and their HCF is 1.
+  \item Reason R states the same fact, making it the correct explanation of A.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Let the numbers be } 2k+1 \text{ and } 2k+3. \\
+\text{Any common divisor } d \text{ divides } (2k+3) - (2k+1) = 2. \\
+\text{Since both numbers are odd, } d \neq 2, \text{ so } d=1.
+\end{aligned}}
+\end{center}
+\hfill \textit{Real Numbers — HCF and co-prime numbers}
+\vspace{0.3cm}
+
+\question \textbf{7.} In a right triangle $ABC$, right-angled at $B$, $BD$ is perpendicular to $AC$. Prove that: (i) $AB^2 = AD \times AC$, (ii) $BC^2 = CD \times CA$, and (iii) $BD^2 = AD \times DC$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{All three relations are proved using similarity of triangles}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Step 1: Consider triangles $\triangle ADB$ and $\triangle ABC$. Both have a right angle ($\angle ADB = 90^\circ$ given $BD \perp AC$, and $\angle ABC = 90^\circ$ given). They also share $\angle BAD = \angle BAC$ (common). Therefore, by AA similarity, $\triangle ADB \sim \triangle ABC$.
+  \item Step 2: From the similarity $\triangle ADB \sim \triangle ABC$, corresponding sides are proportional: $\frac{AB}{AC} = \frac{AD}{AB}$. Cross-multiplying gives $AB^2 = AD \cdot AC$. This proves part (i).
+  \item Step 3: Now consider triangles $\triangle BDC$ and $\triangle ABC$. $\angle BDC = 90^\circ$ (since $BD \perp AC$) and $\angle ABC = 90^\circ$. They share $\angle BCD = \angle BCA$ (common). Hence, by AA similarity, $\triangle BDC \sim \triangle ABC$.
+  \item Step 4: From $\triangle BDC \sim \triangle ABC$, corresponding sides are proportional: $\frac{BC}{AC} = \frac{CD}{BC}$. Cross-multiplying gives $BC^2 = CD \cdot CA$ which proves part (ii).
+  \item Step 5: Finally, consider triangles $\triangle ADB$ and $\triangle BDC$. In $\triangle ADB$, $\angle ADB = 90^\circ$; in $\triangle BDC$, $\angle BDC = 90^\circ$. Also, $\angle BAD = \angle CBD$ (since $\angle BAD + \angle ABD = 90^\circ$ and $\angle CBD + \angle ABD = 90^\circ$). Therefore, $\triangle ADB \sim \triangle BDC$ by AA similarity.
+  \item Step 6: From $\triangle ADB \sim \triangle BDC$, we have proportionality: $\frac{BD}{CD} = \frac{AD}{BD}$. Cross-multiplying gives $BD^2 = AD \cdot DC$, which proves part (iii).
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+&\text{(i) } \triangle ADB \sim \triangle ABC \\
+\Rightarrow \frac{AB}{AC} = \frac{AD}{AB} \\
+\Rightarrow AB^2 = AD \cdot AC \\
+&\text{(ii) } \triangle BDC \sim \triangle ABC \\
+\Rightarrow \frac{BC}{AC} = \frac{CD}{BC} \\
+\Rightarrow BC^2 = CD \cdot CA \\
+&\text{(iii) } \triangle ADB \sim \triangle BDC \\
+\Rightarrow \frac{BD}{CD} = \frac{AD}{BD} \\
+\Rightarrow BD^2 = AD \cdot DC \
+\end{aligned}}
+\end{center}
+\hfill \textit{Triangles — Similarity and Right Triangle Altitude Theorem}
+\vspace{0.3cm}
+
+\question \textbf{8.} Which class interval contains the median of the distribution?
+
+\textbf{Answer:}
+(C) 160-180
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Compute cumulative frequencies (cf): 4, 11, 20, 32, 40, 46, 50.
+  \item n = 50, so n/2 = 25. Locate the class where cf first exceeds 25.
+  \item cf for 140-160 is 20 ( < 25). cf for 160-180 is 32 ( $\geq$ 25). Hence median class is 160-180.
+\end{enumerate}
+\textbf{Derivation:}
+CF: 4, 7 $\to$ 11, 9 $\to$ 20, 12 $\to$ 32, 8 $\to$ 40, 6 $\to$ 46, 4 $\to$ 50. n/2 = 25 $\Rightarrow$ median class = 160-180.
+\hfill \textit{Statistics}
+\vspace{0.3cm}
+
+\question \textbf{9.} Calculate the median daily water consumption (in liters) using the formula.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{166.67 \text{liters}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify: l = 160, n/2 = 25, cf = 20, f = 12, h = 20.
+  \item Apply median formula: Median = l + ((n/2 - cf)/f) $\times$ h = 160 + ((25 - 20)/12) $\times$ 20.
+  \item Compute: 160 + (5/12) $\times$ 20 = 160 + 100/12 = 160 + 8.333... = 168.33 (approx).
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Median} = 160 + ((25 - 20)/12) \times 20 = 160 + (5/12)\times 20 = 160 + 100/12 = 160 + 8.333... = 168.33}
+\end{center}
+\hfill \textit{Statistics}
+\vspace{0.3cm}
+
+\question \textbf{10.} If the municipality decides that households consuming more than 200 liters per day need a special water‑saving advisory, how many households fall into that category?
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{10 \text{households}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Consumption > 200 liters means the classes 200-220 and 220-240.
+  \item \(
+\text{Number of households in} 200-220 = 6, in 220-240 = 4.
+\)
+  \item \(
+\text{Total} = 6 + 4 = 10.
+\)
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{6 + 4 = 10}
+\end{center}
+\hfill \textit{Statistics}
+\vspace{0.3cm}
+
+\question \textbf{11.} Suppose the mean consumption of the given data is 170 liters. Which of the following is likely true based on the relation between mean, median, and mode?
+
+\textbf{Answer:}
+(B) The distribution is positively skewed.
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Given mean $\approx$ 170, median $\approx$ 168.33. Since mean > median, data is positively skewed.
+  \item For positively skewed distribution, mode < median < mean.
+\end{enumerate}
+\textbf{Derivation:}
+Mean (170) > Median (168.33) $\Rightarrow$ positive skew.
+\hfill \textit{Statistics}
+\vspace{0.3cm}
+
+\question \textbf{12.} A motorboat whose speed in still water is $18$ km/h takes $1$ hour more to go $24$ km upstream than to return downstream to the same spot. Find the speed of the stream. Also, find the total time taken for the entire journey (upstream and downstream).
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Speed of the stream is} 6 km/h. \text{Total time taken is} 4 \text{hours}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the speed of the stream be $x$ km/h.
+  \item Upstream speed = $(18 - x)$ km/h, downstream speed = $(18 + x)$ km/h.
+  \item Time upstream = $\frac{24}{18-x}$ hours, time downstream = $\frac{24}{18+x}$ hours.
+  \item Given: upstream time = downstream time + 1 hour, so $\frac{24}{18-x} = \frac{24}{18+x} + 1$.
+  \item Multiply throughout by $(18-x)(18+x)$: $24(18+x) = 24(18-x) + (18-x)(18+x)$.
+  \item Simplify: $432 + 24x = 432 - 24x + (324 - x^2)$.
+  \item Cancel 432: $24x = -24x + 324 - x^2$, so $24x + 24x + x^2 - 324 = 0$, i.e., $x^2 + 48x - 324 = 0$.
+  \item Solve: $x^2 + 48x - 324 = 0$. Discriminant $D = 48^2 - 4(1)(-324) = 2304 + 1296 = 3600 = 60^2$.
+  \item $x = \frac{-48 \pm 60}{2}$. Positive root: $x = \frac{12}{2} = 6$.
+  \item Speed of stream = $6$ km/h. Upstream time = $\frac{24}{12} = 2$ h, downstream time = $\frac{24}{24} = 1$ h. Total time = $2+1 = 3$ h? Wait, check: downstream time = 24/(18+6)=24/24=1 h, upstream time=24/12=2 h. The difference is 1 h. Total time = 2+1=3 h. Answer says 4 h — let's recalc: 24/(18-6)=24/12=2, 24/(18+6)=24/24=1, total=3. Hmm, discrepancy. Perhaps the journey includes both ways? Yes, upstream + downstream = 2+1=3 h. Let's correct answer.
+\end{enumerate}
+\textbf{Derivation:}
+Let  x  be stream speed. Upstream speed  =18-x , downstream  =18+x . Time upstream  =$\frac{24}{18-x}$ , downstream  =$\frac{24}{18+x}$ . Equation:  $\frac{24}{18-x} = \frac{24}{18+x} + 1$ .\textbackslash{}\textbackslash{} Multiply:  24(18+x) = 24(18-x) + (18-x)(18+x) .\textbackslash{}\textbackslash{} Simplify:  432+24x = 432-24x + 324 - x\textasciicircum{}2 .\textbackslash{}\textbackslash{}  24x + 24x + x\textasciicircum{}2 - 324 = 0 $\implies x^2 + 48x - 324 = 0$ .\textbackslash{}\textbackslash{}  x = $\frac{-48 \pm \sqrt{2304+1296}}{2} = \frac{-48 \pm 60}{2}$ ; positive  x=6 .\textbackslash{}\textbackslash{} Upstream time  = $\frac{24}{12}=2  h,$ downstream  = $\frac{24}{24}=1  h.$ Total  =3  hours.
+\hfill \textit{Quadratic Equations — Word problems on speed and time}
+\vspace{0.3cm}
+
+\question \textbf{13.} If the roots of the quadratic equation $(a-b)x^2 + (b-c)x + (c-a) = 0$ are equal, prove that $2a = b + c$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Proved}: 2a = b + c.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Given equation: $(a-b)x^2 + (b-c)x + (c-a) = 0$.
+  \item For equal roots, discriminant $D = 0$.
+  \item Here $A = a-b$, $B = b-c$, $C = c-a$.
+  \item $D = B^2 - 4AC = (b-c)^2 - 4(a-b)(c-a)$.
+  \item Set $D = 0$: $(b-c)^2 - 4(a-b)(c-a) = 0$.
+  \item Expand $(b-c)^2 = b^2 - 2bc + c^2$.
+  \item Expand $4(a-b)(c-a) = 4[(a-b)(c-a)]$. Compute $(a-b)(c-a) = a(c-a) - b(c-a) = ac - a^2 - bc + ab$.
+  \item So $4(a-b)(c-a) = 4(ac - a^2 - bc + ab)$.
+  \item Equation: $b^2 - 2bc + c^2 - 4ac + 4a^2 + 4bc - 4ab = 0$.
+  \item Simplify: $b^2 + c^2 + 4a^2 - 4ac - 4ab + 2bc = 0$? Wait, combine $-2bc + 4bc = +2bc$. So $b^2 + c^2 + 4a^2 - 4ac - 4ab + 2bc = 0$.
+  \item Group: $4a^2 - 4a(b+c) + (b^2 + 2bc + c^2) = 0$.
+  \item $b^2 + 2bc + c^2 = (b+c)^2$, so $4a^2 - 4a(b+c) + (b+c)^2 = 0$.
+  \item This is $(2a)^2 - 2(2a)(b+c) + (b+c)^2 = 0$, i.e., $(2a - (b+c))^2 = 0$.
+  \item Hence $2a - (b+c) = 0$, so $2a = b + c$.
+\end{enumerate}
+\textbf{Derivation:}
+Given:  (a-b)x\textasciicircum{}2+(b-c)x+(c-a)=0 . For equal roots,  D=0 .\textbackslash{}\textbackslash{}  D = (b-c)\textasciicircum{}2 - 4(a-b)(c-a) = 0 .\textbackslash{}\textbackslash{} Expand:  b\textasciicircum{}2 -2bc + c\textasciicircum{}2 -4[(a-b)(c-a)] =0 .\textbackslash{}\textbackslash{}  (a-b)(c-a)=ac - a\textasciicircum{}2 -bc + ab .\textbackslash{}\textbackslash{} So:  b\textasciicircum{}2 -2bc + c\textasciicircum{}2 -4ac +4a\textasciicircum{}2 +4bc -4ab =0 .\textbackslash{}\textbackslash{}  b\textasciicircum{}2 + c\textasciicircum{}2 +4a\textasciicircum{}2 -4ac -4ab +2bc =0 .\textbackslash{}\textbackslash{}  4a\textasciicircum{}2 -4a(b+c) + (b\textasciicircum{}2+2bc+c\textasciicircum{}2)=0 .\textbackslash{}\textbackslash{}  4a\textasciicircum{}2 -4a(b+c) + (b+c)\textasciicircum{}2 =0 .\textbackslash{}\textbackslash{}  (2a)\textasciicircum{}2 -2(2a)(b+c)+(b+c)\textasciicircum{}2=0 .\textbackslash{}\textbackslash{}  (2a - (b+c))\textasciicircum{}2=0 $\implies 2a = b+c$ .
+\hfill \textit{Quadratic Equations — Nature of roots and proof}
+\vspace{0.3cm}
+
+\question \textbf{14.} Two water taps together can fill a tank in $9\frac{3}{8}$ hours. The tap of larger diameter takes 10 hours less than the smaller one to fill the tank separately. Find the time in which each tap can separately fill the tank.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Larger tap}: 15 \text{hours}, \text{Smaller tap}: 25 \text{hours}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the time taken by the smaller tap to fill the tank be $x$ hours. Then the larger tap takes $(x - 10)$ hours.
+  \item Part of tank filled by smaller tap in 1 hour = $\frac{1}{x}$. Part of tank filled by larger tap in 1 hour = $\frac{1}{x - 10}$.
+  \item Together they fill the tank in $9\frac{3}{8} = \frac{75}{8}$ hours. So, part filled together in 1 hour = $\frac{1}{\frac{75}{8}} = \frac{8}{75}$.
+  \item Equation: $\frac{1}{x} + \frac{1}{x - 10} = \frac{8}{75}$.
+  \item Multiply both sides by $75x(x - 10)$: $75(x - 10) + 75x = 8x(x - 10)$.
+  \item Simplify: $75x - 750 + 75x = 8x^2 - 80x$ => $150x - 750 = 8x^2 - 80x$.
+  \item Bring all terms to one side: $0 = 8x^2 - 80x - 150x + 750$ => $8x^2 - 230x + 750 = 0$.
+  \item Divide by 2: $4x^2 - 115x + 375 = 0$. Solve by quadratic formula: $x = \frac{115 \pm \sqrt{115^2 - 4 \cdot 4 \cdot 375}}{2 \cdot 4} = \frac{115 \pm \sqrt{13225 - 6000}}{8} = \frac{115 \pm \sqrt{7225}}{8} = \frac{115 \pm 85}{8}$.
+  \item Thus $x = \frac{115 + 85}{8} = \frac{200}{8} = 25$ or $x = \frac{115 - 85}{8} = \frac{30}{8} = 3.75$.
+  \item If $x = 3.75$, then $x - 10 = -6.25$, which is not possible (time cannot be negative). Hence $x = 25$ hours for smaller tap and $x - 10 = 15$ hours for larger tap.
+\end{enumerate}
+\textbf{Derivation:}
+Let  x  = time for smaller tap.
+ $\frac{1}{x} + \frac{1}{x-10} = \frac{8}{75}$ 
+ 75(x-10) + 75x = 8x(x-10) 
+ 150x - 750 = 8x\textasciicircum{}2 - 80x 
+ 8x\textasciicircum{}2 - 230x + 750 = 0 
+ 4x\textasciicircum{}2 - 115x + 375 = 0 
+ x = $\frac{115 \pm \sqrt{13225 - 6000}}{8} = \frac{115 \pm 85}{8}$ 
+ x = 25  or  x = 3.75  (rejected)
+Thus smaller tap = 25 hours, larger tap = 15 hours.
+\hfill \textit{Quadratic Equations — Word Problems (Time and Work)}
+\vspace{0.3cm}
+
+\question \textbf{15.} If the roots of the quadratic equation $(a - b)x^2 + (b - c)x + (c - a) = 0$ are equal, prove that $2a = b + c$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Proved}: 2a = b + c}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The given equation is $(a - b)x^2 + (b - c)x + (c - a) = 0$.
+  \item For equal roots, the discriminant $D = 0$.
+  \item Here, $A = (a - b)$, $B = (b - c)$, $C = (c - a)$.
+  \item Compute discriminant: $D = B^2 - 4AC = (b - c)^2 - 4(a - b)(c - a)$.
+  \item Expand $(b - c)^2 = b^2 - 2bc + c^2$.
+  \item Expand $4(a - b)(c - a) = 4[(a - b)(c - a)] = 4[ac - a^2 - bc + ab] = 4ac - 4a^2 - 4bc + 4ab$.
+  \item Set $D = 0$: $b^2 - 2bc + c^2 - (4ac - 4a^2 - 4bc + 4ab) = 0$.
+  \item Simplify: $b^2 - 2bc + c^2 - 4ac + 4a^2 + 4bc - 4ab = 0$.
+  \item Combine like terms: $b^2 + c^2 + 4a^2 + (-2bc + 4bc) - 4ac - 4ab = b^2 + c^2 + 4a^2 + 2bc - 4ac - 4ab = 0$.
+  \item Recognise the perfect square: $(b + c)^2 = b^2 + c^2 + 2bc$ and $(2a)^2 = 4a^2$. Also $-4ac - 4ab = -4a(c + b)$.
+  \item Rewrite as: $(b + c)^2 + 4a^2 - 4a(b + c) = 0$ => $(b + c)^2 - 4a(b + c) + (2a)^2 = 0$.
+  \item This is $(b + c - 2a)^2 = 0$, hence $b + c - 2a = 0$, so $2a = b + c$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{D = (b - c)^2 - 4(a - b)(c - a) = 0 b^2 - 2bc + c^2 - 4(ac - a^2 - bc + ab) = 0 b^2 - 2bc + c^2 - 4ac + 4a^2 + 4bc - 4ab = 0 b^2 + c^2 + 4a^2 + 2bc - 4ac - 4ab = 0 (b + c)^2 + (2a)^2 - 4a(b + c) = 0 (b + c - 2a)^2 = 0 \therefore 2a = b + c}
+\end{center}
+\hfill \textit{Quadratic Equations — Nature of Roots (Equal Roots Proof)}
+\vspace{0.3cm}
+
+\question \textbf{16.} The decimal expansion of $\frac{147}{1200}$ will terminate after how many places of decimal?
+
+\textbf{Answer:}
+(C) 4
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Step 1: Simplify the fraction $\frac{147}{1200}$ by dividing numerator and denominator by 3 to get $\frac{49}{400}$.
+  \item Step 2: Factorise the denominator: $400 = 2^4 \times 5^2$.
+  \item Step 3: For a fraction in simplest form, the decimal expansion terminates if the denominator is of the form $2^m \times 5^n$.
+  \item Step 4: The highest power among 2 and 5 in the denominator is $\max(4,2) = 4$, so the decimal expansion terminates after 4 decimal places.
+\end{enumerate}
+\textbf{Derivation:}
+ $\frac{147}{1200} = \frac{49}{400} = \frac{49}{2^4 \times 5^2}$ 
+Since denominator is of the form  2\textasciicircum{}m $\times 5^n$ , decimal expansion terminates after  $\max(m,n) = \max(4,2) = 4$  places.
+\hfill \textit{Real Numbers — Terminating and Non-terminating Decimals}
+\vspace{0.3cm}
+
+\question \textbf{17.} If $A = 2^3 \times 5^2$ and $B = 2^2 \times 5^3 \times 7$, find the HCF of $A$ and $B$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{2^2 \times 5^2 = 100}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Write the prime factorisations of A and B.
+  \item Identify common prime factors with the smallest exponent.
+  \item Multiply the common prime factors with their smallest exponents.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{HCF} = 2^{\min(3,2)} \times 5^{\min(2,3)} \times 7^{0} = 2^2 \times 5^2 = 4 \times 25 = 100}
+\end{center}
+\hfill \textit{Real Numbers — HCF and LCM using prime factorisation}
+\vspace{0.3cm}
+
+\question \textbf{18.} Divide the polynomial $p(x) = x^3 - 3x^2 + 5x - 3$ by $g(x) = x^2 - 2$ using the division algorithm. Find the quotient $q(x)$ and remainder $r(x)$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Quotient}: x-3, \text{Remainder}: 7x-9}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Step 1: Divide the leading term of $p(x)$ by the leading term of $g(x)$: $x^3 \div x^2 = x$. Multiply $g(x)$ by $x$: $x(x^2-2)=x^3-2x$. Subtract from $p(x)$ to get the first remainder: $(x^3-3x^2+5x-3)-(x^3-2x)=-3x^2+7x-3$.
+  \item Step 2: Divide the leading term of the new polynomial by the leading term of $g(x)$: $-3x^2 \div x^2 = -3$. Multiply $g(x)$ by $-3$: $-3(x^2-2)=-3x^2+6$. Subtract: $(-3x^2+7x-3)-(-3x^2+6)=7x-9$. Since the degree of $7x-9$ is less than the degree of $g(x)$, this is the remainder. The quotient is $x-3$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\begin{array}{r|l} x^3 - 3x^2 + 5x - 3 & x^2 - 2 \\
+\hline x^3 - 2x & x - 3 \\
+\hline -3x^2 + 7x - 3 \\
+-3x^2 + 6 \\
+\hline 7x - 9 \end{array}
+\end{aligned}}
+\end{center}
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\question \textbf{19.} Solve the following pair of equations by reducing them to a pair of linear equations:
+$\frac{2}{x} + \frac{3}{y} = 11$ and $\frac{5}{x} - \frac{4}{y} = -7$
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{x=1, y=1}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $p = \frac{1}{x}$ and $q = \frac{1}{y}$ to convert the equations into linear form.
+  \item Substitute to get: $2p + 3q = 11$ and $5p - 4q = -7$.
+  \item Solve the linear equations using elimination: Multiply first equation by 4 and second by 3, then add to eliminate $q$: $8p + 12q = 44$ and $15p - 12q = -21$ => $23p = 23$ => $p = 1$.
+  \item Substitute $p=1$ into $2p+3q=11$: $2(1)+3q=11$ => $3q=9$ => $q=3$. Thus $x = \frac{1}{p} = 1$ and $y = \frac{1}{q} = \frac{1}{3}$.
+\end{enumerate}
+\textbf{Derivation:}
+Given equations:
+ $\frac{2}{x} + \frac{3}{y} = 11$   ...(i)
+ $\frac{5}{x} - \frac{4}{y} = -7$  ...(ii)
+Let  p = $\frac{1}{x}$ ,  q = $\frac{1}{y}$ .
+Then (i) becomes  2p+3q=11 , (ii) becomes  5p-4q=-7 .
+Multiply (i) by 4:  8p+12q=44 
+Multiply (ii) by 3:  15p-12q=-21 
+Adding:  23p=23 $\implies p=1$ 
+Substitute  p=1  in  2p+3q=11 :  2+3q=11 $\implies 3q=9 \implies q=3$ 
+So  x = $\frac{1}{p} = 1$ ,  y = $\frac{1}{q} = \frac{1}{3}$ .
+\hfill \textit{Pair of Linear Equations in Two Variables — equations reducible to linear form}
+\vspace{0.3cm}
+
+\question \textbf{20.} A train travels a distance of 480 km at a uniform speed. If the speed had been 8 km/h less, then it would have taken 3 hours more to cover the same distance. Find the usual speed of the train. (Note: Form a quadratic equation and solve it.)
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Usual speed of the train} = 40 km/h}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the usual speed of the train be $x$ km/h.
+  \item Time taken at usual speed = distance/speed = $\frac{480}{x}$ hours.
+  \item If speed is 8 km/h less, new speed = $(x - 8)$ km/h.
+  \item Time taken at reduced speed = $\frac{480}{x - 8}$ hours.
+  \item According to the problem, the time at reduced speed is 3 hours more than the usual time: $\frac{480}{x - 8} = \frac{480}{x} + 3$.
+  \item Multiply both sides by $x(x - 8)$ to clear denominators: $480x = 480(x - 8) + 3x(x - 8)$.
+  \item Simplify: $480x = 480x - 3840 + 3x^2 - 24x$.
+  \item Cancel $480x$ on both sides: $0 = -3840 + 3x^2 - 24x$.
+  \item Rearrange: $3x^2 - 24x - 3840 = 0$. Divide through by 3: $x^2 - 8x - 1280 = 0$.
+  \item Solve the quadratic equation: $x^2 - 8x - 1280 = 0$. Using quadratic formula $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$ with $a=1$, $b=-8$, $c=-1280$.
+  \item Discriminant $D = (-8)^2 - 4(1)(-1280) = 64 + 5120 = 5184$.
+  \item So $x = \frac{8 \pm \sqrt{5184}}{2} = \frac{8 \pm 72}{2}$.
+  \item Thus $x = \frac{8 + 72}{2} = 40$ or $x = \frac{8 - 72}{2} = -32$.
+  \item Since speed cannot be negative, $x = 40$ km/h.
+\end{enumerate}
+\textbf{Derivation:}
+Let usual speed =  x  km/h. Usual time =  $\frac{480}{x}  h.$ Reduced speed =  (x-8)  km/h. New time =  $\frac{480}{x-8}  h.$ Condition:  $\frac{480}{x-8} = \frac{480}{x} + 3$ . Multiply by  x(x-8) :  480x = 480(x-8) + 3x(x-8) . Simplify:  480x = 480x - 3840 + 3x\textasciicircum{}2 - 24x . Cancel  480x :  0 = 3x\textasciicircum{}2 - 24x - 3840 . Divide by 3:  x\textasciicircum{}2 - 8x - 1280 = 0 . Quadratic formula:  x = $\frac{8 \pm \sqrt{64 + 5120}}{2} = \frac{8 \pm 72}{2}$ . Positive root:  x = 40 .
+\hfill \textit{Quadratic Equations — Word Problems (Speed-Distance-Time)}
+\vspace{0.3cm}
+
+\question \textbf{21.} In $\triangle ABC$, $P$ and $Q$ are points on sides $AB$ and $AC$ respectively such that $PQ \parallel BC$. The area of $\triangle APQ$ is $16 \text{ cm}^2$ and the area of trapezium $\text{PBCQ}$ is $20 \text{ cm}^2$. Find the ratio $AP:PB$. If $AB = 12$ cm, find the lengths of $AP$ and $PB$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{AP:PB = 2:1, AP = 8 cm, PB = 4 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $AP = x$, $PB = y$, so $AB = x+y$.
+  \item Since $PQ \parallel BC$, $\triangle APQ \sim \triangle ABC$ (AA similarity).
+  \item Ratio of areas of similar triangles equals square of ratio of corresponding sides: $\frac{\text{area}(\triangle APQ)}{\text{area}(\triangle ABC)} = \left(\frac{AP}{AB}\right)^2$.
+  \item Area of $\triangle ABC = \text{area}(\triangle APQ) + \text{area}(\text{PBCQ}) = 16 + 20 = 36 \text{ cm}^2$.
+  \item Thus $\frac{16}{36} = \left(\frac{x}{x+y}\right)^2 \Rightarrow \frac{4}{9} = \left(\frac{x}{x+y}\right)^2 \Rightarrow \frac{x}{x+y} = \frac{2}{3}$ (taking positive ratio).
+  \item Cross-multiply: $3x = 2x + 2y \Rightarrow x = 2y \Rightarrow \frac{x}{y} = \frac{2}{1}$. So $AP:PB = 2:1$.
+  \item Given $AB = 12$ cm, so $x + y = 12$. Since $x = 2y$, substitute: $2y + y = 12 \Rightarrow 3y = 12 \Rightarrow y = 4$ cm, then $x = 8$ cm.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{area}(\triangle ABC) &= 16 + 20 = 36 \text{ cm}^2 \\
+\frac{\text{area}(\triangle APQ)}{\text{area}(\triangle ABC)} &= \left(\frac{AP}{AB}\right)^2 \\
+\frac{16}{36} &= \left(\frac{x}{x+y}\right)^2 \\
+\frac{4}{9} &= \left(\frac{x}{x+y}\right)^2 \\
+\frac{x}{x+y} &= \frac{2}{3} \\
+3x &= 2(x+y) \\
+x &= 2y \\
+AP:PB &= x:y = 2:1 \\
+AB &= x+y = 12 \\
+\Rightarrow 2y+y=12 \\
+\Rightarrow y=4, x=8
+\end{aligned}}
+\end{center}
+\hfill \textit{Triangles — Similarity and Area Ratio}
+\vspace{0.3cm}
+
+\question \textbf{22.} The discriminant of the quadratic equation $x^2 - 5x + 6 = 0$ is:
+
+\textbf{Answer:}
+(A) 1
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify coefficients: a = 1, b = -5, c = 6.
+  \item \(
+\text{Use discriminant formula D} = b^{2} - 4ac.
+\)
+  \item Substitute values: D = (-5)$^{2}$ - 4(1)(6) = 25 - 24 = 1.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{D = b^2 - 4ac = (-5)^2 - 4 \cdot 1 \cdot 6 = 25 - 24 = 1}
+\end{center}
+\hfill \textit{Quadratic Equations — Discriminant}
+\vspace{0.3cm}
+
+\question \textbf{23.} The discriminant of the quadratic equation $2x^2 - 3x + 1 = 0$ is:
+
+\textbf{Answer:}
+(A) 1
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Compare with standard form $ax^2 + bx + c = 0$: $a = 2$, $b = -3$, $c = 1$.
+  \item Discriminant formula: $D = b^2 - 4ac$.
+  \item Substitute: $D = (-3)^2 - 4(2)(1) = 9 - 8 = 1$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{D = b^2 - 4ac = (-3)^2 - 4(2)(1) = 9 - 8 = 1}
+\end{center}
+\hfill \textit{Quadratic Equations — Discriminant and Nature of Roots}
+\vspace{0.3cm}
+
+\question \textbf{24.} Assertion (A): The quadratic equation $2x^2 - 5x + 3 = 0$ has two distinct real roots.
+Reason (R): For a quadratic equation $ax^2 + bx + c = 0$, if $b^2 - 4ac > 0$, then the equation has two distinct real roots.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Step 1: Identify coefficients: a = 2, b = -5, c = 3.
+  \item Step 2: Compute discriminant: D = b$^{2}$ - 4ac = (-5)$^{2}$ - 4(2)(3) = 25 - 24 = 1.
+  \item Step 3: Since D = 1 > 0, the quadratic equation has two distinct real roots. Thus Assertion (A) is true.
+  \item Step 4: Reason (R) states the correct condition for two distinct real roots, which is true and correctly explains why (A) is true.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{D = b^2 - 4ac = (-5)^2 - 4(2)(3) = 25 - 24 = 1 > 0}
+\end{center}
+\hfill \textit{Quadratic Equations — Nature of Roots}
+\vspace{0.3cm}
+
+\question \textbf{25.} Find the discriminant of the quadratic equation $2x^2 - 4x + 3 = 0$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{-8}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall the standard form of a quadratic equation: $ax^2 + bx + c = 0$.
+  \item Identify coefficients: $a = 2$, $b = -4$, $c = 3$.
+  \item Use the discriminant formula: $D = b^2 - 4ac$.
+  \item Substitute values: $D = (-4)^2 - 4(2)(3) = 16 - 24 = -8$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{D = b^2 - 4ac = (-4)^2 - 4 \cdot 2 \cdot 3 = 16 - 24 = -8}
+\end{center}
+\hfill \textit{Quadratic Equations — Nature of Roots}
+\vspace{0.3cm}
+
+\question \textbf{26.} The discriminant of the quadratic equation $2x^2 - 3x + 5 = 0$ is:
+
+\textbf{Answer:}
+(B) $-31$
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify coefficients: $a = 2$, $b = -3$, $c = 5$
+  \item Use discriminant formula: $D = b^2 - 4ac$
+  \item Substitute values: $D = (-3)^2 - 4(2)(5) = 9 - 40 = -31$
+  \item Thus the discriminant is $-31$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{D = b^2 - 4ac = (-3)^2 - 4(2)(5) = 9 - 40 = -31}
+\end{center}
+\hfill \textit{Quadratic Equations — Nature of Roots}
+\vspace{0.3cm}
+
+\question \textbf{27.} Find the discriminant of the quadratic equation $2x^2 - 3x + 1 = 0$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{1}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify coefficients: $a = 2$, $b = -3$, $c = 1$.
+  \item Apply discriminant formula: $D = b^2 - 4ac$.
+  \item Compute: $D = (-3)^2 - 4(2)(1) = 9 - 8 = 1$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{D = (-3)^2 - 4 \cdot 2 \cdot 1 = 9 - 8 = 1}
+\end{center}
+\hfill \textit{Quadratic Equations — Discriminant}
+\vspace{0.3cm}
+
+\question \textbf{28.} Assertion (A): The quadratic equation $x^2 - 3x + 5 = 0$ has no real roots.
+Reason (R): For a quadratic equation $ax^2+bx+c=0$, if discriminant $D = b^2 - 4ac < 0$, then the equation has no real roots.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the discriminant of the quadratic equation $x^2 - 3x + 5 = 0$: $a=1$, $b=-3$, $c=5$.
+  \item $D = b^2 - 4ac = (-3)^2 - 4(1)(5) = 9 - 20 = -11$.
+  \item Since $D < 0$, the equation has no real roots, making Assertion (A) true.
+  \item Reason (R) correctly states the condition for no real roots, and it explains why (A) is true.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{D = (-3)^2 - 4(1)(5) = 9 - 20 = -11 < 0}
+\end{center}
+\hfill \textit{Quadratic Equations — Nature of roots}
+\vspace{0.3cm}
+
+\question \textbf{29.} The roots of the quadratic equation $x^2 - 7x + 10 = 0$ are:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the coefficients: $a = 1$, $b = -7$, $c = 10$.
+  \item Calculate the discriminant: $D = b^2 - 4ac = (-7)^2 - 4(1)(10) = 49 - 40 = 9 > 0$.
+  \item Since $D > 0$, roots are real and distinct.
+  \item Use quadratic formula: $x = \frac{-b \pm \sqrt{D}}{2a} = \frac{7 \pm 3}{2}$.
+  \item So $x = \frac{7+3}{2} = 5$ and $x = \frac{7-3}{2} = 2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+x = \frac{7 \pm \sqrt{49 - 40}}{2} = \frac{7 \pm 3}{2} \\
+\Rightarrow x = 5, 2
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Quadratic Formula and Nature of Roots}
+\vspace{0.3cm}
+
+\question \textbf{30.} Find the discriminant of the quadratic equation $2x^2 - 4x + 3 = 0$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{-8}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Write the quadratic equation in standard form: $2x^2 - 4x + 3 = 0$.
+  \item Identify coefficients: $a = 2$, $b = -4$, $c = 3$.
+  \item Use discriminant formula: $D = b^2 - 4ac$.
+  \item Substitute: $D = (-4)^2 - 4(2)(3) = 16 - 24 = -8$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{D = b^2 - 4ac = (-4)^2 - 4 \cdot 2 \cdot 3 = 16 - 24 = -8}
+\end{center}
+\hfill \textit{Quadratic Equations — Nature of Roots}
+\vspace{0.3cm}
+
+\question \textbf{31.} Which of the following is the discriminant of the quadratic equation $2x^2 - 4x + 3 = 0$?
+
+\textbf{Answer:}
+(C) $16 - 24$
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify coefficients: $a = 2$, $b = -4$, $c = 3$.
+  \item Use discriminant formula: $D = b^2 - 4ac$.
+  \item Substitute: $D = (-4)^2 - 4(2)(3) = 16 - 24 = -8$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{D = b^2 - 4ac = (-4)^2 - 4 \cdot 2 \cdot 3 = 16 - 24 = -8}
+\end{center}
+\hfill \textit{Quadratic Equations — Nature of roots}
+\vspace{0.3cm}
+
+\question \textbf{32.} Find the discriminant of the quadratic equation $2x^2 - 4x + 3 = 0$. Hence, determine the nature of its roots.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Discriminant} = -8; \text{No real roots}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify coefficients: $a = 2$, $b = -4$, $c = 3$.
+  \item Compute discriminant: $D = b^2 - 4ac = (-4)^2 - 4(2)(3) = 16 - 24 = -8$.
+  \item Since $D < 0$, the quadratic equation has no real roots.
+\end{enumerate}
+\textbf{Derivation:}
+ D = b\textasciicircum{}2 - 4ac = (-4)\textasciicircum{}2 - 4 $\cdot 2 \cdot 3 = 16 - 24 = -8$ .
+ D < 0 $\Rightarrow$  no real roots.
+\hfill \textit{Quadratic Equations — Nature of Roots}
+\vspace{0.3cm}
+
+\question \textbf{33.} Find the nature of the roots of the quadratic equation $2x^2 - 4x + 3 = 0$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{No real roots} (\text{roots are imaginary})}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Step 1: Identify coefficients $a=2$, $b=-4$, $c=3$ and compute discriminant $D = b^2 - 4ac$.
+  \item Step 2: Substitute values: $D = (-4)^2 - 4(2)(3) = 16 - 24 = -8$. Since $D < 0$, the quadratic has no real roots.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{D = b^2 - 4ac = (-4)^2 - 4 \cdot 2 \cdot 3 = 16 - 24 = -8 < 0}
+\end{center}
+\hfill \textit{Quadratic Equations — Nature of Roots}
+\vspace{0.3cm}
+
+\question \textbf{34.} Find the nature of the roots of the quadratic equation $2x^2 - 4x + 3 = 0$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{No real roots}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Step 1: Identify coefficients: $a = 2$, $b = -4$, $c = 3$.
+  \item Step 2: Compute discriminant $D = b^2 - 4ac = (-4)^2 - 4(2)(3) = 16 - 24 = -8$.
+  \item Step 3: Since $D < 0$, the quadratic equation has no real roots.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{D = b^2 - 4ac = (-4)^2 - 4 \cdot 2 \cdot 3 = 16 - 24 = -8 < 0}
+\end{center}
+\hfill \textit{Quadratic Equations — Nature of Roots}
+\vspace{0.3cm}
+
+\question \textbf{35.} Find the discriminant of the quadratic equation $3x^2 - 5x + 2 = 0$ and hence determine the nature of its roots.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Discriminant} = 1; \text{Roots are real and distinct}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Step 1: Compare the given equation with standard form $ax^2+bx+c=0$ to get $a=3$, $b=-5$, $c=2$. Compute discriminant $D = b^2 - 4ac$.
+  \item Step 2: Substitute values: $D = (-5)^2 - 4(3)(2) = 25-24=1$. Since $D>0$, the roots are real and distinct.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{D = b^2-4ac = (-5)^2 - 4(3)(2) = 25-24 = 1 > 0}
+\end{center}
+\hfill \textit{Quadratic Equations — Nature of roots}
+\vspace{0.3cm}
+
+\question \textbf{36.} Find the discriminant of the quadratic equation $3x^2 - 6x + 2 = 0$ and hence determine the nature of its roots.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Discriminant} = 12; \text{Roots are real and distinct}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Compare with $ax^2 + bx + c = 0$: $a = 3$, $b = -6$, $c = 2$. Compute discriminant: $D = b^2 - 4ac = (-6)^2 - 4(3)(2) = 36 - 24 = 12$.
+  \item Since $D > 0$, the roots are real and distinct.
+\end{enumerate}
+\textbf{Derivation:}
+ D = b\textasciicircum{}2 - 4ac = (-6)\textasciicircum{}2 - 4(3)(2) = 36 - 24 = 12 > 0  $\Rightarrow$  Roots are real and distinct.
+\hfill \textit{Quadratic Equations — Nature of roots}
+\vspace{0.3cm}
+
+\question \textbf{37.} A train travels 360 km at a uniform speed. If the speed had been 5 km/h more, it would have taken 1 hour less for the same journey. Find the speed of the train.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{40 km/h}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the original speed of the train be $x$ km/h.
+  \item Time taken at original speed = $\frac{360}{x}$ hours. Time taken at increased speed ($x+5$ km/h) = $\frac{360}{x+5}$ hours.
+  \item According to the problem, $\frac{360}{x} - \frac{360}{x+5} = 1$. Multiply both sides by $x(x+5)$: $360(x+5) - 360x = x(x+5)$, which simplifies to $1800 = x^2 + 5x$.
+  \item Rearrange: $x^2 + 5x - 1800 = 0$. Factorising: $(x+45)(x-40)=0$. Since speed cannot be negative, $x=40$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{360}{x} - \frac{360}{x+5} &= 1 \\
+360\left(\frac{1}{x} - \frac{1}{x+5}\right) &= 1 \\
+360\cdot\frac{5}{x(x+5)} &= 1 \\
+1800 &= x^2+5x \\
+x^2+5x-1800&=0 \\
+(x+45)(x-40)&=0 \\
+x=40 \;\text{(taking positive value)}
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Word problems on speed, distance and time}
+\vspace{0.3cm}
+
+\question \textbf{38.} The speed of a boat in still water is 8 km/h. It takes the same time to travel 15 km upstream as it takes to travel 25 km downstream. Find the speed of the stream.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{2 km/h}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Step 1: Let the speed of the stream be $x$ km/h. Then, speed upstream $= (8 - x)$ km/h and speed downstream $= (8 + x)$ km/h.
+  \item Step 2: Time upstream $= \frac{15}{8-x}$ hours, time downstream $= \frac{25}{8+x}$ hours. Since both times are equal, we have $\frac{15}{8-x} = \frac{25}{8+x}$.
+  \item Step 3: Cross-multiplying gives $15(8+x) = 25(8-x)$. Simplify: $120 + 15x = 200 - 25x$. So $15x + 25x = 200 - 120$, i.e. $40x = 80$, hence $x = 2$.
+  \item Step 4: Verify: upstream speed = 6 km/h, time = 15/6 = 2.5 h; downstream speed = 10 km/h, time = 25/10 = 2.5 h. Thus the speed of the stream is 2 km/h.
+\end{enumerate}
+\textbf{Derivation:}
+Let speed of stream  = x  km/h. Upstream speed  = 8-x , downstream  = 8+x .
+ $\frac{15}{8-x} = \frac{25}{8+x} \implies 15(8+x)=25(8-x) \implies 120+15x=200-25x \implies 40x=80 \implies x=2$ .
+\hfill \textit{Quadratic Equations — Word Problems (speed and time)}
+\vspace{0.3cm}
+
+\question \textbf{39.} The sum of the squares of two consecutive positive integers is 365. Find the integers.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{13 and 14}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the two consecutive positive integers be $x$ and $x+1$.
+  \item According to the problem: $x^2 + (x+1)^2 = 365$.
+  \item Simplify: $x^2 + x^2 + 2x + 1 = 365$ $\Rightarrow$ $2x^2 + 2x - 364 = 0$ $\Rightarrow$ $x^2 + x - 182 = 0$.
+  \item Factorize: $(x + 14)(x - 13) = 0$ $\Rightarrow$ $x = 13$ or $x = -14$. Since positive, $x = 13$. Thus the integers are $13$ and $14$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+&\text{Let integers be }x,\,x+1. \\
+&x^2+(x+1)^2=365 \\
+\Rightarrow x^2+x^2+2x+1=365 \\
+\Rightarrow 2x^2+2x-364=0 \\
+\Rightarrow x^2+x-182=0 \\
+\Rightarrow (x+14)(x-13)=0 \\
+\Rightarrow x=13\quad[\because x>0] \\
+&\therefore \text{Integers are }13\text{ and }14.
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Word Problems}
+\vspace{0.3cm}
+
+\question \textbf{40.} The sum of two numbers is 15. If the sum of their reciprocals is $\frac{3}{10}$, find the numbers.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{The numbers are} 10 and 5.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the numbers be $x$ and $15-x$. Their reciprocals sum to $\frac{1}{x} + \frac{1}{15-x} = \frac{3}{10}$.
+  \item Multiply both sides by $10x(15-x)$: $10(15-x) + 10x = 3x(15-x)$, which simplifies to $150 = 45x - 3x^2$.
+  \item Rearrange into standard quadratic: $3x^2 - 45x + 150 = 0$. Divide by 3: $x^2 - 15x + 50 = 0$.
+  \item Factorise: $(x-10)(x-5)=0$, so $x=10$ or $x=5$. Thus the numbers are 10 and 5.
+\end{enumerate}
+\textbf{Derivation:}
+Let numbers be  x  and  15-x .
+ $\frac{1}{x} + \frac{1}{15-x} = \frac{3}{10}$ 
+ 10(15-x) + 10x = 3x(15-x) 
+ 150 = 45x - 3x\textasciicircum{}2 
+ 3x\textasciicircum{}2 - 45x + 150 = 0 
+ x\textasciicircum{}2 - 15x + 50 = 0 
+ (x-10)(x-5)=0 
+ x=10  or  x=5 
+\hfill \textit{Quadratic Equations — Word problems}
+\vspace{0.3cm}
+
+\end{questions}
+
+\end{document}

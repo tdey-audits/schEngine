@@ -1,0 +1,39 @@
+{
+  "batch_id": "20260604_122602_19bfdc89",
+  "generated_at": "2026-06-04T12:26:02.380228",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "The decimal expansion of $\\frac{147}{1200}$ will terminate after how many places of decimal?",
+      "answer": "(C) 4",
+      "solution": {
+        "steps": [
+          "Step 1: Simplify the fraction $\\frac{147}{1200}$ by dividing numerator and denominator by 3 to get $\\frac{49}{400}$.",
+          "Step 2: Factorise the denominator: $400 = 2^4 \\times 5^2$.",
+          "Step 3: For a fraction in simplest form, the decimal expansion terminates if the denominator is of the form $2^m \\times 5^n$.",
+          "Step 4: The highest power among 2 and 5 in the denominator is $\\max(4,2) = 4$, so the decimal expansion terminates after 4 decimal places."
+        ],
+        "derivation": "$\\frac{147}{1200} = \\frac{49}{400} = \\frac{49}{2^4 \\times 5^2}$\nSince denominator is of the form $2^m \\times 5^n$, decimal expansion terminates after $\\max(m,n) = \\max(4,2) = 4$ places."
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Terminating and Non-terminating Decimals",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 2",
+        "(B) 3",
+        "(C) 4",
+        "(D) 5"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T12:26:02.380154",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_122602_b7ed46"
+    }
+  ]
+}

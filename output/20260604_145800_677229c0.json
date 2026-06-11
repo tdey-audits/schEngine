@@ -1,0 +1,81 @@
+{
+  "batch_id": "20260604_145800_677229c0",
+  "generated_at": "2026-06-04T14:58:00.959876",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Coordinate Geometry",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "The distance of the point $P(3, 4)$ from the origin $(0, 0)$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify the coordinates of the origin $(x_1, y_1) = (0, 0)$ and point $P(x_2, y_2) = (3, 4)$.",
+          "Use the distance formula $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.",
+          "Substitute the values $d = \\sqrt{(3 - 0)^2 + (4 - 0)^2}$.",
+          "Calculate $d = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5$."
+        ],
+        "derivation": "$d = \\sqrt{(3-0)^2 + (4-0)^2} \\\\ d = \\sqrt{3^2 + 4^2} \\\\ d = \\sqrt{9 + 16} \\\\ d = \\sqrt{25} \\\\ d = 5$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Distance Formula",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $3$",
+        "(B) $4$",
+        "(C) $5$",
+        "(D) $7$"
+      ],
+      "diagram": {
+        "required": true,
+        "type": "coordinate",
+        "caption": "Distance of point P from origin",
+        "elements": [
+          {
+            "kind": "axis"
+          },
+          {
+            "kind": "grid"
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O(0,0)",
+            "position": "below left"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 3,
+            "y": 4,
+            "label": "P(3,4)",
+            "position": "above right"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "P",
+            "label": "d",
+            "label_position": "above"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:58:00.959710",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145800_33da0d_01"
+    }
+  ]
+}

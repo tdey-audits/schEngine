@@ -1,0 +1,86 @@
+{
+  "batch_id": "20260610_150409_2a555b10",
+  "generated_at": "2026-06-10T15:04:09.484122",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Pair of Linear Equations in Two Variables",
+  "subtopic": "graphical method",
+  "difficulty": "medium",
+  "question_type": "vsa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Given the linear equation $3x + 2y - 12 = 0$, write another linear equation in two variables such that the geometrical representation of the pair of lines so formed is parallel. Justify your answer using the ratio condition.",
+      "answer": "Any equation of the form $3x + 2y - k = 0$ where $k \\neq 12$, for example $3x + 2y - 10 = 0$.",
+      "solution": {
+        "steps": [
+          "Identify the condition for parallel lines, which is $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$.",
+          "Choose coefficients $a_2 = 3$ and $b_2 = 2$ to satisfy the first part of the ratio, and select a constant $c_2$ such that $\\frac{3}{3} = \\frac{2}{2} \\neq \\frac{-12}{-k}$."
+        ],
+        "derivation": "$a_1 = 3, b_1 = 2, c_1 = -12 \\\\ \\text{For parallel lines: } \\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2} \\\\ \\text{Let } a_2 = 3, b_2 = 2 \\\\ \\frac{3}{3} = \\frac{2}{2} \\neq \\frac{-12}{c_2} \\\\ 1 = 1 \\neq \\frac{-12}{c_2} \\\\ c_2 \\neq -12 \\\\ \\text{Choosing } c_2 = -10, \\text{ we get } 3x + 2y - 10 = 0$"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "graphical method",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-10T15:04:09.484045",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 24,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 25,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 23,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.2",
+            "question_no": 1,
+            "question_type": "vsa",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.2",
+            "question_no": 2,
+            "question_type": "vsa",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.2",
+            "question_no": 3,
+            "question_type": "vsa",
+            "estimated_depth": "medium"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150409_86dcde_01"
+    }
+  ]
+}

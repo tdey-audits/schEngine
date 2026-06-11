@@ -1,0 +1,119 @@
+{
+  "batch_id": "20260604_134550_28fd8f8e",
+  "generated_at": "2026-06-04T13:45:50.078997",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Prove that the lengths of tangents drawn from an external point to a circle are equal.",
+      "answer": "PA = PB",
+      "solution": {
+        "steps": [
+          "Draw a circle with center O and an external point P.",
+          "Draw tangents PA and PB touching the circle at A and B respectively.",
+          "Join OA, OB, and OP.",
+          "Consider triangles OAP and OBP.",
+          "Use the property that the tangent at any point of a circle is perpendicular to the radius through the point of contact.",
+          "Use RHS congruence criterion to prove triangles are congruent.",
+          "Conclude that corresponding parts of congruent triangles are equal."
+        ],
+        "derivation": "In $\\triangle OAP$ and $\\triangle OBP$: \\\\ 1. $\\angle OAP = \\angle OBP = 90^\\circ$ (Tangent $\\perp$ radius) \\\\ 2. $OP = OP$ (Common side) \\\\ 3. $OA = OB$ (Radii of the same circle) \\\\ By RHS congruence rule, $\\triangle OAP \\cong \\triangle OBP$. \\\\ Therefore, $PA = PB$ (CPCT)."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:50.078776",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134550_06feb8_01"
+    },
+    {
+      "question": "Two concentric circles are of radii $5\\text{ cm}$ and $3\\text{ cm}$. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "answer": "8 cm",
+      "solution": {
+        "steps": [
+          "Let O be the center of both circles.",
+          "Let AB be the chord of the larger circle touching the smaller circle at point P.",
+          "OP is the radius of the smaller circle, so $OP = 3\\text{ cm}$.",
+          "OA is the radius of the larger circle, so $OA = 5\\text{ cm}$.",
+          "Since AB is a tangent to the inner circle, $OP \\perp AB$.",
+          "In right $\\triangle OPA$, use Pythagoras theorem to find AP.",
+          "Since the perpendicular from the center bisects the chord, $AB = 2 \\times AP$."
+        ],
+        "derivation": "In $\\triangle OPA$: $OA^2 = OP^2 + AP^2$ \\\\ $5^2 = 3^2 + AP^2$ \\\\ $25 = 9 + AP^2$ \\\\ $AP^2 = 16 \\Rightarrow AP = 4\\text{ cm}$. \\\\ Since $OP \\perp AB$, $AP = PB = 4\\text{ cm}$. \\\\ $AB = AP + PB = 4 + 4 = 8\\text{ cm}$."
+      },
+      "topic": "Circles",
+      "subtopic": "Properties of tangents",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:50.078849",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134550_3b9dcf_02"
+    },
+    {
+      "question": "A quadrilateral $ABCD$ is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.",
+      "answer": "AB + CD = AD + BC",
+      "solution": {
+        "steps": [
+          "Identify the points of contact on sides AB, BC, CD, and DA as P, Q, R, and S respectively.",
+          "Use the theorem that lengths of tangents from an external point to a circle are equal.",
+          "Express segments AP, BP, BQ, CQ, CR, DR, DS, and AS in terms of equality.",
+          "Sum the equations formed by these segments.",
+          "Rearrange the terms to group segments forming the sides of the quadrilateral."
+        ],
+        "derivation": "AP = AS (1), BP = BQ (2), CR = CQ (3), DR = DS (4) \\\\ Add (1), (2), (3), and (4): \\\\ (AP + BP) + (CR + DR) = (AS + DS) + (BQ + CQ) \\\\ AB + CD = AD + BC."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:50.078869",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134550_788ced_03"
+    },
+    {
+      "question": "If a hexagon $ABCDEF$ circumscribes a circle, prove that $AB + CD + EF = BC + DE + FA$.",
+      "answer": "AB + CD + EF = BC + DE + FA",
+      "solution": {
+        "steps": [
+          "Let the points of contact be P, Q, R, S, T, and U on sides AB, BC, CD, DE, EF, and FA respectively.",
+          "By the theorem of tangents from an external point, $AP=AF$, $BP=BQ$, $CQ=CR$, $DR=DS$, $ES=ET$, $FT=FU$ is incorrect; rather, label them appropriately.",
+          "Correct logic: $AP=AU, BP=BQ, CQ=CR, DR=DS, ES=ET, FT=FU$.",
+          "Sum the left side $AB + CD + EF$ using these relations.",
+          "Observe that the sum equals the sum of the remaining sides $BC + DE + FA$."
+        ],
+        "derivation": "Let points of contact be $P_1, P_2, P_3, P_4, P_5, P_6$. \\\\ $AB+CD+EF = (AP_1+P_1B) + (CP_3+P_3D) + (EP_5+P_5F) = (AP_6+P_2B) + (CP_2+P_4D) + (EP_4+P_6F) \\\\ Rearranging: (P_2B+CP_2) + (P_4D+EP_4) + (P_6F+AP_6) = BC + DE + FA$."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:50.078884",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134550_9618ca_04"
+    }
+  ]
+}

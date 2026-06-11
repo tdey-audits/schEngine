@@ -1,0 +1,155 @@
+{
+  "batch_id": "20260604_141037_89adc8ba",
+  "generated_at": "2026-06-04T14:10:37.409804",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Constructions",
+  "subtopic": "construction of tangents",
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The length of the tangent drawn from an external point to a circle is always equal to the radius of the circle. Reason (R): The tangent at any point of a circle is perpendicular to the radius through the point of contact.",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "The length of a tangent is independent of the radius length.",
+          "The theorem states that a tangent is perpendicular to the radius at the point of contact."
+        ],
+        "derivation": "A: False, R: True"
+      },
+      "topic": "Constructions",
+      "subtopic": "construction of tangents",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:37.409643",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141037_79f47e_01"
+    },
+    {
+      "question": "Assertion (A): To construct a pair of tangents to a circle from an external point, the angle between the tangents is supplementary to the angle subtended by the line segment joining the points of contact at the center. Reason (R): The sum of opposite angles in a cyclic quadrilateral is $180^\\circ$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "The quadrilateral formed by the center, two contact points, and the external point has two right angles.",
+          "The sum of angles is $360^\\circ$, so the remaining two must sum to $180^\\circ$."
+        ],
+        "derivation": "A: True, R: True, R explains A"
+      },
+      "topic": "Constructions",
+      "subtopic": "construction of tangents",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:37.409696",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141037_82d9a6_02"
+    },
+    {
+      "question": "Assertion (A): It is impossible to construct a tangent to a circle from a point lying inside the circle. Reason (R): A tangent touches the circle at only one point.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "A line passing through an interior point will always be a secant, not a tangent.",
+          "A tangent by definition meets the circle at exactly one point on the circumference."
+        ],
+        "derivation": "A: True, R: True, R explains A"
+      },
+      "topic": "Constructions",
+      "subtopic": "construction of tangents",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:37.409707",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141037_8e2d1b_03"
+    },
+    {
+      "question": "Assertion (A): The number of tangents that can be drawn from a point on the circle to the circle is exactly two. Reason (R): A point on the circle lies on the circumference.",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Only one tangent can be drawn from a point on the circle.",
+          "The reason is a true statement about the location of the point."
+        ],
+        "derivation": "A: False, R: True"
+      },
+      "topic": "Constructions",
+      "subtopic": "construction of tangents",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:37.409716",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141037_0bec62_04"
+    },
+    {
+      "question": "Assertion (A): When constructing tangents to a circle from an external point $P$, we bisect the line segment $OP$ where $O$ is the center. Reason (R): The perpendicular bisector of $OP$ helps in finding the midpoint which acts as the center of a circle passing through $O$ and $P$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "To find points of contact, we draw a circle with diameter $OP$.",
+          "The midpoint is found by constructing the perpendicular bisector of $OP$."
+        ],
+        "derivation": "A: True, R: True, R explains A"
+      },
+      "topic": "Constructions",
+      "subtopic": "construction of tangents",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:37.409725",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141037_f35e56_05"
+    }
+  ]
+}

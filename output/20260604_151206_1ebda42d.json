@@ -1,0 +1,248 @@
+{
+  "batch_id": "20260604_151206_1ebda42d",
+  "generated_at": "2026-06-04T15:12:06.859973",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "In $\\triangle ABC$, $DE \\parallel BC$ such that $AD = (4x - 3) \\text{ cm}$, $AE = (8x - 7) \\text{ cm}$, $BD = (3x - 1) \\text{ cm}$, and $CE = (5x - 3) \\text{ cm}$. Find the value of $x$.",
+      "answer": "$x = 1$ or $x = 0.8$",
+      "solution": {
+        "steps": [
+          "Apply Thales Theorem (Basic Proportionality Theorem) since $DE \\parallel BC$.",
+          "Set up the ratio $\\frac{AD}{BD} = \\frac{AE}{CE}$.",
+          "Solve the resulting quadratic equation for $x$."
+        ],
+        "derivation": "$\\frac{4x - 3}{3x - 1} = \\frac{8x - 7}{5x - 3} \\\\ (4x - 3)(5x - 3) = (8x - 7)(3x - 1) \\\\ 20x^2 - 12x - 15x + 9 = 24x^2 - 8x - 21x + 7 \\\\ 20x^2 - 27x + 9 = 24x^2 - 29x + 7 \\\\ 4x^2 - 2x - 2 = 0 \\\\ 2x^2 - x - 1 = 0 \\\\ (2x + 1)(x - 1) = 0 \\\\ x = 1, x = -0.5$"
+      },
+      "topic": "Triangles",
+      "subtopic": "Basic Proportionality Theorem",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "elements": [
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "kind": "segment",
+            "from": "D",
+            "to": "E"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 2,
+            "y": 4,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 0,
+            "y": 0,
+            "label": "B"
+          },
+          {
+            "kind": "point",
+            "id": "C",
+            "x": 4,
+            "y": 0,
+            "label": "C"
+          },
+          {
+            "kind": "point",
+            "id": "D",
+            "x": 1,
+            "y": 2,
+            "label": "D"
+          },
+          {
+            "kind": "point",
+            "id": "E",
+            "x": 3,
+            "y": 2,
+            "label": "E"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T15:12:06.859442",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151206_ea1099_01"
+    },
+    {
+      "question": "Two poles of height $6 \\text{ m}$ and $11 \\text{ m}$ stand on a plane ground. If the distance between their feet is $12 \\text{ m}$, find the distance between their tops.",
+      "answer": "$13 \\text{ m}$",
+      "solution": {
+        "steps": [
+          "Represent the poles as vertical segments on a horizontal ground.",
+          "Form a right-angled triangle by drawing a line parallel to the ground from the top of the shorter pole.",
+          "Use the Pythagorean theorem to calculate the hypotenuse."
+        ],
+        "derivation": "$\\text{Let } AB = 6 \\text{ m and } CD = 11 \\text{ m be the poles.} \\\\ \\text{Distance between feet } AC = 12 \\text{ m.} \\\\ \\text{Draw } BE \\perp CD \\text{ such that } CE = AB = 6 \\text{ m.} \\\\ DE = CD - CE = 11 - 6 = 5 \\text{ m.} \\\\ \\text{In right } \\triangle BED, BD^2 = BE^2 + DE^2 \\\\ BD^2 = 12^2 + 5^2 = 144 + 25 = 169 \\\\ BD = \\sqrt{169} = 13 \\text{ m}$"
+      },
+      "topic": "Triangles",
+      "subtopic": "Pythagoras Theorem",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T15:12:06.859570",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151206_3e60b7_02"
+    },
+    {
+      "question": "In $\\triangle ABC$, $\\angle A = 90^\\circ$ and $AD \\perp BC$. If $AD = 8 \\text{ cm}$ and $BD = 4 \\text{ cm}$, find the length of $CD$.",
+      "answer": "$16 \\text{ cm}$",
+      "solution": {
+        "steps": [
+          "Use the property of similarity in a right triangle where the altitude to the hypotenuse divides the triangle into two triangles similar to the whole and each other.",
+          "Establish the ratio $\\triangle ADB \\sim \\triangle CDA$.",
+          "Solve for $CD$ using $\\frac{AD}{BD} = \\frac{CD}{AD}$."
+        ],
+        "derivation": "$\\text{In } \\triangle ABC, \\angle A = 90^\\circ \\text{ and } AD \\perp BC. \\\\ \\triangle ADB \\sim \\triangle CDA \\\\ \\frac{AD}{CD} = \\frac{BD}{AD} \\\\ AD^2 = BD \\times CD \\\\ 8^2 = 4 \\times CD \\\\ 64 = 4 \\times CD \\\\ CD = 16 \\text{ cm}$"
+      },
+      "topic": "Triangles",
+      "subtopic": "Similarity of Triangles",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "elements": [
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "D"
+          },
+          {
+            "kind": "right_angle",
+            "points": [
+              "B",
+              "A",
+              "C"
+            ]
+          },
+          {
+            "kind": "right_angle",
+            "points": [
+              "A",
+              "D",
+              "C"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T15:12:06.859608",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151206_09bd88_03"
+    },
+    {
+      "question": "The perimeters of two similar triangles are $30 \\text{ cm}$ and $20 \\text{ cm}$ respectively. If one side of the first triangle is $9 \\text{ cm}$, find the length of the corresponding side of the second triangle.",
+      "answer": "$6 \\text{ cm}$",
+      "solution": {
+        "steps": [
+          "Recall that the ratio of perimeters of two similar triangles is equal to the ratio of their corresponding sides.",
+          "Set up the proportion $\\frac{P_1}{P_2} = \\frac{S_1}{S_2}$.",
+          "Substitute the given values and solve for $S_2$."
+        ],
+        "derivation": "$\\frac{P_1}{P_2} = \\frac{S_1}{S_2} \\\\ \\frac{30}{20} = \\frac{9}{S_2} \\\\ 30 \\times S_2 = 20 \\times 9 \\\\ 30 \\times S_2 = 180 \\\\ S_2 = \\frac{180}{30} = 6 \\text{ cm}$"
+      },
+      "topic": "Triangles",
+      "subtopic": "Areas of Similar Triangles",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T15:12:06.859637",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151206_9b7587_04"
+    },
+    {
+      "question": "In $\\triangle ABC$, $P$ and $Q$ are points on sides $AB$ and $AC$ such that $PQ \\parallel BC$. If $AP = 3 \\text{ cm}$, $PB = 2 \\text{ cm}$ and $AQ = 2.7 \\text{ cm}$, find $AC$.",
+      "answer": "$4.5 \\text{ cm}$",
+      "solution": {
+        "steps": [
+          "Apply the Thales theorem: $\\frac{AP}{AB} = \\frac{AQ}{AC}$.",
+          "Calculate $AB = AP + PB = 3 + 2 = 5 \\text{ cm}$.",
+          "Solve the ratio for $AC$."
+        ],
+        "derivation": "$\\frac{AP}{AP + PB} = \\frac{AQ}{AC} \\\\ \\frac{3}{3 + 2} = \\frac{2.7}{AC} \\\\ \\frac{3}{5} = \\frac{2.7}{AC} \\\\ 3 \\times AC = 5 \\times 2.7 \\\\ 3 \\times AC = 13.5 \\\\ AC = 4.5 \\text{ cm}$"
+      },
+      "topic": "Triangles",
+      "subtopic": "Basic Proportionality Theorem",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "elements": [
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "Q"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "label": "P"
+          },
+          {
+            "kind": "point",
+            "id": "Q",
+            "label": "Q"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T15:12:06.859664",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151206_eb5f4d_05"
+    }
+  ]
+}

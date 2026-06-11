@@ -1,0 +1,254 @@
+{
+  "batch_id": "20260604_145734_6657a30b",
+  "generated_at": "2026-06-04T14:57:34.587334",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The length of a tangent drawn from an external point to a circle is always equal to the radius of the circle. Reason (R): A tangent to a circle is perpendicular to the radius through the point of contact.",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Check Assertion (A): The length of the tangent is given by $\\sqrt{d^2 - r^2}$, where $d$ is the distance from the external point to the center. It is not necessarily equal to the radius.",
+          "Check Reason (R): This is a standard theorem in NCERT, which is true.",
+          "Conclusion: A is false, but R is true."
+        ],
+        "derivation": "$Length = \\sqrt{d^2 - r^2} \\neq r \\text{ (Assertion is false)} \\\\ \\text{Tangent} \\perp \\text{radius (Reason is true)}$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 4,
+            "y": 0,
+            "label": "P"
+          },
+          {
+            "kind": "point",
+            "id": "T",
+            "x": 0,
+            "y": 2,
+            "label": "T"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "T",
+            "label": "r"
+          },
+          {
+            "kind": "segment",
+            "from": "T",
+            "to": "P",
+            "label": "tangent"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:34.587179",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145734_9c4b66_01"
+    },
+    {
+      "question": "Assertion (A): The number of tangents that can be drawn from a point inside a circle is zero. Reason (R): A tangent to a circle intersects the circle at only one point.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Check Assertion (A): Any point inside the circle divides the plane such that no line passing through it can touch the circle at only one point.",
+          "Check Reason (R): By definition, a tangent intersects a circle at exactly one point.",
+          "Conclusion: Both A and R are true and R is the correct explanation of A."
+        ],
+        "derivation": "\\text{If point is inside, all lines are secants. Hence 0 tangents.}"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:34.587226",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145734_791fa6_02"
+    },
+    {
+      "question": "Assertion (A): If the angle between two tangents drawn from a point $P$ to a circle of radius $r$ and center $O$ is $60^\\circ$, then $OP = 2r$. Reason (R): The line segment joining the center to the external point bisects the angle between the two tangents.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Check Assertion (A): In $\\triangle OTP$, $\\angle TPO = 30^\\circ$ (half of $60^\\circ$). $\\sin(30^\\circ) = r / OP \\Rightarrow 1/2 = r / OP \\Rightarrow OP = 2r$.",
+          "Check Reason (R): This is a standard property of tangents from an external point.",
+          "Conclusion: Both A and R are true and R is the correct explanation of A."
+        ],
+        "derivation": "\\sin(30^\\circ) = \\frac{OT}{OP} \\Rightarrow \\frac{1}{2} = \\frac{r}{OP} \\Rightarrow OP = 2r"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:34.587236",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145734_7b8ca8_03"
+    },
+    {
+      "question": "Assertion (A): Two concentric circles have the same center. Reason (R): A chord of the larger circle which touches the smaller circle is bisected at the point of contact.",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Check Assertion (A): Definition of concentric circles is correct.",
+          "Check Reason (R): This is a property of chords and tangents, which is true.",
+          "Conclusion: While both are true, R does not explain why circles are called 'concentric'."
+        ],
+        "derivation": "\\text{Concentric circles share a center. Assertion is true.} \\\\ \\text{Chord property is true, but does not define concentricity.}"
+      },
+      "topic": "Circles",
+      "subtopic": "General properties",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:34.587244",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145734_d3b076_04"
+    },
+    {
+      "question": "Assertion (A): The length of the tangent from a point $A$ at a distance of $5 \\text{ cm}$ from the centre of the circle of radius $3 \\text{ cm}$ is $4 \\text{ cm}$. Reason (R): The tangent at any point of a circle is perpendicular to the radius through the point of contact.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Check Assertion (A): By Pythagoras theorem, $L^2 + 3^2 = 5^2 \\Rightarrow L^2 = 25 - 9 = 16 \\Rightarrow L = 4 \\text{ cm}$.",
+          "Check Reason (R): Correct geometric theorem.",
+          "Conclusion: Both are true and R justifies the use of Pythagoras theorem."
+        ],
+        "derivation": "L = \\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = \\sqrt{16} = 4 \\text{ cm}"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A)",
+        "(B)",
+        "(C)",
+        "(D)"
+      ],
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 3
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 5,
+            "y": 0,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "T",
+            "x": 0,
+            "y": 3,
+            "label": "T"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "T",
+            "label": "3 cm"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "A",
+            "label": "5 cm"
+          },
+          {
+            "kind": "segment",
+            "from": "T",
+            "to": "A",
+            "label": "4 cm"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:34.587251",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145734_dc91ef_05"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "batch_id": "20260604_135654_138737b6",
+  "generated_at": "2026-06-04T13:56:54.663385",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A quadrilateral $ABCD$ is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.",
+      "answer": "AB + CD = AD + BC",
+      "solution": {
+        "steps": [
+          "Use the theorem that tangents drawn from an external point to a circle are equal in length.",
+          "Identify pairs of equal tangents from vertices A, B, C, and D.",
+          "Add the four equations to group the sides of the quadrilateral.",
+          "Substitute the grouped segments to show the sum of opposite sides is equal."
+        ],
+        "derivation": "Let points of contact be P, Q, R, S on AB, BC, CD, DA respectively. AP=AS, BP=BQ, CQ=CR, DR=DS. Adding them: (AP+BP)+(CR+DR) = (AS+DS)+(BQ+CQ) => AB+CD = AD+BC."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:54.663253",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135654_8517a6_01"
+    },
+    {
+      "question": "Two concentric circles are of radii $5\\text{ cm}$ and $3\\text{ cm}$. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "answer": "8\\text{ cm}",
+      "solution": {
+        "steps": [
+          "Draw the radius to the point of contact, which is perpendicular to the tangent.",
+          "Form a right-angled triangle with the radius of the smaller circle, the radius of the larger circle, and half the chord.",
+          "Apply Pythagoras theorem to find the length of half the chord.",
+          "Multiply the result by 2 to get the full chord length."
+        ],
+        "derivation": "r_1=5, r_2=3. Let half-chord be x. x^2 + 3^2 = 5^2 => x^2 = 25 - 9 = 16 => x = 4. Chord length = 2x = 8\\text{ cm}."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:54.663295",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135654_00ff81_02"
+    },
+    {
+      "question": "If a tangent $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\\circ$, then find $\\angle POA$.",
+      "answer": "50^\\circ",
+      "solution": {
+        "steps": [
+          "Identify that the line segment $OP$ bisects the angle between the tangents.",
+          "Calculate the angle $\\angle APO$ as half of $\\angle APB$.",
+          "Use the property that the radius is perpendicular to the tangent at the point of contact.",
+          "Solve for $\\angle POA$ in the right-angled triangle $\\triangle OAP$."
+        ],
+        "derivation": "\\angle APB = 80^\\circ \\implies \\angle APO = 40^\\circ. \\angle OAP = 90^\\circ. \\angle POA = 180^\\circ - (90^\\circ + 40^\\circ) = 50^\\circ."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:54.663304",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135654_8cf710_03"
+    },
+    {
+      "question": "Prove that the lengths of tangents drawn from an external point to a circle are equal.",
+      "answer": "Proof",
+      "solution": {
+        "steps": [
+          "Construct a circle with center O and external point P.",
+          "Draw radii OA and OB to the points of contact A and B.",
+          "Consider the two triangles $\\triangle OAP$ and $\\triangle OBP$.",
+          "Prove congruence using RHS criterion and conclude PA = PB by CPCT."
+        ],
+        "derivation": "In \\triangle OAP and \\triangle OBP: OA=OB (radii), OP=OP (common), \\angle OAP=\\angle OBP=90^\\circ. By RHS, \\triangle OAP \\cong \\triangle OBP. Thus, PA=PB."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:54.663311",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135654_66c481_04"
+    },
+    {
+      "question": "A tangent $PQ$ at a point $P$ of a circle of radius $5\\text{ cm}$ meets a line through the centre $O$ at a point $Q$ so that $OQ = 12\\text{ cm}$. Find the length $PQ$.",
+      "answer": "\\sqrt{119}\\text{ cm}",
+      "solution": {
+        "steps": [
+          "Recognize that the tangent $PQ$ is perpendicular to the radius $OP$.",
+          "Identify $\\triangle OPQ$ as a right-angled triangle with $\\angle OPQ = 90^\\circ$.",
+          "Apply the Pythagoras theorem: $OQ^2 = OP^2 + PQ^2$.",
+          "Substitute the given values and solve for $PQ$."
+        ],
+        "derivation": "OP=5, OQ=12. 12^2 = 5^2 + PQ^2 \\implies 144 = 25 + PQ^2 \\implies PQ^2 = 119 \\implies PQ = \\sqrt{119}\\text{ cm}."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:54.663317",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135654_5de45e_05"
+    }
+  ]
+}

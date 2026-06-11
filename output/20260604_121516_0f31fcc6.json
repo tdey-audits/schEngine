@@ -1,0 +1,35 @@
+{
+  "batch_id": "20260604_121516_0f31fcc6",
+  "generated_at": "2026-06-04T12:15:16.394591",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "In $\\triangle ABC$, $D$ is a point on $BC$ such that $\\angle BAD = \\angle CAD$. If $AB = 6$ cm, $AC = 8$ cm, and $BC = 7$ cm, find the length of $BD$.",
+      "answer": "$BD = 3$ cm",
+      "solution": {
+        "steps": [
+          "Given that $\\angle BAD = \\angle CAD$, so $AD$ is the angle bisector of $\\angle A$ in $\\triangle ABC$.",
+          "By the Angle Bisector Theorem, the ratio of the lengths of the two segments of the opposite side is equal to the ratio of the adjacent sides. That is, $\\frac{BD}{DC} = \\frac{AB}{AC}$.",
+          "Substitute the given values: $AB = 6$, $AC = 8$, and $BC = BD + DC = 7$. So $\\frac{BD}{DC} = \\frac{6}{8} = \\frac{3}{4}$.",
+          "Let $BD = 3x$ and $DC = 4x$. Then $3x + 4x = 7$, so $7x = 7$, hence $x = 1$.",
+          "Therefore, $BD = 3 \\times 1 = 3$ cm."
+        ],
+        "derivation": "\\frac{BD}{DC} = \\frac{AB}{AC} \\implies \\frac{BD}{7 - BD} = \\frac{6}{8} = \\frac{3}{4} \\\\ 4 \\cdot BD = 3 \\cdot (7 - BD) \\\\ 4BD = 21 - 3BD \\\\ 7BD = 21 \\\\ BD = 3"
+      },
+      "topic": "Triangles",
+      "subtopic": "Angle Bisector Theorem",
+      "difficulty": 3,
+      "marks": 3,
+      "type": "proof",
+      "question_number": 1,
+      "metadata": {
+        "generated_at": "2026-06-04T12:15:16.394493",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_121516_fd4886"
+    }
+  ]
+}

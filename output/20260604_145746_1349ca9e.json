@@ -1,0 +1,277 @@
+{
+  "batch_id": "20260604_145746_1349ca9e",
+  "generated_at": "2026-06-04T14:57:46.943940",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A tangent $PQ$ at a point $P$ of a circle of radius $5$ $cm$ meets a line through the centre $O$ at a point $Q$ so that $OQ = 13$ $cm$. Find the length of $PQ$.",
+      "answer": "$12$ $cm$",
+      "solution": {
+        "steps": [
+          "Since $OP$ is the radius and $PQ$ is the tangent, $OP \\perp PQ$ at point $P$.",
+          "In right-angled triangle $\triangle OPQ$, apply Pythagoras theorem: $OQ^2 = OP^2 + PQ^2$.",
+          "Substitute $OP = 5$ and $OQ = 13$ to solve for $PQ$."
+        ],
+        "derivation": "$OP^2 + PQ^2 = OQ^2 \\\\ 5^2 + PQ^2 = 13^2 \\\\ 25 + PQ^2 = 169 \\\\ PQ^2 = 144 \\\\ PQ = 12$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "caption": "Tangent to a circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O",
+            "position": "left"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 2,
+            "y": 0,
+            "label": "P",
+            "position": "above"
+          },
+          {
+            "kind": "point",
+            "id": "Q",
+            "x": 2,
+            "y": 3,
+            "label": "Q",
+            "position": "right"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "P",
+            "label": "5"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "Q",
+            "label": "PQ"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "Q",
+            "label": "13"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:46.943656",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145746_f0b492_01"
+    },
+    {
+      "question": "Two concentric circles are of radii $5$ $cm$ and $3$ $cm$. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "answer": "$8$ $cm$",
+      "solution": {
+        "steps": [
+          "Let $O$ be the center, $AB$ be the chord of the larger circle tangent to the smaller circle at $M$.",
+          "Then $OM \\perp AB$ and $OM = 3$ $cm$, $OA = 5$ $cm$.",
+          "In right $\triangle OMA$, $AM = \\sqrt{OA^2 - OM^2} = \\sqrt{25 - 9} = 4$ $cm$.",
+          "Since the perpendicular from the center bisects the chord, $AB = 2 \times AM = 8$ $cm$."
+        ],
+        "derivation": "$AM^2 = OA^2 - OM^2 \\\\ AM^2 = 5^2 - 3^2 = 25 - 9 = 16 \\\\ AM = 4 \\\\ AB = 2 \\times 4 = 8$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents and chords",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 1.2
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "B",
+            "label": "Chord"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": -1.6,
+            "y": 1.2,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 1.6,
+            "y": 1.2,
+            "label": "B"
+          },
+          {
+            "kind": "point",
+            "id": "M",
+            "x": 0,
+            "y": 1.2,
+            "label": "M"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:46.943737",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145746_aaaf31_02"
+    },
+    {
+      "question": "If tangents $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at angle of $80^\\circ$, then find $\\angle POA$.",
+      "answer": "$50^\\circ$",
+      "solution": {
+        "steps": [
+          "In quadrilateral $OAPB$, $\\angle OAP = \\angle OBP = 90^\\circ$ (tangent property).",
+          "Since $\\angle APB = 80^\\circ$, $\\angle AOB = 180^\\circ - 80^\\circ = 100^\\circ$.",
+          "In $\triangle OPA$ and $\triangle OPB$, the line $OP$ bisects $\\angle AOB$ and $\\angle APB$.",
+          "Therefore, $\\angle POA = \\frac{1}{2} \\angle AOB = \\frac{100^\\circ}{2} = 50^\\circ$."
+        ],
+        "derivation": "\\angle AOB = 180^\\circ - 80^\\circ = 100^\\circ \\\\ \\angle POA = \\frac{1}{2} \\angle AOB = 50^\\circ"
+      },
+      "topic": "Circles",
+      "subtopic": "Properties of tangents",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 1.5
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 3,
+            "y": 0,
+            "label": "P"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0.5,
+            "y": 1.41,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 0.5,
+            "y": -1.41,
+            "label": "B"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:46.943761",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145746_6cf8c9_03"
+    },
+    {
+      "question": "Prove that the tangents drawn at the ends of a diameter of a circle are parallel.",
+      "answer": "The tangents are parallel because their alternate interior angles sum to $180^\\circ$.",
+      "solution": {
+        "steps": [
+          "Let $AB$ be a diameter and $PQ$ and $RS$ be tangents at $A$ and $B$ respectively.",
+          "Since radius is perpendicular to the tangent at the point of contact, $\\angle OAP = 90^\\circ$ and $\\angle OBS = 90^\\circ$.",
+          "Thus $\\angle OAP = \\angle OBS$, which are alternate interior angles.",
+          "Since alternate interior angles are equal, the lines $PQ$ and $RS$ must be parallel."
+        ],
+        "derivation": "\\angle OAP = 90^\\circ \\\\ \\angle OBS = 90^\\circ \\\\ \\angle OAP = \\angle OBS \\\\ PQ \\parallel RS"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:46.943777",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145746_caf77f_04"
+    },
+    {
+      "question": "A quadrilateral $ABCD$ is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.",
+      "answer": "Using the property that lengths of tangents drawn from an external point to a circle are equal.",
+      "solution": {
+        "steps": [
+          "Let the circle touch sides $AB, BC, CD, DA$ at $P, Q, R, S$ respectively.",
+          "Since tangents from an external point are equal, $AP=AS, BP=BQ, CR=CQ, DR=DS$.",
+          "Summing these: $(AP+BP) + (CR+DR) = (AS+DS) + (BQ+CQ)$.",
+          "This simplifies to $AB + CD = AD + BC$."
+        ],
+        "derivation": "AP=AS, BP=BQ, CR=CQ, DR=DS \\\\ (AP+BP)+(CR+DR) = (AS+DS)+(BQ+CQ) \\\\ AB+CD = AD+BC"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:46.943794",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145746_7c00a6_05"
+    }
+  ]
+}

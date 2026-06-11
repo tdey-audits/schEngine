@@ -1,0 +1,841 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag Solutions} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{questions}
+\question \textbf{1.} If $\tan A = \frac{4}{3}$, find the value of $\sin A + \cos A$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\frac{7}{5}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the definition of $\tan A = \frac{\text{opposite}}{\text{adjacent}}$ to find the hypotenuse using the Pythagorean theorem.
+  \item Calculate $\sin A$ and $\cos A$ and find their sum.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan A = \frac{BC}{AB} = \frac{4}{3} \\
+\implies BC=4k, AB=3k. AC = \sqrt{(4k)^2 + (3k)^2} = 5k. \sin A = \frac{4}{5}, \cos A = \frac{3}{5}. \sin A + \cos A = \frac{4}{5} + \frac{3}{5} = \frac{7}{5}
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{2.} Evaluate: $\frac{2 \tan^2 45^\circ + \cos^2 30^\circ - \sin^2 60^\circ}{1}$
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Substitute the standard trigonometric values for $45^\circ, 30^\circ,$ and $60^\circ$.
+  \item Simplify the expression using arithmetic operations.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\tan 45^\circ = 1, \cos 30^\circ = \frac{\sqrt{3}}{2}, \sin 60^\circ = \frac{\sqrt{3}}{2}. \text{Expression} = 2(1)^2 + (\frac{\sqrt{3}}{2})^2 - (\frac{\sqrt{3}}{2})^2 = 2 + \frac{3}{4} - \frac{3}{4} = 2}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{3.} If $\sin(A - B) = \frac{1}{2}$ and $\cos(A + B) = \frac{1}{2}$, where $0^\circ < A + B \le 90^\circ$ and $A > B$, find $A$ and $B$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{A = 45^\circ, B = 15^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the inverse trigonometric values to set up a system of linear equations.
+  \item Solve the equations for $A$ and $B$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+A-B = 30^\circ \text{and A}+B = 60^\circ. (A-B) + (A+B) = 30^\circ + 60^\circ \\
+\implies 2A = 90^\circ \\
+\implies A = 45^\circ. B = 60^\circ - 45^\circ = 15^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Complementary Angles}
+\vspace{0.3cm}
+
+\question \textbf{4.} Express $\cos A$ in terms of $\tan A$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\cos A = \frac{1}{\sqrt{1 + \tan^2 A}}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the identity $\sec^2 A = 1 + \tan^2 A$.
+  \item Relate $\sec A$ to $\cos A$ using the reciprocal relation.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sec^2 A = 1 + \tan^2 A \\
+\implies \sec A = \sqrt{1 + \tan^2 A}. \text{Since } \cos A = \frac{1}{\sec A}, \cos A = \frac{1}{\sqrt{1 + \tan^2 A}}
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{5.} Evaluate $\frac{\tan 65^\circ}{\cot 25^\circ}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{1}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Apply the complementary angle relation $\tan \theta = \cot(90^\circ - \theta)$.
+  \item Simplify the fraction.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\tan 65^\circ = \tan(90^\circ - 25^\circ) = \cot 25^\circ. \text{Expression} = \frac{\cot 25^\circ}{\cot 25^\circ} = 1}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Complementary Angles}
+\vspace{0.3cm}
+
+\question \textbf{6.} If $\tan(A+B) = \sqrt{3}$ and $\tan(A-B) = \frac{1}{\sqrt{3}}$, where $0^\circ < A+B \le 90^\circ$ and $A > B$, find the values of $A$ and $B$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{A = 45^\circ, B = 15^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the values of tangent from the trigonometric table for $A+B$ and $A-B$.
+  \item Set up a system of linear equations in $A$ and $B$.
+  \item Solve the system using elimination method.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan(A+B) = \sqrt{3} \\
+\implies A+B = 60^\circ \quad (1) \\
+\tan(A-B) = \frac{1}{\sqrt{3}} \\
+\implies A-B = 30^\circ \quad (2) \\
+(1)+(2): 2A = 90^\circ \\
+\implies A = 45^\circ \\
+(1)-(2): 2B = 30^\circ \\
+\implies B = 15^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{7.} If $3\cot \theta = 2$, evaluate the value of $\frac{4\sin \theta - 3\cos \theta}{2\sin \theta + 6\cos \theta}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\frac{1}{3}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Given $3\cot \theta = 2$, find $\cot \theta = \frac{2}{3}$.
+  \item Divide numerator and denominator by $\sin \theta$ to express in terms of $\cot \theta$.
+  \item Substitute the value of $\cot \theta$ and simplify.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{4\sin \theta - 3\cos \theta}{2\sin \theta + 6\cos \theta} = \frac{4 - 3\cot \theta}{2 + 6\cot \theta} \\
+= \frac{4 - 3(2/3)}{2 + 6(2/3)} \\
+= \frac{4-2}{2+4} = \frac{2}{6} = \frac{1}{3}
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{8.} Prove that $(\sin A + \csc A)^2 + (\cos A + \sec A)^2 = 7 + \tan^2 A + \cot^2 A$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Proof completed}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Expand both squares using $(a+b)^2 = a^2 + b^2 + 2ab$.
+  \item Group $\sin^2 A + \cos^2 A = 1$ and use identities $\csc^2 A = 1 + \cot^2 A$ and $\sec^2 A = 1 + \tan^2 A$.
+  \item Simplify the product terms $2\sin A \csc A$ and $2\cos A \sec A$ to 2.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+LHS = \sin^2 A + \csc^2 A + 2 + \cos^2 A + \sec^2 A + 2 \\
+= (\sin^2 A + \cos^2 A) + 4 + (1+\cot^2 A) + (1+\tan^2 A) \\
+= 1 + 4 + 1 + 1 + \tan^2 A + \cot^2 A = 7 + \tan^2 A + \cot^2 A = RHS
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{9.} If $\sin \theta + \sin^2 \theta = 1$, prove that $\cos^2 \theta + \cos^4 \theta = 1$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Proof completed}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item From $\sin \theta + \sin^2 \theta = 1$, express $\sin \theta = 1 - \sin^2 \theta$.
+  \item Substitute $\sin \theta = \cos^2 \theta$.
+  \item Square both sides to get $\sin^2 \theta = \cos^4 \theta$ and substitute into the identity.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sin \theta = 1 - \sin^2 \theta \\
+\implies \sin \theta = \cos^2 \theta \\
+\text{Square both sides: } \sin^2 \theta = \cos^4 \theta \\
+\text{Substitute into } \cos^2 \theta + \cos^4 \theta: \sin \theta + \sin^2 \theta = 1
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{10.} Evaluate: $\frac{\cos 45^\circ}{\sec 30^\circ + \csc 30^\circ}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\frac{3\sqrt{2} - \sqrt{6}}{8}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Substitute the standard trigonometric values: $\cos 45^\circ = 1/\sqrt{2}$, $\sec 30^\circ = 2/\sqrt{3}$, $\csc 30^\circ = 2$.
+  \item Simplify the denominator.
+  \item Rationalize the resulting expression.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{1/\sqrt{2}}{2/\sqrt{3} + 2} = \frac{1/\sqrt{2}}{(2 + 2\sqrt{3})/\sqrt{3}} = \frac{\sqrt{3}}{\sqrt{2}(2+2\sqrt{3})} \\
+= \frac{\sqrt{3}}{2\sqrt{2} + 2\sqrt{6}} = \frac{\sqrt{3}(2\sqrt{6}-2\sqrt{2})}{4(6-2)} = \frac{6\sqrt{2}-2\sqrt{6}}{16} = \frac{3\sqrt{2}-\sqrt{6}}{8}
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{11.} Prove that $\frac{\cos A - \sin A + 1}{\cos A + \sin A - 1} = \csc A + \cot A$, using the identity $\csc^2 A = 1 + \cot^2 A$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\csc A + \cot A}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Divide numerator and denominator by $\sin A$.
+  \item Rewrite the expression in terms of $\cot A$ and $\csc A$.
+  \item Replace $1$ in the numerator with $\csc^2 A - \cot^2 A$.
+  \item Factorize the numerator using $a^2 - b^2 = (a-b)(a+b)$.
+  \item Cancel the common term to simplify.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\frac{\cot A - 1 + \csc A}{\cot A + 1 - \csc A} = \frac{\cot A + \csc A - (\csc^2 A - \cot^2 A)}{\cot A - \csc A + 1} = \frac{(\cot A + \csc A) - (\csc A - \cot A)(\csc A + \cot A)}{\cot A - \csc A + 1} = \frac{(\cot A + \csc A)(1 - (\csc A - \cot A))}{\cot A - \csc A + 1} = \cot A + \csc A}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{12.} If $\sin \theta + \cos \theta = \sqrt{3}$, then prove that $\tan \theta + \cot \theta = 1$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\tan \theta + \cot \theta = 1}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Square both sides of the given equation.
+  \item Expand $(\sin \theta + \cos \theta)^2$ to get $\sin^2 \theta + \cos^2 \theta + 2 \sin \theta \cos \theta = 3$.
+  \item Use identity $\sin^2 \theta + \cos^2 \theta = 1$ to find $2 \sin \theta \cos \theta = 2$, so $\sin \theta \cos \theta = 1$.
+  \item Express $\tan \theta + \cot \theta$ as $\frac{\sin \theta}{\cos \theta} + \frac{\cos \theta}{\sin \theta}$.
+  \item Simplify the fraction to $\frac{\sin^2 \theta + \cos^2 \theta}{\sin \theta \cos \theta} = \frac{1}{1} = 1$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+(\sin \theta + \cos \theta)^2 = 3 \\
+\implies 1 + 2 \sin \theta \cos \theta = 3 \\
+\implies \sin \theta \cos \theta = 1; \quad \tan \theta + \cot \theta = \frac{\sin^2 \theta + \cos^2 \theta}{\sin \theta \cos \theta} = \frac{1}{\sin \theta \cos \theta} = 1
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios}
+\vspace{0.3cm}
+
+\question \textbf{13.} Evaluate: $\frac{5 \cos^2 60^\circ + 4 \sec^2 30^\circ - \tan^2 45^\circ}{\sin^2 30^\circ + \cos^2 30^\circ}$
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\frac{67}{12}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item State values: $\cos 60^\circ = 1/2$, $\sec 30^\circ = 2/\sqrt{3}$, $\tan 45^\circ = 1$, $\sin 30^\circ = 1/2$, $\cos 30^\circ = \sqrt{3}/2$.
+  \item Substitute values into the expression.
+  \item Calculate squares: $\cos^2 60^\circ = 1/4$, $\sec^2 30^\circ = 4/3$, $\tan^2 45^\circ = 1$.
+  \item Simplify the numerator: $5(1/4) + 4(4/3) - 1$.
+  \item Simplify the denominator: $(1/2)^2 + (\sqrt{3}/2)^2 = 1/4 + 3/4 = 1$.
+  \item Final calculation: $5/4 + 16/3 - 1 = (15 + 64 - 12)/12 = 67/12$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\frac{5(1/4) + 4(4/3) - 1}{1} = \frac{5}{4} + \frac{16}{3} - 1 = \frac{15 + 64 - 12}{12} = \frac{67}{12}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Ratios of Specific Angles}
+\vspace{0.3cm}
+
+\question \textbf{14.} If $\sec \theta = x + \frac{1}{4x}$, prove that $\sec \theta + \tan \theta = 2x$ or $\frac{1}{2x}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\sec \theta + \tan \theta = 2x \text{ or } \frac{1}{2x}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the identity $\tan^2 \theta = \sec^2 \theta - 1$.
+  \item Substitute $\sec \theta = x + \frac{1}{4x}$.
+  \item Calculate $\tan^2 \theta = (x + \frac{1}{4x})^2 - 1$.
+  \item Simplify to $\tan^2 \theta = x^2 + \frac{1}{16x^2} + \frac{1}{2} - 1 = x^2 + \frac{1}{16x^2} - \frac{1}{2}$.
+  \item Notice this is a perfect square: $(x - \frac{1}{4x})^2$.
+  \item Thus $\tan \theta = \pm(x - \frac{1}{4x})$.
+  \item Sum $\sec \theta + \tan \theta$ for both cases.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\tan^2 \theta = (x + \frac{1}{4x})^2 - 1 = x^2 + \frac{1}{16x^2} - \frac{1}{2} = (x - \frac{1}{4x})^2 \\
+\implies \tan \theta = \pm(x - \frac{1}{4x}); \quad \text{Case 1: } (x + \frac{1}{4x}) + (x - \frac{1}{4x}) = 2x; \quad \text{Case 2: } (x + \frac{1}{4x}) - (x - \frac{1}{4x}) = \frac{1}{2x}
+\end{aligned}}
+\end{center}
+\hfill \textit{Introduction to Trigonometry — Trigonometric Identities}
+\vspace{0.3cm}
+
+\question \textbf{15.} To draw a pair of tangents to a circle which are inclined to each other at an angle of $60^{\circ}$, it is required to draw tangents at the endpoints of those two radii of the circle, the angle between which is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The angle between the tangents and the angle between the radii at the points of contact are supplementary.
+  \item Let the angle between the radii be $\theta$.
+  \item $\theta + 60^{\circ} = 180^{\circ}$
+  \item $\theta = 120^{\circ}$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\theta = 180^{\circ} - 60^{\circ} = 120^{\circ}}
+\end{center}
+\hfill \textit{Constructions — Construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{16.} If a point $P$ is $10$ cm away from the centre of a circle of radius $6$ cm, the length of the tangent drawn from $P$ to the circle is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The radius is perpendicular to the tangent at the point of contact.
+  \item This forms a right-angled triangle with the hypotenuse as the distance from the centre.
+  \item Use Pythagoras theorem: $d^2 = r^2 + t^2$
+  \item $10^2 = 6^2 + t^2$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{t = \sqrt{10^2 - 6^2} = \sqrt{100 - 36} = \sqrt{64} = 8 \text{ cm}}
+\end{center}
+\hfill \textit{Constructions — Construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{17.} How many tangents can be drawn from an external point to a circle?
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item A tangent touches the circle at exactly one point.
+  \item From a point outside a circle, exactly two distinct tangents can be drawn to the circle.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Number of tangents} = 2}
+\end{center}
+\hfill \textit{Constructions — Construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{18.} To divide a line segment $AB$ in the ratio $3:4$, we draw a ray $AX$ such that $\angle BAX$ is acute. Then we mark points on $AX$ at equal distances. The minimum number of points to be marked is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item To divide a line segment in ratio $m:n$, we need to mark $m+n$ points on the ray.
+  \item Here $m=3$ and $n=4$.
+  \item Total points = $3 + 4 = 7$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{3 + 4 = 7}
+\end{center}
+\hfill \textit{Constructions — Construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{19.} The angle between a tangent to a circle and the radius passing through the point of contact is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item By the theorem of tangents, the tangent at any point of a circle is perpendicular to the radius through the point of contact.
+  \item Perpendicular means $90^{\circ}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Angle} = 90^{\circ}}
+\end{center}
+\hfill \textit{Constructions — Construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{20.} Assertion (A): The length of the tangent drawn from an external point to a circle is always equal to the radius of the circle. Reason (R): The tangent at any point of a circle is perpendicular to the radius through the point of contact.
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The length of a tangent is independent of the radius length.
+  \item The theorem states that a tangent is perpendicular to the radius at the point of contact.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{A: \text{False}, R: \text{True}}
+\end{center}
+\hfill \textit{Constructions — construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{21.} Assertion (A): To construct a pair of tangents to a circle from an external point, the angle between the tangents is supplementary to the angle subtended by the line segment joining the points of contact at the center. Reason (R): The sum of opposite angles in a cyclic quadrilateral is $180^\circ$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The quadrilateral formed by the center, two contact points, and the external point has two right angles.
+  \item The sum of angles is $360^\circ$, so the remaining two must sum to $180^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+A: True, R: True, R explains A
+\hfill \textit{Constructions — construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{22.} Assertion (A): It is impossible to construct a tangent to a circle from a point lying inside the circle. Reason (R): A tangent touches the circle at only one point.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item A line passing through an interior point will always be a secant, not a tangent.
+  \item A tangent by definition meets the circle at exactly one point on the circumference.
+\end{enumerate}
+\textbf{Derivation:}
+A: True, R: True, R explains A
+\hfill \textit{Constructions — construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{23.} Assertion (A): The number of tangents that can be drawn from a point on the circle to the circle is exactly two. Reason (R): A point on the circle lies on the circumference.
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Only one tangent can be drawn from a point on the circle.
+  \item The reason is a true statement about the location of the point.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{A: \text{False}, R: \text{True}}
+\end{center}
+\hfill \textit{Constructions — construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{24.} Assertion (A): When constructing tangents to a circle from an external point $P$, we bisect the line segment $OP$ where $O$ is the center. Reason (R): The perpendicular bisector of $OP$ helps in finding the midpoint which acts as the center of a circle passing through $O$ and $P$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item To find points of contact, we draw a circle with diameter $OP$.
+  \item The midpoint is found by constructing the perpendicular bisector of $OP$.
+\end{enumerate}
+\textbf{Derivation:}
+A: True, R: True, R explains A
+\hfill \textit{Constructions — construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{25.} Draw a circle of radius $3 \text{ cm}$. Take two points $P$ and $Q$ on one of its extended diameter each at a distance of $7 \text{ cm}$ from its centre. Draw tangents to the circle from these two points $P$ and $Q$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Two pairs of tangents are constructed from P and Q}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Draw a circle of radius $3 \text{ cm}$ with centre $O$. Extend the diameter on both sides to points $P$ and $Q$ such that $OP = OQ = 7 \text{ cm}$.
+  \item Bisect $OP$ at $M$ and $OQ$ at $N$. Draw circles with centers $M$ and $N$ and radius $MP$ and $NQ$ respectively, intersecting the original circle at the required points. Join the points of intersection to $P$ and $Q$ respectively.
+\end{enumerate}
+\textbf{Derivation:}
+Construction involves perpendicular bisector method to find the midpoints of the lines connecting the external points to the center, creating circles that define the tangent contact points.
+\hfill \textit{Constructions — construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{26.} Construct a tangent to a circle of radius $4 \text{ cm}$ from a point on the concentric circle of radius $6 \text{ cm}$ and measure its length.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{The length of the tangent is approximately} 4.47 \text{ cm}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Draw two concentric circles with centre $O$ and radii $4 \text{ cm}$ and $6 \text{ cm}$. Let $P$ be a point on the outer circle.
+  \item Join $OP$. Bisect $OP$ at $M$. Draw a circle with centre $M$ and radius $MO$ to intersect the inner circle at $A$ and $B$. Join $PA$ and $PB$, which are the required tangents.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{L = \sqrt{R^2 - r^2} = \sqrt{6^2 - 4^2} = \sqrt{36 - 16} = \sqrt{20} \approx 4.47 \text{ cm}.}
+\end{center}
+\hfill \textit{Constructions — construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{27.} Draw a line segment $AB$ of length $8 \text{ cm}$. Taking $A$ as centre, draw a circle of radius $4 \text{ cm}$ and taking $B$ as centre, draw another circle of radius $3 \text{ cm}$. Construct tangents to each circle from the centre of the other circle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Tangents constructed from B to circle A and from A to circle B}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Draw segment $AB = 8 \text{ cm}$. Construct circles of radii $4 \text{ cm}$ and $3 \text{ cm}$ at $A$ and $B$.
+  \item Bisect $AB$ at $M$. Draw a circle with centre $M$ and radius $MA$ (or $MB$). This circle intersects the circle at $A$ at two points and the circle at $B$ at two points. Join these points to $B$ and $A$ respectively.
+\end{enumerate}
+\textbf{Derivation:}
+The construction uses the property that the angle in a semicircle is  90\textasciicircum{}$\circ$ , thus defining the points of tangency.
+\hfill \textit{Constructions — construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{28.} Draw a circle of radius $3.5 \text{ cm}$. Construct a pair of tangents to this circle which are inclined to each other at an angle of $60^\circ$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{The tangents are constructed such that the angle between radii at the point of contact is} 120^\circ.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Draw two radii $OA$ and $OB$ such that $\angle AOB = 120^\circ$ (since $180^\circ - 60^\circ = 120^\circ$).
+  \item Construct perpendiculars at $A$ and $B$ to radii $OA$ and $OB$. These perpendiculars meet at point $P$, where $\angle APB = 60^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+The quadrilateral formed by the center, the two points of contact, and the external point has angles summing to  360\textasciicircum{}$\circ$ . Since the radii are perpendicular to tangents,  $\angle$ OAP = $\angle$ OBP = 90\textasciicircum{}$\circ$ .
+\hfill \textit{Constructions — construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{29.} Draw a circle of radius $5 \text{ cm}$. Mark a point $P$ at a distance of $8 \text{ cm}$ from the centre. Construct the two tangents from $P$ to the circle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Two tangents from P are constructed}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Draw a circle with centre $O$ and radius $5 \text{ cm}$. Mark point $P$ such that $OP = 8 \text{ cm}$.
+  \item Bisect $OP$ at $M$. Draw a circle with centre $M$ and radius $MO$. Mark the intersection points $A$ and $B$ on the original circle. Join $PA$ and $PB$.
+\end{enumerate}
+\textbf{Derivation:}
+The construction relies on the property that the tangent is perpendicular to the radius at the point of contact, creating a right-angled triangle  OAP .
+\hfill \textit{Constructions — construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{30.} Draw a circle of radius $3 \text{ cm}$. Take two points $P$ and $Q$ on one of its extended diameters each at a distance of $7 \text{ cm}$ from its centre. Draw tangents to the circle from these two points $P$ and $Q$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Two pairs of tangents constructed from points at distance} 7 \text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Draw a circle with center $O$ and radius $3 \text{ cm}$.
+  \item Draw a diameter and extend it on both sides to locate points $P$ and $Q$ such that $OP = OQ = 7 \text{ cm}$.
+  \item Bisect $OP$ and $OQ$ to find midpoints $M_1$ and $M_2$.
+  \item With $M_1$ and $M_2$ as centers, draw circles of radius $M_1O$ to intersect the original circle at two points each. Join $P$ and $Q$ to these intersection points.
+\end{enumerate}
+\textbf{Derivation:}
+Construction follows the geometric property: angle in a semicircle is  90\textasciicircum{}$\circ$ .
+\hfill \textit{Constructions — Construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{31.} Construct a tangent to a circle of radius $4 \text{ cm}$ from a point on the concentric circle of radius $6 \text{ cm}$ and measure its length.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\sqrt{20} \approx 4.47 \text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Draw two concentric circles with radii $4 \text{ cm}$ and $6 \text{ cm}$ with center $O$.
+  \item Mark a point $P$ on the circumference of the larger circle.
+  \item Join $OP$ and bisect it to find midpoint $M$.
+  \item Draw a circle with center $M$ and radius $MO$ to cut the inner circle at $A$ and $B$. $PA$ and $PB$ are the required tangents.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Length L} = \sqrt{6^2 - 4^2} = \sqrt{36 - 16} = \sqrt{20} = 2\sqrt{5}}
+\end{center}
+\hfill \textit{Constructions — Construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{32.} Draw a line segment $AB$ of length $8 \text{ cm}$. Taking $A$ as center, draw a circle of radius $4 \text{ cm}$ and taking $B$ as center, draw another circle of radius $3 \text{ cm}$. Construct tangents to each circle from the center of the other circle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Two pairs of tangents constructed}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Draw segment $AB = 8 \text{ cm}$. Draw circle $C_1$ (center $A$, $r=4$) and $C_2$ (center $B$, $r=3$).
+  \item Bisect $AB$ to get midpoint $M$.
+  \item Draw a circle with center $M$ and radius $MA$ (or $MB$).
+  \item The points where this circle intersects $C_1$ and $C_2$ are the points of tangency. Join $B$ to intersection points on $C_1$ and $A$ to intersection points on $C_2$.
+\end{enumerate}
+\textbf{Derivation:}
+Tangents are constructed by finding the intersection of circles centered at the midpoint of the line segment connecting the centers.
+\hfill \textit{Constructions — Construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{33.} Draw a circle of radius $3.5 \text{ cm}$. Construct a pair of tangents to this circle which are inclined to each other at an angle of $60^\circ$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Construction of tangents at} 120^\circ \text{central angle}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Draw a circle of radius $3.5 \text{ cm}$ with center $O$.
+  \item Draw a radius $OA$. Draw another radius $OB$ such that $\angle AOB = 120^\circ$ (since $180^\circ - 60^\circ = 120^\circ$).
+  \item At point $A$, draw a perpendicular to $OA$.
+  \item At point $B$, draw a perpendicular to $OB$. The intersection point $P$ gives the required tangents $PA$ and $PB$.
+\end{enumerate}
+\textbf{Derivation:}
+Sum of opposite angles in the quadrilateral  OAPB  is  180\textasciicircum{}$\circ$ . Thus, if  $\angle$ APB = 60\textasciicircum{}$\circ$ ,  $\angle$ AOB = 120\textasciicircum{}$\circ$ .
+\hfill \textit{Constructions — Construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{34.} Construct a triangle with sides $5 \text{ cm}, 6 \text{ cm}$ and $7 \text{ cm}$. Then construct a circle touching the side of $6 \text{ cm}$ at its midpoint and passing through the other vertex.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Construction of a circle through specific vertices tangent to a side}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Construct $\triangle ABC$ with $AB=5, BC=6, AC=7$.
+  \item Locate midpoint $M$ of $BC$.
+  \item Draw a perpendicular to $BC$ at $M$.
+  \item Draw the perpendicular bisector of $AM$. The intersection of these two perpendiculars is the center $O$. Draw the circle with radius $OM$.
+\end{enumerate}
+\textbf{Derivation:}
+The center must be equidistant from the point of tangency  M  and vertices  A  and  C .
+\hfill \textit{Constructions — Construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{35.} Draw a circle of radius $3 \text{ cm}$. Take two points $P$ and $Q$ on one of its extended diameters each at a distance of $7 \text{ cm}$ from its centre. Draw tangents to the circle from these two points $P$ and $Q$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Two pairs of tangents constructed from points P and Q}, \text{each pair having equal lengths of} \sqrt{7^2 - 3^2} = \sqrt{40} \approx 6.32 \text{ cm}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Draw a circle with center O and radius 3 cm.
+  \item Draw a diameter and extend it on both sides to locate P and Q such that OP = OQ = 7 cm.
+  \item Bisect OP and OQ to find midpoints M and N.
+  \item Using M as center and MO as radius, draw a circle to intersect the original circle at points A and B.
+  \item Using N as center and NO as radius, draw a circle to intersect the original circle at points C and D.
+  \item Join PA, PB, QC, and QD to get the required tangents.
+\end{enumerate}
+\textbf{Derivation:}
+Length of tangent =  $\sqrt{d^2 - r^2} = \sqrt{7^2 - 3^2} = \sqrt{49 - 9} = \sqrt{40} \text{ cm}$ .
+\hfill \textit{Constructions — Construction of tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{36.} Construct a triangle $ABC$ with side $BC = 6 \text{ cm}$, $AB = 5 \text{ cm}$ and $\angle ABC = 60^\circ$. Then construct a triangle whose sides are $\frac{3}{4}$ of the corresponding sides of the triangle $ABC$. Finally, construct a tangent to the circumcircle of triangle $ABC$ at vertex $A$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{A \text{scaled triangle A}'BC' \text{and a tangent line touching the circumcircle at A}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Construct triangle ABC with given dimensions.
+  \item Draw an acute angle at B and divide the line into 4 segments to construct the similar triangle A'BC'.
+  \item Find the circumcenter O by drawing perpendicular bisectors of AB and BC.
+  \item Draw the circumcircle with center O passing through A, B, and C.
+  \item Construct a line perpendicular to radius OA at point A to get the tangent.
+\end{enumerate}
+\textbf{Derivation:}
+The tangent at A is perpendicular to the radius OA, hence  $\angle$ OAT = 90\textasciicircum{}$\circ$ .
+\hfill \textit{Constructions — Construction of tangents and similar triangles}
+\vspace{0.3cm}
+
+\question \textbf{37.} Draw a pair of tangents to a circle of radius $4 \text{ cm}$, which are inclined to each other at an angle of $60^\circ$. Justify the construction.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Tangents constructed such that the angle between them is} 60 \text{degrees}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Draw a circle of radius 4 cm with center O.
+  \item Draw a radius OA.
+  \item Draw a radius OB such that $\angle AOB = 180^\circ - 60^\circ = 120^\circ$.
+  \item At point A, construct a line perpendicular to OA.
+  \item At point B, construct a line perpendicular to OB.
+  \item The point where these two lines intersect is P. $\angle APB$ will be $60^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+In quadrilateral OAPB,  $\angle$ OAP = 90\textasciicircum{}$\circ$ ,  $\angle$ OBP = 90\textasciicircum{}$\circ$ , and  $\angle$ AOB = 120\textasciicircum{}$\circ$ . Thus  $\angle$ APB = 360\textasciicircum{}$\circ - (90^\circ + 90^\circ + 120^\circ) = 60^\circ$ .
+\hfill \textit{Constructions — Construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{38.} Draw two concentric circles of radii $3 \text{ cm}$ and $5 \text{ cm}$. Construct a tangent to the smaller circle from a point on the larger circle and measure its length. Verify the measurement by calculation.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Length of tangent is} 4 cm.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Draw two concentric circles with center O and radii 3 cm and 5 cm.
+  \item Mark a point P on the circumference of the larger circle.
+  \item Join OP (length 5 cm).
+  \item Bisect OP at M.
+  \item Draw a circle with center M and radius MO, cutting the smaller circle at A and B.
+  \item Join PA and PB, which are the required tangents.
+\end{enumerate}
+\textbf{Derivation:}
+In right  $\triangle$ OAP ,  OA = 3 $\text{ cm}$ ,  OP = 5 $\text{ cm}$ . By Pythagoras theorem,  PA = $\sqrt{OP^2 - OA^2} = \sqrt{5^2 - 3^2} = \sqrt{25 - 9} = \sqrt{16} = 4 \text{ cm}$ .
+\hfill \textit{Constructions — Construction of tangents}
+\vspace{0.3cm}
+
+\question \textbf{39.} If the radius of a sphere is $7 \text{ cm}$, then its surface area is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item State the formula for the surface area of a sphere: $A = 4\pi r^2$.
+  \item Substitute $r = 7 \text{ cm}$ and $\pi = \frac{22}{7}$.
+  \item Calculate the final value.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{A = 4 \times \frac{22}{7} \times 7 \times 7 = 4 \times 22 \times 7 = 616 \text{ cm}^2}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Surface area of sphere}
+\vspace{0.3cm}
+
+\question \textbf{40.} The volume of a right circular cylinder with radius $3 \text{ cm}$ and height $7 \text{ cm}$ is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item State the formula for the volume of a cylinder: $V = \pi r^2 h$.
+  \item Substitute $r = 3 \text{ cm}$, $h = 7 \text{ cm}$, and $\pi = \frac{22}{7}$.
+  \item Calculate the final value.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{V = \frac{22}{7} \times 3^2 \times 7 = 22 \times 9 = 198 \text{ cm}^3}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Volume of cylinder}
+\vspace{0.3cm}
+
+\end{questions}
+
+\end{document}

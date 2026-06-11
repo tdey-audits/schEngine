@@ -1,0 +1,176 @@
+{
+  "batch_id": "20260609_132850_d0a520d2",
+  "generated_at": "2026-06-09T13:28:50.533093",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A stadium seating arrangement is designed such that the first row has $20$ seats, and each subsequent row has $4$ more seats than the preceding row. The stadium has a total of $25$ rows. Due to a renovation, the management decides to reconfigure the seating such that the $n^{th}$ row contains $a_n$ seats. Let $S_n$ denote the total number of seats in the first $n$ rows.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "What is the number of seats in the $15^{th}$ row?",
+          "answer": "(C)",
+          "options": [
+            "(A) $60$",
+            "(B) $72$",
+            "(C) $76$",
+            "(D) $80$"
+          ],
+          "solution": {
+            "steps": [
+              "Identify the AP parameters: $a = 20$, $d = 4$.",
+              "Use the formula $a_n = a + (n-1)d$.",
+              "Calculate $a_{15} = 20 + (15-1) \times 4 = 20 + 56 = 76$."
+            ],
+            "derivation": "$a_{15} = 20 + (15-1) \times 4 \\\\ a_{15} = 20 + 14 \times 4 \\\\ a_{15} = 20 + 56 \\\\ a_{15} = 76$"
+          }
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Calculate the total number of seats in the stadium (all $25$ rows).",
+          "answer": "$1700$",
+          "solution": {
+            "steps": [
+              "Use the sum formula $S_n = \\frac{n}{2}[2a + (n-1)d]$.",
+              "Substitute $n = 25$, $a = 20$, $d = 4$.",
+              "Calculate $S_{25} = \\frac{25}{2}[2(20) + (24)(4)] = \\frac{25}{2}[40 + 96] = \\frac{25}{2}[136] = 25 \\times 68 = 1700$."
+            ],
+            "derivation": "$S_{25} = \\frac{25}{2}(2 \times 20 + (25-1) \times 4) \\\\ S_{25} = \\frac{25}{2}(40 + 96) \\\\ S_{25} = \\frac{25}{2}(136) \\\\ S_{25} = 25 \times 68 = 1700$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "mcq",
+          "question": "If a new section is added such that the sum of the first $k$ rows of this section is given by $S_k = 2k^2 + 3k$, find the number of seats in the $10^{th}$ row of this new section.",
+          "answer": "(B)",
+          "options": [
+            "(A) $39$",
+            "(B) $41$",
+            "(C) $43$",
+            "(D) $45$"
+          ],
+          "solution": {
+            "steps": [
+              "Use the relation $a_n = S_n - S_{n-1}$.",
+              "Calculate $a_{10} = S_{10} - S_9$.",
+              "$S_{10} = 2(10)^2 + 3(10) = 200 + 30 = 230$.",
+              "$S_9 = 2(9)^2 + 3(9) = 162 + 27 = 189$.",
+              "$a_{10} = 230 - 189 = 41$."
+            ],
+            "derivation": "$a_{10} = S_{10} - S_9 \\\\ S_{10} = 2(100) + 30 = 230 \\\\ S_9 = 2(81) + 27 = 189 \\\\ a_{10} = 230 - 189 = 41$"
+          }
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "In the original stadium arrangement, if a row has $100$ seats, which row number is it?",
+          "answer": "$21$",
+          "solution": {
+            "steps": [
+              "Use $a_n = a + (n-1)d$ and set $a_n = 100$.",
+              "$100 = 20 + (n-1) \times 4$.",
+              "$80 = (n-1) \times 4$.",
+              "$20 = n - 1$.",
+              "$n = 21$."
+            ],
+            "derivation": "$100 = 20 + (n-1) \times 4 \\\\ 80 = (n-1) \times 4 \\\\ 20 = n - 1 \\\\ n = 21$"
+          }
+        }
+      ],
+      "topic": "Arithmetic Progressions",
+      "subtopic": "",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T13:28:50.532781",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_5 (Arithmetic Progressions).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 33,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 7,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 22,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_132850_7a20e0_01"
+    }
+  ]
+}

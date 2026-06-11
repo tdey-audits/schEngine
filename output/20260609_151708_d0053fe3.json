@@ -1,0 +1,110 @@
+{
+  "batch_id": "20260609_151708_d0053fe3",
+  "generated_at": "2026-06-09T15:17:08.984910",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Statistics",
+  "subtopic": "mean of grouped data",
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A survey was conducted by a group of students as part of their environmental awareness project, in which they collected data regarding the number of plants in $20$ houses in a locality. The data is summarized in the following frequency distribution table:\n\n| Number of plants | $0-2$ | $2-4$ | $4-6$ | $6-8$ | $8-10$ | $10-12$ | $12-14$ |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Number of houses ($f_i$) | $1$ | $2$ | $1$ | $5$ | $k$ | $2$ | $3$ |\n\nThe total number of houses is $20$.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "What is the value of the missing frequency $k$?",
+          "answer": "(C)",
+          "options": [
+            "(A) $4$",
+            "(B) $5$",
+            "(C) $6$",
+            "(D) $7$"
+          ],
+          "solution": {
+            "steps": [
+              "The sum of all frequencies is given as $20$.",
+              "Calculate $1 + 2 + 1 + 5 + k + 2 + 3 = 20$.",
+              "$14 + k = 20$.",
+              "$k = 6$."
+            ],
+            "derivation": "$1 + 2 + 1 + 5 + k + 2 + 3 = 20 \\\\ 14 + k = 20 \\\\ k = 6$"
+          }
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Find the class mark ($x_i$) for the class interval $8-10$.",
+          "answer": "$9$",
+          "solution": {
+            "steps": [
+              "The class mark is the average of the upper and lower limits.",
+              "Class mark $= (8 + 10) / 2 = 18 / 2 = 9$."
+            ],
+            "derivation": "$x_i = \\frac{8 + 10}{2} = 9$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "mcq",
+          "question": "Which method is most suitable to calculate the mean of this grouped data?",
+          "answer": "(A)",
+          "options": [
+            "(A) Direct Method",
+            "(B) Assumed Mean Method",
+            "(C) Step Deviation Method",
+            "(D) All are equally efficient"
+          ],
+          "solution": {
+            "steps": [
+              "Since the class intervals are uniform ($h=2$) and the frequencies/class marks are small, the Direct Method or Assumed Mean Method are both efficient.",
+              "Given the small numerical values, the Direct Method is straightforward and sufficient."
+            ],
+            "derivation": "\\text{The values are small, hence the Direct Method } \\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i} \\text{ is efficient.}"
+          }
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "Calculate the mean number of plants per house.",
+          "answer": "$8.1$",
+          "solution": {
+            "steps": [
+              "List class marks ($x_i$): $1, 3, 5, 7, 9, 11, 13$.",
+              "Calculate $f_i x_i$: $1(1), 2(3), 1(5), 5(7), 6(9), 2(11), 3(13) = 1, 6, 5, 35, 54, 22, 39$.",
+              "Sum $\\sum f_i x_i = 162$.",
+              "Mean $= 162 / 20 = 8.1$."
+            ],
+            "derivation": "\\sum f_i x_i = 1 + 6 + 5 + 35 + 54 + 22 + 39 = 162 \\\\ \\bar{x} = \\frac{162}{20} = 8.1"
+          }
+        }
+      ],
+      "topic": "Statistics",
+      "subtopic": "mean of grouped data",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T15:17:08.984595",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ]
+      },
+      "id": "ncert_20260609_151708_d70119_01"
+    }
+  ]
+}

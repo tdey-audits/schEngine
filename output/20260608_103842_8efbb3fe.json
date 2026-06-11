@@ -1,0 +1,72 @@
+{
+  "batch_id": "20260608_103842_8efbb3fe",
+  "generated_at": "2026-06-08T10:38:42.729450",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "factorisation method",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "The roots of the quadratic equation $x^2 - 7x + 12 = 0$ are obtained by factorising the middle term. The roots of the equation are:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Identify the quadratic equation: $x^2 - 7x + 12 = 0$.",
+          "Find two numbers whose product is $12$ and whose sum is $-7$. These numbers are $-3$ and $-4$.",
+          "Rewrite the middle term: $x^2 - 3x - 4x + 12 = 0$.",
+          "Factor by grouping: $x(x - 3) - 4(x - 3) = 0$.",
+          "Factor out the common binomial: $(x - 3)(x - 4) = 0$.",
+          "Solve for $x$: $x - 3 = 0$ or $x - 4 = 0$, which gives $x = 3$ or $x = 4$."
+        ],
+        "derivation": "$x^2 - 7x + 12 = 0 \\\\ x^2 - 3x - 4x + 12 = 0 \\\\ x(x - 3) - 4(x - 3) = 0 \\\\ (x - 3)(x - 4) = 0 \\\\ x = 3, 4$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $2, 6$",
+        "(B) $3, 4$",
+        "(C) $-3, -4$",
+        "(D) $1, 12$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-08T10:38:42.729345",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 2,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260608_103842_d78706_01"
+    }
+  ]
+}

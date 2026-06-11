@@ -1,0 +1,297 @@
+{
+  "batch_id": "20260604_132952_49164b4d",
+  "generated_at": "2026-06-04T13:29:52.781182",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 10,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $\\sin \\theta = \\frac{1}{2}$, then the value of $\\cos \\theta$ is",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Use the identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$",
+          "Substitute $\\sin \\theta = 1/2$",
+          "Solve for $\\cos \\theta$"
+        ],
+        "derivation": "\\cos^2 \\theta = 1 - (1/2)^2 = 1 - 1/4 = 3/4 \\implies \\cos \\theta = \\frac{\\sqrt{3}}{2}"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 1",
+        "(B) 0",
+        "(C) \\frac{\\sqrt{3}}{2}",
+        "(D) \\frac{1}{\\sqrt{2}}"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:52.781023",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132952_121d46_01"
+    },
+    {
+      "question": "The value of $\\tan 45^\\circ$ is",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Recall the trigonometric table for standard angles",
+          "Identify the value of $\\tan 45^\\circ$"
+        ],
+        "derivation": "\\tan 45^\\circ = 1"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 0",
+        "(B) 1",
+        "(C) \\sqrt{3}",
+        "(D) \\frac{1}{\\sqrt{3}}"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:52.781065",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132952_f23770_02"
+    },
+    {
+      "question": "If $\\cos A = \\frac{4}{5}$, then $\\tan A$ is",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Use $\\cos A = \\text{base/hypotenuse} = 4/5$",
+          "Find perpendicular using Pythagoras theorem: $p = \\sqrt{5^2 - 4^2} = 3$",
+          "Calculate $\\tan A = p/b = 3/4$"
+        ],
+        "derivation": "\\tan A = \\frac{\\sqrt{1-\\cos^2 A}}{\\cos A} = \\frac{3/5}{4/5} = \\frac{3}{4}"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) \\frac{3}{4}",
+        "(B) \\frac{5}{3}",
+        "(C) \\frac{4}{3}",
+        "(D) \\frac{3}{5}"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:52.781076",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132952_d5461c_03"
+    },
+    {
+      "question": "What is the value of $\\sin^2 30^\\circ + \\cos^2 30^\\circ$?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Apply the identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$ for any angle $\\theta$"
+        ],
+        "derivation": "\\sin^2 30^\\circ + \\cos^2 30^\\circ = 1"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 0",
+        "(B) 1/2",
+        "(C) 1",
+        "(D) 2"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:52.781082",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132952_d2d0a3_04"
+    },
+    {
+      "question": "If $3 \\cot \\theta = 2$, then the value of $\\tan \\theta$ is",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Given $3 \\cot \\theta = 2$, so $\\cot \\theta = 2/3$",
+          "Use the reciprocal relation $\\tan \\theta = 1/\\cot \\theta$"
+        ],
+        "derivation": "\\tan \\theta = \\frac{1}{2/3} = \\frac{3}{2}"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 2/3",
+        "(B) 1/3",
+        "(C) 3",
+        "(D) 3/2"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:52.781088",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132952_9a0b4c_05"
+    },
+    {
+      "question": "The value of $\\frac{\\sin 18^\\circ}{\\cos 72^\\circ}$ is",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Use complementary angle relation $\\cos(90^\\circ - \\theta) = \\sin \\theta$",
+          "Set $\\theta = 18^\\circ$ so $\\cos 72^\\circ = \\sin 18^\\circ$"
+        ],
+        "derivation": "\\frac{\\sin 18^\\circ}{\\sin 18^\\circ} = 1"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Complementary Angles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 0",
+        "(B) 1",
+        "(C) 2",
+        "(D) -1"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:52.781094",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132952_bbaf56_06"
+    },
+    {
+      "question": "If $\\sec \\theta = 2$, then $\\theta$ is",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Recall standard values for secant",
+          "Identify angle where $\\cos \\theta = 1/2$"
+        ],
+        "derivation": "\\sec \\theta = 2 \\implies \\cos \\theta = 1/2 \\implies \\theta = 60^\\circ"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 30^\\circ",
+        "(B) 45^\\circ",
+        "(C) 60^\\circ",
+        "(D) 90^\\circ"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:52.781099",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132952_570b1f_07"
+    },
+    {
+      "question": "The value of $(1 + \\tan^2 \\theta) \\cos^2 \\theta$ is",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Use identity $1 + \\tan^2 \\theta = \\sec^2 \\theta$",
+          "Multiply $\\sec^2 \\theta \\cdot \\cos^2 \\theta$"
+        ],
+        "derivation": "\\sec^2 \\theta \\cdot \\cos^2 \\theta = \\frac{1}{\\cos^2 \\theta} \\cdot \\cos^2 \\theta = 1"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 1",
+        "(B) 0",
+        "(C) 2",
+        "(D) -1"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:52.781105",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132952_0ebe1c_08"
+    },
+    {
+      "question": "If $\\sin A = \\cos A$, then the value of $A$ is",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Set $\\sin A = \\cos A$",
+          "Divide by $\\cos A$ to get $\\tan A = 1$",
+          "Find angle where tangent is 1"
+        ],
+        "derivation": "\\tan A = 1 \\implies A = 45^\\circ"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 30^\\circ",
+        "(B) 45^\\circ",
+        "(C) 60^\\circ",
+        "(D) 0^\\circ"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:52.781110",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132952_6fce25_09"
+    },
+    {
+      "question": "The value of $\\text{cosec}^2 \\theta - 1$ is equal to",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Use the identity $1 + \\cot^2 \\theta = \\text{cosec}^2 \\theta$",
+          "Rearrange to solve for $\\text{cosec}^2 \\theta - 1$"
+        ],
+        "derivation": "\\text{cosec}^2 \\theta - 1 = \\cot^2 \\theta"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) \\tan^2 \\theta",
+        "(B) \\sin^2 \\theta",
+        "(C) \\cos^2 \\theta",
+        "(D) \\cot^2 \\theta"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:52.781115",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132952_9237d3_10"
+    }
+  ]
+}

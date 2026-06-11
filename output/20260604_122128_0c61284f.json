@@ -1,0 +1,35 @@
+{
+  "batch_id": "20260604_122128_0c61284f",
+  "generated_at": "2026-06-04T12:21:28.632591",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "In a right triangle $ABC$, right-angled at $B$, $BD$ is perpendicular to $AC$. Prove that: (i) $AB^2 = AD \\times AC$, (ii) $BC^2 = CD \\times CA$, and (iii) $BD^2 = AD \\times DC$.",
+      "answer": "All three relations are proved using similarity of triangles.",
+      "solution": {
+        "steps": [
+          "Step 1: Consider triangles $\\triangle ADB$ and $\\triangle ABC$. Both have a right angle ($\\angle ADB = 90^\\circ$ given $BD \\perp AC$, and $\\angle ABC = 90^\\circ$ given). They also share $\\angle BAD = \\angle BAC$ (common). Therefore, by AA similarity, $\\triangle ADB \\sim \\triangle ABC$.",
+          "Step 2: From the similarity $\\triangle ADB \\sim \\triangle ABC$, corresponding sides are proportional: $\\frac{AB}{AC} = \\frac{AD}{AB}$. Cross-multiplying gives $AB^2 = AD \\cdot AC$. This proves part (i).",
+          "Step 3: Now consider triangles $\\triangle BDC$ and $\\triangle ABC$. $\\angle BDC = 90^\\circ$ (since $BD \\perp AC$) and $\\angle ABC = 90^\\circ$. They share $\\angle BCD = \\angle BCA$ (common). Hence, by AA similarity, $\\triangle BDC \\sim \\triangle ABC$.",
+          "Step 4: From $\\triangle BDC \\sim \\triangle ABC$, corresponding sides are proportional: $\\frac{BC}{AC} = \\frac{CD}{BC}$. Cross-multiplying gives $BC^2 = CD \\cdot CA$ which proves part (ii).",
+          "Step 5: Finally, consider triangles $\\triangle ADB$ and $\\triangle BDC$. In $\\triangle ADB$, $\\angle ADB = 90^\\circ$; in $\\triangle BDC$, $\\angle BDC = 90^\\circ$. Also, $\\angle BAD = \\angle CBD$ (since $\\angle BAD + \\angle ABD = 90^\\circ$ and $\\angle CBD + \\angle ABD = 90^\\circ$). Therefore, $\\triangle ADB \\sim \\triangle BDC$ by AA similarity.",
+          "Step 6: From $\\triangle ADB \\sim \\triangle BDC$, we have proportionality: $\\frac{BD}{CD} = \\frac{AD}{BD}$. Cross-multiplying gives $BD^2 = AD \\cdot DC$, which proves part (iii)."
+        ],
+        "derivation": "\\begin{aligned} &\\text{(i) } \\triangle ADB \\sim \\triangle ABC \\\\ &\\Rightarrow \\frac{AB}{AC} = \\frac{AD}{AB} \\Rightarrow AB^2 = AD \\cdot AC \\\\ &\\text{(ii) } \\triangle BDC \\sim \\triangle ABC \\\\ &\\Rightarrow \\frac{BC}{AC} = \\frac{CD}{BC} \\Rightarrow BC^2 = CD \\cdot CA \\\\ &\\text{(iii) } \\triangle ADB \\sim \\triangle BDC \\\\ &\\Rightarrow \\frac{BD}{CD} = \\frac{AD}{BD} \\Rightarrow BD^2 = AD \\cdot DC \\\\ \\end{aligned}"
+      },
+      "topic": "Triangles",
+      "subtopic": "Similarity and Right Triangle Altitude Theorem",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T12:21:28.632496",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_122128_5127ce"
+    }
+  ]
+}

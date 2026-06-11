@@ -1,0 +1,105 @@
+{
+  "batch_id": "20260610_122436_c10cbbc0",
+  "generated_at": "2026-06-10T12:24:36.484958",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Triangles",
+  "subtopic": "similarity of triangles",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In $\\triangle ABC$, $D$ and $E$ are points on sides $AB$ and $AC$ respectively such that $DE \\parallel BC$. If $AD = 4 \\text{ cm}$, $DB = 2 \\text{ cm}$, and $AE = 6 \\text{ cm}$, then the length of $EC$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify that since $DE \\parallel BC$, by the Basic Proportionality Theorem (BPT), the ratio of sides is equal: $AD/DB = AE/EC$.",
+          "Substitute the given values into the equation: $4/2 = 6/EC$.",
+          "Simplify the ratio $4/2$ to $2$.",
+          "Solve for $EC$: $2 = 6/EC \\Rightarrow EC = 6/2 = 3 \\text{ cm}$."
+        ],
+        "derivation": "$DE \\parallel BC \\Rightarrow \\frac{AD}{DB} = \\frac{AE}{EC} \\\\ \\frac{4}{2} = \\frac{6}{EC} \\\\ 2 = \\frac{6}{EC} \\\\ EC = \\frac{6}{2} = 3 \\text{ cm}$"
+      },
+      "topic": "Triangles",
+      "subtopic": "Basic Proportionality Theorem",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 4 cm",
+        "(B) 2 cm",
+        "(C) 3 cm",
+        "(D) 5 cm"
+      ],
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "caption": "Triangle ABC with DE parallel to BC",
+        "scale": 1,
+        "elements": [
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "kind": "segment",
+            "from": "D",
+            "to": "E"
+          },
+          {
+            "kind": "point",
+            "id": "D",
+            "x": 1,
+            "y": 2,
+            "label": "D",
+            "position": "left"
+          },
+          {
+            "kind": "point",
+            "id": "E",
+            "x": 2,
+            "y": 2,
+            "label": "E",
+            "position": "right"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-10T12:24:36.484877",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_6 (Triangles).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 12,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 6,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 6,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122436_bfc1e6_01"
+    }
+  ]
+}

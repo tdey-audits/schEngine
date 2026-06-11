@@ -1,0 +1,125 @@
+{
+  "batch_id": "20260604_141042_dbf2bce4",
+  "generated_at": "2026-06-04T14:10:42.519594",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Constructions",
+  "subtopic": "construction of tangents",
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Draw a circle of radius $3 \\text{ cm}$. Take two points $P$ and $Q$ on one of its extended diameter each at a distance of $7 \\text{ cm}$ from its centre. Draw tangents to the circle from these two points $P$ and $Q$.",
+      "answer": "Two pairs of tangents are constructed from $P$ and $Q$.",
+      "solution": {
+        "steps": [
+          "Draw a circle of radius $3 \\text{ cm}$ with centre $O$. Extend the diameter on both sides to points $P$ and $Q$ such that $OP = OQ = 7 \\text{ cm}$.",
+          "Bisect $OP$ at $M$ and $OQ$ at $N$. Draw circles with centers $M$ and $N$ and radius $MP$ and $NQ$ respectively, intersecting the original circle at the required points. Join the points of intersection to $P$ and $Q$ respectively."
+        ],
+        "derivation": "Construction involves perpendicular bisector method to find the midpoints of the lines connecting the external points to the center, creating circles that define the tangent contact points."
+      },
+      "topic": "Constructions",
+      "subtopic": "construction of tangents",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:42.519472",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141042_bd2ee8_01"
+    },
+    {
+      "question": "Construct a tangent to a circle of radius $4 \\text{ cm}$ from a point on the concentric circle of radius $6 \\text{ cm}$ and measure its length.",
+      "answer": "The length of the tangent is approximately $4.47 \\text{ cm}$.",
+      "solution": {
+        "steps": [
+          "Draw two concentric circles with centre $O$ and radii $4 \\text{ cm}$ and $6 \\text{ cm}$. Let $P$ be a point on the outer circle.",
+          "Join $OP$. Bisect $OP$ at $M$. Draw a circle with centre $M$ and radius $MO$ to intersect the inner circle at $A$ and $B$. Join $PA$ and $PB$, which are the required tangents."
+        ],
+        "derivation": "$L = \\sqrt{R^2 - r^2} = \\sqrt{6^2 - 4^2} = \\sqrt{36 - 16} = \\sqrt{20} \\approx 4.47 \\text{ cm}$."
+      },
+      "topic": "Constructions",
+      "subtopic": "construction of tangents",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:42.519510",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141042_71f82b_02"
+    },
+    {
+      "question": "Draw a line segment $AB$ of length $8 \\text{ cm}$. Taking $A$ as centre, draw a circle of radius $4 \\text{ cm}$ and taking $B$ as centre, draw another circle of radius $3 \\text{ cm}$. Construct tangents to each circle from the centre of the other circle.",
+      "answer": "Tangents constructed from $B$ to circle $A$ and from $A$ to circle $B$.",
+      "solution": {
+        "steps": [
+          "Draw segment $AB = 8 \\text{ cm}$. Construct circles of radii $4 \\text{ cm}$ and $3 \\text{ cm}$ at $A$ and $B$.",
+          "Bisect $AB$ at $M$. Draw a circle with centre $M$ and radius $MA$ (or $MB$). This circle intersects the circle at $A$ at two points and the circle at $B$ at two points. Join these points to $B$ and $A$ respectively."
+        ],
+        "derivation": "The construction uses the property that the angle in a semicircle is $90^\\circ$, thus defining the points of tangency."
+      },
+      "topic": "Constructions",
+      "subtopic": "construction of tangents",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:42.519518",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141042_0e0c9a_03"
+    },
+    {
+      "question": "Draw a circle of radius $3.5 \\text{ cm}$. Construct a pair of tangents to this circle which are inclined to each other at an angle of $60^\\circ$.",
+      "answer": "The tangents are constructed such that the angle between radii at the point of contact is $120^\\circ$.",
+      "solution": {
+        "steps": [
+          "Draw two radii $OA$ and $OB$ such that $\\angle AOB = 120^\\circ$ (since $180^\\circ - 60^\\circ = 120^\\circ$).",
+          "Construct perpendiculars at $A$ and $B$ to radii $OA$ and $OB$. These perpendiculars meet at point $P$, where $\\angle APB = 60^\\circ$."
+        ],
+        "derivation": "The quadrilateral formed by the center, the two points of contact, and the external point has angles summing to $360^\\circ$. Since the radii are perpendicular to tangents, $\\angle OAP = \\angle OBP = 90^\\circ$."
+      },
+      "topic": "Constructions",
+      "subtopic": "construction of tangents",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:42.519524",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141042_e6a841_04"
+    },
+    {
+      "question": "Draw a circle of radius $5 \\text{ cm}$. Mark a point $P$ at a distance of $8 \\text{ cm}$ from the centre. Construct the two tangents from $P$ to the circle.",
+      "answer": "Two tangents from $P$ are constructed.",
+      "solution": {
+        "steps": [
+          "Draw a circle with centre $O$ and radius $5 \\text{ cm}$. Mark point $P$ such that $OP = 8 \\text{ cm}$.",
+          "Bisect $OP$ at $M$. Draw a circle with centre $M$ and radius $MO$. Mark the intersection points $A$ and $B$ on the original circle. Join $PA$ and $PB$."
+        ],
+        "derivation": "The construction relies on the property that the tangent is perpendicular to the radius at the point of contact, creating a right-angled triangle $OAP$."
+      },
+      "topic": "Constructions",
+      "subtopic": "construction of tangents",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:42.519529",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141042_d70d67_05"
+    }
+  ]
+}

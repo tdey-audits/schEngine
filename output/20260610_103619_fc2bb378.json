@@ -1,0 +1,61 @@
+{
+  "batch_id": "20260610_103619_fc2bb378",
+  "generated_at": "2026-06-10T10:36:19.052444",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": "euclid division lemma",
+  "difficulty": "simple",
+  "question_type": "vsa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Using Euclid's division algorithm, find the Highest Common Factor (HCF) of $135$ and $225$.",
+      "answer": "$45$",
+      "solution": {
+        "steps": [
+          "Apply Euclid's division lemma to $225$ and $135$ to express as $225 = 135 \\times 1 + 90$.",
+          "Apply the lemma to the divisor $135$ and remainder $90$ to get $135 = 90 \\times 1 + 45$.",
+          "Apply the lemma to $90$ and $45$ to get $90 = 45 \\times 2 + 0$. Since the remainder is $0$, the divisor $45$ is the HCF."
+        ],
+        "derivation": "$225 = 135 \\times 1 + 90 \\\\ 135 = 90 \\times 1 + 45 \\\\ 90 = 45 \\times 2 + 0 \\\\ \\therefore \\text{HCF}(225, 135) = 45$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Euclid division lemma",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-10T10:36:19.052176",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 25,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 22,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 23,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ]
+      },
+      "id": "ncert_20260610_103619_47a82c_01"
+    }
+  ]
+}

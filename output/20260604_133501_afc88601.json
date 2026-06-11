@@ -1,0 +1,72 @@
+{
+  "batch_id": "20260604_133501_afc88601",
+  "generated_at": "2026-06-04T13:35:01.709323",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The value of $\\sin \\theta$ is always less than 1. Reason (R): The value of $\\sin \\theta$ can never exceed 1 for any real value of $\\theta$.",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Evaluate the assertion: The value of $\\sin \\theta$ can be equal to 1 when $\\theta = 90^\\circ$. Therefore, the statement 'always less than 1' is false.",
+          "Evaluate the reason: The range of $\\sin \\theta$ is $[-1, 1]$, meaning it can reach 1 but never exceed it. The reason statement is true."
+        ],
+        "derivation": "\\text{Assertion: } \\sin(90^\\circ) = 1, \\text{ so } \\sin \\theta \\le 1. \\text{ Reason: } -1 \\le \\sin \\theta \\le 1."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:35:01.709091",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133501_fbc8ae_01"
+    },
+    {
+      "question": "Assertion (A): If $\\tan \\theta = \\cot \\theta$, then $\\theta = 45^\\circ$. Reason (R): $\\tan \\theta$ and $\\cot \\theta$ are reciprocal to each other.",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Evaluate the assertion: $\\tan \\theta = \\cot \\theta \\implies \\tan \\theta = \\frac{1}{\\tan \\theta} \\implies \\tan^2 \\theta = 1 \\implies \\tan \\theta = 1$ (for acute $\\theta$). Thus, $\\theta = 45^\\circ$. Assertion is true.",
+          "Evaluate the reason: By definition, $\\cot \\theta = \\frac{1}{\\tan \\theta}$. Reason is true.",
+          "Check if R explains A: While both are true, the assertion is solved by equating the ratios, not simply by the definition of reciprocals alone, though they are related."
+        ],
+        "derivation": "\\tan \\theta = \\frac{1}{\\tan \\theta} \\implies \\tan^2 \\theta = 1 \\implies \\theta = 45^\\circ"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Complementary Angles",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:35:01.709185",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133501_436c2d_02"
+    }
+  ]
+}

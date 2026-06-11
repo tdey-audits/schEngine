@@ -1,0 +1,206 @@
+{
+  "batch_id": "20260604_151212_22978057",
+  "generated_at": "2026-06-04T15:12:12.727428",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Prove that if a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points, the other two sides are divided in the same ratio. Use this theorem to find the length of $EC$ in $\triangle ABC$ where $DE \\parallel BC$, $AD = 3$ cm, $DB = 4$ cm, and $AE = 6$ cm.",
+      "answer": "$EC = 8$ cm",
+      "solution": {
+        "steps": [
+          "State Basic Proportionality Theorem (BPT).",
+          "Construct the proof by drawing altitudes and using area ratios.",
+          "Apply the theorem to the given values: $\\frac{AD}{DB} = \\frac{AE}{EC}$.",
+          "Substitute the given values: $\\frac{3}{4} = \\frac{6}{EC}$.",
+          "Solve for $EC$."
+        ],
+        "derivation": "$\\frac{AD}{DB} = \\frac{AE}{EC} \\\\ \\frac{3}{4} = \\frac{6}{EC} \\\\ 3 \\times EC = 6 \\times 4 \\\\ 3 \\times EC = 24 \\\\ EC = \\frac{24}{3} \\\\ EC = 8$ cm"
+      },
+      "topic": "Triangles",
+      "subtopic": "Basic Proportionality Theorem",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "caption": "Triangle ABC with DE parallel to BC",
+        "elements": [
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "kind": "segment",
+            "from": "D",
+            "to": "E"
+          },
+          {
+            "kind": "point",
+            "id": "D",
+            "x": 1.5,
+            "y": 3,
+            "label": "D"
+          },
+          {
+            "kind": "point",
+            "id": "E",
+            "x": 3,
+            "y": 3,
+            "label": "E"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T15:12:12.726901",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151212_305188_01"
+    },
+    {
+      "question": "In $\\triangle ABC$, $\\angle A = 90^\\circ$ and $AD \\perp BC$. Prove that $AD^2 = BD \\times CD$. If $BD = 4$ cm and $CD = 9$ cm, calculate the length of $AD$.",
+      "answer": "$AD = 6$ cm",
+      "solution": {
+        "steps": [
+          "Use the property of similar triangles: $\\triangle ADB \\sim \\triangle CDA$.",
+          "Write the ratio of corresponding sides: $\\frac{AD}{CD} = \\frac{BD}{AD}$.",
+          "Cross multiply to get $AD^2 = BD \\times CD$.",
+          "Substitute the given values $BD = 4$ and $CD = 9$.",
+          "Calculate $AD = \\sqrt{36} = 6$ cm."
+        ],
+        "derivation": "$\\triangle ADB \\sim \\triangle CDA \\\\ \\frac{AD}{CD} = \\frac{BD}{AD} \\\\ AD^2 = BD \\times CD \\\\ AD^2 = 4 \\times 9 \\\\ AD^2 = 36 \\\\ AD = 6$ cm"
+      },
+      "topic": "Triangles",
+      "subtopic": "Similarity of Triangles",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "caption": "Right triangle ABC with altitude AD",
+        "elements": [
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "D"
+          },
+          {
+            "kind": "right_angle",
+            "points": [
+              "B",
+              "A",
+              "C"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T15:12:12.727024",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151212_4a629f_02"
+    },
+    {
+      "question": "Two poles of heights $a$ meters and $b$ meters are $p$ meters apart. Prove that the height of the point of intersection of the lines joining the top of each pole to the foot of the opposite pole is given by $\\frac{ab}{a+b}$ meters.",
+      "answer": "Height $= \\frac{ab}{a+b}$",
+      "solution": {
+        "steps": [
+          "Let the poles be $AB = a$ and $CD = b$. Let them be $p$ apart.",
+          "Let $EF = h$ be the height of the intersection point.",
+          "Show $\\triangle EFC \\sim \\triangle ABC$ and $\\triangle EFD \\sim \\triangle ABD$.",
+          "Express $\\frac{EF}{AB} = \\frac{FC}{BC}$ and $\\frac{EF}{CD} = \\frac{FD}{BD}$.",
+          "Sum the ratios to eliminate the segments of $p$ and solve for $h$."
+        ],
+        "derivation": "$\\frac{h}{a} = \\frac{FC}{p} \\text{ and } \\frac{h}{b} = \\frac{FD}{p} \\\\ \\frac{h}{a} + \\frac{h}{b} = \\frac{FC+FD}{p} \\\\ h(\\frac{1}{a} + \\frac{1}{b}) = \\frac{p}{p} = 1 \\\\ h(\\frac{a+b}{ab}) = 1 \\\\ h = \\frac{ab}{a+b}$"
+      },
+      "topic": "Triangles",
+      "subtopic": "Similarity and Ratios",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "caption": "Poles and intersecting lines",
+        "elements": [
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "B",
+            "label": "a"
+          },
+          {
+            "kind": "segment",
+            "from": "C",
+            "to": "D",
+            "label": "b"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "D"
+          },
+          {
+            "kind": "segment",
+            "from": "C",
+            "to": "B"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T15:12:12.727064",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151212_422ce1_03"
+    },
+    {
+      "question": "Prove that the ratio of the areas of two similar triangles is equal to the square of the ratio of their corresponding sides. Using this, find the ratio of the areas of two similar triangles if their sides are in the ratio $4:9$.",
+      "answer": "Ratio $= 16:81$",
+      "solution": {
+        "steps": [
+          "State the theorem for the ratio of areas of similar triangles.",
+          "Draw two similar triangles and their altitudes.",
+          "Use similarity to show $\\frac{Area_1}{Area_2} = (\\frac{side_1}{side_2})^2$.",
+          "Apply the given ratio $\\frac{s_1}{s_2} = \\frac{4}{9}$.",
+          "Calculate the square of the ratio: $(\\frac{4}{9})^2 = \\frac{16}{81}$."
+        ],
+        "derivation": "$\\frac{ar(\\triangle ABC)}{ar(\\triangle PQR)} = (\\frac{AB}{PQ})^2 \\\\ \\frac{ar(\\triangle ABC)}{ar(\\triangle PQR)} = (\\frac{4}{9})^2 \\\\ \\frac{ar(\\triangle ABC)}{ar(\\triangle PQR)} = \\frac{16}{81}$"
+      },
+      "topic": "Triangles",
+      "subtopic": "Areas of Similar Triangles",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T15:12:12.727094",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151212_2202a2_04"
+    }
+  ]
+}

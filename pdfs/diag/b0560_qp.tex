@@ -1,0 +1,277 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag} \\[0.3cm]
+  \textbf{Time Allowed: 3 Hours} \hfill \textbf{Maximum Marks: 80} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\noindent\textbf{General Instructions:}
+\begin{enumerate}
+  \item {\normalfont\normalcolor This question paper contains 40 questions. All questions are compulsory.}
+  \item {\normalfont\normalcolor Questions are grouped into sections A through E.}
+  \item {\normalfont\normalcolor Use of calculators is NOT permitted.}
+\end{enumerate}
+\bigskip
+\noindent\textbf{\large Section A: Multiple Choice \& Assertion-Reason (1 mark each)}
+
+\begin{questions}
+\question[1] In $\triangle ABC$, $DE \parallel BC$ such that $AD = 2\text{ cm}$, $DB = 3\text{ cm}$, and $AE = 3\text{ cm}$. Find the length of $EC$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 3.5 cm
+  \item (B) 4 cm
+  \item (C) 4.5 cm
+  \item (D) 5 cm
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If $\triangle ABC \sim \triangle PQR$ and $\frac{AB}{PQ} = \frac{1}{3}$, then the ratio of their areas $\frac{\text{Area}(\triangle ABC)}{\text{Area}(\triangle PQR)}$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 1:3
+  \item (B) 1:9
+  \item (C) 3:1
+  \item (D) 9:1
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] In $\triangle ABC$, if $AB = 6\sqrt{3}\text{ cm}$, $AC = 12\text{ cm}$, and $BC = 6\text{ cm}$, then the measure of $\angle B$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item $(A) 45^\circ$
+  \item $(B) 60^\circ$
+  \item $(C) 30^\circ$
+  \item $(D) 90^\circ$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Two triangles are similar if their corresponding sides are in the same ratio. This criterion is known as:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) SSS
+  \item (B) SAS
+  \item (C) AA
+  \item (D) RHS
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The altitude of an equilateral triangle with side $2a$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) a
+  \item $(B) a\sqrt{2}$
+  \item $(C) a\sqrt{3}$
+  \item (D) 2a
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The common difference of the AP $5, 2, -1, -4, ...$ is $-3$. Reason (R): The common difference $d$ of an AP $a_1, a_2, a_3, ...$ is given by $d = a_n - a_{n-1}$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The 10th term of the AP $2, 7, 12, ...$ is $47$. Reason (R): The $n^{th}$ term of an AP is given by $a_n = a + (n-1)d$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The sum of the first 10 natural numbers is 55. Reason (R): The sum of first $n$ natural numbers is given by $\frac{n(n+1)}{2}$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The sequence $3, 3, 3, 3, ...$ is an AP. Reason (R): A sequence is an AP if the difference between consecutive terms is constant.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If $2x, x+10, 3x+2$ are in AP, then $x=6$. Reason (R): If $a, b, c$ are in AP, then $2b = a+c$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If a line divides any two sides of a triangle in the same ratio, then the line is parallel to the third side. Reason (R): This is the Converse of Basic Proportionality Theorem.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): Two triangles are similar if their corresponding angles are equal. Reason (R): If two triangles are equiangular, they are similar by AAA similarity criterion.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): In $\triangle ABC$, if $DE \parallel BC$ such that $AD/DB = 1/2$ and $AE = 2 \text{ cm}$, then $EC = 4 \text{ cm}$. Reason (R): By Basic Proportionality Theorem, if $DE \parallel BC$, then $AD/DB = AE/EC$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): All congruent triangles are similar. Reason (R): All similar triangles are congruent.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The ratio of the areas of two similar triangles is equal to the square of the ratio of their corresponding sides. Reason (R): This is the Area of Similar Triangles Theorem.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section B: Very Short Answer (2 marks each)}
+
+\begin{questions}
+\question[2] Find the $10^{th}$ term of the Arithmetic Progression $5, 8, 11, 14, \dots$
+\vspace{0.15cm}
+
+\question[2] Which term of the Arithmetic Progression $21, 18, 15, \dots$ is $-81$?
+\vspace{0.15cm}
+
+\question[2] Find the sum of the first $20$ terms of the Arithmetic Progression $1, 6, 11, 16, \dots$
+\vspace{0.15cm}
+
+\question[2] In an Arithmetic Progression, if the first term is $7$ and the common difference is $4$, find the sum of the first $10$ terms.
+\vspace{0.15cm}
+
+\question[2] If the $4^{th}$ term of an Arithmetic Progression is $14$ and the $12^{th}$ term is $38$, find the first term $a$.
+\vspace{0.15cm}
+
+\question[2] In $\triangle ABC$, $DE \parallel BC$ such that $AD = 2.4\text{ cm}$, $AE = 3.2\text{ cm}$, and $EC = 4.8\text{ cm}$. Find the length of $DB$.
+\vspace{0.15cm}
+
+\question[2] Two triangles $\triangle ABC$ and $\triangle DEF$ are similar. If $\text{Area}(\triangle ABC) = 64\text{ cm}^2$ and $\text{Area}(\triangle DEF) = 121\text{ cm}^2$, and $EF = 15.4\text{ cm}$, find the length of side $BC$.
+\vspace{0.15cm}
+
+\question[2] A vertical pole of length $6\text{ m}$ casts a shadow $4\text{ m}$ long on the ground and at the same time a tower casts a shadow $28\text{ m}$ long. Find the height of the tower.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section C: Short Answer (3 marks each)}
+
+\begin{questions}
+\question[3] Find two consecutive positive integers, sum of whose squares is 365.
+\vspace{0.15cm}
+
+\question[3] Find the value of $k$ for which the quadratic equation $2x^2 + kx + 3 = 0$ has two equal real roots.
+\vspace{0.15cm}
+
+\question[3] The altitude of a right triangle is 7 cm less than its base. If the hypotenuse is 13 cm, find the other two sides.
+\vspace{0.15cm}
+
+\question[3] Solve the quadratic equation $x^2 - 5x + 6 = 0$ using the quadratic formula.
+\vspace{0.15cm}
+
+\question[3] Find the sum of all two-digit numbers which, when divided by 4, yield 1 as a remainder.
+\vspace{0.15cm}
+
+\question[3] If the sum of the first $n$ terms of an AP is $S_n = 3n^2 + 5n$, find the $16^{th}$ term of the AP.
+\vspace{0.15cm}
+
+\question[3] How many terms of the AP $24, 21, 18, \dots$ must be taken so that their sum is 78?
+\vspace{0.15cm}
+
+\question[3] Find the middle term of the AP: $6, 13, 20, \dots, 216$.
+\vspace{0.15cm}
+
+\question[3] The $4^{th}$ term of an AP is 11 and the sum of its $5^{th}$ and $7^{th}$ terms is 34. Find the common difference.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section D: Long Answer (4-5 marks each)}
+
+\begin{questions}
+\question[5] A motorboat whose speed is $18$ km/h in still water takes $1$ hour more to go $24$ km upstream than to return downstream to the same spot. Find the speed of the stream.
+\vspace{0.15cm}
+
+\question[5] The sum of the areas of two squares is $468$ m$^2$. If the difference of their perimeters is $24$ m, find the sides of the two squares.
+\vspace{0.15cm}
+
+\question[5] A peacock is sitting on the top of a pillar, which is $9$ m high. From a point $27$ m away from the bottom of the pillar, a snake is coming to its hole at the base of the pillar. Seeing the snake, the peacock pounces on it. If their speeds are equal, at what distance from the hole is the snake caught?
+\vspace{0.15cm}
+
+\question[5] A shopkeeper buys a number of books for $80$ rupees. If he had bought $4$ more books for the same amount, each book would have cost $1$ rupee less. How many books did he buy?
+\vspace{0.15cm}
+
+\question[5] A sum of $\text{Rs.~} 2800$ is to be used to award four prizes to students of a school for their overall academic performance. If each prize is $\text{Rs.~} 200$ less than its preceding prize, find the value of each of the prizes.
+\vspace{0.15cm}
+
+\question[5] The sum of the first $n$ terms of an AP is given by $S_n = 3n^2 + 5n$. Find the $16^{th}$ term of this AP and the general expression for the $n^{th}$ term.
+\vspace{0.15cm}
+
+\question[5] In an AP, the sum of first $p$ terms is $q$ and the sum of first $q$ terms is $p$. Show that the sum of first $(p+q)$ terms is $-(p+q)$.
+\vspace{0.15cm}
+
+\question[5] A spiral is made up of successive semicircles, with centers alternately at A and B, starting with center at A of radii $0.5 cm, 1.0 cm, 1.5 cm, 2.0 cm, ...$. What is the total length of such a spiral made up of thirteen consecutive semicircles? (Take $\pi = \frac{22}{7}$)
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+
+\end{document}

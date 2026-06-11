@@ -1,0 +1,214 @@
+{
+  "batch_id": "20260610_112937_38190647",
+  "generated_at": "2026-06-10T11:29:37.735002",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "The value of $k$ for which the quadratic equation $(k+4)x^2 + (k+1)x + 1 = 0$ has equal real roots is",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "A quadratic equation $ax^2 + bx + c = 0$ has equal roots if the discriminant $D = b^2 - 4ac = 0$.",
+          "Here, $a = k+4$, $b = k+1$, and $c = 1$.",
+          "Substitute these values into $D = 0$: $(k+1)^2 - 4(k+4)(1) = 0$.",
+          "Expand the equation: $k^2 + 2k + 1 - 4k - 16 = 0$.",
+          "Simplify to get the quadratic: $k^2 - 2k - 15 = 0$.",
+          "Factorise the quadratic: $(k-5)(k+3) = 0$.",
+          "The possible values for $k$ are $5$ or $-3$."
+        ],
+        "derivation": "$(k+1)^2 - 4(k+4) = 0 \\\\ k^2 + 2k + 1 - 4k - 16 = 0 \\\\ k^2 - 2k - 15 = 0 \\\\ (k-5)(k+3) = 0 \\\\ k = 5, -3$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of Roots",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $5, 3$",
+        "(B) $-5, 3$",
+        "(C) $5, -3$",
+        "(D) $-5, -3$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T11:29:37.734612",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_112937_8acc4c_01"
+    },
+    {
+      "question": "If one root of the quadratic equation $x^2 - 8x + m = 0$ exceeds the other by $2$, then the value of $m$ is",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Let the roots of the equation be $\\alpha$ and $\\alpha + 2$.",
+          "The sum of roots is $\\alpha + (\\alpha + 2) = -(-8)/1 = 8$.",
+          "Solving for $\\alpha$: $2\\alpha + 2 = 8 \\Rightarrow 2\\alpha = 6 \\Rightarrow \\alpha = 3$.",
+          "The roots are $3$ and $3 + 2 = 5$.",
+          "The product of roots is $\\alpha(\\alpha + 2) = m/1$.",
+          "Thus, $m = 3 \\times 5 = 15$."
+        ],
+        "derivation": "\\alpha + (\\alpha+2) = 8 \\\\ 2\\alpha = 6 \\\\ \\alpha = 3 \\\\ m = \\alpha(\\alpha+2) \\\\ m = 3(5) = 15"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Relationship between roots and coefficients",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $12$",
+        "(B) $15$",
+        "(C) $16$",
+        "(D) $20$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T11:29:37.734771",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_112937_75a44d_02"
+    }
+  ]
+}

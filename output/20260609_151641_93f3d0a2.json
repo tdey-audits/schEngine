@@ -1,0 +1,55 @@
+{
+  "batch_id": "20260609_151641_93f3d0a2",
+  "generated_at": "2026-06-09T15:16:41.211124",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Statistics",
+  "subtopic": "mean of grouped data",
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): For a given grouped frequency distribution, the class mark $x_i$ of a class interval is calculated as the average of its lower limit and upper limit.\nReason (R): The mean of grouped data is calculated using the formula $\\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i}$, where $x_i$ represents the class mark of the $i^{th}$ interval.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "The class mark (mid-point) of a class interval is defined as $\\frac{\\text{Lower Limit} + \\text{Upper Limit}}{2}$. Thus, Assertion (A) is true.",
+          "The formula for the mean of grouped data using the direct method is $\\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i}$, where $x_i$ is the class mark. Thus, Reason (R) is true.",
+          "The definition of the class mark is the fundamental basis for using it in the mean formula for grouped data. Therefore, the reason correctly explains the assertion."
+        ],
+        "derivation": "$x_i = \\frac{\\text{Lower Limit} + \\text{Upper Limit}}{2} \\\\ \\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i}$"
+      },
+      "topic": "Statistics",
+      "subtopic": "mean of grouped data",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T15:16:41.210835",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ]
+      },
+      "id": "ncert_20260609_151641_ded885_01"
+    }
+  ]
+}

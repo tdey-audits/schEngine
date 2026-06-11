@@ -1,0 +1,212 @@
+{
+  "batch_id": "20260610_145515_89b93b87",
+  "generated_at": "2026-06-10T14:55:15.721606",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "factorisation method",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $\\alpha$ and $\\beta$ are the roots of the quadratic equation $x^2 - 7x + 12 = 0$, then the quadratic equation whose roots are $\\alpha + 2$ and $\\beta + 2$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Find the roots of the given equation $x^2 - 7x + 12 = 0$ by factorisation.",
+          "Factorise $x^2 - 4x - 3x + 12 = 0$ to get $(x-4)(x-3) = 0$, so $\\alpha=4$ and $\\beta=3$.",
+          "Determine the new roots: $\\alpha + 2 = 6$ and $\\beta + 2 = 5$.",
+          "Form the new quadratic equation using $(x-6)(x-5) = 0$.",
+          "Expand to get $x^2 - 11x + 30 = 0$."
+        ],
+        "derivation": "$x^2 - 7x + 12 = 0 \\\\ x^2 - 4x - 3x + 12 = 0 \\\\ x(x-4) - 3(x-4) = 0 \\\\ (x-4)(x-3) = 0 \\\\ \\alpha = 4, \\beta = 3 \\\\ \\text{New roots: } 4+2=6, 3+2=5 \\\\ (x-6)(x-5) = 0 \\\\ x^2 - 5x - 6x + 30 = 0 \\\\ x^2 - 11x + 30 = 0$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $x^2 - 11x - 30 = 0$",
+        "(B) $x^2 + 11x + 30 = 0$",
+        "(C) $x^2 - 11x + 30 = 0$",
+        "(D) $x^2 + 11x - 30 = 0$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T14:55:15.721203",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 2,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145515_e6615f_01"
+    },
+    {
+      "question": "The sum of the squares of two consecutive positive integers is $145$. If the integers are $x$ and $x+1$, the quadratic equation representing this condition is $2x^2 + 2x - 144 = 0$. The roots of the simplified equation $x^2 + x - 72 = 0$ are:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Factorise the quadratic equation $x^2 + x - 72 = 0$.",
+          "Look for two numbers that multiply to $-72$ and add to $1$.",
+          "The numbers are $9$ and $-8$.",
+          "Write $x^2 + 9x - 8x - 72 = 0$.",
+          "Factorise to get $(x+9)(x-8) = 0$.",
+          "The solutions are $x = -9$ and $x = 8$. Since the integers must be positive, $x = 8$."
+        ],
+        "derivation": "$x^2 + x - 72 = 0 \\\\ x^2 + 9x - 8x - 72 = 0 \\\\ x(x+9) - 8(x+9) = 0 \\\\ (x+9)(x-8) = 0 \\\\ x = -9, 8$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $9, -8$",
+        "(B) $8, -9$",
+        "(C) $8, 9$",
+        "(D) $-8, -9$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T14:55:15.721338",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 2,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145515_494ac6_02"
+    }
+  ]
+}

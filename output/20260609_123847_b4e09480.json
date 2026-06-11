@@ -1,0 +1,527 @@
+{
+  "batch_id": "20260609_123847_b4e09480",
+  "generated_at": "2026-06-09T12:38:47.166138",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Polynomials",
+  "subtopic": "division algorithm for polynomials",
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If the polynomial $p(x) = x^4 - 6x^3 + 16x^2 - 25x + 10$ is divided by $g(x) = x^2 - 2x + k$, the remainder is found to be $x + a$. What is the value of $k$?",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Perform long division of $p(x)$ by $g(x)$.",
+          "The first term of the quotient is $x^2$. Multiplying $x^2(x^2 - 2x + k)$ gives $x^4 - 2x^3 + kx^2$.",
+          "Subtracting from $p(x)$ yields $-4x^3 + (16-k)x^2 - 25x$.",
+          "The next term is $-4x$. Multiplying $-4x(x^2 - 2x + k)$ gives $-4x^3 + 8x^2 - 4kx$.",
+          "Subtracting yields $(8-k)x^2 + (4k-25)x + 10$.",
+          "The next term is $(8-k)$. Multiplying $(8-k)(x^2 - 2x + k)$ gives $(8-k)x^2 - 2(8-k)x + k(8-k)$.",
+          "Equate the remainder term of $x$ to $1$ and the constant term to $a$ to solve for $k$."
+        ],
+        "derivation": "$p(x) = (x^2 - 2x + k)(x^2 - 4x + 8 - k) + (4k - 25 + 16 - 2k)x + (10 - k(8 - k)) \\\\ (4k - 9)x + (10 - 8k + k^2) = x + a \\\\ 4k - 9 = 1 \\\\ 4k = 10 \\\\ k = 2.5$"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T12:38:47.165989",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 15,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 5,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_123847_a38262_01"
+    },
+    {
+      "question": "When $f(x) = x^3 - 3x^2 + 5x - 3$ is divided by $g(x) = x^2 - 2$, the quotient $q(x)$ is:",
+      "answer": "(B)",
+      "options": [
+        "(A) $x - 3$",
+        "(B) $x - 3$ with remainder $7x - 9$",
+        "(C) $x^2 - 3$",
+        "(D) $x + 3$"
+      ],
+      "solution": {
+        "steps": [
+          "Divide $x^3$ by $x^2$ to get $x$.",
+          "Multiply $x(x^2 - 2) = x^3 - 2x$.",
+          "Subtract $(x^3 - 3x^2 + 5x - 3) - (x^3 - 2x) = -3x^2 + 7x - 3$.",
+          "Divide $-3x^2$ by $x^2$ to get $-3$.",
+          "The quotient is $x - 3$."
+        ],
+        "derivation": "$(x^3 - 3x^2 + 5x - 3) = (x^2 - 2)(x - 3) + (7x - 9)$"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 1,
+      "type": "la",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-09T12:38:47.166032",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 15,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 5,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_123847_9c5b57_02"
+    },
+    {
+      "question": "If $g(x)$ is the divisor of $p(x) = 2x^4 - 3x^3 - 3x^2 + 6x - 2$ and the quotient $q(x) = 2x^2 - 3x + 1$ with $r(x) = 0$, what is the divisor $g(x)$?",
+      "answer": "(C)",
+      "options": [
+        "(A) $x^2 + 2$",
+        "(B) $x^2 + 1$",
+        "(C) $x^2 - 2$",
+        "(D) $2x^2 - 1$"
+      ],
+      "solution": {
+        "steps": [
+          "Use the division algorithm: $p(x) = g(x)q(x) + r(x)$.",
+          "Since $r(x) = 0$, $g(x) = p(x) / q(x)$.",
+          "Perform polynomial division of $2x^4 - 3x^3 - 3x^2 + 6x - 2$ by $2x^2 - 3x + 1$."
+        ],
+        "derivation": "$(2x^4 - 3x^3 - 3x^2 + 6x - 2) \\div (2x^2 - 3x + 1) = x^2 - 2$"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 1,
+      "type": "la",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-09T12:38:47.166040",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 15,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 5,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_123847_3af0af_03"
+    },
+    {
+      "question": "For a polynomial $p(x)$, if $p(x) = (x^2 - 4)q(x) + (2x + 1)$, what is the remainder when $p(x)$ is divided by $(x - 2)$?",
+      "answer": "(B)",
+      "options": [
+        "(A) $2$",
+        "(B) $5$",
+        "(C) $0$",
+        "(D) $4$"
+      ],
+      "solution": {
+        "steps": [
+          "By the Remainder Theorem, the remainder when $p(x)$ is divided by $(x - a)$ is $p(a)$.",
+          "Here $a = 2$.",
+          "Substitute $x = 2$ into the expression $p(x) = (x^2 - 4)q(x) + (2x + 1)$.",
+          "$p(2) = (2^2 - 4)q(2) + (2(2) + 1) = 0 \times q(2) + 5 = 5$."
+        ],
+        "derivation": "$p(2) = (4 - 4)q(2) + 4 + 1 = 5$"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 1,
+      "type": "la",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-09T12:38:47.166046",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 15,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 5,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_123847_cd7d76_04"
+    },
+    {
+      "question": "A polynomial $p(x)$ of degree $3$ is divided by $(x^2 - 1)$ resulting in a quotient $(x - 1)$ and a remainder $(2x + 3)$. Find the polynomial $p(x)$.",
+      "answer": "(A)",
+      "options": [
+        "(A) $x^3 - x^2 + x + 2$",
+        "(B) $x^3 + x^2 + x + 2$",
+        "(C) $x^3 - x^2 - x + 2$",
+        "(D) $x^3 + x^2 - x + 2$"
+      ],
+      "solution": {
+        "steps": [
+          "Use $p(x) = g(x)q(x) + r(x)$.",
+          "Given $g(x) = x^2 - 1$, $q(x) = x - 1$, $r(x) = 2x + 3$.",
+          "Expand $(x^2 - 1)(x - 1) = x^3 - x^2 - x + 1$.",
+          "Add the remainder: $(x^3 - x^2 - x + 1) + (2x + 3) = x^3 - x^2 + x + 4$."
+        ],
+        "derivation": "$p(x) = (x^2 - 1)(x - 1) + 2x + 3 = x^3 - x^2 - x + 1 + 2x + 3 = x^3 - x^2 + x + 4$"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 1,
+      "type": "la",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-09T12:38:47.166052",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 15,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 5,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_123847_df4a78_05"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "batch_id": "20260604_141102_a2ad324a",
+  "generated_at": "2026-06-04T14:11:02.573701",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Surface Areas and Volumes",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The total surface area of a solid hemisphere of radius $r$ is $3\\pi r^2$. Reason (R): The total surface area of a sphere is $4\\pi r^2$.",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "The total surface area of a hemisphere includes the curved surface area ($2\\pi r^2$) and the area of the circular base ($\\pi r^2$). Thus, TSA = $3\\pi r^2$. Assertion is true.",
+          "The formula for the total surface area of a sphere is indeed $4\\pi r^2$. Reason is true.",
+          "The reason explains the surface area of a sphere, not the derivation of the hemisphere's area. Thus, R is not the correct explanation for A."
+        ],
+        "derivation": "TSA_{hemisphere} = 2\\pi r^2 + \\pi r^2 = 3\\pi r^2"
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Surface Area of Solids",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:02.573512",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141102_5a2f57_01"
+    },
+    {
+      "question": "Assertion (A): If the radius of a cylinder is doubled and its height is halved, the volume remains the same. Reason (R): The volume of a cylinder is given by $V = \\pi r^2 h$.",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Let initial volume be $V = \\pi r^2 h$.",
+          "New volume $V' = \\pi (2r)^2 (h/2) = \\pi (4r^2) (h/2) = 2\\pi r^2 h = 2V$. Assertion is false.",
+          "The volume formula for a cylinder is correctly identified as $\\pi r^2 h$. Reason is true."
+        ],
+        "derivation": "V_{new} = \\pi (2r)^2 \\times \\frac{h}{2} = 2\\pi r^2 h"
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Volume of Cylinder",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:02.573563",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141102_4bdfc1_02"
+    },
+    {
+      "question": "Assertion (A): The volume of a cone with radius $r$ and height $h$ is $\\frac{1}{3}\\pi r^2 h$. Reason (R): A cone is one-third of a cylinder with the same base and height.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "The volume of a cone is mathematically defined as $\\frac{1}{3}\\pi r^2 h$. Assertion is true.",
+          "Geometrically, a cone occupies one-third the volume of a cylinder having the same radius and height. Reason is true and explains the assertion."
+        ],
+        "derivation": "V_{cone} = \\frac{1}{3} V_{cylinder} = \\frac{1}{3} \\pi r^2 h"
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Volume of Cone",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:02.573575",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141102_676100_03"
+    },
+    {
+      "question": "Assertion (A): The slant height $l$ of a cone is given by $l = \\sqrt{h^2 + r^2}$. Reason (R): This is derived from Pythagoras theorem applied to the triangle formed by height, radius, and slant height.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "The slant height $l$, radius $r$, and vertical height $h$ form a right-angled triangle in a cone.",
+          "By Pythagoras theorem, the hypotenuse $l^2 = r^2 + h^2$, so $l = \\sqrt{r^2 + h^2}$. Assertion is true.",
+          "The Reason correctly identifies the geometric origin of the formula. Thus, R is the correct explanation."
+        ],
+        "derivation": "l^2 = r^2 + h^2 \\implies l = \\sqrt{r^2 + h^2}"
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Cone Properties",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:02.573585",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141102_6acb2d_04"
+    },
+    {
+      "question": "Assertion (A): If the surface area of a sphere is $616 \\text{ cm}^2$, its radius is $7 \\text{ cm}$. Reason (R): The surface area of a sphere is $4\\pi r^2$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Using $4\\pi r^2 = 616$, we have $4 \\times (22/7) \\times r^2 = 616$.",
+          "$r^2 = 616 \\times 7 / (4 \\times 22) = 616 \\times 7 / 88 = 7 \\times 7 = 49$.",
+          "$r = 7 \\text{ cm}$. Assertion is true.",
+          "Reason is the correct formula used for the calculation. Thus, R is the correct explanation."
+        ],
+        "derivation": "4 \\times \\frac{22}{7} \\times r^2 = 616 \\implies r^2 = 49 \\implies r = 7"
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Surface Area of Sphere",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:02.573595",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141102_6b5d04_05"
+    }
+  ]
+}

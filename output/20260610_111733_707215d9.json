@@ -1,0 +1,13 @@
+{
+  "batch_id": "20260610_111733_707215d9",
+  "generated_at": "2026-06-10T11:17:33.715910",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": null,
+  "question_type": null,
+  "question_count": 0,
+  "mechanisms": [],
+  "questions": []
+}

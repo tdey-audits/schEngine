@@ -1,0 +1,119 @@
+{
+  "batch_id": "20260610_145507_fa8305d4",
+  "generated_at": "2026-06-10T14:55:07.351907",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Pair of Linear Equations in Two Variables",
+  "subtopic": "graphical method",
+  "difficulty": "hard",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Consider the pair of linear equations $3x + 2ky = 2$ and $2x + 5y + 1 = 0$. For what value of $k$ do the lines represented by these equations intersect at a point such that the sum of the coordinates of the intersection point is zero?",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Let the intersection point be $(x, y)$. The condition that the sum of coordinates is zero implies $x + y = 0$, or $y = -x$.",
+          "Substitute $y = -x$ into the second equation: $2x + 5(-x) + 1 = 0 \\Rightarrow 2x - 5x + 1 = 0 \\Rightarrow -3x = -1 \\Rightarrow x = 1/3$.",
+          "Since $y = -x$, the point of intersection is $(1/3, -1/3)$.",
+          "Substitute this point into the first equation: $3(1/3) + 2k(-1/3) = 2$.",
+          "Solve for $k$: $1 - (2/3)k = 2 \\Rightarrow -(2/3)k = 1 \\Rightarrow k = -3/2$."
+        ],
+        "derivation": "$x + y = 0 \\Rightarrow y = -x \\\\ 2x + 5(-x) + 1 = 0 \\\\ -3x = -1 \\Rightarrow x = \\frac{1}{3} \\\\ y = -\\frac{1}{3} \\\\ 3(\\frac{1}{3}) + 2k(-\\frac{1}{3}) = 2 \\\\ 1 - \\frac{2k}{3} = 2 \\\\ -\\frac{2k}{3} = 1 \\\\ k = -\\frac{3}{2}$"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "graphical method",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "hard",
+      "options": [
+        "(A) -3/2",
+        "(B) 3/2",
+        "(C) -2/3",
+        "(D) 2/3"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T14:55:07.351816",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 13,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145507_4e533f_01"
+    }
+  ]
+}

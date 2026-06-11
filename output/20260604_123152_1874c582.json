@@ -1,0 +1,33 @@
+{
+  "batch_id": "20260604_123152_1874c582",
+  "generated_at": "2026-06-04T12:31:52.828026",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "Assertion (A): The quadratic equation $2x^2 - 5x + 3 = 0$ has two distinct real roots.\nReason (R): For a quadratic equation $ax^2 + bx + c = 0$, if $b^2 - 4ac > 0$, then the equation has two distinct real roots.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Step 1: Identify coefficients: a = 2, b = -5, c = 3.",
+          "Step 2: Compute discriminant: D = b\u00b2 - 4ac = (-5)\u00b2 - 4(2)(3) = 25 - 24 = 1.",
+          "Step 3: Since D = 1 > 0, the quadratic equation has two distinct real roots. Thus Assertion (A) is true.",
+          "Step 4: Reason (R) states the correct condition for two distinct real roots, which is true and correctly explains why (A) is true."
+        ],
+        "derivation": "$D = b^2 - 4ac = (-5)^2 - 4(2)(3) = 25 - 24 = 1 > 0$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of Roots",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-04T12:31:52.827862",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_123152_5dc88b"
+    }
+  ]
+}

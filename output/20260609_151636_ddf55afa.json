@@ -1,0 +1,68 @@
+{
+  "batch_id": "20260609_151636_ddf55afa",
+  "generated_at": "2026-06-09T15:16:36.917378",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Statistics",
+  "subtopic": "mean of grouped data",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "For a given grouped frequency distribution, the assumed mean method formula is $\\bar{x} = a + \\frac{\\sum f_i d_i}{\\sum f_i}$. If the assumed mean $a = 45$, $\\sum f_i d_i = 120$, and $\\sum f_i = 30$, then the mean $\\bar{x}$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify the given values: $a = 45$, $\\sum f_i d_i = 120$, and $\\sum f_i = 30$.",
+          "Substitute these values into the assumed mean formula: $\\bar{x} = a + \\frac{\\sum f_i d_i}{\\sum f_i}$.",
+          "Calculate the fraction: $\\frac{120}{30} = 4$.",
+          "Add the result to the assumed mean: $\\bar{x} = 45 + 4 = 49$."
+        ],
+        "derivation": "$\\bar{x} = 45 + \\frac{120}{30} \\\\ \\bar{x} = 45 + 4 \\\\ \\bar{x} = 49$"
+      },
+      "topic": "Statistics",
+      "subtopic": "mean of grouped data",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 44",
+        "(B) 48",
+        "(C) 49",
+        "(D) 50"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T15:16:36.917174",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 6,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260609_151636_b82008_01"
+    }
+  ]
+}

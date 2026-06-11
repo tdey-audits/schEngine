@@ -1,0 +1,41 @@
+{
+  "batch_id": "20260604_133511_ce7de2ea",
+  "generated_at": "2026-06-04T13:35:11.270463",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Prove the following trigonometric identity: $\\frac{\\cos \\theta - \\sin \\theta + 1}{\\cos \\theta + \\sin \\theta - 1} = \\csc \\theta + \\cot \\theta$, using the identity $\\csc^2 \\theta = 1 + \\cot^2 \\theta$.",
+      "answer": "$\\csc \\theta + \\cot \\theta$",
+      "solution": {
+        "steps": [
+          "Divide the numerator and the denominator of the Left Hand Side (LHS) by $\\sin \\theta$.",
+          "Recall that $\\frac{\\cos \\theta}{\\sin \\theta} = \\cot \\theta$, $\\frac{\\sin \\theta}{\\sin \\theta} = 1$, and $\\frac{1}{\\sin \\theta} = \\csc \\theta$.",
+          "Rearrange the terms to group $\\csc \\theta$ and $\\cot \\theta$ together.",
+          "Use the identity $1 = \\csc^2 \\theta - \\cot^2 \\theta$ to substitute the '1' in the denominator.",
+          "Factorize the denominator using the difference of squares identity $a^2 - b^2 = (a-b)(a+b)$.",
+          "Cancel the common term in the numerator and denominator to arrive at the RHS."
+        ],
+        "derivation": "LHS = \\frac{\\frac{\\cos \\theta}{\\sin \\theta} - \\frac{\\sin \\theta}{\\sin \\theta} + \\frac{1}{\\sin \\theta}}{\\frac{\\cos \\theta}{\\sin \\theta} + \\frac{\\sin \\theta}{\\sin \\theta} - \\frac{1}{\\sin \\theta}} = \\frac{\\cot \\theta - 1 + \\csc \\theta}{\\cot \\theta + 1 - \\csc \\theta} \\\\ = \\frac{\\cot \\theta + \\csc \\theta - (\\csc^2 \\theta - \\cot^2 \\theta)}{\\cot \\theta - \\csc \\theta + 1} \\\\ = \\frac{(\\cot \\theta + \\csc \\theta) - [(\\csc \\theta - \\cot \\theta)(\\csc \\theta + \\cot \\theta)]}{\\cot \\theta - \\csc \\theta + 1} \\\\ = \\frac{(\\cot \\theta + \\csc \\theta) [1 - (\\csc \\theta - \\cot \\theta)]}{\\cot \\theta - \\csc \\theta + 1} \\\\ = \\frac{(\\cot \\theta + \\csc \\theta) [1 - \\csc \\theta + \\cot \\theta]}{\\cot \\theta - \\csc \\theta + 1} \\\\ = \\cot \\theta + \\csc \\theta = RHS"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:35:11.270362",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133511_95f2f4_01"
+    }
+  ]
+}

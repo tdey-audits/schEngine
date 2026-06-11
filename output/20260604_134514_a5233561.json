@@ -1,0 +1,117 @@
+{
+  "batch_id": "20260604_134514_a5233561",
+  "generated_at": "2026-06-04T13:45:14.444931",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Prove that the lengths of tangents drawn from an external point to a circle are equal.",
+      "answer": "PA = PB",
+      "solution": {
+        "steps": [
+          "Draw a circle with center O and an external point P.",
+          "Draw two tangents PA and PB to the circle from P.",
+          "Join OA, OB and OP.",
+          "Consider triangles OAP and OBP.",
+          "Show that the two triangles are congruent using RHS congruence criterion.",
+          "Conclude that PA = PB by CPCT."
+        ],
+        "derivation": "In \\triangle OAP \\text{ and } \\triangle OBP: \\\\ 1. OA = OB \\text{ (radii of the same circle)} \\\\ 2. \\angle OAP = \\angle OBP = 90^\\circ \\text{ (tangent is perpendicular to radius)} \\\\ 3. OP = OP \\text{ (common side)} \\\\ \\therefore \\triangle OAP \\cong \\triangle OBP \\text{ (RHS Criterion)} \\\\ \\implies PA = PB \\text{ (CPCT)}"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:14.444794",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134514_c59019_01"
+    },
+    {
+      "question": "A quadrilateral $ABCD$ is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.",
+      "answer": "AB + CD = AD + BC",
+      "solution": {
+        "steps": [
+          "Use the property that tangents from an external point to a circle are equal in length.",
+          "Label the points of contact as P, Q, R, S on sides AB, BC, CD, DA respectively.",
+          "Express segments of the sides in terms of these tangent lengths.",
+          "Sum the sides AB + CD and AD + BC.",
+          "Show that both sums result in the same algebraic expression."
+        ],
+        "derivation": "Let points of contact be P, Q, R, S. \\\\ AP=AS, BP=BQ, CR=CQ, DR=DS \\\\ AB+CD = (AP+PB) + (CR+DR) \\\\ = (AS+BQ) + (CQ+DS) \\\\ = (AS+DS) + (BQ+CQ) \\\\ = AD + BC"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:14.444845",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134514_0e0625_02"
+    },
+    {
+      "question": "Two concentric circles are of radii 5 cm and 3 cm. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "answer": "8 cm",
+      "solution": {
+        "steps": [
+          "Draw a diagram with concentric circles center O.",
+          "Let AB be the chord of the larger circle touching smaller circle at P.",
+          "OP is radius of smaller circle, OA is radius of larger circle.",
+          "OP is perpendicular to AB.",
+          "Apply Pythagoras theorem in \\triangle OPA.",
+          "Calculate AP and double it to find chord length AB."
+        ],
+        "derivation": "OA^2 = OP^2 + AP^2 \\\\ 5^2 = 3^2 + AP^2 \\\\ 25 = 9 + AP^2 \\\\ AP^2 = 16 \\implies AP = 4 \\text{ cm} \\\\ AB = 2 \\times AP = 8 \\text{ cm}"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:14.444859",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134514_043fca_03"
+    },
+    {
+      "question": "If a hexagon $ABCDEF$ circumscribes a circle, prove that $AB + CD + EF = BC + DE + FA$.",
+      "answer": "AB + CD + EF = BC + DE + FA",
+      "solution": {
+        "steps": [
+          "Identify that tangents from the same exterior point to a circle are equal.",
+          "Let the points of contact be P, Q, R, S, T, U on sides AB, BC, CD, DE, EF, FA.",
+          "Write equations for each vertex: AP=AU, BP=BQ, CQ=CR, DR=DS, ES=ET, FT=FU.",
+          "Sum the segments for both sides of the equation.",
+          "Equate and simplify to prove the result."
+        ],
+        "derivation": "AB+CD+EF = (AP+PB) + (CR+DR) + (ET+FT) \\\\ = (AU+BQ) + (CQ+DS) + (ES+FU) \\\\ Rearranging: (BQ+CQ) + (DS+ES) + (FU+AU) \\\\ = BC + DE + FA"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:14.444868",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134514_e93088_04"
+    }
+  ]
+}

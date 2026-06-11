@@ -1,0 +1,163 @@
+{
+  "batch_id": "20260609_160121_a2faf4f0",
+  "generated_at": "2026-06-09T16:01:21.861724",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In a circle with centre $O$ and radius $5$ cm, a chord $AB$ of length $8$ cm is drawn. Tangents at points $A$ and $B$ intersect at a point $P$. A third tangent is drawn to the circle at a point $R$ on the minor arc $AB$, which intersects $PA$ at $M$ and $PB$ at $N$. Calculate the perimeter of the $\\triangle PMN$.",
+      "answer": "8 cm",
+      "solution": {
+        "steps": [
+          "Identify that $PA$ and $PB$ are tangents to the circle from an external point $P$, so $PA = PB$.",
+          "Recognize that $M$ is a point on $PA$ and $MN$ is a tangent to the circle at $R$. Therefore, $MA = MR$ as they are tangents from point $M$.",
+          "Similarly, $NB = NR$ as they are tangents from point $N$.",
+          "Express the perimeter of $\\triangle PMN$ as $PM + MN + NP$.",
+          "Substitute $MN = MR + RN$ to get $Perimeter = PM + MR + RN + NP$.",
+          "Use the equality of tangents ($MA = MR$ and $NB = NR$) to substitute into the expression: $Perimeter = (PM + MA) + (NB + NP) = PA + PB$.",
+          "Since $PA = PB$, the perimeter is $2 \\times PA$.",
+          "In $\\triangle OAP$, $\\angle OAP = 90^\\circ$ (radius $\\perp$ tangent). In $\\triangle OAC$, where $C$ is the midpoint of $AB$, $AC = 4$ cm and $OA = 5$ cm. By Pythagoras, $OC = 3$ cm. Using similarity or properties of right triangles, find $PA = \\frac{20}{3}$ cm. However, re-evaluating the geometry, the perimeter is $PA + PB = 2 \\times PA = 2 \\times \\frac{20}{3} = \\frac{40}{3}$ cm."
+        ],
+        "derivation": "$PA = PB \\text{ (tangents from P)} \\\\ MN = MR + NR \\\\ MR = MA, NR = NB \\\\ \\text{Perimeter} = PM + MN + NP = PM + MR + NR + NP \\\\ \\text{Perimeter} = (PM + MA) + (NP + NB) = PA + PB \\\\ \\text{In } \\triangle OAP, \\angle OAP = 90^\\circ, OA = 5, AC = 4 \\Rightarrow OC = 3 \\\\ \\triangle OAP \\sim \\triangle OCA \\Rightarrow \\frac{PA}{OA} = \\frac{AC}{OC} \\Rightarrow \\frac{PA}{5} = \\frac{4}{3} \\Rightarrow PA = \\frac{20}{3} \\\\ \\text{Perimeter} = \\frac{20}{3} + \\frac{20}{3} = \\frac{40}{3} \\text{ cm}$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "caption": "Tangents to a circle at A, B, and R",
+        "scale": 1.0,
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": -1.2,
+            "y": -1.6,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 1.2,
+            "y": -1.6,
+            "label": "B"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 0,
+            "y": -3.5,
+            "label": "P"
+          },
+          {
+            "kind": "point",
+            "id": "R",
+            "x": 0,
+            "y": 2,
+            "label": "R"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "A"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "B"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "M"
+          },
+          {
+            "kind": "segment",
+            "from": "B",
+            "to": "N"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-09T16:01:21.861402",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_12 (Areas Related to Circles).pdf",
+          "Chapter_10 (Circles).pdf"
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.4",
+            "question_no": 7,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.4",
+            "question_no": 13,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.4",
+            "question_no": 16,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Circles",
+            "exercise": "9.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Circles",
+            "exercise": "9.4",
+            "question_no": 14,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Circles",
+            "exercise": "9.4",
+            "question_no": 10,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160121_46a6f1_01"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "batch_id": "20260604_122611_bc3a1ea9",
+  "generated_at": "2026-06-04T12:26:11.308602",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "If $A = 2^3 \\times 5^2$ and $B = 2^2 \\times 5^3 \\times 7$, find the HCF of $A$ and $B$.",
+      "answer": "$2^2 \\times 5^2 = 100$",
+      "solution": {
+        "steps": [
+          "Write the prime factorisations of A and B.",
+          "Identify common prime factors with the smallest exponent.",
+          "Multiply the common prime factors with their smallest exponents."
+        ],
+        "derivation": "\\text{HCF} = 2^{\\min(3,2)} \\times 5^{\\min(2,3)} \\times 7^{0} = 2^2 \\times 5^2 = 4 \\times 25 = 100"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "HCF and LCM using prime factorisation",
+      "marks": 1,
+      "type": "vsa",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-04T12:26:11.308440",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_122611_6c9060"
+    }
+  ]
+}

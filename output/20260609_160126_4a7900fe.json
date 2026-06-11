@@ -1,0 +1,153 @@
+{
+  "batch_id": "20260609_160126_4a7900fe",
+  "generated_at": "2026-06-09T16:01:26.108709",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A packaging unit at a factory receives two types of shipments: Type A, containing $240$ packets of flour, and Type B, containing $312$ packets of sugar. The manager wishes to arrange these packets into identical stacks such that each stack contains packets of only one type and every stack has the same number of packets. To ensure efficient logistics, the manager wants to maximize the number of packets in each stack. Let $H$ be the maximum number of packets per stack and $L$ be the least common multiple of the number of packets in Type A and Type B shipments.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "What is the maximum number of packets in each stack, $H$?",
+          "answer": "(C)",
+          "options": [
+            "(A) $12$",
+            "(B) $18$",
+            "(C) $24$",
+            "(D) $48$"
+          ],
+          "solution": {
+            "steps": [
+              "Find the HCF of $240$ and $312$ using prime factorization.",
+              "$240 = 2^4 \\times 3 \\times 5$",
+              "$312 = 2^3 \\times 3 \\times 13$",
+              "HCF = $2^3 \\times 3 = 8 \\times 3 = 24$"
+            ],
+            "derivation": "$240 = 2^4 \\times 3^1 \\times 5^1 \\\\ 312 = 2^3 \\times 3^1 \\times 13^1 \\\\ \\text{HCF} = 2^{\\min(4,3)} \\times 3^{\\min(1,1)} = 2^3 \\times 3 = 24$"
+          }
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Find the total number of stacks required if all packets are arranged in these $H$-sized stacks.",
+          "answer": "$23$",
+          "solution": {
+            "steps": [
+              "Calculate stacks for Type A: $240 \\div 24 = 10$.",
+              "Calculate stacks for Type B: $312 \\div 24 = 13$.",
+              "Total stacks = $10 + 13 = 23$."
+            ],
+            "derivation": "\\text{Total stacks} = \\frac{240}{24} + \\frac{312}{24} = 10 + 13 = 23"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "mcq",
+          "question": "Which of the following is true regarding the prime factorization of $L$?",
+          "answer": "(B)",
+          "options": [
+            "(A) $L$ is not divisible by $5$",
+            "(B) $L$ contains $2^4$ as a factor",
+            "(C) $L$ is a prime number",
+            "(D) $L$ is not divisible by $13$"
+          ],
+          "solution": {
+            "steps": [
+              "Find LCM using prime factors: $LCM = 2^4 \\times 3^1 \\times 5^1 \\times 13^1$.",
+              "Check factors: $2^4$ is present."
+            ],
+            "derivation": "L = 2^4 \\times 3^1 \\times 5^1 \\times 13^1 = 3120 \\\\ 2^4 \\text{ is a factor of } L."
+          }
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "Verify the relationship $\\text{HCF}(240, 312) \\times \\text{LCM}(240, 312) = 240 \\times 312$ by calculating the product of the numbers.",
+          "answer": "$74880$",
+          "solution": {
+            "steps": [
+              "Product = $240 \\times 312$.",
+              "Multiply the values: $240 \\times 300 = 72000$, $240 \\times 12 = 2880$.",
+              "Sum = $74880$."
+            ],
+            "derivation": "240 \\times 312 = 240 \\times (300 + 12) = 72000 + 2880 = 74880"
+          }
+        }
+      ],
+      "topic": "Real Numbers",
+      "subtopic": "HCF and LCM",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T16:01:26.108366",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160126_c50bfa_01"
+    }
+  ]
+}

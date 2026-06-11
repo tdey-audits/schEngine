@@ -1,0 +1,41 @@
+{
+  "batch_id": "20260604_123507_bd25e840",
+  "generated_at": "2026-06-04T12:35:07.277272",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "A motorboat whose speed in still water is $18$ km/h takes $1$ hour more to go $24$ km upstream than to return downstream to the same spot. Find the speed of the stream.",
+      "answer": "Speed of the stream is $6$ km/h.",
+      "solution": {
+        "steps": [
+          "Let the speed of the stream be $x$ km/h.",
+          "Upstream speed = $(18 - x)$ km/h, downstream speed = $(18 + x)$ km/h.",
+          "Time upstream = $\\frac{24}{18 - x}$ hours, time downstream = $\\frac{24}{18 + x}$ hours.",
+          "Given: time upstream = time downstream + 1 hour. So $\\frac{24}{18 - x} = \\frac{24}{18 + x} + 1$.",
+          "Multiply both sides by $(18 - x)(18 + x)$: $24(18 + x) = 24(18 - x) + (18 - x)(18 + x)$.",
+          "Simplify: $432 + 24x = 432 - 24x + (324 - x^2)$.",
+          "Cancel $432$ on both sides: $24x = -24x + 324 - x^2$.",
+          "Bring all terms to one side: $24x + 24x - 324 + x^2 = 0$ \u2192 $x^2 + 48x - 324 = 0$.",
+          "Solve quadratic: $x^2 + 48x - 324 = 0$. Discriminant $D = 48^2 - 4(1)(-324) = 2304 + 1296 = 3600$.",
+          "$x = \\frac{-48 \\pm \\sqrt{3600}}{2} = \\frac{-48 \\pm 60}{2}$.",
+          "So $x = \\frac{12}{2} = 6$ or $x = \\frac{-108}{2} = -54$ (reject negative).",
+          "Thus speed of stream is $6$ km/h."
+        ],
+        "derivation": "Let speed of stream = $x$ km/h.\nUpstream speed = $18 - x$, downstream = $18 + x$.\n$\\frac{24}{18 - x} = \\frac{24}{18 + x} + 1$\n$\\Rightarrow 24(18 + x) = 24(18 - x) + (18 - x)(18 + x)$\n$\\Rightarrow 432 + 24x = 432 - 24x + 324 - x^2$\n$\\Rightarrow 24x = -24x + 324 - x^2$\n$\\Rightarrow x^2 + 48x - 324 = 0$\n$\\Rightarrow x = \\frac{-48 \\pm \\sqrt{2304 + 1296}}{2} = \\frac{-48 \\pm 60}{2}$\n$\\Rightarrow x = 6$ or $x = -54$ (reject).\nHence speed of stream = $6$ km/h."
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Word Problems on Speed, Time and Distance",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T12:35:07.277159",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_123507_5040a0"
+    }
+  ]
+}

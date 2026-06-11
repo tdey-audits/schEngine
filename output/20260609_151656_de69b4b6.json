@@ -1,0 +1,63 @@
+{
+  "batch_id": "20260609_151656_de69b4b6",
+  "generated_at": "2026-06-09T15:16:56.883918",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Probability",
+  "subtopic": "probability basics",
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A box contains a total of $90$ discs which are numbered from $1$ to $90$. If one disc is drawn at random from the box, find the probability that it bears: (i) a two-digit number, (ii) a perfect square number, and (iii) a number divisible by $5$.",
+      "answer": "(i) $\\frac{81}{90} = \\frac{9}{10}$, (ii) $\\frac{9}{90} = \\frac{1}{10}$, (iii) $\\frac{18}{90} = \\frac{1}{5}$",
+      "solution": {
+        "steps": [
+          "Identify the total number of outcomes $n(S) = 90$.",
+          "For (i), identify the two-digit numbers from $1$ to $90$. These are numbers from $10$ to $90$. The count is $90 - 10 + 1 = 81$. Calculate $P(E_1) = \\frac{81}{90}$.",
+          "For (ii), identify perfect squares between $1$ and $90$. These are $1^2, 2^2, 3^2, 4^2, 5^2, 6^2, 7^2, 8^2, 9^2$ ($1, 4, 9, 16, 25, 36, 49, 64, 81$). The count is $9$. Calculate $P(E_2) = \\frac{9}{90}$.",
+          "For (iii), identify multiples of $5$ between $1$ and $90$. This is an arithmetic progression $5, 10, \\dots, 90$. Using $a_n = a + (n-1)d$, $90 = 5 + (n-1)5$, so $18 = n$. The count is $18$. Calculate $P(E_3) = \\frac{18}{90}$.",
+          "Simplify all fractions to their lowest terms."
+        ],
+        "derivation": "n(S) = 90 \\\\ (i) \\text{ Two-digit numbers: } \\{10, 11, \\dots, 90\\}, n(E_1) = 81 \\Rightarrow P(E_1) = \\frac{81}{90} = \\frac{9}{10} \\\\ (ii) \\text{ Perfect squares: } \\{1, 4, 9, 16, 25, 36, 49, 64, 81\\}, n(E_2) = 9 \\Rightarrow P(E_2) = \\frac{9}{90} = \\frac{1}{10} \\\\ (iii) \\text{ Divisible by } 5: \\{5, 10, \\dots, 90\\}, n(E_3) = \\frac{90}{5} = 18 \\Rightarrow P(E_3) = \\frac{18}{90} = \\frac{1}{5}"
+      },
+      "topic": "Probability",
+      "subtopic": "probability basics",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T15:16:56.883630",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_15 (Probability).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 32,
+            "paper_variant": "standard",
+            "question_type": "la"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 33,
+            "paper_variant": "standard",
+            "question_type": "la"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 34,
+            "paper_variant": "standard",
+            "question_type": "la"
+          }
+        ]
+      },
+      "id": "ncert_20260609_151656_be3900_01"
+    }
+  ]
+}

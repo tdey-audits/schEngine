@@ -1,0 +1,121 @@
+{
+  "batch_id": "20260610_145457_2a4a7cdb",
+  "generated_at": "2026-06-10T14:54:57.933815",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": "fundamental theorem of arithmetic",
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If the prime factorisation of a natural number $N$ is given by $N = 2^x \times 3^y \times 5^z$, where $x, y, z$ are non-negative integers, and it is known that $N$ is a multiple of $15$ but not a multiple of $2$, then which of the following must be true?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Analyze the given condition: $N = 2^x \times 3^y \times 5^z$.",
+          "Since $N$ is not a multiple of $2$, the exponent of the prime factor $2$ must be zero, so $x = 0$.",
+          "Since $N$ is a multiple of $15$, it must be divisible by both $3$ and $5$.",
+          "For $N$ to be divisible by $3$, the exponent $y$ must be at least $1$ ($y \\geq 1$).",
+          "For $N$ to be divisible by $5$, the exponent $z$ must be at least $1$ ($z \\geq 1$).",
+          "Combining these conditions, $x = 0$, $y \\geq 1$, and $z \\geq 1$."
+        ],
+        "derivation": "$N = 2^x \times 3^y \times 5^z \\ \\text{Condition 1: } N \\text{ is not a multiple of } 2 \\Rightarrow x = 0 \\ \\text{Condition 2: } N \\text{ is a multiple of } 15 \\Rightarrow N \\text{ is divisible by } 3 \\times 5 \\Rightarrow y \\geq 1 \\text{ and } z \\geq 1 \\ \\therefore x = 0, y \\geq 1, z \\geq 1$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "fundamental theorem of arithmetic",
+      "marks": 1,
+      "type": "la",
+      "difficulty": "hard",
+      "options": [
+        "(A) $x \\geq 1, y \\geq 1, z \\geq 1$",
+        "(B) $x = 1, y \\geq 1, z \\geq 1$",
+        "(C) $x = 0, y \\geq 1, z \\geq 1$",
+        "(D) $x = 0, y = 0, z \\geq 1$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T14:54:57.933734",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Prelims.pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 1,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 5,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145457_718a82_01"
+    }
+  ]
+}

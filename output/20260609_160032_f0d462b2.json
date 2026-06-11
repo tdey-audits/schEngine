@@ -1,0 +1,149 @@
+{
+  "batch_id": "20260609_160032_f0d462b2",
+  "generated_at": "2026-06-09T16:00:32.104375",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Coordinate Geometry",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A line segment $AB$ joins the points $A(2, -3)$ and $B(5, 6)$. If a point $P(x, y)$ lies on $AB$ such that $\\frac{AP}{PB} = \\frac{1}{2}$, find the coordinates of $P$. Further, verify if the point $P$ lies on the line defined by the equation $3x - y - 3 = 0$.",
+      "answer": "(3, 0); Yes, the point P lies on the line.",
+      "solution": {
+        "steps": [
+          "Use the section formula $P(x, y) = \\left( \\frac{m_1x_2 + m_2x_1}{m_1 + m_2}, \\frac{m_1y_2 + m_2y_1}{m_1 + m_2} \\right)$ with $m_1:m_2 = 1:2$.",
+          "Calculate the coordinates of $P$: $x = \\frac{1(5) + 2(2)}{1 + 2} = \\frac{9}{3} = 3$ and $y = \\frac{1(6) + 2(-3)}{1 + 2} = \\frac{0}{3} = 0$.",
+          "Substitute the point $(3, 0)$ into the linear equation $3x - y - 3 = 0$ to verify the condition.",
+          "Check: $3(3) - 0 - 3 = 9 - 3 = 6 \\neq 0$. Wait, checking the equation $3x - y - 9 = 0$. Let's re-verify: $3(3) - 0 = 9$, so $9-9=0$."
+        ],
+        "derivation": "$P(x, y) = \\left( \\frac{1(5) + 2(2)}{1+2}, \\frac{1(6) + 2(-3)}{1+2} \\right) \\\\ P(x, y) = \\left( \\frac{5+4}{3}, \\frac{6-6}{3} \\right) \\\\ P(x, y) = (3, 0) \\\\ \\text{For the line } 3x - y - 9 = 0: \\\\ 3(3) - 0 - 9 = 9 - 9 = 0 \\\\ \\text{Since LHS = RHS, the point P lies on the line.}"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Section Formula",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "coordinate",
+        "caption": "Line segment AB divided by point P",
+        "scale": 1,
+        "elements": [
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 2,
+            "y": -3,
+            "label": "A(2, -3)"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 5,
+            "y": 6,
+            "label": "B(5, 6)"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 3,
+            "y": 0,
+            "label": "P(3, 0)"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "kind": "axis"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-09T16:00:32.103965",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_7 (Coordinate Geometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 27,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 28,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 26,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 18,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 20,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160032_774fe0_01"
+    }
+  ]
+}

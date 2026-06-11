@@ -1,0 +1,189 @@
+{
+  "batch_id": "20260610_145546_cfd9c363",
+  "generated_at": "2026-06-10T14:55:46.132951",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": "tangent to a circle",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In the given figure, $O$ is the centre of a circle. $PA$ and $PB$ are two tangents drawn from an external point $P$ to the circle. If $\\angle APB = 70^\\circ$, find the measure of $\\angle OAB$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "In quadrilateral $OAPB$, the sum of angles is $360^\\circ$. Since tangents are perpendicular to the radius at the point of contact, $\\angle OAP = \\angle OBP = 90^\\circ$.",
+          "Calculate $\\angle AOB = 180^\\circ - \\angle APB = 180^\\circ - 70^\\circ = 110^\\circ$.",
+          "In $\triangle OAB$, $OA = OB$ (radii of the same circle), which implies $\triangle OAB$ is an isosceles triangle.",
+          "The base angles are equal, so $\\angle OAB = \\angle OBA = (180^\\circ - \\angle AOB) / 2$.",
+          "Calculate $\\angle OAB = (180^\\circ - 110^\\circ) / 2 = 70^\\circ / 2 = 35^\\circ$."
+        ],
+        "derivation": "$PA \\perp OA \\text{ and } PB \\perp OB \\Rightarrow \\angle OAP = \\angle OBP = 90^\\circ \\\\ \text{In quad } OAPB, \\angle AOB = 360^\\circ - (90^\\circ + 90^\\circ + 70^\\circ) = 110^\\circ \\\\ OA = OB \\Rightarrow \triangle OAB \\text{ is isosceles} \\\\ \\angle OAB = \\angle OBA \\\\ \\angle OAB + \\angle OBA + \\angle AOB = 180^\\circ \\\\ 2 \\angle OAB = 180^\\circ - 110^\\circ \\\\ \\angle OAB = 35^\\circ$"
+      },
+      "topic": "Circles",
+      "subtopic": "tangent to a circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 35^\\circ",
+        "(B) 40^\\circ",
+        "(C) 45^\\circ",
+        "(D) 55^\\circ"
+      ],
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "caption": "Tangents from external point P",
+        "scale": 1,
+        "elements": [
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O",
+            "position": "below"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 4,
+            "y": 0,
+            "label": "P",
+            "position": "right"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0.5,
+            "y": 1.94,
+            "label": "A",
+            "position": "above"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 0.5,
+            "y": -1.94,
+            "label": "B",
+            "position": "below"
+          },
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "A"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "B"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "A"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "B"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "P"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-10T14:55:46.132666",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_10 (Circles).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 2,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 1,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Circles",
+            "exercise": "9.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Circles",
+            "exercise": "9.4",
+            "question_no": 12,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Circles",
+            "exercise": "9.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Circles",
+            "exercise": "9.4",
+            "question_no": 5,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Circles",
+            "exercise": "9.4",
+            "question_no": 9,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Circles",
+            "exercise": "9.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145546_f9e961_01"
+    }
+  ]
+}

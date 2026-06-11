@@ -1,0 +1,13 @@
+{
+  "batch_id": "20260604_135801_a8700dbd",
+  "generated_at": "2026-06-04T13:58:01.078220",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Polynomials",
+  "subtopic": "division algorithm for polynomials",
+  "difficulty": null,
+  "question_type": null,
+  "question_count": 0,
+  "mechanisms": [],
+  "questions": []
+}

@@ -1,0 +1,104 @@
+{
+  "batch_id": "20260610_145606_2ffe9513",
+  "generated_at": "2026-06-10T14:56:06.500999",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "factorisation method",
+  "difficulty": "hard",
+  "question_type": "vsa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the roots of the quadratic equation $3\\sqrt{5}x^2 + 25x + 10\\sqrt{5} = 0$ by the factorisation method.",
+      "answer": "$x = -\\sqrt{5}, x = -\\frac{2\\sqrt{5}}{3}$",
+      "solution": {
+        "steps": [
+          "Split the middle term $25x$ into $15x + 10x$ such that their product is $(3\\sqrt{5})(10\\sqrt{5}) = 150$, which matches the product of the first and last terms.",
+          "Factor by grouping the terms: $3\\sqrt{5}x(x + \\sqrt{5}) + 10(x + \\sqrt{5}) = 0$, then set each factor to zero to find the roots."
+        ],
+        "derivation": "$3\\sqrt{5}x^2 + 15x + 10x + 10\\sqrt{5} = 0 \\\\ 3\\sqrt{5}x(x + \\sqrt{5}) + 10(x + \\sqrt{5}) = 0 \\\\ (3\\sqrt{5}x + 10)(x + \\sqrt{5}) = 0 \\\\ x = -\\sqrt{5} \\text{ or } x = -\\frac{10}{3\\sqrt{5}} = -\\frac{10\\sqrt{5}}{3 \\times 5} = -\\frac{2\\sqrt{5}}{3}$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-10T14:56:06.500924",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 24,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 23,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 21,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145606_104fb8_01"
+    }
+  ]
+}

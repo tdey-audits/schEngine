@@ -1,0 +1,113 @@
+{
+  "batch_id": "20260609_111357_de2a6e35",
+  "generated_at": "2026-06-09T11:13:57.721124",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Show that for any positive integer $n$, the square of a positive integer cannot be of the form $5m + 2$ or $5m + 3$ for any integer $m$.",
+      "answer": "Any positive integer $a$ can be represented as $5q$, $5q+1$, $5q+2$, $5q+3$, or $5q+4$. Squaring these gives remainders $0, 1, 4, 4, 1$ respectively when divided by $5$. Since $2$ and $3$ are not in this set, the result is proved.",
+      "solution": {
+        "steps": [
+          "Represent any positive integer $a$ using Euclid's division lemma in the form $a = 5q + r$, where $r \\in \\{0, 1, 2, 3, 4\\}$.",
+          "Calculate the square $a^2$ for each case: $(5q)^2 = 25q^2 = 5(5q^2)$, $(5q+1)^2 = 25q^2 + 10q + 1 = 5(5q^2 + 2q) + 1$, $(5q+2)^2 = 25q^2 + 20q + 4 = 5(5q^2 + 4q) + 4$, $(5q+3)^2 = 25q^2 + 30q + 9 = 5(5q^2 + 6q + 1) + 4$, and $(5q+4)^2 = 25q^2 + 40q + 16 = 5(5q^2 + 8q + 3) + 1$.",
+          "Observe the remainders when $a^2$ is divided by $5$, which are $0, 1, 4, 4, 1$.",
+          "Conclude that $a^2$ can never be of the form $5m+2$ or $5m+3$ because the set of possible remainders does not include $2$ or $3$."
+        ],
+        "derivation": "a = 5q + r, r \\in \\{0, 1, 2, 3, 4\\} \\\\ a^2 = (5q+r)^2 = 25q^2 + 10qr + r^2 = 5(5q^2 + 2qr) + r^2 \\\\ r=0 \\Rightarrow a^2 = 5(5q^2) \\Rightarrow a^2 \\equiv 0 \\pmod{5} \\\\ r=1 \\Rightarrow a^2 = 5(5q^2 + 2q) + 1 \\Rightarrow a^2 \\equiv 1 \\pmod{5} \\\\ r=2 \\Rightarrow a^2 = 5(5q^2 + 4q) + 4 \\Rightarrow a^2 \\equiv 4 \\pmod{5} \\\\ r=3 \\Rightarrow a^2 = 5(5q^2 + 6q + 1) + 4 \\Rightarrow a^2 \\equiv 4 \\pmod{5} \\\\ r=4 \\Rightarrow a^2 = 5(5q^2 + 8q + 3) + 1 \\Rightarrow a^2 \\equiv 1 \\pmod{5} \\\\ \\text{Since } r^2 \\pmod{5} \\in \\{0, 1, 4\\}, \\text{ the form } 5m+2 \\text{ or } 5m+3 \\text{ is impossible.}"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Euclid's Division Lemma",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-09T11:13:57.720841",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 26,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 28,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 30,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 12,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_111357_252b12_01"
+    }
+  ]
+}

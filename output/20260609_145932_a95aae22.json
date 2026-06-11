@@ -1,0 +1,83 @@
+{
+  "batch_id": "20260609_145932_a95aae22",
+  "generated_at": "2026-06-09T14:59:32.998255",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "factorisation method",
+  "difficulty": "medium",
+  "question_type": "sa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Solve the quadratic equation $\\sqrt{3}x^2 + 10x + 7\\sqrt{3} = 0$ using the factorisation method.",
+      "answer": "$x = -\\sqrt{3}, x = -\\frac{7}{\\sqrt{3}}$",
+      "solution": {
+        "steps": [
+          "Identify the quadratic equation in the form $ax^2 + bx + c = 0$, where $a = \\sqrt{3}$, $b = 10$, and $c = 7\\sqrt{3}$.",
+          "Find two numbers whose product is $a \\times c = \\sqrt{3} \\times 7\\sqrt{3} = 21$ and whose sum is $b = 10$. These numbers are $7$ and $3$.",
+          "Split the middle term $10x$ as $7x + 3x$ and rewrite the equation: $\\sqrt{3}x^2 + 3x + 7x + 7\\sqrt{3} = 0$.",
+          "Factor by grouping: $\\sqrt{3}x(x + \\sqrt{3}) + 7(x + \\sqrt{3}) = 0$.",
+          "Factor out $(x + \\sqrt{3})$ to get $(x + \\sqrt{3})(\\sqrt{3}x + 7) = 0$, then set each factor to zero to find the roots."
+        ],
+        "derivation": "$\\sqrt{3}x^2 + 10x + 7\\sqrt{3} = 0 \\\\ \\sqrt{3}x^2 + 3x + 7x + 7\\sqrt{3} = 0 \\\\ \\sqrt{3}x(x + \\sqrt{3}) + 7(x + \\sqrt{3}) = 0 \\\\ (x + \\sqrt{3})(\\sqrt{3}x + 7) = 0 \\\\ x + \\sqrt{3} = 0 \\Rightarrow x = -\\sqrt{3} \\\\ \\sqrt{3}x + 7 = 0 \\Rightarrow x = -\\frac{7}{\\sqrt{3}}$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-09T14:59:32.997988",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 28,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 27,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 30,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_145932_b8d1d5_01"
+    }
+  ]
+}

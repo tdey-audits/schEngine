@@ -1,0 +1,181 @@
+{
+  "batch_id": "20260610_150324_37dcbf67",
+  "generated_at": "2026-06-10T15:03:24.701839",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "factorisation method",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "The roots of the quadratic equation $x^2 - 11x + 28 = 0$ are obtained by splitting the middle term. Which of the following represents the correct factorization?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify the quadratic equation $x^2 - 11x + 28 = 0$.",
+          "Find two numbers whose product is $28$ and whose sum is $-11$.",
+          "The factors of $28$ are $(1, 28), (2, 14), (4, 7)$.",
+          "Since the sum is $-11$, the numbers are $-4$ and $-7$.",
+          "Rewrite the equation as $x^2 - 4x - 7x + 28 = 0$.",
+          "Factor by grouping: $x(x - 4) - 7(x - 4) = 0$, which gives $(x - 4)(x - 7) = 0$."
+        ],
+        "derivation": "$x^2 - 11x + 28 = 0 \\ x^2 - 4x - 7x + 28 = 0 \\ x(x - 4) - 7(x - 4) = 0 \\ (x - 4)(x - 7) = 0$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $(x - 2)(x - 14) = 0$",
+        "(B) $(x + 4)(x + 7) = 0$",
+        "(C) $(x - 4)(x - 7) = 0$",
+        "(D) $(x + 2)(x + 14) = 0$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T15:03:24.701749",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 2,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.1",
+            "question_no": 7,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.1",
+            "question_no": 1,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.1",
+            "question_no": 2,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150324_6d1c72_01"
+    },
+    {
+      "question": "If $x = 3$ is one of the roots of the quadratic equation $x^2 - kx - 6 = 0$, then the other root of the equation is",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Given that $x = 3$ is a root, it must satisfy the equation $x^2 - kx - 6 = 0$.",
+          "Substitute $x = 3$ into the equation: $(3)^2 - k(3) - 6 = 0$.",
+          "Solve for $k$: $9 - 3k - 6 = 0 \\Rightarrow 3 - 3k = 0 \\Rightarrow k = 1$.",
+          "Substitute $k = 1$ back into the original equation: $x^2 - x - 6 = 0$.",
+          "Factor the quadratic: $(x - 3)(x + 2) = 0$.",
+          "The roots are $x = 3$ and $x = -2$."
+        ],
+        "derivation": "$3^2 - k(3) - 6 = 0 \\ 9 - 3k - 6 = 0 \\ 3k = 3 \\ k = 1 \\ x^2 - x - 6 = 0 \\ (x-3)(x+2) = 0 \\ x = 3, -2$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $-2$",
+        "(B) $2$",
+        "(C) $3$",
+        "(D) $-3$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T15:03:24.701788",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 2,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.1",
+            "question_no": 7,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.1",
+            "question_no": 1,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.1",
+            "question_no": 2,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150324_cbf9fe_02"
+    }
+  ]
+}

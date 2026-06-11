@@ -1,0 +1,45 @@
+{
+  "batch_id": "20260604_145429_486f62ec",
+  "generated_at": "2026-06-04T14:54:29.379843",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): If in $\\triangle ABC$ and $\\triangle DEF$, $\\frac{AB}{DE} = \\frac{BC}{EF} = \\frac{CA}{FD} = \\frac{2}{3}$, then $\\triangle ABC \\sim \\triangle DEF$. \\n Reason (R): Two triangles are similar if their corresponding sides are proportional (SSS similarity criterion).",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Check the condition for similarity given in the Assertion.",
+          "The ratios of corresponding sides are equal, which is the definition of the SSS similarity criterion.",
+          "The Reason correctly states the SSS similarity criterion, which is the basis for the Assertion.",
+          "Therefore, both A and R are true and R is the correct explanation of A."
+        ],
+        "derivation": "$\\text{Given } \\frac{AB}{DE} = \\frac{BC}{EF} = \\frac{CA}{FD} = \\frac{2}{3} \\Rightarrow \\triangle ABC \\sim \\triangle DEF \\text{ by SSS similarity criterion.} \\\\ \\text{The SSS criterion states that if the sides of one triangle are proportional to the sides of another triangle, then the triangles are similar.}"
+      },
+      "topic": "Triangles",
+      "subtopic": "Similarity of Triangles",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:54:29.379745",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145429_68fdca_01"
+    }
+  ]
+}

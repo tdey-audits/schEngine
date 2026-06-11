@@ -1,0 +1,179 @@
+{
+  "batch_id": "20260610_111711_476d0911",
+  "generated_at": "2026-06-10T11:17:11.031617",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In $\\triangle ABC$, $\\angle ABC = 90^\\circ$. A point $D$ lies on $AC$ such that $BD \\perp AC$. If $AD = 4 \\text{ cm}$ and $DC = 9 \\text{ cm}$, find the length of $BD$.",
+      "answer": "$6 \\text{ cm}$",
+      "solution": {
+        "steps": [
+          "Identify that in a right-angled triangle, a perpendicular drawn from the right-angle vertex to the hypotenuse divides the triangle into two triangles that are similar to the original triangle and to each other.",
+          "By similarity, $\\triangle ADB \\sim \\triangle BDC$.",
+          "Using the property of similar triangles, the ratio of corresponding sides is equal, so $\\frac{AD}{BD} = \\frac{BD}{DC}$.",
+          "Substitute the given values $AD = 4$ and $DC = 9$ into the equation $BD^2 = AD \\times DC$ and solve for $BD$."
+        ],
+        "derivation": "$In \\ \\triangle ADB \\ and \\ \\triangle BDC, \\ \\angle A + \\angle ABD = 90^\\circ \\ and \\ \\angle C + \\angle CBD = 90^\\circ \\\\ Since \\ \\angle ABD + \\angle CBD = 90^\\circ, \\ we \\ have \\ \\angle A = \\angle CBD \\ and \\ \\angle C = \\angle ABD \\\\ \\triangle ADB \\sim \\triangle BDC \\ (by \\ AA \\ similarity) \\\\ \\frac{AD}{BD} = \\frac{BD}{DC} \\\\ BD^2 = 4 \\times 9 \\\\ BD^2 = 36 \\\\ BD = \\sqrt{36} = 6 \\text{ cm}$"
+      },
+      "topic": "Triangles",
+      "subtopic": "Similarity of Triangles",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "caption": "Right triangle ABC with altitude BD to hypotenuse AC",
+        "elements": [
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0,
+            "y": 0,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 2,
+            "y": 3,
+            "label": "B"
+          },
+          {
+            "kind": "point",
+            "id": "C",
+            "x": 5,
+            "y": 0,
+            "label": "C"
+          },
+          {
+            "kind": "point",
+            "id": "D",
+            "x": 2,
+            "y": 0,
+            "label": "D"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "B",
+            "label": ""
+          },
+          {
+            "kind": "segment",
+            "from": "B",
+            "to": "C",
+            "label": ""
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "C",
+            "label": ""
+          },
+          {
+            "kind": "segment",
+            "from": "B",
+            "to": "D",
+            "label": ""
+          },
+          {
+            "kind": "right_angle",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ],
+            "label": ""
+          },
+          {
+            "kind": "right_angle",
+            "points": [
+              "B",
+              "D",
+              "C"
+            ],
+            "label": ""
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-10T11:17:11.031458",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_6 (Triangles).pdf",
+          "Chapter_7 (Coordinate Geometry).pdf",
+          "Chapter_11 (Constructions).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 30,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 12,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.3",
+            "question_no": 12,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_111711_2ab1a6_01"
+    }
+  ]
+}

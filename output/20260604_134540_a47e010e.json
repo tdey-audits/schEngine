@@ -1,0 +1,125 @@
+{
+  "batch_id": "20260604_134540_a47e010e",
+  "generated_at": "2026-06-04T13:45:40.161700",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If a tangent $PA$ and $PB$ from a point $P$ to a circle with center $O$ are inclined to each other at an angle of $80^{\\circ}$, then find $\\angle POA$.",
+      "answer": "$50^{\\circ}$",
+      "solution": {
+        "steps": [
+          "In quadrilateral $OAPB$, $\\angle OAP = \\angle OBP = 90^{\\circ}$ because the radius is perpendicular to the tangent at the point of contact.",
+          "In $\\triangle OAP$ and $\\triangle OBP$, $OP$ bisects $\\angle APB$, so $\\angle APO = 40^{\\circ}$. In $\\triangle OAP$, $\\angle POA = 180^{\\circ} - (90^{\\circ} + 40^{\\circ}) = 50^{\\circ}$."
+        ],
+        "derivation": "\\angle APB = 80^{\\circ} \\implies \\angle APO = 40^{\\circ}. \\text{ In } \\triangle OAP, \\angle OAP = 90^{\\circ}. \\angle POA = 180^{\\circ} - 90^{\\circ} - 40^{\\circ} = 50^{\\circ}."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:40.161168",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134540_94e372_01"
+    },
+    {
+      "question": "A quadrilateral $ABCD$ is drawn to circumscribe a circle. If $AB = 6\\text{ cm}$, $BC = 7\\text{ cm}$, and $CD = 4\\text{ cm}$, find the length of $AD$.",
+      "answer": "$3\\text{ cm}$",
+      "solution": {
+        "steps": [
+          "For a quadrilateral circumscribing a circle, the sums of opposite sides are equal: $AB + CD = BC + AD$.",
+          "Substitute the given values: $6 + 4 = 7 + AD$. Solving for $AD$ gives $10 - 7 = 3$."
+        ],
+        "derivation": "AB + CD = BC + AD \\implies 6 + 4 = 7 + AD \\implies AD = 10 - 7 = 3 \\text{ cm}."
+      },
+      "topic": "Circles",
+      "subtopic": "Properties of tangents",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:40.161299",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134540_417f58_02"
+    },
+    {
+      "question": "From a point $Q$, the length of the tangent to a circle is $24\\text{ cm}$ and the distance of $Q$ from the center is $25\\text{ cm}$. Find the radius of the circle.",
+      "answer": "$7\\text{ cm}$",
+      "solution": {
+        "steps": [
+          "Let $O$ be the center and $A$ be the point of contact. $\\triangle OAQ$ is a right-angled triangle with $\\angle OAQ = 90^{\\circ}$.",
+          "By Pythagoras theorem, $OQ^2 = OA^2 + AQ^2$. Substitute $25^2 = r^2 + 24^2$ and solve for $r$."
+        ],
+        "derivation": "25^2 = r^2 + 24^2 \\implies 625 = r^2 + 576 \\implies r^2 = 49 \\implies r = 7 \\text{ cm}."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:40.161339",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134540_b05d2a_03"
+    },
+    {
+      "question": "Two concentric circles are of radii $5\\text{ cm}$ and $3\\text{ cm}$. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "answer": "$8\\text{ cm}$",
+      "solution": {
+        "steps": [
+          "Let $AB$ be the chord of the larger circle touching the smaller circle at $M$. $OM \\perp AB$ and $OM = 3\\text{ cm}$, $OA = 5\\text{ cm}$.",
+          "In right $\\triangle OMA$, $AM = \\sqrt{OA^2 - OM^2} = \\sqrt{25 - 9} = 4$. Since $M$ is the midpoint, $AB = 2 \\times 4 = 8$."
+        ],
+        "derivation": "AM = \\sqrt{5^2 - 3^2} = \\sqrt{16} = 4 \\implies AB = 2 \\times 4 = 8 \\text{ cm}."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:40.161369",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134540_9c7092_04"
+    },
+    {
+      "question": "If the angle between two tangents drawn from an external point $P$ to a circle of radius $r$ and center $O$ is $60^{\\circ}$, find the length of $OP$.",
+      "answer": "$2r$",
+      "solution": {
+        "steps": [
+          "Let the tangents be $PA$ and $PB$. $OP$ bisects $\\angle APB$, so $\\angle APO = 30^{\\circ}$.",
+          "In $\\triangle OAP$, $\\sin(30^{\\circ}) = \\frac{OA}{OP} = \\frac{r}{OP}$. Since $\\sin(30^{\\circ}) = 1/2$, we get $OP = 2r$."
+        ],
+        "derivation": "\\sin(30^{\\circ}) = \\frac{r}{OP} \\implies \\frac{1}{2} = \\frac{r}{OP} \\implies OP = 2r."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:40.161396",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134540_52d404_05"
+    }
+  ]
+}

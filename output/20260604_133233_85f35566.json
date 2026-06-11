@@ -1,0 +1,302 @@
+{
+  "batch_id": "20260604_133233_85f35566",
+  "generated_at": "2026-06-04T13:32:33.932376",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "mcq",
+  "question_count": 10,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "The 4th term of an AP is 14 and the 12th term is 70. What is the first term $a$?",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Use the formula $a_n = a + (n-1)d$",
+          "Set up two equations: $a + 3d = 14$ and $a + 11d = 70$",
+          "Subtract the equations to find $d = 7$",
+          "Substitute $d$ to find $a$"
+        ],
+        "derivation": "a + 3d = 14 \\\\ a + 11d = 70 \\\\ (a + 11d) - (a + 3d) = 70 - 14 \\\\ 8d = 56 \\implies d = 7 \\\\ a + 3(7) = 14 \\implies a = 14 - 21 = -7"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "nth term of an AP",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "medium",
+      "options": [
+        "(A) -7",
+        "(B) 7",
+        "(C) -14",
+        "(D) 14"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:33.932205",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133233_be6b24_01"
+    },
+    {
+      "question": "If the sum of first $n$ terms of an AP is $S_n = 3n^2 + n$, what is the common difference $d$?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Find $S_1 = a_1 = 3(1)^2 + 1 = 4$",
+          "Find $S_2 = a_1 + a_2 = 3(2)^2 + 2 = 14$",
+          "Find $a_2 = S_2 - S_1 = 10$",
+          "Find $d = a_2 - a_1 = 10 - 4 = 6$"
+        ],
+        "derivation": "a_1 = S_1 = 4 \\\\ S_2 = 3(4) + 2 = 14 \\\\ a_2 = S_2 - S_1 = 14 - 4 = 10 \\\\ d = a_2 - a_1 = 10 - 4 = 6"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of n terms",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "medium",
+      "options": [
+        "(A) 3",
+        "(B) 4",
+        "(C) 6",
+        "(D) 2"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:33.932248",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133233_143e32_02"
+    },
+    {
+      "question": "Which term of the AP: 21, 18, 15, ... is -81?",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Identify $a=21$ and $d=-3$",
+          "Use $a_n = a + (n-1)d = -81$",
+          "Solve for $n$"
+        ],
+        "derivation": "21 + (n-1)(-3) = -81 \\\\ (n-1)(-3) = -102 \\\\ n-1 = 34 \\\\ n = 35"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "nth term of an AP",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "medium",
+      "options": [
+        "(A) 34th",
+        "(B) 35th",
+        "(C) 36th",
+        "(D) 37th"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:33.932259",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133233_be90d9_03"
+    },
+    {
+      "question": "In an AP, if $a=5$ and $d=3$, find the sum of the first 10 terms ($S_{10}$)?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Use formula $S_n = \\frac{n}{2}[2a + (n-1)d]$",
+          "Substitute $n=10, a=5, d=3$"
+        ],
+        "derivation": "S_{10} = \\frac{10}{2}[2(5) + (10-1)3] \\\\ S_{10} = 5[10 + 27] \\\\ S_{10} = 5 \\times 37 = 185"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of n terms",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "medium",
+      "options": [
+        "(A) 150",
+        "(B) 175",
+        "(C) 185",
+        "(D) 195"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:33.932266",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133233_02322b_04"
+    },
+    {
+      "question": "If $k, 2k-1, 2k+1$ are three consecutive terms of an AP, find the value of $k$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Use property $b - a = c - b$ for three terms $a, b, c$ in AP",
+          "Solve $(2k-1) - k = (2k+1) - (2k-1)$"
+        ],
+        "derivation": "k-1 = 2 \\\\ k = 3"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Properties of AP",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "medium",
+      "options": [
+        "(A) 3",
+        "(B) 2",
+        "(C) 4",
+        "(D) 5"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:33.932272",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133233_cae763_05"
+    },
+    {
+      "question": "Find the sum of all odd numbers between 0 and 50.",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Identify AP: 1, 3, ..., 49",
+          "Find $n$ using $a_n = a+(n-1)d$",
+          "Use $S_n = \\frac{n}{2}(a+l)$"
+        ],
+        "derivation": "49 = 1 + (n-1)2 \\implies 48 = 2(n-1) \\implies n = 25 \\\\ S_{25} = \\frac{25}{2}(1 + 49) = \\frac{25}{2}(50) = 625"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of n terms",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "medium",
+      "options": [
+        "(A) 600",
+        "(B) 625",
+        "(C) 650",
+        "(D) 675"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:33.932278",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133233_9c12fb_06"
+    },
+    {
+      "question": "The 10th term from the end of the AP: 5, 8, 11, ..., 185 is:",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Reverse the AP: 185, 182, ..., 5",
+          "New $a=185, d=-3, n=10$",
+          "Calculate $a_{10}$"
+        ],
+        "derivation": "a_{10} = 185 + (10-1)(-3) \\\\ a_{10} = 185 - 27 = 158"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "nth term from the end",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "medium",
+      "options": [
+        "(A) 150",
+        "(B) 152",
+        "(C) 155",
+        "(D) 158"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:33.932283",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133233_65d956_07"
+    },
+    {
+      "question": "If the sum of first $n$ terms is $n^2$, then the $n$th term is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "$a_n = S_n - S_{n-1}$",
+          "Substitute $S_n = n^2$ and $S_{n-1} = (n-1)^2$"
+        ],
+        "derivation": "a_n = n^2 - (n-1)^2 \\\\ a_n = n^2 - (n^2 - 2n + 1) = 2n - 1"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of n terms",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "medium",
+      "options": [
+        "(A) 2n+1",
+        "(B) 2n",
+        "(C) 2n-1",
+        "(D) n-1"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:33.932289",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133233_6124a1_08"
+    },
+    {
+      "question": "How many two-digit numbers are divisible by 3?",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "First number is 12, last is 99",
+          "Use $a_n = a + (n-1)d$ where $d=3$"
+        ],
+        "derivation": "99 = 12 + (n-1)3 \\\\ 87 = (n-1)3 \\\\ 29 = n-1 \\implies n = 30"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Application of nth term",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "medium",
+      "options": [
+        "(A) 30",
+        "(B) 31",
+        "(C) 32",
+        "(D) 33"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:33.932295",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133233_e6cdfb_09"
+    },
+    {
+      "question": "What is the common difference of an AP in which $a_{25} - a_{20} = 45$?",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Express terms as $a+24d$ and $a+19d$",
+          "Subtract the two expressions"
+        ],
+        "derivation": "(a + 24d) - (a + 19d) = 45 \\\\ 5d = 45 \\implies d = 9"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "nth term of an AP",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "medium",
+      "options": [
+        "(A) 5",
+        "(B) 9",
+        "(C) 10",
+        "(D) 4.5"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:32:33.932301",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133233_957df1_10"
+    }
+  ]
+}

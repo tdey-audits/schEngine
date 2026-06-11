@@ -1,0 +1,62 @@
+{
+  "batch_id": "20260609_151643_1351255a",
+  "generated_at": "2026-06-09T15:16:43.136527",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Probability",
+  "subtopic": "probability basics",
+  "difficulty": "simple",
+  "question_type": "vsa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A box contains $40$ cards numbered from $1$ to $40$. If a card is drawn at random from the box, find the probability that the number on the card is a multiple of $5$.",
+      "answer": "$1/5$",
+      "solution": {
+        "steps": [
+          "Identify the total number of possible outcomes, which is the total count of cards, $n(S) = 40$.",
+          "Identify the favourable outcomes which are multiples of $5$ between $1$ and $40$, i.e., $\\{5, 10, 15, 20, 25, 30, 35, 40\\}$.",
+          "Count the favourable outcomes, $n(E) = 8$.",
+          "Calculate the probability using $P(E) = \\frac{n(E)}{n(S)} = \\frac{8}{40} = \\frac{1}{5}$."
+        ],
+        "derivation": "n(S) = 40 \\\\ E = \\{5, 10, 15, 20, 25, 30, 35, 40\\} \\\\ n(E) = 8 \\\\ P(E) = \\frac{n(E)}{n(S)} = \\frac{8}{40} = \\frac{1}{5}"
+      },
+      "topic": "Probability",
+      "subtopic": "probability basics",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-09T15:16:43.136451",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_15 (Probability).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 24,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 25,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 23,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ]
+      },
+      "id": "ncert_20260609_151643_bf4779_01"
+    }
+  ]
+}

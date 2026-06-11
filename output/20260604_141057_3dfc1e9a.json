@@ -1,0 +1,160 @@
+{
+  "batch_id": "20260604_141057_3dfc1e9a",
+  "generated_at": "2026-06-04T14:10:57.356592",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Surface Areas and Volumes",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If the radius of a sphere is $7 \\text{ cm}$, then its surface area is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "State the formula for the surface area of a sphere: $A = 4\\pi r^2$.",
+          "Substitute $r = 7 \\text{ cm}$ and $\\pi = \\frac{22}{7}$.",
+          "Calculate the final value."
+        ],
+        "derivation": "A = 4 \\times \\frac{22}{7} \\times 7 \\times 7 = 4 \\times 22 \\times 7 = 616 \\text{ cm}^2"
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Surface area of sphere",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 308 cm^2",
+        "(B) 440 cm^2",
+        "(C) 616 cm^2",
+        "(D) 1232 cm^2"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:57.356425",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141057_25f6a6_01"
+    },
+    {
+      "question": "The volume of a right circular cylinder with radius $3 \\text{ cm}$ and height $7 \\text{ cm}$ is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "State the formula for the volume of a cylinder: $V = \\pi r^2 h$.",
+          "Substitute $r = 3 \\text{ cm}$, $h = 7 \\text{ cm}$, and $\\pi = \\frac{22}{7}$.",
+          "Calculate the final value."
+        ],
+        "derivation": "V = \\frac{22}{7} \\times 3^2 \\times 7 = 22 \\times 9 = 198 \\text{ cm}^3"
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Volume of cylinder",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 154 cm^3",
+        "(B) 198 cm^3",
+        "(C) 264 cm^3",
+        "(D) 396 cm^3"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:57.356477",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141057_01ea18_02"
+    },
+    {
+      "question": "The total surface area of a cube whose edge is $5 \\text{ cm}$ is:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "State the formula for the total surface area of a cube: $TSA = 6a^2$.",
+          "Substitute $a = 5 \\text{ cm}$.",
+          "Calculate the final value."
+        ],
+        "derivation": "TSA = 6 \\times (5)^2 = 6 \\times 25 = 150 \\text{ cm}^2"
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Surface area of cube",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 150 cm^2",
+        "(B) 125 cm^2",
+        "(C) 100 cm^2",
+        "(D) 250 cm^2"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:57.356489",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141057_3459ec_03"
+    },
+    {
+      "question": "If the slant height of a cone is $10 \\text{ cm}$ and the radius is $6 \\text{ cm}$, its curved surface area is:",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "State the formula for the curved surface area of a cone: $CSA = \\pi rl$.",
+          "Substitute $r = 6 \\text{ cm}$, $l = 10 \\text{ cm}$.",
+          "Calculate the final value in terms of $\\pi$."
+        ],
+        "derivation": "CSA = \\pi \\times 6 \\times 10 = 60\\pi \\text{ cm}^2"
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Curved surface area of cone",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 30\\pi cm^2",
+        "(B) 40\\pi cm^2",
+        "(C) 50\\pi cm^2",
+        "(D) 60\\pi cm^2"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:57.356499",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141057_375b2b_04"
+    },
+    {
+      "question": "The lateral surface area of a cuboid of dimensions $8 \\text{ cm} \\times 6 \\text{ cm} \\times 5 \\text{ cm}$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "State the formula for the lateral surface area of a cuboid: $LSA = 2h(l + b)$.",
+          "Identify $l = 8 \\text{ cm}$, $b = 6 \\text{ cm}$, $h = 5 \\text{ cm}$.",
+          "Calculate the final value."
+        ],
+        "derivation": "LSA = 2 \\times 5 \\times (8 + 6) = 10 \\times 14 = 140 \\text{ cm}^2"
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Surface area of cuboid",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 70 cm^2",
+        "(B) 110 cm^2",
+        "(C) 140 cm^2",
+        "(D) 280 cm^2"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:57.356509",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141057_e7ea86_05"
+    }
+  ]
+}

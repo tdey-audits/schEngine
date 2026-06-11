@@ -1,0 +1,930 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag Solutions} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{questions}
+\question \textbf{1.} Find two consecutive positive integers, sum of whose squares is 365.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{13 and 14}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the two consecutive integers be $x$ and $x+1$.
+  \item Set up the equation: $x^2 + (x+1)^2 = 365$.
+  \item Expand and simplify to standard form: $2x^2 + 2x - 364 = 0$, or $x^2 + x - 182 = 0$.
+  \item Solve using factorization: $(x+14)(x-13) = 0$. Since integers are positive, $x=13$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+x^2 + x^2 + 2x + 1 = 365 \\
+2x^2 + 2x - 364 = 0 \\
+x^2 + x - 182 = 0 \\
+(x+14)(x-13) = 0 \\
+x = 13, x+1 = 14
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Word Problems}
+\vspace{0.3cm}
+
+\question \textbf{2.} Find the value of $k$ for which the quadratic equation $2x^2 + kx + 3 = 0$ has two equal real roots.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{k = \pm 2\sqrt{6}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item For equal real roots, the discriminant $D = b^2 - 4ac$ must be equal to 0.
+  \item Identify coefficients: $a=2, b=k, c=3$.
+  \item Substitute into discriminant formula: $k^2 - 4(2)(3) = 0$.
+  \item Solve for k: $k^2 - 24 = 0$, so $k^2 = 24$, $k = \pm \sqrt{24} = \pm 2\sqrt{6}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+b^2 - 4ac = 0 \\
+k^2 - 4(2)(3) = 0 \\
+k^2 = 24 \\
+k = \pm 2\sqrt{6}
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Nature of Roots}
+\vspace{0.3cm}
+
+\question \textbf{3.} The altitude of a right triangle is 7 cm less than its base. If the hypotenuse is 13 cm, find the other two sides.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Base} = 12 cm, \text{Altitude} = 5 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let base be $x$ cm, then altitude is $(x-7)$ cm.
+  \item Apply Pythagoras theorem: $x^2 + (x-7)^2 = 13^2$.
+  \item Expand and simplify: $x^2 + x^2 - 14x + 49 = 169 \Rightarrow 2x^2 - 14x - 120 = 0$.
+  \item Divide by 2: $x^2 - 7x - 60 = 0$. Factorize: $(x-12)(x+5) = 0$. Base must be positive, so $x=12$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+x^2 + (x-7)^2 = 13^2 \\
+2x^2 - 14x + 49 - 169 = 0 \\
+2x^2 - 14x - 120 = 0 \\
+x^2 - 7x - 60 = 0 \\
+(x-12)(x+5) = 0
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Word Problems}
+\vspace{0.3cm}
+
+\question \textbf{4.} Solve the quadratic equation $x^2 - 5x + 6 = 0$ using the quadratic formula.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{x = 2, 3}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify coefficients: $a=1, b=-5, c=6$.
+  \item Calculate the discriminant: $D = b^2 - 4ac = (-5)^2 - 4(1)(6) = 25 - 24 = 1$.
+  \item Use the quadratic formula $x = \frac{-b \pm \sqrt{D}}{2a}$.
+  \item Substitute values: $x = \frac{5 \pm 1}{2}$. This gives $x = \frac{6}{2} = 3$ and $x = \frac{4}{2} = 2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+x = \frac{-(-5) \pm \sqrt{(-5)^2 - 4(1)(6)}}{2(1)} \\
+x = \frac{5 \pm \sqrt{25 - 24}}{2} \\
+x = \frac{5 \pm 1}{2} \\
+x = 3, 2
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Quadratic Formula}
+\vspace{0.3cm}
+
+\question \textbf{5.} A motorboat whose speed is $18$ km/h in still water takes $1$ hour more to go $24$ km upstream than to return downstream to the same spot. Find the speed of the stream.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{6 km/h}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the speed of the stream be $x$ km/h.
+  \item Speed upstream = $(18-x)$ km/h; Speed downstream = $(18+x)$ km/h.
+  \item Time taken upstream $T_1 = \frac{24}{18-x}$ and time taken downstream $T_2 = \frac{24}{18+x}$.
+  \item Set up the equation: $T_1 - T_2 = 1$.
+  \item Solve the resulting quadratic equation $x^2 + 48x - 324 = 0$.
+  \item Factorize to find $x = 6$ or $x = -54$. Since speed cannot be negative, $x=6$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{24}{18-x} - \frac{24}{18+x} = 1 \\
+\implies 24(18+x - 18 + x) = (18-x)(18+x) \\
+\implies 48x = 324 - x^2 \\
+\implies x^2 + 48x - 324 = 0 \\
+\implies (x+54)(x-6) = 0
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Word problems involving speed, distance, and time}
+\vspace{0.3cm}
+
+\question \textbf{6.} The sum of the areas of two squares is $468$ m$^2$. If the difference of their perimeters is $24$ m, find the sides of the two squares.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{12 m and 18 m}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let sides of squares be $x$ and $y$ ($x > y$).
+  \item Perimeters are $4x$ and $4y$. Given $4x - 4y = 24$, so $x - y = 6 \implies x = y + 6$.
+  \item Sum of areas: $x^2 + y^2 = 468$.
+  \item Substitute $x$: $(y+6)^2 + y^2 = 468$.
+  \item Expand and simplify: $y^2 + 12y + 36 + y^2 = 468 \implies 2y^2 + 12y - 432 = 0$.
+  \item Simplify to $y^2 + 6y - 216 = 0$ and solve for $y$ using the quadratic formula or factoring.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+y^2 + 6y - 216 = 0 \\
+\implies (y+18)(y-12) = 0 \\
+\implies y = 12 \text{ (since side > 0)}, x = 12+6 = 18
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Geometric problems}
+\vspace{0.3cm}
+
+\question \textbf{7.} A peacock is sitting on the top of a pillar, which is $9$ m high. From a point $27$ m away from the bottom of the pillar, a snake is coming to its hole at the base of the pillar. Seeing the snake, the peacock pounces on it. If their speeds are equal, at what distance from the hole is the snake caught?
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{12 m}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the snake be caught at distance $x$ from the hole. The snake travels $27-x$ distance.
+  \item The peacock flies from the top of the pillar to the point of catch. By Pythagoras theorem, distance covered by peacock = $\sqrt{9^2 + x^2}$.
+  \item Since speeds are equal and they start at the same time, distances are equal: $27 - x = \sqrt{81 + x^2}$.
+  \item Square both sides: $(27-x)^2 = 81 + x^2$.
+  \item Expand: $729 - 54x + x^2 = 81 + x^2$.
+  \item Solve for $x$: $54x = 648 \implies x = 12$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+729 - 54x = 81 \\
+\implies 54x = 648 \\
+\implies x = \frac{648}{54} = 12
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Application of quadratic equations in geometry}
+\vspace{0.3cm}
+
+\question \textbf{8.} A shopkeeper buys a number of books for $80$ rupees. If he had bought $4$ more books for the same amount, each book would have cost $1$ rupee less. How many books did he buy?
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{16 \text{books}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the number of books be $x$.
+  \item Original cost per book = $\frac{80}{x}$.
+  \item New number of books = $x+4$. New cost per book = $\frac{80}{x+4}$.
+  \item Given the difference in price is 1: $\frac{80}{x} - \frac{80}{x+4} = 1$.
+  \item Simplify: $80(x+4) - 80x = x(x+4)$.
+  \item Form quadratic: $x^2 + 4x - 320 = 0$.
+  \item Solve: $(x+20)(x-16) = 0$. Since $x > 0$, $x = 16$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+80x + 320 - 80x = x^2 + 4x \\
+\implies x^2 + 4x - 320 = 0 \\
+\implies x = \frac{-4 \pm \sqrt{16 - 4(1)(-320)}}{2} = \frac{-4 \pm 36}{2}
+\end{aligned}}
+\end{center}
+\hfill \textit{Quadratic Equations — Word problems based on commercial mathematics}
+\vspace{0.3cm}
+
+\question \textbf{9.} Assertion (A): The common difference of the AP $5, 2, -1, -4, ...$ is $-3$. Reason (R): The common difference $d$ of an AP $a_1, a_2, a_3, ...$ is given by $d = a_n - a_{n-1}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate common difference: $d = a_2 - a_1 = 2 - 5 = -3$.
+  \item Verify the formula for common difference.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = 2 - 5 = -3; \text{ Yes, } d = a_n - a_{n-1} \text{ is the definition.}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Common Difference}
+\vspace{0.3cm}
+
+\question \textbf{10.} Assertion (A): The 10th term of the AP $2, 7, 12, ...$ is $47$. Reason (R): The $n^{th}$ term of an AP is given by $a_n = a + (n-1)d$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify $a=2, d=5, n=10$.
+  \item Apply $a_{10} = 2 + (10-1)5 = 2 + 45 = 47$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{a_{10} = 2 + (9)(5) = 2 + 45 = 47}
+\end{center}
+\hfill \textit{Arithmetic Progressions — nth term of an AP}
+\vspace{0.3cm}
+
+\question \textbf{11.} Assertion (A): The sum of the first 10 natural numbers is 55. Reason (R): The sum of first $n$ natural numbers is given by $\frac{n(n+1)}{2}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use formula $S_n = \frac{n(n+1)}{2}$ for $n=10$.
+  \item Calculate $S_{10} = \frac{10 \times 11}{2} = 55$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{S_{10} = \frac{10(11)}{2} = 5 \text{imes} 11 = 55}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Sum of first n terms}
+\vspace{0.3cm}
+
+\question \textbf{12.} Assertion (A): The sequence $3, 3, 3, 3, ...$ is an AP. Reason (R): A sequence is an AP if the difference between consecutive terms is constant.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate differences: $3-3=0, 3-3=0$.
+  \item Since difference is constant ($d=0$), it is an AP.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{a_2 - a_1 = 0; a_3 - a_2 = 0; d = 0 \text{ (constant)}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Definition of AP}
+\vspace{0.3cm}
+
+\question \textbf{13.} Assertion (A): If $2x, x+10, 3x+2$ are in AP, then $x=6$. Reason (R): If $a, b, c$ are in AP, then $2b = a+c$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use property $2(x+10) = 2x + (3x+2)$.
+  \item Solve for $x$: $2x + 20 = 5x + 2 \implies 18 = 3x \implies x = 6$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+2(x+10) = 2x + 3x + 2 \\
+\implies 2x + 20 = 5x + 2 \\
+\implies 18 = 3x \\
+\implies x=6
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Arithmetic Mean property}
+\vspace{0.3cm}
+
+\question \textbf{14.} Find the $10^{th}$ term of the Arithmetic Progression $5, 8, 11, 14, \dots$
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{32}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the first term $a = 5$ and the common difference $d = 8 - 5 = 3$.
+  \item Use the formula $a_n = a + (n-1)d$ to calculate the $10^{th}$ term.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+a_n = a + (n-1)d \\
+a_{10} = 5 + (10 - 1)3 \\
+a_{10} = 5 + 9 \times 3 \\
+a_{10} = 5 + 27 = 32
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — nth term of an AP}
+\vspace{0.3cm}
+
+\question \textbf{15.} Which term of the Arithmetic Progression $21, 18, 15, \dots$ is $-81$?
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{35^{th} \text{term}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify $a = 21$ and $d = 18 - 21 = -3$.
+  \item Set $a_n = -81$ and solve the equation $-81 = 21 + (n-1)(-3)$ for $n$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+-81 = 21 - 3n + 3 \\
+-81 = 24 - 3n \\
+3n = 24 + 81 \\
+3n = 105 \\
+n = 35
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — nth term of an AP}
+\vspace{0.3cm}
+
+\question \textbf{16.} Find the sum of the first $20$ terms of the Arithmetic Progression $1, 6, 11, 16, \dots$
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{970}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify $a = 1$, $d = 5$, and $n = 20$.
+  \item Use the sum formula $S_n = \frac{n}{2}[2a + (n-1)d]$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+S_{20} = \frac{20}{2}[2(1) + (20-1)5] \\
+S_{20} = 10[2 + 19 \times 5] \\
+S_{20} = 10[2 + 95] \\
+S_{20} = 10 \times 97 = 970
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Sum of first n terms}
+\vspace{0.3cm}
+
+\question \textbf{17.} In an Arithmetic Progression, if the first term is $7$ and the common difference is $4$, find the sum of the first $10$ terms.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{250}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item State the given values: $a = 7$, $d = 4$, $n = 10$.
+  \item Substitute these values into $S_n = \frac{n}{2}[2a + (n-1)d]$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+S_{10} = \frac{10}{2}[2(7) + (10-1)4] \\
+S_{10} = 5[14 + 9 \times 4] \\
+S_{10} = 5[14 + 36] \\
+S_{10} = 5 \times 50 = 250
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Sum of first n terms}
+\vspace{0.3cm}
+
+\question \textbf{18.} If the $4^{th}$ term of an Arithmetic Progression is $14$ and the $12^{th}$ term is $38$, find the first term $a$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{5}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Write equations based on $a_n = a + (n-1)d$: $a + 3d = 14$ and $a + 11d = 38$.
+  \item Subtract the two equations to find $d$ and then solve for $a$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+(a + 11d) - (a + 3d) = 38 - 14 \\
+8d = 24 \\
+d = 3 \\
+a + 3(3) = 14 \\
+a + 9 = 14 \\
+a = 5
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — nth term of an AP}
+\vspace{0.3cm}
+
+\question \textbf{19.} Find the sum of all two-digit numbers which, when divided by 4, yield 1 as a remainder.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{1210}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the sequence: The smallest two-digit number is 10. $13 \div 4 = 3$ remainder 1. So the first term $a = 13$.
+  \item Find the last term: The largest two-digit number is 99. $97 \div 4 = 24$ remainder 1. So the last term $l = 97$.
+  \item Find the number of terms $n$: Use $a_n = a + (n-1)d$. $97 = 13 + (n-1)4$.
+  \item Calculate the sum using $S_n = \frac{n}{2}(a + l)$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+97 = 13 + 4n - 4 \\
+\implies 88 = 4n \\
+\implies n = 22. S_{22} = \frac{22}{2}(13 + 97) = 11 \times 110 = 1210.
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Sum of n terms}
+\vspace{0.3cm}
+
+\question \textbf{20.} If the sum of the first $n$ terms of an AP is $S_n = 3n^2 + 5n$, find the $16^{th}$ term of the AP.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{98}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the relationship between the $n^{th}$ term and the sum of terms: $a_n = S_n - S_{n-1}$.
+  \item Calculate $S_{16} = 3(16)^2 + 5(16)$.
+  \item Calculate $S_{15} = 3(15)^2 + 5(15)$.
+  \item Subtract $S_{15}$ from $S_{16}$ to find $a_{16}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{S_{16} = 3(256) + 80 = 768 + 80 = 848. S_{15} = 3(225) + 75 = 675 + 75 = 750. a_{16} = 848 - 750 = 98.}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Sum of n terms}
+\vspace{0.3cm}
+
+\question \textbf{21.} How many terms of the AP $24, 21, 18, \dots$ must be taken so that their sum is 78?
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{4 or 13}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify $a = 24$, $d = -3$, and $S_n = 78$.
+  \item Use the formula $S_n = \frac{n}{2}[2a + (n-1)d]$.
+  \item Solve the resulting quadratic equation for $n$.
+  \item Verify both values of $n$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+78 = \frac{n}{2}[48 + (n-1)(-3)] \\
+\implies 156 = n(48 - 3n + 3) \\
+\implies 156 = 51n - 3n^2 \\
+\implies 3n^2 - 51n + 156 = 0 \\
+\implies n^2 - 17n + 52 = 0 \\
+\implies (n-4)(n-13) = 0.
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Sum of n terms}
+\vspace{0.3cm}
+
+\question \textbf{22.} Find the middle term of the AP: $6, 13, 20, \dots, 216$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{111}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Find the total number of terms $n$ using $a_n = a + (n-1)d$.
+  \item Identify the middle term position: If $n$ is odd, middle term is $\frac{n+1}{2}$.
+  \item Calculate the value of the middle term.
+\end{enumerate}
+\textbf{Derivation:}
+ 216 = 6 + (n-1)7 $\implies 210 = 7(n-1) \implies 30 = n-1 \implies n = 31$ . Middle term is  $\frac{31+1}{2} = 16^{th}$  term.  a\_\{16\} = 6 + 15(7) = 6 + 105 = 111 .
+\hfill \textit{Arithmetic Progressions — n-th term}
+\vspace{0.3cm}
+
+\question \textbf{23.} The $4^{th}$ term of an AP is 11 and the sum of its $5^{th}$ and $7^{th}$ terms is 34. Find the common difference.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{3}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Express $a_4$ as $a + 3d = 11$.
+  \item Express $a_5 + a_7$ as $(a + 4d) + (a + 6d) = 34$.
+  \item Solve the system of two linear equations for $d$.
+\end{enumerate}
+\textbf{Derivation:}
+ a + 3d = 11  (Eq 1).  2a + 10d = 34 $\implies a + 5d = 17  ($Eq 2). Subtracting Eq 1 from Eq 2:  (a + 5d) - (a + 3d) = 17 - 11 $\implies 2d = 6 \implies d = 3$ .
+\hfill \textit{Arithmetic Progressions — n-th term}
+\vspace{0.3cm}
+
+\question \textbf{24.} A sum of $\text{Rs.~} 2800$ is to be used to award four prizes to students of a school for their overall academic performance. If each prize is $\text{Rs.~} 200$ less than its preceding prize, find the value of each of the prizes.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Rs.~} 850, \text{Rs.~} 650, \text{Rs.~} 450, \text{Rs.~} 350}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the four prizes be $a+3d, a+d, a-d, a-3d$ or $a, a-d, a-2d, a-3d$. Let's use $a, a-d, a-2d, a-3d$.
+  \item The sum is $a + (a-d) + (a-2d) + (a-3d) = 2800$.
+  \item Simplify the sum: $4a - 6d = 2800$. Given $d = 200$.
+  \item Substitute $d = 200$ into the equation: $4a - 6(200) = 2800$.
+  \item Solve for $a$: $4a - 1200 = 2800 \Rightarrow 4a = 4000 \Rightarrow a = 1000$.
+  \item Calculate the prizes: $1000, 800, 600, 400$ is incorrect based on the sum logic. Correcting: Let prizes be $x, x-200, x-400, x-600$. Sum: $4x - 1200 = 2800 \Rightarrow 4x = 4000 \Rightarrow x = 1000$. Prizes: $1000, 800, 600, 400$ is a sum of 2800. Wait, $1000+800+600+400 = 2800$. Correct.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+S_n = \frac{n}{2}[2a + (n-1)d] \\
+\Rightarrow 2800 = \frac{4}{2}[2a + 3(-200)] \\
+\Rightarrow 1400 = 2a - 600 \\
+\Rightarrow 2a = 2000 \\
+\Rightarrow a = 1000. \text{Prizes are} 1000, 800, 600, 400.
+\end{aligned}}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Sum of n terms of an AP}
+\vspace{0.3cm}
+
+\question \textbf{25.} The sum of the first $n$ terms of an AP is given by $S_n = 3n^2 + 5n$. Find the $16^{th}$ term of this AP and the general expression for the $n^{th}$ term.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{a_{16} = 92, a_n = 6n + 2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the formula $a_n = S_n - S_{n-1}$ for $n > 1$.
+  \item Calculate $S_n = 3n^2 + 5n$.
+  \item Calculate $S_{n-1} = 3(n-1)^2 + 5(n-1) = 3(n^2 - 2n + 1) + 5n - 5 = 3n^2 - 6n + 3 + 5n - 5 = 3n^2 - n - 2$.
+  \item Find $a_n = (3n^2 + 5n) - (3n^2 - n - 2) = 6n + 2$.
+  \item Calculate $a_{16} = 6(16) + 2 = 96 + 2 = 98$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{a_n = S_n - S_{n-1} = 3n^2 + 5n - [3(n-1)^2 + 5(n-1)] = 3n^2 + 5n - [3n^2 - 6n + 3 + 5n - 5] = 6n + 2. \text{For n}=16, a_{16} = 6(16) + 2 = 98.}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Sum of n terms}
+\vspace{0.3cm}
+
+\question \textbf{26.} In an AP, the sum of first $p$ terms is $q$ and the sum of first $q$ terms is $p$. Show that the sum of first $(p+q)$ terms is $-(p+q)$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{S_{p+q} = -(p+q)}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Write sum formulas: $S_p = \frac{p}{2}[2a + (p-1)d] = q$ and $S_q = \frac{q}{2}[2a + (q-1)d] = p$.
+  \item Simplify to $2a + (p-1)d = \frac{2q}{p}$ and $2a + (q-1)d = \frac{2p}{q}$.
+  \item Subtract equations to find $d$: $(p-q)d = \frac{2q}{p} - \frac{2p}{q} = \frac{2(q^2 - p^2)}{pq} = \frac{-2(p-q)(p+q)}{pq}$.
+  \item Thus $d = \frac{-2(p+q)}{pq}$.
+  \item Find $2a$ and then $S_{p+q} = \frac{p+q}{2}[2a + (p+q-1)d]$.
+\end{enumerate}
+\textbf{Derivation:}
+Subtracting gives  d = -2/pq(p+q) . Substituting  d  back gives  2a = 2/p(q) - (p-1)d . Sum  S\_\{p+q\} = $\frac{p+q}{2}$[2a + (p+q-1)d] = -(p+q) .
+\hfill \textit{Arithmetic Progressions — Sum of n terms}
+\vspace{0.3cm}
+
+\question \textbf{27.} A spiral is made up of successive semicircles, with centers alternately at A and B, starting with center at A of radii $0.5 cm, 1.0 cm, 1.5 cm, 2.0 cm, ...$. What is the total length of such a spiral made up of thirteen consecutive semicircles? (Take $\pi = \frac{22}{7}$)
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{143 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The length of a semicircle is $L = \pi r$.
+  \item The lengths are $L_1 = 0.5\pi, L_2 = 1.0\pi, L_3 = 1.5\pi, \dots$.
+  \item This forms an AP with $a = 0.5$ and $d = 0.5$.
+  \item We need the sum of $n=13$ terms: $S_{13} = \frac{13}{2}[2(0.5\pi) + (13-1)(0.5\pi)]$.
+  \item Calculate $S_{13} = \frac{13}{2}[\pi + 6\pi] = \frac{13}{2}[7\pi] = \frac{91\pi}{2}$.
+  \item Substitute $\pi = \frac{22}{7}: S_{13} = \frac{91}{2} \times \frac{22}{7} = 13 \times 11 = 143$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{S_{13} = \frac{13}{2}[2(0.5\pi) + 12(0.5\pi)] = \frac{13}{2}[\pi + 6\pi] = \frac{13 \times 7 \times \pi}{2} = \frac{91}{2} \times \frac{22}{7} = 143.}
+\end{center}
+\hfill \textit{Arithmetic Progressions — Applications of AP}
+\vspace{0.3cm}
+
+\question \textbf{28.} In $\triangle ABC$, $DE \parallel BC$ such that $AD = 2\text{ cm}$, $DB = 3\text{ cm}$, and $AE = 3\text{ cm}$. Find the length of $EC$.
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Apply Thales Theorem (Basic Proportionality Theorem) as $DE \parallel BC$.
+  \item The ratio $\frac{AD}{DB} = \frac{AE}{EC}$ must hold.
+  \item Substitute the given values: $\frac{2}{3} = \frac{3}{EC}$.
+  \item Solve for $EC$: $EC = \frac{3 \times 3}{2} = 4.5\text{ cm}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{AD}{DB} = \frac{AE}{EC} \\
+\implies \frac{2}{3} = \frac{3}{EC} \\
+\implies 2EC = 9 \\
+\implies EC = 4.5
+\end{aligned}}
+\end{center}
+\hfill \textit{Triangles — Basic Proportionality Theorem}
+\vspace{0.3cm}
+
+\question \textbf{29.} If $\triangle ABC \sim \triangle PQR$ and $\frac{AB}{PQ} = \frac{1}{3}$, then the ratio of their areas $\frac{\text{Area}(\triangle ABC)}{\text{Area}(\triangle PQR)}$ is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall the theorem: The ratio of areas of two similar triangles is equal to the square of the ratio of their corresponding sides.
+  \item Calculate the square of the given ratio: $(\frac{1}{3})^2$.
+  \item Result is $\frac{1}{9}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\frac{\text{Area}(ABC)}{\text{Area}(PQR)} = \left(\frac{AB}{PQ}\right)^2 = \left(\frac{1}{3}\right)^2 = \frac{1}{9}}
+\end{center}
+\hfill \textit{Triangles — Areas of Similar Triangles}
+\vspace{0.3cm}
+
+\question \textbf{30.} In $\triangle ABC$, if $AB = 6\sqrt{3}\text{ cm}$, $AC = 12\text{ cm}$, and $BC = 6\text{ cm}$, then the measure of $\angle B$ is:
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check if the sides satisfy the Converse of Pythagoras Theorem: $AB^2 + BC^2 = AC^2$.
+  \item Calculate squares: $(6\sqrt{3})^2 = 36 \times 3 = 108$, $6^2 = 36$, $12^2 = 144$.
+  \item Observe $108 + 36 = 144$. Since $AB^2 + BC^2 = AC^2$, the triangle is right-angled at $B$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{(6\sqrt{3})^2 + 6^2 = 108 + 36 = 144 = 12^2}
+\end{center}
+\hfill \textit{Triangles — Pythagoras Theorem}
+\vspace{0.3cm}
+
+\question \textbf{31.} Two triangles are similar if their corresponding sides are in the same ratio. This criterion is known as:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item SSS (Side-Side-Side) similarity criterion states that if the sides of one triangle are proportional to the sides of another triangle, then the triangles are similar.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{If } \frac{AB}{PQ} = \frac{BC}{QR} = \frac{AC}{PR}, \text{ then } \triangle ABC \sim \triangle PQR \text{ (SSS Similarity)}}
+\end{center}
+\hfill \textit{Triangles — Criteria for Similarity}
+\vspace{0.3cm}
+
+\question \textbf{32.} The altitude of an equilateral triangle with side $2a$ is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item In an equilateral triangle, the altitude bisects the base.
+  \item Using Pythagoras theorem in the half-triangle: $h^2 + a^2 = (2a)^2$.
+  \item Solve for $h$: $h^2 = 4a^2 - a^2 = 3a^2 \implies h = a\sqrt{3}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{h = \sqrt{(2a)^2 - a^2} = \sqrt{4a^2 - a^2} = \sqrt{3a^2} = a\sqrt{3}}
+\end{center}
+\hfill \textit{Triangles — Properties of Triangles}
+\vspace{0.3cm}
+
+\question \textbf{33.} Assertion (A): If a line divides any two sides of a triangle in the same ratio, then the line is parallel to the third side. Reason (R): This is the Converse of Basic Proportionality Theorem.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the statement as the definition of the converse of Thales Theorem (BPT).
+  \item Confirm that the reason correctly identifies the theorem name.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{A: \text{Converse of BPT holds true.} \ R: \text{Definition of Converse of BPT.}}
+\end{center}
+\hfill \textit{Triangles — Basic Proportionality Theorem}
+\vspace{0.3cm}
+
+\question \textbf{34.} Assertion (A): Two triangles are similar if their corresponding angles are equal. Reason (R): If two triangles are equiangular, they are similar by AAA similarity criterion.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Verify the AAA similarity criterion.
+  \item Check if equality of angles leads to similarity.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{A: \text{Angle-Angle-Angle Similarity Criterion} \ R: \text{AAA creates proportional sides.}}
+\end{center}
+\hfill \textit{Triangles — Similarity of Triangles}
+\vspace{0.3cm}
+
+\question \textbf{35.} Assertion (A): In $\triangle ABC$, if $DE \parallel BC$ such that $AD/DB = 1/2$ and $AE = 2 \text{ cm}$, then $EC = 4 \text{ cm}$. Reason (R): By Basic Proportionality Theorem, if $DE \parallel BC$, then $AD/DB = AE/EC$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Apply BPT: $1/2 = 2/EC$.
+  \item Solve for $EC$: $EC = 4 \text{ cm}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{AD}{DB} = \frac{AE}{EC} \\
+\implies \frac{1}{2} = \frac{2}{EC} \\
+\implies EC = 4
+\end{aligned}}
+\end{center}
+\hfill \textit{Triangles — Basic Proportionality Theorem}
+\vspace{0.3cm}
+
+\question \textbf{36.} Assertion (A): All congruent triangles are similar. Reason (R): All similar triangles are congruent.
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Congruent triangles have same shape and size, so they are similar.
+  \item Similar triangles have same shape but not necessarily same size, so they are not always congruent.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Congruence} \\
+\implies \text{Similarity (True)}. \ \text{Similarity} \text{Rightarrow} \text{Congruence (False)}.
+\end{aligned}}
+\end{center}
+\hfill \textit{Triangles — Similarity vs Congruence}
+\vspace{0.3cm}
+
+\question \textbf{37.} Assertion (A): The ratio of the areas of two similar triangles is equal to the square of the ratio of their corresponding sides. Reason (R): This is the Area of Similar Triangles Theorem.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall the theorem regarding areas of similar triangles.
+  \item Confirm that the statement matches the standard theorem.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\frac{\text{Area}(\triangle ABC)}{\text{Area}(\triangle PQR)} = \left( \frac{AB}{PQ} \right)^2 = \left( \frac{BC}{QR} \right)^2 = \left( \frac{AC}{PR} \right)^2}
+\end{center}
+\hfill \textit{Triangles — Areas of Similar Triangles}
+\vspace{0.3cm}
+
+\question \textbf{38.} In $\triangle ABC$, $DE \parallel BC$ such that $AD = 2.4\text{ cm}$, $AE = 3.2\text{ cm}$, and $EC = 4.8\text{ cm}$. Find the length of $DB$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{3.6\text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Apply Basic Proportionality Theorem (Thales Theorem).
+  \item Substitute the given values and solve for $DB$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{AD}{DB} = \frac{AE}{EC} \\
+\implies \frac{2.4}{DB} = \frac{3.2}{4.8} \\
+\implies DB = \frac{2.4 \times 4.8}{3.2} = 3.6\text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Triangles — Basic Proportionality Theorem}
+\vspace{0.3cm}
+
+\question \textbf{39.} Two triangles $\triangle ABC$ and $\triangle DEF$ are similar. If $\text{Area}(\triangle ABC) = 64\text{ cm}^2$ and $\text{Area}(\triangle DEF) = 121\text{ cm}^2$, and $EF = 15.4\text{ cm}$, find the length of side $BC$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{11.2\text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the theorem that the ratio of areas of similar triangles equals the square of the ratio of their corresponding sides.
+  \item Substitute values and take the square root to find $BC$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{\text{Area}(ABC)}{\text{Area}(DEF)} = \left(\frac{BC}{EF}\right)^2 \\
+\implies \frac{64}{121} = \left(\frac{BC}{15.4}\right)^2 \\
+\implies \frac{8}{11} = \frac{BC}{15.4} \\
+\implies BC = \frac{8 \times 15.4}{11} = 11.2\text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Triangles — Areas of Similar Triangles}
+\vspace{0.3cm}
+
+\question \textbf{40.} A vertical pole of length $6\text{ m}$ casts a shadow $4\text{ m}$ long on the ground and at the same time a tower casts a shadow $28\text{ m}$ long. Find the height of the tower.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{42\text{ m}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recognize that the triangles formed by the object and shadow are similar by AA similarity.
+  \item Set up the ratio of corresponding sides and solve for the height.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{6}{h} = \frac{4}{28} \\
+\implies h = \frac{6 \times 28}{4} = 6 \times 7 = 42\text{ m}
+\end{aligned}}
+\end{center}
+\hfill \textit{Triangles — Similar Triangles}
+\vspace{0.3cm}
+
+\end{questions}
+
+\end{document}

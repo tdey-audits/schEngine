@@ -1,0 +1,38 @@
+{
+  "batch_id": "20260604_123252_f84a517d",
+  "generated_at": "2026-06-04T12:32:52.817402",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "Which of the following is the discriminant of the quadratic equation $2x^2 - 4x + 3 = 0$?",
+      "answer": "(C) $16 - 24$",
+      "solution": {
+        "steps": [
+          "Identify coefficients: $a = 2$, $b = -4$, $c = 3$.",
+          "Use discriminant formula: $D = b^2 - 4ac$.",
+          "Substitute: $D = (-4)^2 - 4(2)(3) = 16 - 24 = -8$."
+        ],
+        "derivation": "$D = b^2 - 4ac = (-4)^2 - 4 \\cdot 2 \\cdot 3 = 16 - 24 = -8$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of roots",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $\\sqrt{40}$",
+        "(B) $4$",
+        "(C) $16 - 24$",
+        "(D) $0$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T12:32:52.817241",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_123252_ba0a1f"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "batch_id": "20260604_140747_88f23ebe",
+  "generated_at": "2026-06-04T14:07:47.168343",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Pair of Linear Equations in Two Variables",
+  "subtopic": "equations reducible to linear form",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "For the equation $\\frac{2}{x} + \\frac{3}{y} = 13$ and $\\frac{5}{x} - \\frac{4}{y} = -2$, if we substitute $u = \\frac{1}{x}$ and $v = \\frac{1}{y}$, what will be the resulting linear equation from the first expression?",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Substitute $\\frac{1}{x} = u$ and $\\frac{1}{y} = v$ into the given equation.",
+          "The term $\\frac{2}{x}$ becomes $2u$.",
+          "The term $\\frac{3}{y}$ becomes $3v$.",
+          "The resulting equation is $2u + 3v = 13$."
+        ],
+        "derivation": "2(\\frac{1}{x}) + 3(\\frac{1}{y}) = 13 \\implies 2u + 3v = 13"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 2u + 3v = 13",
+        "(B) 3u + 2v = 13",
+        "(C) 2u - 3v = 13",
+        "(D) 2u + 3v = -13"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:47.168039",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140747_6a8a2c_01"
+    },
+    {
+      "question": "If $\\frac{1}{x+y} = a$ and $\\frac{1}{x-y} = b$, the equation $\\frac{5}{x+y} - \\frac{2}{x-y} = 1$ reduces to which of the following linear forms?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Substitute $a$ for $\\frac{1}{x+y}$ and $b$ for $\\frac{1}{x-y}$.",
+          "Substitute the variables into the equation $5(\\frac{1}{x+y}) - 2(\\frac{1}{x-y}) = 1$.",
+          "The resulting equation is $5a - 2b = 1$."
+        ],
+        "derivation": "5a - 2b = 1"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 5a + 2b = 1",
+        "(B) 2a - 5b = 1",
+        "(C) 5a - 2b = 1",
+        "(D) 5a - 2b = -1"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:47.168117",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140747_9048b2_02"
+    },
+    {
+      "question": "Given the equation $\\frac{7}{x-1} + \\frac{1}{y-2} = 3$, what substitution would convert this into a linear equation?",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Identify the variable parts in the denominators.",
+          "Let $u = \\frac{1}{x-1}$ and $v = \\frac{1}{y-2}$.",
+          "The equation becomes $7u + v = 3$, which is linear in $u$ and $v$."
+        ],
+        "derivation": "u = \\frac{1}{x-1}, v = \\frac{1}{y-2}"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) u = x-1, v = y-2",
+        "(B) u = \\frac{1}{x-1}, v = \\frac{1}{y-2}",
+        "(C) u = x+1, v = y+2",
+        "(D) u = \\frac{1}{x+1}, v = \\frac{1}{y+2}"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:47.168143",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140747_d4c77c_03"
+    },
+    {
+      "question": "For the system $\\frac{10}{x+y} + \\frac{2}{x-y} = 4$ and $\\frac{15}{x+y} - \\frac{5}{x-y} = -2$, if $u = \\frac{1}{x+y}$ and $v = \\frac{1}{x-y}$, what is the coefficient of $v$ in the second equation?",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Substitute $v = \\frac{1}{x-y}$ into the second equation $\\frac{15}{x+y} - \\frac{5}{x-y} = -2$.",
+          "This results in $15u - 5v = -2$.",
+          "The coefficient of $v$ is -5."
+        ],
+        "derivation": "15u - 5v = -2 \\implies \\text{coefficient of } v = -5"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 5",
+        "(B) 2",
+        "(C) -2",
+        "(D) -5"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:47.168164",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140747_106fee_04"
+    },
+    {
+      "question": "Which of the following represents the linear form of $\\frac{x+y}{xy} = 2$?",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Divide each term in the numerator by the denominator: $\\frac{x}{xy} + \\frac{y}{xy} = 2$.",
+          "Simplify the fractions: $\\frac{1}{y} + \\frac{1}{x} = 2$.",
+          "This is equivalent to $\\frac{1}{x} + \\frac{1}{y} = 2$."
+        ],
+        "derivation": "\\frac{x}{xy} + \\frac{y}{xy} = 2 \\implies \\frac{1}{y} + \\frac{1}{x} = 2"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) \\frac{1}{x} + \\frac{1}{y} = 2",
+        "(B) x + y = 2",
+        "(C) \\frac{1}{x} - \\frac{1}{y} = 2",
+        "(D) x - y = 2"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:47.168183",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140747_d15076_05"
+    }
+  ]
+}

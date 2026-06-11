@@ -1,0 +1,130 @@
+{
+  "batch_id": "20260604_134325_e3b329aa",
+  "generated_at": "2026-06-04T13:43:25.520140",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A quadrilateral $ABCD$ is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.",
+      "answer": "AB + CD = AD + BC",
+      "solution": {
+        "steps": [
+          "Use the property that lengths of tangents drawn from an external point to a circle are equal.",
+          "Write equations for tangents from vertices A, B, C, and D.",
+          "Add the equations and group the terms to form the sides of the quadrilateral."
+        ],
+        "derivation": "Let the circle touch sides AB, BC, CD, DA at P, Q, R, S respectively. AP=AS, BP=BQ, CR=CQ, DR=DS. Adding them: (AP+BP)+(CR+DR) = (AS+DS)+(BQ+CQ). Thus, AB+CD = AD+BC."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:25.520016",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134325_b0e3b4_01"
+    },
+    {
+      "question": "From a point $Q$, the length of the tangent to a circle is $24$ cm and the distance of $Q$ from the centre is $25$ cm. Find the radius of the circle.",
+      "answer": "7 cm",
+      "solution": {
+        "steps": [
+          "Identify that the radius is perpendicular to the tangent at the point of contact.",
+          "This forms a right-angled triangle with the radius, tangent, and distance from the center as sides.",
+          "Apply the Pythagorean theorem to solve for the radius."
+        ],
+        "derivation": "r^2 + 24^2 = 25^2 \\Rightarrow r^2 + 576 = 625 \\Rightarrow r^2 = 49 \\Rightarrow r = 7 \\text{ cm}."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:25.520053",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134325_ea05f6_02"
+    },
+    {
+      "question": "Two concentric circles are of radii $5$ cm and $3$ cm. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "answer": "8 cm",
+      "solution": {
+        "steps": [
+          "Draw a radius to the point of contact on the smaller circle, which acts as the perpendicular bisector of the chord.",
+          "Create a right triangle using the radius of the small circle, half the chord, and the radius of the large circle as the hypotenuse.",
+          "Calculate half the chord length and multiply by 2."
+        ],
+        "derivation": "Half-chord = \\sqrt{5^2 - 3^2} = \\sqrt{25-9} = \\sqrt{16} = 4 \\text{ cm}. \\text{Total length} = 2 \\times 4 = 8 \\text{ cm}."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:25.520061",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134325_624f53_03"
+    },
+    {
+      "question": "If tangents $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\\circ$, then find $\\angle POA$.",
+      "answer": "50^\\circ",
+      "solution": {
+        "steps": [
+          "Recognize that the line from the center to the external point bisects the angle between the tangents.",
+          "Consider the quadrilateral OAPB where angles at A and B are $90^\\circ$.",
+          "Determine the angle $\\angle APB$ is split in half and use the sum of angles in triangle OAP."
+        ],
+        "derivation": "\\angle APB = 80^\\circ \\Rightarrow \\angle OPA = 40^\\circ. \\text{In } \\triangle OAP, \\angle OAP = 90^\\circ. \\angle POA = 180^\\circ - 90^\\circ - 40^\\circ = 50^\\circ."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:25.520067",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134325_af7332_04"
+    },
+    {
+      "question": "Prove that the angle between the two tangents drawn from an external point to a circle is supplementary to the angle subtended by the line segment joining the points of contact at the centre.",
+      "answer": "Sum is 180 degrees",
+      "solution": {
+        "steps": [
+          "Let P be the external point and A, B be points of contact.",
+          "Consider the quadrilateral OAPB.",
+          "Use the property that the sum of angles in a quadrilateral is $360^\\circ$ and tangents are perpendicular to radii."
+        ],
+        "derivation": "\\angle OAP = 90^\\circ, \\angle OBP = 90^\\circ. \\angle APB + \\angle OAP + \\angle OBP + \\angle AOB = 360^\\circ \\Rightarrow \\angle APB + 90^\\circ + 90^\\circ + \\angle AOB = 360^\\circ \\Rightarrow \\angle APB + \\angle AOB = 180^\\circ."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:25.520072",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134325_c520f0_05"
+    }
+  ]
+}

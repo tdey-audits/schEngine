@@ -1,0 +1,118 @@
+{
+  "batch_id": "20260609_151704_cbca0da8",
+  "generated_at": "2026-06-09T15:17:04.793719",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Probability",
+  "subtopic": "probability basics",
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A box contains a total of $60$ cards numbered from $1$ to $60$. Some cards are marked with red ink, some with blue ink, and some with green ink. The number of red cards is $12$ more than the number of green cards, and the number of blue cards is $8$. A card is drawn at random from the box.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "If the number of green cards is $x$, find the value of $x$.",
+          "answer": "(B)",
+          "options": [
+            "(A) $15$",
+            "(B) $20$",
+            "(C) $25$",
+            "(D) $10$"
+          ],
+          "solution": {
+            "steps": [
+              "Let number of green cards be $x$.",
+              "Number of red cards = $x + 12$.",
+              "Number of blue cards = $8$.",
+              "Total cards = $x + (x+12) + 8 = 60$.",
+              "$2x + 20 = 60 \\Rightarrow 2x = 40 \\Rightarrow x = 20$."
+            ],
+            "derivation": "$x + (x + 12) + 8 = 60 \\\\ 2x + 20 = 60 \\\\ 2x = 40 \\\\ x = 20$"
+          }
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Find the probability that the card drawn is a red card.",
+          "answer": "$8/15$",
+          "solution": {
+            "steps": [
+              "Number of green cards $x = 20$.",
+              "Number of red cards = $20 + 12 = 32$.",
+              "Total cards = $60$.",
+              "Probability = $32/60 = 8/15$."
+            ],
+            "derivation": "$P(\\text{Red}) = \\frac{32}{60} = \\frac{8}{15}$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "mcq",
+          "question": "What is the probability that the card drawn is NOT a blue card?",
+          "answer": "(C)",
+          "options": [
+            "(A) $1/15$",
+            "(B) $2/15$",
+            "(C) $13/15$",
+            "(D) $14/15$"
+          ],
+          "solution": {
+            "steps": [
+              "$P(\\text{Blue}) = 8/60 = 2/15$.",
+              "$P(\\text{Not Blue}) = 1 - P(\\text{Blue}) = 1 - 2/15 = 13/15$."
+            ],
+            "derivation": "$P(\\text{Not Blue}) = 1 - \\frac{8}{60} = 1 - \\frac{2}{15} = \\frac{13}{15}$"
+          }
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "Find the probability that the card drawn is either green or blue.",
+          "answer": "$7/15$",
+          "solution": {
+            "steps": [
+              "Number of green = $20$, number of blue = $8$.",
+              "Number of green or blue = $20 + 8 = 28$.",
+              "Probability = $28/60 = 7/15$."
+            ],
+            "derivation": "$P(\\text{Green} \\cup \\text{Blue}) = \\frac{20+8}{60} = \\frac{28}{60} = \\frac{7}{15}$"
+          }
+        }
+      ],
+      "topic": "Probability",
+      "subtopic": "probability basics",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T15:17:04.793411",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_15 (Probability).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 38,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ]
+      },
+      "id": "ncert_20260609_151704_c8b869_01"
+    }
+  ]
+}

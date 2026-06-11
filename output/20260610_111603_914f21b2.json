@@ -1,0 +1,190 @@
+{
+  "batch_id": "20260610_111603_914f21b2",
+  "generated_at": "2026-06-10T11:16:03.299835",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In $\\triangle ABC$, $\\angle B = 90^\\circ$. A point $D$ lies on $AC$ such that $BD \\perp AC$. If $AD = 2$ cm and $CD = 8$ cm, the length of $BD$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "In a right triangle $ABC$ with $BD \\perp AC$, the triangles $ADB$ and $BDC$ are similar to the main triangle $ABC$ and to each other.",
+          "Specifically, $\\triangle ADB \\sim \\triangle BDC$ by $AA$ similarity criteria.",
+          "Using the ratio of corresponding sides, $\\frac{AD}{BD} = \\frac{BD}{CD}$.",
+          "Substitute the given values: $\\frac{2}{BD} = \\frac{BD}{8}$.",
+          "Calculate $BD^2 = 2 \\times 8 = 16$.",
+          "Taking the square root, $BD = 4$ cm."
+        ],
+        "derivation": "$ \\triangle ADB \\sim \\triangle BDC \\Rightarrow \\frac{AD}{BD} = \\frac{BD}{CD} \\Rightarrow BD^2 = AD \\cdot CD \\Rightarrow BD^2 = 2 \\times 8 \\Rightarrow BD^2 = 16 \\Rightarrow BD = 4 $"
+      },
+      "topic": "Triangles",
+      "subtopic": "Similarity of Triangles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 3 cm",
+        "(B) 6 cm",
+        "(C) 4 cm",
+        "(D) 5 cm"
+      ],
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "caption": "Right triangle ABC with altitude BD",
+        "elements": [
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0,
+            "y": 3,
+            "label": "A",
+            "position": "left"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 0,
+            "y": 0,
+            "label": "B",
+            "position": "below left"
+          },
+          {
+            "kind": "point",
+            "id": "C",
+            "x": 4,
+            "y": 0,
+            "label": "C",
+            "position": "right"
+          },
+          {
+            "kind": "point",
+            "id": "D",
+            "x": 0.8,
+            "y": 0.6,
+            "label": "D",
+            "position": "above"
+          },
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "kind": "segment",
+            "from": "B",
+            "to": "D"
+          },
+          {
+            "kind": "right_angle",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "kind": "right_angle",
+            "points": [
+              "B",
+              "D",
+              "C"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-10T11:16:03.299547",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_6 (Triangles).pdf",
+          "Chapter_7 (Coordinate Geometry).pdf",
+          "Chapter_11 (Constructions).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 6,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 12,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 12,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.4",
+            "question_no": 9,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.3",
+            "question_no": 12,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_111603_727357_01"
+    }
+  ]
+}

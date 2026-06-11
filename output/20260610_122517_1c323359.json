@@ -1,0 +1,64 @@
+{
+  "batch_id": "20260610_122517_1c323359",
+  "generated_at": "2026-06-10T12:25:17.275014",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "quadratic formula",
+  "difficulty": "medium",
+  "question_type": "sa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Solve the quadratic equation $2x^2 - 7x + 3 = 0$ using the quadratic formula.",
+      "answer": "$x = 3, x = \\frac{1}{2}$",
+      "solution": {
+        "steps": [
+          "Compare the given equation $2x^2 - 7x + 3 = 0$ with the standard form $ax^2 + bx + c = 0$ to identify $a = 2$, $b = -7$, and $c = 3$.",
+          "Calculate the discriminant $D = b^2 - 4ac$ to check for the existence of real roots.",
+          "Apply the quadratic formula $x = \\frac{-b \\pm \\sqrt{D}}{2a}$ to find the roots.",
+          "Substitute the values and simplify to get the final solutions."
+        ],
+        "derivation": "$a = 2, b = -7, c = 3 \\\\ D = (-7)^2 - 4(2)(3) \\\\ D = 49 - 24 = 25 \\\\ x = \\frac{-(-7) \\pm \\sqrt{25}}{2(2)} \\\\ x = \\frac{7 \\pm 5}{4} \\\\ x_1 = \\frac{7+5}{4} = \\frac{12}{4} = 3 \\\\ x_2 = \\frac{7-5}{4} = \\frac{2}{4} = \\frac{1}{2}$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "quadratic formula",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-10T12:25:17.274926",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 30,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 27,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 28,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122517_1a9750_01"
+    }
+  ]
+}

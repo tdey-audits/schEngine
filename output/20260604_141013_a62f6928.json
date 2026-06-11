@@ -1,0 +1,158 @@
+{
+  "batch_id": "20260604_141013_a62f6928",
+  "generated_at": "2026-06-04T14:10:13.877417",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): If $\\sin \\theta = \\frac{1}{2}$, then $\\theta = 30^\\circ$. Reason (R): The value of $\\sin \\theta$ increases as $\\theta$ increases from $0^\\circ$ to $90^\\circ$.",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Check the validity of Assertion: For $\\sin \\theta = 1/2$, $\\theta = 30^\\circ$ is true.",
+          "Check the validity of Reason: The sine function is strictly increasing in the first quadrant, which is true.",
+          "Determine if R explains A: The fact that $\\sin 30^\\circ = 1/2$ is a specific value, its increasing nature is a general property, so R does not explain why $\\sin 30^\\circ$ is specifically $1/2$."
+        ],
+        "derivation": "\\text{Assertion: } \\sin 30^\\circ = 0.5 \\implies \\text{True. Reason: } \\frac{d}{d\\theta}(\\sin \\theta) = \\cos \\theta > 0 \\text{ for } \\theta \\in (0, 90^\\circ) \\implies \\text{True.}"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:13.877308",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141013_76c7a8_01"
+    },
+    {
+      "question": "Assertion (A): The value of $\\cos \\theta$ can never be $1.5$. Reason (R): The range of $\\cos \\theta$ is $[-1, 1]$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Check the validity of Assertion: Since the range of cosine is $[-1, 1]$, $1.5$ is outside this range, so it is true.",
+          "Check the validity of Reason: By definition of trigonometric ratios in a right triangle, $\\cos \\theta = \\text{base/hypotenuse} \\le 1$.",
+          "Determine if R explains A: The range definition is the direct reason why $\\cos \\theta$ cannot exceed 1."
+        ],
+        "derivation": "-1 \\le \\cos \\theta \\le 1 \\text{ for all } \\theta \\in \\mathbb{R}"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Basic Trigonometric Ratios",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:13.877344",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141013_ba1752_02"
+    },
+    {
+      "question": "Assertion (A): $\\sin^2 \\theta + \\cos^2 \\theta = 1$ for all $\\theta$. Reason (R): $\\tan^2 \\theta - \\sec^2 \\theta = 1$.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Check the validity of Assertion: This is the fundamental Pythagorean identity, which is true.",
+          "Check the validity of Reason: The identity is $\\sec^2 \\theta - \\tan^2 \\theta = 1$. Therefore, $\\tan^2 \\theta - \\sec^2 \\theta = -1$. The reason is false."
+        ],
+        "derivation": "\\sin^2 \\theta + \\cos^2 \\theta = 1 \\text{ (Identity)}; \\sec^2 \\theta - \\tan^2 \\theta = 1 \\implies \\tan^2 \\theta - \\sec^2 \\theta = -1"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:13.877352",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141013_8ddd8b_03"
+    },
+    {
+      "question": "Assertion (A): If $\\tan A = \\cot A$, then $A = 45^\\circ$. Reason (R): $\\tan A = \\cot(90^\\circ - A)$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Check the validity of Assertion: If $\\tan A = \\cot A$, then $\\tan A = 1/\\tan A$, so $\\tan^2 A = 1$, $\\tan A = 1$, $A = 45^\\circ$. True.",
+          "Check the validity of Reason: This is the standard co-function identity.",
+          "Determine if R explains A: Yes, $\\tan A = \\cot A \\implies \\tan A = \\tan(90^\\circ - A) \\implies A = 90^\\circ - A \\implies 2A = 90^\\circ \\implies A = 45^\\circ$."
+        ],
+        "derivation": "\\tan A = \\cot A \\iff \\tan A = \\tan(90^\\circ - A) \\iff A = 90^\\circ - A \\iff A = 45^\\circ"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Complementary Angles",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:13.877358",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141013_f3ae34_04"
+    },
+    {
+      "question": "Assertion (A): The value of $\\sin 0^\\circ$ is $0$. Reason (R): The value of $\\cos 0^\\circ$ is $0$.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Check the validity of Assertion: $\\sin 0^\\circ = 0$. True.",
+          "Check the validity of Reason: $\\cos 0^\\circ = 1$. False."
+        ],
+        "derivation": "\\sin 0^\\circ = 0, \\cos 0^\\circ = 1"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:13.877363",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141013_7ead93_05"
+    }
+  ]
+}

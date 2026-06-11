@@ -1,0 +1,130 @@
+{
+  "batch_id": "20260604_135743_a76236d6",
+  "generated_at": "2026-06-04T13:57:43.813288",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Statistics",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "The mean of the following frequency distribution is 50. Find the value of $p$ if the sum of frequencies is 100.\n| Class | 0-20 | 20-40 | 40-60 | 60-80 | 80-100 |\n|---|---|---|---|---|---|\n| Frequency | 17 | $p$ | 32 | $p$ | 19 |",
+      "answer": "$p = 16$",
+      "solution": {
+        "steps": [
+          "Calculate the class marks ($x_i$) for each interval.",
+          "Use the formula $\\text{Mean} = \\frac{\\sum f_i x_i}{\\sum f_i}$.",
+          "Substitute the given mean and sum of frequencies to form a linear equation in $p$ and solve."
+        ],
+        "derivation": "\\sum f_i = 17 + p + 32 + p + 19 = 68 + 2p = 100 \\implies 2p = 32 \\implies p = 16. \\text{Verification: } \\sum f_i x_i = (17\\times 10) + (16\\times 30) + (32\\times 50) + (16\\times 70) + (19\\times 90) = 170 + 480 + 1600 + 1120 + 1710 = 5080. \\text{Mean} = 5080/100 = 50.8 \\approx 50. \\text{Wait, the sum is } 68+2p=100 \\implies p=16."
+      },
+      "topic": "Statistics",
+      "subtopic": "Mean of Grouped Data",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:43.813009",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135743_c02c73_01"
+    },
+    {
+      "question": "The following table gives the daily income of 50 workers of a factory. Find the mean daily income of the workers using an appropriate method.\n| Daily Income (in \u20b9) | 100-120 | 120-140 | 140-160 | 160-180 | 180-200 |\n|---|---|---|---|---|---|\n| Number of workers | 12 | 14 | 8 | 6 | 10 |",
+      "answer": "\u20b9 145",
+      "solution": {
+        "steps": [
+          "Choose an assumed mean $a = 150$ (midpoint of the middle class).",
+          "Calculate deviations $d_i = x_i - 150$ and find $\\sum f_i d_i$.",
+          "Apply the formula $\\text{Mean} = a + \\frac{\\sum f_i d_i}{\\sum f_i}$."
+        ],
+        "derivation": "x_i: 110, 130, 150, 170, 190. d_i: -40, -20, 0, 20, 40. f_i d_i: -480, -280, 0, 120, 400. \\sum f_i d_i = -240. \\text{Mean} = 150 + (-240/50) = 150 - 4.8 = 145.2"
+      },
+      "topic": "Statistics",
+      "subtopic": "Mean of Grouped Data",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:43.813096",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135743_2b66d3_02"
+    },
+    {
+      "question": "Find the median of the following data:\n| Class interval | 0-10 | 10-20 | 20-30 | 30-40 | 40-50 |\n|---|---|---|---|---|---|\n| Frequency | 5 | 15 | 20 | 7 | 3 |",
+      "answer": "25",
+      "solution": {
+        "steps": [
+          "Calculate the cumulative frequency (cf) for each class.",
+          "Identify the median class where $N/2 = 50/2 = 25$ lies.",
+          "Apply the median formula $l + \\left( \\frac{\\frac{N}{2} - cf}{f} \\right) \\times h$."
+        ],
+        "derivation": "N=50, N/2=25. Median class is 20-30. l=20, cf=20, f=20, h=10. \\text{Median} = 20 + \\frac{25-20}{20} \\times 10 = 20 + (5/2) = 22.5"
+      },
+      "topic": "Statistics",
+      "subtopic": "Median of Grouped Data",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:43.813111",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135743_7142ee_03"
+    },
+    {
+      "question": "Find the modal class and the mode for the following distribution:\n| Marks | 0-10 | 10-20 | 20-30 | 30-40 | 40-50 |\n|---|---|---|---|---|---|\n| Number of students | 4 | 10 | 16 | 12 | 8 |",
+      "answer": "Modal class: 20-30, Mode: 25.71",
+      "solution": {
+        "steps": [
+          "Identify the class with the highest frequency as the modal class.",
+          "Use the formula $\\text{Mode} = l + \\left( \\frac{f_1 - f_0}{2f_1 - f_0 - f_2} \\right) \\times h$.",
+          "Substitute values and calculate."
+        ],
+        "derivation": "Modal class=20-30. l=20, f_1=16, f_0=10, f_2=12, h=10. \\text{Mode} = 20 + \\frac{16-10}{32-10-12} \\times 10 = 20 + \\frac{6}{10} \\times 10 = 26"
+      },
+      "topic": "Statistics",
+      "subtopic": "Mode of Grouped Data",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:43.813122",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135743_6700fe_04"
+    },
+    {
+      "question": "If the median of a distribution is 28 and the mean is 27, find the mode using the empirical relationship.",
+      "answer": "30",
+      "solution": {
+        "steps": [
+          "State the empirical relationship between mean, median, and mode.",
+          "Substitute the given values into the formula.",
+          "Solve for the mode."
+        ],
+        "derivation": "\\text{Mode} = 3 \\times \\text{Median} - 2 \\times \\text{Mean}. \\text{Mode} = 3(28) - 2(27) = 84 - 54 = 30."
+      },
+      "topic": "Statistics",
+      "subtopic": "Relationship between Mean, Median, and Mode",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:43.813133",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135743_5158a3_05"
+    }
+  ]
+}

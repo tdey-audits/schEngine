@@ -1,0 +1,105 @@
+{
+  "batch_id": "20260609_132800_bec848cf",
+  "generated_at": "2026-06-09T13:28:00.855309",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "vsa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If the $n^{th}$ term of an Arithmetic Progression is given by $a_n = 5 - 3n$, find the common difference $d$ and the sum of the first $10$ terms, $S_{10}$.",
+      "answer": "$d = -3, S_{10} = -115$",
+      "solution": {
+        "steps": [
+          "Find the first two terms $a_1$ and $a_2$ by substituting $n=1$ and $n=2$ into the formula $a_n = 5 - 3n$.",
+          "Calculate the common difference $d = a_2 - a_1$.",
+          "Use the sum formula $S_n = \\frac{n}{2}(a_1 + a_n)$ or $S_n = \\frac{n}{2}(2a + (n-1)d)$ to compute $S_{10}$."
+        ],
+        "derivation": "$a_1 = 5 - 3(1) = 2 \\\\ a_2 = 5 - 3(2) = -1 \\\\ d = a_2 - a_1 = -1 - 2 = -3 \\\\ a_{10} = 5 - 3(10) = -25 \\\\ S_{10} = \\frac{10}{2}(a_1 + a_{10}) = 5(2 - 25) = 5(-23) = -115$"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Nth term and Sum of n terms",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-09T13:28:00.855028",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_5 (Arithmetic Progressions).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 24,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 25,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 33,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 7,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 22,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_132800_da756d_01"
+    }
+  ]
+}

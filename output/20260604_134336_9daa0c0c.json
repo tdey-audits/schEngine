@@ -1,0 +1,159 @@
+{
+  "batch_id": "20260604_134336_9daa0c0c",
+  "generated_at": "2026-06-04T13:43:36.131187",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Areas Related to Circles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If the circumference of a circle is $176\\text{ cm}$, then its radius is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Use the formula for circumference $C = 2\\pi r$.",
+          "Substitute $C = 176$ and $\\pi = \\frac{22}{7}$.",
+          "Solve for $r$."
+        ],
+        "derivation": "176 = 2 \\times \\frac{22}{7} \\times r \\implies 176 = \\frac{44}{7} \\times r \\implies r = \\frac{176 \\times 7}{44} = 4 \\times 7 = 28\\text{ cm}"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Circumference of a Circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 14 cm",
+        "(B) 21 cm",
+        "(C) 28 cm",
+        "(D) 35 cm"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:36.130809",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134336_8bba4a_01"
+    },
+    {
+      "question": "The area of a circle whose diameter is $14\\text{ cm}$ is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Find the radius $r = \\frac{d}{2} = \\frac{14}{2} = 7\\text{ cm}$.",
+          "Use the area formula $A = \\pi r^2$.",
+          "Substitute $r = 7$ and compute."
+        ],
+        "derivation": "A = \\frac{22}{7} \\times 7^2 = \\frac{22}{7} \\times 49 = 22 \\times 7 = 154\\text{ cm}^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of a Circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 77 cm^2",
+        "(B) 154 cm^2",
+        "(C) 308 cm^2",
+        "(D) 44 cm^2"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:36.130911",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134336_85d996_02"
+    },
+    {
+      "question": "The area of a quadrant of a circle with radius $r$ is:",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "A quadrant is one-fourth of a circle.",
+          "Area of circle = $\\pi r^2$.",
+          "Area of quadrant = $\\frac{1}{4} \\pi r^2$."
+        ],
+        "derivation": "\\text{Area} = \\frac{90^\\circ}{360^\\circ} \\times \\pi r^2 = \\frac{1}{4} \\pi r^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of a Sector",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 2\\pi r",
+        "(B) \\pi r^2",
+        "(C) \\frac{1}{2} \\pi r^2",
+        "(D) \\frac{1}{4} \\pi r^2"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:36.130957",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134336_4adc2a_03"
+    },
+    {
+      "question": "If the perimeter of a semi-circular protractor is $36\\text{ cm}$, its diameter is:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Perimeter of a semi-circle is $\\pi r + 2r = r(\\pi + 2)$.",
+          "Set $r(\\frac{22}{7} + 2) = 36$.",
+          "Solve for $r$ and then diameter $d = 2r$."
+        ],
+        "derivation": "r(\\frac{22+14}{7}) = 36 \\implies r(\\frac{36}{7}) = 36 \\implies r = 7. \\text{ Thus, } d = 2 \\times 7 = 14\\text{ cm}."
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Perimeter of Semi-circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 14 cm",
+        "(B) 7 cm",
+        "(C) 21 cm",
+        "(D) 28 cm"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:36.130992",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134336_9e999a_04"
+    },
+    {
+      "question": "The area of a sector of a circle with radius $6\\text{ cm}$ and central angle $60^\\circ$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Use formula $A = \\frac{\\theta}{360} \\times \\pi r^2$.",
+          "Substitute $\\theta = 60$, $r = 6$."
+        ],
+        "derivation": "A = \\frac{60}{360} \\times \\pi \\times 6^2 = \\frac{1}{6} \\times 36\\pi = 6\\pi\\text{ cm}^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of a Sector",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 3\\pi cm^2",
+        "(B) 4\\pi cm^2",
+        "(C) 6\\pi cm^2",
+        "(D) 12\\pi cm^2"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:36.131022",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134336_8fb203_05"
+    }
+  ]
+}

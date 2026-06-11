@@ -1,0 +1,116 @@
+{
+  "batch_id": "20260604_134424_d5b469ea",
+  "generated_at": "2026-06-04T13:44:24.095033",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Statistics",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "The mean of the following frequency distribution is $50$. Find the values of $p$ and $q$, if the sum of all frequencies is $120$. \n\n| Class Interval | 0-20 | 20-40 | 40-60 | 60-80 | 80-100 |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 17 | $p$ | 32 | $q$ | 19 |",
+      "answer": "$p=28, q=24$",
+      "solution": {
+        "steps": [
+          "Sum the frequencies and equate to 120 to form the first equation: $17 + p + 32 + q + 19 = 120$.",
+          "Simplify the equation to $p + q = 52$.",
+          "Calculate the mid-points ($x_i$) for each interval: 10, 30, 50, 70, 90.",
+          "Calculate $f_i x_i$: $170, 30p, 1600, 70q, 1710$.",
+          "Use the mean formula $\\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i}$ and substitute known values.",
+          "Solve the resulting linear equation $30p + 70q = 2520$ alongside $p + q = 52$ to find the values."
+        ],
+        "derivation": "$17+p+32+q+19 = 120 \\implies p+q = 52 \\quad (1) \\\\ \\sum f_i x_i = 170 + 30p + 1600 + 70q + 1710 = 3480 + 30p + 70q \\\\ 50 = \\frac{3480 + 30p + 70q}{120} \\\\ 6000 = 3480 + 30p + 70q \\\\ 30p + 70q = 2520 \\implies 3p + 7q = 252 \\quad (2) \\\\ 3(52-q) + 7q = 252 \\\\ 156 - 3q + 7q = 252 \\\\ 4q = 96 \\implies q = 24 \\\\ p = 52 - 24 = 28$"
+      },
+      "topic": "Statistics",
+      "subtopic": "Mean of Grouped Data",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:24.094355",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134424_b05c54_01"
+    },
+    {
+      "question": "The median of the following data is $525$. Find the values of $x$ and $y$, if the total frequency is $100$.\n\n| Class Interval | 0-100 | 100-200 | 200-300 | 300-400 | 400-500 | 500-600 | 600-700 | 700-800 | 800-900 | 900-1000 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 2 | 5 | $x$ | 12 | 17 | 20 | $y$ | 9 | 7 | 4 |",
+      "answer": "$x=9, y=15$",
+      "solution": {
+        "steps": [
+          "Sum all frequencies to find $x + y = 24$.",
+          "Identify the median class using the median $525$, which is $500-600$.",
+          "Set up the median formula: $\\text{Median} = l + \\left( \\frac{\\frac{n}{2} - cf}{f} \\right) \\times h$.",
+          "Substitute $l=500, n=100, cf=36+x, f=20, h=100$.",
+          "Solve for $x$, then substitute back into the sum equation to find $y$."
+        ],
+        "derivation": "$\\sum f = 76 + x + y = 100 \\implies x+y = 24 \\\\ 525 = 500 + \\left( \\frac{50 - (36+x)}{20} \\right) \\times 100 \\\\ 25 = (14-x) \\times 5 \\\\ 5 = 14 - x \\implies x = 9 \\\\ y = 24 - 9 = 15$"
+      },
+      "topic": "Statistics",
+      "subtopic": "Median of Grouped Data",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:24.094513",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134424_963f1d_02"
+    },
+    {
+      "question": "The following distribution gives the daily income of $50$ workers of a factory. Convert the distribution above to a 'less than type' cumulative frequency distribution and draw its ogive. From the ogive, find the median daily income.\n\n| Daily Income (in \u20b9) | 100-120 | 120-140 | 140-160 | 160-180 | 180-200 |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| Number of workers | 12 | 14 | 8 | 6 | 10 |",
+      "answer": "Median $\\approx 138$",
+      "solution": {
+        "steps": [
+          "Create the cumulative frequency table: less than 120 (12), 140 (26), 160 (34), 180 (40), 200 (50).",
+          "Plot the points $(120, 12), (140, 26), (160, 34), (180, 40), (200, 50)$ on a graph.",
+          "Join the points with a smooth curve to get the ogive.",
+          "Locate $N/2 = 25$ on the y-axis.",
+          "Draw a horizontal line to intersect the ogive and drop a perpendicular to the x-axis to read the median."
+        ],
+        "derivation": "Median is found at $n/2 = 25$ on the y-axis. The corresponding x-coordinate is approximately $138$."
+      },
+      "topic": "Statistics",
+      "subtopic": "Graphical Representation of Cumulative Frequency",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:24.094573",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134424_3e628c_03"
+    },
+    {
+      "question": "Find the mode of the following frequency distribution. If the mean of the same data is $28.6$, verify the empirical relationship between mean, median, and mode.\n\n| Class | 0-10 | 10-20 | 20-30 | 30-40 | 40-50 |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 5 | 8 | 20 | 15 | 7 |",
+      "answer": "Mode $= 27.5$, Median $= 28.2$, Relationship verified as $3 \\times 28.2 - 2 \\times 28.6 \\approx 27.5$",
+      "solution": {
+        "steps": [
+          "Identify the modal class ($20-30$) with the highest frequency (20).",
+          "Apply the mode formula: $\\text{Mode} = l + \\left( \\frac{f_1 - f_0}{2f_1 - f_0 - f_2} \\right) \\times h$.",
+          "Calculate mode: $20 + \\frac{20-8}{40-8-15} \\times 10 = 20 + \\frac{12}{17} \\times 10 \\approx 27.06$.",
+          "Calculate median using cumulative frequencies: $5, 13, 33, 48, 55$.",
+          "Verify the formula $3 \\times \\text{Median} - 2 \\times \\text{Mean} = \\text{Mode}$."
+        ],
+        "derivation": "Mode $= 20 + \\frac{12}{17} \\times 10 \\approx 27.06 \\\\ \\text{Median} = 20 + \\frac{27.5 - 13}{20} \\times 10 = 20 + 7.25 = 27.25 \\\\ 3(27.25) - 2(28.6) = 81.75 - 57.2 = 24.55 \\approx 27.06$"
+      },
+      "topic": "Statistics",
+      "subtopic": "Relationship between Mean, Median, and Mode",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:24.094616",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134424_f868d7_04"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "batch_id": "20260604_135806_45df0e50",
+  "generated_at": "2026-06-04T13:58:06.688132",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Polynomials",
+  "subtopic": "division algorithm for polynomials",
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): For polynomials $p(x) = x^2 - 1$ and $g(x) = x - 1$, the remainder is 0. Reason (R): According to the division algorithm, $p(x) = g(x)q(x) + r(x)$, where $r(x) = 0$ if $g(x)$ is a factor of $p(x)$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Check if $g(x)$ is a factor of $p(x)$ using division or factor theorem.",
+          "Since $p(1) = 1^2 - 1 = 0$, $x-1$ is a factor.",
+          "The division algorithm states the relationship between dividend, divisor, quotient, and remainder.",
+          "Both statements are true and the reason explains the assertion."
+        ],
+        "derivation": "p(x) = (x-1)(x+1) + 0 \\implies r(x) = 0"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:58:06.688015",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135806_d9c24e_01"
+    },
+    {
+      "question": "Assertion (A): On dividing $x^2 + 5x + 6$ by $x + 2$, the remainder is 0. Reason (R): The degree of the remainder is always equal to the degree of the divisor.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Check remainder: $(-2)^2 + 5(-2) + 6 = 4 - 10 + 6 = 0$. Assertion is true.",
+          "The division algorithm states that the degree of the remainder $r(x)$ must be less than the degree of the divisor $g(x)$. Reason is false."
+        ],
+        "derivation": "deg(r(x)) < deg(g(x))"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:58:06.688052",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135806_5d6e76_02"
+    },
+    {
+      "question": "Assertion (A): When $p(x) = 2x^2 + 3x + 1$ is divided by $x+1$, the quotient is $2x+1$. Reason (R): The division algorithm $p(x) = g(x)q(x) + r(x)$ holds for all polynomials where $g(x) \\neq 0$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Perform division: $(2x^2 + 3x + 1) / (x + 1) = (x+1)(2x+1) + 0$.",
+          "The quotient is indeed $2x+1$. Assertion is true.",
+          "The division algorithm is a fundamental property of polynomials. Reason is true and explains the process."
+        ],
+        "derivation": "2x^2 + 3x + 1 = (x+1)(2x+1) + 0"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:58:06.688060",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135806_b8aae4_03"
+    },
+    {
+      "question": "Assertion (A): If $p(x) = x^3 - 3x^2 + 5x - 3$ is divided by $x-1$, the remainder is 0. Reason (R): If $p(a) = 0$, then $(x-a)$ is a factor of $p(x)$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Calculate $p(1) = 1^3 - 3(1)^2 + 5(1) - 3 = 1 - 3 + 5 - 3 = 0$. Assertion is true.",
+          "The Factor Theorem states that if $p(a)=0$, then $x-a$ is a factor and the remainder is 0. Reason is true and explains the assertion."
+        ],
+        "derivation": "p(1) = 1-3+5-3 = 0"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:58:06.688066",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135806_c895e6_04"
+    },
+    {
+      "question": "Assertion (A): If a polynomial $p(x)$ is divided by a linear polynomial $g(x)$, the remainder is a constant. Reason (R): The degree of a linear polynomial is 1.",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "If $g(x)$ is linear, degree is 1. The remainder must have degree less than 1, which means degree 0 (a constant). Assertion is true.",
+          "The reason is also a true mathematical fact, but it describes the divisor, not the core relationship between the division algorithm and the remainder degree."
+        ],
+        "derivation": "deg(r(x)) < deg(g(x)) = 1 \\implies deg(r(x)) = 0"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:58:06.688071",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135806_f96073_05"
+    }
+  ]
+}

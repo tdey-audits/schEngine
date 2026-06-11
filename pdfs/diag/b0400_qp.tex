@@ -1,0 +1,312 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag} \\[0.3cm]
+  \textbf{Time Allowed: 3 Hours} \hfill \textbf{Maximum Marks: 80} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\noindent\textbf{General Instructions:}
+\begin{enumerate}
+  \item {\normalfont\normalcolor This question paper contains 40 questions. All questions are compulsory.}
+  \item {\normalfont\normalcolor Questions are grouped into sections A through E.}
+  \item {\normalfont\normalcolor Use of calculators is NOT permitted.}
+\end{enumerate}
+\bigskip
+\noindent\textbf{\large Section A: Multiple Choice \& Assertion-Reason (1 mark each)}
+
+\begin{questions}
+\question[1] A tangent $PQ$ at a point $P$ of a circle of radius $5 \text{ cm}$ meets a line through the centre $O$ at a point $Q$ so that $OQ = 13 \text{ cm}$. The length of $PQ$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 10 cm
+  \item (B) 8 cm
+  \item (C) 12 cm
+  \item (D) 7 cm
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If tangents $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\circ$, then $\angle POA$ is equal to:
+\begin{enumerate}[label=(\Alph*)]
+  \item $(A) 50^\circ$
+  \item $(B) 60^\circ$
+  \item $(C) 70^\circ$
+  \item $(D) 80^\circ$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] From a point $Q$, the length of the tangent to a circle is $24 \text{ cm}$ and the distance of $Q$ from the centre is $25 \text{ cm}$. The radius of the circle is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 9 cm
+  \item (B) 12 cm
+  \item (C) 15 cm
+  \item (D) 7 cm
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Two concentric circles are of radii $5 \text{ cm}$ and $3 \text{ cm}$. The length of the chord of the larger circle which touches the smaller circle is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 10 cm
+  \item (B) 8 cm
+  \item (C) 6 cm
+  \item (D) 4 cm
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The number of tangents that can be drawn from a point inside a circle is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 1
+  \item (B) 2
+  \item (C) 0
+  \item (D) Infinite
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If the circumference of a circle is $176\text{ cm}$, then its radius is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 14 cm
+  \item (B) 21 cm
+  \item (C) 28 cm
+  \item (D) 35 cm
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The area of a circle whose diameter is $14\text{ cm}$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 44 cm$^{2}$
+  \item (B) 154 cm$^{2}$
+  \item (C) 616 cm$^{2}$
+  \item (D) 308 cm$^{2}$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The area of a quadrant of a circle with radius $7\text{ cm}$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 38.5 cm$^{2}$
+  \item (B) 77 cm$^{2}$
+  \item (C) 154 cm$^{2}$
+  \item (D) 19.25 cm$^{2}$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If the perimeter of a semi-circular protractor is $36\text{ cm}$, then its diameter is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 7 cm
+  \item (B) 21 cm
+  \item (C) 28 cm
+  \item (D) 14 cm
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The area of a sector of a circle with radius $6\text{ cm}$ and central angle $60^\circ$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item $(A) 3\pi cm^{2}$
+  \item $(B) 4\pi cm^{2}$
+  \item $(C) 6\pi cm^{2}$
+  \item $(D) 12\pi cm^{2}$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The length of a tangent drawn from an external point to a circle is always equal to the radius of the circle.
+Reason (R): The tangent at any point of a circle is perpendicular to the radius through the point of contact.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If the distance between the centres of two circles of radii $r_1$ and $r_2$ is $d$, then they touch each other externally if $d = r_1 + r_2$.
+Reason (R): The distance between the centres of two circles is the sum of their radii when they touch internally.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The number of tangents that can be drawn from a point inside a circle is zero.
+Reason (R): A tangent to a circle intersects the circle at only one point.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The length of the tangent from a point $P$ at a distance of $10 \text{ cm}$ from the centre of a circle of radius $6 \text{ cm}$ is $8 \text{ cm}$.
+Reason (R): In a right triangle, the square of the hypotenuse equals the sum of the squares of the other two sides.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): Two parallel tangents can be drawn to a circle at the ends of a diameter.
+Reason (R): Tangents at the ends of a diameter are perpendicular to the diameter.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The area of a circle with radius $7$ cm is $154$ cm$^2$. Reason (R): The area of a circle is given by $\pi r^2$, where $r$ is the radius.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The circumference of a circle with diameter $14$ cm is $44$ cm. Reason (R): The circumference of a circle is given by $\pi d$, where $d$ is the diameter.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The area of a semicircle with radius $r$ is $\frac{1}{2} \pi r^2$. Reason (R): The circumference of a semicircle is $\pi r$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If the perimeter and the area of a circle are numerically equal, then the radius of the circle is $2$ units. Reason (R): Circumference $2\pi r = \pi r^2$ implies $r=2$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The area of a sector of a circle with radius $r$ and central angle $\theta$ is $\frac{\theta}{360} \times \pi r^2$. Reason (R): The length of the arc of a sector is $\frac{\theta}{360} \times \pi r^2$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section B: Very Short Answer (2 marks each)}
+
+\begin{questions}
+\question[2] Two concentric circles are of radii $5 \text{ cm}$ and $3 \text{ cm}$. Find the length of the chord of the larger circle which touches the smaller circle.
+\vspace{0.15cm}
+
+\question[2] If a tangent $PA$ drawn from an external point $P$ to a circle with center $O$ makes an angle of $30^\circ$ with the chord $AB$, where $AB$ is the diameter, find $\angle APB$.
+\vspace{0.15cm}
+
+\question[2] In the given figure, if $\angle OAB = 40^\circ$, find $\angle ACB$ where $O$ is the center of the circle.
+\vspace{0.15cm}
+
+\question[2] A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. If $AB = 6 \text{ cm}$, $BC = 7 \text{ cm}$ and $CD = 4 \text{ cm}$, find the length of $AD$.
+\vspace{0.15cm}
+
+\question[2] Two tangents $TP$ and $TQ$ are drawn to a circle with center $O$ from an external point $T$. If $\angle PTQ = 70^\circ$, find $\angle POQ$.
+\vspace{0.15cm}
+
+\question[2] Find the area of a sector of a circle with radius $6 \text{ cm}$ if the angle of the sector is $60^\circ$. (Use $\pi = 3.14$)
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section C: Short Answer (3 marks each)}
+
+\begin{questions}
+\question[3] The angle of elevation of the top of a chimney from the top of a tower is $30^\circ$ and the angle of depression of the foot of the chimney from the top of the tower is $60^\circ$. If the tower is $40$ m high, find the height of the chimney.
+\vspace{0.15cm}
+
+\question[3] A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.
+\vspace{0.15cm}
+
+\question[3] Two concentric circles are of radii $5\text{ cm}$ and $3\text{ cm}$. Find the length of the chord of the larger circle which touches the smaller circle.
+\vspace{0.15cm}
+
+\question[3] If a tangent $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\circ$, then find $\angle POA$.
+\vspace{0.15cm}
+
+\question[3] Prove that the lengths of tangents drawn from an external point to a circle are equal.
+\vspace{0.15cm}
+
+\question[3] A tangent $PQ$ at a point $P$ of a circle of radius $5\text{ cm}$ meets a line through the centre $O$ at a point $Q$ so that $OQ = 12\text{ cm}$. Find the length $PQ$.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section D: Long Answer (4-5 marks each)}
+
+\begin{questions}
+\question[5] A straight highway leads to the foot of a tower. A man standing at the top of the tower observes a car at an angle of depression of $30^\circ$, which is approaching the foot of the tower with a uniform speed. Six seconds later, the angle of depression of the car is found to be $60^\circ$. Find the time taken by the car to reach the foot of the tower from this point.
+\vspace{0.15cm}
+
+\question[5] The angle of elevation of the top of a tower from a point on the ground is $30^\circ$. On walking $40$ metres towards the tower, the angle of elevation changes to $60^\circ$. Find the height of the tower and the distance of the initial point from the tower.
+\vspace{0.15cm}
+
+\question[5] A vertical tower stands on a horizontal plane and is surmounted by a vertical flagstaff of height $6$ metres. At a point on the plane, the angle of elevation of the bottom and top of the flagstaff are $30^\circ$ and $60^\circ$ respectively. Find the height of the tower.
+\vspace{0.15cm}
+
+\question[5] From the top of a $7$ m high building, the angle of elevation of the top of a cable tower is $60^\circ$ and the angle of depression of its foot is $45^\circ$. Determine the height of the tower.
+\vspace{0.15cm}
+
+\question[5] Prove that the lengths of tangents drawn from an external point to a circle are equal.
+\vspace{0.15cm}
+
+\question[5] $PQ$ is a chord of length $8\text{ cm}$ of a circle of radius $5\text{ cm}$. The tangents at $P$ and $Q$ intersect at a point $T$. Find the length of $TP$.
+\vspace{0.15cm}
+
+\question[5] A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.
+\vspace{0.15cm}
+
+\question[5] Two concentric circles are of radii $5\text{ cm}$ and $3\text{ cm}$. Find the length of the chord of the larger circle which touches the smaller circle.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+
+\end{document}

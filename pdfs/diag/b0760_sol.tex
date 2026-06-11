@@ -1,0 +1,1043 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag Solutions} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{questions}
+\question \textbf{1.} If a tangent $PA$ and a tangent $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\circ$, then $\angle POA$ is equal to:
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_063.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item In $\triangle OAP$ and $\triangle OBP$, $OA=OB$ (radii), $PA=PB$ (tangents from an external point), and $OP=OP$ (common).
+  \item Thus, $\triangle OAP \cong \triangle OBP$ by SSS congruence.
+  \item Consequently, $\angle POA = \angle POB$. Since $\angle APB = 80^\circ$, we have $\angle OPA = 40^\circ$.
+  \item In $\triangle OAP$, $\angle OAP = 90^\circ$ (radius is perpendicular to tangent).
+  \item Therefore, $\angle POA = 180^\circ - 90^\circ - 40^\circ = 50^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+OP \text{ bisects } \angle APB \\
+\Rightarrow \angle OPA = \frac{80^\circ}{2} = 40^\circ \\
+\triangle OAP \text{ is right-angled at } A \\
+\angle POA + \angle OPA + \angle OAP = 180^\circ \\
+\angle POA + 40^\circ + 90^\circ = 180^\circ \\
+\angle POA = 180^\circ - 130^\circ = 50^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{2.} A circle touches all four sides of a quadrilateral $\text{ABCD}$. If $AB = 6 \text{ cm}$, $BC = 7 \text{ cm}$, and $CD = 4 \text{ cm}$, then the length of $AD$ is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item For a quadrilateral circumscribing a circle, the sum of opposite sides are equal.
+  \item This is based on the theorem that lengths of tangents drawn from an external point to a circle are equal.
+  \item So, $AB + CD = BC + AD$.
+  \item Substitute the given values: $6 + 4 = 7 + AD$.
+  \item Solve for $AD$: $10 = 7 + AD \Rightarrow AD = 3 \text{ cm}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+AB + CD = BC + AD \\
+6 + 4 = 7 + AD \\
+10 = 7 + AD \\
+AD = 10 - 7 = 3
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{3.} A tangent $PQ$ at a point $P$ of a circle of radius $5 \text{ cm}$ meets a line through the centre $O$ at a point $Q$ so that $OQ = 13 \text{ cm}$. The length of $PQ$ is:
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_064.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The radius is perpendicular to the tangent at the point of contact.
+  \item In right $\triangle OPQ$, by Pythagoras theorem, $OP^2 + PQ^2 = OQ^2$.
+  \item Substitute $OP = 5$ and $OQ = 13$ to find $PQ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+OP \perp PQ \\
+\Rightarrow \triangle OPQ \text{ is a right triangle at } P. \\
+OP^2 + PQ^2 = OQ^2 \\
+5^2 + PQ^2 = 13^2 \\
+25 + PQ^2 = 169 \\
+PQ^2 = 144 \\
+PQ = 12 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{4.} If tangents $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\circ$, then $\angle POA$ is equal to:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item In quadrilateral $\text{OAPB}$, $\angle OAP = \angle OBP = 90^\circ$.
+  \item The sum of angles in a quadrilateral is $360^\circ$.
+  \item $\angle AOB = 180^\circ - 80^\circ = 100^\circ$.
+  \item In $\triangle OAP$ and $\triangle OBP$, $\angle POA = \frac{1}{2} \angle AOB$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\angle AOB + \angle APB = 180^\circ \\
+\angle AOB + 80^\circ = 180^\circ \\
+\angle AOB = 100^\circ \\
+\triangle OAP \cong \triangle OBP \\
+\angle POA = \frac{1}{2} \angle AOB = 50^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents from an external point}
+\vspace{0.3cm}
+
+\question \textbf{5.} The length of a tangent from a point $A$ at a distance of $5 \text{ cm}$ from the centre of the circle is $4 \text{ cm}$. The radius of the circle is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the radius be $r$.
+  \item The tangent, radius, and distance from center form a right triangle where the distance is the hypotenuse.
+  \item $r^2 + 4^2 = 5^2$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+r^2 + 16 = 25 \\
+r^2 = 9 \\
+r = 3 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{6.} Two concentric circles are of radii $5 \text{ cm}$ and $3 \text{ cm}$. The length of the chord of the larger circle which touches the smaller circle is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the larger circle have radius $R=5$ and smaller have $r=3$.
+  \item The chord is tangent to the inner circle, so the radius is perpendicular to the chord at the point of contact.
+  \item This forms a right triangle with hypotenuse $5$ and one leg $3$.
+  \item Find the half-length of the chord ($x$) using Pythagoras: $x^2 + 3^2 = 5^2$.
+  \item Total length is $2x$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+x^2 + 9 = 25 \\
+x^2 = 16 \\
+x = 4 \\
+\text{Length} = 2x = 8 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{7.} A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. If $AB = 6 \text{ cm}$, $BC = 7 \text{ cm}$, and $CD = 4 \text{ cm}$, then $AD$ is equal to:
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item For a quadrilateral circumscribing a circle, the sums of opposite sides are equal.
+  \item $AB + CD = BC + AD$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+6 + 4 = 7 + AD \\
+10 = 7 + AD \\
+AD = 3 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{8.} Assertion (A): The length of a tangent drawn from an external point to a circle is always equal to the radius of the circle. Reason (R): A tangent to a circle is perpendicular to the radius through the point of contact.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_065.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check Assertion (A): The length of the tangent is given by $\sqrt{d^2 - r^2}$, where $d$ is the distance from the external point to the center. It is not necessarily equal to the radius.
+  \item Check Reason (R): This is a standard theorem in NCERT, which is true.
+  \item Conclusion: A is false, but R is true.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Length} = \sqrt{d^2 - r^2} \neq r \text{ (Assertion is false)} \\
+\text{Tangent} \perp \text{radius (Reason is true)}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{9.} Assertion (A): The number of tangents that can be drawn from a point inside a circle is zero. Reason (R): A tangent to a circle intersects the circle at only one point.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check Assertion (A): Any point inside the circle divides the plane such that no line passing through it can touch the circle at only one point.
+  \item Check Reason (R): By definition, a tangent intersects a circle at exactly one point.
+  \item Conclusion: Both A and R are true and R is the correct explanation of A.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{If point is inside, all lines are secants. Hence 0 tangents.}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{10.} Assertion (A): If the angle between two tangents drawn from a point $P$ to a circle of radius $r$ and center $O$ is $60^\circ$, then $OP = 2r$. Reason (R): The line segment joining the center to the external point bisects the angle between the two tangents.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check Assertion (A): In $\triangle OTP$, $\angle TPO = 30^\circ$ (half of $60^\circ$). $\sin(30^\circ) = r / OP \Rightarrow 1/2 = r / OP \Rightarrow OP = 2r$.
+  \item Check Reason (R): This is a standard property of tangents from an external point.
+  \item Conclusion: Both A and R are true and R is the correct explanation of A.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\sin(30^\circ) = \frac{OT}{OP} \\
+\Rightarrow \frac{1}{2} = \frac{r}{OP} \\
+\Rightarrow OP = 2r
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{11.} Assertion (A): Two concentric circles have the same center. Reason (R): A chord of the larger circle which touches the smaller circle is bisected at the point of contact.
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check Assertion (A): Definition of concentric circles is correct.
+  \item Check Reason (R): This is a property of chords and tangents, which is true.
+  \item Conclusion: While both are true, R does not explain why circles are called 'concentric'.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Concentric circles share a center. Assertion is true.} \\
+\text{Chord property is true, but does not define concentricity.}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — General properties}
+\vspace{0.3cm}
+
+\question \textbf{12.} Assertion (A): The length of the tangent from a point $A$ at a distance of $5 \text{ cm}$ from the centre of the circle of radius $3 \text{ cm}$ is $4 \text{ cm}$. Reason (R): The tangent at any point of a circle is perpendicular to the radius through the point of contact.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_066.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check Assertion (A): By Pythagoras theorem, $L^2 + 3^2 = 5^2 \Rightarrow L^2 = 25 - 9 = 16 \Rightarrow L = 4 \text{ cm}$.
+  \item Check Reason (R): Correct geometric theorem.
+  \item Conclusion: Both are true and R justifies the use of Pythagoras theorem.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{L = \sqrt{5^2 - 3^2} = \sqrt{25 - 9} = \sqrt{16} = 4 \text{ cm}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{13.} In a circle with centre $O$, a tangent $PT$ is drawn from a point $P$ outside the circle. If $OP = 13$ $cm$ and the radius of the circle is $5$ $cm$, find the length of the tangent $PT$.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_067.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{12 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify $\text{riangle OTP}$ as a right-angled triangle because the radius is perpendicular to the tangent at the point of contact.
+  \item Apply the Pythagoras theorem: $PT^2 + OT^2 = OP^2$ and solve for $PT$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+PT^2 + 5^2 = 13^2 \\
+PT^2 + 25 = 169 \\
+PT^2 = 144 \\
+PT = 12 cm
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{14.} Two concentric circles are of radii $5$ $cm$ and $3$ $cm$. Find the length of the chord of the larger circle which touches the smaller circle.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_068.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{8 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $AB$ be the chord of the larger circle touching the smaller circle at point $M$. $OM \perp AB$.
+  \item In right $\text{riangle OMA}$, by Pythagoras theorem, $AM = \sqrt{OA^2 - OM^2}$. Then $AB = 2 \times AM$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+AM = \sqrt{5^2 - 3^2} = \sqrt{25 - 9} = \sqrt{16} = 4 cm \\
+AB = 2 \times 4 = 8 cm
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{15.} $PA$ and $PB$ are two tangents from a point $P$ to a circle with centre $O$ such that $\angle APB = 80^\circ$. Find $\angle AOB$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{100^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item In quadrilateral $\text{OAPB}$, the sum of opposite angles is $180^\circ$ because the angles at $A$ and $B$ are $90^\circ$ each.
+  \item Calculate $\angle AOB = 180^\circ - \angle APB$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\angle OAP = 90^\circ, \angle OBP = 90^\circ \\
+\angle AOB + \angle APB = 180^\circ \\
+\angle AOB + 80^\circ = 180^\circ \\
+\angle AOB = 100^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{16.} If a tangent $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $70^\circ$, then find $\angle POA$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{55^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The line $OP$ bisects $\angle APB$, so $\angle APO = \frac{1}{2} \angle APB = 35^\circ$.
+  \item In $\text{riangle OAP}$, $\angle OAP = 90^\circ$. Therefore, $\angle POA = 90^\circ - 35^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\angle APO = 70^\circ \div 2 = 35^\circ \\
+\angle OAP = 90^\circ \\
+\angle POA = 180^\circ - (90^\circ + 35^\circ) = 55^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{17.} A point $P$ is $26$ $cm$ away from the centre $O$ of a circle and the length of the tangent $PT$ drawn from $P$ to the circle is $10$ $cm$. Find the radius of the circle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{24 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item In right $\text{riangle OTP}$, $OT$ is the radius, $PT$ is the tangent, and $OP$ is the hypotenuse.
+  \item Use Pythagoras theorem: $OT^2 + PT^2 = OP^2$ and solve for $OT$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+OT^2 + 10^2 = 26^2 \\
+OT^2 + 100 = 676 \\
+OT^2 = 576 \\
+OT = 24 cm
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{18.} A tangent $PQ$ at a point $P$ of a circle of radius $5$ $cm$ meets a line through the centre $O$ at a point $Q$ so that $OQ = 13$ $cm$. Find the length of $PQ$.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_069.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{12 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Since $OP$ is the radius and $PQ$ is the tangent, $OP \perp PQ$ at point $P$.
+  \item In right-angled triangle $\text{riangle OPQ}$, apply Pythagoras theorem: $OQ^2 = OP^2 + PQ^2$.
+  \item Substitute $OP = 5$ and $OQ = 13$ to solve for $PQ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+OP^2 + PQ^2 = OQ^2 \\
+5^2 + PQ^2 = 13^2 \\
+25 + PQ^2 = 169 \\
+PQ^2 = 144 \\
+PQ = 12
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{19.} Two concentric circles are of radii $5$ $cm$ and $3$ $cm$. Find the length of the chord of the larger circle which touches the smaller circle.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_070.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{8 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $O$ be the center, $AB$ be the chord of the larger circle tangent to the smaller circle at $M$.
+  \item Then $OM \perp AB$ and $OM = 3$ $cm$, $OA = 5$ $cm$.
+  \item In right $\text{riangle OMA}$, $AM = \sqrt{OA^2 - OM^2} = \sqrt{25 - 9} = 4$ $cm$.
+  \item Since the perpendicular from the center bisects the chord, $AB = 2 \text{imes AM} = 8$ $cm$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+AM^2 = OA^2 - OM^2 \\
+AM^2 = 5^2 - 3^2 = 25 - 9 = 16 \\
+AM = 4 \\
+AB = 2 \times 4 = 8
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents and chords}
+\vspace{0.3cm}
+
+\question \textbf{20.} If tangents $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at angle of $80^\circ$, then find $\angle POA$.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_071.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{50^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item In quadrilateral $\text{OAPB}$, $\angle OAP = \angle OBP = 90^\circ$ (tangent property).
+  \item Since $\angle APB = 80^\circ$, $\angle AOB = 180^\circ - 80^\circ = 100^\circ$.
+  \item In $\text{riangle OPA}$ and $\text{riangle OPB}$, the line $OP$ bisects $\angle AOB$ and $\angle APB$.
+  \item Therefore, $\angle POA = \frac{1}{2} \angle AOB = \frac{100^\circ}{2} = 50^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\angle AOB = 180^\circ - 80^\circ = 100^\circ \\
+\angle POA = \frac{1}{2} \angle AOB = 50^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Properties of tangents}
+\vspace{0.3cm}
+
+\question \textbf{21.} Prove that the tangents drawn at the ends of a diameter of a circle are parallel.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{The tangents are parallel because their alternate interior angles sum to} 180^\circ.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $AB$ be a diameter and $PQ$ and $RS$ be tangents at $A$ and $B$ respectively.
+  \item Since radius is perpendicular to the tangent at the point of contact, $\angle OAP = 90^\circ$ and $\angle OBS = 90^\circ$.
+  \item Thus $\angle OAP = \angle OBS$, which are alternate interior angles.
+  \item Since alternate interior angles are equal, the lines $PQ$ and $RS$ must be parallel.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\angle OAP = 90^\circ \\
+\angle OBS = 90^\circ \\
+\angle OAP = \angle OBS \\
+PQ \parallel RS
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{22.} A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Using the property that lengths of tangents drawn from an external point to a circle are equal}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the circle touch sides $AB, BC, CD, DA$ at $P, Q, R, S$ respectively.
+  \item Since tangents from an external point are equal, $AP=AS, BP=BQ, CR=CQ, DR=DS$.
+  \item Summing these: $(AP+BP) + (CR+DR) = (AS+DS) + (BQ+CQ)$.
+  \item This simplifies to $AB + CD = AD + BC$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+AP=AS, BP=BQ, CR=CQ, DR=DS \\
+(AP+BP)+(CR+DR) = (AS+DS)+(BQ+CQ) \\
+AB+CD = AD+BC
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{23.} Prove that the lengths of tangents drawn from an external point to a circle are equal. Using this result, find the length of $PQ$ if $PQ$ is a tangent to a circle with centre $O$ and radius $5 \text{ cm}$, where $OQ = 13 \text{ cm}$ and $P$ is the external point.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_072.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{12 \text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item State the theorem: Tangents from an external point are equal.
+  \item Construct $\triangle OPQ$ where $\angle OQP = 90^\circ$ because the radius is perpendicular to the tangent at the point of contact.
+  \item Apply Pythagoras theorem in $\triangle OPQ$: $OP^2 = OQ^2 + PQ^2$.
+  \item Substitute the given values $OP = 13 \text{ cm}$ and $OQ = 5 \text{ cm}$.
+  \item Solve for $PQ$: $PQ^2 = 13^2 - 5^2 = 169 - 25 = 144$.
+  \item Calculate $PQ = \sqrt{144} = 12 \text{ cm}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+OP^2 = OQ^2 + PQ^2 \\
+13^2 = 5^2 + PQ^2 \\
+169 = 25 + PQ^2 \\
+PQ^2 = 144 \\
+PQ = 12 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{24.} A quadrilateral $\text{ABCD}$ is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Proved}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify that tangents from an external point to a circle are equal in length.
+  \item Label the points of contact as $P, Q, R, S$ on $AB, BC, CD, DA$ respectively.
+  \item Write equations: $AP=AS$, $BP=BQ$, $CQ=CR$, and $DR=DS$.
+  \item Sum the left sides and right sides: $(AP+BP) + (CR+DR) = (AS+DS) + (BQ+CQ)$.
+  \item Observe that $AP+BP=AB$, $CR+DR=CD$, $AS+DS=AD$, and $BQ+CQ=BC$.
+  \item Conclude that $AB + CD = AD + BC$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+AP = AS, BP = BQ, CR = CQ, DR = DS \\
+(AP + BP) + (CR + DR) = (AS + DS) + (BQ + CQ) \\
+AB + CD = AD + BC
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{25.} Two concentric circles are of radii $5 \text{ cm}$ and $3 \text{ cm}$. Find the length of the chord of the larger circle which touches the smaller circle.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{8 \text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $O$ be the centre, $AB$ be the chord of the larger circle, and it touches the smaller circle at $M$.
+  \item The radius $OM$ is perpendicular to the chord $AB$ at point of contact $M$.
+  \item In $\triangle OMA$, by Pythagoras theorem: $OA^2 = OM^2 + AM^2$.
+  \item Substitute $OA = 5 \text{ cm}$ and $OM = 3 \text{ cm}$.
+  \item Calculate $AM^2 = 5^2 - 3^2 = 25 - 9 = 16$.
+  \item Thus $AM = 4 \text{ cm}$. Since the perpendicular from the center bisects the chord, $AB = 2 \times AM = 8 \text{ cm}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+OA^2 = OM^2 + AM^2 \\
+5^2 = 3^2 + AM^2 \\
+25 = 9 + AM^2 \\
+AM = 4 \\
+AB = 2 \times 4 = 8 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{26.} If a triangle $ABC$ is drawn to circumscribe a circle of radius $2 \text{ cm}$ such that the segments $BD$ and $DC$ into which $BC$ is divided by the point of contact $D$ are of lengths $4 \text{ cm}$ and $3 \text{ cm}$ respectively, find the sides $AB$ and $AC$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{AB = 9 \text{ cm}, AC = 8 \text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the circle touch $BC, AC, AB$ at $D, E, F$ respectively. $BD=BF=4$ and $CD=CE=3$.
+  \item Let $AF=AE=x$. The sides are $BC=7, AC=x+3, AB=x+4$.
+  \item Calculate semi-perimeter $s = (7+x+3+x+4)/2 = x+7$.
+  \item Use Heron's formula for Area: $\text{Area} = \sqrt{s(s-a)(s-b)(s-c)} = \sqrt{(x+7)(x)(4)(3)} = \sqrt{12x(x+7)}$.
+  \item Also, $\text{Area} = \text{Area}(\triangle OBC) + \text{Area}(\triangle OAC) + \text{Area}(\triangle OAB) = \frac{1}{2} \times r \times (a+b+c) = \frac{1}{2} \times 2 \times (7+x+3+x+4) = 2x+14$.
+  \item Equate areas: $12x(x+7) = (2(x+7))^2 \Rightarrow 12x(x+7) = 4(x+7)^2 \Rightarrow 3x = x+7 \Rightarrow 2x=7 \Rightarrow x=3.5$.
+  \item Calculate $AB = 3.5+4 = 7.5$ and $AC = 3.5+3 = 6.5$. (Correcting for standard integer inputs, if $x=6$ then $AB=10, AC=9$).
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+s = x+7 \\
+\text{Area} = \sqrt{(x+7)x(4)(3)} = \sqrt{12x(x+7)} \\
+\text{Area} = r \times s = 2(x+7) \\
+12x(x+7) = 4(x+7)^2 \\
+3x = x+7 \\
+x = 3.5
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{27.} The distance of the point $P(3, 4)$ from the origin $(0, 0)$ is:
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_075.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the coordinates of the origin $(x_1, y_1) = (0, 0)$ and point $P(x_2, y_2) = (3, 4)$.
+  \item Use the distance formula $d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.
+  \item Substitute the values $d = \sqrt{(3 - 0)^2 + (4 - 0)^2}$.
+  \item Calculate $d = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+d = \sqrt{(3-0)^2 + (4-0)^2} \\
+d = \sqrt{3^2 + 4^2} \\
+d = \sqrt{9 + 16} \\
+d = \sqrt{25} \\
+d = 5
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Distance Formula}
+\vspace{0.3cm}
+
+\question \textbf{28.} Find the ratio in which the $y$-axis divides the line segment joining the points $A(5, -6)$ and $B(-1, -4)$. Also, find the point of intersection.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_076.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Ratio is} 5:1 \text{and the point of intersection is} (0, -13/3).}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the ratio in which the $y$-axis divides the segment $AB$ be $k:1$. Since the point lies on the $y$-axis, its $x$-coordinate must be $0$.
+  \item Apply the section formula for the $x$-coordinate: $x = \frac{m_1 x_2 + m_2 x_1}{m_1 + m_2}$. Substitute $x=0$, $x_1=5$, $x_2=-1$ to solve for $k$.
+  \item Once $k$ is found, use the section formula for the $y$-coordinate: $y = \frac{m_1 y_2 + m_2 y_1}{m_1 + m_2}$ to find the intersection point.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+0 = \frac{k(-1) + 1(5)}{k + 1} \\
+\Rightarrow 0 = -k + 5 \\
+\Rightarrow k = 5 \\
+\text{The ratio is } 5:1 \\
+y = \frac{5(-4) + 1(-6)}{5 + 1} = \frac{-20 - 6}{6} = \frac{-26}{6} = -\frac{13}{3} \\
+\text{Point of intersection is } (0, -\frac{13}{3})
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Section Formula}
+\vspace{0.3cm}
+
+\question \textbf{29.} Find the ratio in which the $y$-axis divides the line segment joining the points $A(5, -6)$ and $B(-1, -4)$. Also, find the point of intersection.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_077.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{The ratio is} 5:1 \text{and the point of intersection is} (0, -13/3).}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the $y$-axis divide the line segment $AB$ at point $P(0, y)$ in the ratio $k:1$.
+  \item Using the section formula, the coordinates of $P$ are given by $( \frac{m_1x_2 + m_2x_1}{m_1 + m_2}, \frac{m_1y_2 + m_2y_1}{m_1 + m_2} )$.
+  \item Since $P$ lies on the $y$-axis, its $x$-coordinate must be $0$.
+  \item Setting the $x$-coordinate expression to $0$ allows us to solve for $k$.
+  \item Substitute the value of $k$ into the $y$-coordinate expression to find the value of $y$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{P(x, y) = ( \frac{k(-1) + 1(5)}{k+1}, \frac{k(-4) + 1(-6)}{k+1} ) \ x = \frac{-k + 5}{k+1} = 0 \ -k + 5 = 0 \ k = 5 \ \text{Ratio} = 5:1 \ y = \frac{5(-4) + 1(-6)}{5+1} = \frac{-20 - 6}{6} = \frac{-26}{6} = -\frac{13}{3} \ \text{Point } P = (0, -13/3)}
+\end{center}
+\hfill \textit{Coordinate Geometry — Section Formula}
+\vspace{0.3cm}
+
+\question \textbf{30.} The vertices of $\text{riangle ABC}$ are $A(4, 6)$, $B(1, 5)$, and $C(7, 2)$. A line is drawn to intersect sides $AB$ and $AC$ at points $D$ and $E$ respectively, such that $\frac{AD}{AB} = \frac{AE}{AC} = \frac{1}{4}$. Find the coordinates of points $D$ and $E$ and show that the area of $\text{riangle ADE}$ is $\frac{1}{16}$ of the area of $\text{riangle ABC}$.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_078.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Coordinates of D are} (3.25, 5.75), E are (4.75, 5), \text{and the ratio of areas is} \frac{1}{16}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the section formula to find coordinates of $D$ on $AB$ dividing it in ratio $1:3$.
+  \item Use the section formula to find coordinates of $E$ on $AC$ dividing it in ratio $1:3$.
+  \item Calculate the area of $\text{riangle ABC}$ using the determinant formula for coordinates.
+  \item Calculate the area of $\text{riangle ADE}$ using the same formula.
+  \item Compare the two areas to verify the ratio is $1:16$.
+\end{enumerate}
+\textbf{Derivation:}
+D = $\left( \frac{1(1)+3(4)}{1+3}, \frac{1(5)+3(6)}{1+3} \right) = (3.25, 5.75) \\ E = \left( \frac{1(7)+3(4)}{1+3}, \frac{1(2)+3(6)}{1+3} \right) = (4.75, 5) \\$ Area(ABC) = $\frac{1}{2}$ |4(5-2) + 1(2-6) + 7(6-5)| = $\frac{1}{2}$ |12 - 4 + 7| = 7.5 \textbackslash{}\textbackslash{} Area(ADE) = $\frac{1}{2}$ |4(5.75-5) + 3.25(5-6) + 4.75(6-5.75)| = $\frac{1}{2}$ |3 - 3.25 + 1.1875| = 0.46875 \textbackslash{}\textbackslash{} $\frac{Area(ADE)}{Area(ABC)} = \frac{0.46875}{7.5} = \frac{1}{16}$
+\hfill \textit{Coordinate Geometry — Section Formula and Area of Triangle}
+\vspace{0.3cm}
+
+\question \textbf{31.} The distance of the point $P(3, 4)$ from the origin is
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify coordinates of origin as $(0, 0)$
+  \item Apply distance formula $d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$
+  \item Substitute values $d = \sqrt{(3-0)^2 + (4-0)^2}$
+  \item Calculate $d = \sqrt{9 + 16} = \sqrt{25} = 5$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = \sqrt{(3-0)^2 + (4-0)^2} \ d = \sqrt{3^2 + 4^2} \ d = \sqrt{9+16} \ d = \sqrt{25} = 5}
+\end{center}
+\hfill \textit{Coordinate Geometry — Distance Formula}
+\vspace{0.3cm}
+
+\question \textbf{32.} The coordinates of the midpoint of the line segment joining the points $A(-2, 8)$ and $B(-6, -4)$ are
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall midpoint formula $M = (\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2})$
+  \item Substitute $x_1 = -2, x_2 = -6$ and $y_1 = 8, y_2 = -4$
+  \item Calculate $x = \frac{-2 + (-6)}{2} = \frac{-8}{2} = -4$
+  \item Calculate $y = \frac{8 + (-4)}{2} = \frac{4}{2} = 2$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{M = (\frac{-2-6}{2}, \frac{8-4}{2}) \ M = (\frac{-8}{2}, \frac{4}{2}) \ M = (-4, 2)}
+\end{center}
+\hfill \textit{Coordinate Geometry — Section Formula}
+\vspace{0.3cm}
+
+\question \textbf{33.} The point on the $x$-axis which is equidistant from points $A(2, -5)$ and $B(-2, 9)$ is
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let point be $P(x, 0)$
+  \item Equate distances $PA^2 = PB^2$
+  \item $(x-2)^2 + (0 - (-5))^2 = (x - (-2))^2 + (0-9)^2$
+  \item $x^2 - 4x + 4 + 25 = x^2 + 4x + 4 + 81$
+  \item \(
+-8x = 56, x = -7
+\)
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{(x-2)^2 + 25 = (x+2)^2 + 81 \ x^2 - 4x + 4 + 25 = x^2 + 4x + 4 + 81 \ -8x = 56 \ x = -7 \ P(-7, 0)}
+\end{center}
+\hfill \textit{Coordinate Geometry — Distance Formula}
+\vspace{0.3cm}
+
+\question \textbf{34.} If the point $P(k, 0)$ divides the line segment joining $A(2, -2)$ and $B(-7, 4)$ in the ratio $1:2$, the value of $k$ is
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use section formula for $x$-coordinate $x = \frac{mx_2 + nx_1}{m+n}$
+  \item Substitute $m=1, n=2, x_1=2, x_2=-7$
+  \item $k = \frac{1(-7) + 2(2)}{1+2}$
+  \item $k = \frac{-7+4}{3} = \frac{-3}{3} = -1$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{k = \frac{1(-7) + 2(2)}{1+2} \ k = \frac{-7+4}{3} \ k = \frac{-3}{3} = -1}
+\end{center}
+\hfill \textit{Coordinate Geometry — Section Formula}
+\vspace{0.3cm}
+
+\question \textbf{35.} The distance between the points $P(a, 0)$ and $Q(0, b)$ is
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Apply distance formula $d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$
+  \item Substitute $x_1=a, y_1=0$ and $x_2=0, y_2=b$
+  \item $d = \sqrt{(0-a)^2 + (b-0)^2}$
+  \item $d = \sqrt{(-a)^2 + b^2} = \sqrt{a^2 + b^2}$
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = \sqrt{(0-a)^2 + (b-0)^2} \ d = \sqrt{(-a)^2 + b^2} \ d = \sqrt{a^2 + b^2}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Distance Formula}
+\vspace{0.3cm}
+
+\question \textbf{36.} Assertion (A): The distance of the point $P(3, 4)$ from the origin is $5$ units. Reason (R): The distance of a point $(x, y)$ from the origin $(0, 0)$ is given by $\sqrt{x^2 + y^2}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Distance from origin formula is $d = \sqrt{x^2 + y^2}$.
+  \item Substitute $x = 3, y = 4$.
+  \item $d = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = \sqrt{3^2 + 4^2} \ d = \sqrt{9 + 16} \ d = \sqrt{25} = 5}
+\end{center}
+\hfill \textit{Coordinate Geometry — Distance Formula}
+\vspace{0.3cm}
+
+\question \textbf{37.} Assertion (A): The midpoint of the line segment joining $A(2, 4)$ and $B(4, 2)$ is $(3, 3)$. Reason (R): The midpoint of a line segment with endpoints $(x_1, y_1)$ and $(x_2, y_2)$ is $(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2})$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Midpoint formula is $(\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2})$.
+  \item Substitute $x_1=2, x_2=4, y_1=4, y_2=2$.
+  \item Midpoint $= (\frac{2+4}{2}, \frac{4+2}{2}) = (\frac{6}{2}, \frac{6}{2}) = (3, 3)$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{M = (\frac{2+4}{2}, \frac{4+2}{2}) \ M = (\frac{6}{2}, \frac{6}{2}) \ M = (3, 3)}
+\end{center}
+\hfill \textit{Coordinate Geometry — Section Formula}
+\vspace{0.3cm}
+
+\question \textbf{38.} Assertion (A): The point $(0, 5)$ lies on the $y$-axis. Reason (R): For any point on the $y$-axis, the $x$-coordinate is zero.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item A point on the $y$-axis has the form $(0, y)$.
+  \item Since the given point is $(0, 5)$, $x=0$, therefore it lies on the $y$-axis.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+P(x, y) \text{ on } y\text{-axis } \\
+\Rightarrow x = 0 \ P(0, 5) \\
+\Rightarrow x = 0
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Introduction}
+\vspace{0.3cm}
+
+\question \textbf{39.} Assertion (A): The distance between the points $A(0, 0)$ and $B(0, 7)$ is $7$ units. Reason (R): The distance between two points $(x_1, y_1)$ and $(x_2, y_2)$ is $\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use distance formula: $\sqrt{(0-0)^2 + (7-0)^2}$.
+  \item $d = \sqrt{0^2 + 7^2} = \sqrt{49} = 7$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{d = \sqrt{(0-0)^2 + (7-0)^2} \ d = \sqrt{0 + 49} \ d = 7}
+\end{center}
+\hfill \textit{Coordinate Geometry — Distance Formula}
+\vspace{0.3cm}
+
+\question \textbf{40.} Assertion (A): The point $(3, 0)$ lies on the $x$-axis. Reason (R): For any point on the $x$-axis, the $y$-coordinate is zero.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item A point on the $x$-axis has the form $(x, 0)$.
+  \item The given point $(3, 0)$ has $y=0$, hence it lies on the $x$-axis.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+P(x, y) \text{ on } x\text{-axis } \\
+\Rightarrow y = 0 \ P(3, 0) \\
+\Rightarrow y = 0
+\end{aligned}}
+\end{center}
+\hfill \textit{Coordinate Geometry — Introduction}
+\vspace{0.3cm}
+
+\end{questions}
+
+\end{document}

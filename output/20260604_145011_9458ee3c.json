@@ -1,0 +1,253 @@
+{
+  "batch_id": "20260604_145011_9458ee3c",
+  "generated_at": "2026-06-04T14:50:11.933740",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Prove that the lengths of tangents drawn from an external point to a circle are equal. Using this result, if a quadrilateral $ABCD$ is drawn to circumscribe a circle, prove that $AB + CD = AD + BC$.",
+      "answer": "$AB + CD = AD + BC$",
+      "solution": {
+        "steps": [
+          "State the theorem: Tangents from an external point are equal.",
+          "Identify the points of contact $P, Q, R, S$ on sides $AB, BC, CD, DA$ respectively.",
+          "Express $AP=AS, BP=BQ, CQ=CR, DR=DS$.",
+          "Sum the left and right sides of these equations.",
+          "Group the terms to form the sides of the quadrilateral."
+        ],
+        "derivation": "$AP = AS, \\ BP = BQ, \\ CQ = CR, \\ DR = DS \\ (Tangents \\ from \\ external \\ point) \\\\ AB + CD = (AP + PB) + (CR + RD) \\\\ = (AS + BQ) + (CQ + DS) \\\\ = (AS + DS) + (BQ + CQ) \\\\ = AD + BC$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "caption": "Quadrilateral circumscribing a circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": 2
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": -3,
+            "y": 3,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 3,
+            "y": 3,
+            "label": "B"
+          },
+          {
+            "kind": "point",
+            "id": "C",
+            "x": 3,
+            "y": -3,
+            "label": "C"
+          },
+          {
+            "kind": "point",
+            "id": "D",
+            "x": -3,
+            "y": -3,
+            "label": "D"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:11.933572",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145011_26b1b1_01"
+    },
+    {
+      "question": "Two concentric circles are of radii $5 \\text{ cm}$ and $3 \\text{ cm}$. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "answer": "$8 \\text{ cm}$",
+      "solution": {
+        "steps": [
+          "Let $O$ be the center, $AB$ be the chord of the larger circle, and $P$ be the point of contact on the smaller circle.",
+          "Radius $OP = 3 \\text{ cm}$ is perpendicular to chord $AB$.",
+          "Radius $OA = 5 \\text{ cm}$ is the hypotenuse of right $\\triangle OPA$.",
+          "Use Pythagoras theorem: $AP^2 + OP^2 = OA^2$.",
+          "Calculate $AP = \\sqrt{5^2 - 3^2} = 4 \\text{ cm}$.",
+          "Since the perpendicular from center bisects the chord, $AB = 2 \\times AP = 8 \\text{ cm}$."
+        ],
+        "derivation": "$OP \\perp AB \\Rightarrow \\angle OPA = 90^\\circ \\\\ AP = \\sqrt{OA^2 - OP^2} \\\\ AP = \\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = \\sqrt{16} = 4 \\text{ cm} \\\\ AB = 2 \\times AP = 2 \\times 4 = 8 \\text{ cm}$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "caption": "Chord of larger circle touching smaller circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": 3
+          },
+          {
+            "kind": "circle",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": 5
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": -4,
+            "y": 3,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 4,
+            "y": 3,
+            "label": "B"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:11.933621",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145011_03de7e_02"
+    },
+    {
+      "question": "A circle is inscribed in a $\\triangle ABC$ having sides $8 \\text{ cm}, 10 \\text{ cm}$ and $12 \\text{ cm}$. Find the lengths of the segments $AD, BE, CF$ where $D, E, F$ are points of contact on sides $AB, BC, CA$ respectively.",
+      "answer": "$AD = 5 \\text{ cm}, BE = 3 \\text{ cm}, CF = 7 \\text{ cm}$",
+      "solution": {
+        "steps": [
+          "Let $AD = AF = x, BD = BE = y, CE = CF = z$.",
+          "Write equations: $x + y = 8, y + z = 10, z + x = 12$.",
+          "Sum the equations: $2(x + y + z) = 30 \\Rightarrow x + y + z = 15$.",
+          "Solve for $x, y, z$ by subtracting original equations from sum.",
+          "Result: $x = 15 - 10 = 5, y = 15 - 12 = 3, z = 15 - 8 = 7$."
+        ],
+        "derivation": "$x+y=8, \\ y+z=10, \\ z+x=12 \\\\ 2(x+y+z) = 30 \\Rightarrow x+y+z = 15 \\\\ x = 15-10 = 5 \\text{ cm} \\\\ y = 15-12 = 3 \\text{ cm} \\\\ z = 15-8 = 7 \\text{ cm}$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:11.933634",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145011_8994ff_03"
+    },
+    {
+      "question": "Prove that the tangent at any point of a circle is perpendicular to the radius through the point of contact.",
+      "answer": "Proof",
+      "solution": {
+        "steps": [
+          "Draw a circle with center $O$ and tangent $XY$ at point $P$.",
+          "Take a point $Q$ on $XY$ other than $P$. Join $OQ$.",
+          "Since $Q$ is outside, $OQ > OP$.",
+          "This implies $OP$ is the shortest distance from $O$ to $XY$.",
+          "The shortest distance from a point to a line is the perpendicular distance, so $OP \\perp XY$."
+        ],
+        "derivation": "$Let \\ XY \\ be \\ the \\ tangent \\ at \\ P. \\ Take \\ point \\ Q \\ on \\ XY, \\ Q \\neq P. \\\\ OQ > OP \\ (since \\ Q \\ is \\ outside \\ the \\ circle). \\\\ OP \\ is \\ the \\ shortest \\ distance \\ from \\ O \\ to \\ line \\ XY. \\\\ Therefore, \\ OP \\perp XY.$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "caption": "Tangent perpendicular to radius",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": 2
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 0,
+            "y": 2,
+            "label": "P"
+          },
+          {
+            "kind": "point",
+            "id": "X",
+            "x": -3,
+            "y": 2,
+            "label": "X"
+          },
+          {
+            "kind": "point",
+            "id": "Y",
+            "x": 3,
+            "y": 2,
+            "label": "Y"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:11.933644",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145011_a55382_04"
+    }
+  ]
+}

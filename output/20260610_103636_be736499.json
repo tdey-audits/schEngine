@@ -1,0 +1,122 @@
+{
+  "batch_id": "20260610_103636_be736499",
+  "generated_at": "2026-06-10T10:36:36.721176",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": "euclid division lemma",
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A charitable trust is distributing food packets to two different groups of people during a community event. Group A has $468$ people and Group B has $396$ people. The organizer wants to pack the food in such a way that each packet contains an equal number of items, and every person receives exactly one pack, with no leftovers in either group. To ensure efficiency, the organizer uses Euclid's division algorithm to determine the largest possible number of items ($k$) that can be placed in each pack such that the packets are uniform for both groups.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "Which of the following is the correct application of Euclid's division lemma for the first step to find the HCF of $468$ and $396$?",
+          "answer": "(B)",
+          "solution": {
+            "steps": [
+              "Apply $a = bq + r$ where $a = 468$ and $b = 396$.",
+              "$468 = 396 \\times 1 + 72$."
+            ],
+            "derivation": "$468 = 396 \\times 1 + 72$"
+          },
+          "options": [
+            "(A) $468 = 396 \\times 0 + 468$",
+            "(B) $468 = 396 \\times 1 + 72$",
+            "(C) $396 = 468 \\times 1 - 72$",
+            "(D) $468 = 396 \\times 2 + 72$"
+          ]
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Find the HCF of $468$ and $396$ using Euclid's division algorithm.",
+          "answer": "$36$",
+          "solution": {
+            "steps": [
+              "Step 1: $468 = 396 \\times 1 + 72$",
+              "Step 2: $396 = 72 \\times 5 + 36$",
+              "Step 3: $72 = 36 \\times 2 + 0$",
+              "Remainder is $0$, divisor is $36$."
+            ],
+            "derivation": "$468 = 396(1) + 72 \\\\ 396 = 72(5) + 36 \\\\ 72 = 36(2) + 0 \\\\ \\text{HCF} = 36$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "mcq",
+          "question": "If the number of items per pack is $k$, what is the total number of packets distributed if all $864$ people are served?",
+          "answer": "(C)",
+          "solution": {
+            "steps": [
+              "Total people = $468 + 396 = 864$.",
+              "Each person receives one pack.",
+              "Total packets = Total people = $864$."
+            ],
+            "derivation": "468 + 396 = 864"
+          },
+          "options": [
+            "(A) $24$",
+            "(B) $36$",
+            "(C) $864$",
+            "(D) $432$"
+          ]
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "If $k$ is the HCF, check whether $k$ is a prime number or a composite number.",
+          "answer": "Composite number",
+          "solution": {
+            "steps": [
+              "$k = 36$.",
+              "$36$ has factors $1, 2, 3, 4, 6, 9, 12, 18, 36$.",
+              "Since it has more than two factors, it is composite."
+            ],
+            "derivation": "36 = 2^2 \\times 3^2 \\Rightarrow \\text{Composite}"
+          }
+        }
+      ],
+      "topic": "Real Numbers",
+      "subtopic": "Euclid's Division Lemma",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-10T10:36:36.720847",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 38,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ]
+      },
+      "id": "ncert_20260610_103636_a06714_01"
+    }
+  ]
+}

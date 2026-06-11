@@ -1,0 +1,87 @@
+{
+  "batch_id": "20260610_150454_91cc603a",
+  "generated_at": "2026-06-10T15:04:54.261202",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "factorisation method",
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A group of students decided to buy a set of science kits for a collective project. The total cost of the kits is $Rs. 720$. If there were $6$ more students in the group, the cost per student would have decreased by $Rs. 4$. Using the method of factorisation, find the number of students currently in the group.",
+      "answer": "$30$",
+      "solution": {
+        "steps": [
+          "Let the current number of students be $x$.",
+          "The initial cost per student is $720 / x$.",
+          "If the number of students becomes $x + 6$, the new cost per student is $720 / (x + 6)$.",
+          "According to the problem, the difference between the costs is $4$, leading to the equation $720 / x - 720 / (x + 6) = 4$.",
+          "Simplify the equation to $720(x + 6 - x) / (x(x + 6)) = 4$, which reduces to $180 \times 6 = x^2 + 6x$.",
+          "Form the quadratic equation $x^2 + 6x - 1080 = 0$.",
+          "Factorise the quadratic by splitting the middle term: $x^2 + 36x - 30x - 1080 = 0$.",
+          "Solve for $x$: $x(x + 36) - 30(x + 36) = 0$, giving $(x - 30)(x + 36) = 0$.",
+          "Since the number of students cannot be negative, $x = 30$."
+        ],
+        "derivation": "$Let \\ the \\ number \\ of \\ students \\ be \\ x. \\\\ Total \\ cost = 720. \\\\ Initial \\ cost \\ per \\ student = \\frac{720}{x}. \\\\ New \\ cost \\ per \\ student = \\frac{720}{x+6}. \\\\ Given: \\frac{720}{x} - \\frac{720}{x+6} = 4 \\\\ 720 \\left( \\frac{x+6-x}{x(x+6)} \\right) = 4 \\\\ \\frac{720 \\times 6}{x^2+6x} = 4 \\\\ x^2+6x = 180 \\times 6 \\\\ x^2+6x - 1080 = 0 \\\\ x^2 + 36x - 30x - 1080 = 0 \\\\ x(x+36) - 30(x+36) = 0 \\\\ (x-30)(x+36) = 0 \\\\ x = 30 \\ or \\ x = -36 \\\\ Since \\ x > 0, \\ x = 30.$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-10T15:04:54.260900",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 32,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 35,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-1_Mathematics Basic.pdf",
+            "question_no": 32,
+            "paper_variant": "basic",
+            "question_type": "la"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150454_8de912_01"
+    }
+  ]
+}

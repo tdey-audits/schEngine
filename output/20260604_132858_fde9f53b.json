@@ -1,0 +1,84 @@
+{
+  "batch_id": "20260604_132858_fde9f53b",
+  "generated_at": "2026-06-04T13:28:58.559057",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 3,
+  "mechanisms": [
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $\\sin(A + B) = 1$ and $\\cos(A - B) = \\frac{\\sqrt{3}}{2}$, where $0^\\circ < A + B \\leq 90^\\circ$ and $A > B$, find the values of $A$ and $B$.",
+      "answer": "A = 60^\\circ, B = 30^\\circ",
+      "solution": {
+        "steps": [
+          "Use the given trigonometric values to equate the angles.",
+          "Set up a system of linear equations in terms of A and B.",
+          "Solve the system using the elimination method."
+        ],
+        "derivation": "\\sin(A+B) = 1 = \\sin 90^\\circ \\implies A+B = 90^\\circ \\quad (1) \\\\ \\cos(A-B) = \\frac{\\sqrt{3}}{2} = \\cos 30^\\circ \\implies A-B = 30^\\circ \\quad (2) \\\\ \\text{Adding (1) and (2): } 2A = 120^\\circ \\implies A = 60^\\circ \\\\ \\text{Substituting A in (1): } 60^\\circ + B = 90^\\circ \\implies B = 30^\\circ"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:28:58.558632",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132858_dec7d7_01"
+    },
+    {
+      "question": "Evaluate the following expression: $\\frac{5 \\cos^2 60^\\circ + 4 \\sec^2 30^\\circ - \\tan^2 45^\\circ}{\\sin^2 30^\\circ + \\cos^2 30^\\circ}$",
+      "answer": "67/12",
+      "solution": {
+        "steps": [
+          "Substitute the exact values of the trigonometric ratios from the standard table.",
+          "Simplify the numerator by squaring and performing multiplication.",
+          "Use the identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$ for the denominator."
+        ],
+        "derivation": "\\text{Numerator: } 5(\\frac{1}{2})^2 + 4(\\frac{2}{\\sqrt{3}})^2 - (1)^2 = 5(\\frac{1}{4}) + 4(\\frac{4}{3}) - 1 \\\\ = \\frac{5}{4} + \\frac{16}{3} - 1 = \\frac{15 + 64 - 12}{12} = \\frac{67}{12} \\\\ \\text{Denominator: } (\\frac{1}{2})^2 + (\\frac{\\sqrt{3}}{2})^2 = \\frac{1}{4} + \\frac{3}{4} = 1 \\\\ \\text{Total: } \\frac{67/12}{1} = \\frac{67}{12}"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:28:58.558928",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132858_4a8ab9_02"
+    },
+    {
+      "question": "If $15 \\cot A = 8$, find the values of $\\sin A$ and $\\sec A$.",
+      "answer": "\\sin A = 15/17, \\sec A = 17/8",
+      "solution": {
+        "steps": [
+          "Determine the ratio $\\cot A = \\frac{8}{15}$.",
+          "Use the definition $\\cot A = \\frac{\\text{adjacent}}{\\text{opposite}}$ to find the third side (hypotenuse) using Pythagoras theorem.",
+          "Calculate the required ratios $\\sin A$ and $\\sec A$."
+        ],
+        "derivation": "\\cot A = \\frac{8}{15} = \\frac{\\text{base}}{\\text{perpendicular}} \\\\ \\text{Hypotenuse}^2 = 8^2 + 15^2 = 64 + 225 = 289 \\implies \\text{Hypotenuse} = 17 \\\\ \\sin A = \\frac{\\text{perpendicular}}{\\text{hypotenuse}} = \\frac{15}{17} \\\\ \\sec A = \\frac{\\text{hypotenuse}}{\\text{base}} = \\frac{17}{8}"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:28:58.558950",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132858_46f7de_03"
+    }
+  ]
+}

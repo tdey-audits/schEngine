@@ -1,0 +1,115 @@
+{
+  "batch_id": "20260610_145522_ea97435e",
+  "generated_at": "2026-06-10T14:55:22.468006",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "quadratic formula",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "For the quadratic equation $x^2 - 2(a+b)x + (a^2+b^2+2ab) = 0$, if the roots are equal, which of the following relations must hold true?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify the coefficients of the quadratic equation $Ax^2 + Bx + C = 0$, where $A=1$, $B=-2(a+b)$, and $C=(a+b)^2$.",
+          "Recall that for real and equal roots, the discriminant $D = B^2 - 4AC$ must be equal to $0$.",
+          "Substitute the coefficients into the discriminant formula: $(-2(a+b))^2 - 4(1)(a+b)^2 = 0$.",
+          "Observe that $(-2(a+b))^2 = 4(a+b)^2$.",
+          "The equation becomes $4(a+b)^2 - 4(a+b)^2 = 0$, which is $0=0$. This implies that for any real values of $a$ and $b$, the equation $x^2 - 2(a+b)x + (a+b)^2 = 0$ always has equal roots.",
+          "Comparing the given equation $x^2 - 2(a+b)x + (a^2+b^2+2ab) = 0$ with $x^2 - 2(a+b)x + (a+b)^2 = 0$, we see they are identical since $a^2+b^2+2ab = (a+b)^2$.",
+          "Consequently, the equation always has equal roots regardless of $a$ and $b$."
+        ],
+        "derivation": "$D = B^2 - 4AC \\\\ D = [-2(a+b)]^2 - 4(1)(a^2+b^2+2ab) \\\\ D = 4(a+b)^2 - 4(a+b)^2 \\\\ D = 4(a^2+2ab+b^2) - 4(a^2+2ab+b^2) \\\\ D = 0"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "quadratic formula",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $a = b$",
+        "(B) $a + b = 0$",
+        "(C) $a, b$ are any real numbers",
+        "(D) $a \\times b = 0$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T14:55:22.467903",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 8,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145522_5e002f_01"
+    }
+  ]
+}

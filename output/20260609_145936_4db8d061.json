@@ -1,0 +1,95 @@
+{
+  "batch_id": "20260609_145936_4db8d061",
+  "generated_at": "2026-06-09T14:59:36.328027",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "factorisation method",
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A group of students decided to buy a set of science project kits for a total cost of $\u20b9 4800$. Each student agreed to contribute an equal amount. However, $8$ students failed to pay their share, which increased the contribution of each remaining student by $\u20b9 30$. By forming a quadratic equation, find the number of students who were originally in the group and the amount each student had to pay initially.",
+      "answer": "Original number of students = $40$, Initial contribution = $\u20b9 120$",
+      "solution": {
+        "steps": [
+          "Let the original number of students be $x$ and the initial contribution per student be $y$.",
+          "We have the relation $xy = 4800$, so $y = 4800/x$.",
+          "When $8$ students drop out, the new number of students is $(x - 8)$ and the new contribution is $(y + 30)$.",
+          "The total cost remains the same, so $(x - 8)(y + 30) = 4800$.",
+          "Substitute $y = 4800/x$ into the second equation: $(x - 8)(4800/x + 30) = 4800$.",
+          "Simplify the equation to form the quadratic: $4800 + 30x - 38400/x - 240 = 4800$, which reduces to $30x^2 - 240x - 38400 = 0$.",
+          "Divide by $30$ to get $x^2 - 8x - 1280 = 0$.",
+          "Factorise the quadratic: $x^2 - 40x + 32x - 1280 = 0$, leading to $(x - 40)(x + 32) = 0$.",
+          "Since the number of students cannot be negative, $x = 40$. Calculate initial contribution $y = 4800 / 40 = 120$."
+        ],
+        "derivation": "$xy = 4800 \\Rightarrow y = \\frac{4800}{x} \\\\ (x - 8)(y + 30) = 4800 \\\\ (x - 8)(\\frac{4800}{x} + 30) = 4800 \\\\ 4800 + 30x - \\frac{38400}{x} - 240 = 4800 \\\\ 30x - \\frac{38400}{x} - 240 = 0 \\\\ 30x^2 - 240x - 38400 = 0 \\\\ x^2 - 8x - 1280 = 0 \\\\ x^2 - 40x + 32x - 1280 = 0 \\\\ x(x - 40) + 32(x - 40) = 0 \\\\ (x - 40)(x + 32) = 0 \\\\ x = 40, x = -32 \\\\ \\text{Since } x > 0, x = 40 \\\\ y = \\frac{4800}{40} = 120$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T14:59:36.327687",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 32,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 35,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-1_Mathematics Basic.pdf",
+            "question_no": 32,
+            "paper_variant": "basic",
+            "question_type": "la"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_145936_e322ba_01"
+    }
+  ]
+}

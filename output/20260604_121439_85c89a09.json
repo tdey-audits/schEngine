@@ -1,0 +1,39 @@
+{
+  "batch_id": "20260604_121439_85c89a09",
+  "generated_at": "2026-06-04T12:14:39.738610",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "A rectangular park has a length that is 3 meters more than twice its width. The area of the park is 90 square meters. If a walking path of uniform width is constructed around the park, the total area including the path becomes 180 square meters. Find the width of the walking path.",
+      "answer": "Let the width of the park be $x$ meters. Then length $= 2x + 3$ meters. Area $= x(2x+3) = 90$. Solving $2x^2 + 3x - 90 = 0$ gives $x = 6$ (positive root). So park dimensions: width 6 m, length 15 m. Let path width be $w$. Total length $= 15 + 2w$, total width $= 6 + 2w$. Total area $= (15+2w)(6+2w) = 180$. Expanding: $4w^2 + 42w + 90 = 180$ or $4w^2 + 42w - 90 = 0$. Divide by 2: $2w^2 + 21w - 45 = 0$. Solving $w = \\frac{-21 \\pm \\sqrt{441 + 360}}{4} = \\frac{-21 \\pm \\sqrt{801}}{4} = \\frac{-21 \\pm 3\\sqrt{89}}{4}$. Positive root: $w = \\frac{-21 + 3\\sqrt{89}}{4}$ meters. This is approximately $1.5$ meters.",
+      "solution": {
+        "steps": [
+          "Define variables: width of park = $x$, length = $2x+3$.",
+          "Set up area equation: $x(2x+3) = 90$ and solve for $x$.",
+          "Solve quadratic $2x^2+3x-90=0$ using quadratic formula.",
+          "Find positive root to get park dimensions (width = 6 m, length = 15 m).",
+          "Let path width = $w$. New length = $15+2w$, new width = $6+2w$.",
+          "Set up total area equation: $(15+2w)(6+2w)=180$.",
+          "Expand and simplify to get $4w^2+42w-90=0$.",
+          "Divide by 2: $2w^2+21w-45=0$. Solve using quadratic formula.",
+          "Take positive root: $w = \\frac{-21+3\\sqrt{89}}{4}$ meters."
+        ],
+        "derivation": "\\begin{align*}\nx(2x+3) &= 90 \\\\\n2x^2 + 3x - 90 &= 0 \\\\\nx &= \\frac{-3 \\pm \\sqrt{9 + 720}}{4} = \\frac{-3 \\pm 27}{4} \\\\\nx &= \\frac{24}{4} = 6 \\quad (\\text{positive}) \\\\\n\\text{Length} &= 2(6)+3 = 15 \\\\\n(15+2w)(6+2w) &= 180 \\\\\n90 + 30w + 12w + 4w^2 &= 180 \\\\\n4w^2 + 42w - 90 &= 0 \\\\\n2w^2 + 21w - 45 &= 0 \\\\\nw &= \\frac{-21 \\pm \\sqrt{441 + 360}}{4} = \\frac{-21 \\pm 3\\sqrt{89}}{4} \\\\\nw &= \\frac{-21 + 3\\sqrt{89}}{4} \\quad (\\text{positive})\n\\end{align*}"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Application in Geometry",
+      "difficulty": 4,
+      "marks": 4,
+      "type": "numerical",
+      "question_number": 1,
+      "metadata": {
+        "generated_at": "2026-06-04T12:14:39.738476",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_121439_f15e20"
+    }
+  ]
+}

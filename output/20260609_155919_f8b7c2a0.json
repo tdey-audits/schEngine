@@ -1,0 +1,106 @@
+{
+  "batch_id": "20260609_155919_f8b7c2a0",
+  "generated_at": "2026-06-09T15:59:19.532414",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): If the sum of the first $n$ terms of an AP is given by $S_n = 3n^2 + 5n$, then its common difference $d$ is $6$. Reason (R): For any AP, the common difference $d$ is given by $d = S_2 - 2S_1$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Calculate $S_1$ by substituting $n=1$ in $S_n = 3n^2 + 5n$.",
+          "Calculate $S_2$ by substituting $n=2$ in $S_n = 3n^2 + 5n$.",
+          "Use the relation between sum of terms and common difference: $d = S_2 - 2S_1$.",
+          "Verify the Assertion and the Reason."
+        ],
+        "derivation": "$S_n = 3n^2 + 5n \\\\ S_1 = 3(1)^2 + 5(1) = 8 \\\\ S_2 = 3(2)^2 + 5(2) = 12 + 10 = 22 \\\\ d = S_2 - 2S_1 = 22 - 2(8) = 22 - 16 = 6 \\\\ \\text{Since } S_2 = a_1 + a_2 = a_1 + (a_1 + d) = 2a_1 + d \\text{ and } S_1 = a_1, \\text{ then } S_2 = 2S_1 + d \\Rightarrow d = S_2 - 2S_1$"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of first n terms",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T15:59:19.532136",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_5 (Arithmetic Progressions).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 33,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 7,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 22,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_155919_62485f_01"
+    }
+  ]
+}

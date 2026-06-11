@@ -1,0 +1,165 @@
+{
+  "batch_id": "20260604_134250_13e858c6",
+  "generated_at": "2026-06-04T13:42:50.310263",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Some Applications of Trigonometry",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The angle of elevation of the top of a tower from a point on the ground, which is $30 \\text{ m}$ away from the foot of the tower, is $45^\\circ$. The height of the tower is $30 \\text{ m}$. Reason (R): In a right-angled triangle, $\\tan(\\theta) = \\frac{\\text{Opposite}}{\\text{Adjacent}}$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Use the tangent ratio: $\\tan(45^\\circ) = \\frac{h}{30}$.",
+          "Since $\\tan(45^\\circ) = 1$, we get $1 = \\frac{h}{30}$.",
+          "Thus, $h = 30 \\text{ m}$.",
+          "The reason is the correct definition of the tangent ratio."
+        ],
+        "derivation": "\\tan(45^\\circ) = \\frac{\\text{height}}{30} \\implies 1 = \\frac{h}{30} \\implies h = 30"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:42:50.309688",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134250_e4bbf4_01"
+    },
+    {
+      "question": "Assertion (A): If the length of the shadow of a vertical pole is equal to its height, then the angle of elevation of the Sun is $45^\\circ$. Reason (R): The angle of elevation is the angle formed by the line of sight with the horizontal when the object is above the horizontal level.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Let height be $h$ and shadow be $s$. Given $h = s$.",
+          "$\\tan(\\theta) = \\frac{h}{s} = \\frac{h}{h} = 1$.",
+          "$\\theta = 45^\\circ$.",
+          "Reason is the standard definition of angle of elevation."
+        ],
+        "derivation": "\\tan(\\theta) = \\frac{\\text{height}}{\\text{shadow}} = 1 \\implies \\theta = 45^\\circ"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:42:50.309813",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134250_0d7b98_02"
+    },
+    {
+      "question": "Assertion (A): The length of a kite string making an angle of $30^\\circ$ with the ground to reach a height of $50 \\text{ m}$ is $100 \\text{ m}$. Reason (R): $\\sin(\\theta) = \\frac{\\text{Opposite}}{\\text{Hypotenuse}}$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Use the sine ratio: $\\sin(30^\\circ) = \\frac{50}{L}$.",
+          "Since $\\sin(30^\\circ) = 0.5$, we get $0.5 = \\frac{50}{L}$.",
+          "Thus, $L = 100 \\text{ m}$.",
+          "Reason is the standard definition of the sine ratio."
+        ],
+        "derivation": "\\sin(30^\\circ) = \\frac{50}{L} \\implies \\frac{1}{2} = \\frac{50}{L} \\implies L = 100"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:42:50.309853",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134250_70594a_03"
+    },
+    {
+      "question": "Assertion (A): The angle of depression from a point $10 \\text{ m}$ above sea level to a ship at sea is $30^\\circ$. The distance of the ship from the base of the point is $10\\sqrt{3} \\text{ m}$. Reason (R): Angle of depression is equal to the angle of elevation by alternate interior angles.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "The angle of depression equals the angle of elevation ($30^\\circ$).",
+          "$\\tan(30^\\circ) = \\frac{10}{d}$.",
+          "$\\frac{1}{\\sqrt{3}} = \\frac{10}{d} \\implies d = 10\\sqrt{3}$.",
+          "Reason explains why the triangle is formed correctly."
+        ],
+        "derivation": "\\tan(30^\\circ) = \\frac{10}{d} \\implies d = 10 \\times \\sqrt{3} = 10\\sqrt{3}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:42:50.309881",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134250_c70995_04"
+    },
+    {
+      "question": "Assertion (A): If a ladder $10 \\text{ m}$ long is placed against a wall such that it makes an angle of $60^\\circ$ with the ground, then the foot of the ladder is $5 \\text{ m}$ away from the wall. Reason (R): $\\cos(\\theta) = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}}$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Use the cosine ratio: $\\cos(60^\\circ) = \\frac{\\text{base}}{10}$.",
+          "Since $\\cos(60^\\circ) = 0.5$, we get $0.5 = \\frac{\\text{base}}{10}$.",
+          "Thus, $\\text{base} = 5 \\text{ m}$.",
+          "Reason is the standard definition of the cosine ratio."
+        ],
+        "derivation": "\\cos(60^\\circ) = \\frac{\\text{base}}{10} \\implies \\frac{1}{2} = \\frac{\\text{base}}{10} \\implies \\text{base} = 5"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:42:50.309908",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134250_313b45_05"
+    }
+  ]
+}

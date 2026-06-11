@@ -1,0 +1,147 @@
+{
+  "batch_id": "20260610_111613_815d615c",
+  "generated_at": "2026-06-10T11:16:13.999820",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Some Applications of Trigonometry",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A vertical pole of height $h$ stands on level ground. At a point $P$ on the ground, the angle of elevation of the top of the pole is $30^\\circ$. If the point $P$ is moved $20$ $m$ closer to the base of the pole, the angle of elevation becomes $60^\\circ$. The height $h$ of the pole in meters is given by:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Let the height of the pole be $h$ and the distance from $P$ to the base be $x$.",
+          "From the first triangle, $\\tan 30^\\circ = \\frac{h}{x} \\Rightarrow \\frac{1}{\\sqrt{3}} = \\frac{h}{x} \\Rightarrow x = h\\sqrt{3}$.",
+          "After moving $20$ $m$ closer, the new distance is $x - 20$. In the second triangle, $\\tan 60^\\circ = \\frac{h}{x - 20} \\Rightarrow \\sqrt{3} = \\frac{h}{x - 20}$.",
+          "Substitute $x = h\\sqrt{3}$ into the second equation: $\\sqrt{3} = \\frac{h}{h\\sqrt{3} - 20}$.",
+          "Solve for $h$: $h = \\sqrt{3}(h\\sqrt{3} - 20) \\Rightarrow h = 3h - 20\\sqrt{3} \\Rightarrow 2h = 20\\sqrt{3} \\Rightarrow h = 10\\sqrt{3}$."
+        ],
+        "derivation": "$h = x \\tan 30^\\circ \\Rightarrow x = h \\sqrt{3} \\\\ h = (x - 20) \\tan 60^\\circ \\\\ h = (h \\sqrt{3} - 20) \\sqrt{3} \\\\ h = 3h - 20 \\sqrt{3} \\\\ 2h = 20 \\sqrt{3} \\\\ h = 10 \\sqrt{3}$"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Height and Distance with two observation points",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $10\\sqrt{3}$",
+        "(B) $10\\sqrt{2}$",
+        "(C) $20\\sqrt{3}$",
+        "(D) $5\\sqrt{3}$"
+      ],
+      "diagram": {
+        "required": true,
+        "type": "trigonometry",
+        "caption": "P and Q are positions of observation on ground",
+        "scale": 0.85,
+        "elements": [
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0,
+            "y": 3,
+            "label": "A",
+            "position": "above"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 0,
+            "y": 0,
+            "label": "B",
+            "position": "below"
+          },
+          {
+            "kind": "point",
+            "id": "Q",
+            "x": 1,
+            "y": 0,
+            "label": "Q",
+            "position": "below"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 4,
+            "y": 0,
+            "label": "P",
+            "position": "below"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "B",
+            "label": "h",
+            "label_position": "left"
+          },
+          {
+            "kind": "segment",
+            "from": "B",
+            "to": "P",
+            "label": "x",
+            "label_position": "below"
+          },
+          {
+            "kind": "segment",
+            "from": "Q",
+            "to": "P",
+            "label": "20m",
+            "label_position": "below"
+          },
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "P"
+            ]
+          },
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "Q"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-10T11:16:13.999555",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_9 (Some Applications of Trigonometry).pdf",
+          "Chapter_8 (Introduction to Trigonometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260610_111613_3d0282_01"
+    }
+  ]
+}

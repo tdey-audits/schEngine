@@ -1,0 +1,68 @@
+{
+  "batch_id": "20260604_122043_1e1dc54c",
+  "generated_at": "2026-06-04T12:20:43.004843",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 2,
+  "questions": [
+    {
+      "question": "The discriminant of the quadratic equation $2x^2 - 5x + 3 = 0$ is:",
+      "answer": "(A) 1",
+      "solution": {
+        "steps": [
+          "Identify coefficients: $a = 2$, $b = -5$, $c = 3$.",
+          "Use discriminant formula: $D = b^2 - 4ac$.",
+          "Substitute: $D = (-5)^2 - 4(2)(3) = 25 - 24 = 1$."
+        ],
+        "derivation": "$D = b^2 - 4ac = (-5)^2 - 4 \\cdot 2 \\cdot 3 = 25 - 24 = 1$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Discriminant and Nature of Roots",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 1",
+        "(B) 2",
+        "(C) 3",
+        "(D) 4"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T12:20:43.004749",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_122043_2fefb0"
+    },
+    {
+      "question": "Which of the following is a quadratic equation?",
+      "answer": "(C) $x^2 - 3x + 2 = 0$",
+      "solution": {
+        "steps": [
+          "A quadratic equation is of the form $ax^2 + bx + c = 0$ with $a \\neq 0$.",
+          "Check each option: (A) $x^3 + 2x = 0$ has degree 3, not quadratic.",
+          "(B) $2x + 5 = 0$ is linear (degree 1).",
+          "(C) $x^2 - 3x + 2 = 0$ is of degree 2 with $a = 1 \\neq 0$, so it is quadratic.",
+          "(D) $x^2 + \\frac{1}{x} = 0$ is not a polynomial because of $\\frac{1}{x}$."
+        ],
+        "derivation": "Standard form: $ax^2 + bx + c = 0$, $a \\neq 0$. Only option (C) satisfies."
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Standard Form of Quadratic Equation",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $x^3 + 2x = 0$",
+        "(B) $2x + 5 = 0$",
+        "(C) $x^2 - 3x + 2 = 0$",
+        "(D) $x^2 + \\frac{1}{x} = 0$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T12:20:43.004822",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_122043_f525a6"
+    }
+  ]
+}

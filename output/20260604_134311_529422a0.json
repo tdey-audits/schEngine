@@ -1,0 +1,160 @@
+{
+  "batch_id": "20260604_134311_529422a0",
+  "generated_at": "2026-06-04T13:43:11.376789",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If the angle between two tangents drawn from a point $P$ to a circle of radius $r$ and center $O$ is $60^\\circ$, then the length of $OP$ is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "The line segment joining the center to the external point bisects the angle between the tangents.",
+          "The triangle formed by the center, the point of tangency, and the external point is a right-angled triangle.",
+          "Using trigonometry, $\\sin(30^\\circ) = r / OP$."
+        ],
+        "derivation": "\\sin(30^\\circ) = \\frac{r}{OP} \\implies \\frac{1}{2} = \\frac{r}{OP} \\implies OP = 2r"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) r",
+        "(B) 2r",
+        "(C) r\\sqrt{3}",
+        "(D) r/2"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:11.376612",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134311_38369e_01"
+    },
+    {
+      "question": "A tangent $PQ$ at a point $P$ of a circle of radius $5 \\text{ cm}$ meets a line through the center $O$ at a point $Q$ so that $OQ = 13 \\text{ cm}$. The length of $PQ$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "The tangent at any point of a circle is perpendicular to the radius through the point of contact.",
+          "This forms a right-angled triangle $OPQ$ where $OQ$ is the hypotenuse.",
+          "Apply the Pythagorean theorem: $PQ^2 = OQ^2 - OP^2$."
+        ],
+        "derivation": "PQ = \\sqrt{13^2 - 5^2} = \\sqrt{169 - 25} = \\sqrt{144} = 12 \\text{ cm}"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 10 cm",
+        "(B) 8 cm",
+        "(C) 12 cm",
+        "(D) 7 cm"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:11.376660",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134311_ee648f_02"
+    },
+    {
+      "question": "The number of tangents that can be drawn from a point lying inside a circle is:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "A tangent touches the circle at exactly one point.",
+          "If a point is inside the circle, any line passing through it will intersect the circle at two points (a secant).",
+          "Therefore, no tangent can be drawn from an interior point."
+        ],
+        "derivation": "\\text{Number of tangents} = 0"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 0",
+        "(B) 1",
+        "(C) 2",
+        "(D) Infinite"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:11.376683",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134311_7d5bea_03"
+    },
+    {
+      "question": "If two tangents inclined at an angle of $80^\\circ$ are drawn to a circle of radius $3 \\text{ cm}$, then the angle between the two radii at the center is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "The quadrilateral formed by the center, two points of contact, and the external point has angles summing to $360^\\circ$.",
+          "The angles at the points of contact are $90^\\circ$ each.",
+          "The angle at the center and the angle between tangents are supplementary."
+        ],
+        "derivation": "\\text{Angle} = 180^\\circ - 80^\\circ = 100^\\circ"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 80^\\circ",
+        "(B) 90^\\circ",
+        "(C) 100^\\circ",
+        "(D) 120^\\circ"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:11.376694",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134311_ba4e3e_04"
+    },
+    {
+      "question": "The length of a tangent from a point $A$ at a distance of $10 \\text{ cm}$ from the center of the circle is $8 \\text{ cm}$. The radius of the circle is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "The radius, tangent, and the line to the external point form a right triangle.",
+          "The distance from the center is the hypotenuse ($10$), and the tangent is one leg ($8$).",
+          "Use $r^2 + 8^2 = 10^2$."
+        ],
+        "derivation": "r^2 = 100 - 64 = 36 \\implies r = 6 \\text{ cm}"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 4 cm",
+        "(B) 6 cm",
+        "(C) 7 cm",
+        "(D) 9 cm"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:11.376702",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134311_290835_05"
+    }
+  ]
+}

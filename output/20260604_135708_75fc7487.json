@@ -1,0 +1,155 @@
+{
+  "batch_id": "20260604_135708_75fc7487",
+  "generated_at": "2026-06-04T13:57:08.984046",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Areas Related to Circles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The area of a circle with radius $7$ cm is $154$ cm$^2$. Reason (R): The area of a circle is given by $\\pi r^2$, where $r$ is the radius.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Formula for area of a circle is $\\pi r^2$.",
+          "Substitute $r = 7$: $\\frac{22}{7} \\times 7 \\times 7 = 22 \\times 7 = 154$."
+        ],
+        "derivation": "Area = \\pi r^2 = \\frac{22}{7} \\times (7)^2 = 154 \\text{ cm}^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:08.983864",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135708_31f14f_01"
+    },
+    {
+      "question": "Assertion (A): The circumference of a circle with diameter $14$ cm is $44$ cm. Reason (R): The circumference of a circle is given by $\\pi d$, where $d$ is the diameter.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Circumference formula is $\\pi d$.",
+          "Substitute $d = 14$: $\\frac{22}{7} \\times 14 = 22 \\times 2 = 44$."
+        ],
+        "derivation": "C = \\pi d = \\frac{22}{7} \\times 14 = 44 \\text{ cm}"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Circumference of a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:08.983933",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135708_023761_02"
+    },
+    {
+      "question": "Assertion (A): The area of a semicircle with radius $r$ is $\\frac{1}{2} \\pi r^2$. Reason (R): The circumference of a semicircle is $\\pi r$.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Area of semicircle is indeed $\\frac{1}{2} \\pi r^2$ (True).",
+          "Circumference of a semicircle includes the diameter, so it is $\\pi r + 2r$ (False)."
+        ],
+        "derivation": "\\text{Area} = \\frac{1}{2} \\pi r^2; \\text{Perimeter} = \\pi r + 2r"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of semicircle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:08.983945",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135708_62d274_03"
+    },
+    {
+      "question": "Assertion (A): If the perimeter and the area of a circle are numerically equal, then the radius of the circle is $2$ units. Reason (R): Circumference $2\\pi r = \\pi r^2$ implies $r=2$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Set $2\\pi r = \\pi r^2$.",
+          "Divide by $\\pi r$ (since $r \\neq 0$), we get $2 = r$."
+        ],
+        "derivation": "2\\pi r = \\pi r^2 \\implies r = \\frac{2\\pi r}{\\pi r} = 2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Numerical equality of area and circumference",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:08.983954",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135708_222bfe_04"
+    },
+    {
+      "question": "Assertion (A): The area of a sector of a circle with radius $r$ and central angle $\\theta$ is $\\frac{\\theta}{360} \\times \\pi r^2$. Reason (R): The length of the arc of a sector is $\\frac{\\theta}{360} \\times \\pi r^2$.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Area of sector formula is correct (True).",
+          "Arc length formula is $\\frac{\\theta}{360} \\times 2\\pi r$ (False)."
+        ],
+        "derivation": "\\text{Area} = \\frac{\\theta}{360} \\pi r^2; \\text{Length} = \\frac{\\theta}{360} 2\\pi r"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Sector of a circle",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:08.983962",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135708_e2d713_05"
+    }
+  ]
+}

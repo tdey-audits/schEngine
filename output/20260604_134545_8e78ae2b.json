@@ -1,0 +1,137 @@
+{
+  "batch_id": "20260604_134545_8e78ae2b",
+  "generated_at": "2026-06-04T13:45:45.247661",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Two concentric circles are of radii $5 \\text{ cm}$ and $3 \\text{ cm}$. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "answer": "8 \\text{ cm}",
+      "solution": {
+        "steps": [
+          "Let O be the center, AB be the chord of the larger circle tangent to the smaller circle at point P.",
+          "OP is the radius of the smaller circle, so OP = 3 cm and OP \u22a5 AB.",
+          "OA is the radius of the larger circle, so OA = 5 cm.",
+          "In right triangle OPA, AP\u00b2 = OA\u00b2 - OP\u00b2 = 5\u00b2 - 3\u00b2 = 16, so AP = 4 cm.",
+          "Since the perpendicular from the center bisects the chord, AB = 2 * AP = 8 cm."
+        ],
+        "derivation": "AP = \\sqrt{OA^2 - OP^2} = \\sqrt{25 - 9} = \\sqrt{16} = 4 \\text{ cm}; AB = 2 \\times 4 = 8 \\text{ cm}"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangent properties",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:45.247292",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134545_fda7d9_01"
+    },
+    {
+      "question": "A quadrilateral ABCD is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.",
+      "answer": "AB + CD = AD + BC",
+      "solution": {
+        "steps": [
+          "Use the property that lengths of tangents drawn from an external point to a circle are equal.",
+          "Let the circle touch sides AB, BC, CD, DA at P, Q, R, S respectively.",
+          "AP=AS, BP=BQ, CR=CQ, DR=DS.",
+          "Summing the left and right sides of these equations leads to the result."
+        ],
+        "derivation": "AB+CD = (AP+PB)+(CR+RD) = AS+BQ+CQ+DS = (AS+DS)+(BQ+CQ) = AD+BC"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:45.247399",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134545_8e47a8_02"
+    },
+    {
+      "question": "If a tangent $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^{\\circ}$, find $\\angle POA$.",
+      "answer": "50^{\\circ}",
+      "solution": {
+        "steps": [
+          "In quadrilateral OAPB, $\\angle OAP = \\angle OBP = 90^{\\circ}$ (tangent is perpendicular to radius).",
+          "Sum of angles in quadrilateral is $360^{\\circ}$, so $\\angle AOB = 180^{\\circ} - 80^{\\circ} = 100^{\\circ}$.",
+          "In $\\triangle OAP$ and $\\triangle OBP$, by RHS congruence, $\\angle POA = \\angle POB$.",
+          "Therefore, $\\angle POA = \\frac{1}{2} \\angle AOB = 50^{\\circ}$."
+        ],
+        "derivation": "\\angle AOB = 180^\\circ - 80^\\circ = 100^\\circ; \\angle POA = \\frac{100^\\circ}{2} = 50^\\circ"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangent properties",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:45.247429",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134545_de7df1_03"
+    },
+    {
+      "question": "Prove that the parallelogram circumscribing a circle is a rhombus.",
+      "answer": "AB = BC = CD = DA",
+      "solution": {
+        "steps": [
+          "Since it is a parallelogram, opposite sides are equal: AB = CD and AD = BC.",
+          "From the property of circumscribed quadrilaterals, AB + CD = AD + BC.",
+          "Substitute CD with AB and BC with AD: 2AB = 2AD, hence AB = AD.",
+          "Since adjacent sides are equal, the parallelogram is a rhombus."
+        ],
+        "derivation": "AB+CD=AD+BC \\implies 2AB=2AD \\implies AB=AD"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:45.247450",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134545_9900f7_04"
+    },
+    {
+      "question": "A point $P$ is $13 \\text{ cm}$ from the centre of a circle. The length of the tangent drawn from $P$ to the circle is $12 \\text{ cm}$. Find the radius of the circle.",
+      "answer": "5 \\text{ cm}",
+      "solution": {
+        "steps": [
+          "Let O be the center and A be the point of contact on the circle.",
+          "Triangle OAP is a right-angled triangle at A because the radius is perpendicular to the tangent.",
+          "Hypotenuse OP = 13 cm, tangent AP = 12 cm.",
+          "Using Pythagoras theorem, OA\u00b2 = OP\u00b2 - AP\u00b2 = 13\u00b2 - 12\u00b2 = 169 - 144 = 25.",
+          "OA = 5 cm."
+        ],
+        "derivation": "OA = \\sqrt{13^2 - 12^2} = \\sqrt{169 - 144} = \\sqrt{25} = 5 \\text{ cm}"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:45.247469",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134545_6330b7_05"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "batch_id": "20260604_134320_d2d2ba31",
+  "generated_at": "2026-06-04T13:43:20.778122",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A tangent $PQ$ at a point $P$ of a circle of radius $5$ cm meets a line through the center $O$ at a point $Q$ so that $OQ = 13$ cm. Find the length of $PQ$.",
+      "answer": "12 cm",
+      "solution": {
+        "steps": [
+          "Use the property that the tangent at any point of a circle is perpendicular to the radius through the point of contact.",
+          "Apply the Pythagorean theorem in the right-angled triangle $OPQ$ where $\\angle OPQ = 90^\\circ$."
+        ],
+        "derivation": "$OP^2 + PQ^2 = OQ^2 \\implies 5^2 + PQ^2 = 13^2 \\implies 25 + PQ^2 = 169 \\implies PQ^2 = 144 \\implies PQ = 12$ cm"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:20.777881",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134320_8fa325_01"
+    },
+    {
+      "question": "If tangents $PA$ and $PB$ from a point $P$ to a circle with center $O$ are inclined to each other at an angle of $80^\\circ$, then find $\\angle POA$.",
+      "answer": "50^\\circ",
+      "solution": {
+        "steps": [
+          "In quadrilateral $OAPB$, $\\angle OAP = \\angle OBP = 90^\\circ$. The sum of angles is $360^\\circ$.",
+          "Find $\\angle AOB = 180^\\circ - 80^\\circ = 100^\\circ$. Since $\\triangle OAP \\cong \\triangle OBP$, $\\angle POA = \\frac{1}{2} \\angle AOB$."
+        ],
+        "derivation": "$\\angle AOB = 180^\\circ - 80^\\circ = 100^\\circ$. Thus, $\\angle POA = \\frac{100^\\circ}{2} = 50^\\circ$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents from an external point",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:20.777952",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134320_e596cf_02"
+    },
+    {
+      "question": "Two concentric circles are of radii $5$ cm and $3$ cm. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "answer": "8 cm",
+      "solution": {
+        "steps": [
+          "Let $O$ be the center, and $AB$ be the chord of the larger circle tangent to the smaller circle at $M$. $OM \\perp AB$.",
+          "In $\\triangle OMA$, $OA=5$ and $OM=3$. Use Pythagoras to find $AM$, then $AB = 2AM$."
+        ],
+        "derivation": "$AM = \\sqrt{OA^2 - OM^2} = \\sqrt{5^2 - 3^2} = \\sqrt{25-9} = 4$. $AB = 2 \\times 4 = 8$ cm."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:20.777971",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134320_f9ce5d_03"
+    },
+    {
+      "question": "A quadrilateral $ABCD$ is drawn to circumscribe a circle. If $AB = 6$ cm, $BC = 7$ cm, and $CD = 4$ cm, find the length of $AD$.",
+      "answer": "3 cm",
+      "solution": {
+        "steps": [
+          "Use the property that sums of opposite sides of a quadrilateral circumscribing a circle are equal.",
+          "Apply $AB + CD = BC + AD$."
+        ],
+        "derivation": "$6 + 4 = 7 + AD \\implies 10 = 7 + AD \\implies AD = 3$ cm."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:20.777984",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134320_028b52_04"
+    },
+    {
+      "question": "If a point $P$ is $26$ cm away from the center $O$ of a circle and the length of the tangent $PT$ drawn from $P$ to the circle is $10$ cm, find the radius of the circle.",
+      "answer": "24 cm",
+      "solution": {
+        "steps": [
+          "In $\\triangle OTP$, $\\angle OTP = 90^\\circ$. $OT$ is the radius.",
+          "Use Pythagoras: $OT^2 + PT^2 = OP^2$."
+        ],
+        "derivation": "$OT^2 + 10^2 = 26^2 \\implies OT^2 + 100 = 676 \\implies OT^2 = 576 \\implies OT = 24$ cm."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:20.777997",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134320_572a7a_05"
+    }
+  ]
+}

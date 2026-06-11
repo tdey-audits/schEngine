@@ -1,0 +1,163 @@
+{
+  "batch_id": "20260604_135614_2af19b0e",
+  "generated_at": "2026-06-04T13:56:14.215308",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Some Applications of Trigonometry",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A tower stands vertically on the ground. From a point on the ground, which is $15$ m away from the foot of the tower, the angle of elevation of the top of the tower is found to be $60^\\circ$. The height of the tower is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Let the height of the tower be $h$.",
+          "In the right triangle, $\\tan(60^\\circ) = \\frac{\\text{height}}{\\text{base}}$.",
+          "Substitute the values: $\\sqrt{3} = \\frac{h}{15}$.",
+          "Solve for $h$."
+        ],
+        "derivation": "\\tan(60^\\circ) = \\frac{h}{15} \\implies \\sqrt{3} = \\frac{h}{15} \\implies h = 15\\sqrt{3} \\text{ m}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $5\\sqrt{3}$ m",
+        "(B) $10\\sqrt{3}$ m",
+        "(C) $15\\sqrt{3}$ m",
+        "(D) $20\\sqrt{3}$ m"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:14.215181",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135614_9f2a85_01"
+    },
+    {
+      "question": "A kite is flying at a height of $60$ m above the ground. The string attached to the kite is temporarily tied to a point on the ground. The inclination of the string with the ground is $30^\\circ$. The length of the string is:",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Let $L$ be the length of the string.",
+          "In the right triangle, $\\sin(30^\\circ) = \\frac{\\text{height}}{\\text{hypotenuse}}$.",
+          "Substitute the values: $\\frac{1}{2} = \\frac{60}{L}$.",
+          "Solve for $L$."
+        ],
+        "derivation": "\\sin(30^\\circ) = \\frac{60}{L} \\implies \\frac{1}{2} = \\frac{60}{L} \\implies L = 120 \\text{ m}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $60$ m",
+        "(B) $30$ m",
+        "(C) $90$ m",
+        "(D) $120$ m"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:14.215224",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135614_3c59e1_02"
+    },
+    {
+      "question": "The angle of elevation of the top of a pole from a point on the ground $20$ m away from the foot of the pole is $45^\\circ$. The height of the pole is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Let $h$ be the height of the pole.",
+          "Use the relation $\\tan(45^\\circ) = \\frac{h}{20}$.",
+          "Since $\\tan(45^\\circ) = 1$, we have $1 = \\frac{h}{20}$."
+        ],
+        "derivation": "\\tan(45^\\circ) = \\frac{h}{20} \\implies 1 = \\frac{h}{20} \\implies h = 20 \\text{ m}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $10$ m",
+        "(B) $20$ m",
+        "(C) $20\\sqrt{3}$ m",
+        "(D) $40$ m"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:14.215234",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135614_271234_03"
+    },
+    {
+      "question": "If the length of the shadow of a tower is $\\sqrt{3}$ times the height of the tower, then the angle of elevation of the sun is:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Let the height of the tower be $h$. Then the shadow length is $h\\sqrt{3}$.",
+          "Let $\\theta$ be the angle of elevation.",
+          "Use $\\tan(\\theta) = \\frac{h}{h\\sqrt{3}}$.",
+          "Simplify to find $\\theta$."
+        ],
+        "derivation": "\\tan(\\theta) = \\frac{h}{h\\sqrt{3}} = \\frac{1}{\\sqrt{3}} \\implies \\theta = 30^\\circ"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $30^\\circ$",
+        "(B) $45^\\circ$",
+        "(C) $60^\\circ$",
+        "(D) $90^\\circ$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:14.215240",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135614_39a092_04"
+    },
+    {
+      "question": "An observer $1.5$ m tall is $28.5$ m away from a chimney. The angle of elevation of the top of the chimney from her eyes is $45^\\circ$. The height of the chimney is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Height of observer = $1.5$ m. Distance = $28.5$ m.",
+          "Height of chimney above observer's eye level = $28.5 \\times \\tan(45^\\circ) = 28.5$ m.",
+          "Total height = $28.5 + 1.5$."
+        ],
+        "derivation": "H = 28.5 + 1.5 = 30 \\text{ m}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $28.5$ m",
+        "(B) $27$ m",
+        "(C) $30$ m",
+        "(D) $31.5$ m"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:14.215245",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135614_733cfa_05"
+    }
+  ]
+}

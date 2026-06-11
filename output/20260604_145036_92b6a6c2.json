@@ -1,0 +1,185 @@
+{
+  "batch_id": "20260604_145036_92b6a6c2",
+  "generated_at": "2026-06-04T14:50:36.438483",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "In the given figure, if $\\angle OAB = 40^\\circ$, find the measure of $\\angle APB$, where $O$ is the center of the circle and $PA, PB$ are tangents from an external point $P$.",
+      "answer": "$100^\\circ$",
+      "solution": {
+        "steps": [
+          "In $\\triangle OAP$, since $PA$ is a tangent, $\\angle OAP = 90^\\circ$. Given $\\angle OAB = 40^\\circ$, we find $\\angle PAB = 90^\\circ - 40^\\circ = 50^\\circ$.",
+          "Since $PA = PB$, $\\triangle PAB$ is isosceles, so $\\angle PBA = \\angle PAB = 50^\\circ$. Thus, $\\angle APB = 180^\\circ - (50^\\circ + 50^\\circ) = 80^\\circ$."
+        ],
+        "derivation": "$\\angle OAP = 90^\\circ \\Rightarrow \\angle PAB = 90^\\circ - 40^\\circ = 50^\\circ \\\\ PA = PB \\Rightarrow \\angle PBA = \\angle PAB = 50^\\circ \\\\ \\angle APB = 180^\\circ - (50^\\circ + 50^\\circ) = 80^\\circ$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": 2
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": -2,
+            "y": 0,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 0,
+            "y": 4,
+            "label": "P"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 2,
+            "y": 0,
+            "label": "B"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "A",
+            "label": ""
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "B",
+            "label": ""
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "A",
+            "label": ""
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:36.438037",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145036_3b120f_01"
+    },
+    {
+      "question": "A tangent $PQ$ at a point $P$ of a circle of radius $5$ $cm$ meets a line through the center $O$ at a point $Q$ so that $OQ = 12$ $cm$. Find the length of $PQ$.",
+      "answer": "$\\sqrt{119}$ $cm$",
+      "solution": {
+        "steps": [
+          "Since $PQ$ is tangent at $P$, the radius $OP$ is perpendicular to $PQ$. Thus, $\\triangle OPQ$ is a right-angled triangle at $P$.",
+          "Applying Pythagoras theorem, $OQ^2 = OP^2 + PQ^2$. Substituting values: $12^2 = 5^2 + PQ^2$, which gives $PQ^2 = 144 - 25 = 119$."
+        ],
+        "derivation": "$OP \\perp PQ \\Rightarrow \\triangle OPQ \\text{ is right-angled at } P \\\\ OQ^2 = OP^2 + PQ^2 \\\\ 12^2 = 5^2 + PQ^2 \\\\ PQ = \\sqrt{144 - 25} = \\sqrt{119}$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:36.438151",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145036_7d17f9_02"
+    },
+    {
+      "question": "Two concentric circles are of radii $5$ $cm$ and $3$ $cm$. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "answer": "$8$ $cm$",
+      "solution": {
+        "steps": [
+          "Let $O$ be the center, $AB$ be the chord of the larger circle tangent to the smaller circle at $M$. $OM \\perp AB$, so $M$ is the midpoint of $AB$.",
+          "In right $\\triangle OMA$, $OA^2 = OM^2 + AM^2$. $5^2 = 3^2 + AM^2 \\Rightarrow AM = 4$ $cm$. Thus, $AB = 2 \\times AM = 8$ $cm$."
+        ],
+        "derivation": "$OM \\perp AB \\Rightarrow AM = MB \\\\ \\triangle OMA: OA^2 = OM^2 + AM^2 \\\\ 5^2 = 3^2 + AM^2 \\\\ AM = \\sqrt{25-9} = 4 \\\\ AB = 2 \\times 4 = 8$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:36.438185",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145036_e15552_03"
+    },
+    {
+      "question": "If tangents $PA$ and $PB$ from a point $P$ to a circle with center $O$ are inclined to each other at angle of $80^\\circ$, then find $\\angle POA$.",
+      "answer": "$50^\\circ$",
+      "solution": {
+        "steps": [
+          "In quadrilateral $OAPB$, $\\angle OAP = \\angle OBP = 90^\\circ$. The sum of angles is $360^\\circ$, so $\\angle AOB = 180^\\circ - 80^\\circ = 100^\\circ$.",
+          "Since $OP$ bisects $\\angle AOB$, $\\angle POA = \\frac{1}{2} \\angle AOB = \\frac{100^\\circ}{2} = 50^\\circ$."
+        ],
+        "derivation": "$\\angle AOB + \\angle APB = 180^\\circ \\\\ \\angle AOB = 180^\\circ - 80^\\circ = 100^\\circ \\\\ \\angle POA = \\frac{1}{2} \\angle AOB = 50^\\circ$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:36.438211",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145036_ad3c19_04"
+    },
+    {
+      "question": "A quadrilateral $ABCD$ is drawn to circumscribe a circle. If $AB = 6$ $cm$, $BC = 7$ $cm$ and $CD = 4$ $cm$, find the length of $AD$.",
+      "answer": "$3$ $cm$",
+      "solution": {
+        "steps": [
+          "For a circumscribed quadrilateral, the sums of opposite sides are equal: $AB + CD = BC + AD$.",
+          "Substituting the given values: $6 + 4 = 7 + AD \\Rightarrow 10 = 7 + AD \\Rightarrow AD = 3$ $cm$."
+        ],
+        "derivation": "$AB + CD = BC + AD \\\\ 6 + 4 = 7 + AD \\\\ AD = 10 - 7 = 3$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:36.438235",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145036_f8a880_05"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "batch_id": "20260610_103607_11fe8cfc",
+  "generated_at": "2026-06-10T10:36:07.922393",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "standard form and roots",
+  "difficulty": "simple",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "The discriminant of the quadratic equation $2x^2 - 5x + 3 = 0$ is:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Identify the coefficients $a$, $b$, and $c$ from the standard form $ax^2 + bx + c = 0$.",
+          "Substitute the values into the discriminant formula $D = b^2 - 4ac$.",
+          "Calculate the result."
+        ],
+        "derivation": "$a = 2, b = -5, c = 3 \\\\ D = b^2 - 4ac \\\\ D = (-5)^2 - 4(2)(3) \\\\ D = 25 - 24 \\\\ D = 1$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "standard form and roots",
+      "marks": 1,
+      "type": "la",
+      "difficulty": "simple",
+      "options": [
+        "(A) 1",
+        "(B) -1",
+        "(C) 49",
+        "(D) 25"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T10:36:07.922099",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260610_103607_595411_01"
+    }
+  ]
+}

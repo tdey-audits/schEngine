@@ -1,0 +1,95 @@
+{
+  "batch_id": "20260610_150334_7f65037e",
+  "generated_at": "2026-06-10T15:03:34.765821",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": "general term of an AP",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If the $n^{th}$ term of an Arithmetic Progression is given by $a_n = 5 - 3n$, then the common difference of the sequence is",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "The $n^{th}$ term of the AP is given as $a_n = 5 - 3n$.",
+          "Find the first term $a_1$ by substituting $n = 1$: $a_1 = 5 - 3(1) = 2$.",
+          "Find the second term $a_2$ by substituting $n = 2$: $a_2 = 5 - 3(2) = -1$.",
+          "The common difference $d$ is given by $a_2 - a_1$.",
+          "Calculate $d = -1 - 2 = -3$."
+        ],
+        "derivation": "$a_n = 5 - 3n \\\\ a_1 = 5 - 3(1) = 2 \\\\ a_2 = 5 - 3(2) = -1 \\\\ d = a_2 - a_1 \\\\ d = -1 - 2 = -3$"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "general term of an AP",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 5",
+        "(B) 2",
+        "(C) -3",
+        "(D) -1"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T15:03:34.765519",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_5 (Arithmetic Progressions).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 10,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.1",
+            "question_no": 15,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.1",
+            "question_no": 12,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.1",
+            "question_no": 6,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150334_28bd96_01"
+    }
+  ]
+}

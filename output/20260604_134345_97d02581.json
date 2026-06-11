@@ -1,0 +1,125 @@
+{
+  "batch_id": "20260604_134345_97d02581",
+  "generated_at": "2026-06-04T13:43:45.513258",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Areas Related to Circles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the area of a sector of a circle with radius $6 \\text{ cm}$ if the angle of the sector is $60^\\circ$. (Use $\\pi = \\frac{22}{7}$)",
+      "answer": "$\\frac{132}{7} \\text{ cm}^2$",
+      "solution": {
+        "steps": [
+          "Identify the formula for the area of a sector as $\\frac{\\theta}{360^\\circ} \\times \\pi r^2$.",
+          "Substitute $r = 6$ and $\\theta = 60^\\circ$ into the formula and simplify."
+        ],
+        "derivation": "Area = \\frac{60}{360} \\times \\frac{22}{7} \\times 6^2 = \\frac{1}{6} \\times \\frac{22}{7} \\times 36 = 6 \\times \\frac{22}{7} = \\frac{132}{7} \\text{ cm}^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of Sector",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:45.512969",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134345_02b1a6_01"
+    },
+    {
+      "question": "The length of the minute hand of a clock is $14 \\text{ cm}$. Find the area swept by the minute hand in $5$ minutes.",
+      "answer": "$\\frac{154}{3} \\text{ cm}^2$",
+      "solution": {
+        "steps": [
+          "Calculate the angle swept by the minute hand in 1 minute ($360^\\circ/60 = 6^\\circ$), so for 5 minutes, $\\theta = 30^\\circ$.",
+          "Apply the area of sector formula with $r = 14$ and $\\theta = 30^\\circ$."
+        ],
+        "derivation": "Area = \\frac{30}{360} \\times \\frac{22}{7} \\times 14^2 = \\frac{1}{12} \\times \\frac{22}{7} \\times 196 = \\frac{1}{12} \\times 22 \\times 28 = \\frac{154}{3} \\text{ cm}^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Application of Sector Area",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:45.513049",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134345_ce5d77_02"
+    },
+    {
+      "question": "Find the area of a quadrant of a circle whose circumference is $44 \\text{ cm}$. (Use $\\pi = \\frac{22}{7}$)",
+      "answer": "$38.5 \\text{ cm}^2$",
+      "solution": {
+        "steps": [
+          "Use the circumference formula $2\\pi r = 44$ to find the radius $r$.",
+          "Calculate the area of the quadrant using $\\frac{1}{4} \\pi r^2$."
+        ],
+        "derivation": "2 \\times \\frac{22}{7} \\times r = 44 \\implies r = 7 \\text{ cm}. \\text{ Area} = \\frac{1}{4} \\times \\frac{22}{7} \\times 7^2 = \\frac{1}{4} \\times 22 \\times 7 = 38.5 \\text{ cm}^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of Circle Parts",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:45.513071",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134345_92119d_03"
+    },
+    {
+      "question": "If the sum of the areas of two circles with radii $R_1$ and $R_2$ is equal to the area of a circle of radius $R$, prove that $R_1^2 + R_2^2 = R^2$.",
+      "answer": "$R_1^2 + R_2^2 = R^2$",
+      "solution": {
+        "steps": [
+          "Write the equation based on the given condition: $\\pi R_1^2 + \\pi R_2^2 = \\pi R^2$.",
+          "Divide the entire equation by $\\pi$ to obtain the result."
+        ],
+        "derivation": "\\pi R_1^2 + \\pi R_2^2 = \\pi R^2 \\implies \\pi(R_1^2 + R_2^2) = \\pi R^2 \\implies R_1^2 + R_2^2 = R^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of Circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:45.513088",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134345_173469_04"
+    },
+    {
+      "question": "A chord of a circle of radius $10 \\text{ cm}$ subtends a right angle at the center. Find the area of the corresponding minor segment. (Use $\\pi = 3.14$)",
+      "answer": "$28.5 \\text{ cm}^2$",
+      "solution": {
+        "steps": [
+          "Calculate the area of the sector: $\\frac{90}{360} \\times \\pi r^2$.",
+          "Subtract the area of the triangle $\\frac{1}{2} r^2 \\sin(90^\\circ)$ from the sector area."
+        ],
+        "derivation": "\\text{Area} = \\frac{90}{360} \\times 3.14 \\times 100 - \\frac{1}{2} \\times 10 \\times 10 = 78.5 - 50 = 28.5 \\text{ cm}^2"
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of Segment",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:45.513105",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134345_b16e5f_05"
+    }
+  ]
+}

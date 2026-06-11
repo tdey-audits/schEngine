@@ -1,0 +1,58 @@
+{
+  "batch_id": "20260610_122449_904fb5ea",
+  "generated_at": "2026-06-10T12:24:49.918416",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "factorisation method",
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The roots of the quadratic equation $x^2 - 7x + 12 = 0$ are $3$ and $4$.\nReason (R): A quadratic equation $ax^2 + bx + c = 0$ can be solved by splitting the middle term $bx$ into two parts such that their sum is $b$ and their product is $ac$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Check the Assertion: For $x^2 - 7x + 12 = 0$, we look for two numbers that sum to $-7$ and multiply to $12$. These are $-3$ and $-4$.",
+          "Factorise: $x^2 - 3x - 4x + 12 = 0 \\Rightarrow x(x - 3) - 4(x - 3) = 0 \\Rightarrow (x - 3)(x - 4) = 0$.",
+          "Find roots: $x = 3$ or $x = 4$. So, Assertion is true.",
+          "Check the Reason: The splitting the middle term method relies on finding two numbers $p$ and $q$ such that $p+q = b$ and $pq = ac$. This is the standard definition of the factorisation method for quadratic equations. So, the Reason is true and correctly explains the Assertion."
+        ],
+        "derivation": "$x^2 - 7x + 12 = 0 \\\\ x^2 - 3x - 4x + 12 = 0 \\\\ x(x - 3) - 4(x - 3) = 0 \\\\ (x - 3)(x - 4) = 0 \\\\ x = 3, 4$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T12:24:49.918195",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122449_bd3697_01"
+    }
+  ]
+}

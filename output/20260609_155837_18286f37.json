@@ -1,0 +1,119 @@
+{
+  "batch_id": "20260609_155837_18286f37",
+  "generated_at": "2026-06-09T15:58:37.993802",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Pair of Linear Equations in Two Variables",
+  "subtopic": "equations reducible to linear form",
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "For what value of $k$ does the pair of linear equations $\\frac{1}{x} + \\frac{2}{y} = 4$ and $\\frac{2}{x} + \\frac{k}{y} = 10$ have no solution?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Let $u = \\frac{1}{x}$ and $v = \\frac{1}{y}$. The equations become $u + 2v = 4$ and $2u + kv = 10$.",
+          "For a system $a_1u + b_1v = c_1$ and $a_2u + b_2v = c_2$ to have no solution, the condition is $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$.",
+          "Substitute the coefficients: $\\frac{1}{2} = \\frac{2}{k} \\neq \\frac{4}{10}$.",
+          "Solve $\\frac{1}{2} = \\frac{2}{k}$ to get $k = 4$.",
+          "Check the inequality: $\\frac{1}{2} = \\frac{2}{4} = 0.5$, while $\\frac{4}{10} = 0.4$. Since $0.5 \\neq 0.4$, $k = 4$ is the valid solution."
+        ],
+        "derivation": "$u + 2v = 4 \\Rightarrow u + 2v - 4 = 0 \\\\ 2u + kv = 10 \\Rightarrow 2u + kv - 10 = 0 \\\\ \\text{Condition for no solution: } \\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2} \\\\ \\frac{1}{2} = \\frac{2}{k} \\neq \\frac{-4}{-10} \\\\ \\frac{1}{2} = \\frac{2}{k} \\Rightarrow k = 4 \\\\ \\frac{1}{2} \\neq \\frac{4}{10} \\Rightarrow 0.5 \\neq 0.4 \\text{ (True)}$"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "equations reducible to linear form",
+      "marks": 1,
+      "type": "la",
+      "difficulty": "hard",
+      "options": [
+        "(A) $2$",
+        "(B) $3$",
+        "(C) $4$",
+        "(D) $5$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T15:58:37.993522",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 1,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_155837_884c63_01"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "batch_id": "20260604_140928_1b616371",
+  "generated_at": "2026-06-04T14:09:28.114589",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "In $\\triangle ABC$, $DE \\parallel BC$ such that $AD = 2.4\\text{ cm}$, $AE = 3.2\\text{ cm}$, and $EC = 4.8\\text{ cm}$. Find the length of $DB$.",
+      "answer": "3.6\\text{ cm}",
+      "solution": {
+        "steps": [
+          "Apply Basic Proportionality Theorem (Thales Theorem).",
+          "Substitute the given values and solve for $DB$."
+        ],
+        "derivation": "\\frac{AD}{DB} = \\frac{AE}{EC} \\implies \\frac{2.4}{DB} = \\frac{3.2}{4.8} \\implies DB = \\frac{2.4 \\times 4.8}{3.2} = 3.6\\text{ cm}"
+      },
+      "topic": "Triangles",
+      "subtopic": "Basic Proportionality Theorem",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:28.114470",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140928_125e3d_01"
+    },
+    {
+      "question": "Two triangles $\\triangle ABC$ and $\\triangle DEF$ are similar. If $Area(\\triangle ABC) = 64\\text{ cm}^2$ and $Area(\\triangle DEF) = 121\\text{ cm}^2$, and $EF = 15.4\\text{ cm}$, find the length of side $BC$.",
+      "answer": "11.2\\text{ cm}",
+      "solution": {
+        "steps": [
+          "Use the theorem that the ratio of areas of similar triangles equals the square of the ratio of their corresponding sides.",
+          "Substitute values and take the square root to find $BC$."
+        ],
+        "derivation": "\\frac{Area(ABC)}{Area(DEF)} = \\left(\\frac{BC}{EF}\\right)^2 \\implies \\frac{64}{121} = \\left(\\frac{BC}{15.4}\\right)^2 \\implies \\frac{8}{11} = \\frac{BC}{15.4} \\implies BC = \\frac{8 \\times 15.4}{11} = 11.2\\text{ cm}"
+      },
+      "topic": "Triangles",
+      "subtopic": "Areas of Similar Triangles",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:28.114509",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140928_b58580_02"
+    },
+    {
+      "question": "A vertical pole of length $6\\text{ m}$ casts a shadow $4\\text{ m}$ long on the ground and at the same time a tower casts a shadow $28\\text{ m}$ long. Find the height of the tower.",
+      "answer": "42\\text{ m}",
+      "solution": {
+        "steps": [
+          "Recognize that the triangles formed by the object and shadow are similar by AA similarity.",
+          "Set up the ratio of corresponding sides and solve for the height."
+        ],
+        "derivation": "\\frac{6}{h} = \\frac{4}{28} \\implies h = \\frac{6 \\times 28}{4} = 6 \\times 7 = 42\\text{ m}"
+      },
+      "topic": "Triangles",
+      "subtopic": "Similar Triangles",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:28.114517",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140928_c43da1_03"
+    },
+    {
+      "question": "In $\\triangle PQR$, $S$ and $T$ are points on sides $PQ$ and $PR$ respectively such that $\\angle PST = \\angle PRQ$. If $PS = 2\\text{ cm}$, $SQ = 3\\text{ cm}$, and $PT = 2.5\\text{ cm}$, find $TR$.",
+      "answer": "1.5\\text{ cm}",
+      "solution": {
+        "steps": [
+          "Show $\\triangle PST \\sim \\triangle PRQ$ by AA similarity criterion.",
+          "Write the ratio of sides and solve for $TR$."
+        ],
+        "derivation": "\\triangle PST \\sim \\triangle PRQ \\implies \\frac{PS}{PR} = \\frac{PT}{PQ} \\text{ is incorrect; use } \\frac{PS}{PR} = \\frac{PT}{PQ} \\text{ is not needed, use } \\frac{PS}{PT} = \\frac{PT}{PR} \\text{ is not right; use } \\frac{PS}{PR} = \\frac{PT}{PQ} \\implies \\frac{PS}{PT+TR} = \\frac{PT}{PS+SQ} \\implies \\frac{2}{2.5+TR} = \\frac{2.5}{5} \\implies 10 = 6.25 + 2.5TR \\implies 3.75 = 2.5TR \\implies TR = 1.5\\text{ cm}"
+      },
+      "topic": "Triangles",
+      "subtopic": "Similarity of Triangles",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:28.114523",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140928_0c8d65_04"
+    },
+    {
+      "question": "Diagonals of a trapezium $ABCD$ with $AB \\parallel DC$ intersect each other at the point $O$. If $AB = 2CD$, find the ratio of the areas of triangles $\\triangle AOB$ and $\\triangle COD$.",
+      "answer": "4:1",
+      "solution": {
+        "steps": [
+          "Prove $\\triangle AOB \\sim \\triangle COD$ by AA similarity.",
+          "Use the ratio of areas theorem."
+        ],
+        "derivation": "\\triangle AOB \\sim \\triangle COD \\implies \\frac{Area(AOB)}{Area(COD)} = \\left(\\frac{AB}{CD}\\right)^2 = \\left(\\frac{2CD}{CD}\\right)^2 = 2^2 = 4"
+      },
+      "topic": "Triangles",
+      "subtopic": "Areas of Similar Triangles",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:28.114528",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140928_ebda25_05"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "batch_id": "20260609_151639_b0d1b0a7",
+  "generated_at": "2026-06-09T15:16:39.129070",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Probability",
+  "subtopic": "probability basics",
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The probability of an impossible event is $0$. \\nReason (R): For any event $E$, the probability $P(E)$ satisfies $0 \\leq P(E) \\leq 1$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "An impossible event is an event that cannot occur, so the number of favourable outcomes is $0$.",
+          "The probability of an event is defined as the ratio of the number of favourable outcomes to the total number of equally likely outcomes.",
+          "Thus, $P(\\text{impossible event}) = \\frac{0}{n} = 0$. So, Assertion (A) is true.",
+          "The range of probability for any event $E$ is always between $0$ and $1$ inclusive, i.e., $0 \\leq P(E) \\leq 1$. So, Reason (R) is true.",
+          "Since the probability of an impossible event is a specific case of the general rule that $0 \\leq P(E) \\leq 1$, Reason (R) correctly explains Assertion (A)."
+        ],
+        "derivation": "$P(E) = \\frac{\\text{Number of favourable outcomes}}{\\text{Total number of outcomes}} \\\\ \\text{For an impossible event, favourable outcomes} = 0 \\\\ P(E) = \\frac{0}{\\text{Total}} = 0 \\\\ 0 \\leq P(E) \\leq 1 \\text{ is the fundamental axiom of probability.}"
+      },
+      "topic": "Probability",
+      "subtopic": "probability basics",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T15:16:39.128805",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_15 (Probability).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 19,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 19,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ]
+      },
+      "id": "ncert_20260609_151639_470036_01"
+    }
+  ]
+}

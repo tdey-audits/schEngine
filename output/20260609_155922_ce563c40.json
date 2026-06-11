@@ -1,0 +1,120 @@
+{
+  "batch_id": "20260609_155922_ce563c40",
+  "generated_at": "2026-06-09T15:59:22.384276",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): If in $\\triangle ABC$ and $\\triangle DEF$, $\\frac{AB}{DE} = \\frac{BC}{EF} = \\frac{CA}{FD} < 1$, then $\\triangle ABC$ is similar to $\\triangle DEF$ but not congruent.\nReason (R): Two triangles are congruent if and only if the ratio of their corresponding sides is $1:1$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Analyze the Assertion: The condition $\\frac{AB}{DE} = \\frac{BC}{EF} = \\frac{CA}{FD} < 1$ implies that the sides of $\\triangle ABC$ are proportional to the corresponding sides of $\\triangle DEF$ with a scale factor $k < 1$. By the SSS similarity criterion, the triangles are similar.",
+          "Since the ratio of corresponding sides is $k < 1$, the sides are not equal in length, thus the triangles cannot be congruent.",
+          "Analyze the Reason: By definition, two triangles are congruent if they have the same shape and size. This is equivalent to saying their corresponding sides are equal, which means the ratio of their corresponding sides must be $1:1$.",
+          "Conclusion: Both A and R are true. The reason R correctly explains why the triangles in A are not congruent despite being similar."
+        ],
+        "derivation": "$\\text{Given } \\frac{AB}{DE} = \\frac{BC}{EF} = \\frac{CA}{FD} = k \\text{ where } k < 1 \\Rightarrow \\triangle ABC \\sim \\triangle DEF \\text{ by SSS similarity} \\\\ \\text{Since } k \\neq 1, \\text{ the side lengths are not equal, hence } \\triangle ABC \\not\\cong \\triangle DEF \\\\ \\text{Congruence requires } k = 1 \\text{ (same size), which is the definition provided in (R).}$"
+      },
+      "topic": "Triangles",
+      "subtopic": "Similarity of Triangles",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T15:59:22.383983",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_6 (Triangles).pdf",
+          "Chapter_7 (Coordinate Geometry).pdf",
+          "Chapter_11 (Constructions).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/430-2-3_Mathematics Basic.pdf",
+            "question_no": 20,
+            "paper_variant": "basic",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "basic/430-2-1_Mathematics Basic.pdf",
+            "question_no": 20,
+            "paper_variant": "basic",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "basic/430-2-2_Mathematics Basic.pdf",
+            "question_no": 19,
+            "paper_variant": "basic",
+            "question_type": "assertion_reason"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 12,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.4",
+            "question_no": 9,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.3",
+            "question_no": 12,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_155922_5bc894_01"
+    }
+  ]
+}

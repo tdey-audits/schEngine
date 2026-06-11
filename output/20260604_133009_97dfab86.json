@@ -1,0 +1,65 @@
+{
+  "batch_id": "20260604_133009_97dfab86",
+  "generated_at": "2026-06-04T13:30:09.290212",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Prove that $\\frac{\\tan \\theta}{1 - \\cot \\theta} + \\frac{\\cot \\theta}{1 - \\tan \\theta} = 1 + \\sec \\theta \\csc \\theta$.",
+      "answer": "$1 + \\sec \\theta \\csc \\theta$",
+      "solution": {
+        "steps": [
+          "Convert all terms into terms of $\\sin \\theta$ and $\\cos \\theta$.",
+          "Simplify the fractions by finding a common denominator for the terms.",
+          "Use the identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$.",
+          "Factor the numerator using the difference of cubes formula $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$.",
+          "Cancel the common factors and simplify the expression to the final form."
+        ],
+        "derivation": "LHS = \\frac{\\frac{\\sin \\theta}{\\cos \\theta}}{1 - \\frac{\\cos \\theta}{\\sin \\theta}} + \\frac{\\frac{\\cos \\theta}{\\sin \\theta}}{1 - \\frac{\\sin \\theta}{\\cos \\theta}} = \\frac{\\sin^2 \\theta}{\\cos \\theta(\\sin \\theta - \\cos \\theta)} + \\frac{\\cos^2 \\theta}{\\sin \\theta(\\cos \\theta - \\sin \\theta)} = \\frac{\\sin^3 \\theta - \\cos^3 \\theta}{\\sin \\theta \\cos \\theta (\\sin \\theta - \\cos \\theta)} = \\frac{(\\sin \\theta - \\cos \\theta)(\\sin^2 \\theta + \\cos^2 \\theta + \\sin \\theta \\cos \\theta)}{\\sin \\theta \\cos \\theta (\\sin \\theta - \\cos \\theta)} = \\frac{1 + \\sin \\theta \\cos \\theta}{\\sin \\theta \\cos \\theta} = \\frac{1}{\\sin \\theta \\cos \\theta} + 1 = \\csc \\theta \\sec \\theta + 1 = RHS"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:30:09.290129",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133009_7174bc_01"
+    },
+    {
+      "question": "If $\\sec \\theta + \\tan \\theta = p$, prove that $\\sin \\theta = \\frac{p^2 - 1}{p^2 + 1}$.",
+      "answer": "$\\sin \\theta = \\frac{p^2 - 1}{p^2 + 1}$",
+      "solution": {
+        "steps": [
+          "Use the identity $\\sec^2 \\theta - \\tan^2 \\theta = 1$ to find $\\sec \\theta - \\tan \\theta$.",
+          "Since $(\\sec \\theta + \\tan \\theta)(\\sec \\theta - \\tan \\theta) = 1$, then $\\sec \\theta - \\tan \\theta = 1/p$.",
+          "Solve the system of two linear equations to find $\\sec \\theta$ and $\\tan \\theta$ in terms of $p$.",
+          "Calculate $p^2 - 1$ and $p^2 + 1$ using the expressions found.",
+          "Divide $(p^2 - 1)$ by $(p^2 + 1)$ and simplify to show it equals $\\sin \\theta$."
+        ],
+        "derivation": "Given $p = \\sec \\theta + \\tan \\theta$. We know $\\sec^2 \\theta - \\tan^2 \\theta = 1 \\implies (\\sec \\theta - \\tan \\theta) = \\frac{1}{p}$. Adding equations: $2\\sec \\theta = p + \\frac{1}{p} = \\frac{p^2+1}{p} \\implies \\cos \\theta = \\frac{2p}{p^2+1}$. Subtracting equations: $2\\tan \\theta = p - \\frac{1}{p} = \\frac{p^2-1}{p} \\implies \\tan \\theta = \\frac{p^2-1}{2p}$. Since $\\sin \\theta = \\tan \\theta \\cdot \\cos \\theta = \\frac{p^2-1}{2p} \\cdot \\frac{2p}{p^2+1} = \\frac{p^2-1}{p^2+1}$."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:30:09.290170",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133009_39ec1b_02"
+    }
+  ]
+}

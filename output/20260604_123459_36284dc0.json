@@ -1,0 +1,40 @@
+{
+  "batch_id": "20260604_123459_36284dc0",
+  "generated_at": "2026-06-04T12:34:59.406234",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "A train travels a distance of 480 km at a uniform speed. If the speed had been 8 km/h less, then it would have taken 3 hours more to cover the same distance. Find the original speed of the train. Also, find the time taken at the original speed.",
+      "answer": "Original speed = 40 km/h, Time taken = 12 hours",
+      "solution": {
+        "steps": [
+          "Let the original speed of the train be $x$ km/h.",
+          "Time taken at original speed = $\\frac{480}{x}$ hours.",
+          "If speed is reduced by 8 km/h, new speed = $(x - 8)$ km/h.",
+          "Time taken at reduced speed = $\\frac{480}{x - 8}$ hours.",
+          "According to the problem, the difference in time is 3 hours: $\\frac{480}{x - 8} - \\frac{480}{x} = 3$.",
+          "Multiply both sides by $x(x - 8)$: $480x - 480(x - 8) = 3x(x - 8)$.",
+          "Simplify: $480x - 480x + 3840 = 3x^2 - 24x$ \u2192 $3840 = 3x^2 - 24x$.",
+          "Divide by 3: $1280 = x^2 - 8x$ \u2192 $x^2 - 8x - 1280 = 0$.",
+          "Solve using quadratic formula: $x = \\frac{8 \\pm \\sqrt{64 + 5120}}{2} = \\frac{8 \\pm \\sqrt{5184}}{2} = \\frac{8 \\pm 72}{2}$.",
+          "Thus, $x = \\frac{8 + 72}{2} = 40$ or $x = \\frac{8 - 72}{2} = -32$ (reject negative).",
+          "Original speed = 40 km/h. Time taken = $\\frac{480}{40} = 12$ hours."
+        ],
+        "derivation": "Let original speed = $x$ km/h. Then $\\frac{480}{x-8} - \\frac{480}{x} = 3$. Multiply: $480x - 480(x-8) = 3x(x-8) \\Rightarrow 3840 = 3x^2 - 24x \\Rightarrow x^2 - 8x - 1280 = 0$. Using quadratic formula: $x = \\frac{8 \\pm \\sqrt{64+5120}}{2} = \\frac{8 \\pm 72}{2}$. So $x = 40$ (positive). Time = $\\frac{480}{40} = 12$ hours."
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Word Problems on Speed, Distance and Time",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T12:34:59.406113",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_123459_63c173"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "batch_id": "20260609_160112_817c3ed9",
+  "generated_at": "2026-06-09T16:01:12.493934",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $\\sec \\theta + \\tan \\theta = m$, show that $\\sin \\theta = \\frac{m^2 - 1}{m^2 + 1}$.",
+      "answer": "$\\sin \\theta = \\frac{m^2 - 1}{m^2 + 1}$",
+      "solution": {
+        "steps": [
+          "Given the identity $\\sec^2 \\theta - \\tan^2 \\theta = 1$, we can factor this as $(\\sec \\theta - \\tan \\theta)(\\sec \\theta + \\tan \\theta) = 1$.",
+          "Substitute the given value $\\sec \\theta + \\tan \\theta = m$ into the identity to find $\\sec \\theta - \\tan \\theta = \\frac{1}{m}$.",
+          "Solve the system of two equations: $(\\sec \\theta + \\tan \\theta) + (\\sec \\theta - \\tan \\theta) = m + \\frac{1}{m}$ to find $2\\sec \\theta = \\frac{m^2 + 1}{m}$.",
+          "Solve the system $(\\sec \\theta + \\tan \\theta) - (\\sec \\theta - \\tan \\theta) = m - \\frac{1}{m}$ to find $2\\tan \\theta = \\frac{m^2 - 1}{m}$.",
+          "Divide the expressions for $\\tan \\theta$ and $\\sec \\theta$ to find $\\sin \\theta = \\frac{\\tan \\theta}{\\sec \\theta} = \\frac{(m^2 - 1)/2m}{(m^2 + 1)/2m}$.",
+          "Simplify the resulting fraction to reach the final result."
+        ],
+        "derivation": "$\\sec \\theta + \\tan \\theta = m \\quad \\dots(1) \\\\ \\sec^2 \\theta - \\tan^2 \\theta = 1 \\Rightarrow (\\sec \\theta - \\tan \\theta)(\\sec \\theta + \\tan \\theta) = 1 \\\\ \\sec \\theta - \\tan \\theta = \\frac{1}{m} \\quad \\dots(2) \\\\ (1) - (2) \\Rightarrow 2\\tan \\theta = m - \\frac{1}{m} = \\frac{m^2 - 1}{m} \\\\ (1) + (2) \\Rightarrow 2\\sec \\theta = m + \\frac{1}{m} = \\frac{m^2 + 1}{m} \\\\ \\sin \\theta = \\frac{\\tan \\theta}{\\sec \\theta} = \\frac{\\frac{m^2 - 1}{2m}}{\\frac{m^2 + 1}{2m}} = \\frac{m^2 - 1}{m^2 + 1}$"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T16:01:12.493847",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_8 (Introduction to Trigonometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 32,
+            "paper_variant": "standard",
+            "question_type": "la"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 32,
+            "paper_variant": "standard",
+            "question_type": "la"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 34,
+            "paper_variant": "standard",
+            "question_type": "la"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 15,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 12,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 17,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160112_3fa85f_01"
+    }
+  ]
+}

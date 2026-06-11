@@ -1,0 +1,13 @@
+{
+  "batch_id": "20260604_140852_3ea182bd",
+  "generated_at": "2026-06-04T14:08:52.787128",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": null,
+  "difficulty": null,
+  "question_type": null,
+  "question_count": 0,
+  "mechanisms": [],
+  "questions": []
+}

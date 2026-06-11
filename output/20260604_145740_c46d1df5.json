@@ -1,0 +1,240 @@
+{
+  "batch_id": "20260604_145740_c46d1df5",
+  "generated_at": "2026-06-04T14:57:40.024912",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "In a circle with centre $O$, a tangent $PT$ is drawn from a point $P$ outside the circle. If $OP = 13$ $cm$ and the radius of the circle is $5$ $cm$, find the length of the tangent $PT$.",
+      "answer": "$12$ $cm$",
+      "solution": {
+        "steps": [
+          "Identify $\triangle OTP$ as a right-angled triangle because the radius is perpendicular to the tangent at the point of contact.",
+          "Apply the Pythagoras theorem: $PT^2 + OT^2 = OP^2$ and solve for $PT$."
+        ],
+        "derivation": "$PT^2 + 5^2 = 13^2 \\\\ PT^2 + 25 = 169 \\\\ PT^2 = 144 \\\\ PT = 12$ $cm$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O",
+            "position": "left"
+          },
+          {
+            "kind": "point",
+            "id": "T",
+            "x": 0,
+            "y": 2,
+            "label": "T",
+            "position": "top"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 4,
+            "y": 2,
+            "label": "P",
+            "position": "right"
+          },
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "T",
+            "label": "5"
+          },
+          {
+            "kind": "segment",
+            "from": "T",
+            "to": "P",
+            "label": "PT"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "P",
+            "label": "13"
+          },
+          {
+            "kind": "right_angle",
+            "points": [
+              "O",
+              "T",
+              "P"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:40.024773",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145740_0baed7_01"
+    },
+    {
+      "question": "Two concentric circles are of radii $5$ $cm$ and $3$ $cm$. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "answer": "$8$ $cm$",
+      "solution": {
+        "steps": [
+          "Let $AB$ be the chord of the larger circle touching the smaller circle at point $M$. $OM \\perp AB$.",
+          "In right $\triangle OMA$, by Pythagoras theorem, $AM = \\sqrt{OA^2 - OM^2}$. Then $AB = 2 \\times AM$."
+        ],
+        "derivation": "$AM = \\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = \\sqrt{16} = 4$ $cm \\\\ AB = 2 \\times 4 = 8$ $cm$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 1.5
+          },
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2.5
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O"
+          },
+          {
+            "kind": "point",
+            "id": "M",
+            "x": 0,
+            "y": 1.5,
+            "label": "M"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": -2,
+            "y": 1.5,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 2,
+            "y": 1.5,
+            "label": "B"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "M"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:40.024815",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145740_499f11_02"
+    },
+    {
+      "question": "$PA$ and $PB$ are two tangents from a point $P$ to a circle with centre $O$ such that $\\angle APB = 80^\\circ$. Find $\\angle AOB$.",
+      "answer": "$100^\\circ$",
+      "solution": {
+        "steps": [
+          "In quadrilateral $OAPB$, the sum of opposite angles is $180^\\circ$ because the angles at $A$ and $B$ are $90^\\circ$ each.",
+          "Calculate $\\angle AOB = 180^\\circ - \\angle APB$."
+        ],
+        "derivation": "$\\angle OAP = 90^\\circ, \\angle OBP = 90^\\circ \\\\ \\angle AOB + \\angle APB = 180^\\circ \\\\ \\angle AOB + 80^\\circ = 180^\\circ \\\\ \\angle AOB = 100^\\circ$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:40.024825",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145740_cda8eb_03"
+    },
+    {
+      "question": "If a tangent $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $70^\\circ$, then find $\\angle POA$.",
+      "answer": "$55^\\circ$",
+      "solution": {
+        "steps": [
+          "The line $OP$ bisects $\\angle APB$, so $\\angle APO = \\frac{1}{2} \\angle APB = 35^\\circ$.",
+          "In $\triangle OAP$, $\\angle OAP = 90^\\circ$. Therefore, $\\angle POA = 90^\\circ - 35^\\circ$."
+        ],
+        "derivation": "$\\angle APO = 70^\\circ \\div 2 = 35^\\circ \\\\ \\angle OAP = 90^\\circ \\\\ \\angle POA = 180^\\circ - (90^\\circ + 35^\\circ) = 55^\\circ$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:40.024832",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145740_c5af7b_04"
+    },
+    {
+      "question": "A point $P$ is $26$ $cm$ away from the centre $O$ of a circle and the length of the tangent $PT$ drawn from $P$ to the circle is $10$ $cm$. Find the radius of the circle.",
+      "answer": "$24$ $cm$",
+      "solution": {
+        "steps": [
+          "In right $\triangle OTP$, $OT$ is the radius, $PT$ is the tangent, and $OP$ is the hypotenuse.",
+          "Use Pythagoras theorem: $OT^2 + PT^2 = OP^2$ and solve for $OT$."
+        ],
+        "derivation": "$OT^2 + 10^2 = 26^2 \\\\ OT^2 + 100 = 676 \\\\ OT^2 = 576 \\\\ OT = 24$ $cm$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:40.024843",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145740_a74e4b_05"
+    }
+  ]
+}

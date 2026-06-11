@@ -1,0 +1,33 @@
+{
+  "batch_id": "20260604_123346_f5da8249",
+  "generated_at": "2026-06-04T12:33:46.616109",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "A train travels 360 km at a uniform speed. If the speed had been 5 km/h more, it would have taken 1 hour less for the same journey. Find the speed of the train.",
+      "answer": "$40$ km/h",
+      "solution": {
+        "steps": [
+          "Let the original speed of the train be $x$ km/h.",
+          "Time taken at original speed = $\\frac{360}{x}$ hours. Time taken at increased speed ($x+5$ km/h) = $\\frac{360}{x+5}$ hours.",
+          "According to the problem, $\\frac{360}{x} - \\frac{360}{x+5} = 1$. Multiply both sides by $x(x+5)$: $360(x+5) - 360x = x(x+5)$, which simplifies to $1800 = x^2 + 5x$.",
+          "Rearrange: $x^2 + 5x - 1800 = 0$. Factorising: $(x+45)(x-40)=0$. Since speed cannot be negative, $x=40$."
+        ],
+        "derivation": "\\begin{aligned}\n\\frac{360}{x} - \\frac{360}{x+5} &= 1 \\\\\n360\\left(\\frac{1}{x} - \\frac{1}{x+5}\\right) &= 1 \\\\\n360\\cdot\\frac{5}{x(x+5)} &= 1 \\\\\n1800 &= x^2+5x\\\\\nx^2+5x-1800&=0\\\\\n(x+45)(x-40)&=0\\\\\nx=40 \\;\\text{(taking positive value)}\n\\end{aligned}"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Word problems on speed, distance and time",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T12:33:46.616003",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_123346_62cd9b"
+    }
+  ]
+}

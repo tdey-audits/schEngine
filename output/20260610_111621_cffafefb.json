@@ -1,0 +1,185 @@
+{
+  "batch_id": "20260610_111621_cffafefb",
+  "generated_at": "2026-06-10T11:16:21.307252",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Constructions",
+  "subtopic": "construction of tangents",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In the construction of a pair of tangents from an external point $P$ to a circle with centre $O$ and radius $r = 3$ cm, if the construction requires the circle to be drawn with $OP$ as the diameter, and the distance $OP = 5$ cm, what is the length of each tangent segment?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify that the tangents from an external point $P$ to a circle with centre $O$ form a right-angled triangle with the radius $r$ at the point of contact.",
+          "Let $T$ be the point of contact. Then $\\triangle OTP$ is a right-angled triangle with $\\angle OTP = 90^\\circ$.",
+          "Using the Pythagorean theorem, $OP^2 = OT^2 + PT^2$.",
+          "Substitute the given values: $5^2 = 3^2 + PT^2$.",
+          "Solve for $PT$: $25 = 9 + PT^2 \\Rightarrow PT^2 = 16 \\Rightarrow PT = 4$ cm."
+        ],
+        "derivation": "$OP^2 = OT^2 + PT^2 \\\\ 5^2 = 3^2 + PT^2 \\\\ 25 = 9 + PT^2 \\\\ PT^2 = 16 \\\\ PT = \\sqrt{16} = 4$"
+      },
+      "topic": "Constructions",
+      "subtopic": "construction of tangents",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $3$ cm",
+        "(B) $5$ cm",
+        "(C) $4$ cm",
+        "(D) $2$ cm"
+      ],
+      "diagram": {
+        "required": true,
+        "type": "construction",
+        "caption": "Construction of tangents from point P",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O",
+            "position": "below"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 4,
+            "y": 0,
+            "label": "P",
+            "position": "right"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "P",
+            "label": "5 cm",
+            "label_position": "above"
+          },
+          {
+            "kind": "point",
+            "id": "T",
+            "x": 0.72,
+            "y": 1.86,
+            "label": "T",
+            "position": "above left"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "T",
+            "label": "3 cm",
+            "label_position": "left"
+          },
+          {
+            "kind": "segment",
+            "from": "T",
+            "to": "P",
+            "label": "tangent",
+            "label_position": "above"
+          },
+          {
+            "kind": "right_angle",
+            "points": [
+              "O",
+              "T",
+              "P"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-10T11:16:21.306950",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_11 (Constructions).pdf",
+          "Chapter_10 (Circles).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 1,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 5,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 2,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Constructions",
+            "exercise": "10.4",
+            "question_no": 3,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Constructions",
+            "exercise": "10.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Constructions",
+            "exercise": "10.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Constructions",
+            "exercise": "10.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Constructions",
+            "exercise": "10.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Constructions",
+            "exercise": "10.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_111621_9133cd_01"
+    }
+  ]
+}

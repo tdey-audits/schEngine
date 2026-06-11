@@ -1,0 +1,160 @@
+{
+  "batch_id": "20260604_141033_f981495d",
+  "generated_at": "2026-06-04T14:10:33.905859",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Constructions",
+  "subtopic": "construction of tangents",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "To draw a pair of tangents to a circle which are inclined to each other at an angle of $60^{\\circ}$, it is required to draw tangents at the endpoints of those two radii of the circle, the angle between which is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "The angle between the tangents and the angle between the radii at the points of contact are supplementary.",
+          "Let the angle between the radii be $\\theta$.",
+          "$\\theta + 60^{\\circ} = 180^{\\circ}$",
+          "$\\theta = 120^{\\circ}$"
+        ],
+        "derivation": "\\theta = 180^{\\circ} - 60^{\\circ} = 120^{\\circ}"
+      },
+      "topic": "Constructions",
+      "subtopic": "Construction of tangents",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $60^{\\circ}$",
+        "(B) $90^{\\circ}$",
+        "(C) $120^{\\circ}$",
+        "(D) $180^{\\circ}$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:33.905683",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141033_9ae279_01"
+    },
+    {
+      "question": "If a point $P$ is $10$ cm away from the centre of a circle of radius $6$ cm, the length of the tangent drawn from $P$ to the circle is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "The radius is perpendicular to the tangent at the point of contact.",
+          "This forms a right-angled triangle with the hypotenuse as the distance from the centre.",
+          "Use Pythagoras theorem: $d^2 = r^2 + t^2$",
+          "$10^2 = 6^2 + t^2$"
+        ],
+        "derivation": "t = \\sqrt{10^2 - 6^2} = \\sqrt{100 - 36} = \\sqrt{64} = 8 \\text{ cm}"
+      },
+      "topic": "Constructions",
+      "subtopic": "Construction of tangents",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $7$ cm",
+        "(B) $8$ cm",
+        "(C) $9$ cm",
+        "(D) $10$ cm"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:33.905730",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141033_45665f_02"
+    },
+    {
+      "question": "How many tangents can be drawn from an external point to a circle?",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "A tangent touches the circle at exactly one point.",
+          "From a point outside a circle, exactly two distinct tangents can be drawn to the circle."
+        ],
+        "derivation": "\\text{Number of tangents} = 2"
+      },
+      "topic": "Constructions",
+      "subtopic": "Construction of tangents",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 1",
+        "(B) 2",
+        "(C) 0",
+        "(D) Infinite"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:33.905744",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141033_9a76e8_03"
+    },
+    {
+      "question": "To divide a line segment $AB$ in the ratio $3:4$, we draw a ray $AX$ such that $\\angle BAX$ is acute. Then we mark points on $AX$ at equal distances. The minimum number of points to be marked is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "To divide a line segment in ratio $m:n$, we need to mark $m+n$ points on the ray.",
+          "Here $m=3$ and $n=4$.",
+          "Total points = $3 + 4 = 7$"
+        ],
+        "derivation": "3 + 4 = 7"
+      },
+      "topic": "Constructions",
+      "subtopic": "Construction of tangents",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 3",
+        "(B) 4",
+        "(C) 7",
+        "(D) 12"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:33.905754",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141033_fb6891_04"
+    },
+    {
+      "question": "The angle between a tangent to a circle and the radius passing through the point of contact is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "By the theorem of tangents, the tangent at any point of a circle is perpendicular to the radius through the point of contact.",
+          "Perpendicular means $90^{\\circ}$."
+        ],
+        "derivation": "\\text{Angle} = 90^{\\circ}"
+      },
+      "topic": "Constructions",
+      "subtopic": "Construction of tangents",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $45^{\\circ}$",
+        "(B) $60^{\\circ}$",
+        "(C) $90^{\\circ}$",
+        "(D) $180^{\\circ}$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:33.905763",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141033_96d07d_05"
+    }
+  ]
+}

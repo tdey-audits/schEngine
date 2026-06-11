@@ -1,0 +1,116 @@
+{
+  "batch_id": "20260604_140939_dac79e86",
+  "generated_at": "2026-06-04T14:09:39.354633",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "State and prove the Basic Proportionality Theorem (Thales Theorem).",
+      "answer": "If a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points, the other two sides are divided in the same ratio.",
+      "solution": {
+        "steps": [
+          "Draw a triangle ABC with a line DE parallel to BC intersecting AB at D and AC at E.",
+          "Construct perpendiculars DM on AC and EN on AB. Join BE and CD.",
+          "Calculate the area of triangles ADE, BDE, and CDE.",
+          "Use the property that triangles on the same base and between the same parallels have equal areas.",
+          "Divide the ratio of areas to prove the theorem."
+        ],
+        "derivation": "In $\\triangle ADE$ and $\\triangle BDE$, $\\frac{ar(ADE)}{ar(BDE)} = \\frac{\\frac{1}{2} \\cdot AD \\cdot EN}{\\frac{1}{2} \\cdot BD \\cdot EN} = \\frac{AD}{BD}$. Similarly, $\\frac{ar(ADE)}{ar(CDE)} = \\frac{AE}{CE}$. Since $ar(BDE) = ar(CDE)$ (same base $DE$ and same parallels $DE \\parallel BC$), it follows that $\\frac{AD}{BD} = \\frac{AE}{CE}$."
+      },
+      "topic": "Triangles",
+      "subtopic": "Basic Proportionality Theorem",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:39.354390",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140939_caef18_01"
+    },
+    {
+      "question": "Prove that the ratio of the areas of two similar triangles is equal to the square of the ratio of their corresponding sides.",
+      "answer": "$\\frac{ar(\\triangle ABC)}{ar(\\triangle PQR)} = (\\frac{AB}{PQ})^2 = (\\frac{BC}{QR})^2 = (\\frac{AC}{PR})^2$",
+      "solution": {
+        "steps": [
+          "Draw two similar triangles ABC and PQR.",
+          "Draw altitudes AM $\\perp$ BC and PN $\\perp$ QR.",
+          "Express the ratio of areas as $\\frac{\\frac{1}{2} \\cdot BC \\cdot AM}{\\frac{1}{2} \\cdot QR \\cdot PN}$.",
+          "Prove $\\triangle ABM \\sim \\triangle PQN$ to show $\\frac{AM}{PN} = \\frac{AB}{PQ}$.",
+          "Substitute this ratio back into the area equation to get the square of the ratio."
+        ],
+        "derivation": "$\\frac{ar(ABC)}{ar(PQR)} = \\frac{BC \\cdot AM}{QR \\cdot PN} = \\frac{BC}{QR} \\cdot \\frac{AM}{PN}$. Since $\\triangle ABM \\sim \\triangle PQN$, $\\frac{AM}{PN} = \\frac{AB}{PQ}$. Also $\\frac{AB}{PQ} = \\frac{BC}{QR}$ (given similarity). Thus, $\\frac{ar(ABC)}{ar(PQR)} = \\frac{BC}{QR} \\cdot \\frac{BC}{QR} = (\\frac{BC}{QR})^2$."
+      },
+      "topic": "Triangles",
+      "subtopic": "Areas of Similar Triangles",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:39.354471",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140939_7e5480_02"
+    },
+    {
+      "question": "In $\\triangle ABC$, $AD \\perp BC$ such that $AD^2 = BD \\cdot CD$. Prove that $\\triangle ABC$ is a right-angled triangle at $A$.",
+      "answer": "$\\angle BAC = 90^\\circ$",
+      "solution": {
+        "steps": [
+          "Observe the triangle split into two smaller triangles $\\triangle ABD$ and $\\triangle ACD$.",
+          "Write the ratio $\\frac{AD}{BD} = \\frac{CD}{AD}$.",
+          "Include the angle $\\angle ADB = \\angle ADC = 90^\\circ$.",
+          "Prove $\\triangle ABD \\sim \\triangle CAD$ by SAS similarity.",
+          "Equate corresponding angles $\\angle BAD = \\angle ACD$ and $\\angle CAD = \\angle ABD$.",
+          "Use the angle sum property of $\\triangle ABC$ to show $\\angle BAC = 90^\\circ$."
+        ],
+        "derivation": "Given $AD^2 = BD \\cdot CD \\implies \\frac{AD}{BD} = \\frac{CD}{AD}$. In $\\triangle ABD$ and $\\triangle CAD$, $\\angle ADB = \\angle ADC = 90^\\circ$. By SAS similarity, $\\triangle ABD \\sim \\triangle CAD$. Thus $\\angle BAD = \\angle C$ and $\\angle CAD = \\angle B$. In $\\triangle ABC$, $\\angle A + \\angle B + \\angle C = 180^\\circ$. Substituting gives $\\angle A + \\angle CAD + \\angle BAD = 180^\\circ \\implies 2\\angle A = 180^\\circ \\implies \\angle A = 90^\\circ$."
+      },
+      "topic": "Triangles",
+      "subtopic": "Similarity of Triangles",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:39.354492",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140939_cad171_03"
+    },
+    {
+      "question": "A vertical stick $2$ m long casts a shadow $1$ m long on the ground. At the same time, a tower casts a shadow $5$ m long. Find the height of the tower using the properties of similar triangles.",
+      "answer": "10 meters",
+      "solution": {
+        "steps": [
+          "Identify two triangles: one formed by the stick and its shadow, the other by the tower and its shadow.",
+          "State that at the same time, the angle of elevation of the sun is the same for both objects.",
+          "Identify that both triangles are right-angled and share an equal angle, thus they are similar by AA criterion.",
+          "Set up the proportion: $\\frac{\\text{Height of Stick}}{\\text{Shadow of Stick}} = \\frac{\\text{Height of Tower}}{\\text{Shadow of Tower}}$.",
+          "Substitute the given values and solve for the height of the tower."
+        ],
+        "derivation": "Let height of tower be $h$. $\\triangle ABC \\sim \\triangle PQR$ (where $ABC$ is stick triangle and $PQR$ is tower triangle). Therefore, $\\frac{2}{1} = \\frac{h}{5}$. $h = 2 \\times 5 = 10$ m."
+      },
+      "topic": "Triangles",
+      "subtopic": "Applications of Similar Triangles",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:39.354509",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140939_de921c_04"
+    }
+  ]
+}

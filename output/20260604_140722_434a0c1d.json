@@ -1,0 +1,160 @@
+{
+  "batch_id": "20260604_140722_434a0c1d",
+  "generated_at": "2026-06-04T14:07:22.144550",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "The HCF of the smallest prime number and the smallest composite number is:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Identify the smallest prime number, which is 2.",
+          "Identify the smallest composite number, which is 4.",
+          "Find the HCF of 2 and 4."
+        ],
+        "derivation": "2 = 2^1, 4 = 2^2. \\text{HCF}(2, 4) = 2^1 = 2."
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Fundamental Theorem of Arithmetic",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 2",
+        "(B) 1",
+        "(C) 4",
+        "(D) 8"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:22.144421",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140722_74f5c4_01"
+    },
+    {
+      "question": "If two positive integers $a$ and $b$ are written as $a = x^3y^2$ and $b = xy^3$, where $x, y$ are prime numbers, then the $\\text{HCF}(a, b)$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "List the prime factors of $a = x \\times x \\times x \\times y \\times y$.",
+          "List the prime factors of $b = x \\times y \\times y \\times y$.",
+          "Identify the common factors with the lowest powers."
+        ],
+        "derivation": "\\text{HCF}(x^3y^2, xy^3) = x^{\\min(3,1)} \\cdot y^{\\min(2,3)} = xy^2"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Fundamental Theorem of Arithmetic",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) xy",
+        "(B) xy^3",
+        "(C) xy^2",
+        "(D) x^2y^2"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:22.144469",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140722_701659_02"
+    },
+    {
+      "question": "The decimal expansion of the rational number $\\frac{13}{125}$ will terminate after how many decimal places?",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Express the denominator 125 as a power of 5.",
+          "Check the form of the denominator to ensure it is $2^n \\cdot 5^m$.",
+          "Since $125 = 5^3$, we multiply numerator and denominator by $2^3$ to make the denominator $10^3$."
+        ],
+        "derivation": "\\frac{13}{125} = \\frac{13}{5^3} = \\frac{13 \\times 2^3}{5^3 \\times 2^3} = \\frac{13 \\times 8}{1000} = \\frac{104}{1000} = 0.104"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Decimal expansion of rational numbers",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 2",
+        "(B) 3",
+        "(C) 4",
+        "(D) 1"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:22.144480",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140722_424612_03"
+    },
+    {
+      "question": "If the $\\text{LCM}(26, 169) = 338$, then $\\text{HCF}(26, 169)$ is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Use the property: $\\text{HCF}(a, b) \\times \\text{LCM}(a, b) = a \\times b$.",
+          "Substitute the given values into the formula.",
+          "Solve for HCF."
+        ],
+        "derivation": "\\text{HCF} = \\frac{26 \\times 169}{338} = \\frac{4394}{338} = 13"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Relationship between HCF and LCM",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 26",
+        "(B) 13",
+        "(C) 39",
+        "(D) 1"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:22.144490",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140722_543147_04"
+    },
+    {
+      "question": "The product of a non-zero rational and an irrational number is always:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Recall the properties of irrational numbers.",
+          "Consider an example: $2 \\times \\sqrt{3} = 2\\sqrt{3}$, which is irrational.",
+          "Conclude the general rule."
+        ],
+        "derivation": "\\text{Rational} \\times \\text{Irrational} = \\text{Irrational (for non-zero rational)}"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Irrational Numbers",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) rational",
+        "(B) integer",
+        "(C) irrational",
+        "(D) one"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:22.144497",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140722_5274d7_05"
+    }
+  ]
+}

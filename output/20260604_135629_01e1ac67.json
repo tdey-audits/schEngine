@@ -1,0 +1,135 @@
+{
+  "batch_id": "20260604_135629_01e1ac67",
+  "generated_at": "2026-06-04T13:56:29.487341",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Some Applications of Trigonometry",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A tower stands vertically on the ground. From a point on the ground, which is $15$ m away from the foot of the tower, the angle of elevation of the top of the tower is found to be $60^\\circ$. Find the height of the tower.",
+      "answer": "15\\sqrt{3} \\text{ m}",
+      "solution": {
+        "steps": [
+          "Let $h$ be the height of the tower and $d = 15$ m be the distance from the foot.",
+          "Use the tangent ratio: $\\tan(\\theta) = \\frac{\\text{Opposite}}{\\text{Adjacent}}$.",
+          "Substitute the values: $\\tan(60^\\circ) = \\frac{h}{15}$.",
+          "Solve for $h$: $h = 15 \\times \\sqrt{3}$."
+        ],
+        "derivation": "\\tan(60^\\circ) = \\frac{h}{15} \\implies \\sqrt{3} = \\frac{h}{15} \\implies h = 15\\sqrt{3}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Heights and Distances",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:29.487089",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135629_d3ac9b_01"
+    },
+    {
+      "question": "A $1.5$ m tall boy is standing at some distance from a $30$ m tall building. The angle of elevation from his eyes to the top of the building increases from $30^\\circ$ to $60^\\circ$ as he walks towards the building. Find the distance he walked towards the building.",
+      "answer": "19\\sqrt{3} \\text{ m}",
+      "solution": {
+        "steps": [
+          "Height of building above boy's eyes = $30 - 1.5 = 28.5$ m.",
+          "Let $x_1$ be the distance at $30^\\circ$ and $x_2$ be the distance at $60^\\circ$.",
+          "Calculate $x_1 = 28.5 \\cot(30^\\circ)$ and $x_2 = 28.5 \\cot(60^\\circ)$.",
+          "Distance walked = $x_1 - x_2 = 28.5(\\sqrt{3} - \\frac{1}{\\sqrt{3}}) = 28.5(\\frac{2}{\\sqrt{3}}) = 19\\sqrt{3}$."
+        ],
+        "derivation": "x_1 = 28.5\\sqrt{3}, x_2 = \\frac{28.5}{\\sqrt{3}} \\implies \\text{dist} = 28.5(\\frac{3-1}{\\sqrt{3}}) = \\frac{57}{\\sqrt{3}} = 19\\sqrt{3}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Two angles of elevation",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:29.487153",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135629_575a06_02"
+    },
+    {
+      "question": "From the top of a $7$ m high building, the angle of elevation of the top of a cable tower is $60^\\circ$ and the angle of depression of its foot is $45^\\circ$. Determine the height of the tower.",
+      "answer": "7(1+\\sqrt{3}) \\text{ m}",
+      "solution": {
+        "steps": [
+          "Let the building height $AB = 7$ m. The tower height $CD = h$.",
+          "From the triangle at the base, the distance between building and tower is $7 \\cot(45^\\circ) = 7$ m.",
+          "In the upper triangle, the height above the building level is $h' = 7 \\tan(60^\\circ) = 7\\sqrt{3}$.",
+          "Total height $h = 7 + 7\\sqrt{3}$."
+        ],
+        "derivation": "h = 7 + 7\\tan(60^\\circ) = 7(1 + \\sqrt{3})"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Angle of elevation and depression",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:29.487170",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135629_a4a30d_03"
+    },
+    {
+      "question": "A kite is flying at a height of $60$ m above the ground. The string attached to the kite is temporarily tied to a point on the ground. The inclination of the string with the ground is $60^\\circ$. Find the length of the string, assuming that there is no slack in the string.",
+      "answer": "40\\sqrt{3} \\text{ m}",
+      "solution": {
+        "steps": [
+          "Height $h = 60$ m, angle $\\theta = 60^\\circ$. Let string length be $L$.",
+          "Use sine ratio: $\\sin(60^\\circ) = \\frac{\\text{Opposite}}{\\text{Hypotenuse}} = \\frac{60}{L}$.",
+          "Substitute $\\sin(60^\\circ) = \\frac{\\sqrt{3}}{2}$.",
+          "Solve: $L = \\frac{60 \\times 2}{\\sqrt{3}} = \\frac{120}{\\sqrt{3}} = 40\\sqrt{3}$."
+        ],
+        "derivation": "\\sin(60^\\circ) = \\frac{60}{L} \\implies \\frac{\\sqrt{3}}{2} = \\frac{60}{L} \\implies L = \\frac{120}{\\sqrt{3}} = 40\\sqrt{3}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Sine ratio application",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:29.487183",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135629_ed1676_04"
+    },
+    {
+      "question": "The angle of elevation of the top of a chimney from the top of a tower is $30^\\circ$ and the angle of depression of the foot of the chimney from the top of the tower is $60^\\circ$. If the tower is $40$ m high, find the height of the chimney.",
+      "answer": "160/3 \\text{ m}",
+      "solution": {
+        "steps": [
+          "Let $h$ be the height of the chimney above the tower level and $40$ m be the tower height.",
+          "Distance $d = 40 \\cot(60^\\circ) = \\frac{40}{\\sqrt{3}}$.",
+          "Height $h = d \\tan(30^\\circ) = \\frac{40}{\\sqrt{3}} \\times \\frac{1}{\\sqrt{3}} = \\frac{40}{3}$.",
+          "Total height = $40 + \\frac{40}{3} = \\frac{160}{3}$ m."
+        ],
+        "derivation": "H = 40 + \\frac{40}{\\sqrt{3}} \\cdot \\frac{1}{\\sqrt{3}} = 40 + \\frac{40}{3} = \\frac{160}{3}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Application with two points",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:29.487195",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135629_251b39_05"
+    }
+  ]
+}

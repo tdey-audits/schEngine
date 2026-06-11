@@ -1,0 +1,124 @@
+{
+  "batch_id": "20260609_160004_445b20d5",
+  "generated_at": "2026-06-09T16:00:04.944790",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Some Applications of Trigonometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "vsa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A vertical pole of height $h$ meters stands on the ground. At a point $P$ on the ground, the angle of elevation of the top of the pole is $\\alpha$. If the point $P$ is moved $d$ meters closer to the base of the pole, the angle of elevation becomes $\\beta$. Express the height $h$ of the pole in terms of $d$, $\\alpha$, and $\\beta$.",
+      "answer": "$h = \\frac{d \\tan \\alpha \\tan \\beta}{\\tan \\beta - \\tan \\alpha}$",
+      "solution": {
+        "steps": [
+          "Let the pole be $AB = h$ and the initial distance $PB = x$. Using $\\triangle ABP$, $\\tan \\alpha = h / x$, so $x = h / \\tan \\alpha$.",
+          "After moving $d$ meters closer, the new distance is $x - d$, and the angle is $\\beta$. Using the new triangle, $\\tan \\beta = h / (x - d)$, which implies $x - d = h / \\tan \\beta$.",
+          "Subtract the two expressions for $x$ to eliminate it: $x - (x - d) = h / \\tan \\alpha - h / \\tan \\beta$.",
+          "Solve for $h$: $d = h (1 / \\tan \\alpha - 1 / \\tan \\beta) = h ((\\tan \\beta - \\tan \\alpha) / (\\tan \\alpha \\tan \\beta))$, leading to the final expression."
+        ],
+        "derivation": "$x = \\frac{h}{\\tan \\alpha} \\text{ and } x - d = \\frac{h}{\\tan \\beta} \\\\ d = x - (x - d) = \\frac{h}{\\tan \\alpha} - \\frac{h}{\\tan \\beta} \\\\ d = h \\left( \\frac{\\tan \\beta - \\tan \\alpha}{\\tan \\alpha \\tan \\beta} \\right) \\\\ h = \\frac{d \\tan \\alpha \\tan \\beta}{\\tan \\beta - \\tan \\alpha}$"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Height and Distance with two angles",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "hard",
+      "diagram": {
+        "required": true,
+        "type": "trigonometry",
+        "caption": "Pole AB with observation points P and Q",
+        "elements": [
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "B",
+            "label": "h"
+          },
+          {
+            "kind": "segment",
+            "from": "B",
+            "to": "P",
+            "label": "x"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "Q",
+            "label": "d"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "P"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "Q"
+          },
+          {
+            "kind": "angle",
+            "points": [
+              "A",
+              "P",
+              "B"
+            ],
+            "label": "\\alpha"
+          },
+          {
+            "kind": "angle",
+            "points": [
+              "A",
+              "Q",
+              "B"
+            ],
+            "label": "\\beta"
+          },
+          {
+            "kind": "right_angle",
+            "points": [
+              "A",
+              "B",
+              "Q"
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-09T16:00:04.944369",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_9 (Some Applications of Trigonometry).pdf",
+          "Chapter_8 (Introduction to Trigonometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 25,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 23,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 22,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160004_26f83d_01"
+    }
+  ]
+}

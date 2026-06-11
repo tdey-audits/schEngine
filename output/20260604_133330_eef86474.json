@@ -1,0 +1,47 @@
+{
+  "batch_id": "20260604_133330_eef86474",
+  "generated_at": "2026-06-04T13:33:30.968904",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The sum of the first $n$ terms of an arithmetic progression is given by $S_n = 3n^2 + 5n$. The common difference of this AP is 6.\nReason (R): For an AP where $S_n = an^2 + bn$, the common difference is always $2a$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "To find the common difference from the sum of $n$ terms, calculate $S_1$ and $S_2$.",
+          "$S_1 = a_1 = 3(1)^2 + 5(1) = 8$.",
+          "$S_2 = a_1 + a_2 = 3(2)^2 + 5(2) = 12 + 10 = 22$.",
+          "Calculate $a_2 = S_2 - S_1 = 22 - 8 = 14$.",
+          "Common difference $d = a_2 - a_1 = 14 - 8 = 6$. Assertion is true.",
+          "For a general sum $S_n = An^2 + Bn$, $a_n = S_n - S_{n-1} = A(n^2 - (n-1)^2) + B(n - (n-1)) = A(2n-1) + B = 2An - A + B$. Since $a_n$ is a linear function of $n$, the common difference is the coefficient of $n$, which is $2A$. Reason is true and correctly explains the assertion."
+        ],
+        "derivation": "$S_n = 3n^2 + 5n \\\\ a_n = S_n - S_{n-1} \\\\ a_n = 3n^2 + 5n - [3(n-1)^2 + 5(n-1)] \\\\ a_n = 3n^2 + 5n - [3(n^2 - 2n + 1) + 5n - 5] \\\\ a_n = 3n^2 + 5n - 3n^2 + 6n - 3 - 5n + 5 \\\\ a_n = 6n + 2 \\\\ d = a_n - a_{n-1} = (6n + 2) - (6(n-1) + 2) = 6$"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of first n terms",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "hard",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:33:30.968813",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133330_13cd60_01"
+    }
+  ]
+}

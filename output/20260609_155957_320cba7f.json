@@ -1,0 +1,104 @@
+{
+  "batch_id": "20260609_155957_320cba7f",
+  "generated_at": "2026-06-09T15:59:57.949078",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Coordinate Geometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "vsa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If the point $P(k, 0)$ divides the line segment joining the points $A(2, -3)$ and $B(5, 6)$ in the ratio $1 : 2$, find the value of $k$.",
+      "answer": "$k = 3$",
+      "solution": {
+        "steps": [
+          "Use the section formula for the y-coordinate to confirm the ratio, as the y-coordinate of P is 0.",
+          "Apply the section formula for the x-coordinate: $x = \\frac{m_1x_2 + m_2x_1}{m_1 + m_2}$ to find $k$."
+        ],
+        "derivation": "$P(x, y) = \\left( \\frac{m_1x_2 + m_2x_1}{m_1 + m_2}, \\frac{m_1y_2 + m_2y_1}{m_1 + m_2} \\right) \\\\ P(k, 0) = \\left( \\frac{1(5) + 2(2)}{1 + 2}, \\frac{1(6) + 2(-3)}{1 + 2} \\right) \\\\ k = \\frac{5 + 4}{3} = \\frac{9}{3} = 3$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Section Formula",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T15:59:57.948810",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_7 (Coordinate Geometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 22,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 25,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 18,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.3",
+            "question_no": 20,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Coordinate Geometry",
+            "exercise": "7.4",
+            "question_no": 3,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_155957_7e8da5_01"
+    }
+  ]
+}

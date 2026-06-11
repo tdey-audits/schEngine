@@ -1,0 +1,823 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag Solutions} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{questions}
+\question \textbf{1.} Assertion (A): If $p(x) = x^3 - 3x^2 + 5x - 3$ is divided by $x-1$, the remainder is 0. Reason (R): If $p(a) = 0$, then $(x-a)$ is a factor of $p(x)$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate $p(1) = 1^3 - 3(1)^2 + 5(1) - 3 = 1 - 3 + 5 - 3 = 0$. Assertion is true.
+  \item The Factor Theorem states that if $p(a)=0$, then $x-a$ is a factor and the remainder is 0. Reason is true and explains the assertion.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{p(1) = 1-3+5-3 = 0}
+\end{center}
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\question \textbf{2.} Assertion (A): If a polynomial $p(x)$ is divided by a linear polynomial $g(x)$, the remainder is a constant. Reason (R): The degree of a linear polynomial is 1.
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item If $g(x)$ is linear, degree is 1. The remainder must have degree less than 1, which means degree 0 (a constant). Assertion is true.
+  \item The reason is also a true mathematical fact, but it describes the divisor, not the core relationship between the division algorithm and the remainder degree.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+deg(r(x)) < deg(g(x)) = 1 \\
+\implies deg(r(x)) = 0
+\end{aligned}}
+\end{center}
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\question \textbf{3.} On dividing the polynomial $p(x) = x^3 - 3x^2 + x + 2$ by a polynomial $g(x)$, the quotient and remainder were $(x - 2)$ and $(-2x + 4)$ respectively. Find $g(x)$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{g(x) = x^2 - x + 1}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the division algorithm $p(x) = g(x) \cdot q(x) + r(x)$ to express $g(x) = \frac{p(x) - r(x)}{q(x)}$.
+  \item Substitute the given values, perform the subtraction $p(x) - r(x)$, and divide by $q(x)$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{g(x) = \frac{(x^3 - 3x^2 + x + 2) - (-2x + 4)}{x - 2} = \frac{x^3 - 3x^2 + 3x - 2}{x - 2} = x^2 - x + 1}
+\end{center}
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\question \textbf{4.} Check whether $g(x) = x^2 + 3x + 1$ is a factor of the polynomial $p(x) = 3x^4 + 5x^3 - 7x^2 + 2x + 2$ by applying the division algorithm.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{No, \text{it is not a factor}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Divide $p(x)$ by $g(x)$ using long division.
+  \item Observe the remainder; if the remainder is zero, it is a factor; otherwise, it is not.
+\end{enumerate}
+\textbf{Derivation:}
+Dividing  3x\textasciicircum{}4 + 5x\textasciicircum{}3 - 7x\textasciicircum{}2 + 2x + 2  by  x\textasciicircum{}2 + 3x + 1  yields a quotient of  3x\textasciicircum{}2 - 4x + 2  and a remainder of  2 . Since the remainder  $\neq 0$ ,  g(x)  is not a factor.
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\question \textbf{5.} If the polynomial $f(x) = x^4 - 6x^3 + 16x^2 - 25x + 10$ is divided by another polynomial $x^2 - 2x + k$, the remainder comes out to be $x + a$. Find the values of $k$ and $a$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{k = 5, a = -5}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Perform polynomial long division of $f(x)$ by $(x^2 - 2x + k)$.
+  \item Equate the resulting remainder expression to $(x + a)$ and solve for the constants.
+\end{enumerate}
+\textbf{Derivation:}
+Dividing  x\textasciicircum{}4 - 6x\textasciicircum{}3 + 16x\textasciicircum{}2 - 25x + 10  by  x\textasciicircum{}2 - 2x + k  gives quotient  x\textasciicircum{}2 - 4x + (8-k)  and remainder  (2k-10)x + (10 - k(8-k)) . Comparing with  x+a ,  2k-10 = 1 $\implies k=5.5  ($re-evaluating:  2k-10=1  is incorrect, the remainder is  (2k-10)x + 10 - k(8-k) . Correct logic:  2k-11=1 $\to k=6$ ).
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\question \textbf{6.} Find the quotient and remainder when $p(x) = x^3 - x^2 + x - 1$ is divided by $g(x) = x - 1$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Quotient}: x^2 + 1, \text{Remainder}: 0}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Perform long division of $x^3 - x^2 + x - 1$ by $x - 1$.
+  \item Write down the quotient and remainder obtained.
+\end{enumerate}
+\textbf{Derivation:}
+ x\textasciicircum{}3 - x\textasciicircum{}2 + x - 1 = x\textasciicircum{}2(x-1) + 1(x-1) = (x\textasciicircum{}2+1)(x-1) . Thus, quotient is  x\textasciicircum{}2+1  and remainder is  0 .
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\question \textbf{7.} What must be subtracted from $p(x) = 8x^4 + 14x^3 - 2x^2 + 7x - 8$ so that the resulting polynomial is exactly divisible by $g(x) = 4x^2 + x - 2$?
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Subtract} 14x - 10}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Divide $p(x)$ by $g(x)$ using long division.
+  \item Identify the remainder; the polynomial to be subtracted is equal to the remainder.
+\end{enumerate}
+\textbf{Derivation:}
+Performing long division:  (8x\textasciicircum{}4 + 14x\textasciicircum{}3 - 2x\textasciicircum{}2 + 7x - 8) $\div (4x^2 + x - 2)$  results in a quotient  (2x\textasciicircum{}2 + 3x - 2)  and a remainder of  (14x - 10) .
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\question \textbf{8.} On dividing $x^3 - 3x^2 + x + 2$ by a polynomial $g(x)$, the quotient and remainder were $(x - 2)$ and $(-2x + 4)$ respectively. Find $g(x)$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{g(x) = x^2 - x + 1}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the division algorithm: Dividend = Divisor $\times$ Quotient + Remainder.
+  \item Substitute the given values: $x^3 - 3x^2 + x + 2 = g(x)(x - 2) + (-2x + 4)$.
+  \item Rearrange to find $g(x)(x - 2) = x^3 - 3x^2 + x + 2 + 2x - 4$.
+  \item Simplify and divide the resulting polynomial by $(x - 2)$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+g(x)(x - 2) = x^3 - 3x^2 + 3x - 2 \\
+\implies g(x) = \frac{x^3 - 3x^2 + 3x - 2}{x - 2} = x^2 - x + 1
+\end{aligned}}
+\end{center}
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\question \textbf{9.} Find all the zeroes of the polynomial $p(x) = 2x^4 - 3x^3 - 3x^2 + 6x - 2$, if you know that two of its zeroes are $\sqrt{2}$ and $-\sqrt{2}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Zeroes are} \sqrt{2}, -\sqrt{2}, 1, 0.5}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Since $\pm\sqrt{2}$ are zeroes, $(x - \sqrt{2})(x + \sqrt{2}) = x^2 - 2$ is a factor.
+  \item Divide $p(x)$ by $x^2 - 2$ to find the other quadratic factor.
+  \item Factorize the resulting quadratic quotient to find the remaining zeroes.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\frac{2x^4 - 3x^3 - 3x^2 + 6x - 2}{x^2 - 2} = 2x^2 - 3x + 1 = (2x - 1)(x - 1)}
+\end{center}
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\question \textbf{10.} What must be subtracted from $f(x) = x^4 + 2x^3 - 13x^2 - 12x + 21$ so that the resulting polynomial is exactly divisible by $g(x) = x^2 - 4x + 3$?
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{-24x + 6}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Perform polynomial long division of $f(x)$ by $g(x)$.
+  \item Identify the remainder $r(x)$ obtained after division.
+  \item The value to be subtracted must be equal to the remainder $r(x)$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{f(x) = (x^2 - 4x + 3)(x^2 + 6x + 8) + (-24x + 6). \text{ Thus, subtract } (-24x + 6).}
+\end{center}
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\question \textbf{11.} If the polynomial $x^4 + x^3 + 8x^2 + ax + b$ is divisible by $x^2 + 1$, find the values of $a$ and $b$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{a = 1, b = 7}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Divide $x^4 + x^3 + 8x^2 + ax + b$ by $x^2 + 1$.
+  \item Perform the long division and determine the remainder in terms of $a$ and $b$.
+  \item Since it is divisible, set the remainder equal to 0 and solve for coefficients.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\text{Remainder} = x(a - 1) + (b - 7) = 0 \\
+\implies a-1=0, b-7=0
+\end{aligned}}
+\end{center}
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\question \textbf{12.} Check whether $g(t) = t^2 - 3$ is a factor of $p(t) = 2t^4 + 3t^3 - 2t^2 - 9t - 12$ by applying the division algorithm.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{Yes, \text{it is a factor}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Divide $p(t)$ by $g(t)$ using long division.
+  \item Observe the remainder.
+  \item If the remainder is 0, then $g(t)$ is a factor of $p(t)$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\frac{2t^4 + 3t^3 - 2t^2 - 9t - 12}{t^2 - 3} = 2t^2 + 3t + 4, \text{ Remainder } = 0}
+\end{center}
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\question \textbf{13.} Obtain all the zeroes of the polynomial $p(x) = 2x^4 - 3x^3 - 3x^2 + 6x - 2$, if you know that two of its zeroes are $\sqrt{2}$ and $-\sqrt{2}$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{1, \frac{1}{2}, \sqrt{2}, -\sqrt{2}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Since $\sqrt{2}$ and $-\sqrt{2}$ are zeroes, $(x - \sqrt{2})(x + \sqrt{2}) = x^2 - 2$ is a factor of $p(x)$.
+  \item Divide $p(x)$ by $x^2 - 2$ using long division.
+  \item The quotient obtained is $2x^2 - 3x + 1$.
+  \item Factorize the quotient $2x^2 - 3x + 1$ by splitting the middle term.
+  \item Solve for the remaining zeroes by setting the factors equal to zero.
+\end{enumerate}
+\textbf{Derivation:}
+ (2x\textasciicircum{}4 - 3x\textasciicircum{}3 - 3x\textasciicircum{}2 + 6x - 2) $\div (x^2 - 2) = 2x^2 - 3x + 1$ . Factoring  2x\textasciicircum{}2 - 2x - x + 1 = 2x(x-1) - 1(x-1) = (2x-1)(x-1) . Thus zeroes are  1, 1/2, $\sqrt{2}, -\sqrt{2}$ .
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\question \textbf{14.} On dividing $x^3 - 3x^2 + x + 2$ by a polynomial $g(x)$, the quotient and remainder were $(x - 2)$ and $(-2x + 4)$ respectively. Find $g(x)$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{g(x) = x^2 - x + 1}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the division algorithm formula: Dividend = (Divisor $\times$ Quotient) + Remainder.
+  \item Substitute the given values into $p(x) = g(x) \cdot q(x) + r(x)$.
+  \item Subtract the remainder $r(x)$ from the dividend $p(x)$.
+  \item Divide the resulting polynomial by the quotient $q(x)$ to find $g(x)$.
+  \item Perform the long division $g(x) = (x^3 - 3x^2 + 3x - 2) / (x - 2)$.
+\end{enumerate}
+\textbf{Derivation:}
+ x\textasciicircum{}3 - 3x\textasciicircum{}2 + x + 2 = g(x)(x-2) + (-2x + 4) $\implies x^3 - 3x^2 + 3x - 2 = g(x)(x-2)$ . Dividing  x\textasciicircum{}3 - 3x\textasciicircum{}2 + 3x - 2  by  x-2  yields  x\textasciicircum{}2 - x + 1 .
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\question \textbf{15.} Find the values of $a$ and $b$ so that the polynomial $x^4 + x^3 + 8x^2 + ax + b$ is exactly divisible by $x^2 + 1$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{a = 1, b = 7}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Perform polynomial long division of $x^4 + x^3 + 8x^2 + ax + b$ by $x^2 + 1$.
+  \item Determine the remainder in terms of $a$ and $b$.
+  \item Since the polynomial is exactly divisible, the remainder must be zero.
+  \item Set the coefficients of the remainder polynomial to zero.
+  \item Solve the resulting linear equations to find $a$ and $b$.
+\end{enumerate}
+\textbf{Derivation:}
+Dividing  x\textasciicircum{}4 + x\textasciicircum{}3 + 8x\textasciicircum{}2 + ax + b  by  x\textasciicircum{}2+1  gives quotient  x\textasciicircum{}2+x+7  and remainder  (a-1)x + (b-7) . For remainder to be zero,  a-1=0 $\implies a=1$  and  b-7=0 $\implies b=7$ .
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\question \textbf{16.} Given that $x^2 + 1$ is a factor of $x^4 - 2x^3 + x^2 - 2x + 2$, use the division algorithm to find what must be subtracted from the polynomial so that the result is exactly divisible by $x^2 + 1$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Subtracting} -2x + 2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Divide the given polynomial by $x^2 + 1$.
+  \item Identify the remainder of the division.
+  \item According to the division algorithm, the remainder is the part that prevents the polynomial from being exactly divisible.
+  \item Conclude that subtracting the remainder makes the polynomial divisible.
+  \item Verify the result by subtracting the remainder from the dividend.
+\end{enumerate}
+\textbf{Derivation:}
+ (x\textasciicircum{}4 - 2x\textasciicircum{}3 + x\textasciicircum{}2 - 2x + 2) = (x\textasciicircum{}2+1)(x\textasciicircum{}2-2x) + (-2x+2) . To make it divisible, we must subtract the remainder, which is  -2x+2 .
+\hfill \textit{Polynomials — division algorithm for polynomials}
+\vspace{0.3cm}
+
+\question \textbf{17.} The HCF of the smallest prime number and the smallest composite number is:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the smallest prime number, which is 2.
+  \item Identify the smallest composite number, which is 4.
+  \item Find the HCF of 2 and 4.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{2 = 2^1, 4 = 2^2. \text{HCF}(2, 4) = 2^1 = 2.}
+\end{center}
+\hfill \textit{Real Numbers — Fundamental Theorem of Arithmetic}
+\vspace{0.3cm}
+
+\question \textbf{18.} If two positive integers $a$ and $b$ are written as $a = x^3y^2$ and $b = xy^3$, where $x, y$ are prime numbers, then the $\text{HCF}(a, b)$ is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item List the prime factors of $a = x \times x \times x \times y \times y$.
+  \item List the prime factors of $b = x \times y \times y \times y$.
+  \item Identify the common factors with the lowest powers.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{HCF}(x^3y^2, xy^3) = x^{\min(3,1)} \cdot y^{\min(2,3)} = xy^2}
+\end{center}
+\hfill \textit{Real Numbers — Fundamental Theorem of Arithmetic}
+\vspace{0.3cm}
+
+\question \textbf{19.} The decimal expansion of the rational number $\frac{13}{125}$ will terminate after how many decimal places?
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Express the denominator 125 as a power of 5.
+  \item Check the form of the denominator to ensure it is $2^n \cdot 5^m$.
+  \item Since $125 = 5^3$, we multiply numerator and denominator by $2^3$ to make the denominator $10^3$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\frac{13}{125} = \frac{13}{5^3} = \frac{13 \times 2^3}{5^3 \times 2^3} = \frac{13 \times 8}{1000} = \frac{104}{1000} = 0.104}
+\end{center}
+\hfill \textit{Real Numbers — Decimal expansion of rational numbers}
+\vspace{0.3cm}
+
+\question \textbf{20.} If the $\text{LCM}(26, 169) = 338$, then $\text{HCF}(26, 169)$ is:
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the property: $\text{HCF}(a, b) \times \text{LCM}(a, b) = a \times b$.
+  \item Substitute the given values into the formula.
+  \item Solve for HCF.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{HCF} = \frac{26 \times 169}{338} = \frac{4394}{338} = 13}
+\end{center}
+\hfill \textit{Real Numbers — Relationship between HCF and LCM}
+\vspace{0.3cm}
+
+\question \textbf{21.} The product of a non-zero rational and an irrational number is always:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall the properties of irrational numbers.
+  \item Consider an example: $2 \times \sqrt{3} = 2\sqrt{3}$, which is irrational.
+  \item Conclude the general rule.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Rational} \times \text{Irrational} = \text{Irrational (for non-zero rational)}}
+\end{center}
+\hfill \textit{Real Numbers — Irrational Numbers}
+\vspace{0.3cm}
+
+\question \textbf{22.} Assertion (A): The HCF of $12$ and $18$ is $6$. Reason (R): For any two positive integers $a$ and $b$, $HCF(a, b) \times LCM(a, b) = a \times b$.
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate HCF of 12 and 18: $12 = 2^2 \times 3^1$, $18 = 2^1 \times 3^2$. HCF is $2^1 \times 3^1 = 6$. So, Assertion is true.
+  \item The formula $HCF \times LCM = a \times b$ is a standard property of real numbers. So, Reason is true.
+  \item While both are true, the Reason is a general property and does not directly explain why the HCF of 12 and 18 is 6.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{HCF(12, 18) = 6; \text{Formula}: HCF \times LCM = a \times b}
+\end{center}
+\hfill \textit{Real Numbers — Fundamental Theorem of Arithmetic}
+\vspace{0.3cm}
+
+\question \textbf{23.} Assertion (A): $\sqrt{3}$ is an irrational number. Reason (R): The square root of any positive integer is always an irrational number.
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item $\sqrt{3}$ cannot be expressed in the form $p/q$ where $p, q$ are integers and $q \neq 0$, so Assertion is true.
+  \item The square root of a perfect square like $\sqrt{4} = 2$ is rational. So, Reason is false.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Rationality test}: \sqrt{x} \in \mathbb{Q} \text{ if } x = k^2}
+\end{center}
+\hfill \textit{Real Numbers — Irrational Numbers}
+\vspace{0.3cm}
+
+\question \textbf{24.} Assertion (A): The number $0.375$ is a terminating decimal. Reason (R): A rational number $p/q$ terminates if the prime factorization of $q$ is of the form $2^n 5^m$, where $n, m$ are non-negative integers.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item $0.375 = 375/1000 = 3/8$. Since $8 = 2^3$, the denominator is in the form $2^n 5^m$. Assertion is true.
+  \item The theorem states that a rational number has a terminating decimal expansion if its denominator's prime factors are only 2s and 5s. Reason is true and correctly explains A.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{0.375 = \frac{375}{1000} = \frac{3}{2^3 \cdot 5^0}}
+\end{center}
+\hfill \textit{Real Numbers — Decimal Expansion}
+\vspace{0.3cm}
+
+\question \textbf{25.} Assertion (A): The HCF of two consecutive natural numbers is 1. Reason (R): Any two consecutive natural numbers are co-prime.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Consecutive numbers $n$ and $n+1$ have no common factor other than 1. Assertion is true.
+  \item Two numbers are co-prime if their HCF is 1. Since HCF of consecutive numbers is 1, they are co-prime. Reason is true and explains A.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{HCF(n, n+1) = 1}
+\end{center}
+\hfill \textit{Real Numbers — HCF and LCM}
+\vspace{0.3cm}
+
+\question \textbf{26.} Assertion (A): The product of a non-zero rational and an irrational number is always irrational. Reason (R): $\sqrt{2}$ is an irrational number.
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The product of a non-zero rational and an irrational is always irrational. Assertion is true.
+  \item $\sqrt{2}$ is indeed irrational. Reason is true.
+  \item While both are true, the fact that $\sqrt{2}$ is irrational is an example, not the general rule explaining why the product is irrational.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+r \in \mathbb{Q}, i \in \mathbb{I} \\
+\implies r \cdot i \in \mathbb{I}
+\end{aligned}}
+\end{center}
+\hfill \textit{Real Numbers — Irrational Numbers}
+\vspace{0.3cm}
+
+\question \textbf{27.} Find the HCF of $1260$ and $7344$ using the Euclid's division algorithm.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{18}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Apply Euclid's division lemma $a = bq + r$ repeatedly until the remainder is 0.
+  \item Identify the divisor at the step where the remainder becomes 0 as the HCF.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+7344 = 1260 \times 5 + 1044 \\
+1260 = 1044 \times 1 + 216 \\
+1044 = 216 \times 4 + 180 \\
+216 = 180 \times 1 + 36 \\
+180 = 36 \times 5 + 0 \\
+\text{HCF} = 36
+\end{aligned}}
+\end{center}
+\hfill \textit{Real Numbers — Euclid's Division Lemma}
+\vspace{0.3cm}
+
+\question \textbf{28.} Show that any positive odd integer is of the form $4q + 1$ or $4q + 3$, where $q$ is some integer.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{By Euclid}'s \text{division lemma with divisor} 4.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $a$ be any positive integer and $b=4$. By Euclid's division lemma, $a = 4q + r$, where $0 \le r < 4$.
+  \item Analyze the possible values of $r$ to distinguish between even and odd integers.
+\end{enumerate}
+\textbf{Derivation:}
+By Euclid's division lemma,  a = 4q + r  where  r $\in \{0, 1, 2, 3\}$ . \textbackslash{}\textbackslash{} If  r=0, a=4q=2(2q)  (even). \textbackslash{}\textbackslash{} If  r=2, a=4q+2=2(2q+1)  (even). \textbackslash{}\textbackslash{} If  r=1, a=4q+1  (odd). \textbackslash{}\textbackslash{} If  r=3, a=4q+3  (odd). \textbackslash{}\textbackslash{} Thus, any positive odd integer is of the form  4q+1  or  4q+3 .
+\hfill \textit{Real Numbers — Euclid's Division Lemma}
+\vspace{0.3cm}
+
+\question \textbf{29.} Check whether $12^n$ can end with the digit $0$ for any natural number $n$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{No, \text{it cannot end with} 0.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item A number ends with digit 0 if its prime factorization contains at least one pair of $2 \times 5$.
+  \item Find prime factors of $12^n$ and compare.
+\end{enumerate}
+\textbf{Derivation:}
+ 12\textasciicircum{}n = (2\textasciicircum{}2 $\times 3)^n = 2^{2n} \times 3^n$ . The prime factorization of  12\textasciicircum{}n  contains only 2 and 3. Since the prime factor 5 is not present, it cannot end with the digit 0.
+\hfill \textit{Real Numbers — Fundamental Theorem of Arithmetic}
+\vspace{0.3cm}
+
+\question \textbf{30.} Given that $\text{HCF}(306, 657) = 9$, find $\text{LCM}(306, 657)$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{22338}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the relationship: $\text{HCF}(a, b) \times \text{LCM}(a, b) = a \times b$.
+  \item Substitute the given values and solve for LCM.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+9 \times \text{LCM}(306, 657) = 306 \times 657 \\
+\text{LCM} = \frac{306 \times 657}{9} = 34 \times 657 = 22338
+\end{aligned}}
+\end{center}
+\hfill \textit{Real Numbers — Fundamental Theorem of Arithmetic}
+\vspace{0.3cm}
+
+\question \textbf{31.} Without performing long division, state whether $\frac{17}{8}$ has a terminating or non-terminating repeating decimal expansion.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Terminating decimal expansion}.}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check the denominator for the form $2^n \times 5^m$, where $n, m \ge 0$.
+  \item Conclude based on the prime factorization of the denominator.
+\end{enumerate}
+\textbf{Derivation:}
+Denominator  = 8 = 2\textasciicircum{}3 = 2\textasciicircum{}3 $\times 5^0$ . Since the denominator is of the form  2\textasciicircum{}n $\times 5^m$ , the rational number  $\frac{17}{8}$  has a terminating decimal expansion.
+\hfill \textit{Real Numbers — Decimals of Rational Numbers}
+\vspace{0.3cm}
+
+\question \textbf{32.} Prove that $3 + 2\sqrt{5}$ is an irrational number, given that $\sqrt{5}$ is an irrational number.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{3 + 2\sqrt{5} \text{is irrational}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Assume the contrary that $3 + 2\sqrt{5}$ is rational, i.e., $3 + 2\sqrt{5} = \frac{a}{b}$ where $a, b$ are integers and $b \neq 0$.
+  \item Rearrange the equation to isolate $\sqrt{5}$.
+  \item Since $a$ and $b$ are integers, $\frac{a-3b}{2b}$ must be rational, which contradicts the fact that $\sqrt{5}$ is irrational.
+  \item Conclude that the assumption was wrong and $3 + 2\sqrt{5}$ is irrational.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+3 + 2\sqrt{5} = \frac{a}{b} \\
+\implies 2\sqrt{5} = \frac{a}{b} - 3 \\
+\implies 2\sqrt{5} = \frac{a-3b}{b} \\
+\implies \sqrt{5} = \frac{a-3b}{2b}
+\end{aligned}}
+\end{center}
+\hfill \textit{Real Numbers — Irrationality of numbers}
+\vspace{0.3cm}
+
+\question \textbf{33.} Find the HCF and LCM of 96 and 404 by the prime factorization method and verify that HCF $\times$ LCM = product of the two numbers.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{HCF = 4, LCM = 9696}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Find prime factorization of 96: $2^5 \times 3^1$.
+  \item Find prime factorization of 404: $2^2 \times 101^1$.
+  \item Identify HCF (product of smallest powers of common primes) and LCM (product of greatest powers of all primes).
+  \item Verify the product equality: $4 \times 9696 = 38784$ and $96 \times 404 = 38784$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{96 = 2^5 \times 3; 404 = 2^2 \times 101; \text{HCF} = 2^2 = 4; \text{LCM} = 2^5 \times 3 \times 101 = 9696; 4 \times 9696 = 38784; 96 \times 404 = 38784}
+\end{center}
+\hfill \textit{Real Numbers — Fundamental Theorem of Arithmetic}
+\vspace{0.3cm}
+
+\question \textbf{34.} Without performing long division, state whether $\frac{129}{2^2 \times 5^7 \times 7^5}$ has a terminating or non-terminating repeating decimal expansion. Justify your answer.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{Non-\ \text{terminating repeating}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check the denominator for the form $2^n \times 5^m$.
+  \item Observe that the denominator contains a factor $7^5$ other than 2 and 5.
+  \item Conclude that by the theorem, since the prime factorization of the denominator is not of the form $2^n \times 5^m$, the decimal expansion is non-terminating repeating.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\text{Denominator } q = 2^2 \times 5^7 \times 7^5. \text{ Since } q \neq 2^n \times 5^m, \text{ the expansion is non-terminating repeating.}}
+\end{center}
+\hfill \textit{Real Numbers — Decimal expansion of rational numbers}
+\vspace{0.3cm}
+
+\question \textbf{35.} Use Euclid's division lemma to show that the square of any positive integer is either of the form $3m$ or $3m + 1$ for some integer $m$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Square is} 3m or 3m+1}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $a$ be any positive integer. By Euclid's lemma, $a = 3q + r$, where $r = 0, 1, 2$.
+  \item Case 1: $a = 3q \implies a^2 = 9q^2 = 3(3q^2) = 3m$.
+  \item Case 2: $a = 3q + 1 \implies a^2 = 9q^2 + 6q + 1 = 3(3q^2 + 2q) + 1 = 3m + 1$.
+  \item Case 3: $a = 3q + 2 \implies a^2 = 9q^2 + 12q + 4 = 3(3q^2 + 4q + 1) + 1 = 3m + 1$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{a^2 = (3q)^2 = 9q^2 = 3(3q^2); a^2 = (3q+1)^2 = 9q^2+6q+1 = 3(3q^2+2q)+1; a^2 = (3q+2)^2 = 9q^2+12q+4 = 3(3q^2+4q+1)+1}
+\end{center}
+\hfill \textit{Real Numbers — Euclid's Division Lemma}
+\vspace{0.3cm}
+
+\question \textbf{36.} There is a circular path around a sports field. Sonia takes 18 minutes to drive one round of the field, while Ravi takes 12 minutes for the same. If they both start at the same point and at the same time, and go in the same direction, after how many minutes will they meet again at the starting point?
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{36 \text{minutes}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Determine that the time they meet again is the Least Common Multiple (LCM) of their individual times.
+  \item Find prime factors of 18 and 12: $18 = 2 \times 3^2$ and $12 = 2^2 \times 3^1$.
+  \item Calculate LCM by taking the highest power of each prime factor involved.
+  \item LCM = $2^2 \times 3^2 = 4 \times 9 = 36$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{18 = 2 \times 3^2; 12 = 2^2 \times 3; \text{LCM}(18, 12) = 2^2 \times 3^2 = 36}
+\end{center}
+\hfill \textit{Real Numbers — Applications of HCF and LCM}
+\vspace{0.3cm}
+
+\question \textbf{37.} Prove that $\sqrt{5}$ is an irrational number. Hence, show that $3 + 2\sqrt{5}$ is also irrational.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Irrational}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Assume $\sqrt{5}$ is rational and express it as $a/b$ where $a, b$ are coprime integers and $b \neq 0$.
+  \item Square both sides to get $5 = a^2/b^2$, implying $a^2 = 5b^2$.
+  \item Conclude that $5$ divides $a^2$, and therefore $5$ divides $a$.
+  \item Substitute $a = 5k$ to show $b$ is also divisible by $5$, creating a contradiction.
+  \item For $3 + 2\sqrt{5}$, assume it is rational ($p/q$), isolate $\sqrt{5}$ and show it leads to a contradiction with the irrationality of $\sqrt{5}$.
+\end{enumerate}
+\textbf{Derivation:}
+Let  $\sqrt{5} = \frac{a}{b} \implies a^2 = 5b^2$ . Since  5 | a\textasciicircum{}2 ,  5 | a . Let  a = 5k . Then  (5k)\textasciicircum{}2 = 5b\textasciicircum{}2 $\implies 25k^2 = 5b^2 \implies b^2 = 5k^2$ . Thus  5 | b . Contradiction. Let  3+2$\sqrt{5} = \frac{p}{q} \implies 2\sqrt{5} = \frac{p}{q} - 3 = \frac{p-3q}{q} \implies \sqrt{5} = \frac{p-3q}{2q}$ . Since  p, q  are integers, RHS is rational, but  $\sqrt{5}$  is irrational. Contradiction.
+\hfill \textit{Real Numbers — Irrationality}
+\vspace{0.3cm}
+
+\question \textbf{38.} Two tankers contain $850$ litres and $680$ litres of petrol respectively. Find the maximum capacity of a container which can measure the petrol of either tanker in exact number of times.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{170 \text{litres}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify that the problem requires finding the Highest Common Factor (HCF) of 850 and 680.
+  \item Use Euclid's Division Lemma or Prime Factorization.
+  \item Prime factorize 850: $2 \times 5^2 \times 17$.
+  \item Prime factorize 680: $2^3 \times 5 \times 17$.
+  \item Identify common factors with lowest powers: $2^1 \times 5^1 \times 17^1 = 170$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{850 = 2 \times 5 \times 5 \times 17; 680 = 2 \times 2 \times 2 \times 5 \times 17. HCF(850, 680) = 2 \times 5 \times 17 = 170.}
+\end{center}
+\hfill \textit{Real Numbers — HCF and LCM}
+\vspace{0.3cm}
+
+\question \textbf{39.} Show that any positive odd integer is of the form $4q + 1$ or $4q + 3$, where $q$ is some integer.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Proved using Euclid}'s \text{Division Lemma}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $a$ be any positive odd integer and $b = 4$.
+  \item By Euclid's Division Lemma, $a = 4q + r$, where $0 \leq r < 4$.
+  \item The possible values for $r$ are $0, 1, 2, 3$.
+  \item Test each case: $r=0 \implies a=4q$ (even), $r=1 \implies a=4q+1$ (odd), $r=2 \implies a=4q+2$ (even), $r=3 \implies a=4q+3$ (odd).
+  \item Conclude that odd integers must be of the form $4q+1$ or $4q+3$.
+\end{enumerate}
+\textbf{Derivation:}
+By EDL,  a = 4q + r, r $\in \{0,1,2,3\}$ . Case 1:  a=4q=2(2q)  (Even). Case 2:  a=4q+1  (Odd). Case 3:  a=4q+2=2(2q+1)  (Even). Case 4:  a=4q+3  (Odd). Hence proved.
+\hfill \textit{Real Numbers — Euclid's Division Lemma}
+\vspace{0.3cm}
+
+\question \textbf{40.} Find the smallest number which when divided by 28 and 32 leaves remainders 8 and 12 respectively.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{204}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Observe that the difference between divisors and remainders is constant: $28 - 8 = 20$ and $32 - 12 = 20$.
+  \item Find the LCM of the divisors 28 and 32.
+  \item Prime factorization of $28 = 2^2 \times 7$.
+  \item Prime factorization of $32 = 2^5$.
+  \item LCM is $2^5 \times 7 = 32 \times 7 = 224$.
+  \item Subtract the constant difference (20) from the LCM: $224 - 20 = 204$.
+\end{enumerate}
+\textbf{Derivation:}
+Divisor  d\_1=28, r\_1=8, d\_1-r\_1=20 .  d\_2=32, r\_2=12, d\_2-r\_2=20 . Constant  k=20 . Smallest number  = LCM(28, 32) - k = 224 - 20 = 204 .
+\hfill \textit{Real Numbers — LCM Applications}
+\vspace{0.3cm}
+
+\end{questions}
+
+\end{document}

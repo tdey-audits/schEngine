@@ -1,0 +1,186 @@
+{
+  "batch_id": "20260604_145005_e964a7e3",
+  "generated_at": "2026-06-04T14:50:05.304739",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A tangent $PQ$ at a point $P$ of a circle of radius $5$ $cm$ meets a line through the centre $O$ at a point $Q$ so that $OQ = 13$ $cm$. Find the length of $PQ$.",
+      "answer": "$12$ $cm$",
+      "solution": {
+        "steps": [
+          "Since $PQ$ is a tangent at $P$, the radius $OP$ is perpendicular to $PQ$ ($OP \\perp PQ$).",
+          "In $\\triangle OPQ$, by Pythagoras theorem, $OQ^2 = OP^2 + PQ^2$.",
+          "Substitute the values: $13^2 = 5^2 + PQ^2$.",
+          "Solve for $PQ$: $169 = 25 + PQ^2 \\Rightarrow PQ^2 = 144 \\Rightarrow PQ = 12$ $cm$."
+        ],
+        "derivation": "$OP \\perp PQ \\Rightarrow \\angle OPQ = 90^\\circ \\\\ OQ^2 = OP^2 + PQ^2 \\\\ 13^2 = 5^2 + PQ^2 \\\\ 169 - 25 = PQ^2 \\\\ PQ = \\sqrt{144} = 12$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "caption": "Tangent to a circle",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 0,
+            "y": 2,
+            "label": "P"
+          },
+          {
+            "kind": "point",
+            "id": "Q",
+            "x": 3,
+            "y": 0,
+            "label": "Q"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "P",
+            "label": "5 cm"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "Q",
+            "label": "13 cm"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "Q",
+            "label": "PQ"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:05.304227",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145005_2513f1_01"
+    },
+    {
+      "question": "Two concentric circles are of radii $5$ $cm$ and $3$ $cm$. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "answer": "$8$ $cm$",
+      "solution": {
+        "steps": [
+          "Let $O$ be the common center. Let $AB$ be the chord of the larger circle tangent to the smaller circle at $M$.",
+          "Then $OM \\perp AB$. In $\\triangle OMA$, $OA = 5$ $cm$ and $OM = 3$ $cm$.",
+          "By Pythagoras theorem, $AM = \\sqrt{OA^2 - OM^2} = \\sqrt{25 - 9} = 4$ $cm$.",
+          "Since the perpendicular from the centre bisects the chord, $AB = 2 \\times AM = 8$ $cm$."
+        ],
+        "derivation": "$AM^2 + OM^2 = OA^2 \\\\ AM^2 + 3^2 = 5^2 \\\\ AM^2 = 25 - 9 = 16 \\\\ AM = 4 \\\\ AB = 2 \\times AM = 8$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents and chords",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:05.304356",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145005_d412d9_02"
+    },
+    {
+      "question": "If tangents $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\\circ$, find $\\angle POA$.",
+      "answer": "$50^\\circ$",
+      "solution": {
+        "steps": [
+          "In quadrilateral $OAPB$, $\\angle OAP = \\angle OBP = 90^\\circ$ (radius $\\perp$ tangent).",
+          "The sum of angles in a quadrilateral is $360^\\circ$, so $\\angle AOB = 180^\\circ - 80^\\circ = 100^\\circ$.",
+          "Since $OP$ bisects $\\angle AOB$, $\\angle POA = \\frac{1}{2} \\angle AOB$.",
+          "Therefore, $\\angle POA = 100^\\circ / 2 = 50^\\circ$."
+        ],
+        "derivation": "\\angle AOB + \\angle APB = 180^\\circ \\\\ \\angle AOB + 80^\\circ = 180^\\circ \\\\ \\angle AOB = 100^\\circ \\\\ \\angle POA = \\frac{1}{2} \\angle AOB = 50^\\circ"
+      },
+      "topic": "Circles",
+      "subtopic": "Properties of tangents",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:05.304404",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145005_2b6659_03"
+    },
+    {
+      "question": "A quadrilateral $ABCD$ is drawn to circumscribe a circle. Prove that $AB + CD = AD + BC$.",
+      "answer": "Proved",
+      "solution": {
+        "steps": [
+          "Tangents drawn from an external point to a circle are equal in length.",
+          "Let the circle touch $AB, BC, CD, DA$ at $P, Q, R, S$ respectively. Then $AP=AS, BP=BQ, CR=CQ, DR=DS$.",
+          "Summing these: $(AP+BP) + (CR+DR) = (AS+DS) + (BQ+CQ)$.",
+          "This simplifies to $AB + CD = AD + BC$."
+        ],
+        "derivation": "AP=AS, BP=BQ, CR=CQ, DR=DS \\\\ (AP+BP) + (CR+DR) = (AS+DS) + (BQ+CQ) \\\\ AB + CD = AD + BC"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents from an external point",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:05.304446",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145005_56df74_04"
+    },
+    {
+      "question": "Prove that the perpendicular at the point of contact to the tangent to a circle passes through the centre of the circle.",
+      "answer": "Proved using contradiction",
+      "solution": {
+        "steps": [
+          "Assume that the perpendicular to the tangent at the point of contact $P$ does not pass through the centre $O$.",
+          "Let another line through $P$ pass through $O$, such that $\\angle OPT = 90^\\circ$ (where $T$ is on the tangent).",
+          "This contradicts the given that the perpendicular is at $P$.",
+          "Hence, the perpendicular must pass through $O$."
+        ],
+        "derivation": "\\text{Let } OP \\perp \\text{tangent at } P. \\\\ \\text{If } O'P \\perp \\text{tangent at } P, \\text{ then } \\angle O'PT = \\angle OPT = 90^\\circ. \\\\ \\text{This implies } O'P \\text{ and } OP \\text{ coincide.} \\\\ \\therefore O' = O."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:50:05.304473",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145005_340a8b_05"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "batch_id": "20260604_134406_27253c0c",
+  "generated_at": "2026-06-04T13:44:06.133490",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Statistics",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The mean of the first five natural numbers is 3. Reason (R): The mean of a set of observations is the sum of observations divided by the total number of observations.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Sum of first 5 natural numbers = 1 + 2 + 3 + 4 + 5 = 15",
+          "Mean = Sum / Number of observations = 15 / 5 = 3",
+          "Assertion is true and Reason is the correct definition/formula."
+        ],
+        "derivation": "\\text{Mean} = \\frac{\\sum x_i}{n} = \\frac{1+2+3+4+5}{5} = \\frac{15}{5} = 3"
+      },
+      "topic": "Statistics",
+      "subtopic": "Mean of ungrouped data",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:06.133379",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134406_322dd8_01"
+    },
+    {
+      "question": "Assertion (A): The empirical relationship between mean, median, and mode is $3 \\text{Median} = \\text{Mode} + 2 \\text{Mean}$. Reason (R): For a symmetric distribution, mean, median, and mode are equal.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "The empirical formula is indeed 3 Median = Mode + 2 Mean.",
+          "In a perfectly symmetric distribution, mean = median = mode, which satisfies the formula.",
+          "Both statements are true and related to the central tendency properties."
+        ],
+        "derivation": "3 \\text{Median} = \\text{Mode} + 2 \\text{Mean}"
+      },
+      "topic": "Statistics",
+      "subtopic": "Relationship between mean, median and mode",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:06.133415",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134406_fe0507_02"
+    },
+    {
+      "question": "Assertion (A): The mode of the data 2, 3, 4, 3, 2, 3 is 3. Reason (R): Mode is the observation that occurs most frequently.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Count frequencies: 2 appears twice, 3 appears three times, 4 appears once.",
+          "The most frequent value is 3.",
+          "Assertion is true and Reason is the correct definition of mode."
+        ],
+        "derivation": "\\text{Frequency of 2} = 2, \\text{Frequency of 3} = 3, \\text{Frequency of 4} = 1. \\therefore \\text{Mode} = 3"
+      },
+      "topic": "Statistics",
+      "subtopic": "Mode of ungrouped data",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:06.133423",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134406_eba76b_03"
+    },
+    {
+      "question": "Assertion (A): If the mean of a distribution is 20 and the sum of observations is 100, then the number of observations is 5. Reason (R): The sum of observations = Mean \\times Number of observations.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Given Mean = 20, Sum = 100.",
+          "Using formula: 100 = 20 * n => n = 100 / 20 = 5.",
+          "Assertion is true and Reason provides the correct formula used for calculation."
+        ],
+        "derivation": "n = \\frac{\\sum x_i}{\\bar{x}} = \\frac{100}{20} = 5"
+      },
+      "topic": "Statistics",
+      "subtopic": "Mean of ungrouped data",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:06.133428",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134406_56bfb4_04"
+    },
+    {
+      "question": "Assertion (A): The median of the data 5, 8, 12, 16, 20 is 12. Reason (R): The median is always the middle value when the data is arranged in ascending order.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Data: 5, 8, 12, 16, 20 (already in ascending order).",
+          "There are 5 observations (odd). Median is the (n+1)/2 th term.",
+          "3rd term is 12. Assertion is true and Reason is the correct definition."
+        ],
+        "derivation": "\\text{Median} = \\left(\\frac{n+1}{2}\\right)^{\\text{th}} \\text{term} = \\left(\\frac{5+1}{2}\\right)^{\\text{th}} = 3^{\\text{rd}} \\text{term} = 12"
+      },
+      "topic": "Statistics",
+      "subtopic": "Median of ungrouped data",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:06.133433",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134406_044ae9_05"
+    }
+  ]
+}

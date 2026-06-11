@@ -1,0 +1,93 @@
+{
+  "batch_id": "20260609_111408_b1b09889",
+  "generated_at": "2026-06-09T11:14:08.080630",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A train travels at a certain average speed for a distance of $540 \\text{ km}$. If the speed of the train is increased by $9 \\text{ km/hr}$, the journey would have taken $2 \\text{ hours}$ less. Find the original average speed of the train. Also, find the time taken if the train travels at the increased speed.",
+      "answer": "Original speed = $45 \\text{ km/hr}$, Time taken at increased speed = $10 \\text{ hours}$",
+      "solution": {
+        "steps": [
+          "Let the original speed of the train be $x \\text{ km/hr}$.",
+          "The time taken to cover $540 \\text{ km}$ at original speed is $t_1 = 540/x \\text{ hours}$.",
+          "If speed is increased to $(x + 9) \\text{ km/hr}$, the new time taken is $t_2 = 540/(x + 9) \\text{ hours}$.",
+          "According to the condition, $t_1 - t_2 = 2$, which implies $540/x - 540/(x + 9) = 2$.",
+          "Simplify the equation to form the quadratic $x^2 + 9x - 2430 = 0$.",
+          "Factorise the quadratic equation to find $x = 45$ (rejecting negative speed).",
+          "Calculate the final time taken at the increased speed using $540/(45 + 9)$."
+        ],
+        "derivation": "$t_1 = \\frac{540}{x} \\text{ and } t_2 = \\frac{540}{x+9} \\\\ \\frac{540}{x} - \\frac{540}{x+9} = 2 \\\\ 540 \\left( \\frac{x+9-x}{x(x+9)} \\right) = 2 \\\\ 540 \\times 9 = 2(x^2 + 9x) \\\\ 2430 = x^2 + 9x \\\\ x^2 + 9x - 2430 = 0 \\\\ x^2 + 54x - 45x - 2430 = 0 \\\\ x(x+54) - 45(x+54) = 0 \\\\ (x-45)(x+54) = 0 \\\\ x = 45 \\text{ or } x = -54 \\\\ \\text{Original speed } x = 45 \\text{ km/hr} \\\\ \\text{Increased speed time} = \\frac{540}{45+9} = \\frac{540}{54} = 10 \\text{ hours}$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Word problems based on speed, distance, and time",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T11:14:08.080322",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/430-2-1_Mathematics Basic.pdf",
+            "question_no": 32,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 35,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-2-3_Mathematics Basic.pdf",
+            "question_no": 33,
+            "paper_variant": "basic",
+            "question_type": "la"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_111408_8c58a5_01"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "batch_id": "20260609_154648_358609c3",
+  "generated_at": "2026-06-09T15:46:48.354792",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Polynomials",
+  "subtopic": "geometrical meaning of zeros",
+  "difficulty": "simple",
+  "question_type": "vsa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A polynomial $p(x)$ of degree $3$ has a graph that intersects the $x$-axis at exactly two distinct points. If one of the zeros is $x = 0$ and the graph is tangent to the $x$-axis at the point $(2, 0)$, write the polynomial $p(x)$ in terms of a constant $k$ and verify the number of zeros.",
+      "answer": "$p(x) = k(x^3 - 4x^2 + 4x)$",
+      "solution": {
+        "steps": [
+          "Since the graph intersects at $x=0$, $(x-0)$ or $x$ is a factor. Since it is tangent at $x=2$, $(x-2)^2$ is a factor.",
+          "The general form is $p(x) = k(x)(x-2)^2$. Expanding this gives $p(x) = k(x)(x^2 - 4x + 4) = k(x^3 - 4x^2 + 4x)$."
+        ],
+        "derivation": "$p(x) = k(x)(x-2)^2 \\\\ p(x) = k(x)(x^2 - 4x + 4) \\\\ p(x) = k(x^3 - 4x^2 + 4x)$"
+      },
+      "topic": "Polynomials",
+      "subtopic": "geometrical meaning of zeros",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-09T15:46:48.354707",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 22,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 24,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 23,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 5,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 8,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 3,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_154648_ae8566_01"
+    }
+  ]
+}

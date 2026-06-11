@@ -1,0 +1,13 @@
+{
+  "batch_id": "20260610_145637_0b16fb6c",
+  "generated_at": "2026-06-10T14:56:37.375479",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "factorisation method",
+  "difficulty": null,
+  "question_type": null,
+  "question_count": 0,
+  "mechanisms": [],
+  "questions": []
+}

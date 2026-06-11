@@ -1,0 +1,902 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag Solutions} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{questions}
+\question \textbf{1.} The total surface area of a cube whose edge is $5 \text{ cm}$ is:
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item State the formula for the total surface area of a cube: $TSA = 6a^2$.
+  \item Substitute $a = 5 \text{ cm}$.
+  \item Calculate the final value.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{TSA = 6 \times (5)^2 = 6 \times 25 = 150 \text{ cm}^2}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Surface area of cube}
+\vspace{0.3cm}
+
+\question \textbf{2.} If the slant height of a cone is $10 \text{ cm}$ and the radius is $6 \text{ cm}$, its curved surface area is:
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item State the formula for the curved surface area of a cone: $CSA = \pi rl$.
+  \item Substitute $r = 6 \text{ cm}$, $l = 10 \text{ cm}$.
+  \item Calculate the final value in terms of $\text{ }$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{CSA = \pi \times 6 \times 10 = 60\pi \text{ cm}^2}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Curved surface area of cone}
+\vspace{0.3cm}
+
+\question \textbf{3.} The lateral surface area of a cuboid of dimensions $8 \text{ cm} \times 6 \text{ cm} \times 5 \text{ cm}$ is:
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item State the formula for the lateral surface area of a cuboid: $LSA = 2h(l + b)$.
+  \item Identify $l = 8 \text{ cm}$, $b = 6 \text{ cm}$, $h = 5 \text{ cm}$.
+  \item Calculate the final value.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{LSA = 2 \times 5 \times (8 + 6) = 10 \times 14 = 140 \text{ cm}^2}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Surface area of cuboid}
+\vspace{0.3cm}
+
+\question \textbf{4.} Assertion (A): The total surface area of a solid hemisphere of radius $r$ is $3\pi r^2$. Reason (R): The total surface area of a sphere is $4\pi r^2$.
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The total surface area of a hemisphere includes the curved surface area ($2\pi r^2$) and the area of the circular base ($\pi r^2$). Thus, TSA = $3\pi r^2$. Assertion is true.
+  \item The formula for the total surface area of a sphere is indeed $4\pi r^2$. Reason is true.
+  \item The reason explains the surface area of a sphere, not the derivation of the hemisphere's area. Thus, R is not the correct explanation for A.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{TSA_{\text{hemisphere}} = 2\pi r^2 + \pi r^2 = 3\pi r^2}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Surface Area of Solids}
+\vspace{0.3cm}
+
+\question \textbf{5.} Assertion (A): If the radius of a cylinder is doubled and its height is halved, the volume remains the same. Reason (R): The volume of a cylinder is given by $V = \pi r^2 h$.
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let initial volume be $V = \pi r^2 h$.
+  \item New volume $V' = \pi (2r)^2 (h/2) = \pi (4r^2) (h/2) = 2\pi r^2 h = 2V$. Assertion is false.
+  \item The volume formula for a cylinder is correctly identified as $\pi r^2 h$. Reason is true.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{V_{new} = \pi (2r)^2 \times \frac{h}{2} = 2\pi r^2 h}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Volume of Cylinder}
+\vspace{0.3cm}
+
+\question \textbf{6.} Assertion (A): The volume of a cone with radius $r$ and height $h$ is $\frac{1}{3}\pi r^2 h$. Reason (R): A cone is one-third of a cylinder with the same base and height.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The volume of a cone is mathematically defined as $\frac{1}{3}\pi r^2 h$. Assertion is true.
+  \item Geometrically, a cone occupies one-third the volume of a cylinder having the same radius and height. Reason is true and explains the assertion.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{V_{\text{cone}} = \frac{1}{3} V_{\text{cylinder}} = \frac{1}{3} \pi r^2 h}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Volume of Cone}
+\vspace{0.3cm}
+
+\question \textbf{7.} Assertion (A): The slant height $l$ of a cone is given by $l = \sqrt{h^2 + r^2}$. Reason (R): This is derived from Pythagoras theorem applied to the triangle formed by height, radius, and slant height.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The slant height $l$, radius $r$, and vertical height $h$ form a right-angled triangle in a cone.
+  \item By Pythagoras theorem, the hypotenuse $l^2 = r^2 + h^2$, so $l = \sqrt{r^2 + h^2}$. Assertion is true.
+  \item The Reason correctly identifies the geometric origin of the formula. Thus, R is the correct explanation.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+l^2 = r^2 + h^2 \\
+\implies l = \sqrt{r^2 + h^2}
+\end{aligned}}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Cone Properties}
+\vspace{0.3cm}
+
+\question \textbf{8.} Assertion (A): If the surface area of a sphere is $616 \text{ cm}^2$, its radius is $7 \text{ cm}$. Reason (R): The surface area of a sphere is $4\pi r^2$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Using $4\pi r^2 = 616$, we have $4 \times (22/7) \times r^2 = 616$.
+  \item $r^2 = 616 \times 7 / (4 \times 22) = 616 \times 7 / 88 = 7 \times 7 = 49$.
+  \item $r = 7 \text{ cm}$. Assertion is true.
+  \item Reason is the correct formula used for the calculation. Thus, R is the correct explanation.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+4 \times \frac{22}{7} \times r^2 = 616 \\
+\implies r^2 = 49 \\
+\implies r = 7
+\end{aligned}}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Surface Area of Sphere}
+\vspace{0.3cm}
+
+\question \textbf{9.} Two cubes each of volume $64 \text{ cm}^3$ are joined end to end. Find the surface area of the resulting cuboid.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{160 \text{ cm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Determine the side of the cube using the volume formula $a^3 = 64$.
+  \item Identify the dimensions of the new cuboid ($l=8, b=4, h=4$) and calculate the surface area using $2(lb + bh + lh)$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{a = \sqrt[3]{64} = 4 \text{ cm}. \text{ New dimensions: } l=8, b=4, h=4. \text{ SA} = 2(8 \times 4 + 4 \times 4 + 8 \times 4) = 2(32 + 16 + 32) = 2(80) = 160 \text{ cm}^2.}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Combination of solids}
+\vspace{0.3cm}
+
+\question \textbf{10.} A metallic sphere of radius $4.2 \text{ cm}$ is melted and recast into the shape of a cylinder of radius $6 \text{ cm}$. Find the height of the cylinder.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{2.744 \text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Equate the volume of the sphere to the volume of the cylinder: $\frac{4}{3}\pi r_1^3 = \pi r_2^2 h$.
+  \item Solve for $h$ by substituting the given values.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{4}{3} \pi (4.2)^3 = \pi (6)^2 h \\
+\Rightarrow h = \frac{4 \times 74.088}{3 \times 36} = 2.744 \text{ cm}.
+\end{aligned}}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Conversion of solids}
+\vspace{0.3cm}
+
+\question \textbf{11.} The slant height of a frustum of a cone is $4 \text{ cm}$ and the perimeters of its circular ends are $18 \text{ cm}$ and $6 \text{ cm}$. Find the curved surface area of the frustum.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{48 \text{ cm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the formula for curved surface area of a frustum: $CSA = \pi (r_1 + r_2)l$.
+  \item Since $2\pi r_1 = 18$ and $2\pi r_2 = 6$, note that $\pi(r_1 + r_2) = \frac{18+6}{2} = 12$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\pi(r_1 + r_2) = \frac{18+6}{2} = 12. \text{ CSA} = 12 \times 4 = 48 \text{ cm}^2.}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Frustum of a cone}
+\vspace{0.3cm}
+
+\question \textbf{12.} A solid is in the form of a right circular cone mounted on a hemisphere. If the radius of the hemisphere and the cone is $3.5 \text{ cm}$ and the height of the cone is $4 \text{ cm}$, find the volume of the solid. (Use $\pi = 22/7$)
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{154 \text{ cm}^3}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item \(
+\text{Volume of solid} = \text{Volume of cone} + \text{Volume of hemisphere}.
+\)
+  \item Apply $V = \frac{1}{3}\pi r^2 h + \frac{2}{3}\pi r^3$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{V = \frac{1}{3} \times \frac{22}{7} \times (3.5)^2 \times 4 + \frac{2}{3} \times \frac{22}{7} \times (3.5)^3 = 51.33 + 89.83 \approx 154 \text{ cm}^3.}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Combination of solids}
+\vspace{0.3cm}
+
+\question \textbf{13.} The diameter of a metallic ball is $4.2 \text{ cm}$. What is the mass of the ball, if the density of the metal is $8.9 \text{ g/cm}^3$?
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{345.39 \text{ g}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the volume of the sphere using $V = \frac{4}{3}\pi r^3$ where $r = 2.1 \text{ cm}$.
+  \item Calculate mass using $\text{Mass} = \text{Density} \times \text{Volume}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{V = \frac{4}{3} \times \frac{22}{7} \times (2.1)^3 = 38.808 \text{ cm}^3. \text{ Mass} = 38.808 \times 8.9 = 345.3912 \text{ g}.}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Volume of sphere}
+\vspace{0.3cm}
+
+\question \textbf{14.} A metallic sphere of radius $6 \text{ cm}$ is melted and recast into the shape of a cylinder of radius $4 \text{ cm}$. Find the height of the cylinder.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{18 \text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Equate the volume of the sphere to the volume of the cylinder.
+  \item Substitute the formula for the volume of a sphere $\frac{4}{3}\pi r^3$ and cylinder $\pi r^2 h$.
+  \item Solve for the height $h$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{4}{3} \pi (6)^3 = \pi (4)^2 h \\
+\implies \frac{4}{3} \cdot 216 = 16h \\
+\implies 4 \cdot 72 = 16h \\
+\implies 288 = 16h \\
+\implies h = 18 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Conversion of solid from one shape to another}
+\vspace{0.3cm}
+
+\question \textbf{15.} Two cubes each of volume $64 \text{ cm}^3$ are joined end to end. Find the surface area of the resulting cuboid.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{160 \text{ cm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Find the edge length of the cube by taking the cube root of the volume.
+  \item Determine the dimensions of the new cuboid (length, breadth, height).
+  \item Apply the surface area formula $2(lb + bh + lh)$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+a^3 = 64 \\
+\implies a = 4 \text{ cm}. \text{ New dimensions: } l=8, b=4, h=4. \text{ SA} = 2(8 \cdot 4 + 4 \cdot 4 + 8 \cdot 4) = 2(32 + 16 + 32) = 2(80) = 160 \text{ cm}^2
+\end{aligned}}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Combination of solids}
+\vspace{0.3cm}
+
+\question \textbf{16.} A conical tent is $10 \text{ m}$ high and the radius of its base is $24 \text{ m}$. Find the slant height of the tent and the cost of the canvas required to make the tent, if the cost of $1 \text{ m}^2$ canvas is $\text{ \text{Rs.~}} 70$.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{\text{Slant height} = 26 \text{ m}, \text{Cost} = \text{ \text{Rs.~}} 137280}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate slant height $l = \sqrt{r^2 + h^2}$.
+  \item Calculate the curved surface area (CSA) of the cone using $\pi rl$.
+  \item Multiply the CSA by the given cost per square meter.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{l = \sqrt{24^2 + 10^2} = \sqrt{576 + 100} = 26 \text{ m}. \text{ CSA} = \frac{22}{7} \times 24 \times 26 = \frac{13728}{7} \text{ m}^2. \text{ Cost} = \frac{13728}{7} \times 70 = 137280}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Cone}
+\vspace{0.3cm}
+
+\question \textbf{17.} A medicine capsule is in the shape of a cylinder with two hemispheres stuck to each of its ends. The length of the entire capsule is $14 \text{ mm}$ and the diameter of the capsule is $5 \text{ mm}$. Find its surface area.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{220 \text{ mm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the cylindrical part length by subtracting the radii of the two hemispheres from the total length.
+  \item Calculate the CSA of the cylinder and the CSA of the two hemispheres.
+  \item Sum the two areas to find the total surface area.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{r = 2.5 \text{ mm}, h_{\text{cyl}} = 14 - (2.5 + 2.5) = 9 \text{ mm}. \text{ SA} = 2\pi rh + 2(2\pi r^2) = 2\pi r(h + 2r) = 2 \times \frac{22}{7} \times 2.5 \times (9 + 5) = 2 \times \frac{22}{7} \times 2.5 \times 14 = 220 \text{ mm}^2}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Combination of solids}
+\vspace{0.3cm}
+
+\question \textbf{18.} A hemispherical tank, full of water, is emptied by a pipe at the rate of $3\frac{4}{7}$ litres per second. How much time will it take to empty half the tank, if it is $3 \text{ m}$ in diameter? (Take $\pi = \frac{22}{7}$)
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{16.5 \text{ minutes}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Calculate the volume of the hemispherical tank using $\frac{2}{3}\pi r^3$.
+  \item Find half the volume and convert it to litres ($1 \text{ m}^3 = 1000 \text{ L}$).
+  \item Divide by the rate of flow and convert seconds to minutes.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{r = 1.5 \text{ m}. \text{ Vol} = \frac{2}{3} \times \frac{22}{7} \times (1.5)^3 \approx 7.07 \text{ m}^3. \text{ Half Vol} = 3.535 \text{ m}^3 = 3535 \text{ L}. \text{ Rate} = \frac{25}{7} \text{ L/s}. \text{ Time} = 3535 \div \frac{25}{7} = 990 \text{ seconds} = 16.5 \text{ minutes}.}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Hemisphere}
+\vspace{0.3cm}
+
+\question \textbf{19.} A solid toy is in the form of a hemisphere surmounted by a right circular cone. The height of the cone is $2$ cm and the diameter of the base is $4$ cm. If a right circular cylinder circumscribes the toy, find the difference between the volume of the cylinder and the volume of the toy. (Take $\pi = 3.14$)
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{16.74 \text{ cm}^3}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the dimensions: Cone radius $r=2$ cm, height $h=2$ cm. Hemisphere radius $r=2$ cm.
+  \item Calculate volume of the toy: V\_\{toy\} = V\_\{cone\} + V\_\{hemisphere\} = $\frac{1}{3}\pi r^2 h + \frac{2}{3}\pi r^3$.
+  \item Determine dimensions of the circumscribing cylinder: Radius $r=2$ cm, Total height $H = h + r = 2 + 2 = 4$ cm.
+  \item Calculate volume of the cylinder: $V_{cyl} = \pi r^2 H$.
+  \item Calculate the difference: $V_{cyl} - V_{toy}$.
+\end{enumerate}
+\textbf{Derivation:}
+V\_\{toy\} = $\frac{1}{3}(3.14)(2^2)(2) + \frac{2}{3}(3.14)(2^3) = \frac{8.37 + 16.74}{1} = 25.12 \text{ cm}^3. \\ V_{cyl} = (3.14)(2^2)(4) = 50.24 \text{ cm}^3. \\ \text{Difference} = 50.24 - 25.12 = 25.12 \text{ cm}^3. \text{Correction: } V_{toy} = 8.373 + 16.746 = 25.12. \text{ Difference} = 50.24 - 25.12 = 25.12 \text{ cm}^3.$
+\hfill \textit{Surface Areas and Volumes — Combination of solids}
+\vspace{0.3cm}
+
+\question \textbf{20.} A metallic sphere of radius $6$ cm is melted and recast into the shape of a right circular cylinder of radius $6$ cm. Find the height of the cylinder.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{8 \text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Equate the volume of the sphere to the volume of the cylinder since the material remains constant.
+  \item Formula for sphere volume: $V_s = \frac{4}{3}\pi r_s^3$.
+  \item Formula for cylinder volume: $V_c = \pi r_c^2 h$.
+  \item Substitute the given values $r_s = 6$ and $r_c = 6$.
+  \item Solve for $h$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\frac{4}{3}\pi (6)^3 = \pi (6)^2 h \\
+\frac{4}{3} \times 216 = 36h \\
+4 \times 72 = 36h \\
+288 = 36h \\
+h = 8 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Conversion of solids}
+\vspace{0.3cm}
+
+\question \textbf{21.} A bucket is in the form of a frustum of a cone with a capacity of $12308.8 \text{ cm}^3$. The radii of the top and bottom circular ends are $20$ cm and $12$ cm respectively. Find the height of the bucket. (Use $\pi = 3.14$)
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{15 \text{ cm}}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item State the formula for the volume of a frustum: $V = \frac{1}{3}\pi h (R^2 + r^2 + Rr)$.
+  \item Substitute given values: $V = 12308.8$, $R = 20$, $r = 12$.
+  \item Calculate the term $(R^2 + r^2 + Rr) = 400 + 144 + 240 = 784$.
+  \item Set up the equation: $12308.8 = \frac{1}{3} \times 3.14 \times h \times 784$.
+  \item Solve for $h$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+12308.8 = \frac{3.14 \times h \times 784}{3} \\
+36926.4 = 2461.76h \\
+h = \frac{36926.4}{2461.76} = 15 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Frustum of a cone}
+\vspace{0.3cm}
+
+\question \textbf{22.} A medicine capsule is in the shape of a cylinder with two hemispheres stuck to each of its ends. The length of the entire capsule is $14$ mm and the diameter of the capsule is $5$ mm. Find its surface area.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{220 \text{ mm}^2}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Determine the dimensions: Total length = $14$ mm, radius of hemisphere $r = 2.5$ mm.
+  \item Height of cylindrical part $h = 14 - 2.5 - 2.5 = 9$ mm.
+  \item Surface area of capsule = CSA of cylinder + $2 \times$ CSA of hemisphere.
+  \item Formula: $2\pi rh + 2(2\pi r^2) = 2\pi r(h + 2r)$.
+  \item Calculate value using $\pi = 22/7$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+SA = 2 \times \frac{22}{7} \times 2.5(9 + 2(2.5)) \\
+SA = 2 \times \frac{22}{7} \times 2.5(14) \\
+SA = 2 \times 22 \times 2.5 \times 2 = 220 \text{ mm}^2
+\end{aligned}}
+\end{center}
+\hfill \textit{Surface Areas and Volumes — Combination of solids}
+\vspace{0.3cm}
+
+\question \textbf{23.} If the probability of an event $E$ occurring is $0.65$, what is the probability of the event 'not $E$'?
+
+\textbf{Answer:}
+(B)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Recall the property of complementary events: $P(E) + P(\text{not } E) = 1$.
+  \item Substitute the given value $P(E) = 0.65$.
+  \item Solve for $P(\text{not } E) = 1 - 0.65$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{P(\bar{E}) = 1 - P(E) = 1 - 0.65 = 0.35}
+\end{center}
+\hfill \textit{Probability — Complementary events}
+\vspace{0.3cm}
+
+\question \textbf{24.} The probability of winning a game is $\frac{7}{12}$. What is the probability of losing the game?
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The event 'losing' is the complement of 'winning'.
+  \item Use the formula $P(\text{losing}) = 1 - P(\text{winning})$.
+  \item Calculate $1 - \frac{7}{12}$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{P(\text{Losing}) = 1 - \frac{7}{12} = \frac{12-7}{12} = \frac{5}{12}}
+\end{center}
+\hfill \textit{Probability — Complementary events}
+\vspace{0.3cm}
+
+\question \textbf{25.} A bag contains balls of different colours. If the probability of picking a red ball is $2/9$, what is the probability that the ball picked is NOT red?
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The event of picking a ball that is not red is the complement of picking a red ball.
+  \item Apply $P(\text{not red}) = 1 - P(\text{red})$.
+  \item Calculate $1 - 2/9$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{P(\text{not Red}) = 1 - \frac{2}{9} = \frac{9-2}{9} = \frac{7}{9}}
+\end{center}
+\hfill \textit{Probability — Complementary events}
+\vspace{0.3cm}
+
+\question \textbf{26.} If $P(E) = 0.07$, find $P(\text{not } E)$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the complement rule $P(\text{not } E) = 1 - P(E)$.
+  \item Subtract $0.07$ from $1$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{P(\bar{E}) = 1 - 0.07 = 0.93}
+\end{center}
+\hfill \textit{Probability — Complementary events}
+\vspace{0.3cm}
+
+\question \textbf{27.} A student solves a problem correctly with a probability of $0.85$. What is the probability that the student solves the problem incorrectly?
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The event of solving incorrectly is the complement of solving correctly.
+  \item Use $P(\text{incorrect}) = 1 - P(\text{correct})$.
+  \item Calculate $1 - 0.85$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{P(\text{incorrect}) = 1 - 0.85 = 0.15}
+\end{center}
+\hfill \textit{Probability — Complementary events}
+\vspace{0.3cm}
+
+\question \textbf{28.} Assertion (A): If the probability of winning a game is 0.7, then the probability of losing the game is 0.3. Reason (R): The sum of the probabilities of all complementary events is 1.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check if the events winning and losing are complementary.
+  \item Check if the sum of probabilities equals 1.
+  \item Verify the calculation 1 - 0.7 = 0.3.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+P(E) + P(\text{not E}) = 1 \\
+\implies 0.7 + 0.3 = 1.0
+\end{aligned}}
+\end{center}
+\hfill \textit{Probability — complementary events}
+\vspace{0.3cm}
+
+\question \textbf{29.} Assertion (A): The probability of an event happening is 0.45, then the probability of the event not happening is 0.65. Reason (R): For any event E, $P(\bar{E}) = 1 - P(E)$.
+
+\textbf{Answer:}
+(D)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the formula $P(\bar{E}) = 1 - P(E)$.
+  \item Calculate $1 - 0.45 = 0.55$.
+  \item Since $0.55 \neq 0.65$, Assertion is false.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{P(\bar{E}) = 1 - 0.45 = 0.55}
+\end{center}
+\hfill \textit{Probability — complementary events}
+\vspace{0.3cm}
+
+\question \textbf{30.} Assertion (A): If a fair coin is tossed, the probability of getting a head is 0.5 and the probability of not getting a head is 0.5. Reason (R): Getting a head and not getting a head are complementary events.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the outcomes of a coin toss as Head and Tail.
+  \item Understand that not getting a head is equivalent to getting a tail.
+  \item Verify $P(H) = 0.5$ and $P(\bar{H}) = 1 - 0.5 = 0.5$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{P(H) = 1/2 = 0.5; P(\text{not } H) = 1 - 0.5 = 0.5}
+\end{center}
+\hfill \textit{Probability — complementary events}
+\vspace{0.3cm}
+
+\question \textbf{31.} Assertion (A): If the probability of selecting a red ball from a bag is 2/7, the probability of not selecting a red ball is 5/7. Reason (R): The probability of an impossible event is 1.
+
+\textbf{Answer:}
+(C)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Check the complementary probability: $1 - 2/7 = 5/7$. Assertion is true.
+  \item Identify that the probability of an impossible event is 0, not 1. Reason is false.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{P(\bar{E}) = 1 - 2/7 = 5/7}
+\end{center}
+\hfill \textit{Probability — complementary events}
+\vspace{0.3cm}
+
+\question \textbf{32.} Assertion (A): If $P(E) = 0.12$, then $P(\bar{E}) = 0.88$. Reason (R): $P(E) + P(\bar{E}) = 1$.
+
+\textbf{Answer:}
+(A)
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Apply the formula $P(\bar{E}) = 1 - P(E)$.
+  \item Calculate $1 - 0.12 = 0.88$.
+  \item Confirm that the reason provided is the definition of complementary events.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{0.12 + 0.88 = 1.00}
+\end{center}
+\hfill \textit{Probability — complementary events}
+\vspace{0.3cm}
+
+\question \textbf{33.} A box contains 90 discs which are numbered from 1 to 90. If one disc is drawn at random from the box, find the probability that it bears (i) a two-digit number, (ii) a perfect square number, (iii) a number divisible by 5. Use the concept of complementary events to verify the probability of the event 'not getting a perfect square'.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{(i) 9/10, (ii) 1/10, (iii) 1/5; \text{Complement}: 9/10}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Identify the total number of outcomes as 90.
+  \item List perfect squares between 1 and 90: \{1, 4, 9, 16, 25, 36, 49, 64, 81\}. Total = 9.
+  \item \(
+\text{Calculate P}(\text{Perfect Square}) = 9/90 = 1/10.
+\)
+  \item Use the complementary event formula: P(Not E) = 1 - P(E).
+  \item \(
+\text{Calculate P}(\text{Not Perfect Square}) = 1 - 1/10 = 9/10.
+\)
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+P(E) = \frac{9}{90} = \frac{1}{10} \\
+P(\bar{E}) = 1 - P(E) \\
+P(\bar{E}) = 1 - \frac{1}{10} = \frac{9}{10}
+\end{aligned}}
+\end{center}
+\hfill \textit{Probability — Complementary events}
+\vspace{0.3cm}
+
+\question \textbf{34.} A game consists of tossing a one-rupee coin 3 times and noting its outcome each time. Hanif wins if all the tosses give the same result i.e., three heads or three tails, and loses otherwise. Calculate the probability that Hanif will lose the game using the complementary event property.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{3/4}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item List all possible outcomes: \{HHH, HHT, HTH, THH, HTT, THT, TTH, TTT\}. Total = 8.
+  \item Identify favorable outcomes for winning: \{HHH, TTT\}. Count = 2.
+  \item \(
+\text{Calculate P}(Win) = 2/8 = 1/4.
+\)
+  \item Identify the event of losing as the complement of winning.
+  \item \(
+\text{Apply P}(\text{Lose}) = 1 - P(Win).
+\)
+\end{enumerate}
+\textbf{Derivation:}
+P(Win) = $\frac{2}{8} = \frac{1}{4} \\ P($Lose) = 1 - P(Win) \textbackslash{}\textbackslash{} P(Lose) = 1 - $\frac{1}{4} = \frac{3}{4}$
+\hfill \textit{Probability — Complementary events}
+\vspace{0.3cm}
+
+\question \textbf{35.} A bag contains 5 red balls and some blue balls. If the probability of drawing a blue ball is double that of a red ball, find the number of blue balls in the bag. Further, if a ball is drawn at random, what is the probability of not drawing a red ball?
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{10 \text{blue balls}; \text{Probability of not red} = 2/3}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let the number of blue balls be x. Total balls = 5 + x.
+  \item \(
+P(Red) = 5/(5+x), P(\text{Blue}) = x/(5+x).
+\)
+  \item Given P(Blue) = 2 * P(Red), solve for x: x/(5+x) = 2 * (5/(5+x)).
+  \item Solving results in x = 10.
+  \item \(
+\text{Calculate P}(\text{Not Red}) = 1 - P(Red).
+\)
+\end{enumerate}
+\textbf{Derivation:}
+$\frac{x}{5+x} = 2 \times \frac{5}{5+x} \implies x = 10 \\ P($Red) = $\frac{5}{15} = \frac{1}{3} \\ P($Not Red) = 1 - $\frac{1}{3} = \frac{2}{3}$
+\hfill \textit{Probability — Complementary events}
+\vspace{0.3cm}
+
+\question \textbf{36.} Two dice are thrown simultaneously. Find the probability of getting (i) a sum of 8, (ii) a doublet, (iii) a sum greater than 9. Use the complementary event concept to find the probability of getting a sum not equal to 8.
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{(i) 5/36, (ii) 6/36, (iii) 6/36; \text{Complement}: 31/36}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item \(
+\text{Total outcomes for two dice} = 6 * 6 = 36.
+\)
+  \item Identify outcomes for sum 8: \{(2,6), (3,5), (4,4), (5,3), (6,2)\}. Count = 5.
+  \item \(
+P(Sum 8) = 5/36.
+\)
+  \item Use complement property for 'Sum not 8': P(Not 8) = 1 - P(8).
+  \item Final calculation: 1 - 5/36 = 31/36.
+\end{enumerate}
+\textbf{Derivation:}
+P(Sum=8) = $\frac{5}{36} \\ P($Sum $\neq 8) = 1 - P($Sum=8) \textbackslash{}\textbackslash{} P(Sum $\neq 8) = 1 - \frac{5}{36} = \frac{31}{36}$
+\hfill \textit{Probability — Complementary events}
+\vspace{0.3cm}
+
+\question \textbf{37.} In $\triangle ABC$, a circle is inscribed touching sides $AB$, $BC$, and $CA$ at points $P$, $Q$, and $R$ respectively. If $AB = 12$ cm, $BC = 8$ cm, and $AC = 10$ cm, find the length of $AP$.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_005.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{7 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $AP = AR = x$, $BP = BQ = y$, and $CQ = CR = z$.
+  \item Set up the system of equations based on side lengths: $x+y=12$, $y+z=8$, $z+x=10$. Solve for $x$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+x+y=12, \ y+z=8, \ z+x=10 \\
+(x+y+z) = (12+8+10)/2 = 15 \\
+x = 15 - (y+z) = 15 - 8 = 7
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{38.} From a point $P$, $10$ cm away from the centre of a circle, the length of the tangent drawn to the circle is $8$ cm. Find the radius of the circle.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_006.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{6 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Use the property that the tangent is perpendicular to the radius at the point of contact.
+  \item Apply Pythagoras theorem in the right-angled triangle formed by the radius, tangent, and the line from the centre to $P$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+r^2 + 8^2 = 10^2 \\
+r^2 + 64 = 100 \\
+r^2 = 36 \\
+r = 6 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{39.} Two concentric circles are of radii $5$ cm and $3$ cm. Find the length of the chord of the larger circle which touches the smaller circle.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_007.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{8 cm}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item Let $O$ be the centre, $AB$ be the chord of the larger circle tangent to the smaller circle at $M$.
+  \item In $\triangle OMA$, use Pythagoras theorem to find $AM$, then $AB = 2 \times AM$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+OM = 3, \ OA = 5 \\
+AM = \sqrt{5^2 - 3^2} = \sqrt{25 - 9} = 4 \\
+AB = 2 \times 4 = 8 \text{ cm}
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\question \textbf{40.} If tangents $PA$ and $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\circ$, find $\angle POA$.
+
+
+\begin{center}
+\includegraphics[width=0.48\textwidth]{/home/user/Desktop/backup/schEngine/pdfs/diag/diagrams/diagram_008.pdf}
+\end{center}
+
+
+\textbf{Answer:}
+\begin{center}
+\fitmath{50^\circ}
+\end{center}
+
+\textbf{Solution:}
+\begin{enumerate}
+  \item The line $OP$ bisects the angle $\angle APB$. Thus $\angle APO = 40^\circ$.
+  \item In $\triangle OAP$, $\angle OAP = 90^\circ$. Therefore $\angle POA = 90^\circ - 40^\circ$.
+\end{enumerate}
+\textbf{Derivation:}
+\begin{center}
+\fitmath{\begin{aligned}
+\angle APB = 80^\circ \\
+\Rightarrow \angle APO = 40^\circ \\
+\angle OAP = 90^\circ \\
+\angle POA = 180^\circ - 90^\circ - 40^\circ = 50^\circ
+\end{aligned}}
+\end{center}
+\hfill \textit{Circles — Tangents to a circle}
+\vspace{0.3cm}
+
+\end{questions}
+
+\end{document}

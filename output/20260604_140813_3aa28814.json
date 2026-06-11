@@ -1,0 +1,135 @@
+{
+  "batch_id": "20260604_140813_3aa28814",
+  "generated_at": "2026-06-04T14:08:13.552905",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Pair of Linear Equations in Two Variables",
+  "subtopic": "equations reducible to linear form",
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Solve the following pair of equations by reducing them to a linear form: $\\frac{2}{x} + \\frac{3}{y} = 13$ and $\\frac{5}{x} - \\frac{4}{y} = -2$.",
+      "answer": "$x = \\frac{1}{2}, y = \\frac{1}{3}$",
+      "solution": {
+        "steps": [
+          "Substitute $u = \\frac{1}{x}$ and $v = \\frac{1}{y}$ to transform the equations into linear form.",
+          "The equations become $2u + 3v = 13$ and $5u - 4v = -2$.",
+          "Solve the system of linear equations using the elimination method.",
+          "Back-substitute the values of $u$ and $v$ to find $x$ and $y$."
+        ],
+        "derivation": "Multiply first by 4 and second by 3: $8u + 12v = 52$ and $15u - 12v = -6$. Adding them gives $23u = 46$, so $u = 2$. Then $2(2) + 3v = 13 \\implies 3v = 9 \\implies v = 3$. Thus $x = 1/2, y = 1/3$."
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:13.552734",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140813_fd103d_01"
+    },
+    {
+      "question": "A boat goes 30 km upstream and 44 km downstream in 10 hours. In 13 hours, it can go 40 km upstream and 55 km downstream. Determine the speed of the stream and the speed of the boat in still water.",
+      "answer": "Speed of boat = 8 km/hr, Speed of stream = 3 km/hr",
+      "solution": {
+        "steps": [
+          "Let speed of boat be $x$ km/hr and stream be $y$ km/hr. Upstream speed is $x-y$, downstream is $x+y$.",
+          "Form equations: $\\frac{30}{x-y} + \\frac{44}{x+y} = 10$ and $\\frac{40}{x-y} + \\frac{55}{x+y} = 13$.",
+          "Substitute $u = \\frac{1}{x-y}$ and $v = \\frac{1}{x+y}$ and solve for $u$ and $v$.",
+          "Calculate $x$ and $y$ from $u$ and $v$."
+        ],
+        "derivation": "$30u + 44v = 10 \\implies 15u + 22v = 5$ and $40u + 55v = 13 \\implies 8u + 11v = 2.6$. Solving gives $u=1/5, v=1/11$. Thus $x-y=5, x+y=11$. Adding gives $2x=16 \\implies x=8, y=3$."
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:13.552780",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140813_46df18_02"
+    },
+    {
+      "question": "Solve for $x$ and $y$: $\\frac{1}{2(2x+3y)} + \\frac{12}{7(3x-2y)} = \\frac{1}{2}$ and $\\frac{7}{2x+3y} + \\frac{4}{3x-2y} = 2$.",
+      "answer": "$x = 2, y = 1$",
+      "solution": {
+        "steps": [
+          "Let $u = \\frac{1}{2x+3y}$ and $v = \\frac{1}{3x-2y}$.",
+          "The equations become $\\frac{1}{2}u + \\frac{12}{7}v = \\frac{1}{2}$ and $7u + 4v = 2$.",
+          "Simplify the first into $7u + 24v = 7$.",
+          "Solve the system $7u + 24v = 7$ and $7u + 4v = 2$ to find $u$ and $v$, then solve for $x, y$."
+        ],
+        "derivation": "Subtracting equations: $(24-4)v = 7-2 \\implies 20v = 5 \\implies v = 1/4$. Then $7u + 1 = 2 \\implies u = 1/7$. $2x+3y=7, 3x-2y=4$. Solving gives $x=2, y=1$."
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:13.552793",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140813_562b7c_03"
+    },
+    {
+      "question": "Roohi travels 300 km to her home partly by train and partly by bus. She takes 4 hours if she travels 60 km by train and the rest by bus. If she travels 100 km by train and the rest by bus, she takes 10 minutes longer. Find the speed of the train and the bus.",
+      "answer": "Speed of train = 60 km/hr, Speed of bus = 80 km/hr",
+      "solution": {
+        "steps": [
+          "Let speed of train be $x$ and bus be $y$. Time taken = distance/speed.",
+          "Equations: $\\frac{60}{x} + \\frac{240}{y} = 4$ and $\\frac{100}{x} + \\frac{200}{y} = 4 + \\frac{1}{6}$.",
+          "Use substitution $u=1/x, v=1/y$ to solve the linear system.",
+          "Solve for $x$ and $y$."
+        ],
+        "derivation": "$60u + 240v = 4 \\implies 15u + 60v = 1$. $100u + 200v = 25/6 \\implies 24u + 48v = 1$. Solving yields $u=1/60, v=1/80$. Hence $x=60, y=80$."
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:13.552803",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140813_d1e1ac_04"
+    },
+    {
+      "question": "Solve the system: $\\frac{x+y}{xy} = 2$ and $\\frac{x-y}{xy} = 6$.",
+      "answer": "$x = -1/2, y = 1/4$",
+      "solution": {
+        "steps": [
+          "Divide by $xy$ to get $\\frac{1}{y} + \\frac{1}{x} = 2$ and $\\frac{1}{y} - \\frac{1}{x} = 6$.",
+          "Let $u = \\frac{1}{x}$ and $v = \\frac{1}{y}$.",
+          "The system becomes $v + u = 2$ and $v - u = 6$.",
+          "Solve for $u$ and $v$ and then for $x$ and $y$."
+        ],
+        "derivation": "Adding: $2v = 8 \\implies v = 4$. Subtracting: $2u = -4 \\implies u = -2$. Thus $1/y = 4 \\implies y = 1/4$ and $1/x = -2 \\implies x = -1/2$."
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "Equations reducible to linear form",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:13.552813",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140813_4b6f15_05"
+    }
+  ]
+}

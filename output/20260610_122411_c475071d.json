@@ -1,0 +1,68 @@
+{
+  "batch_id": "20260610_122411_c475071d",
+  "generated_at": "2026-06-10T12:24:11.688943",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Pair of Linear Equations in Two Variables",
+  "subtopic": "graphical method",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "For the pair of linear equations $x + 2y = 3$ and $2x + 4y = 6$, the lines represented by these equations are:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify the coefficients $a_1=1, b_1=2, c_1=-3$ and $a_2=2, b_2=4, c_2=-6$.",
+          "Calculate the ratios: $\\frac{a_1}{a_2} = \\frac{1}{2}$, $\\frac{b_1}{b_2} = \\frac{2}{4} = \\frac{1}{2}$, and $\\frac{c_1}{c_2} = \\frac{-3}{-6} = \\frac{1}{2}$.",
+          "Observe that $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$.",
+          "Conclude that the lines are coincident because the ratios of the coefficients are equal."
+        ],
+        "derivation": "$\\frac{a_1}{a_2} = \\frac{1}{2} \\\\ \\frac{b_1}{b_2} = \\frac{2}{4} = \\frac{1}{2} \\\\ \\frac{c_1}{c_2} = \\frac{-3}{-6} = \\frac{1}{2} \\\\ \\because \\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2} \\text{, the lines are coincident.}$"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "graphical method",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) Intersecting at a unique point",
+        "(B) Parallel",
+        "(C) Coincident",
+        "(D) Intersecting at two points"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T12:24:11.688656",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122411_d04f17_01"
+    }
+  ]
+}

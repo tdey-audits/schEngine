@@ -1,0 +1,45 @@
+{
+  "batch_id": "20260604_133330_0e2a729f",
+  "generated_at": "2026-06-04T13:33:30.653661",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": "general term of an AP",
+  "difficulty": "medium",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): If the $n^{th}$ term of an Arithmetic Progression is given by $a_n = 3 + 4n$, then the common difference of the AP is 4. \nReason (R): The common difference $d$ of an AP is given by the difference between consecutive terms $a_n - a_{n-1}$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Find the first term $a_1$ by substituting $n=1$ in $a_n = 3 + 4n$.",
+          "Find the second term $a_2$ by substituting $n=2$ in $a_n = 3 + 4n$.",
+          "Calculate the common difference $d = a_2 - a_1$.",
+          "Observe that the coefficient of $n$ in a linear expression of $n$ represents the common difference."
+        ],
+        "derivation": "$a_1 = 3 + 4(1) = 7 \\\\ a_2 = 3 + 4(2) = 11 \\\\ d = a_2 - a_1 = 11 - 7 = 4 \\\\ \\text{Since } d = 4, \\text{ Assertion is true.} \\\\ \\text{The formula } d = a_n - a_{n-1} \\text{ is the standard definition, so Reason is true and is the correct explanation.}"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "general term of an AP",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "medium",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:33:30.653573",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133330_513d6e_01"
+    }
+  ]
+}

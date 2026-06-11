@@ -1,0 +1,159 @@
+{
+  "batch_id": "20260604_140827_33d6fb68",
+  "generated_at": "2026-06-04T14:08:27.438886",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Which of the following is a quadratic equation?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "A quadratic equation is of the form $ax^2 + bx + c = 0$ where $a \\neq 0$.",
+          "Check each option: (A) has $x^2$ on both sides cancelling out, (B) $x^3$ term makes it cubic, (C) simplifies to $x^2 - 3x + 2 = 0$, (D) has $1/x$ which is not polynomial."
+        ],
+        "derivation": "x(x+1) + 8 = (x+2)(x-2) \\implies x^2 + x + 8 = x^2 - 4 \\implies x + 12 = 0 \\text{ (Linear). } (x+2)^2 = 2(x+3) \\implies x^2 + 4x + 4 = 2x + 6 \\implies x^2 + 2x - 2 = 0"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Introduction to Quadratic Equations",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $x(x+1) + 8 = (x+2)(x-2)$",
+        "(B) $(x+2)^3 = x^3 - 4$",
+        "(C) $(x+2)^2 = 2(x+3)$",
+        "(D) $x^2 + \\frac{1}{x^2} = 5$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:27.438781",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140827_7bce42_01"
+    },
+    {
+      "question": "The discriminant of the quadratic equation $2x^2 - 4x + 3 = 0$ is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Identify $a=2, b=-4, c=3$.",
+          "Use the formula $D = b^2 - 4ac$.",
+          "Calculate $D = (-4)^2 - 4(2)(3) = 16 - 24 = -8$."
+        ],
+        "derivation": "D = b^2 - 4ac = (-4)^2 - 4(2)(3) = 16 - 24 = -8"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of Roots",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 8",
+        "(B) -8",
+        "(C) 4",
+        "(D) -4"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:27.438818",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140827_ff1067_02"
+    },
+    {
+      "question": "If $1/2$ is a root of the equation $x^2 - kx - 5/4 = 0$, then the value of $k$ is:",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Substitute $x = 1/2$ into the equation.",
+          "$(1/2)^2 - k(1/2) - 5/4 = 0$.",
+          "$1/4 - k/2 - 5/4 = 0 \\implies -4/4 - k/2 = 0 \\implies -1 = k/2 \\implies k = -2$."
+        ],
+        "derivation": "\\left(\\frac{1}{2}\\right)^2 - k\\left(\\frac{1}{2}\\right) - \\frac{5}{4} = 0 \\implies \\frac{1}{4} - \\frac{k}{2} - \\frac{5}{4} = 0 \\implies -1 - \\frac{k}{2} = 0 \\implies k = -2"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Roots of a Quadratic Equation",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 2",
+        "(B) -1",
+        "(C) 1",
+        "(D) -2"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:27.438827",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140827_647434_03"
+    },
+    {
+      "question": "The quadratic equation $x^2 + kx + 1 = 0$ has equal roots if:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "For equal roots, discriminant $D = 0$.",
+          "$b^2 - 4ac = 0$.",
+          "$k^2 - 4(1)(1) = 0 \\implies k^2 = 4 \\implies k = \\pm 2$."
+        ],
+        "derivation": "D = k^2 - 4(1)(1) = 0 \\implies k^2 = 4 \\implies k = \\pm 2"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of Roots",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $k = \\pm 2$",
+        "(B) $k = \\pm 1$",
+        "(C) $k = 0$",
+        "(D) $k = \\pm 4$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:27.438833",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140827_7d594c_04"
+    },
+    {
+      "question": "The roots of the quadratic equation $x^2 - 9 = 0$ are:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Factor the equation: $x^2 - 3^2 = 0$.",
+          "$(x - 3)(x + 3) = 0$.",
+          "Therefore, $x = 3$ or $x = -3$."
+        ],
+        "derivation": "x^2 = 9 \\implies x = \\pm \\sqrt{9} \\implies x = \\pm 3"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Solving Quadratic Equations by Factorization",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 9, -9",
+        "(B) 3, 3",
+        "(C) 3, -3",
+        "(D) 0, 9"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:27.438839",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140827_da8763_05"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "batch_id": "20260609_132738_caf0ba9d",
+  "generated_at": "2026-06-09T13:27:38.567863",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If the sum of the first $n$ terms of an arithmetic progression is given by $S_n = 3n^2 + 5n$, and the $k^{th}$ term of this progression is $164$, then the value of $k$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "The $n^{th}$ term of an AP is given by $a_n = S_n - S_{n-1}$ for $n > 1$.",
+          "Calculate $a_n = (3n^2 + 5n) - (3(n-1)^2 + 5(n-1))$.",
+          "Simplify the expression to find the general formula for $a_n$.",
+          "Set $a_k = 164$ and solve for $k$."
+        ],
+        "derivation": "$a_n = 3n^2 + 5n - (3(n^2 - 2n + 1) + 5n - 5) \\\\ a_n = 3n^2 + 5n - (3n^2 - 6n + 3 + 5n - 5) \\\\ a_n = 3n^2 + 5n - 3n^2 + n + 2 \\\\ a_n = 6n + 2 \\\\ 6k + 2 = 164 \\\\ 6k = 162 \\\\ k = 27$"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of first n terms of an AP",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "hard",
+      "options": [
+        "(A) 25",
+        "(B) 26",
+        "(C) 27",
+        "(D) 28"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T13:27:38.567565",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_5 (Arithmetic Progressions).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 10,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 2,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 33,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 7,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 22,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_132738_fadb92_01"
+    }
+  ]
+}

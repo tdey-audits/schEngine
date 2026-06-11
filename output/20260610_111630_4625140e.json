@@ -1,0 +1,119 @@
+{
+  "batch_id": "20260610_111630_4625140e",
+  "generated_at": "2026-06-10T11:16:30.708025",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Statistics",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "For a grouped frequency distribution, the empirical relationship between the three measures of central tendency is given by $3 \\times \\text{Median} = \\text{Mode} + 2 \\times \\text{Mean}$. If for a specific distribution, the mean is $25.5$ and the median is $26$, then the mode of the distribution is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify the given values: $\\text{Mean} = 25.5$ and $\\text{Median} = 26$.",
+          "Use the empirical formula: $3 \\times \\text{Median} = \\text{Mode} + 2 \\times \\text{Mean}$.",
+          "Substitute the known values into the formula: $3(26) = \\text{Mode} + 2(25.5)$.",
+          "Calculate the products: $78 = \\text{Mode} + 51$.",
+          "Solve for the mode: $\\text{Mode} = 78 - 51 = 27$."
+        ],
+        "derivation": "$3 \\times \\text{Median} = \\text{Mode} + 2 \\times \\text{Mean} \\\\ 3(26) = \\text{Mode} + 2(25.5) \\\\ 78 = \\text{Mode} + 51 \\\\ \\text{Mode} = 78 - 51 \\\\ \\text{Mode} = 27$"
+      },
+      "topic": "Statistics",
+      "subtopic": "Empirical relationship between Mean, Median and Mode",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 24.5",
+        "(B) 26.5",
+        "(C) 27",
+        "(D) 28"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T11:16:30.707725",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 6,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Statistics",
+            "exercise": "13.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Statistics",
+            "exercise": "13.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Statistics",
+            "exercise": "13.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Statistics",
+            "exercise": "13.3",
+            "question_no": 12,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Statistics",
+            "exercise": "13.4",
+            "question_no": 3,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Statistics",
+            "exercise": "13.4",
+            "question_no": 5,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_111630_d933cf_01"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "batch_id": "20260609_111427_27e6f612",
+  "generated_at": "2026-06-09T11:14:27.197250",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A packaging unit at a local factory produces two types of high-quality metallic components in batches. The number of components in Batch $A$ and Batch $B$ are $120$ and $192$ respectively. The manager wants to pack these components into identical boxes such that each box contains the same number of items, and no components are left over. Additionally, the decimal representation of the ratio of the number of items in the two batches, $\\frac{120}{192}$, is to be analyzed to ensure the packaging process meets specific efficiency standards.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "What is the maximum number of components that can be packed in each box such that no components are left over?",
+          "answer": "(C)",
+          "options": [
+            "(A) $12$",
+            "(B) $16$",
+            "(C) $24$",
+            "(D) $48$"
+          ],
+          "solution": {
+            "steps": [
+              "Find the HCF of $120$ and $192$ using prime factorization.",
+              "$120 = 2^3 \\times 3 \\times 5$",
+              "$192 = 2^6 \\times 3$",
+              "HCF $= 2^3 \\times 3 = 8 \\times 3 = 24$."
+            ],
+            "derivation": "$120 = 2^3 \\times 3^1 \\times 5^1 \\\\ 192 = 2^6 \\times 3^1 \\\\ \\text{HCF} = 2^3 \\times 3^1 = 24$"
+          }
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Express the simplified form of the fraction $\\frac{120}{192}$ as a rational number $\\frac{p}{q}$ where $p$ and $q$ are coprime.",
+          "answer": "$\\frac{5}{8}$",
+          "solution": {
+            "steps": [
+              "Divide both numerator and denominator by their HCF, which is $24$.",
+              "$120 \\div 24 = 5$",
+              "$192 \\div 24 = 8$."
+            ],
+            "derivation": "\\frac{120}{192} = \\frac{120 \\div 24}{192 \\div 24} = \\frac{5}{8}"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "mcq",
+          "question": "Without performing long division, determine the nature of the decimal expansion of $\\frac{120}{192}$.",
+          "answer": "(A)",
+          "options": [
+            "(A) Terminating",
+            "(B) Non-terminating repeating",
+            "(C) Non-terminating non-repeating",
+            "(D) None of these"
+          ],
+          "solution": {
+            "steps": [
+              "Analyze the denominator of the simplified fraction $\\frac{5}{8}$.",
+              "$8 = 2^3 \\times 5^0$.",
+              "Since the denominator is of the form $2^n \\times 5^m$, the decimal expansion is terminating."
+            ],
+            "derivation": "\\frac{5}{8} = \\frac{5}{2^3} \\\\ \\text{Denominator is of the form } 2^n \\times 5^m"
+          }
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "If the total number of components $120$ and $192$ were to be used to form a new larger batch, calculate the LCM of the two numbers.",
+          "answer": "$960$",
+          "solution": {
+            "steps": [
+              "Use the prime factors: $120 = 2^3 \\times 3 \\times 5$ and $192 = 2^6 \\times 3$.",
+              "LCM is the product of the highest powers of all prime factors involved.",
+              "LCM $= 2^6 \\times 3^1 \\times 5^1 = 64 \\times 3 \\times 5 = 960$."
+            ],
+            "derivation": "\\text{LCM} = 2^6 \\times 3^1 \\times 5^1 = 64 \\times 15 = 960"
+          }
+        }
+      ],
+      "topic": "Real Numbers",
+      "subtopic": "HCF and LCM",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T11:14:27.196884",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_111427_5a8758_01"
+    }
+  ]
+}

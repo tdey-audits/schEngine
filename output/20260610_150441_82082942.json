@@ -1,0 +1,89 @@
+{
+  "batch_id": "20260610_150441_82082942",
+  "generated_at": "2026-06-10T15:04:41.679704",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": "euclid division lemma",
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Use Euclid's division lemma to show that the square of any positive integer is either of the form $3m$ or $3m + 1$ for some integer $m$.",
+      "answer": "The square of any positive integer $a$ can be represented as $a^2 = 3m$ or $a^2 = 3m + 1$.",
+      "solution": {
+        "steps": [
+          "Let $a$ be any positive integer. By Euclid's division lemma, for divisor $b=3$, we can write $a = 3q + r$, where $q$ is a non-negative integer and $r \\in \\{0, 1, 2\\}$.",
+          "Case 1: If $r = 0$, then $a = 3q$. Squaring both sides, $a^2 = (3q)^2 = 9q^2 = 3(3q^2)$. Letting $m = 3q^2$, we get $a^2 = 3m$.",
+          "Case 2: If $r = 1$, then $a = 3q + 1$. Squaring both sides, $a^2 = (3q + 1)^2 = 9q^2 + 6q + 1 = 3(3q^2 + 2q) + 1$. Letting $m = 3q^2 + 2q$, we get $a^2 = 3m + 1$.",
+          "Case 3: If $r = 2$, then $a = 3q + 2$. Squaring both sides, $a^2 = (3q + 2)^2 = 9q^2 + 12q + 4 = 9q^2 + 12q + 3 + 1 = 3(3q^2 + 4q + 1) + 1$. Letting $m = 3q^2 + 4q + 1$, we get $a^2 = 3m + 1$.",
+          "Conclusion: In all cases, the square of a positive integer is either $3m$ or $3m + 1$."
+        ],
+        "derivation": "$a = 3q + r, \\text{ where } r \\in \\{0, 1, 2\\} \\\\ \\text{If } r=0, a^2 = (3q)^2 = 9q^2 = 3(3q^2) = 3m \\\\ \\text{If } r=1, a^2 = (3q+1)^2 = 9q^2 + 6q + 1 = 3(3q^2 + 2q) + 1 = 3m+1 \\\\ \\text{If } r=2, a^2 = (3q+2)^2 = 9q^2 + 12q + 4 = 9q^2 + 12q + 3 + 1 = 3(3q^2 + 4q + 1) + 1 = 3m+1$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Euclid division lemma",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-10T15:04:41.679575",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 32,
+            "paper_variant": "standard",
+            "question_type": "la"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 32,
+            "paper_variant": "standard",
+            "question_type": "la"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 34,
+            "paper_variant": "standard",
+            "question_type": "la"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 5,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 3,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150441_2a59dd_01"
+    }
+  ]
+}

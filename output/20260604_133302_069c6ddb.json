@@ -1,0 +1,45 @@
+{
+  "batch_id": "20260604_133302_069c6ddb",
+  "generated_at": "2026-06-04T13:33:02.809283",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The common difference of the Arithmetic Progression $5, 2, -1, -4, \\dots$ is $-3$.\nReason (R): The common difference $d$ of an AP is given by $d = a_{n} - a_{n-1}$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Identify the terms of the AP: $a_1 = 5$, $a_2 = 2$.",
+          "Calculate the common difference using the formula $d = a_2 - a_1$.",
+          "Substitute the values: $d = 2 - 5 = -3$.",
+          "Verify that the Assertion is true and the Reason correctly defines the method to find the common difference."
+        ],
+        "derivation": "d = a_2 - a_1 = 2 - 5 = -3"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Common Difference",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:33:02.809159",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133302_a10d0a_01"
+    }
+  ]
+}

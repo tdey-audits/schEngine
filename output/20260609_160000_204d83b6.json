@@ -1,0 +1,110 @@
+{
+  "batch_id": "20260609_160000_204d83b6",
+  "generated_at": "2026-06-09T16:00:00.972325",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "vsa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $\\cos \\theta + \\sin \\theta = \\sqrt{2} \\cos \\theta$, then find the value of $\\cos \\theta - \\sin \\theta$.",
+      "answer": "$\\sqrt{2} \\sin \\theta$",
+      "solution": {
+        "steps": [
+          "Square both sides of the given equation to eliminate the radical and create an identity-friendly expression.",
+          "Use the identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$ to rearrange the terms and isolate the required expression."
+        ],
+        "derivation": "$(\\cos \\theta + \\sin \\theta)^2 = (\\sqrt{2} \\cos \\theta)^2 \\\\ \\cos^2 \\theta + \\sin^2 \\theta + 2 \\sin \\theta \\cos \\theta = 2 \\cos^2 \\theta \\\\ 1 + 2 \\sin \\theta \\cos \\theta = 2 \\cos^2 \\theta \\\\ \\text{Let } x = \\cos \\theta - \\sin \\theta \\\\ x^2 = (\\cos \\theta - \\sin \\theta)^2 = \\cos^2 \\theta + \\sin^2 \\theta - 2 \\sin \\theta \\cos \\theta \\\\ x^2 = 1 - 2 \\sin \\theta \\cos \\theta \\\\ \\text{From the first equation, } 2 \\sin \\theta \\cos \\theta = 2 \\cos^2 \\theta - 1 \\\\ x^2 = 1 - (2 \\cos^2 \\theta - 1) = 2 - 2 \\cos^2 \\theta = 2(1 - \\cos^2 \\theta) = 2 \\sin^2 \\theta \\\\ x = \\sqrt{2} \\sin \\theta$"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T16:00:00.972058",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_8 (Introduction to Trigonometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 23,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 25,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 22,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 15,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.4",
+            "question_no": 12,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 15,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160000_3feacc_01"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "batch_id": "20260604_141004_459f236c",
+  "generated_at": "2026-06-04T14:10:04.219022",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Coordinate Geometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the ratio in which the point $P(x, 2)$ divides the line segment joining the points $A(12, 5)$ and $B(4, -3)$. Also, find the value of $x$.",
+      "answer": "Ratio is 3:5, x = 9",
+      "solution": {
+        "steps": [
+          "Use the section formula for the y-coordinate to find the ratio k:1.",
+          "Set the y-coordinate formula equal to 2.",
+          "Solve for k.",
+          "Use the value of k to find the x-coordinate using the section formula.",
+          "State the final ratio and the value of x."
+        ],
+        "derivation": "Let the ratio be $k:1$. The y-coordinate is given by $y = \\frac{m_1y_2 + m_2y_1}{m_1 + m_2}$. Substituting values: $2 = \\frac{k(-3) + 1(5)}{k + 1} \\implies 2k + 2 = -3k + 5 \\implies 5k = 3 \\implies k = 3/5$. Thus, the ratio is $3:5$. For x: $x = \\frac{3(4) + 5(12)}{3 + 5} = \\frac{12 + 60}{8} = \\frac{72}{8} = 9$."
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Section Formula",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:04.218795",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141004_eabc02_01"
+    },
+    {
+      "question": "If the points $A(6, 1)$, $B(8, 2)$, $C(9, 4)$, and $D(p, 3)$ are the vertices of a parallelogram taken in order, find the value of $p$.",
+      "answer": "p = 7",
+      "solution": {
+        "steps": [
+          "Recall the property that diagonals of a parallelogram bisect each other.",
+          "Find the midpoint of diagonal AC.",
+          "Find the midpoint of diagonal BD in terms of p.",
+          "Equate the midpoints and solve for p."
+        ],
+        "derivation": "Midpoint of AC = $(\\frac{6+9}{2}, \\frac{1+4}{2}) = (7.5, 2.5)$. Midpoint of BD = $(\\frac{8+p}{2}, \\frac{2+3}{2}) = (\\frac{8+p}{2}, 2.5)$. Equating x-coordinates: $7.5 = \\frac{8+p}{2} \\implies 15 = 8 + p \\implies p = 7$."
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Midpoint Formula",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:04.218868",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141004_42582d_02"
+    },
+    {
+      "question": "Find the area of a quadrilateral whose vertices, taken in order, are $(-4, -2)$, $(-3, -5)$, $(3, -2)$, and $(2, 3)$.",
+      "answer": "28 sq. units",
+      "solution": {
+        "steps": [
+          "Divide the quadrilateral into two triangles by drawing a diagonal.",
+          "Use the area of triangle formula: $\\frac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|$.",
+          "Calculate the area of triangle 1.",
+          "Calculate the area of triangle 2.",
+          "Add the two areas to get the total area."
+        ],
+        "derivation": "Area of $\\triangle ABC$ with vertices $(-4, -2), (-3, -5), (3, -2)$: $\\frac{1}{2}|-4(-5 - (-2)) + (-3)(-2 - (-2)) + 3(-2 - (-5))| = \\frac{1}{2}|12 + 0 + 9| = 10.5$. Area of $\\triangle ADC$ with vertices $(-4, -2), (2, 3), (3, -2)$: $\\frac{1}{2}|-4(3 - (-2)) + 2(-2 - (-2)) + 3(-2 - 3)| = \\frac{1}{2}|-20 + 0 - 15| = 17.5$. Total Area = $10.5 + 17.5 = 28$."
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Area of Triangle",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:04.218888",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141004_25047e_03"
+    },
+    {
+      "question": "Find the coordinates of the points which divide the line segment joining $A(-2, 2)$ and $B(2, 8)$ into four equal parts.",
+      "answer": "(-1, 3.5), (0, 5), (1, 6.5)",
+      "solution": {
+        "steps": [
+          "Identify the midpoints needed to divide the segment into 4 parts.",
+          "Find the midpoint M of AB.",
+          "Find the midpoint of AM to get the first point.",
+          "Find the midpoint of MB to get the third point.",
+          "List all three points."
+        ],
+        "derivation": "Midpoint $M$ of $AB = (\\frac{-2+2}{2}, \\frac{2+8}{2}) = (0, 5)$. Midpoint $P$ of $AM = (\\frac{-2+0}{2}, \\frac{2+5}{2}) = (-1, 3.5)$. Midpoint $Q$ of $MB = (\\frac{0+2}{2}, \\frac{5+8}{2}) = (1, 6.5)$. The points are $(-1, 3.5), (0, 5), (1, 6.5)$."
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Section Formula Application",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:04.218903",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141004_f7b3e9_04"
+    }
+  ]
+}

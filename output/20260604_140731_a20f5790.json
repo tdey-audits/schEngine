@@ -1,0 +1,125 @@
+{
+  "batch_id": "20260604_140731_a20f5790",
+  "generated_at": "2026-06-04T14:07:31.729597",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the HCF of $1260$ and $7344$ using the Euclid's division algorithm.",
+      "answer": "$18$",
+      "solution": {
+        "steps": [
+          "Apply Euclid's division lemma $a = bq + r$ repeatedly until the remainder is 0.",
+          "Identify the divisor at the step where the remainder becomes 0 as the HCF."
+        ],
+        "derivation": "$7344 = 1260 \\times 5 + 1044$ \\\\ $1260 = 1044 \\times 1 + 216$ \\\\ $1044 = 216 \\times 4 + 180$ \\\\ $216 = 180 \\times 1 + 36$ \\\\ $180 = 36 \\times 5 + 0$ \\\\ \\text{HCF} = 36$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Euclid's Division Lemma",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:31.729394",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140731_dbbf29_01"
+    },
+    {
+      "question": "Show that any positive odd integer is of the form $4q + 1$ or $4q + 3$, where $q$ is some integer.",
+      "answer": "By Euclid's division lemma with divisor 4.",
+      "solution": {
+        "steps": [
+          "Let $a$ be any positive integer and $b=4$. By Euclid's division lemma, $a = 4q + r$, where $0 \\le r < 4$.",
+          "Analyze the possible values of $r$ to distinguish between even and odd integers."
+        ],
+        "derivation": "By Euclid's division lemma, $a = 4q + r$ where $r \\in \\{0, 1, 2, 3\\}$. \\\\ If $r=0, a=4q=2(2q)$ (even). \\\\ If $r=2, a=4q+2=2(2q+1)$ (even). \\\\ If $r=1, a=4q+1$ (odd). \\\\ If $r=3, a=4q+3$ (odd). \\\\ Thus, any positive odd integer is of the form $4q+1$ or $4q+3$."
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Euclid's Division Lemma",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:31.729458",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140731_f8b372_02"
+    },
+    {
+      "question": "Check whether $12^n$ can end with the digit $0$ for any natural number $n$.",
+      "answer": "No, it cannot end with 0.",
+      "solution": {
+        "steps": [
+          "A number ends with digit 0 if its prime factorization contains at least one pair of $2 \\times 5$.",
+          "Find prime factors of $12^n$ and compare."
+        ],
+        "derivation": "$12^n = (2^2 \\times 3)^n = 2^{2n} \\times 3^n$. The prime factorization of $12^n$ contains only 2 and 3. Since the prime factor 5 is not present, it cannot end with the digit 0."
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Fundamental Theorem of Arithmetic",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:31.729475",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140731_cca7d2_03"
+    },
+    {
+      "question": "Given that $\\text{HCF}(306, 657) = 9$, find $\\text{LCM}(306, 657)$.",
+      "answer": "$22338$",
+      "solution": {
+        "steps": [
+          "Use the relationship: $\\text{HCF}(a, b) \\times \\text{LCM}(a, b) = a \\times b$.",
+          "Substitute the given values and solve for LCM."
+        ],
+        "derivation": "$9 \\times \\text{LCM}(306, 657) = 306 \\times 657$ \\\\ $\\text{LCM} = \\frac{306 \\times 657}{9} = 34 \\times 657 = 22338$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Fundamental Theorem of Arithmetic",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:31.729487",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140731_ddcf64_04"
+    },
+    {
+      "question": "Without performing long division, state whether $\\frac{17}{8}$ has a terminating or non-terminating repeating decimal expansion.",
+      "answer": "Terminating decimal expansion.",
+      "solution": {
+        "steps": [
+          "Check the denominator for the form $2^n \\times 5^m$, where $n, m \\ge 0$.",
+          "Conclude based on the prime factorization of the denominator."
+        ],
+        "derivation": "Denominator $= 8 = 2^3 = 2^3 \\times 5^0$. Since the denominator is of the form $2^n \\times 5^m$, the rational number $\\frac{17}{8}$ has a terminating decimal expansion."
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Decimals of Rational Numbers",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:07:31.729500",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140731_d5fc8b_05"
+    }
+  ]
+}

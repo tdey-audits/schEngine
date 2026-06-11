@@ -1,0 +1,45 @@
+{
+  "batch_id": "20260604_133303_c999035e",
+  "generated_at": "2026-06-04T13:33:03.397144",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The common difference of the Arithmetic Progression $5, 2, -1, -4, \\dots$ is $-3$. Reason (R): The common difference $d$ of an Arithmetic Progression is given by $d = a_{n} - a_{n-1}$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Calculate the common difference using the first two terms: $d = a_2 - a_1 = 2 - 5 = -3$.",
+          "Verify the result with the next terms: $d = a_3 - a_2 = -1 - 2 = -3$.",
+          "Confirm that the formula $d = a_n - a_{n-1}$ is the standard definition for an AP.",
+          "Conclude that both A and R are true and R correctly explains A."
+        ],
+        "derivation": "d = a_2 - a_1 = 2 - 5 = -3 \\implies \\text{Assertion is true}. \\text{Reason is the standard definition of common difference} \\implies \\text{Reason is true}."
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Common Difference",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:33:03.397060",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133303_87100b_01"
+    }
+  ]
+}

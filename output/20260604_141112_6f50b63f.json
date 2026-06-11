@@ -1,0 +1,130 @@
+{
+  "batch_id": "20260604_141112_6f50b63f",
+  "generated_at": "2026-06-04T14:11:12.288626",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Surface Areas and Volumes",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A metallic sphere of radius $6 \\text{ cm}$ is melted and recast into the shape of a cylinder of radius $4 \\text{ cm}$. Find the height of the cylinder.",
+      "answer": "18 \\text{ cm}",
+      "solution": {
+        "steps": [
+          "Equate the volume of the sphere to the volume of the cylinder.",
+          "Substitute the formula for the volume of a sphere $\\frac{4}{3}\\pi r^3$ and cylinder $\\pi r^2 h$.",
+          "Solve for the height $h$."
+        ],
+        "derivation": "\\frac{4}{3} \\pi (6)^3 = \\pi (4)^2 h \\implies \\frac{4}{3} \\cdot 216 = 16h \\implies 4 \\cdot 72 = 16h \\implies 288 = 16h \\implies h = 18 \\text{ cm}"
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Conversion of solid from one shape to another",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:12.288226",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141112_240cc5_01"
+    },
+    {
+      "question": "Two cubes each of volume $64 \\text{ cm}^3$ are joined end to end. Find the surface area of the resulting cuboid.",
+      "answer": "160 \\text{ cm}^2",
+      "solution": {
+        "steps": [
+          "Find the edge length of the cube by taking the cube root of the volume.",
+          "Determine the dimensions of the new cuboid (length, breadth, height).",
+          "Apply the surface area formula $2(lb + bh + lh)$."
+        ],
+        "derivation": "a^3 = 64 \\implies a = 4 \\text{ cm}. \\text{ New dimensions: } l=8, b=4, h=4. \\text{ SA} = 2(8 \\cdot 4 + 4 \\cdot 4 + 8 \\cdot 4) = 2(32 + 16 + 32) = 2(80) = 160 \\text{ cm}^2"
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Combination of solids",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:12.288322",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141112_0d70cd_02"
+    },
+    {
+      "question": "A conical tent is $10 \\text{ m}$ high and the radius of its base is $24 \\text{ m}$. Find the slant height of the tent and the cost of the canvas required to make the tent, if the cost of $1 \\text{ m}^2$ canvas is $\\text{ \u20b9} 70$.",
+      "answer": "Slant height = 26 \\text{ m}, Cost = \\text{ \u20b9} 137280",
+      "solution": {
+        "steps": [
+          "Calculate slant height $l = \\sqrt{r^2 + h^2}$.",
+          "Calculate the curved surface area (CSA) of the cone using $\\pi rl$.",
+          "Multiply the CSA by the given cost per square meter."
+        ],
+        "derivation": "l = \\sqrt{24^2 + 10^2} = \\sqrt{576 + 100} = 26 \\text{ m}. \\text{ CSA} = \\frac{22}{7} \\times 24 \\times 26 = \\frac{13728}{7} \\text{ m}^2. \\text{ Cost} = \\frac{13728}{7} \\times 70 = 137280"
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Cone",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:12.288351",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141112_7e02d3_03"
+    },
+    {
+      "question": "A medicine capsule is in the shape of a cylinder with two hemispheres stuck to each of its ends. The length of the entire capsule is $14 \\text{ mm}$ and the diameter of the capsule is $5 \\text{ mm}$. Find its surface area.",
+      "answer": "220 \\text{ mm}^2",
+      "solution": {
+        "steps": [
+          "Identify the cylindrical part length by subtracting the radii of the two hemispheres from the total length.",
+          "Calculate the CSA of the cylinder and the CSA of the two hemispheres.",
+          "Sum the two areas to find the total surface area."
+        ],
+        "derivation": "r = 2.5 \\text{ mm}, h_{\\text{cyl}} = 14 - (2.5 + 2.5) = 9 \\text{ mm}. \\text{ SA} = 2\\pi rh + 2(2\\pi r^2) = 2\\pi r(h + 2r) = 2 \\times \\frac{22}{7} \\times 2.5 \\times (9 + 5) = 2 \\times \\frac{22}{7} \\times 2.5 \\times 14 = 220 \\text{ mm}^2"
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Combination of solids",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:12.288372",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141112_cefc5d_04"
+    },
+    {
+      "question": "A hemispherical tank, full of water, is emptied by a pipe at the rate of $3\\frac{4}{7}$ litres per second. How much time will it take to empty half the tank, if it is $3 \\text{ m}$ in diameter? (Take $\\pi = \\frac{22}{7}$)",
+      "answer": "16.5 \\text{ minutes}",
+      "solution": {
+        "steps": [
+          "Calculate the volume of the hemispherical tank using $\\frac{2}{3}\\pi r^3$.",
+          "Find half the volume and convert it to litres ($1 \\text{ m}^3 = 1000 \\text{ L}$).",
+          "Divide by the rate of flow and convert seconds to minutes."
+        ],
+        "derivation": "r = 1.5 \\text{ m}. \\text{ Vol} = \\frac{2}{3} \\times \\frac{22}{7} \\times (1.5)^3 \\approx 7.07 \\text{ m}^3. \\text{ Half Vol} = 3.535 \\text{ m}^3 = 3535 \\text{ L}. \\text{ Rate} = \\frac{25}{7} \\text{ L/s}. \\text{ Time} = 3535 \\div \\frac{25}{7} = 990 \\text{ seconds} = 16.5 \\text{ minutes}."
+      },
+      "topic": "Surface Areas and Volumes",
+      "subtopic": "Hemisphere",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:11:12.288392",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141112_9d1f6d_05"
+    }
+  ]
+}

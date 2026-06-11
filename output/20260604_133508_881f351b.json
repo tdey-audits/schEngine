@@ -1,0 +1,62 @@
+{
+  "batch_id": "20260604_133508_881f351b",
+  "generated_at": "2026-06-04T13:35:08.835311",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $7 \\sin^2 \\theta + 3 \\cos^2 \\theta = 4$, show that $\\tan \\theta = \\frac{1}{\\sqrt{3}}$.",
+      "answer": "\\tan \\theta = \\frac{1}{\\sqrt{3}}",
+      "solution": {
+        "steps": [
+          "Use the identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$ to replace $\\cos^2 \\theta$.",
+          "Simplify the equation to isolate $\\sin^2 \\theta$ and $\\cos^2 \\theta$.",
+          "Divide by $\\cos^2 \\theta$ to get $\\tan^2 \\theta$.",
+          "Solve for $\\tan \\theta$."
+        ],
+        "derivation": "7 \\sin^2 \\theta + 3(1 - \\sin^2 \\theta) = 4 \\\\ 7 \\sin^2 \\theta + 3 - 3 \\sin^2 \\theta = 4 \\\\ 4 \\sin^2 \\theta = 1 \\\\ \\sin^2 \\theta = \\frac{1}{4} \\implies \\cos^2 \\theta = 1 - \\frac{1}{4} = \\frac{3}{4} \\\\ \\tan^2 \\theta = \\frac{\\sin^2 \\theta}{\\cos^2 \\theta} = \\frac{1/4}{3/4} = \\frac{1}{3} \\\\ \\tan \\theta = \\frac{1}{\\sqrt{3}}"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:35:08.835007",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133508_6fa963_01"
+    },
+    {
+      "question": "Evaluate the following expression: $\\frac{\\cos 58^\\circ}{\\sin 32^\\circ} + \\frac{\\sin 22^\\circ}{\\cos 68^\\circ} - \\frac{\\cos 38^\\circ \\csc 52^\\circ}{\\tan 18^\\circ \\tan 35^\\circ \\tan 60^\\circ \\tan 72^\\circ \\tan 55^\\circ}$.",
+      "answer": "1 - \\frac{1}{\\sqrt{3}}",
+      "solution": {
+        "steps": [
+          "Use complementary angle relations $\\cos(90^\\circ - \\theta) = \\sin \\theta$ and $\\tan(90^\\circ - \\theta) = \\cot \\theta$.",
+          "Simplify the individual terms in the expression.",
+          "Substitute the value of $\\tan 60^\\circ = \\sqrt{3}$ and simplify the final result."
+        ],
+        "derivation": "\\frac{\\cos(90^\\circ-32^\\circ)}{\\sin 32^\\circ} + \\frac{\\sin(90^\\circ-68^\\circ)}{\\cos 68^\\circ} - \\frac{\\cos 38^\\circ \\cdot (1/\\sin 52^\\circ)}{\\tan 18^\\circ \\tan 35^\\circ \\sqrt{3} \\cot 18^\\circ \\cot 35^\\circ} \\\\ = \\frac{\\sin 32^\\circ}{\\sin 32^\\circ} + \\frac{\\cos 68^\\circ}{\\cos 68^\\circ} - \\frac{\\cos 38^\\circ / \\cos 38^\\circ}{\\sqrt{3}} \\\\ = 1 + 1 - \\frac{1}{\\sqrt{3}} = 2 - \\frac{1}{\\sqrt{3}}"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Complementary Angles",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:35:08.835127",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_133508_8694e3_02"
+    }
+  ]
+}

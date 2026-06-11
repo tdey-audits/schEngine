@@ -1,0 +1,112 @@
+{
+  "batch_id": "20260610_145621_ba7a6f0c",
+  "generated_at": "2026-06-10T14:56:21.107824",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": "general term of an AP",
+  "difficulty": "medium",
+  "question_type": "sa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In an Arithmetic Progression (AP), the sum of the first $n$ terms is given by $S_n = 3n^2 + 5n$. If the $k$-th term of this AP is $164$, find the value of $k$.",
+      "answer": "k = 27",
+      "solution": {
+        "steps": [
+          "Use the relation between the $n$-th term $a_n$ and the sum of $n$ terms $S_n$, which is $a_n = S_n - S_{n-1}$ for $n > 1$.",
+          "Calculate $a_n = (3n^2 + 5n) - (3(n-1)^2 + 5(n-1))$ to find the general expression for the $n$-th term.",
+          "Simplify the expression to get $a_n = 6n + 2$.",
+          "Equate $a_k = 6k + 2$ to $164$ and solve the resulting linear equation for $k$."
+        ],
+        "derivation": "$a_n = S_n - S_{n-1} \\\\ a_n = (3n^2 + 5n) - [3(n^2 - 2n + 1) + 5(n - 1)] \\\\ a_n = 3n^2 + 5n - [3n^2 - 6n + 3 + 5n - 5] \\\\ a_n = 3n^2 + 5n - (3n^2 - n - 2) \\\\ a_n = 6n + 2 \\\\ 6k + 2 = 164 \\\\ 6k = 162 \\\\ k = \\frac{162}{6} \\\\ k = 27$"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "general term of an AP",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-10T14:56:21.107748",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_5 (Arithmetic Progressions).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 29,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 28,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 27,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 33,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 20,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145621_bf644b_01"
+    }
+  ]
+}

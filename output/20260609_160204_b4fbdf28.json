@@ -1,0 +1,197 @@
+{
+  "batch_id": "20260609_160204_b4fbdf28",
+  "generated_at": "2026-06-09T16:02:04.851972",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Some Applications of Trigonometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A team of surveyors is measuring the height of a vertical communication tower $AB$ standing on level ground. From a point $P$ on the ground, the angle of elevation of the top $A$ is $60^\\circ$. Moving $40$ $m$ further away from the tower along the same straight line to a point $Q$, the angle of elevation of the top $A$ is found to be $30^\\circ$. The base $B$ is between $P$ and $Q$.",
+      "type": "case_study",
+      "marks": 4,
+      "diagram": {
+        "required": true,
+        "type": "trigonometry",
+        "caption": "Surveying a tower AB from points P and Q",
+        "scale": 1.0,
+        "elements": [
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 0,
+            "y": 0,
+            "label": "B",
+            "position": "below"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0,
+            "y": 4,
+            "label": "A",
+            "position": "above"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": -2.3,
+            "y": 0,
+            "label": "P",
+            "position": "below"
+          },
+          {
+            "kind": "point",
+            "id": "Q",
+            "x": -4.6,
+            "y": 0,
+            "label": "Q",
+            "position": "below"
+          },
+          {
+            "kind": "segment",
+            "from": "B",
+            "to": "A",
+            "label": "h",
+            "label_position": "right"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "B",
+            "label": "x",
+            "label_position": "below"
+          },
+          {
+            "kind": "segment",
+            "from": "Q",
+            "to": "P",
+            "label": "40m",
+            "label_position": "below"
+          },
+          {
+            "kind": "angle",
+            "points": [
+              "A",
+              "P",
+              "B"
+            ],
+            "label": "60^\\circ"
+          },
+          {
+            "kind": "angle",
+            "points": [
+              "A",
+              "Q",
+              "B"
+            ],
+            "label": "30^\\circ"
+          },
+          {
+            "kind": "right_angle",
+            "points": [
+              "A",
+              "B",
+              "Q"
+            ]
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "Which trigonometric ratio is most appropriate to relate the height $h$ of the tower and the distance $x$ from point $P$ to the base $B$?",
+          "answer": "(A)",
+          "options": [
+            "(A) $\\tan 60^\\circ = h/x$",
+            "(B) $\\sin 60^\\circ = h/x$",
+            "(C) $\\cos 60^\\circ = h/x$",
+            "(D) $\\cot 60^\\circ = h/x$"
+          ],
+          "solution": {
+            "steps": [
+              "In $\\triangle ABP$, the side opposite to $\\angle APB$ is $AB=h$ and the adjacent side is $PB=x$.",
+              "The ratio of opposite to adjacent is $\\tan \\theta$."
+            ],
+            "derivation": "$\\tan(60^\\circ) = \\frac{AB}{PB} = \\frac{h}{x}$"
+          }
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Express the distance $BQ$ in terms of $x$.",
+          "answer": "$x+40$",
+          "solution": {
+            "steps": [
+              "Points $Q$, $P$, and $B$ lie on a straight line in that order.",
+              "$BQ = QP + PB$."
+            ],
+            "derivation": "$BQ = 40 + x$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "vsa",
+          "question": "Find the height $h$ of the tower in meters.",
+          "answer": "$20\\sqrt{3}$",
+          "solution": {
+            "steps": [
+              "From $\\triangle ABP$, $x = h/\\tan 60^\\circ = h/\\sqrt{3}$.",
+              "From $\\triangle ABQ$, $x+40 = h/\\tan 30^\\circ = h\\sqrt{3}$.",
+              "Substitute $x$: $h/\\sqrt{3} + 40 = h\\sqrt{3}$.",
+              "Solve for $h$: $40 = h(\\sqrt{3} - 1/\\sqrt{3}) = h(2/\\sqrt{3})$.",
+              "$h = 20\\sqrt{3}$."
+            ],
+            "derivation": "h = \\frac{40}{\\sqrt{3} - \\frac{1}{\\sqrt{3}}} = \\frac{40\\sqrt{3}}{2} = 20\\sqrt{3}"
+          }
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "What is the distance $PB$ (the distance of the first observation point from the base)?",
+          "answer": "$20$",
+          "solution": {
+            "steps": [
+              "Using $h = 20\\sqrt{3}$ and $x = h/\\sqrt{3}$.",
+              "$x = (20\\sqrt{3})/\\sqrt{3} = 20$."
+            ],
+            "derivation": "x = \\frac{20\\sqrt{3}}{\\sqrt{3}} = 20"
+          }
+        }
+      ],
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T16:02:04.851639",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_9 (Some Applications of Trigonometry).pdf",
+          "Chapter_8 (Introduction to Trigonometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 38,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160204_dc63c8_01"
+    }
+  ]
+}

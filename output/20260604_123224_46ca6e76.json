@@ -1,0 +1,32 @@
+{
+  "batch_id": "20260604_123224_46ca6e76",
+  "generated_at": "2026-06-04T12:32:24.993856",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "Find the discriminant of the quadratic equation $2x^2 - 3x + 1 = 0$.",
+      "answer": "$1$",
+      "solution": {
+        "steps": [
+          "Identify coefficients: $a = 2$, $b = -3$, $c = 1$.",
+          "Apply discriminant formula: $D = b^2 - 4ac$.",
+          "Compute: $D = (-3)^2 - 4(2)(1) = 9 - 8 = 1$."
+        ],
+        "derivation": "$D = (-3)^2 - 4 \\cdot 2 \\cdot 1 = 9 - 8 = 1$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Discriminant",
+      "marks": 1,
+      "type": "vsa",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-04T12:32:24.993697",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_123224_8a5581"
+    }
+  ]
+}

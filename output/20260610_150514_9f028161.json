@@ -1,0 +1,124 @@
+{
+  "batch_id": "20260610_150514_9f028161",
+  "generated_at": "2026-06-10T15:05:14.707896",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "factorisation method",
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "An architect is designing a rectangular garden for a community center. The length of the garden is $3 \\text{ m}$ more than twice its breadth. The area of the garden is $119 \\text{ m}^2$. Let the breadth of the garden be $x$ meters. Based on this information, answer the following questions to determine the dimensions of the garden.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "Which of the following quadratic equations represents the given situation?",
+          "answer": "(B)",
+          "options": [
+            "(A) $2x^2 + 3x - 119 = 0$",
+            "(B) $2x^2 + 3x - 119 = 0$",
+            "(C) $2x^2 - 3x - 119 = 0$",
+            "(D) $x^2 + 3x - 238 = 0$"
+          ]
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Find the roots of the quadratic equation $2x^2 + 3x - 119 = 0$ using the factorisation method.",
+          "answer": "$x = 7, x = -8.5$",
+          "solution": {
+            "steps": [
+              "Identify the quadratic equation as $2x^2 + 3x - 119 = 0$.",
+              "Find two numbers whose product is $2 \\times (-119) = -238$ and sum is $3$. These are $17$ and $-14$.",
+              "Rewrite the middle term: $2x^2 - 14x + 17x - 119 = 0$.",
+              "Factor by grouping: $2x(x - 7) + 17(x - 7) = 0$.",
+              "Solve for $x$: $(2x + 17)(x - 7) = 0$, so $x = 7$ or $x = -17/2 = -8.5$."
+            ],
+            "derivation": "$2x^2 + 3x - 119 = 0 \\\\ 2x^2 - 14x + 17x - 119 = 0 \\\\ 2x(x - 7) + 17(x - 7) = 0 \\\\ (2x + 17)(x - 7) = 0 \\\\ x = 7, x = -8.5$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "vsa",
+          "question": "What is the breadth of the garden? Justify your answer.",
+          "answer": "$7 \\text{ m}$",
+          "solution": {
+            "steps": [
+              "The breadth $x$ must be a positive value because it represents a physical dimension.",
+              "Since $x = 7$ and $x = -8.5$ are the roots, we reject the negative root.",
+              "Therefore, the breadth is $7 \\text{ m}$."
+            ]
+          }
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "Find the length of the garden.",
+          "answer": "$17 \\text{ m}$",
+          "solution": {
+            "steps": [
+              "The length is given as $2x + 3$.",
+              "Substitute $x = 7$: $2(7) + 3 = 14 + 3 = 17$.",
+              "The length of the garden is $17 \\text{ m}$."
+            ]
+          }
+        }
+      ],
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-10T15:05:14.707818",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.1",
+            "question_no": 7,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150514_448e16_01"
+    }
+  ]
+}

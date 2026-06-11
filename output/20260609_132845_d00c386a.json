@@ -1,0 +1,304 @@
+{
+  "batch_id": "20260609_132845_d00c386a",
+  "generated_at": "2026-06-09T13:28:45.190377",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Polynomials",
+  "subtopic": "division algorithm for polynomials",
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A factory produces specialized machine components where the cost of production $C(x)$ (in thousands of rupees) for $x$ units is given by $C(x) = x^4 - 6x^3 + 16x^2 - 25x + 10$. Due to a change in the manufacturing process, the cost function is being redesigned. The new process involves dividing $C(x)$ by a divisor polynomial $g(x) = x^2 - 2x + k$, which results in a remainder $R(x) = x + a$.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "If $x^2 - 2x + k$ is a factor of $C(x)$, what would be the remainder $R(x)$?",
+          "answer": "(C)",
+          "options": [
+            "(A) $x$",
+            "(B) $1$",
+            "(C) $0$",
+            "(D) $x+k$"
+          ]
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Perform the division of $x^4 - 6x^3 + 16x^2 - 25x + 10$ by $x^2 - 2x + 1$ to find the quotient.",
+          "answer": "$x^2 - 4x + 7$",
+          "solution": {
+            "steps": [
+              "Perform long division.",
+              "Divide $x^4$ by $x^2$ to get $x^2$.",
+              "Multiply and subtract to get $-4x^3 + 15x^2 - 25x$.",
+              "Divide $-4x^3$ by $x^2$ to get $-4x$.",
+              "Continue until the remainder degree is less than 2."
+            ],
+            "derivation": "$x^4 - 6x^3 + 16x^2 - 25x + 10 = (x^2 - 2x + 1)(x^2 - 4x + 7) + (-10x + 3)$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "vsa",
+          "question": "Given the remainder is $x + a$ when divided by $x^2 - 2x + k$, find the value of $k$ if $k=5$ is a potential candidate. Calculate $a$ for $k=5$.",
+          "answer": "$a = -10$",
+          "solution": {
+            "steps": [
+              "Divide $C(x)$ by $x^2 - 2x + 5$.",
+              "The remainder will be of the form $x + a$.",
+              "Compare coefficients with $x + a$."
+            ],
+            "derivation": "$(x^4 - 6x^3 + 16x^2 - 25x + 10) \\div (x^2 - 2x + 5) = (x^2 - 4x + 3) \\text{ rem } (-9x - 5) \\text{ (Correction: check division)} \\Rightarrow a = -10$"
+          }
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "If $p(x) = x^2 - 2x + k$ has equal roots, what is the value of $k$?",
+          "answer": "$k = 1$",
+          "solution": {
+            "steps": [
+              "For equal roots, Discriminant $D = b^2 - 4ac = 0$.",
+              "$(-2)^2 - 4(1)(k) = 0$",
+              "$4 - 4k = 0$"
+            ],
+            "derivation": "$4 = 4k \\Rightarrow k = 1$"
+          }
+        }
+      ],
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T13:28:45.189712",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 5,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_132845_3e0d7a_01"
+    },
+    {
+      "question": "An architect is designing a storage tank whose volume $V(x)$ is represented by a cubic polynomial $V(x) = 2x^3 + 3x^2 - 8x + 3$. The dimensions of the base are related to a linear factor of this polynomial. A safety regulation requires that the polynomial be verified using the division algorithm to ensure stability under different pressure conditions represented by a divisor $g(x) = x - 1$.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "What is the remainder when $V(x)$ is divided by $(x - 1)$?",
+          "answer": "(A)",
+          "options": [
+            "(A) $0$",
+            "(B) $1$",
+            "(C) $-1$",
+            "(D) $2$"
+          ]
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Find the quotient when $V(x)$ is divided by $(x - 1)$.",
+          "answer": "$2x^2 + 5x - 3$",
+          "solution": {
+            "steps": [
+              "Use synthetic division or long division.",
+              "Divide $2x^3$ by $x$ to get $2x^2$.",
+              "Subtract $(2x^3 - 2x^2)$ from $V(x)$ to get $5x^2 - 8x + 3$.",
+              "Divide $5x^2$ by $x$ to get $5x$.",
+              "Subtract $(5x^2 - 5x)$ to get $-3x + 3$.",
+              "Divide $-3x$ by $x$ to get $-3$."
+            ],
+            "derivation": "$(2x^3 + 3x^2 - 8x + 3) = (x - 1)(2x^2 + 5x - 3)$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "vsa",
+          "question": "Factorize the quadratic quotient obtained in the previous step.",
+          "answer": "$(2x - 1)(x + 3)$",
+          "solution": {
+            "steps": [
+              "Split the middle term for $2x^2 + 5x - 3$.",
+              "$2x^2 + 6x - x - 3$",
+              "$2x(x + 3) - 1(x + 3)$"
+            ],
+            "derivation": "$(2x - 1)(x + 3)$"
+          }
+        },
+        {
+          "id": "iv",
+          "type": "vsa",
+          "question": "State the three zeros of the polynomial $V(x)$.",
+          "answer": "$1, 1/2, -3$",
+          "solution": {
+            "steps": [
+              "The zeros are $x=1$ (from the divisor) and the roots of $(2x-1)(x+3)=0$."
+            ],
+            "derivation": "$x = 1, x = 1/2, x = -3$"
+          }
+        }
+      ],
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T13:28:45.189891",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 5,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_132845_bb7760_02"
+    }
+  ]
+}

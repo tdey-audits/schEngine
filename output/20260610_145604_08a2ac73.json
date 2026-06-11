@@ -1,0 +1,95 @@
+{
+  "batch_id": "20260610_145604_08a2ac73",
+  "generated_at": "2026-06-10T14:56:04.482398",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "standard form and roots",
+  "difficulty": "hard",
+  "question_type": "vsa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If the quadratic equation $(m+1)x^2 - 2(m+3)x + (m+8) = 0$ has equal roots, find the value of $m$.",
+      "answer": "$m = -1$ or $m = 5$",
+      "solution": {
+        "steps": [
+          "For a quadratic equation $ax^2 + bx + c = 0$ to have equal roots, the discriminant $D = b^2 - 4ac$ must be equal to $0$.",
+          "Substitute $a = (m+1)$, $b = -2(m+3)$, and $c = (m+8)$ into the condition $D=0$ and solve for $m$."
+        ],
+        "derivation": "$D = b^2 - 4ac = 0 \\ (-2(m+3))^2 - 4(m+1)(m+8) = 0 \\ 4(m^2 + 6m + 9) - 4(m^2 + 9m + 8) = 0 \\ m^2 + 6m + 9 - m^2 - 9m - 8 = 0 \\ -3m + 1 = 0 \\ m = 1/3$ \\ Note: If $m=-1$, the equation is not quadratic. Checking $m=1/3$ gives equal roots."
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "standard form and roots",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-10T14:56:04.482317",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 23,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 24,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 21,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145604_79daf8_01"
+    }
+  ]
+}

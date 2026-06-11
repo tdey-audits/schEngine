@@ -1,0 +1,155 @@
+{
+  "batch_id": "20260604_140857_5ea92e3d",
+  "generated_at": "2026-06-04T14:08:57.415742",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The common difference of the AP $5, 2, -1, -4, ...$ is $-3$. Reason (R): The common difference $d$ of an AP $a_1, a_2, a_3, ...$ is given by $d = a_n - a_{n-1}$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Calculate common difference: $d = a_2 - a_1 = 2 - 5 = -3$.",
+          "Verify the formula for common difference."
+        ],
+        "derivation": "d = 2 - 5 = -3; \\text{ Yes, } d = a_n - a_{n-1} \\text{ is the definition.}"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Common Difference",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:57.415325",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140857_d1f37d_01"
+    },
+    {
+      "question": "Assertion (A): The 10th term of the AP $2, 7, 12, ...$ is $47$. Reason (R): The $n^{th}$ term of an AP is given by $a_n = a + (n-1)d$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Identify $a=2, d=5, n=10$.",
+          "Apply $a_{10} = 2 + (10-1)5 = 2 + 45 = 47$."
+        ],
+        "derivation": "a_{10} = 2 + (9)(5) = 2 + 45 = 47"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "nth term of an AP",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:57.415431",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140857_52245b_02"
+    },
+    {
+      "question": "Assertion (A): The sum of the first 10 natural numbers is 55. Reason (R): The sum of first $n$ natural numbers is given by $\\frac{n(n+1)}{2}$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Use formula $S_n = \\frac{n(n+1)}{2}$ for $n=10$.",
+          "Calculate $S_{10} = \\frac{10 \\times 11}{2} = 55$."
+        ],
+        "derivation": "S_{10} = \\frac{10(11)}{2} = 5 \times 11 = 55"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Sum of first n terms",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:57.415464",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140857_417f5a_03"
+    },
+    {
+      "question": "Assertion (A): The sequence $3, 3, 3, 3, ...$ is an AP. Reason (R): A sequence is an AP if the difference between consecutive terms is constant.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Calculate differences: $3-3=0, 3-3=0$.",
+          "Since difference is constant ($d=0$), it is an AP."
+        ],
+        "derivation": "a_2 - a_1 = 0; a_3 - a_2 = 0; d = 0 \\text{ (constant)}"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Definition of AP",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:57.415488",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140857_f56fa3_04"
+    },
+    {
+      "question": "Assertion (A): If $2x, x+10, 3x+2$ are in AP, then $x=6$. Reason (R): If $a, b, c$ are in AP, then $2b = a+c$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Use property $2(x+10) = 2x + (3x+2)$.",
+          "Solve for $x$: $2x + 20 = 5x + 2 \\implies 18 = 3x \\implies x = 6$."
+        ],
+        "derivation": "2(x+10) = 2x + 3x + 2 \\implies 2x + 20 = 5x + 2 \\implies 18 = 3x \\implies x=6"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "Arithmetic Mean property",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:57.415510",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140857_ce9afc_05"
+    }
+  ]
+}

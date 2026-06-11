@@ -1,0 +1,187 @@
+{
+  "batch_id": "20260604_151112_32bb1f31",
+  "generated_at": "2026-06-04T15:11:12.210626",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Coordinate Geometry",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the ratio in which the $y$-axis divides the line segment joining the points $A(5, -6)$ and $B(-1, -4)$. Also, find the point of intersection.",
+      "answer": "Ratio $5:1$, Point $(0, -13/3)$",
+      "solution": {
+        "steps": [
+          "Assume the ratio is $k:1$. The coordinates of the point on the $y$-axis will be $(0, y)$.",
+          "Use the section formula for the $x$-coordinate to find $k$.",
+          "Substitute $k$ into the section formula for the $y$-coordinate to find the point."
+        ],
+        "derivation": "$0 = \\frac{k(-1) + 1(5)}{k+1} \\Rightarrow -k + 5 = 0 \\Rightarrow k = 5 \\\\ \\text{Ratio is } 5:1 \\\\ y = \\frac{5(-4) + 1(-6)}{5+1} = \\frac{-20 - 6}{6} = \\frac{-26}{6} = -\\frac{13}{3} \\\\ \\text{Point is } (0, -\\frac{13}{3})$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Section Formula",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:12.210305",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151112_afb170_01"
+    },
+    {
+      "question": "Find the coordinates of a point $A$, where $AB$ is the diameter of a circle whose centre is $(2, -3)$ and $B$ is $(1, 4)$.",
+      "answer": "$A(3, -10)$",
+      "solution": {
+        "steps": [
+          "Let $A = (x, y)$. The centre $(2, -3)$ is the midpoint of the diameter $AB$.",
+          "Apply the midpoint formula: $x_m = \\frac{x_1 + x_2}{2}$ and $y_m = \\frac{y_1 + y_2}{2}$.",
+          "Solve for $x$ and $y$."
+        ],
+        "derivation": "$\\frac{x + 1}{2} = 2 \\Rightarrow x + 1 = 4 \\Rightarrow x = 3 \\\\ \\frac{y + 4}{2} = -3 \\Rightarrow y + 4 = -6 \\Rightarrow y = -10 \\\\ A = (3, -10)$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Midpoint Formula",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "elements": [
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O(2, -3)"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": -2,
+            "y": 0,
+            "label": "A(x,y)"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 2,
+            "y": 0,
+            "label": "B(1,4)"
+          },
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:12.210411",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151112_440e56_02"
+    },
+    {
+      "question": "Find the value of $k$ for which the points $A(2, 3)$, $B(4, k)$, and $C(6, -3)$ are collinear.",
+      "answer": "$k = 0$",
+      "solution": {
+        "steps": [
+          "For three points to be collinear, the area of the triangle formed by them must be $0$.",
+          "Use the area formula: $\\frac{1}{2} |x_1(y_2-y_3) + x_2(y_3-y_1) + x_3(y_1-y_2)| = 0$.",
+          "Substitute the coordinates and solve for $k$."
+        ],
+        "derivation": "$2(k - (-3)) + 4(-3 - 3) + 6(3 - k) = 0 \\\\ 2(k + 3) + 4(-6) + 18 - 6k = 0 \\\\ 2k + 6 - 24 + 18 - 6k = 0 \\\\ -4k = 0 \\Rightarrow k = 0$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Area of Triangle",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:12.210443",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151112_9fd138_03"
+    },
+    {
+      "question": "Find the distance between the points $P(-6, 7)$ and $Q(-1, -5)$.",
+      "answer": "$13$ units",
+      "solution": {
+        "steps": [
+          "Use the distance formula: $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.",
+          "Substitute the coordinates of $P$ and $Q$.",
+          "Calculate the square roots to find the distance."
+        ],
+        "derivation": "$d = \\sqrt{(-1 - (-6))^2 + (-5 - 7)^2} \\\\ d = \\sqrt{(5)^2 + (-12)^2} \\\\ d = \\sqrt{25 + 144} = \\sqrt{169} \\\\ d = 13 \\text{ units}$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Distance Formula",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:12.210466",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151112_7d574c_04"
+    },
+    {
+      "question": "If the points $A(6, 1)$, $B(8, 2)$, $C(9, 4)$, and $D(p, 3)$ are the vertices of a parallelogram taken in order, find the value of $p$.",
+      "answer": "$p = 7$",
+      "solution": {
+        "steps": [
+          "Diagonals of a parallelogram bisect each other, meaning their midpoints coincide.",
+          "Find the midpoint of diagonal $AC$ and diagonal $BD$.",
+          "Equate the midpoints and solve for $p$."
+        ],
+        "derivation": "\\text{Midpoint of } AC = (\\frac{6+9}{2}, \\frac{1+4}{2}) = (7.5, 2.5) \\\\ \\text{Midpoint of } BD = (\\frac{8+p}{2}, \\frac{2+3}{2}) = (\\frac{8+p}{2}, 2.5) \\\\ \\frac{8+p}{2} = 7.5 \\Rightarrow 8+p = 15 \\Rightarrow p = 7"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Midpoint Formula",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "elements": [
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "C"
+          },
+          {
+            "kind": "segment",
+            "from": "B",
+            "to": "D"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:12.210487",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151112_3f154b_05"
+    }
+  ]
+}

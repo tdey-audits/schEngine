@@ -1,0 +1,121 @@
+{
+  "batch_id": "20260610_112614_f7496c09",
+  "generated_at": "2026-06-10T11:26:14.987622",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The number $0.121121112...$ is an irrational number. Reason (R): A number is irrational if its decimal expansion is non-terminating and non-repeating.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Analyze the decimal expansion given in the Assertion: $0.121121112...$.",
+          "Observe that the pattern of digits does not terminate and does not repeat in a fixed block.",
+          "Recall the definition of rational numbers: they have either terminating or non-terminating repeating decimal expansions.",
+          "Recall the definition of irrational numbers: they have non-terminating and non-repeating decimal expansions.",
+          "Since the given number is non-terminating and non-repeating, it is irrational. Thus, Assertion (A) is true.",
+          "The Reason (R) correctly states the condition for a number to be irrational. Thus, Reason (R) is true and correctly explains Assertion (A)."
+        ],
+        "derivation": "$0.121121112... \\text{ is non-terminating and non-repeating} \\Rightarrow \\text{Irrational} \\Rightarrow A \\text{ is true} \\\\ \\text{Definition of irrational number: non-terminating and non-repeating} \\Rightarrow R \\text{ is true} \\\\ \\text{Since R defines the property used in A, R is the correct explanation of A.}$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Irrational Numbers",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T11:26:14.987306",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 19,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 11,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_112614_20fca6_01"
+    }
+  ]
+}

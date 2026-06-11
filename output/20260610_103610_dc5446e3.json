@@ -1,0 +1,67 @@
+{
+  "batch_id": "20260610_103610_dc5446e3",
+  "generated_at": "2026-06-10T10:36:10.285842",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": "euclid division lemma",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "According to Euclid's division lemma, for any two positive integers $a$ and $b$, there exist unique integers $q$ and $r$ such that $a = bq + r$, where $r$ must satisfy which of the following conditions?",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Euclid's division lemma states that for any two positive integers $a$ and $b$, there exist unique integers $q$ and $r$ such that $a = bq + r$.",
+          "The remainder $r$ must be greater than or equal to $0$ and strictly less than the divisor $b$.",
+          "In mathematical notation, this is expressed as $0 \\leq r < b$."
+        ],
+        "derivation": "$a = bq + r \\Rightarrow 0 \\leq r < b$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Euclid's division lemma",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $0 < r < b$",
+        "(B) $0 \\leq r < b$",
+        "(C) $0 < r \\leq b$",
+        "(D) $0 \\leq r \\leq b$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T10:36:10.285508",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 1,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 6,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260610_103610_a59396_01"
+    }
+  ]
+}

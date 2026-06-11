@@ -1,0 +1,203 @@
+{
+  "batch_id": "20260609_160040_a07c354e",
+  "generated_at": "2026-06-09T16:00:40.082693",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Some Applications of Trigonometry",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Two pillars of equal height $h$ stand on opposite sides of a road which is $80$ $m$ wide. At a point between the pillars on the road, the angles of elevation of the tops of the pillars are $60^\\circ$ and $30^\\circ$ respectively. Find the height of the pillars and the position of the point from the first pillar.",
+      "answer": "$h = 20\\sqrt{3}$ $m$, distance = $20$ $m$",
+      "solution": {
+        "steps": [
+          "Let the height of both pillars be $h$. Let the total width of the road be $BC = 80$ $m$. Let $P$ be a point on the road such that $BP = x$ and $PC = 80 - x$.",
+          "In $\\triangle ABP$, $\\tan 60^\\circ = \\frac{h}{x}$, which gives $h = x\\sqrt{3}$.",
+          "In $\\triangle DCP$, $\\tan 30^\\circ = \\frac{h}{80-x}$, which gives $h = \\frac{80-x}{\\sqrt{3}}$.",
+          "Equate the two expressions for $h$: $x\\sqrt{3} = \\frac{80-x}{\\sqrt{3}}$. Solving for $x$ gives $3x = 80 - x$, so $4x = 80$, $x = 20$ $m$.",
+          "Substitute $x = 20$ into $h = x\\sqrt{3}$ to get $h = 20\\sqrt{3}$ $m$."
+        ],
+        "derivation": "$h = x\\tan 60^\\circ = x\\sqrt{3} \\\\ h = (80-x)\\tan 30^\\circ = \\frac{80-x}{\\sqrt{3}} \\\\ x\\sqrt{3} = \\frac{80-x}{\\sqrt{3}} \\\\ 3x = 80 - x \\\\ 4x = 80 \\Rightarrow x = 20 \\\\ h = 20\\sqrt{3} \\approx 34.64$ $m$"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Height and distance with two angles",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "diagram": {
+        "required": true,
+        "type": "trigonometry",
+        "caption": "Pillars of height h at B and C with point P between them",
+        "scale": 0.85,
+        "elements": [
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0,
+            "y": 4,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 0,
+            "y": 0,
+            "label": "B"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 1,
+            "y": 0,
+            "label": "P"
+          },
+          {
+            "kind": "point",
+            "id": "C",
+            "x": 4,
+            "y": 0,
+            "label": "C"
+          },
+          {
+            "kind": "point",
+            "id": "D",
+            "x": 4,
+            "y": 4,
+            "label": "D"
+          },
+          {
+            "kind": "segment",
+            "from": "B",
+            "to": "A",
+            "label": "h"
+          },
+          {
+            "kind": "segment",
+            "from": "C",
+            "to": "D",
+            "label": "h"
+          },
+          {
+            "kind": "segment",
+            "from": "B",
+            "to": "C",
+            "label": "80 m"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "A"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "D"
+          },
+          {
+            "kind": "angle",
+            "points": [
+              "B",
+              "P",
+              "A"
+            ],
+            "label": "60^\\circ"
+          },
+          {
+            "kind": "angle",
+            "points": [
+              "C",
+              "P",
+              "D"
+            ],
+            "label": "30^\\circ"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-09T16:00:40.082438",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_9 (Some Applications of Trigonometry).pdf",
+          "Chapter_8 (Introduction to Trigonometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 28,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 30,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 30,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 13,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 7,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Introduction to Trigonometry",
+            "exercise": "8.3",
+            "question_no": 5,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160040_c70952_01"
+    }
+  ]
+}

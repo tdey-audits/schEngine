@@ -1,0 +1,61 @@
+{
+  "batch_id": "20260610_122452_5519f9d7",
+  "generated_at": "2026-06-10T12:24:52.067247",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": "euclid division lemma",
+  "difficulty": "simple",
+  "question_type": "vsa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Using Euclid's division lemma, show that any positive odd integer is of the form $4q + 1$ or $4q + 3$, where $q$ is some integer.",
+      "answer": "By Euclid's division lemma, $a = 4q + r$ where $0 \\leq r < 4$. For odd $a$, $r$ must be $1$ or $3$, resulting in $a = 4q + 1$ or $a = 4q + 3$.",
+      "solution": {
+        "steps": [
+          "Apply Euclid's division lemma for a positive integer $a$ and divisor $b = 4$ to obtain $a = 4q + r$, where $r \\in \\{0, 1, 2, 3\\}$.",
+          "Identify the cases where $a$ is odd, which occurs when $r = 1$ or $r = 3$, since $r = 0$ and $r = 2$ yield even integers.",
+          "Conclude that any positive odd integer must be of the form $4q + 1$ or $4q + 3$."
+        ],
+        "derivation": "$a = 4q + r, \\text{ where } 0 \\leq r < 4 \\\\ \\text{If } r=0, a=4q = 2(2q) \\text{ (even)} \\\\ \\text{If } r=1, a=4q+1 \\text{ (odd)} \\\\ \\text{If } r=2, a=4q+2 = 2(2q+1) \\text{ (even)} \\\\ \\text{If } r=3, a=4q+3 \\text{ (odd)} \\\\ \\therefore \\text{ any odd integer is of the form } 4q+1 \\text{ or } 4q+3$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Euclid's division lemma",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-10T12:24:52.066962",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 25,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 22,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 23,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122452_3fc16a_01"
+    }
+  ]
+}

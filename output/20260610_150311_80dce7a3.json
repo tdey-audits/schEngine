@@ -1,0 +1,97 @@
+{
+  "batch_id": "20260610_150311_80dce7a3",
+  "generated_at": "2026-06-10T15:03:11.098030",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": "irrational numbers",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $x$ is a non-zero rational number and $y$ is an irrational number, then the nature of the product $xy$ is:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Assume $x = \\frac{p}{q}$ where $p, q$ are integers, $q \\neq 0$, and $p \\neq 0$.",
+          "Assume $xy = z$, where $z$ is a rational number.",
+          "Then $y = \\frac{z}{x} = \\frac{z}{p/q} = \\frac{zq}{p}$.",
+          "Since $z$ is rational and $x$ is a non-zero rational, the ratio of two rational numbers is always rational.",
+          "This implies $y$ is rational, which contradicts the given fact that $y$ is irrational.",
+          "Therefore, the product $xy$ must be irrational."
+        ],
+        "derivation": "$x \\in \\mathbb{Q}, x \\neq 0, y \\notin \\mathbb{Q} \\\\ \\text{Assume } xy = r, r \\in \\mathbb{Q} \\\\ y = \\frac{r}{x} \\\\ \\text{Since } r, x \\in \\mathbb{Q} \\text{ and } x \\neq 0, \\frac{r}{x} \\in \\mathbb{Q} \\\\ \\Rightarrow y \\in \\mathbb{Q} \\text{ (Contradiction)} \\\\ \\therefore xy \\notin \\mathbb{Q}$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "irrational numbers",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) Always irrational",
+        "(B) Always rational",
+        "(C) Rational or irrational",
+        "(D) Neither rational nor irrational"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T15:03:11.097762",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Prelims.pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 6,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.1",
+            "question_no": 8,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.1",
+            "question_no": 2,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.1",
+            "question_no": 10,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150311_c85f54_01"
+    }
+  ]
+}

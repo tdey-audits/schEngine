@@ -1,0 +1,287 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag} \\[0.3cm]
+  \textbf{Time Allowed: 3 Hours} \hfill \textbf{Maximum Marks: 80} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\noindent\textbf{General Instructions:}
+\begin{enumerate}
+  \item {\normalfont\normalcolor This question paper contains 40 questions. All questions are compulsory.}
+  \item {\normalfont\normalcolor Questions are grouped into sections A through E.}
+  \item {\normalfont\normalcolor Use of calculators is NOT permitted.}
+\end{enumerate}
+\bigskip
+\noindent\textbf{\large Section A: Multiple Choice \& Assertion-Reason (1 mark each)}
+
+\begin{questions}
+\question[1] The mean of the first 5 natural numbers is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 2
+  \item (B) 3
+  \item (C) 4
+  \item (D) 5
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The mode of the data set 2, 3, 4, 3, 5, 3, 6, 3 is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 2
+  \item (B) 4
+  \item (C) 3
+  \item (D) 5
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If the mean of 5 observations $x, x+2, x+4, x+6, x+8$ is 11, then the value of $x$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 7
+  \item (B) 8
+  \item (C) 9
+  \item (D) 6
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The median of the data 7, 3, 5, 9, 1 is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 3
+  \item (B) 5
+  \item (C) 7
+  \item (D) 1
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] For a distribution, if mean = 20 and median = 21, then the mode is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 22
+  \item (B) 24
+  \item (C) 21
+  \item (D) 23
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The mean of the first five natural numbers is 3. Reason (R): The mean of a set of observations is calculated by dividing the sum of observations by the total number of observations.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The mode of the data 2, 3, 4, 3, 2, 3 is 3. Reason (R): Mode is the value that appears most frequently in a data set.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): Median of the data 5, 1, 3, 2, 4 is 3. Reason (R): Median is the middle value when data is arranged in ascending or descending order.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The range of the data 10, 15, 20, 25, 30 is 20. Reason (R): Range is defined as the difference between the maximum and minimum values of the data.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The sum of deviations of the observations $x_i$ from their mean $\bar{x}$ is 0. Reason (R): $\sum (x_i - \bar{x}) = 0$ is a fundamental property of the arithmetic mean.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): For polynomials $p(x) = x^2 - 1$ and $g(x) = x - 1$, the remainder is 0. Reason (R): According to the division algorithm, $p(x) = g(x)q(x) + r(x)$, where $r(x) = 0$ if $g(x)$ is a factor of $p(x)$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): On dividing $x^2 + 5x + 6$ by $x + 2$, the remainder is 0. Reason (R): The degree of the remainder is always equal to the degree of the divisor.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): When $p(x) = 2x^2 + 3x + 1$ is divided by $x+1$, the quotient is $2x+1$. Reason (R): The division algorithm $p(x) = g(x)q(x) + r(x)$ holds for all polynomials where $g(x) \neq 0$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section B: Very Short Answer (2 marks each)}
+
+\begin{questions}
+\question[2] The length of the minute hand of a clock is $14 \text{ cm}$. Find the area swept by the minute hand in $5$ minutes.
+\vspace{0.15cm}
+
+\question[2] Find the area of a quadrant of a circle whose circumference is $44 \text{ cm}$.
+\vspace{0.15cm}
+
+\question[2] A chord of a circle of radius $10 \text{ cm}$ subtends a right angle at the centre. Find the area of the corresponding minor segment. (Use $\pi = 3.14$)
+\vspace{0.15cm}
+
+\question[2] The radii of two circles are $8 \text{ cm}$ and $6 \text{ cm}$ respectively. Find the radius of the circle having area equal to the sum of the areas of the two circles.
+\vspace{0.15cm}
+
+\question[2] Find the mean of the first $n$ natural numbers.
+\vspace{0.15cm}
+
+\question[2] If the mean of the following distribution is 6, find the value of $p$: $x: 2, 4, 6, 10, p+5$; $f: 3, 2, 3, 1, 2$.
+\vspace{0.15cm}
+
+\question[2] The median of a distribution is 15 and the mean is 12. Find the mode using the empirical relationship.
+\vspace{0.15cm}
+
+\question[2] Find the class mark of the class interval $10-25$ and $35-50$.
+\vspace{0.15cm}
+
+\question[2] If $\sum f_i = 20$ and $\sum f_i x_i = 2p + 120$, find $p$ if the mean is 7.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section C: Short Answer (3 marks each)}
+
+\begin{questions}
+\question[3] Find the area of the shaded region in a circle of radius $14$ cm, where a sector subtends an angle of $60^{\circ}$ at the center. (Use $\pi = \frac{22}{7}$)
+\vspace{0.15cm}
+
+\question[3] The wheels of a car are of diameter $80$ cm each. How many complete revolutions does each wheel make in $10$ minutes when the car is traveling at a speed of $66$ km/hr?
+\vspace{0.15cm}
+
+\question[3] Find the area of a quadrant of a circle whose circumference is $44$ cm. (Use $\pi = \frac{22}{7}$)
+\vspace{0.15cm}
+
+\question[3] In a circle of radius $21$ cm, an arc subtends an angle of $60^{\circ}$ at the center. Find the length of the arc.
+\vspace{0.15cm}
+
+\question[3] The cost of fencing a circular field at the rate of $\text{Rs.~} 24$ per meter is $\text{Rs.~} 5280$. Find the radius of the field.
+\vspace{0.15cm}
+
+\question[3] The mean of the following frequency distribution is 50. Find the value of $p$ if the sum of frequencies is 100.
+| Class | 0-20 | 20-40 | 40-60 | 60-80 | 80-100 |
+|---|---|---|---|---|---|
+| Frequency | 17 | $p$ | 32 | $p$ | 19 |
+\vspace{0.15cm}
+
+\question[3] The following table gives the daily income of 50 workers of a factory. Find the mean daily income of the workers using an appropriate method.
+| Daily Income (in Rs.~) | 100-120 | 120-140 | 140-160 | 160-180 | 180-200 |
+|---|---|---|---|---|---|
+| Number of workers | 12 | 14 | 8 | 6 | 10 |
+\vspace{0.15cm}
+
+\question[3] Find the median of the following data:
+| Class interval | 0-10 | 10-20 | 20-30 | 30-40 | 40-50 |
+|---|---|---|---|---|---|
+| Frequency | 5 | 15 | 20 | 7 | 3 |
+\vspace{0.15cm}
+
+\question[3] Find the modal class and the mode for the following distribution:
+| Marks | 0-10 | 10-20 | 20-30 | 30-40 | 40-50 |
+|---|---|---|---|---|---|
+| Number of students | 4 | 10 | 16 | 12 | 8 |
+\vspace{0.15cm}
+
+\question[3] If the median of a distribution is 28 and the mean is 27, find the mode using the empirical relationship.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section D: Long Answer (4-5 marks each)}
+
+\begin{questions}
+\question[5] A round table cover has a design in the form of a regular hexagon ABCDEF inscribed in a circle of radius $3.5$ cm. Find the area of the design (shaded region), excluding the hexagon. Use $\sqrt{3} = 1.732$ and $\pi = \frac{22}{7}$.
+\vspace{0.15cm}
+
+\question[5] Two circular flower beds are shown on two sides of a square lawn ABCD of side $56$ m. If the centre of each circular flower bed is the point of intersection O of the diagonals of the square lawn, find the sum of the areas of the lawn and the flower beds.
+\vspace{0.15cm}
+
+\question[5] A car has two wipers which do not overlap. Each wiper has a blade of length $25$ cm sweeping through an angle of $115^\circ$. Find the total area cleaned at each sweep of the blades.
+\vspace{0.15cm}
+
+\question[5] In a circle of radius $21$ cm, an arc subtends an angle of $60^\circ$ at the centre. Find (i) the length of the arc, (ii) the area of the sector formed by the arc, and (iii) the area of the segment formed by the corresponding chord.
+\vspace{0.15cm}
+
+\question[5] The following distribution shows the daily pocket allowance of 50 children of a locality. If the mean pocket allowance is Rs.~18, find the missing frequency $f$ for the class interval 19-21: 
+
+Daily allowance (in Rs.~): 11-13, 13-15, 15-17, 17-19, 19-21, 21-23, 23-25 
+Number of children: 7, 6, 9, 13, f, 5, 4
+\vspace{0.15cm}
+
+\question[5] The annual profits earned by 30 shops of a shopping complex in a locality are given below: 
+Profit (in lakhs): 0-10, 10-20, 20-30, 30-40, 40-50, 50-60 
+Number of shops: 5, 8, 6, 4, 3, 4 
+Draw both 'less than' and 'more than' ogives for the given data on the same graph and find the median from the intersection point of the ogives.
+\vspace{0.15cm}
+
+\question[5] If the median of the following frequency distribution is 28.5, find the values of $x$ and $y$ if the total frequency is 60: 
+Class Interval: 0-10, 10-20, 20-30, 30-40, 40-50, 50-60 
+Frequency: 5, x, 20, 15, y, 5
+\vspace{0.15cm}
+
+\question[5] The frequency distribution of the heights of 50 students is given below. Find the modal height of the students: 
+Height (cm): 140-145, 145-150, 150-155, 155-160, 160-165 
+Number of students: 8, 12, 15, 10, 5
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+
+\end{document}

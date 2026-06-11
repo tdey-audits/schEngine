@@ -1,0 +1,116 @@
+{
+  "batch_id": "20260604_134306_aa05ae8d",
+  "generated_at": "2026-06-04T13:43:06.608270",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Some Applications of Trigonometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A vertical tower stands on a horizontal plane and is surmounted by a vertical flagstaff of height $h$. At a point on the plane, the angles of elevation of the bottom and the top of the flagstaff are $\\alpha$ and $\\beta$ respectively. Prove that the height of the tower is $\\frac{h \\tan \\alpha}{\\tan \\beta - \\tan \\alpha}$.",
+      "answer": "\\text{Height of tower} = \\frac{h \\tan \\alpha}{\\tan \\beta - \\tan \\alpha}",
+      "solution": {
+        "steps": [
+          "Let the height of the tower be $x$ and the distance of the point from the base be $d$.",
+          "In the triangle formed by the tower base, the point, and the ground, $\\tan \\alpha = \\frac{x}{d} \\implies d = \\frac{x}{\\tan \\alpha}$.",
+          "In the triangle formed by the flagstaff top, the point, and the ground, the total height is $x+h$.",
+          "$\\tan \\beta = \\frac{x+h}{d} \\implies d = \\frac{x+h}{\\tan \\beta}$.",
+          "Equate the two expressions for $d$: $\\frac{x}{\\tan \\alpha} = \\frac{x+h}{\\tan \\beta}$.",
+          "Solve for $x$ by cross-multiplying and rearranging terms."
+        ],
+        "derivation": "d = \\frac{x}{\\tan \\alpha} = \\frac{x+h}{\\tan \\beta} \\\\ x \\tan \\beta = (x+h) \\tan \\alpha \\\\ x \\tan \\beta - x \\tan \\alpha = h \\tan \\alpha \\\\ x(\\tan \\beta - \\tan \\alpha) = h \\tan \\alpha \\\\ x = \\frac{h \\tan \\alpha}{\\tan \\beta - \\tan \\alpha}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Angle of elevation",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:06.608036",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134306_52a42e_01"
+    },
+    {
+      "question": "From a point on the ground, the angles of elevation of the bottom and the top of a transmission tower fixed at the top of a $20 \\text{ m}$ high building are $45^\\circ$ and $60^\\circ$ respectively. Find the height of the tower.",
+      "answer": "20(\\sqrt{3}-1) \\text{ m}",
+      "solution": {
+        "steps": [
+          "Let $h$ be the height of the tower and $x$ be the distance from the point to the building.",
+          "Use $\\tan 45^\\circ = \\frac{20}{x}$ to find $x$.",
+          "Use $\\tan 60^\\circ = \\frac{20+h}{x}$ to relate $h$ and $x$.",
+          "Substitute $x=20$ into the second equation.",
+          "Solve for $h$ and rationalize if necessary."
+        ],
+        "derivation": "\\tan 45^\\circ = \\frac{20}{x} \\implies 1 = \\frac{20}{x} \\implies x = 20 \\\\ \\tan 60^\\circ = \\frac{20+h}{20} \\implies \\sqrt{3} = \\frac{20+h}{20} \\\\ 20\\sqrt{3} = 20+h \\\\ h = 20(\\sqrt{3}-1) \\text{ m}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Height and Distance",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:06.608102",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134306_46a330_02"
+    },
+    {
+      "question": "The angle of elevation of a cloud from a point $60 \\text{ m}$ above a lake is $30^\\circ$ and the angle of depression of the reflection of the cloud in the lake is $60^\\circ$. Find the height of the cloud from the surface of the lake.",
+      "answer": "120 \\text{ m}",
+      "solution": {
+        "steps": [
+          "Let $H$ be the height of the cloud above the lake surface. The distance of the reflection below the lake surface is also $H$.",
+          "The height of the cloud above the observation point is $H-60$.",
+          "The depth of the reflection below the observation point is $H+60$.",
+          "Use $\\tan 30^\\circ = \\frac{H-60}{d}$ and $\\tan 60^\\circ = \\frac{H+60}{d}$.",
+          "Divide the two equations to eliminate $d$ and solve for $H$."
+        ],
+        "derivation": "\\frac{1}{\\sqrt{3}} = \\frac{H-60}{d} \\implies d = \\sqrt{3}(H-60) \\\\ \\sqrt{3} = \\frac{H+60}{d} \\implies d = \\frac{H+60}{\\sqrt{3}} \\\\ \\sqrt{3}(H-60) = \\frac{H+60}{\\sqrt{3}} \\\\ 3(H-60) = H+60 \\\\ 3H - 180 = H + 60 \\\\ 2H = 240 \\implies H = 120 \\text{ m}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Reflection problems",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:06.608120",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134306_466e2c_03"
+    },
+    {
+      "question": "Two poles of equal heights are standing opposite each other side by side and opposite each other on either side of the road, which is $80 \\text{ m}$ wide. From a point between them on the road, the angles of elevation of the top of the poles are $60^\\circ$ and $30^\\circ$ respectively. Find the height of the poles and the distances of the point from the poles.",
+      "answer": "\\text{Height} = 20\\sqrt{3} \\text{ m}, \\text{Distances} = 20 \\text{ m and } 60 \\text{ m}",
+      "solution": {
+        "steps": [
+          "Let $h$ be the height of both poles and $x$ be the distance from one pole.",
+          "The distance from the other pole is $80-x$.",
+          "Use $\\tan 60^\\circ = \\frac{h}{x}$ and $\\tan 30^\\circ = \\frac{h}{80-x}$.",
+          "Express $h$ in terms of $x$ in both equations.",
+          "Equate and solve for $x$, then find $h$."
+        ],
+        "derivation": "h = x\\sqrt{3} \\\\ h = \\frac{80-x}{\\sqrt{3}} \\\\ x\\sqrt{3} = \\frac{80-x}{\\sqrt{3}} \\\\ 3x = 80 - x \\\\ 4x = 80 \\implies x=20 \\\\ h = 20\\sqrt{3} \\text{ m}"
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Two poles problem",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:43:06.608133",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134306_c39bac_04"
+    }
+  ]
+}

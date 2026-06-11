@@ -1,0 +1,125 @@
+{
+  "batch_id": "20260610_122414_866d55f9",
+  "generated_at": "2026-06-10T12:24:14.318114",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "standard form and roots",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "The discriminant of the quadratic equation $2x^2 + 5x - 3 = 0$ is",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify the coefficients $a$, $b$, and $c$ from the standard form $ax^2 + bx + c = 0$.",
+          "Here, $a = 2$, $b = 5$, and $c = -3$.",
+          "Use the discriminant formula $D = b^2 - 4ac$.",
+          "Substitute the values: $D = (5)^2 - 4(2)(-3)$.",
+          "Calculate the result: $D = 25 + 24 = 49$."
+        ],
+        "derivation": "$D = b^2 - 4ac \\ D = (5)^2 - 4(2)(-3) \\ D = 25 + 24 \\ D = 49$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of roots",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 1",
+        "(B) 19",
+        "(C) 49",
+        "(D) 31"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T12:24:14.317595",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122414_aefcac_01"
+    },
+    {
+      "question": "If $x = -2$ is one of the roots of the quadratic equation $x^2 + kx - 6 = 0$, then the value of $k$ is",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Since $x = -2$ is a root, it must satisfy the equation $x^2 + kx - 6 = 0$.",
+          "Substitute $x = -2$ into the equation: $(-2)^2 + k(-2) - 6 = 0$.",
+          "Simplify the expression: $4 - 2k - 6 = 0$.",
+          "Combine constants: $-2k - 2 = 0$.",
+          "Solve for $k$: $-2k = 2 \\Rightarrow k = -1$."
+        ],
+        "derivation": "$(-2)^2 + k(-2) - 6 = 0 \\ 4 - 2k - 6 = 0 \\ -2k - 2 = 0 \\ -2k = 2 \\ k = -1$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Roots of a quadratic equation",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) -1",
+        "(B) 1",
+        "(C) 2",
+        "(D) -2"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T12:24:14.317790",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122414_e90e8f_02"
+    }
+  ]
+}

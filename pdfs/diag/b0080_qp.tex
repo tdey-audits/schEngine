@@ -1,0 +1,360 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\geometry{a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\thequestion}{\textbf{\arabic{question}}}
+\renewcommand{\questionlabel}{\thequestion.}
+\pointname{ marks}
+\pointsdroppedatright
+\bracketedpoints
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newsavebox{\schmathbox}
+\newcommand{\fitmath}[1]{%
+  \sbox{\schmathbox}{$\displaystyle #1$}%
+  \ifdim\wd\schmathbox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\schmathbox}}%
+  \else
+    \usebox{\schmathbox}%
+  \fi}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+  \textbf{\LARGE Diag} \\[0.3cm]
+  \textbf{Time Allowed: 3 Hours} \hfill \textbf{Maximum Marks: 80} \\[0.3cm]
+  \rule{\textwidth}{0.5pt}
+\end{center}
+
+\vspace{0.3cm}
+
+\noindent\textbf{General Instructions:}
+\begin{enumerate}
+  \item {\normalfont\normalcolor This question paper contains 40 questions. All questions are compulsory.}
+  \item {\normalfont\normalcolor Questions are grouped into sections A through E.}
+  \item {\normalfont\normalcolor Use of calculators is NOT permitted.}
+\end{enumerate}
+\bigskip
+\noindent\textbf{\large Section A: Multiple Choice \& Assertion-Reason (1 mark each)}
+
+\begin{questions}
+\question[1] If $\cos \theta = 0$, then the value of $\theta$ (where $0^\circ \leq \theta \leq 90^\circ$) is:
+\begin{enumerate}[label=(\Alph*)]
+  \item $(A) 0^\circ$
+  \item $(B) 45^\circ$
+  \item $(C) 90^\circ$
+  \item $(D) 30^\circ$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The value of $\sin^2 30^\circ + \cos^2 30^\circ$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 1
+  \item (B) 0
+  \item (C) 2
+  \item (D) 1/2
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If $\sec \theta = 2$, then $\theta$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item $(A) 30^\circ$
+  \item $(B) 60^\circ$
+  \item $(C) 45^\circ$
+  \item $(D) 0^\circ$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The value of $\frac{\tan 30^\circ}{\cot 60^\circ}$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 1
+  \item (B) 1/3
+  \item (C) 3
+  \item (D) 0
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Which of the following is equal to $\cos \theta$?
+\begin{enumerate}[label=(\Alph*)]
+  \item $(A) \sin \theta$
+  \item $(B) 1/\tan \theta$
+  \item $(C) \sin(90^\circ + \theta)$
+  \item $(D) \sin(90^\circ - \theta)$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If $3\tan \theta = 3$, then $\theta$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item $(A) 30^\circ$
+  \item $(B) 45^\circ$
+  \item $(C) 60^\circ$
+  \item $(D) 90^\circ$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The value of $\sin 0^\circ + \cos 0^\circ$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 0
+  \item (B) 2
+  \item (C) 1
+  \item (D) -1
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If $\sin \theta = \cos \theta$, then $\theta$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item $(A) 30^\circ$
+  \item $(B) 45^\circ$
+  \item $(C) 60^\circ$
+  \item $(D) 0^\circ$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If $\sin A = \frac{3}{5}$, then the value of $\cos A$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 2/5
+  \item (B) 3/4
+  \item (C) 4/5
+  \item (D) 1/5
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The value of $\tan 45^\circ$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 0
+  \item (B) 1
+  \item $(C) \sqrt{3}$
+  \item $(D) 1/\sqrt{3}$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] In a right triangle $ABC$ right-angled at $B$, if $AB=3$ cm and $BC=4$ cm, then $\sin A$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 4/5
+  \item (B) 3/5
+  \item (C) 3/4
+  \item (D) 4/3
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The value of $\cos^2 30^\circ + \sin^2 30^\circ$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 1/2
+  \item (B) 0
+  \item (C) 1
+  \item (D) 2
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If $\tan \theta = \frac{1}{\sqrt{3}}$, then the value of $\theta$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item $(A) 45^\circ$
+  \item $(B) 30^\circ$
+  \item $(C) 60^\circ$
+  \item $(D) 90^\circ$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The value of $\frac{\sin 18^\circ}{\cos 72^\circ}$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 0
+  \item (B) 1/2
+  \item (C) 1
+  \item $(D) \sqrt{3}$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If $3\cot A = 4$, then $\tan A$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 4/3
+  \item (B) 3/5
+  \item (C) 5/3
+  \item (D) 3/4
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The value of $9\sec^2 A - 9\tan^2 A$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 9
+  \item (B) 1
+  \item (C) 0
+  \item (D) 8
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] If $\cos \theta = 0$, then the value of $\theta$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item $(A) 0^\circ$
+  \item $(B) 90^\circ$
+  \item $(C) 45^\circ$
+  \item $(D) 60^\circ$
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] The value of $\sin 0^\circ + \cos 0^\circ$ is:
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) 0
+  \item (B) 1/2
+  \item (C) 1
+  \item (D) -1
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): For an acute angle $\theta$, if $\sin \theta = \cos \theta$, then $\theta = 45^\circ$. 
+Reason (R): The value of $\sin \theta$ is equal to $\cos \theta$ only at $\theta = 45^\circ$ in the interval $0^\circ \le \theta \le 90^\circ$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The value of $2 \sin^2 30^\circ - 3 \cos^2 45^\circ + 1$ is $0$. 
+Reason (R): The value of $\sin 30^\circ = 1/2$ and $\cos 45^\circ = 1/\sqrt{2}$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The value of $\sin \theta$ can be $2$ for some angle $\theta$. 
+Reason (R): The range of $\sin \theta$ is $[-1, 1]$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): In a right-angled triangle, if $\tan A = 3/4$, then $\sin A = 3/5$. 
+Reason (R): $\sin A = \frac{\text{Opposite}}{\text{Hypotenuse}}$ and $\tan A = \frac{\text{Opposite}}{\text{Adjacent}}$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The value of $\cos 0^\circ \cdot \cos 1^\circ \cdot \cos 2^\circ \dots \cos 90^\circ$ is $1$. 
+Reason (R): $\cos 90^\circ = 0$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The value of $\sin \theta$ can be $\frac{4}{3}$. Reason (R): The value of $\sin \theta$ is always less than or equal to 1.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): If $\tan \theta = 1$, then $\theta = 45^\circ$. Reason (R): $\tan \theta = 1$ only for $\theta = 45^\circ$ in the range $0^\circ \leq \theta < 90^\circ$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): The value of $\cos^2 30^\circ + \sin^2 30^\circ$ is 1. Reason (R): $\sin^2 \theta + \cos^2 \theta = 1$ for all $\theta$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): As $\theta$ increases from $0^\circ$ to $90^\circ$, the value of $\sin \theta$ increases. Reason (R): $\sin 0^\circ = 0$ and $\sin 90^\circ = 1$.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\question[1] Assertion (A): $\sec^2 \theta - 1 = \tan^2 \theta$. Reason (R): $\sec^2 \theta + \tan^2 \theta = 1$ is a standard identity.
+\begin{enumerate}[label=(\Alph*)]
+  \item (A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A)
+  \item (B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A)
+  \item (C) Assertion (A) is true but Reason (R) is false
+  \item (D) Assertion (A) is false but Reason (R) is true
+\end{enumerate}
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section B: Very Short Answer (2 marks each)}
+
+\begin{questions}
+\question[2] If $\tan A = \frac{3}{4}$, find the value of $\sin A \cos A$.
+\vspace{0.15cm}
+
+\question[2] Evaluate: $\frac{\tan 65^\circ}{\cot 25^\circ} + \sin^2 30^\circ$.
+\vspace{0.15cm}
+
+\question[2] If $4 \tan \theta = 3$, evaluate $\frac{4 \sin \theta - \cos \theta}{4 \sin \theta + \cos \theta}$.
+\vspace{0.15cm}
+
+\question[2] If $\cos(A + B) = 0$ and $\sin(A - B) = \frac{1}{2}$, find the values of $A$ and $B$, where $0^\circ < A + B \leq 90^\circ$ and $A > B$.
+\vspace{0.15cm}
+
+\question[2] Given $\sec \theta = \frac{13}{5}$, calculate $\cot \theta$.
+\vspace{0.15cm}
+
+\question[2] If $\tan A = \frac{4}{3}$, find the value of $\sin A + \cos A$.
+\vspace{0.15cm}
+
+\question[2] Evaluate $\frac{2 \tan^2 45^\circ + \cos^2 30^\circ - \sin^2 60^\circ}{1}$.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section C: Short Answer (3 marks each)}
+
+\begin{questions}
+\question[3] If $\sin(A + B) = 1$ and $\cos(A - B) = \frac{\sqrt{3}}{2}$, where $0^\circ < A + B \leq 90^\circ$ and $A > B$, find the values of $A$ and $B$.
+\vspace{0.15cm}
+
+\question[3] Evaluate the following expression: $\frac{5 \cos^2 60^\circ + 4 \sec^2 30^\circ - \tan^2 45^\circ}{\sin^2 30^\circ + \cos^2 30^\circ}$
+\vspace{0.15cm}
+
+\question[3] If $15 \cot A = 8$, find the values of $\sin A$ and $\sec A$.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+\noindent\textbf{\large Section D: Long Answer (4-5 marks each)}
+
+\begin{questions}
+\question[5] Prove that $\frac{\tan \theta}{1 - \cot \theta} + \frac{\cot \theta}{1 - \tan \theta} = 1 + \sec \theta \operatorname{cosec} \theta$. Hence, or otherwise, evaluate the expression if $\tan \theta = 2$.
+\vspace{0.15cm}
+
+\question[5] A vertical tower stands on a horizontal plane and is surmounted by a vertical flagstaff of height $6$ m. At a point on the plane, the angle of elevation of the bottom of the flagstaff is $30^\circ$ and that of the top of the flagstaff is $60^\circ$. Find the height of the tower.
+\vspace{0.15cm}
+
+\end{questions}
+\bigskip
+
+\end{document}

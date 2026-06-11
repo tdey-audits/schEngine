@@ -1,0 +1,168 @@
+{
+  "batch_id": "20260609_154705_754c34b6",
+  "generated_at": "2026-06-09T15:47:05.760173",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": "euclid division lemma",
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A wholesale merchant has three different types of grains in bulk quantities: $1440$ kg of wheat, $1800$ kg of rice, and $2160$ kg of pulses. He wants to pack them into identical bags such that each bag contains only one type of grain and every bag has the same maximum possible weight. Based on this, answer the following questions using the principles of Euclid's Division Lemma/Algorithm.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "What is the mathematical goal to find the maximum weight of each bag?",
+          "answer": "(B)",
+          "options": [
+            "(A) Find the LCM of $1440, 1800, 2160$",
+            "(B) Find the HCF of $1440, 1800, 2160$",
+            "(C) Find the average of $1440, 1800, 2160$",
+            "(D) Find the prime factors of $1440$ only"
+          ],
+          "solution": {
+            "steps": [
+              "To find the maximum weight that can divide each quantity completely, we need to calculate the Highest Common Factor (HCF)."
+            ]
+          }
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Using Euclid's Division Algorithm, express the relationship between $2160$ and $1800$ in the form $a = bq + r$.",
+          "answer": "$2160 = 1800 \\times 1 + 360$",
+          "solution": {
+            "steps": [
+              "Apply Euclid's division lemma: $a = bq + r$ where $a=2160$ and $b=1800$.",
+              "$2160 \\div 1800 = 1$ with a remainder of $360$.",
+              "Thus, $2160 = 1800 \\times 1 + 360$."
+            ]
+          }
+        },
+        {
+          "id": "iii",
+          "type": "vsa",
+          "question": "Find the HCF of $1440$ and $1800$ using Euclid's division algorithm.",
+          "answer": "$360$",
+          "solution": {
+            "steps": [
+              "Step 1: $1800 = 1440 \\times 1 + 360$",
+              "Step 2: $1440 = 360 \\times 4 + 0$",
+              "Since the remainder is $0$, the HCF is $360$."
+            ]
+          }
+        },
+        {
+          "id": "iv",
+          "type": "mcq",
+          "question": "What is the total number of bags required to pack all the grains?",
+          "answer": "(C)",
+          "options": [
+            "(A) $10$",
+            "(B) $12$",
+            "(C) $15$",
+            "(D) $18$"
+          ],
+          "solution": {
+            "steps": [
+              "HCF is $360$ kg per bag.",
+              "Bags for wheat: $1440 \\div 360 = 4$.",
+              "Bags for rice: $1800 \\div 360 = 5$.",
+              "Bags for pulses: $2160 \\div 360 = 6$.",
+              "Total bags = $4 + 5 + 6 = 15$."
+            ]
+          }
+        }
+      ],
+      "topic": "Real Numbers",
+      "subtopic": "Euclid's Division Lemma",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T15:47:05.760015",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 38,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 5,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 8,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 13,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 3,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_154705_aec892_01"
+    }
+  ]
+}

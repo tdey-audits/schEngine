@@ -1,0 +1,112 @@
+{
+  "batch_id": "20260610_145519_25a582b7",
+  "generated_at": "2026-06-10T14:55:19.088574",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "completing the square",
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "To solve the quadratic equation $2x^2 - 5x + 2 = 0$ by the method of completing the square, the equation is first transformed into the form $(x - a)^2 = b$. What is the value of $b$?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Divide the entire equation by the coefficient of $x^2$, which is $2$: $x^2 - \\frac{5}{2}x + 1 = 0$.",
+          "Transpose the constant term to the right side: $x^2 - \\frac{5}{2}x = -1$.",
+          "Add the square of half the coefficient of $x$ (which is $\\frac{1}{2} \\times \\frac{5}{2} = \\frac{5}{4}$) to both sides: $x^2 - \\frac{5}{2}x + (\\frac{5}{4})^2 = -1 + (\\frac{5}{4})^2$.",
+          "Simplify the expression to complete the square: $(x - \\frac{5}{4})^2 = -1 + \\frac{25}{16}$.",
+          "Calculate the value of $b$: $b = \\frac{-16 + 25}{16} = \\frac{9}{16}$."
+        ],
+        "derivation": "$2x^2 - 5x + 2 = 0 \\\\ x^2 - \\frac{5}{2}x + 1 = 0 \\\\ x^2 - \\frac{5}{2}x = -1 \\\\ x^2 - 2(x)(\\frac{5}{4}) + (\\frac{5}{4})^2 = -1 + \\frac{25}{16} \\\\ (x - \\frac{5}{4})^2 = \\frac{-16 + 25}{16} \\\\ (x - \\frac{5}{4})^2 = \\frac{9}{16}$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "completing the square",
+      "marks": 1,
+      "type": "la",
+      "difficulty": "hard",
+      "options": [
+        "(A) $\\frac{3}{4}$",
+        "(B) $\\frac{9}{4}$",
+        "(C) $\\frac{9}{16}$",
+        "(D) $\\frac{25}{16}$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T14:55:19.088492",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 4,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145519_337086_01"
+    }
+  ]
+}

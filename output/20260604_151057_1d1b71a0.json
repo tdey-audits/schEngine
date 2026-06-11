@@ -1,0 +1,166 @@
+{
+  "batch_id": "20260604_151057_1d1b71a0",
+  "generated_at": "2026-06-04T15:10:57.509400",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Coordinate Geometry",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "The distance of the point $P(3, 4)$ from the origin is",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Identify coordinates of origin as $(0, 0)$",
+          "Apply distance formula $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$",
+          "Substitute values $d = \\sqrt{(3-0)^2 + (4-0)^2}$",
+          "Calculate $d = \\sqrt{9 + 16} = \\sqrt{25} = 5$"
+        ],
+        "derivation": "$d = \\sqrt{(3-0)^2 + (4-0)^2} \\ d = \\sqrt{3^2 + 4^2} \\ d = \\sqrt{9+16} \\ d = \\sqrt{25} = 5$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Distance Formula",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $3$",
+        "(B) $5$",
+        "(C) $7$",
+        "(D) $25$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T15:10:57.509283",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151057_208322_01"
+    },
+    {
+      "question": "The coordinates of the midpoint of the line segment joining the points $A(-2, 8)$ and $B(-6, -4)$ are",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Recall midpoint formula $M = (\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2})$",
+          "Substitute $x_1 = -2, x_2 = -6$ and $y_1 = 8, y_2 = -4$",
+          "Calculate $x = \\frac{-2 + (-6)}{2} = \\frac{-8}{2} = -4$",
+          "Calculate $y = \\frac{8 + (-4)}{2} = \\frac{4}{2} = 2$"
+        ],
+        "derivation": "$M = (\\frac{-2-6}{2}, \\frac{8-4}{2}) \\ M = (\\frac{-8}{2}, \\frac{4}{2}) \\ M = (-4, 2)$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Section Formula",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $(-4, -6)$",
+        "(B) $(2, 6)$",
+        "(C) $(-4, 2)$",
+        "(D) $(-8, 4)$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T15:10:57.509325",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151057_ed076f_02"
+    },
+    {
+      "question": "The point on the $x$-axis which is equidistant from points $A(2, -5)$ and $B(-2, 9)$ is",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Let point be $P(x, 0)$",
+          "Equate distances $PA^2 = PB^2$",
+          "$(x-2)^2 + (0 - (-5))^2 = (x - (-2))^2 + (0-9)^2$",
+          "$x^2 - 4x + 4 + 25 = x^2 + 4x + 4 + 81$",
+          "-8x = 56, x = -7"
+        ],
+        "derivation": "$(x-2)^2 + 25 = (x+2)^2 + 81 \\ x^2 - 4x + 4 + 25 = x^2 + 4x + 4 + 81 \\ -8x = 56 \\ x = -7 \\ P(-7, 0)$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Distance Formula",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $(-7, 0)$",
+        "(B) $(0, -7)$",
+        "(C) $(7, 0)$",
+        "(D) $(0, 7)$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T15:10:57.509338",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151057_86a9ab_03"
+    },
+    {
+      "question": "If the point $P(k, 0)$ divides the line segment joining $A(2, -2)$ and $B(-7, 4)$ in the ratio $1:2$, the value of $k$ is",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Use section formula for $x$-coordinate $x = \\frac{mx_2 + nx_1}{m+n}$",
+          "Substitute $m=1, n=2, x_1=2, x_2=-7$",
+          "$k = \\frac{1(-7) + 2(2)}{1+2}$",
+          "$k = \\frac{-7+4}{3} = \\frac{-3}{3} = -1$"
+        ],
+        "derivation": "$k = \\frac{1(-7) + 2(2)}{1+2} \\ k = \\frac{-7+4}{3} \\ k = \\frac{-3}{3} = -1$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Section Formula",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $2$",
+        "(B) $-2$",
+        "(C) $1$",
+        "(D) $-1$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T15:10:57.509345",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151057_010d3b_04"
+    },
+    {
+      "question": "The distance between the points $P(a, 0)$ and $Q(0, b)$ is",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Apply distance formula $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$",
+          "Substitute $x_1=a, y_1=0$ and $x_2=0, y_2=b$",
+          "$d = \\sqrt{(0-a)^2 + (b-0)^2}$",
+          "$d = \\sqrt{(-a)^2 + b^2} = \\sqrt{a^2 + b^2}$"
+        ],
+        "derivation": "$d = \\sqrt{(0-a)^2 + (b-0)^2} \\ d = \\sqrt{(-a)^2 + b^2} \\ d = \\sqrt{a^2 + b^2}$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Distance Formula",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $a + b$",
+        "(B) $\\sqrt{a^2 + b^2}$",
+        "(C) $a^2 + b^2$",
+        "(D) $\\sqrt{a+b}$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T15:10:57.509352",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151057_b8e6d8_05"
+    }
+  ]
+}

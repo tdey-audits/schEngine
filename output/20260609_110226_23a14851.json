@@ -1,0 +1,83 @@
+{
+  "batch_id": "20260609_110226_23a14851",
+  "generated_at": "2026-06-09T11:02:26.732464",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Show that for any positive integer $n$, the expression $n^3 - n$ is always divisible by $6$.",
+      "answer": "The expression $n^3 - n$ can be factored as $(n-1)n(n+1)$, which represents the product of three consecutive integers. In any set of three consecutive integers, at least one must be a multiple of $2$ and exactly one must be a multiple of $3$. Since $2$ and $3$ are coprime, their product $6$ must divide the expression.",
+      "solution": {
+        "steps": [
+          "Factorize the expression $n^3 - n$ into $(n-1)n(n+1)$.",
+          "Observe that $(n-1), n, (n+1)$ are three consecutive integers.",
+          "State the property that in any two consecutive integers, one must be even (divisible by $2$).",
+          "State the property that in any three consecutive integers, one must be a multiple of $3$.",
+          "Conclude that the product must be divisible by both $2$ and $3$.",
+          "Since $\\text{gcd}(2, 3) = 1$, the product is divisible by $2 \\times 3 = 6$."
+        ],
+        "derivation": "$n^3 - n = n(n^2 - 1) = (n-1)n(n+1) \\\\ \\text{Let } P = (n-1)n(n+1) \\\\ \\text{Since } (n-1), n, (n+1) \\text{ are consecutive integers, at least one is divisible by } 2, \\text{ so } 2 \\mid P \\\\ \\text{Also, one of them must be divisible by } 3, \\text{ so } 3 \\mid P \\\\ \\text{Since } 2 \\text{ and } 3 \\text{ are coprime, } \\text{lcm}(2, 3) = 6 \\mid P \\\\ \\therefore n^3 - n \\text{ is divisible by } 6 \\text{ for all } n \\in \\mathbb{N}$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Fundamental Theorem of Arithmetic",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T11:02:26.732197",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/430-1-1_Mathematics Basic.pdf",
+            "question_no": 32,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-3_Mathematics Basic.pdf",
+            "question_no": 33,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 35,
+            "paper_variant": "basic",
+            "question_type": "la"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_110226_17aef0_01"
+    }
+  ]
+}

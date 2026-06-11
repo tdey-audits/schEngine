@@ -1,0 +1,13 @@
+{
+  "batch_id": "20260604_140955_d0d09c94",
+  "generated_at": "2026-06-04T14:09:55.233451",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Coordinate Geometry",
+  "subtopic": null,
+  "difficulty": null,
+  "question_type": null,
+  "question_count": 0,
+  "mechanisms": [],
+  "questions": []
+}

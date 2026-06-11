@@ -1,0 +1,135 @@
+{
+  "batch_id": "20260604_140841_8a311c72",
+  "generated_at": "2026-06-04T14:08:41.061465",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Find the roots of the quadratic equation $2x^2 - x + \\frac{1}{8} = 0$ by the method of factorization.",
+      "answer": "$x = \\frac{1}{4}, \\frac{1}{4}$",
+      "solution": {
+        "steps": [
+          "Multiply the entire equation by 8 to eliminate the fraction: $16x^2 - 8x + 1 = 0$.",
+          "Split the middle term: $16x^2 - 4x - 4x + 1 = 0$.",
+          "Factor by grouping: $4x(4x - 1) - 1(4x - 1) = 0$.",
+          "Solve for x: $(4x - 1)^2 = 0$, thus $x = 1/4$."
+        ],
+        "derivation": "16x^2 - 8x + 1 = 0 \\\\ 16x^2 - 4x - 4x + 1 = 0 \\\\ 4x(4x - 1) - 1(4x - 1) = 0 \\\\ (4x - 1)(4x - 1) = 0 \\\\ x = 1/4"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Factorization Method",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:41.061291",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140841_c05189_01"
+    },
+    {
+      "question": "Find two consecutive positive integers, sum of whose squares is 365.",
+      "answer": "13 and 14",
+      "solution": {
+        "steps": [
+          "Let the two consecutive integers be $x$ and $x+1$.",
+          "Set up the equation: $x^2 + (x+1)^2 = 365$.",
+          "Expand and simplify to standard form: $2x^2 + 2x - 364 = 0$, or $x^2 + x - 182 = 0$.",
+          "Solve using factorization: $(x+14)(x-13) = 0$. Since integers are positive, $x=13$."
+        ],
+        "derivation": "x^2 + x^2 + 2x + 1 = 365 \\\\ 2x^2 + 2x - 364 = 0 \\\\ x^2 + x - 182 = 0 \\\\ (x+14)(x-13) = 0 \\\\ x = 13, x+1 = 14"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Word Problems",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:41.061345",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140841_198c0b_02"
+    },
+    {
+      "question": "Find the value of $k$ for which the quadratic equation $2x^2 + kx + 3 = 0$ has two equal real roots.",
+      "answer": "$k = \\pm 2\\sqrt{6}$",
+      "solution": {
+        "steps": [
+          "For equal real roots, the discriminant $D = b^2 - 4ac$ must be equal to 0.",
+          "Identify coefficients: $a=2, b=k, c=3$.",
+          "Substitute into discriminant formula: $k^2 - 4(2)(3) = 0$.",
+          "Solve for k: $k^2 - 24 = 0$, so $k^2 = 24$, $k = \\pm \\sqrt{24} = \\pm 2\\sqrt{6}$."
+        ],
+        "derivation": "b^2 - 4ac = 0 \\\\ k^2 - 4(2)(3) = 0 \\\\ k^2 = 24 \\\\ k = \\pm 2\\sqrt{6}"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of Roots",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:41.061359",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140841_476bbb_03"
+    },
+    {
+      "question": "The altitude of a right triangle is 7 cm less than its base. If the hypotenuse is 13 cm, find the other two sides.",
+      "answer": "Base = 12 cm, Altitude = 5 cm",
+      "solution": {
+        "steps": [
+          "Let base be $x$ cm, then altitude is $(x-7)$ cm.",
+          "Apply Pythagoras theorem: $x^2 + (x-7)^2 = 13^2$.",
+          "Expand and simplify: $x^2 + x^2 - 14x + 49 = 169 \\Rightarrow 2x^2 - 14x - 120 = 0$.",
+          "Divide by 2: $x^2 - 7x - 60 = 0$. Factorize: $(x-12)(x+5) = 0$. Base must be positive, so $x=12$."
+        ],
+        "derivation": "x^2 + (x-7)^2 = 13^2 \\\\ 2x^2 - 14x + 49 - 169 = 0 \\\\ 2x^2 - 14x - 120 = 0 \\\\ x^2 - 7x - 60 = 0 \\\\ (x-12)(x+5) = 0"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Word Problems",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:41.061370",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140841_954f08_04"
+    },
+    {
+      "question": "Solve the quadratic equation $x^2 - 5x + 6 = 0$ using the quadratic formula.",
+      "answer": "$x = 2, 3$",
+      "solution": {
+        "steps": [
+          "Identify coefficients: $a=1, b=-5, c=6$.",
+          "Calculate the discriminant: $D = b^2 - 4ac = (-5)^2 - 4(1)(6) = 25 - 24 = 1$.",
+          "Use the quadratic formula $x = \\frac{-b \\pm \\sqrt{D}}{2a}$.",
+          "Substitute values: $x = \\frac{5 \\pm 1}{2}$. This gives $x = \\frac{6}{2} = 3$ and $x = \\frac{4}{2} = 2$."
+        ],
+        "derivation": "x = \\frac{-(-5) \\pm \\sqrt{(-5)^2 - 4(1)(6)}}{2(1)} \\\\ x = \\frac{5 \\pm \\sqrt{25 - 24}}{2} \\\\ x = \\frac{5 \\pm 1}{2} \\\\ x = 3, 2"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Quadratic Formula",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:08:41.061380",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140841_634a1c_05"
+    }
+  ]
+}

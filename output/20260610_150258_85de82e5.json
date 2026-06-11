@@ -1,0 +1,97 @@
+{
+  "batch_id": "20260610_150258_85de82e5",
+  "generated_at": "2026-06-10T15:02:58.539503",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": "fundamental theorem of arithmetic",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If two positive integers $x$ and $y$ are expressed as $x = p^2q^3$ and $y = p^3q$, where $p$ and $q$ are prime numbers, then the value of $\\text{HCF}(x, y)$ is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Identify the prime factorisation of $x$ and $y$.",
+          "Recall that the HCF of two numbers is the product of the smallest power of each common prime factor involved in the numbers.",
+          "Identify the common prime factors as $p$ and $q$.",
+          "The smallest power of $p$ in $x$ and $y$ is $p^2$.",
+          "The smallest power of $q$ in $x$ and $y$ is $q^1$.",
+          "Therefore, the $\\text{HCF}(x, y) = p^2 \\times q = p^2q$."
+        ],
+        "derivation": "$x = p^2q^3 \\\\ y = p^3q \\\\ \\text{HCF}(x, y) = p^{\\min(2, 3)} \\times q^{\\min(3, 1)} \\\\ \\text{HCF}(x, y) = p^2 \\times q^1 = p^2q$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "fundamental theorem of arithmetic",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $pq^2$",
+        "(B) $p^2q$",
+        "(C) $p^3q^3$",
+        "(D) $p^2q^2$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T15:02:58.539429",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Prelims.pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 1,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 16,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 11,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.1",
+            "question_no": 2,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.1",
+            "question_no": 7,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.1",
+            "question_no": 1,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150258_8b0c03_01"
+    }
+  ]
+}

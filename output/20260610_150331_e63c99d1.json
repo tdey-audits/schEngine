@@ -1,0 +1,97 @@
+{
+  "batch_id": "20260610_150331_e63c99d1",
+  "generated_at": "2026-06-10T15:03:31.831757",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "factorisation method",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "The roots of the quadratic equation $x^2 - 7x + 12 = 0$ are obtained by splitting the middle term. Which of the following is the correct factorised form of the equation?",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "To factorise $x^2 - 7x + 12 = 0$, we look for two numbers whose sum is $-7$ and product is $12$.",
+          "The two numbers are $-3$ and $-4$, since $(-3) + (-4) = -7$ and $(-3) \times (-4) = 12$.",
+          "Rewrite the middle term: $x^2 - 3x - 4x + 12 = 0$.",
+          "Group the terms: $x(x - 3) - 4(x - 3) = 0$.",
+          "Factor out the common binomial: $(x - 3)(x - 4) = 0$."
+        ],
+        "derivation": "$x^2 - 7x + 12 = 0 \\ x^2 - 3x - 4x + 12 = 0 \\ x(x - 3) - 4(x - 3) = 0 \\ (x - 3)(x - 4) = 0$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "factorisation method",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $(x - 3)(x - 4) = 0$",
+        "(B) $(x + 3)(x + 4) = 0$",
+        "(C) $(x - 2)(x - 6) = 0$",
+        "(D) $(x + 2)(x + 6) = 0$"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T15:03:31.831686",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 2,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.1",
+            "question_no": 7,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.1",
+            "question_no": 1,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.1",
+            "question_no": 2,
+            "question_type": "mcq",
+            "estimated_depth": "medium"
+          }
+        ]
+      },
+      "id": "ncert_20260610_150331_1cac69_01"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "batch_id": "20260609_111334_5c2be204",
+  "generated_at": "2026-06-09T11:13:34.989104",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Polynomials",
+  "subtopic": "division algorithm for polynomials",
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Consider the following Assertion and Reason regarding the division algorithm for polynomials $p(x) = g(x)q(x) + r(x)$, where $p(x)$ is a polynomial of degree $4$ and $g(x)$ is a polynomial of degree $2$. \\\\ \\\\ Assertion (A): The degree of the quotient $q(x)$ must be exactly $2$. \\\\ Reason (R): According to the division algorithm, the degree of the remainder $r(x)$ must be less than the degree of the divisor $g(x)$, and the degree of the product $g(x)q(x)$ must equal the degree of the dividend $p(x)$ if the remainder is zero or of lower degree.",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "The division algorithm states $p(x) = g(x)q(x) + r(x)$, where $\\text{deg}(r(x)) < \\text{deg}(g(x))$.",
+          "If $\\text{deg}(p(x)) = 4$ and $\\text{deg}(g(x)) = 2$, then $\\text{deg}(g(x)q(x)) = \\text{deg}(p(x) - r(x))$. Since $\\text{deg}(r(x)) < 2$, the term $g(x)q(x)$ must have degree $4$.",
+          "Since $\\text{deg}(g(x)q(x)) = \\text{deg}(g(x)) + \\text{deg}(q(x))$, we have $2 + \\text{deg}(q(x)) = 4$, so $\\text{deg}(q(x)) = 2$.",
+          "Assertion (A) is true. Reason (R) is a correct statement describing the relationship between degrees, but it is a general property of the division algorithm rather than a direct explanation of why the quotient must have degree 2 in this specific case, as the degree of $q(x)$ is derived from the equality of degrees.",
+          "Both are true, but R does not uniquely explain A because A is a specific consequence of the degree addition rule."
+        ],
+        "derivation": "$p(x) = g(x)q(x) + r(x) \\\\ \\text{deg}(p) = 4, \\text{deg}(g) = 2 \\\\ \\text{deg}(g \\cdot q) = \\text{deg}(p) = 4 \\\\ \\text{deg}(g) + \\text{deg}(q) = 4 \\\\ 2 + \\text{deg}(q) = 4 \\\\ \\text{deg}(q) = 2$"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-09T11:13:34.988761",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 5,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_111334_262a01_01"
+    }
+  ]
+}

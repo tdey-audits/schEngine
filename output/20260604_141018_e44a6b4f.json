@@ -1,0 +1,125 @@
+{
+  "batch_id": "20260604_141018_e44a6b4f",
+  "generated_at": "2026-06-04T14:10:18.392102",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $\\tan A = \\frac{4}{3}$, find the value of $\\sin A + \\cos A$.",
+      "answer": "$\\frac{7}{5}$",
+      "solution": {
+        "steps": [
+          "Use the definition of $\\tan A = \\frac{\\text{opposite}}{\\text{adjacent}}$ to find the hypotenuse using the Pythagorean theorem.",
+          "Calculate $\\sin A$ and $\\cos A$ and find their sum."
+        ],
+        "derivation": "$\\tan A = \\frac{BC}{AB} = \\frac{4}{3} \\implies BC=4k, AB=3k. AC = \\sqrt{(4k)^2 + (3k)^2} = 5k. \\sin A = \\frac{4}{5}, \\cos A = \\frac{3}{5}. \\sin A + \\cos A = \\frac{4}{5} + \\frac{3}{5} = \\frac{7}{5}$"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:18.392004",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141018_b06907_01"
+    },
+    {
+      "question": "Evaluate: $\\frac{2 \\tan^2 45^\\circ + \\cos^2 30^\\circ - \\sin^2 60^\\circ}{1}$",
+      "answer": "2",
+      "solution": {
+        "steps": [
+          "Substitute the standard trigonometric values for $45^\\circ, 30^\\circ,$ and $60^\\circ$.",
+          "Simplify the expression using arithmetic operations."
+        ],
+        "derivation": "$\\tan 45^\\circ = 1, \\cos 30^\\circ = \\frac{\\sqrt{3}}{2}, \\sin 60^\\circ = \\frac{\\sqrt{3}}{2}. \\text{Expression} = 2(1)^2 + (\\frac{\\sqrt{3}}{2})^2 - (\\frac{\\sqrt{3}}{2})^2 = 2 + \\frac{3}{4} - \\frac{3}{4} = 2$"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:18.392036",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141018_228d1c_02"
+    },
+    {
+      "question": "If $\\sin(A - B) = \\frac{1}{2}$ and $\\cos(A + B) = \\frac{1}{2}$, where $0^\\circ < A + B \\le 90^\\circ$ and $A > B$, find $A$ and $B$.",
+      "answer": "$A = 45^\\circ, B = 15^\\circ$",
+      "solution": {
+        "steps": [
+          "Use the inverse trigonometric values to set up a system of linear equations.",
+          "Solve the equations for $A$ and $B$."
+        ],
+        "derivation": "$A-B = 30^\\circ$ and $A+B = 60^\\circ. (A-B) + (A+B) = 30^\\circ + 60^\\circ \\implies 2A = 90^\\circ \\implies A = 45^\\circ. B = 60^\\circ - 45^\\circ = 15^\\circ$"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Complementary Angles",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:18.392043",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141018_19ae03_03"
+    },
+    {
+      "question": "Express $\\cos A$ in terms of $\\tan A$.",
+      "answer": "$\\cos A = \\frac{1}{\\sqrt{1 + \\tan^2 A}}$",
+      "solution": {
+        "steps": [
+          "Use the identity $\\sec^2 A = 1 + \\tan^2 A$.",
+          "Relate $\\sec A$ to $\\cos A$ using the reciprocal relation."
+        ],
+        "derivation": "$\\sec^2 A = 1 + \\tan^2 A \\implies \\sec A = \\sqrt{1 + \\tan^2 A}. \\text{Since } \\cos A = \\frac{1}{\\sec A}, \\cos A = \\frac{1}{\\sqrt{1 + \\tan^2 A}}$"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:18.392049",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141018_d58b62_04"
+    },
+    {
+      "question": "Evaluate $\\frac{\\tan 65^\\circ}{\\cot 25^\\circ}$.",
+      "answer": "1",
+      "solution": {
+        "steps": [
+          "Apply the complementary angle relation $\\tan \\theta = \\cot(90^\\circ - \\theta)$.",
+          "Simplify the fraction."
+        ],
+        "derivation": "$\\tan 65^\\circ = \\tan(90^\\circ - 25^\\circ) = \\cot 25^\\circ. \\text{Expression} = \\frac{\\cot 25^\\circ}{\\cot 25^\\circ} = 1$"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Complementary Angles",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:18.392055",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141018_d42c80_05"
+    }
+  ]
+}

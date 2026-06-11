@@ -1,0 +1,114 @@
+{
+  "batch_id": "20260604_135724_a1d20b39",
+  "generated_at": "2026-06-04T13:57:24.730164",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Areas Related to Circles",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A round table cover has a design in the form of a regular hexagon ABCDEF inscribed in a circle of radius $3.5$ cm. Find the area of the design (shaded region), excluding the hexagon. Use $\\sqrt{3} = 1.732$ and $\\pi = \\frac{22}{7}$.",
+      "answer": "9.095 \\text{ cm}^2",
+      "solution": {
+        "steps": [
+          "Calculate the area of the circle using $A = \\pi r^2$.",
+          "Identify that a regular hexagon inscribed in a circle consists of 6 equilateral triangles of side length equal to the radius $r$.",
+          "Calculate the area of one equilateral triangle using $\\frac{\\sqrt{3}}{4} a^2$.",
+          "Multiply by 6 to get the total area of the hexagon.",
+          "Subtract the area of the hexagon from the area of the circle to find the shaded region."
+        ],
+        "derivation": "\\text{Area of circle} = \\frac{22}{7} \\times 3.5 \\times 3.5 = 38.5 \\text{ cm}^2. \\\\ \\text{Area of hexagon} = 6 \\times \\frac{\\sqrt{3}}{4} \\times (3.5)^2 = 1.5 \\times 1.732 \\times 12.25 = 31.805 \\text{ cm}^2. \\\\ \\text{Shaded Area} = 38.5 - 31.805 = 6.695 \\text{ cm}^2."
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of segments and polygons",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:24.729785",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135724_d99cd6_01"
+    },
+    {
+      "question": "Two circular flower beds are shown on two sides of a square lawn ABCD of side $56$ m. If the centre of each circular flower bed is the point of intersection O of the diagonals of the square lawn, find the sum of the areas of the lawn and the flower beds.",
+      "answer": "4032 \\text{ m}^2",
+      "solution": {
+        "steps": [
+          "Find the side of the square and the diagonal length.",
+          "Identify that the radius of the circular sectors is half the diagonal of the square.",
+          "Calculate the area of the square.",
+          "Calculate the area of the two sectors formed by the circular flower beds.",
+          "Sum the areas of the square and the two sectors."
+        ],
+        "derivation": "\\text{Diagonal } AC = \\sqrt{56^2 + 56^2} = 56\\sqrt{2}. \\\\ \\text{Radius } r = \\frac{56\\sqrt{2}}{2} = 28\\sqrt{2}. \\\\ \\text{Area of square} = 56^2 = 3136 \\text{ m}^2. \\\\ \\text{Area of two sectors} = 2 \\times \\frac{90}{360} \\times \\pi \\times (28\\sqrt{2})^2 = \\frac{1}{2} \\times \\frac{22}{7} \\times 1568 = 2464 \\text{ m}^2. \\\\ \\text{Total Area} = 3136 + 2464 - 1568 = 4032 \\text{ m}^2."
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of combination of plane figures",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:24.729868",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135724_8d9f93_02"
+    },
+    {
+      "question": "A car has two wipers which do not overlap. Each wiper has a blade of length $25$ cm sweeping through an angle of $115^\\circ$. Find the total area cleaned at each sweep of the blades.",
+      "answer": "\\frac{158125}{126} \\text{ cm}^2",
+      "solution": {
+        "steps": [
+          "Identify the shape swept by the wiper as a sector of a circle.",
+          "Use the formula for the area of a sector: $\\frac{\\theta}{360} \\times \\pi r^2$.",
+          "Set $r = 25$ cm and $\\theta = 115^\\circ$.",
+          "Calculate the area for one wiper.",
+          "Multiply by 2 for both wipers."
+        ],
+        "derivation": "\\text{Area} = 2 \\times \\left( \\frac{115}{360} \\times \\frac{22}{7} \\times 25 \\times 25 \\right). \\\\ \\text{Area} = 2 \\times \\left( \\frac{23}{72} \\times \\frac{22}{7} \\times 625 \\right) = \\frac{158125}{126} \\approx 1254.96 \\text{ cm}^2."
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of sector",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:24.729899",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135724_9359a5_03"
+    },
+    {
+      "question": "In a circle of radius $21$ cm, an arc subtends an angle of $60^\\circ$ at the centre. Find (i) the length of the arc, (ii) the area of the sector formed by the arc, and (iii) the area of the segment formed by the corresponding chord.",
+      "answer": "(i) 22 \\text{ cm}, (ii) 231 \\text{ cm}^2, (iii) 231 - \\frac{441\\sqrt{3}}{4} \\text{ cm}^2",
+      "solution": {
+        "steps": [
+          "Use length of arc formula: $l = \\frac{\\theta}{360} \\times 2\\pi r$.",
+          "Use area of sector formula: $A_s = \\frac{\\theta}{360} \\times \\pi r^2$.",
+          "Use area of segment formula: $A_{seg} = A_s - A_{\\Delta}$, where $A_{\\Delta} = \\frac{\\sqrt{3}}{4} r^2$ since $\\theta=60^\\circ$ makes it equilateral.",
+          "Substitute $r=21$ and $\\theta=60$."
+        ],
+        "derivation": "(i) l = \\frac{60}{360} \\times 2 \\times \\frac{22}{7} \\times 21 = 22 \\text{ cm}. \\\\ (ii) A_s = \\frac{60}{360} \\times \\frac{22}{7} \\times 21^2 = 231 \\text{ cm}^2. \\\\ (iii) A_{seg} = 231 - \\frac{\\sqrt{3}}{4} \\times 21^2 = 231 - 110.25\\sqrt{3} \\text{ cm}^2."
+      },
+      "topic": "Areas Related to Circles",
+      "subtopic": "Area of sector and segment",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:57:24.729923",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135724_6aa9b1_04"
+    }
+  ]
+}

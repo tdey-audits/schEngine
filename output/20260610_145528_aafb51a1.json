@@ -1,0 +1,118 @@
+{
+  "batch_id": "20260610_145528_aafb51a1",
+  "generated_at": "2026-06-10T14:55:28.531720",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Arithmetic Progressions",
+  "subtopic": "general term of an AP",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If the $n^{th}$ term of an Arithmetic Progression is given by $a_n = 4n - 7$, then the value of $a_{15} - a_{10}$ is:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Identify the formula for the $n^{th}$ term: $a_n = 4n - 7$.",
+          "Calculate the 15th term by substituting $n = 15$: $a_{15} = 4(15) - 7 = 60 - 7 = 53$.",
+          "Calculate the 10th term by substituting $n = 10$: $a_{10} = 4(10) - 7 = 40 - 7 = 33$.",
+          "Find the difference: $a_{15} - a_{10} = 53 - 33 = 20$."
+        ],
+        "derivation": "$a_n = 4n - 7 \\\\ a_{15} = 4(15) - 7 = 60 - 7 = 53 \\\\ a_{10} = 4(10) - 7 = 40 - 7 = 33 \\\\ a_{15} - a_{10} = 53 - 33 = 20$"
+      },
+      "topic": "Arithmetic Progressions",
+      "subtopic": "general term of an AP",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 20",
+        "(B) 25",
+        "(C) 15",
+        "(D) 30"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T14:55:28.531646",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_5 (Arithmetic Progressions).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 3,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 10,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 33,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 7,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Arithmetic Progressions",
+            "exercise": "5.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145528_e72803_01"
+    }
+  ]
+}

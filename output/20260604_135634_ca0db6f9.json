@@ -1,0 +1,115 @@
+{
+  "batch_id": "20260604_135634_ca0db6f9",
+  "generated_at": "2026-06-04T13:56:34.918377",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Some Applications of Trigonometry",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 4,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A straight highway leads to the foot of a tower. A man standing at the top of the tower observes a car at an angle of depression of $30^\\circ$, which is approaching the foot of the tower with a uniform speed. Six seconds later, the angle of depression of the car is found to be $60^\\circ$. Find the time taken by the car to reach the foot of the tower from this point.",
+      "answer": "3 seconds",
+      "solution": {
+        "steps": [
+          "Let $h$ be the height of the tower and $v$ be the uniform speed of the car.",
+          "Let $A$ be the top of the tower and $BC$ be the distance covered by the car in 6 seconds.",
+          "In $\\triangle ABC$ (with angle $60^\\circ$ at the car), $\\tan 60^\\circ = h/CD$.",
+          "In $\\triangle ABD$ (with angle $30^\\circ$ at the car), $\\tan 30^\\circ = h/BD$.",
+          "Relate the distances using the speed and time formula $d = v \\times t$.",
+          "Solve for the time $t$ taken to travel the remaining distance $CD$."
+        ],
+        "derivation": "Let $h$ be height. $\\tan 60^\\circ = h/x \\implies x = h/\\sqrt{3}$. $\\tan 30^\\circ = h/(x+d) \\implies x+d = h\\sqrt{3}$. Substituting $x$: $d = h\\sqrt{3} - h/\\sqrt{3} = 2h/\\sqrt{3}$. Since distance $d$ is covered in 6s, speed $v = d/6 = h/(3\\sqrt{3})$. Time for distance $x$ is $t = x/v = (h/\\sqrt{3}) / (h/3\\sqrt{3}) = 3$ seconds."
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Angle of depression",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:34.918253",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135634_0e40d4_01"
+    },
+    {
+      "question": "The angle of elevation of the top of a tower from a point on the ground is $30^\\circ$. On walking $40$ metres towards the tower, the angle of elevation changes to $60^\\circ$. Find the height of the tower and the distance of the initial point from the tower.",
+      "answer": "Height = $20\\sqrt{3}$ m, Distance = $20\\sqrt{3} + 40$ m",
+      "solution": {
+        "steps": [
+          "Let the height of the tower be $h$ and the distance from the second point be $x$.",
+          "Set up the equation for the first point: $\\tan 30^\\circ = h / (x + 40)$.",
+          "Set up the equation for the second point: $\\tan 60^\\circ = h / x$.",
+          "Express $h$ in terms of $x$ from the second equation.",
+          "Substitute into the first equation to solve for $x$ and then $h$."
+        ],
+        "derivation": "1) $h/x = \\sqrt{3} \\implies h = x\\sqrt{3}$. 2) $h/(x+40) = 1/\\sqrt{3} \\implies x\\sqrt{3} / (x+40) = 1/\\sqrt{3} \\implies 3x = x+40 \\implies 2x = 40 \\implies x = 20$. Height $h = 20\\sqrt{3}$ m. Initial distance $= 20 + 40 = 60$ m."
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Angle of elevation",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:34.918294",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135634_14063b_02"
+    },
+    {
+      "question": "A vertical tower stands on a horizontal plane and is surmounted by a vertical flagstaff of height $6$ metres. At a point on the plane, the angle of elevation of the bottom and top of the flagstaff are $30^\\circ$ and $60^\\circ$ respectively. Find the height of the tower.",
+      "answer": "3 metres",
+      "solution": {
+        "steps": [
+          "Let $h$ be the height of the tower and $d$ be the distance from the point to the base.",
+          "Write the equation for the bottom of the flagstaff: $\\tan 30^\\circ = h/d$.",
+          "Write the equation for the top of the flagstaff: $\\tan 60^\\circ = (h+6)/d$.",
+          "Solve the system of equations for $h$."
+        ],
+        "derivation": "$d = h/\\tan 30^\\circ = h\\sqrt{3}$. Substituting into second equation: $\\sqrt{3} = (h+6) / (h\\sqrt{3}) \\implies 3h = h+6 \\implies 2h = 6 \\implies h = 3$ m."
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Height of tower with flagstaff",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:34.918302",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135634_28ca50_03"
+    },
+    {
+      "question": "From the top of a $7$ m high building, the angle of elevation of the top of a cable tower is $60^\\circ$ and the angle of depression of its foot is $45^\\circ$. Determine the height of the tower.",
+      "answer": "$7(1 + \\sqrt{3})$ metres",
+      "solution": {
+        "steps": [
+          "Let the building be $AB = 7$ m and the tower be $CD$.",
+          "Draw a horizontal line from $A$ to meet $CD$ at $E$. Thus $AE = BD$.",
+          "In $\\triangle ABD$, since the angle of depression is $45^\\circ$, $BD = AB = 7$ m.",
+          "In $\\triangle ACE$, $\\tan 60^\\circ = CE / AE$.",
+          "Calculate $CE$ and add $ED = AB = 7$ m to get the total height."
+        ],
+        "derivation": "$AE = BD = 7$. In $\\triangle ACE$, $CE = AE \\tan 60^\\circ = 7\\sqrt{3}$. Total height $CD = CE + ED = 7\\sqrt{3} + 7 = 7(\\sqrt{3} + 1)$ m."
+      },
+      "topic": "Some Applications of Trigonometry",
+      "subtopic": "Combined elevation and depression",
+      "marks": 5,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-04T13:56:34.918307",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_135634_18ca5e_04"
+    }
+  ]
+}

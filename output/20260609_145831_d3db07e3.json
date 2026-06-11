@@ -1,0 +1,83 @@
+{
+  "batch_id": "20260609_145831_d3db07e3",
+  "generated_at": "2026-06-09T14:58:31.903029",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "standard form and roots",
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A train travels at a certain average speed for a distance of $360$ km. If the speed had been $5$ km/hr more, it would have taken $1$ hour less for the same journey. Find the original average speed of the train. If the speed is further increased by $x$ km/hr such that the total time taken for the journey is $2$ hours less than the original time, find the value of $x$.",
+      "answer": "Original speed = $40$ km/hr; $x = 20$ km/hr",
+      "solution": {
+        "steps": [
+          "Let the original speed of the train be $v$ km/hr.",
+          "The time taken to cover $360$ km is $t_1 = 360/v$.",
+          "With increased speed $(v+5)$, the time taken is $t_2 = 360/(v+5)$. Given $t_1 - t_2 = 1$, we form the equation $360/v - 360/(v+5) = 1$.",
+          "Solving this quadratic $v^2 + 5v - 1800 = 0$ gives $v = 40$ or $v = -45$. Rejecting the negative value, the original speed is $40$ km/hr.",
+          "For the second condition, let the new speed be $v_3 = 40 + x$. The time taken is $360/(40+x) = 360/40 - 2 = 9 - 2 = 7$.",
+          "Solving $360/(40+x) = 7$ yields $40+x = 360/7$, which simplifies to $x = 360/7 - 280/7 = 80/7$ km/hr."
+        ],
+        "derivation": "$t_1 - t_2 = 1 \\Rightarrow \\frac{360}{v} - \\frac{360}{v+5} = 1 \\Rightarrow 360(v+5) - 360v = v(v+5) \\Rightarrow 1800 = v^2 + 5v \\Rightarrow v^2 + 5v - 1800 = 0 \\Rightarrow (v + 45)(v - 40) = 0 \\Rightarrow v = 40 \\text{ (since } v > 0) \\\\ \\text{New condition: } \\frac{360}{40+x} = \\frac{360}{40} - 2 \\Rightarrow \\frac{360}{40+x} = 9 - 2 = 7 \\Rightarrow 360 = 7(40+x) \\Rightarrow 360 = 280 + 7x \\Rightarrow 7x = 80 \\Rightarrow x = \\frac{80}{7} \\approx 11.43$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "standard form and roots",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T14:58:31.902717",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/430-1-1_Mathematics Basic.pdf",
+            "question_no": 32,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-3_Mathematics Basic.pdf",
+            "question_no": 33,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 35,
+            "paper_variant": "basic",
+            "question_type": "la"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_145831_5b6d7a_01"
+    }
+  ]
+}

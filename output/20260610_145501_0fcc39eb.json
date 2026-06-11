@@ -1,0 +1,122 @@
+{
+  "batch_id": "20260610_145501_0fcc39eb",
+  "generated_at": "2026-06-10T14:55:01.201453",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": "irrational numbers",
+  "difficulty": "hard",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $x$ is a rational number and $y$ is an irrational number, then the expression $z = \\frac{1}{x + y} + \\frac{1}{x - y}$ is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Combine the two fractions by taking the common denominator $(x + y)(x - y)$.",
+          "Simplify the numerator: $(x - y) + (x + y) = 2x$.",
+          "Simplify the denominator: $(x + y)(x - y) = x^2 - y^2$.",
+          "The expression becomes $z = \\frac{2x}{x^2 - y^2}$.",
+          "Since $x$ is rational and $y$ is irrational, $x^2$ is rational and $y^2$ is irrational (assuming $y^2$ remains irrational, such as $y = \\sqrt{2}$).",
+          "The sum or difference of a rational and an irrational number is irrational. Thus, $x^2 - y^2$ is irrational.",
+          "The ratio of a rational number ($2x$) to an irrational number ($x^2 - y^2$) is irrational."
+        ],
+        "derivation": "$z = \\frac{1}{x + y} + \\frac{1}{x - y} \\\\ z = \\frac{(x - y) + (x + y)}{(x + y)(x - y)} \\\\ z = \\frac{2x}{x^2 - y^2}$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "irrational numbers",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "hard",
+      "options": [
+        "(A) Always a rational number",
+        "(B) Always an irrational number",
+        "(C) Sometimes rational and sometimes irrational",
+        "(D) Always equal to 1"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T14:55:01.201377",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Prelims.pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 14,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 9,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 6,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 10,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 3,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 13,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145501_d7d292_01"
+    }
+  ]
+}

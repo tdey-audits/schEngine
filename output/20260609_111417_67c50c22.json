@@ -1,0 +1,115 @@
+{
+  "batch_id": "20260609_111417_67c50c22",
+  "generated_at": "2026-06-09T11:14:17.440982",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Pair of Linear Equations in Two Variables",
+  "subtopic": "equations reducible to linear form",
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A boat goes $30$ km upstream and $44$ km downstream in $10$ hours. In $13$ hours, it can go $40$ km upstream and $55$ km downstream. Determine the speed of the stream and that of the boat in still water.",
+      "answer": "Speed of the boat in still water is $8$ km/hr and speed of the stream is $3$ km/hr.",
+      "solution": {
+        "steps": [
+          "Let the speed of the boat in still water be $x$ km/hr and the speed of the stream be $y$ km/hr.",
+          "The speed upstream is $(x - y)$ km/hr and downstream is $(x + y)$ km/hr.",
+          "Using the time formula $\\text{Time} = \\frac{\\text{Distance}}{\\text{Speed}}$, we form the equations: $\\frac{30}{x-y} + \\frac{44}{x+y} = 10$ and $\\frac{40}{x-y} + \\frac{55}{x+y} = 13$.",
+          "Substitute $u = \\frac{1}{x-y}$ and $v = \\frac{1}{x+y}$ to obtain: $30u + 44v = 10$ and $40u + 55v = 13$.",
+          "Solve the linear system for $u$ and $v$ using elimination: Multiply the first by $4$ and the second by $3$ to get $120u + 176v = 40$ and $120u + 165v = 39$.",
+          "Subtracting gives $11v = 1 \\Rightarrow v = \\frac{1}{11}$. Substituting $v$ back gives $30u + 4 = 10 \\Rightarrow 30u = 6 \\Rightarrow u = \\frac{1}{5}$.",
+          "Solve $x-y = 5$ and $x+y = 11$ to get $x = 8$ and $y = 3$."
+        ],
+        "derivation": "$\\frac{30}{x-y} + \\frac{44}{x+y} = 10 \\Rightarrow 30u + 44v = 10 \\\\ \\frac{40}{x-y} + \\frac{55}{x+y} = 13 \\Rightarrow 40u + 55v = 13 \\\\ 120u + 176v = 40 \\text{ (Eq 1 } \\times 4) \\\\ 120u + 165v = 39 \\text{ (Eq 2 } \\times 3) \\\\ 11v = 1 \\Rightarrow v = \\frac{1}{11} \\\\ 30u + 44(\\frac{1}{11}) = 10 \\Rightarrow 30u + 4 = 10 \\Rightarrow u = \\frac{1}{5} \\\\ x-y = 5, x+y = 11 \\\\ 2x = 16 \\Rightarrow x = 8 \\\\ 8+y = 11 \\Rightarrow y = 3$"
+      },
+      "topic": "Pair of Linear Equations in Two Variables",
+      "subtopic": "equations reducible to linear form",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T11:14:17.440674",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/1158-3_430-4-3 Mathematics (Basic).pdf",
+            "question_no": 33,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/1158-2_430-4-2 Mathematics (Basic).pdf",
+            "question_no": 32,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/1158-1_430-4-1 Mathematics (Basic).pdf",
+            "question_no": 35,
+            "paper_variant": "basic",
+            "question_type": "la"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.4",
+            "question_no": 13,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.4",
+            "question_no": 5,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Pair of Linear Equations in Two Variables",
+            "exercise": "3.4",
+            "question_no": 3,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_111417_ffb6ea_01"
+    }
+  ]
+}

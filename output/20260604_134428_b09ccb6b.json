@@ -1,0 +1,155 @@
+{
+  "batch_id": "20260604_134428_b09ccb6b",
+  "generated_at": "2026-06-04T13:44:28.837774",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Polynomials",
+  "subtopic": "division algorithm for polynomials",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $p(x) = g(x) \\cdot q(x) + r(x)$, and $p(x) = x^2 + 3x + 2$, $g(x) = x + 1$, then the quotient $q(x)$ is:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Divide $x^2 + 3x + 2$ by $x + 1$.",
+          "$(x^2 + 3x + 2) / (x + 1) = x + 2$."
+        ],
+        "derivation": "\\frac{x^2 + 3x + 2}{x+1} = \\frac{(x+1)(x+2)}{x+1} = x+2"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) x + 2",
+        "(B) x - 2",
+        "(C) x + 1",
+        "(D) x - 1"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:28.837454",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134428_bd8434_01"
+    },
+    {
+      "question": "According to the division algorithm for polynomials, if $p(x)$ is divided by $g(x)$, then the remainder $r(x)$ must satisfy:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Recall the Euclid's division algorithm condition for polynomials.",
+          "The degree of the remainder must be strictly less than the degree of the divisor."
+        ],
+        "derivation": "\\text{deg}(r(x)) < \\text{deg}(g(x)) \\text{ or } r(x) = 0"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) deg(r(x)) > deg(g(x))",
+        "(B) deg(r(x)) = deg(g(x))",
+        "(C) deg(r(x)) < deg(g(x))",
+        "(D) r(x) = 1"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:28.837540",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134428_c5442c_02"
+    },
+    {
+      "question": "If $p(x) = x^2 - 4$ is divided by $g(x) = x - 2$, what is the remainder?",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Use the remainder theorem or division.",
+          "Since $(x-2)$ is a factor of $(x^2-4)$, the remainder is 0."
+        ],
+        "derivation": "p(2) = (2)^2 - 4 = 4 - 4 = 0"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 4",
+        "(B) 2",
+        "(C) -4",
+        "(D) 0"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:28.837566",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134428_c6d5ab_03"
+    },
+    {
+      "question": "Given $p(x) = 2x^2 + 5x + 3$ and $g(x) = 2x + 3$, the quotient $q(x)$ is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Perform long division or factorize the polynomial.",
+          "$2x^2 + 5x + 3 = (2x+3)(x+1)$."
+        ],
+        "derivation": "\\frac{2x^2 + 5x + 3}{2x+3} = x + 1"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) x - 1",
+        "(B) x + 1",
+        "(C) 2x + 1",
+        "(D) x + 3"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:28.837584",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134428_8adaa1_04"
+    },
+    {
+      "question": "If the dividend is $x^2 + 5x + 6$, the divisor is $x + 2$, and the remainder is $0$, what is the quotient?",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Factorize $x^2 + 5x + 6$ as $(x+2)(x+3)$.",
+          "Since dividend = divisor * quotient, quotient = x+3."
+        ],
+        "derivation": "\\frac{x^2 + 5x + 6}{x+2} = x + 3"
+      },
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) x + 2",
+        "(B) x - 3",
+        "(C) x + 3",
+        "(D) x - 2"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:44:28.837601",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134428_183628_05"
+    }
+  ]
+}

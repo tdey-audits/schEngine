@@ -1,0 +1,137 @@
+{
+  "batch_id": "20260610_145558_34e7f9f8",
+  "generated_at": "2026-06-10T14:55:58.880778",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Polynomials",
+  "subtopic": "geometrical meaning of zeros",
+  "difficulty": "simple",
+  "question_type": "vsa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "The graph of a polynomial $p(x) = ax^2 + bx + c$ intersects the $x$-axis at exactly one point, which is $(3, 0)$. Given that the polynomial passes through the point $(0, 9)$, determine the value of the leading coefficient $a$ and the number of distinct zeros of the polynomial.",
+      "answer": "a = 1, number of distinct zeros = 1",
+      "solution": {
+        "steps": [
+          "Since the graph intersects the x-axis at only one point $(3, 0)$, the polynomial has equal real roots, so it is of the form $p(x) = a(x - 3)^2$.",
+          "Substitute the point $(0, 9)$ into the equation to find $a$: $9 = a(0 - 3)^2 \\Rightarrow 9 = 9a \\Rightarrow a = 1$. The number of distinct zeros is 1 as the graph touches the x-axis at a single point."
+        ],
+        "derivation": "$p(x) = a(x - h)^2 \\\\ p(x) = a(x - 3)^2 \\\\ 9 = a(0 - 3)^2 \\\\ 9 = 9a \\\\ a = 1 \\\\ \\text{Since the graph touches at one point, it has only 1 distinct zero.}$"
+      },
+      "topic": "Polynomials",
+      "subtopic": "geometrical meaning of zeros",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "simple",
+      "diagram": {
+        "required": true,
+        "type": "coordinate",
+        "caption": "Graph of the quadratic polynomial touching the x-axis",
+        "scale": 0.85,
+        "elements": [
+          {
+            "kind": "axis"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 3,
+            "y": 0,
+            "label": "(3, 0)",
+            "position": "below"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 0,
+            "y": 2,
+            "label": "(0, 9)",
+            "position": "left"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-10T14:55:58.880469",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 22,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 24,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1171-2_30-4-2  (Mathematics Standard).pdf",
+            "question_no": 23,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 5,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 8,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 3,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145558_d56404_01"
+    }
+  ]
+}

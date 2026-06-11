@@ -1,0 +1,84 @@
+{
+  "batch_id": "20260604_132930_102d07a0",
+  "generated_at": "2026-06-04T13:29:30.318868",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 3,
+  "mechanisms": [
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $\\sin(A + B) = 1$ and $\\cos(A - B) = \\frac{\\sqrt{3}}{2}$, where $0^\\circ < A + B \\le 90^\\circ$ and $A > B$, find the values of $A$ and $B$.",
+      "answer": "A = 60^\\circ, B = 30^\\circ",
+      "solution": {
+        "steps": [
+          "Use the trigonometric table values for $\\sin$ and $\\cos$.",
+          "Set up the system of linear equations based on the given angles.",
+          "Solve for $A$ and $B$ by adding and subtracting the equations."
+        ],
+        "derivation": "\\sin(A+B) = 1 \\implies A+B = 90^\\circ \\quad (1) \\\\ \\cos(A-B) = \\frac{\\sqrt{3}}{2} \\implies A-B = 30^\\circ \\quad (2) \\\\ (1)+(2): 2A = 120^\\circ \\implies A = 60^\\circ \\\\ (1)-(2): 2B = 60^\\circ \\implies B = 30^\\circ"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:30.318738",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132930_90f06e_01"
+    },
+    {
+      "question": "Evaluate the following expression: $\\frac{2 \\tan^2 45^\\circ + \\cos^2 30^\\circ - \\sin^2 60^\\circ}{\\sin 30^\\circ + \\cos 60^\\circ}$",
+      "answer": "2",
+      "solution": {
+        "steps": [
+          "Substitute the standard values for $\\tan 45^\\circ$, $\\cos 30^\\circ$, $\\sin 60^\\circ$, $\\sin 30^\\circ$, and $\\cos 60^\\circ$.",
+          "Simplify the numerator and the denominator separately.",
+          "Perform the final division."
+        ],
+        "derivation": "\\text{Numerator: } 2(1)^2 + (\\frac{\\sqrt{3}}{2})^2 - (\\frac{\\sqrt{3}}{2})^2 = 2 + \\frac{3}{4} - \\frac{3}{4} = 2 \\\\ \\text{Denominator: } \\frac{1}{2} + \\frac{1}{2} = 1 \\\\ \\text{Result: } \\frac{2}{1} = 2"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:30.318790",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132930_11e3a6_02"
+    },
+    {
+      "question": "If $7 \\sin^2 \\theta + 3 \\cos^2 \\theta = 4$, show that $\\tan \\theta = \\frac{1}{\\sqrt{3}}$.",
+      "answer": "\\tan \\theta = \\frac{1}{\\sqrt{3}}",
+      "solution": {
+        "steps": [
+          "Express $\\cos^2 \\theta$ as $1 - \\sin^2 \\theta$ using the identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$.",
+          "Solve the resulting linear equation for $\\sin^2 \\theta$.",
+          "Calculate $\\tan \\theta$ using the values of $\\sin \\theta$ and $\\cos \\theta$."
+        ],
+        "derivation": "7 \\sin^2 \\theta + 3(1 - \\sin^2 \\theta) = 4 \\\\ 7 \\sin^2 \\theta + 3 - 3 \\sin^2 \\theta = 4 \\\\ 4 \\sin^2 \\theta = 1 \\implies \\sin^2 \\theta = \\frac{1}{4} \\implies \\sin \\theta = \\frac{1}{2} \\\\ \\cos^2 \\theta = 1 - \\frac{1}{4} = \\frac{3}{4} \\implies \\cos \\theta = \\frac{\\sqrt{3}}{2} \\\\ \\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta} = \\frac{1/2}{\\sqrt{3}/2} = \\frac{1}{\\sqrt{3}}"
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:30.318803",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132930_f7bd77_03"
+    }
+  ]
+}

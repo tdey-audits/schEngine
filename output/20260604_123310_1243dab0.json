@@ -1,0 +1,32 @@
+{
+  "batch_id": "20260604_123310_1243dab0",
+  "generated_at": "2026-06-04T12:33:10.499523",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "Find the nature of the roots of the quadratic equation $2x^2 - 4x + 3 = 0$.",
+      "answer": "No real roots",
+      "solution": {
+        "steps": [
+          "Step 1: Identify coefficients: $a = 2$, $b = -4$, $c = 3$.",
+          "Step 2: Compute discriminant $D = b^2 - 4ac = (-4)^2 - 4(2)(3) = 16 - 24 = -8$.",
+          "Step 3: Since $D < 0$, the quadratic equation has no real roots."
+        ],
+        "derivation": "$D = b^2 - 4ac = (-4)^2 - 4 \\cdot 2 \\cdot 3 = 16 - 24 = -8 < 0$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of Roots",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-04T12:33:10.499312",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_123310_4bff0c"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "batch_id": "20260609_160058_d0a2eafb",
+  "generated_at": "2026-06-09T16:00:58.419153",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A train travels a distance of $480$ km at a uniform speed. If the speed of the train had been $8$ km/h less, then it would have taken $3$ hours more to cover the same distance. Let the uniform speed of the train be $x$ km/h. Form a quadratic equation in $x$ and solve it to find the speed of the train.",
+      "answer": "The speed of the train is $40$ km/h.",
+      "solution": {
+        "steps": [
+          "Let the uniform speed of the train be $x$ km/h. The time taken to cover $480$ km is $T_1 = \\frac{480}{x}$ hours.",
+          "If the speed is reduced by $8$ km/h, the new speed is $(x - 8)$ km/h. The new time taken is $T_2 = \\frac{480}{x - 8}$ hours.",
+          "According to the problem, the difference in time is $3$ hours, so $T_2 - T_1 = 3$.",
+          "Set up the equation: $\\frac{480}{x - 8} - \\frac{480}{x} = 3$.",
+          "Simplify the equation by dividing by $3$ and finding a common denominator to get $x^2 - 8x - 1280 = 0$.",
+          "Solve the quadratic equation using the quadratic formula or middle-term splitting: $x^2 - 40x + 32x - 1280 = 0$.",
+          "Factorise to get $(x - 40)(x + 32) = 0$. Since speed cannot be negative, $x = 40$ km/h."
+        ],
+        "derivation": "$\\frac{480}{x-8} - \\frac{480}{x} = 3 \\Rightarrow 480 \\left( \\frac{x - (x - 8)}{x(x - 8)} \\right) = 3 \\Rightarrow 480 \\times 8 = 3x(x - 8) \\Rightarrow 160 \\times 8 = x^2 - 8x \\Rightarrow 1280 = x^2 - 8x \\Rightarrow x^2 - 8x - 1280 = 0 \\Rightarrow x^2 - 40x + 32x - 1280 = 0 \\Rightarrow x(x - 40) + 32(x - 40) = 0 \\Rightarrow (x - 40)(x + 32) = 0 \\Rightarrow x = 40 \\text{ or } x = -32$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Word problems based on speed, distance, and time",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T16:00:58.418853",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/430-2-1_Mathematics Basic.pdf",
+            "question_no": 32,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 35,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-2-3_Mathematics Basic.pdf",
+            "question_no": 33,
+            "paper_variant": "basic",
+            "question_type": "la"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 6,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160058_133c0a_01"
+    }
+  ]
+}

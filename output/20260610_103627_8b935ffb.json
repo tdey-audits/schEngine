@@ -1,0 +1,67 @@
+{
+  "batch_id": "20260610_103627_8b935ffb",
+  "generated_at": "2026-06-10T10:36:27.168589",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": "standard form and roots",
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A motorboat whose speed in still water is $18 \\text{ km/h}$ takes $1$ hour more to go $24 \\text{ km}$ upstream than to return downstream to the same spot. Form a quadratic equation to represent this situation and find the speed of the stream.",
+      "answer": "$6 \\text{ km/h}$",
+      "solution": {
+        "steps": [
+          "Let the speed of the stream be $x \\text{ km/h}$.",
+          "Then, the speed of the boat upstream is $(18 - x) \\text{ km/h}$ and downstream is $(18 + x) \\text{ km/h}$.",
+          "Using the formula $\\text{Time} = \\frac{\\text{Distance}}{\\text{Speed}}$, the time taken upstream is $\\frac{24}{18 - x}$ and downstream is $\\frac{24}{18 + x}$.",
+          "According to the problem, the difference in time is $1$ hour: $\\frac{24}{18 - x} - \\frac{24}{18 + x} = 1$.",
+          "Simplify the equation to standard form: $24(18 + x) - 24(18 - x) = (18 - x)(18 + x) \\Rightarrow 48x = 324 - x^2$.",
+          "The quadratic equation is $x^2 + 48x - 324 = 0$.",
+          "Solve the quadratic equation using the quadratic formula or middle-term splitting: $(x + 54)(x - 6) = 0$.",
+          "Since speed cannot be negative, $x = 6 \\text{ km/h}$."
+        ],
+        "derivation": "$t_u - t_d = 1 \\\\ \\frac{24}{18 - x} - \\frac{24}{18 + x} = 1 \\\\ 24(18 + x - 18 + x) = (18 - x)(18 + x) \\\\ 24(2x) = 324 - x^2 \\\\ x^2 + 48x - 324 = 0 \\\\ x^2 + 54x - 6x - 324 = 0 \\\\ x(x + 54) - 6(x + 54) = 0 \\\\ (x - 6)(x + 54) = 0 \\\\ x = 6 \\text{ or } x = -54$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Standard form and roots",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-10T10:36:27.168296",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/430-1-1_Mathematics Basic.pdf",
+            "question_no": 32,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-3_Mathematics Basic.pdf",
+            "question_no": 33,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 35,
+            "paper_variant": "basic",
+            "question_type": "la"
+          }
+        ]
+      },
+      "id": "ncert_20260610_103627_52c069_01"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "batch_id": "20260604_151101_b21e38cf",
+  "generated_at": "2026-06-04T15:11:01.999212",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Coordinate Geometry",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The distance of the point $P(3, 4)$ from the origin is $5$ units. Reason (R): The distance of a point $(x, y)$ from the origin $(0, 0)$ is given by $\\sqrt{x^2 + y^2}$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Distance from origin formula is $d = \\sqrt{x^2 + y^2}$.",
+          "Substitute $x = 3, y = 4$.",
+          "$d = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5$."
+        ],
+        "derivation": "$d = \\sqrt{3^2 + 4^2} \\ d = \\sqrt{9 + 16} \\ d = \\sqrt{25} = 5$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Distance Formula",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:01.998654",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151101_1ac5b7_01"
+    },
+    {
+      "question": "Assertion (A): The midpoint of the line segment joining $A(2, 4)$ and $B(4, 2)$ is $(3, 3)$. Reason (R): The midpoint of a line segment with endpoints $(x_1, y_1)$ and $(x_2, y_2)$ is $(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2})$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Midpoint formula is $(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2})$.",
+          "Substitute $x_1=2, x_2=4, y_1=4, y_2=2$.",
+          "Midpoint $= (\\frac{2+4}{2}, \\frac{4+2}{2}) = (\\frac{6}{2}, \\frac{6}{2}) = (3, 3)$."
+        ],
+        "derivation": "M = (\\frac{2+4}{2}, \\frac{4+2}{2}) \\ M = (\\frac{6}{2}, \\frac{6}{2}) \\ M = (3, 3)"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Section Formula",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:01.998800",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151101_a62223_02"
+    },
+    {
+      "question": "Assertion (A): The point $(0, 5)$ lies on the $y$-axis. Reason (R): For any point on the $y$-axis, the $x$-coordinate is zero.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "A point on the $y$-axis has the form $(0, y)$.",
+          "Since the given point is $(0, 5)$, $x=0$, therefore it lies on the $y$-axis."
+        ],
+        "derivation": "P(x, y) \\text{ on } y\\text{-axis } \\Rightarrow x = 0 \\ P(0, 5) \\Rightarrow x = 0"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Introduction",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:01.998850",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151101_deaaec_03"
+    },
+    {
+      "question": "Assertion (A): The distance between the points $A(0, 0)$ and $B(0, 7)$ is $7$ units. Reason (R): The distance between two points $(x_1, y_1)$ and $(x_2, y_2)$ is $\\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Use distance formula: $\\sqrt{(0-0)^2 + (7-0)^2}$.",
+          "$d = \\sqrt{0^2 + 7^2} = \\sqrt{49} = 7$."
+        ],
+        "derivation": "d = \\sqrt{(0-0)^2 + (7-0)^2} \\ d = \\sqrt{0 + 49} \\ d = 7"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Distance Formula",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:01.998884",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151101_d1209d_04"
+    },
+    {
+      "question": "Assertion (A): The point $(3, 0)$ lies on the $x$-axis. Reason (R): For any point on the $x$-axis, the $y$-coordinate is zero.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "A point on the $x$-axis has the form $(x, 0)$.",
+          "The given point $(3, 0)$ has $y=0$, hence it lies on the $x$-axis."
+        ],
+        "derivation": "P(x, y) \\text{ on } x\\text{-axis } \\Rightarrow y = 0 \\ P(3, 0) \\Rightarrow y = 0"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "Introduction",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T15:11:01.998918",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_151101_7f5297_05"
+    }
+  ]
+}

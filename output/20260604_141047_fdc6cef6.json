@@ -1,0 +1,135 @@
+{
+  "batch_id": "20260604_141047_fdc6cef6",
+  "generated_at": "2026-06-04T14:10:47.749403",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Constructions",
+  "subtopic": "construction of tangents",
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Draw a circle of radius $3 \\text{ cm}$. Take two points $P$ and $Q$ on one of its extended diameters each at a distance of $7 \\text{ cm}$ from its centre. Draw tangents to the circle from these two points $P$ and $Q$.",
+      "answer": "Two pairs of tangents constructed from points at distance $7 \\text{ cm}$",
+      "solution": {
+        "steps": [
+          "Draw a circle with center $O$ and radius $3 \\text{ cm}$.",
+          "Draw a diameter and extend it on both sides to locate points $P$ and $Q$ such that $OP = OQ = 7 \\text{ cm}$.",
+          "Bisect $OP$ and $OQ$ to find midpoints $M_1$ and $M_2$.",
+          "With $M_1$ and $M_2$ as centers, draw circles of radius $M_1O$ to intersect the original circle at two points each. Join $P$ and $Q$ to these intersection points."
+        ],
+        "derivation": "Construction follows the geometric property: angle in a semicircle is $90^\\circ$."
+      },
+      "topic": "Constructions",
+      "subtopic": "Construction of tangents",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:47.749280",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141047_cbad8c_01"
+    },
+    {
+      "question": "Construct a tangent to a circle of radius $4 \\text{ cm}$ from a point on the concentric circle of radius $6 \\text{ cm}$ and measure its length.",
+      "answer": "\\sqrt{20} \\approx 4.47 \\text{ cm}",
+      "solution": {
+        "steps": [
+          "Draw two concentric circles with radii $4 \\text{ cm}$ and $6 \\text{ cm}$ with center $O$.",
+          "Mark a point $P$ on the circumference of the larger circle.",
+          "Join $OP$ and bisect it to find midpoint $M$.",
+          "Draw a circle with center $M$ and radius $MO$ to cut the inner circle at $A$ and $B$. $PA$ and $PB$ are the required tangents."
+        ],
+        "derivation": "Length $L = \\sqrt{6^2 - 4^2} = \\sqrt{36 - 16} = \\sqrt{20} = 2\\sqrt{5}$"
+      },
+      "topic": "Constructions",
+      "subtopic": "Construction of tangents",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:47.749318",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141047_ad5fef_02"
+    },
+    {
+      "question": "Draw a line segment $AB$ of length $8 \\text{ cm}$. Taking $A$ as center, draw a circle of radius $4 \\text{ cm}$ and taking $B$ as center, draw another circle of radius $3 \\text{ cm}$. Construct tangents to each circle from the center of the other circle.",
+      "answer": "Two pairs of tangents constructed",
+      "solution": {
+        "steps": [
+          "Draw segment $AB = 8 \\text{ cm}$. Draw circle $C_1$ (center $A$, $r=4$) and $C_2$ (center $B$, $r=3$).",
+          "Bisect $AB$ to get midpoint $M$.",
+          "Draw a circle with center $M$ and radius $MA$ (or $MB$).",
+          "The points where this circle intersects $C_1$ and $C_2$ are the points of tangency. Join $B$ to intersection points on $C_1$ and $A$ to intersection points on $C_2$."
+        ],
+        "derivation": "Tangents are constructed by finding the intersection of circles centered at the midpoint of the line segment connecting the centers."
+      },
+      "topic": "Constructions",
+      "subtopic": "Construction of tangents",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:47.749326",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141047_19d650_03"
+    },
+    {
+      "question": "Draw a circle of radius $3.5 \\text{ cm}$. Construct a pair of tangents to this circle which are inclined to each other at an angle of $60^\\circ$.",
+      "answer": "Construction of tangents at $120^\\circ$ central angle",
+      "solution": {
+        "steps": [
+          "Draw a circle of radius $3.5 \\text{ cm}$ with center $O$.",
+          "Draw a radius $OA$. Draw another radius $OB$ such that $\\angle AOB = 120^\\circ$ (since $180^\\circ - 60^\\circ = 120^\\circ$).",
+          "At point $A$, draw a perpendicular to $OA$.",
+          "At point $B$, draw a perpendicular to $OB$. The intersection point $P$ gives the required tangents $PA$ and $PB$."
+        ],
+        "derivation": "Sum of opposite angles in the quadrilateral $OAPB$ is $180^\\circ$. Thus, if $\\angle APB = 60^\\circ$, $\\angle AOB = 120^\\circ$."
+      },
+      "topic": "Constructions",
+      "subtopic": "Construction of tangents",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:47.749331",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141047_4654ef_04"
+    },
+    {
+      "question": "Construct a triangle with sides $5 \\text{ cm}, 6 \\text{ cm}$ and $7 \\text{ cm}$. Then construct a circle touching the side of $6 \\text{ cm}$ at its midpoint and passing through the other vertex.",
+      "answer": "Construction of a circle through specific vertices tangent to a side",
+      "solution": {
+        "steps": [
+          "Construct $\\triangle ABC$ with $AB=5, BC=6, AC=7$.",
+          "Locate midpoint $M$ of $BC$.",
+          "Draw a perpendicular to $BC$ at $M$.",
+          "Draw the perpendicular bisector of $AM$. The intersection of these two perpendiculars is the center $O$. Draw the circle with radius $OM$."
+        ],
+        "derivation": "The center must be equidistant from the point of tangency $M$ and vertices $A$ and $C$."
+      },
+      "topic": "Constructions",
+      "subtopic": "Construction of tangents",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:10:47.749336",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_141047_86ebfe_05"
+    }
+  ]
+}

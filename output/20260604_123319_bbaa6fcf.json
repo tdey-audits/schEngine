@@ -1,0 +1,31 @@
+{
+  "batch_id": "20260604_123319_bbaa6fcf",
+  "generated_at": "2026-06-04T12:33:19.306711",
+  "model": "deepseek/deepseek-v4-flash",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "question_count": 1,
+  "questions": [
+    {
+      "question": "Find the discriminant of the quadratic equation $3x^2 - 5x + 2 = 0$ and hence determine the nature of its roots.",
+      "answer": "Discriminant = 1; Roots are real and distinct.",
+      "solution": {
+        "steps": [
+          "Step 1: Compare the given equation with standard form $ax^2+bx+c=0$ to get $a=3$, $b=-5$, $c=2$. Compute discriminant $D = b^2 - 4ac$.",
+          "Step 2: Substitute values: $D = (-5)^2 - 4(3)(2) = 25-24=1$. Since $D>0$, the roots are real and distinct."
+        ],
+        "derivation": "$D = b^2-4ac = (-5)^2 - 4(3)(2) = 25-24 = 1 > 0$"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Nature of roots",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "simple",
+      "metadata": {
+        "generated_at": "2026-06-04T12:33:19.306613",
+        "model": "deepseek/deepseek-v4-flash"
+      },
+      "id": "ncert_20260604_123319_27f72d"
+    }
+  ]
+}

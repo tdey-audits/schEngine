@@ -1,0 +1,133 @@
+{
+  "batch_id": "20260604_145715_6a0a9c47",
+  "generated_at": "2026-06-04T14:57:15.529029",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 2,
+  "mechanisms": [
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If a tangent $PA$ and a tangent $PB$ from a point $P$ to a circle with centre $O$ are inclined to each other at an angle of $80^\\circ$, then $\\angle POA$ is equal to:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "In $\\triangle OAP$ and $\\triangle OBP$, $OA=OB$ (radii), $PA=PB$ (tangents from an external point), and $OP=OP$ (common).",
+          "Thus, $\\triangle OAP \\cong \\triangle OBP$ by SSS congruence.",
+          "Consequently, $\\angle POA = \\angle POB$. Since $\\angle APB = 80^\\circ$, we have $\\angle OPA = 40^\\circ$.",
+          "In $\\triangle OAP$, $\\angle OAP = 90^\\circ$ (radius is perpendicular to tangent).",
+          "Therefore, $\\angle POA = 180^\\circ - 90^\\circ - 40^\\circ = 50^\\circ$."
+        ],
+        "derivation": "$OP \\text{ bisects } \\angle APB \\Rightarrow \\angle OPA = \\frac{80^\\circ}{2} = 40^\\circ \\\\ \\triangle OAP \\text{ is right-angled at } A \\\\ \\angle POA + \\angle OPA + \\angle OAP = 180^\\circ \\\\ \\angle POA + 40^\\circ + 90^\\circ = 180^\\circ \\\\ \\angle POA = 180^\\circ - 130^\\circ = 50^\\circ$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 50^\\circ",
+        "(B) 60^\\circ",
+        "(C) 70^\\circ",
+        "(D) 80^\\circ"
+      ],
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "caption": "Point P outside circle with centre O and tangents PA, PB",
+        "scale": 1.0,
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0,
+            "y": 2,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 1.73,
+            "y": -1,
+            "label": "B"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 3,
+            "y": 0,
+            "label": "P"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "A"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "A"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "B"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:15.528929",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145715_94d99b_01"
+    },
+    {
+      "question": "A circle touches all four sides of a quadrilateral $ABCD$. If $AB = 6 \\text{ cm}$, $BC = 7 \\text{ cm}$, and $CD = 4 \\text{ cm}$, then the length of $AD$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "For a quadrilateral circumscribing a circle, the sum of opposite sides are equal.",
+          "This is based on the theorem that lengths of tangents drawn from an external point to a circle are equal.",
+          "So, $AB + CD = BC + AD$.",
+          "Substitute the given values: $6 + 4 = 7 + AD$.",
+          "Solve for $AD$: $10 = 7 + AD \\Rightarrow AD = 3 \\text{ cm}$."
+        ],
+        "derivation": "AB + CD = BC + AD \\\\ 6 + 4 = 7 + AD \\\\ 10 = 7 + AD \\\\ AD = 10 - 7 = 3"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 2 \\text{ cm}",
+        "(B) 2.5 \\text{ cm}",
+        "(C) 3 \\text{ cm}",
+        "(D) 3.5 \\text{ cm}"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:57:15.528986",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_145715_c28929_02"
+    }
+  ]
+}

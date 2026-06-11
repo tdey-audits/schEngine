@@ -1,0 +1,164 @@
+{
+  "batch_id": "20260604_134531_d1769a04",
+  "generated_at": "2026-06-04T13:45:31.265648",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "A tangent $PQ$ at a point $P$ of a circle of radius $5$ cm meets a line through the center $O$ at a point $Q$ so that $OQ = 13$ cm. The length of $PQ$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "The radius is perpendicular to the tangent at the point of contact, so $\\angle OPQ = 90^\\circ$.",
+          "In right-angled triangle $\\triangle OPQ$, by Pythagoras theorem: $OQ^2 = OP^2 + PQ^2$.",
+          "Substitute $OP = 5$ and $OQ = 13$: $13^2 = 5^2 + PQ^2$.",
+          "Solve for $PQ$: $169 = 25 + PQ^2 \\implies PQ^2 = 144 \\implies PQ = 12$ cm."
+        ],
+        "derivation": "$PQ = \\sqrt{13^2 - 5^2} = \\sqrt{169 - 25} = \\sqrt{144} = 12$"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents to a circle",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 10 cm",
+        "(B) 11 cm",
+        "(C) 12 cm",
+        "(D) 15 cm"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:31.265527",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134531_b9b589_01"
+    },
+    {
+      "question": "If tangents $PA$ and $PB$ from a point $P$ to a circle with center $O$ are inclined to each other at an angle of $80^\\circ$, then $\\angle POA$ is equal to:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "The line $OP$ bisects the angle between the tangents, so $\\angle APO = 40^\\circ$.",
+          "In $\\triangle OAP$, $\\angle OAP = 90^\\circ$ (radius is perpendicular to tangent).",
+          "In $\\triangle OAP$, $\\angle POA + \\angle OAP + \\angle APO = 180^\\circ$.",
+          "$\\angle POA + 90^\\circ + 40^\\circ = 180^\\circ \\implies \\angle POA = 50^\\circ$."
+        ],
+        "derivation": "\\angle POA = 180^\\circ - 90^\\circ - 40^\\circ = 50^\\circ"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents from an external point",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 50^\\circ",
+        "(B) 60^\\circ",
+        "(C) 70^\\circ",
+        "(D) 80^\\circ"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:31.265567",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134531_fcfd60_02"
+    },
+    {
+      "question": "The number of tangents that can be drawn from a point lying inside a circle is:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "A point inside a circle does not lie on the circumference.",
+          "A line passing through an interior point will be a secant, not a tangent.",
+          "Therefore, zero tangents can be drawn."
+        ],
+        "derivation": "By definition, a tangent touches the circle at exactly one point on the circumference."
+      },
+      "topic": "Circles",
+      "subtopic": "Tangent properties",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 0",
+        "(B) 1",
+        "(C) 2",
+        "(D) Infinite"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:31.265577",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134531_876baf_03"
+    },
+    {
+      "question": "Two concentric circles are of radii $5$ cm and $3$ cm. The length of the chord of the larger circle which touches the smaller circle is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Let $O$ be the center, $AB$ be the chord of the larger circle touching the smaller circle at $M$.",
+          "In $\\triangle OMA$, $\\angle OMA = 90^\\circ$, $OA = 5$ cm, $OM = 3$ cm.",
+          "By Pythagoras: $AM^2 = OA^2 - OM^2 = 25 - 9 = 16$. So $AM = 4$ cm.",
+          "The perpendicular from the center bisects the chord, so $AB = 2 \\times AM = 8$ cm."
+        ],
+        "derivation": "AB = 2\\sqrt{5^2 - 3^2} = 2\\sqrt{16} = 8"
+      },
+      "topic": "Circles",
+      "subtopic": "Concentric circles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 6 cm",
+        "(B) 8 cm",
+        "(C) 10 cm",
+        "(D) 7 cm"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:31.265583",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134531_762ae2_04"
+    },
+    {
+      "question": "If $TP$ and $TQ$ are two tangents to a circle with center $O$ so that $\\angle POQ = 110^\\circ$, then $\\angle PTQ$ is equal to:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "In the quadrilateral $OPTQ$, the sum of angles is $360^\\circ$.",
+          "Tangents are perpendicular to radii at contact points, so $\\angle OPT = 90^\\circ$ and $\\angle OQT = 90^\\circ$.",
+          "$\\angle PTQ + \\angle POQ + \\angle OPT + \\angle OQT = 360^\\circ$.",
+          "$\\angle PTQ + 110^\\circ + 90^\\circ + 90^\\circ = 360^\\circ \\implies \\angle PTQ = 360^\\circ - 290^\\circ = 70^\\circ$."
+        ],
+        "derivation": "\\angle PTQ = 180^\\circ - 110^\\circ = 70^\\circ"
+      },
+      "topic": "Circles",
+      "subtopic": "Tangents from an external point",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 60^\\circ",
+        "(B) 80^\\circ",
+        "(C) 70^\\circ",
+        "(D) 90^\\circ"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:45:31.265589",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_134531_05f4a8_05"
+    }
+  ]
+}

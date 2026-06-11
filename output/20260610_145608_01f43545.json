@@ -1,0 +1,112 @@
+{
+  "batch_id": "20260610_145608_01f43545",
+  "generated_at": "2026-06-10T14:56:08.618746",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": "euclid division lemma",
+  "difficulty": "medium",
+  "question_type": "sa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Using Euclid's division algorithm, find the largest positive integer that divides $1026$ and $2262$ leaving remainders $2$ and $6$, respectively.",
+      "answer": "34",
+      "solution": {
+        "steps": [
+          "Subtract the respective remainders from the given numbers to find the numbers that are exactly divisible by the required divisor: $1026 - 2 = 1024$ and $2262 - 6 = 2256$.",
+          "Apply Euclid's division algorithm to find the HCF of $1024$ and $2256$.",
+          "Perform the division steps: $2256 = 1024 \\times 2 + 208$, then $1024 = 208 \\times 4 + 192$, then $208 = 192 \\times 1 + 16$, and finally $192 = 16 \\times 12 + 0$.",
+          "Since the remainder is $0$ when the divisor is $16$, the HCF is $16$."
+        ],
+        "derivation": "$1026 - 2 = 1024 \\quad \\text{and} \\quad 2262 - 6 = 2256 \\\\ 2256 = 1024 \\times 2 + 208 \\\\ 1024 = 208 \\times 4 + 192 \\\\ 208 = 192 \\times 1 + 16 \\\\ 192 = 16 \\times 12 + 0 \\\\ \\therefore \\text{HCF}(1024, 2256) = 16$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Euclid's division lemma",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-10T14:56:08.618670",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 26,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 26,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 29,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 8,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 13,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 7,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 14,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145608_fbd22d_01"
+    }
+  ]
+}

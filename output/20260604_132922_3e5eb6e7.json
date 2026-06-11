@@ -1,0 +1,161 @@
+{
+  "batch_id": "20260604_132922_3e5eb6e7",
+  "generated_at": "2026-06-04T13:29:22.523720",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "assertion_reason",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): The value of $\\sin \\theta$ can be $\\frac{4}{3}$. Reason (R): The value of $\\sin \\theta$ is always less than or equal to 1.",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Check the range of sine function.",
+          "Since $-1 \\leq \\sin \\theta \\leq 1$, the value 4/3 (which is 1.33) is impossible.",
+          "The assertion is false because 4/3 > 1.",
+          "The reason is a standard trigonometric identity/property."
+        ],
+        "derivation": "\\text{Assertion: } \\sin \\theta = \\frac{4}{3} > 1 \\implies \\text{False}. \\text{Reason: } -1 \\leq \\sin \\theta \\leq 1 \\implies \\text{True}."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:22.523486",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132922_3ad314_01"
+    },
+    {
+      "question": "Assertion (A): If $\\tan \\theta = 1$, then $\\theta = 45^\\circ$. Reason (R): $\\tan \\theta = 1$ only for $\\theta = 45^\\circ$ in the range $0^\\circ \\leq \\theta < 90^\\circ$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Recall the trigonometric table for tan values.",
+          "The value of tan is 1 at 45 degrees.",
+          "Since the range is restricted to 0 to 90, 45 is the unique solution."
+        ],
+        "derivation": "\\tan 45^\\circ = 1. \\text{ In } [0, 90), \\tan \\theta = 1 \\iff \\theta = 45^\\circ."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:22.523554",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132922_8d1eaa_02"
+    },
+    {
+      "question": "Assertion (A): The value of $\\cos^2 30^\\circ + \\sin^2 30^\\circ$ is 1. Reason (R): $\\sin^2 \\theta + \\cos^2 \\theta = 1$ for all $\\theta$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Identify the trigonometric identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$.",
+          "Since the angle is the same (30 degrees) for both terms, the identity holds.",
+          "Reason is the correct mathematical explanation for the Assertion."
+        ],
+        "derivation": "\\sin^2 \\theta + \\cos^2 \\theta = 1 \\implies \\sin^2 30^\\circ + \\cos^2 30^\\circ = 1."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:22.523575",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132922_16e21e_03"
+    },
+    {
+      "question": "Assertion (A): As $\\theta$ increases from $0^\\circ$ to $90^\\circ$, the value of $\\sin \\theta$ increases. Reason (R): $\\sin 0^\\circ = 0$ and $\\sin 90^\\circ = 1$.",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "Evaluate sin 0 = 0 and sin 90 = 1.",
+          "Verify the trend of sine function in the first quadrant.",
+          "The reason correctly explains why the assertion is true."
+        ],
+        "derivation": "0 < 0.5 < 0.707 < 0.866 < 1 \\text{ for } 0^\\circ < 30^\\circ < 45^\\circ < 60^\\circ < 90^\\circ."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:22.523591",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132922_0090d6_04"
+    },
+    {
+      "question": "Assertion (A): $\\sec^2 \\theta - 1 = \\tan^2 \\theta$. Reason (R): $\\sec^2 \\theta + \\tan^2 \\theta = 1$ is a standard identity.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Check the validity of Assertion: $1 + \\tan^2 \\theta = \\sec^2 \\theta$ is true, so $\\sec^2 \\theta - 1 = \\tan^2 \\theta$ is true.",
+          "Check the validity of Reason: The standard identity is $1 + \\tan^2 \\theta = \\sec^2 \\theta$, not $\\sec^2 \\theta + \\tan^2 \\theta = 1$.",
+          "Conclusion: Assertion is true, Reason is false."
+        ],
+        "derivation": "\\text{Identity: } 1 + \\tan^2 \\theta = \\sec^2 \\theta \\implies \\sec^2 \\theta - 1 = \\tan^2 \\theta."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Identities",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "simple",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:22.523603",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132922_cefba2_05"
+    }
+  ]
+}

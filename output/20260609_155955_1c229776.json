@@ -1,0 +1,174 @@
+{
+  "batch_id": "20260609_155955_1c229776",
+  "generated_at": "2026-06-09T15:59:55.187311",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "vsa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "In $\\triangle ABC$, a line segment $DE$ is drawn parallel to $BC$ such that $D$ lies on $AB$ and $E$ lies on $AC$. If $AD = 3 \\text{ cm}$, $DB = 2 \\text{ cm}$, and the area of $\\triangle ADE$ is $18 \\text{ cm}^2$, find the area of the quadrilateral $DBCE$.",
+      "answer": "$32 \\text{ cm}^2$",
+      "solution": {
+        "steps": [
+          "Since $DE \\parallel BC$, by Basic Proportionality Theorem, $\\triangle ADE \\sim \\triangle ABC$. The ratio of sides $\\frac{AD}{AB} = \\frac{3}{3+2} = \\frac{3}{5}$.",
+          "The ratio of areas of similar triangles is the square of the ratio of corresponding sides, so $\\frac{\\text{Area}(\\triangle ADE)}{\\text{Area}(\\triangle ABC)} = (\\frac{3}{5})^2 = \\frac{9}{25}$.",
+          "Calculate $\\text{Area}(\\triangle ABC) = 18 \\times \\frac{25}{9} = 50 \\text{ cm}^2$. The area of quadrilateral $DBCE = \\text{Area}(\\triangle ABC) - \\text{Area}(\\triangle ADE) = 50 - 18 = 32 \\text{ cm}^2$."
+        ],
+        "derivation": "$\\frac{AD}{AB} = \\frac{3}{3+2} = \\frac{3}{5} \\Rightarrow \\frac{\\text{Area}(\\triangle ADE)}{\\text{Area}(\\triangle ABC)} = (\\frac{3}{5})^2 = \\frac{9}{25} \\Rightarrow \\text{Area}(\\triangle ABC) = 18 \\times \\frac{25}{9} = 50 \\text{ cm}^2 \\Rightarrow \\text{Area}(DBCE) = 50 - 18 = 32 \\text{ cm}^2$"
+      },
+      "topic": "Triangles",
+      "subtopic": "Similarity of Triangles",
+      "marks": 2,
+      "type": "vsa",
+      "difficulty": "hard",
+      "diagram": {
+        "required": true,
+        "type": "geometry",
+        "caption": "Triangle ABC with DE parallel to BC",
+        "scale": 0.85,
+        "elements": [
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0,
+            "y": 4,
+            "label": "A",
+            "position": "above"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": -3,
+            "y": 0,
+            "label": "B",
+            "position": "below left"
+          },
+          {
+            "kind": "point",
+            "id": "C",
+            "x": 3,
+            "y": 0,
+            "label": "C",
+            "position": "below right"
+          },
+          {
+            "kind": "point",
+            "id": "D",
+            "x": -1.2,
+            "y": 2.4,
+            "label": "D",
+            "position": "left"
+          },
+          {
+            "kind": "point",
+            "id": "E",
+            "x": 1.2,
+            "y": 2.4,
+            "label": "E",
+            "position": "right"
+          },
+          {
+            "kind": "polygon",
+            "points": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "kind": "segment",
+            "from": "D",
+            "to": "E"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-09T15:59:55.187004",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_6 (Triangles).pdf",
+          "Chapter_7 (Coordinate Geometry).pdf",
+          "Chapter_11 (Constructions).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 22,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 25,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          },
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 23,
+            "paper_variant": "standard",
+            "question_type": "vsa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 12,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.4",
+            "question_no": 9,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.3",
+            "question_no": 12,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Triangles",
+            "exercise": "6.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_155955_f5f187_01"
+    }
+  ]
+}

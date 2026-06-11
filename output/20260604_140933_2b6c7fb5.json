@@ -1,0 +1,133 @@
+{
+  "batch_id": "20260604_140933_2b6c7fb5",
+  "generated_at": "2026-06-04T14:09:33.481343",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_ii",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "In $\\triangle ABC$, $DE \\parallel BC$ such that $AD = (4x - 3)$ cm, $AE = (8x - 7)$ cm, $BD = (3x - 1)$ cm, and $EC = (5x - 3)$ cm. Find the value of $x$.",
+      "answer": "x = 1",
+      "solution": {
+        "steps": [
+          "Since $DE \\parallel BC$, by Basic Proportionality Theorem (BPT), $\\frac{AD}{DB} = \\frac{AE}{EC}$.",
+          "Substitute the given values into the equation: $\\frac{4x-3}{3x-1} = \\frac{8x-7}{5x-3}$.",
+          "Cross-multiply to get: $(4x-3)(5x-3) = (8x-7)(3x-1)$.",
+          "Solve the resulting linear equation to find $x$."
+        ],
+        "derivation": "20x^2 - 12x - 15x + 9 = 24x^2 - 8x - 21x + 7 \\implies 20x^2 - 27x + 9 = 24x^2 - 29x + 7 \\implies 4x^2 - 2x - 2 = 0 \\implies 2x^2 - x - 1 = 0 \\implies (2x+1)(x-1) = 0. \\text{ Since } x > 1, x = 1."
+      },
+      "topic": "Triangles",
+      "subtopic": "Basic Proportionality Theorem",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:33.481158",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140933_9b7911_01"
+    },
+    {
+      "question": "Two poles of heights $6$ m and $11$ m stand on a plane ground. If the distance between their feet is $12$ m, find the distance between their tops.",
+      "answer": "13 m",
+      "solution": {
+        "steps": [
+          "Let $AB = 6$ m and $CD = 11$ m be the two poles. The distance $BD = 12$ m.",
+          "Draw a line from $A$ parallel to $BD$ meeting $CD$ at $E$. Then $CE = CD - ED = 11 - 6 = 5$ m.",
+          "In right-angled triangle $\\triangle AEC$, use the Pythagorean theorem to find the hypotenuse $AC$.",
+          "$AC^2 = AE^2 + CE^2$."
+        ],
+        "derivation": "AE = BD = 12 \\text{ m}. CE = 11 - 6 = 5 \\text{ m}. AC = \\sqrt{12^2 + 5^2} = \\sqrt{144 + 25} = \\sqrt{169} = 13 \\text{ m}."
+      },
+      "topic": "Triangles",
+      "subtopic": "Pythagoras Theorem",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:33.481214",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140933_2dcf3f_02"
+    },
+    {
+      "question": "In $\\triangle PQR$, $S$ and $T$ are points on sides $PQ$ and $PR$ respectively such that $\\angle PST = \\angle PRQ$. Show that $\\triangle PQR \\sim \\triangle PTS$.",
+      "answer": "Proof",
+      "solution": {
+        "steps": [
+          "Identify the common angle in both triangles: $\\angle QPR = \\angle TPS$ (Common).",
+          "Use the given condition $\\angle PST = \\angle PRQ$.",
+          "Conclude similarity by AA (Angle-Angle) criterion."
+        ],
+        "derivation": "\\text{In } \\triangle PQR \\text{ and } \\triangle PTS: \\angle P = \\angle P \\text{ (Common)}, \\angle PST = \\angle PRQ \\text{ (Given)}. \\text{ Therefore, } \\triangle PQR \\sim \\triangle PTS \\text{ by AA similarity criterion.}"
+      },
+      "topic": "Triangles",
+      "subtopic": "Criteria for Similarity of Triangles",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:33.481227",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140933_2c43de_03"
+    },
+    {
+      "question": "The areas of two similar triangles are $121$ cm$^2$ and $64$ cm$^2$ respectively. If the median of the first triangle is $12.1$ cm, find the corresponding median of the other triangle.",
+      "answer": "8.8 cm",
+      "solution": {
+        "steps": [
+          "Use the theorem: Ratio of areas of similar triangles is equal to the ratio of the squares of their corresponding medians.",
+          "Set up the equation: $\\frac{Area_1}{Area_2} = \\left(\\frac{m_1}{m_2}\\right)^2$.",
+          "Substitute values: $\\frac{121}{64} = \\left(\\frac{12.1}{m_2}\\right)^2$.",
+          "Take the square root and solve for $m_2$."
+        ],
+        "derivation": "\\frac{11}{8} = \\frac{12.1}{m_2} \\implies m_2 = \\frac{12.1 \\times 8}{11} = 1.1 \\times 8 = 8.8 \\text{ cm}."
+      },
+      "topic": "Triangles",
+      "subtopic": "Areas of Similar Triangles",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:33.481237",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140933_91364d_04"
+    },
+    {
+      "question": "In $\\triangle ABC$, $AD \\perp BC$ such that $AD^2 = BD \\cdot CD$. Prove that $\\angle BAC = 90^\\circ$.",
+      "answer": "Proof",
+      "solution": {
+        "steps": [
+          "Since $AD \\perp BC$, we have two right triangles $\\triangle ADB$ and $\\triangle ADC$.",
+          "Express the sides using Pythagoras: $AB^2 = AD^2 + BD^2$ and $AC^2 = AD^2 + CD^2$.",
+          "Add them and use the given condition $AD^2 = BD \\cdot CD$ to show $AB^2 + AC^2 = BC^2$."
+        ],
+        "derivation": "AB^2 + AC^2 = AD^2 + BD^2 + AD^2 + CD^2 = 2AD^2 + BD^2 + CD^2. \\text{ Substitute } AD^2=BD \\cdot CD: AB^2 + AC^2 = 2(BD \\cdot CD) + BD^2 + CD^2 = (BD + CD)^2 = BC^2. \\text{ By converse of Pythagoras, } \\angle BAC = 90^\\circ."
+      },
+      "topic": "Triangles",
+      "subtopic": "Pythagoras Theorem",
+      "marks": 3,
+      "type": "sa_ii",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:33.481247",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140933_eed69b_05"
+    }
+  ]
+}

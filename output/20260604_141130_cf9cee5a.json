@@ -1,0 +1,13 @@
+{
+  "batch_id": "20260604_141130_cf9cee5a",
+  "generated_at": "2026-06-04T14:11:30.526770",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Probability",
+  "subtopic": "complementary events",
+  "difficulty": null,
+  "question_type": null,
+  "question_count": 0,
+  "mechanisms": [],
+  "questions": []
+}

@@ -1,0 +1,125 @@
+{
+  "batch_id": "20260604_132926_8f02d42a",
+  "generated_at": "2026-06-04T13:29:26.945173",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Introduction to Trigonometry",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa_i",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $\\tan A = \\frac{4}{3}$, find the value of $\\sin A + \\cos A$.",
+      "answer": "7/5",
+      "solution": {
+        "steps": [
+          "Use the definition of tangent in a right-angled triangle to find the hypotenuse.",
+          "Calculate sin A and cos A and sum them."
+        ],
+        "derivation": "\\text{Given } \\tan A = \\frac{P}{B} = \\frac{4}{3}. \\text{ Let } P=4k, B=3k. \\text{ By Pythagoras theorem, } H = \\sqrt{(4k)^2 + (3k)^2} = 5k. \\sin A = \\frac{4}{5}, \\cos A = \\frac{3}{5}. \\sin A + \\cos A = \\frac{4}{5} + \\frac{3}{5} = \\frac{7}{5}."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:26.944924",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132926_8ad28f_01"
+    },
+    {
+      "question": "Evaluate $\\frac{2 \\tan^2 45^\\circ + \\cos^2 30^\\circ - \\sin^2 60^\\circ}{1}$.",
+      "answer": "2",
+      "solution": {
+        "steps": [
+          "Substitute the standard trigonometric values for 45, 30, and 60 degrees.",
+          "Simplify the expression."
+        ],
+        "derivation": "\\tan 45^\\circ = 1, \\cos 30^\\circ = \\frac{\\sqrt{3}}{2}, \\sin 60^\\circ = \\frac{\\sqrt{3}}{2}. \\text{ Expression} = 2(1)^2 + (\\frac{\\sqrt{3}}{2})^2 - (\\frac{\\sqrt{3}}{2})^2 = 2(1) + 0 = 2."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:26.944992",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132926_d018ae_02"
+    },
+    {
+      "question": "If $\\sin(A - B) = \\frac{1}{2}$ and $\\cos(A + B) = \\frac{1}{2}$, where $0^\\circ < A + B \\le 90^\\circ$ and $A > B$, find $A$ and $B$.",
+      "answer": "A = 45^\\circ, B = 15^\\circ",
+      "solution": {
+        "steps": [
+          "Identify the angles for which sine is 1/2 and cosine is 1/2.",
+          "Solve the resulting linear equations for A and B."
+        ],
+        "derivation": "\\sin(A-B) = \\sin 30^\\circ \\implies A-B = 30^\\circ. \\cos(A+B) = \\cos 60^\\circ \\implies A+B = 60^\\circ. \\text{Adding the equations, } 2A = 90^\\circ \\implies A = 45^\\circ. \\text{Then } 45^\\circ + B = 60^\\circ \\implies B = 15^\\circ."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Specific Angles",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:26.945010",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132926_b99e76_03"
+    },
+    {
+      "question": "Show that $\\tan A \\cdot \\tan(90^\\circ - A) = 1$.",
+      "answer": "1",
+      "solution": {
+        "steps": [
+          "Apply the complementary angle identity for tan.",
+          "Simplify the product."
+        ],
+        "derivation": "\\tan(90^\\circ - A) = \\cot A. \\text{LHS} = \\tan A \\cdot \\cot A = \\tan A \\cdot \\frac{1}{\\tan A} = 1 = \\text{RHS}."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios of Complementary Angles",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:26.945024",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132926_10e52c_04"
+    },
+    {
+      "question": "If $3 \\cot \\theta = 2$, find the value of $\\frac{4 \\sin \\theta - 3 \\cos \\theta}{2 \\sin \\theta + 6 \\cos \\theta}$.",
+      "answer": "1/3",
+      "solution": {
+        "steps": [
+          "Find $\\cot \\theta = 2/3$.",
+          "Divide numerator and denominator by $\\sin \\theta$ to express in terms of $\\cot \\theta$ and substitute."
+        ],
+        "derivation": "\\cot \\theta = \\frac{2}{3}. \\text{Expression} = \\frac{\\frac{4 \\sin \\theta}{\\sin \\theta} - \\frac{3 \\cos \\theta}{\\sin \\theta}}{\\frac{2 \\sin \\theta}{\\sin \\theta} + \\frac{6 \\cos \\theta}{\\sin \\theta}} = \\frac{4 - 3 \\cot \\theta}{2 + 6 \\cot \\theta}. \\text{Substitute } \\cot \\theta = \\frac{2}{3}: \\frac{4 - 3(2/3)}{2 + 6(2/3)} = \\frac{4-2}{2+4} = \\frac{2}{6} = \\frac{1}{3}."
+      },
+      "topic": "Introduction to Trigonometry",
+      "subtopic": "Trigonometric Ratios",
+      "marks": 2,
+      "type": "sa_i",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-04T13:29:26.945040",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_132926_ce5736_05"
+    }
+  ]
+}

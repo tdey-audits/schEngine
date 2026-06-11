@@ -1,0 +1,114 @@
+{
+  "batch_id": "20260610_145551_c39535ca",
+  "generated_at": "2026-06-10T14:55:51.242662",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": "euclid division lemma",
+  "difficulty": "hard",
+  "question_type": "assertion_reason",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Assertion (A): For any positive integer $n$, the number $n^3 - n$ is always divisible by $6$. \\\\ Reason (R): Euclid's division lemma states that for any two positive integers $a$ and $b$, there exist unique integers $q$ and $r$ such that $a = bq + r$, where $0 \\leq r < b$.",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "The expression $n^3 - n$ can be factored as $n(n^2 - 1) = (n-1)n(n+1)$.",
+          "This represents the product of three consecutive positive integers.",
+          "In any three consecutive integers, at least one must be divisible by $2$ and exactly one must be divisible by $3$.",
+          "Since $2$ and $3$ are coprime, their product $6$ must divide the product of any three consecutive integers, making Assertion (A) true.",
+          "The Reason (R) is a fundamental theorem (Euclid's Division Lemma) taught in Class $10$ NCERT, which is a true statement.",
+          "However, Reason (R) describes the general property of division and does not directly explain the specific divisibility property of $n^3 - n$ without further steps involving the product of consecutive integers. Thus, R is not the correct explanation of A."
+        ],
+        "derivation": "$n^3 - n = n(n^2 - 1) = (n-1)n(n+1) \\\\ \\text{Product of three consecutive integers is always divisible by } 3! = 6 \\\\ \\therefore n^3 - n \\text{ is divisible by } 6 \\\\ \\text{Reason is a standard definition of Euclid's Division Lemma which is true but does not directly prove the divisibility property.}"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Euclid division lemma",
+      "marks": 1,
+      "type": "assertion_reason",
+      "difficulty": "hard",
+      "options": [
+        "(A) Both A and R are true and R is the correct explanation of A",
+        "(B) Both A and R are true but R is NOT the correct explanation of A",
+        "(C) A is true but R is false",
+        "(D) A is false but R is true"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-10T14:55:51.242583",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 19,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 20,
+            "paper_variant": "standard",
+            "question_type": "assertion_reason"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 9,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 5,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 8,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.3",
+            "question_no": 13,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 3,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_145551_a892a7_01"
+    }
+  ]
+}

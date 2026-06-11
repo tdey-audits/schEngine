@@ -1,0 +1,82 @@
+{
+  "batch_id": "20260609_160046_6f3a7aa6",
+  "generated_at": "2026-06-09T16:00:46.968466",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Real Numbers",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "la",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "Prove that for any positive integer $n$, the expression $n^3 - n$ is always divisible by $6$.",
+      "answer": "Since $n^3 - n = (n-1)n(n+1)$ and the product of three consecutive integers is always divisible by $3! = 6$, the expression $n^3 - n$ is divisible by $6$.",
+      "solution": {
+        "steps": [
+          "Factorize the expression $n^3 - n$ as $n(n^2 - 1)$.",
+          "Apply the algebraic identity $a^2 - b^2 = (a-b)(a+b)$ to rewrite the expression as $(n-1)n(n+1)$.",
+          "Observe that $(n-1)$, $n$, and $(n+1)$ are three consecutive integers.",
+          "Identify the property that in any set of three consecutive integers, at least one must be a multiple of $2$ and exactly one must be a multiple of $3$.",
+          "Conclude that the product of three consecutive integers must be divisible by $2 \\times 3 = 6$."
+        ],
+        "derivation": "$n^3 - n = n(n^2 - 1) \\\\ = (n-1)n(n+1) \\\\ \\text{The product of } k \\text{ consecutive integers is divisible by } k! \\\\ \\text{For } k = 3, \\text{ the product is divisible by } 3! = 3 \\times 2 \\times 1 = 6 \\\\ \\therefore (n-1)n(n+1) \\text{ is divisible by } 6 \\text{ for all } n \\in \\mathbb{Z}^+$"
+      },
+      "topic": "Real Numbers",
+      "subtopic": "Fundamental Theorem of Arithmetic",
+      "marks": 4,
+      "type": "la",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T16:00:46.968203",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_1 (Real Numbers).pdf",
+          "Chapter_14 (Statistics).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/430-1-1_Mathematics Basic.pdf",
+            "question_no": 32,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-3_Mathematics Basic.pdf",
+            "question_no": 33,
+            "paper_variant": "basic",
+            "question_type": "la"
+          },
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 35,
+            "paper_variant": "basic",
+            "question_type": "la"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 1,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Real Numbers",
+            "exercise": "1.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160046_05e813_01"
+    }
+  ]
+}

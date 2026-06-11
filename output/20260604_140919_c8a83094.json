@@ -1,0 +1,159 @@
+{
+  "batch_id": "20260604_140919_c8a83094",
+  "generated_at": "2026-06-04T14:09:19.092552",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Triangles",
+  "subtopic": null,
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 5,
+  "mechanisms": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "questions": [
+    {
+      "question": "In $\\triangle ABC$, $DE \\parallel BC$ such that $AD = 2\\text{ cm}$, $DB = 3\\text{ cm}$, and $AE = 3\\text{ cm}$. Find the length of $EC$.",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Apply Thales Theorem (Basic Proportionality Theorem) as $DE \\parallel BC$.",
+          "The ratio $\\frac{AD}{DB} = \\frac{AE}{EC}$ must hold.",
+          "Substitute the given values: $\\frac{2}{3} = \\frac{3}{EC}$.",
+          "Solve for $EC$: $EC = \\frac{3 \\times 3}{2} = 4.5\\text{ cm}$."
+        ],
+        "derivation": "\\frac{AD}{DB} = \\frac{AE}{EC} \\implies \\frac{2}{3} = \\frac{3}{EC} \\implies 2EC = 9 \\implies EC = 4.5"
+      },
+      "topic": "Triangles",
+      "subtopic": "Basic Proportionality Theorem",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 3.5 cm",
+        "(B) 4 cm",
+        "(C) 4.5 cm",
+        "(D) 5 cm"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:19.092410",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140919_4fadc3_01"
+    },
+    {
+      "question": "If $\\triangle ABC \\sim \\triangle PQR$ and $\\frac{AB}{PQ} = \\frac{1}{3}$, then the ratio of their areas $\\frac{\\text{Area}(\\triangle ABC)}{\\text{Area}(\\triangle PQR)}$ is:",
+      "answer": "(B)",
+      "solution": {
+        "steps": [
+          "Recall the theorem: The ratio of areas of two similar triangles is equal to the square of the ratio of their corresponding sides.",
+          "Calculate the square of the given ratio: $(\\frac{1}{3})^2$.",
+          "Result is $\\frac{1}{9}$."
+        ],
+        "derivation": "\\frac{\\text{Area}(ABC)}{\\text{Area}(PQR)} = \\left(\\frac{AB}{PQ}\\right)^2 = \\left(\\frac{1}{3}\\right)^2 = \\frac{1}{9}"
+      },
+      "topic": "Triangles",
+      "subtopic": "Areas of Similar Triangles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 1:3",
+        "(B) 1:9",
+        "(C) 3:1",
+        "(D) 9:1"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:19.092454",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140919_a2c8d7_02"
+    },
+    {
+      "question": "In $\\triangle ABC$, if $AB = 6\\sqrt{3}\\text{ cm}$, $AC = 12\\text{ cm}$, and $BC = 6\\text{ cm}$, then the measure of $\\angle B$ is:",
+      "answer": "(D)",
+      "solution": {
+        "steps": [
+          "Check if the sides satisfy the Converse of Pythagoras Theorem: $AB^2 + BC^2 = AC^2$.",
+          "Calculate squares: $(6\\sqrt{3})^2 = 36 \\times 3 = 108$, $6^2 = 36$, $12^2 = 144$.",
+          "Observe $108 + 36 = 144$. Since $AB^2 + BC^2 = AC^2$, the triangle is right-angled at $B$."
+        ],
+        "derivation": "(6\\sqrt{3})^2 + 6^2 = 108 + 36 = 144 = 12^2"
+      },
+      "topic": "Triangles",
+      "subtopic": "Pythagoras Theorem",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) 45^\\circ",
+        "(B) 60^\\circ",
+        "(C) 30^\\circ",
+        "(D) 90^\\circ"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:19.092466",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140919_5776ab_03"
+    },
+    {
+      "question": "Two triangles are similar if their corresponding sides are in the same ratio. This criterion is known as:",
+      "answer": "(A)",
+      "solution": {
+        "steps": [
+          "SSS (Side-Side-Side) similarity criterion states that if the sides of one triangle are proportional to the sides of another triangle, then the triangles are similar."
+        ],
+        "derivation": "\\text{If } \\frac{AB}{PQ} = \\frac{BC}{QR} = \\frac{AC}{PR}, \\text{ then } \\triangle ABC \\sim \\triangle PQR \\text{ (SSS Similarity)}"
+      },
+      "topic": "Triangles",
+      "subtopic": "Criteria for Similarity",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) SSS",
+        "(B) SAS",
+        "(C) AA",
+        "(D) RHS"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:19.092474",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140919_4b577f_04"
+    },
+    {
+      "question": "The altitude of an equilateral triangle with side $2a$ is:",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "In an equilateral triangle, the altitude bisects the base.",
+          "Using Pythagoras theorem in the half-triangle: $h^2 + a^2 = (2a)^2$.",
+          "Solve for $h$: $h^2 = 4a^2 - a^2 = 3a^2 \\implies h = a\\sqrt{3}$."
+        ],
+        "derivation": "h = \\sqrt{(2a)^2 - a^2} = \\sqrt{4a^2 - a^2} = \\sqrt{3a^2} = a\\sqrt{3}"
+      },
+      "topic": "Triangles",
+      "subtopic": "Properties of Triangles",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) a",
+        "(B) a\\sqrt{2}",
+        "(C) a\\sqrt{3}",
+        "(D) 2a"
+      ],
+      "metadata": {
+        "generated_at": "2026-06-04T14:09:19.092482",
+        "model": "google/gemini-3.1-flash-lite"
+      },
+      "id": "ncert_20260604_140919_9c86cc_05"
+    }
+  ]
+}

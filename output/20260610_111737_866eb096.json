@@ -1,0 +1,153 @@
+{
+  "batch_id": "20260610_111737_866eb096",
+  "generated_at": "2026-06-10T11:17:37.703205",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Polynomials",
+  "subtopic": "division algorithm for polynomials",
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "A chemical engineer is designing a reaction vessel where the concentration of a reactant $p(x)$ is represented by the polynomial $p(x) = x^4 - 6x^3 + 16x^2 - 25x + 10$. The reaction process involves dividing this concentration polynomial by a catalyst factor $g(x) = x^2 - 2x + k$ to determine the efficiency of the reaction. It is observed that after division, the remainder is of the form $x + a$.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "If the division of $p(x)$ by $g(x)$ leaves a remainder $x + a$, what is the degree of the quotient polynomial?",
+          "answer": "(B)",
+          "options": [
+            "(A) $1$",
+            "(B) $2$",
+            "(C) $3$",
+            "(D) $0$"
+          ]
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "By performing the division of $p(x)$ by $x^2 - 2x + k$, equate the coefficients of the remainder to find the value of $k$.",
+          "answer": "$k = 3$",
+          "solution": {
+            "steps": [
+              "Divide $x^4 - 6x^3 + 16x^2 - 25x + 10$ by $x^2 - 2x + k$.",
+              "The first term of quotient is $x^2$. Multiplying gives $x^4 - 2x^3 + kx^2$.",
+              "Subtracting gives $-4x^3 + (16-k)x^2 - 25x + 10$.",
+              "The next term is $-4x$. Multiplying gives $-4x^3 + 8x^2 - 4kx$.",
+              "Subtracting gives $(8-k)x^2 + (4k-25)x + 10$.",
+              "The last term is $(8-k)$. Multiplying gives $(8-k)x^2 - 2(8-k)x + k(8-k)$.",
+              "Subtracting gives $((4k-25) + 2(8-k))x + (10 - k(8-k))$.",
+              "Since remainder is $x + a$, coefficient of $x$ is $1$: $4k - 25 + 16 - 2k = 1 \\Rightarrow 2k = 10 \\Rightarrow k = 5$. Wait, recomputing: $(4k-25) + (16-2k) = 2k-9 = 1 \\Rightarrow k=5$. Recalculating constants: $10 - 5(8-5) = 10 - 15 = -5$. Thus $a = -5, k = 5$."
+            ],
+            "derivation": "$p(x) = (x^2 - 2x + k)(x^2 - 4x + (8-k)) + (2k-9)x + (10 - k(8-k)) \\\\ 2k-9 = 1 \\Rightarrow 2k = 10 \\Rightarrow k = 5 \\\\ 10 - 5(8-5) = 10 - 15 = -5 \\\\ k = 5, a = -5$"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "vsa",
+          "question": "Using the value of $k$ found, determine the value of $a$.",
+          "answer": "$a = -5$"
+        },
+        {
+          "id": "iv",
+          "type": "mcq",
+          "question": "If $g(x) = x^2 - 2x + 5$, what is the remainder when $p(x)$ is divided by $g(x)$?",
+          "answer": "(C)",
+          "options": [
+            "(A) $x + 5$",
+            "(B) $x - 3$",
+            "(C) $x - 5$",
+            "(D) $2x - 5$"
+          ]
+        }
+      ],
+      "topic": "Polynomials",
+      "subtopic": "division algorithm for polynomials",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-10T11:17:37.703100",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1164_30(B)_Mathematics Standard.pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 36,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 37,
+            "paper_variant": "standard",
+            "question_type": "case_study"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 4,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 5,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.1",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Polynomials",
+            "exercise": "2.4",
+            "question_no": 2,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260610_111737_c5839b_01"
+    }
+  ]
+}

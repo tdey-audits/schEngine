@@ -1,0 +1,82 @@
+{
+  "batch_id": "20260609_110216_5e45e8ae",
+  "generated_at": "2026-06-09T11:02:16.001612",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Quadratic Equations",
+  "subtopic": null,
+  "difficulty": "medium",
+  "question_type": "sa",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "If $\\alpha$ and $\\beta$ are the roots of the quadratic equation $x^2 - 5x + 3 = 0$, find the value of $\\frac{1}{\\alpha} + \\frac{1}{\\beta} - \\alpha\\beta$.",
+      "answer": "$\\frac{-14}{3}$",
+      "solution": {
+        "steps": [
+          "Identify the sum and product of the roots using the relations $\\alpha + \\beta = -b/a$ and $\\alpha\\beta = c/a$.",
+          "Express the required expression $\\frac{1}{\\alpha} + \\frac{1}{\\beta} - \\alpha\\beta$ as $\\frac{\\alpha + \\beta}{\\alpha\\beta} - \\alpha\\beta$.",
+          "Substitute the values $\\alpha + \\beta = 5$ and $\\alpha\\beta = 3$ into the expression.",
+          "Calculate the final result."
+        ],
+        "derivation": "For $x^2 - 5x + 3 = 0, \\text{ we have } a=1, b=-5, c=3. \\\\ \\alpha + \\beta = -(-5)/1 = 5 \\\\ \\alpha\\beta = 3/1 = 3 \\\\ \\frac{1}{\\alpha} + \\frac{1}{\\beta} - \\alpha\\beta = \\frac{\\alpha + \\beta}{\\alpha\\beta} - \\alpha\\beta \\\\ = \\frac{5}{3} - 3 \\\\ = \\frac{5 - 9}{3} = \\frac{-4}{3}"
+      },
+      "topic": "Quadratic Equations",
+      "subtopic": "Relationship between roots and coefficients",
+      "marks": 3,
+      "type": "sa",
+      "difficulty": "medium",
+      "metadata": {
+        "generated_at": "2026-06-09T11:02:16.001322",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_3 (Pair of Linear Equations in Two Variables).pdf",
+          "Chapter_4 (Quadratic Equations).pdf",
+          "Chapter_2 (Polynomials).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1172-1_30-5-1  (Mathematics Standard).pdf",
+            "question_no": 30,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1172-2_30-5-2  (Mathematics Standard).pdf",
+            "question_no": 28,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          },
+          {
+            "source": "standard/1172-3_30-5-3  (Mathematics Standard).pdf",
+            "question_no": 27,
+            "paper_variant": "standard",
+            "question_type": "sa"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Quadratic Equations",
+            "exercise": "4.3",
+            "question_no": 2,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_110216_99a343_01"
+    }
+  ]
+}

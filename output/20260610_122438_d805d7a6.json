@@ -1,0 +1,103 @@
+{
+  "batch_id": "20260610_122438_d805d7a6",
+  "generated_at": "2026-06-10T12:24:38.838688",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "distance formula",
+  "difficulty": "simple",
+  "question_type": "mcq",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "The distance of the point $P(3, 4)$ from the origin is",
+      "answer": "(C)",
+      "solution": {
+        "steps": [
+          "Identify the coordinates of the origin, which are $(0, 0)$.",
+          "Use the distance formula $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$ to find the distance between $(0, 0)$ and $(3, 4)$.",
+          "Substitute the values: $d = \\sqrt{(3 - 0)^2 + (4 - 0)^2}$.",
+          "Calculate the squares: $d = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16}$.",
+          "Sum the values and find the square root: $d = \\sqrt{25} = 5$."
+        ],
+        "derivation": "$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \\\\ d = \\sqrt{(3 - 0)^2 + (4 - 0)^2} \\\\ d = \\sqrt{3^2 + 4^2} \\\\ d = \\sqrt{9 + 16} \\\\ d = \\sqrt{25} \\\\ d = 5$"
+      },
+      "topic": "Coordinate Geometry",
+      "subtopic": "distance formula",
+      "marks": 1,
+      "type": "mcq",
+      "difficulty": "simple",
+      "options": [
+        "(A) $3$",
+        "(B) $4$",
+        "(C) $5$",
+        "(D) $7$"
+      ],
+      "diagram": {
+        "required": true,
+        "type": "coordinate",
+        "caption": "Point P in the Cartesian plane",
+        "scale": 1,
+        "elements": [
+          {
+            "kind": "axis"
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O(0,0)",
+            "position": "below left"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 3,
+            "y": 4,
+            "label": "P(3,4)",
+            "position": "above right"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "P",
+            "label": "d",
+            "label_position": "above left"
+          }
+        ]
+      },
+      "metadata": {
+        "generated_at": "2026-06-10T12:24:38.838444",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_7 (Coordinate Geometry).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 12,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-3_30-4-3  (Mathematics Standard).pdf",
+            "question_no": 8,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          },
+          {
+            "source": "standard/1171-1_30-4-1  (Mathematics Standard).pdf",
+            "question_no": 6,
+            "paper_variant": "standard",
+            "question_type": "mcq"
+          }
+        ]
+      },
+      "id": "ncert_20260610_122438_56a73d_01"
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "batch_id": "20260609_160209_cbee32e6",
+  "generated_at": "2026-06-09T16:02:09.317573",
+  "model": "google/gemini-3.1-flash-lite",
+  "provider": "openrouter",
+  "chapter": "Circles",
+  "subtopic": null,
+  "difficulty": "hard",
+  "question_type": "case_study",
+  "question_count": 1,
+  "mechanisms": [
+    null
+  ],
+  "questions": [
+    {
+      "question": "An architect is designing a circular fountain of radius $r = 6$ cm. Two tangents $PA$ and $PB$ are drawn to the circle from an external point $P$, such that the distance from the centre $O$ to point $P$ is $10$ cm. The line $OP$ intersects the circle at point $M$ and the chord $AB$ at point $N$.",
+      "type": "case_study",
+      "marks": 4,
+      "questions": [
+        {
+          "id": "i",
+          "type": "mcq",
+          "question": "What is the length of the tangent $PA$?",
+          "answer": "(B)",
+          "options": [
+            "(A) $6$ cm",
+            "(B) $8$ cm",
+            "(C) $10$ cm",
+            "(D) $4$ cm"
+          ],
+          "solution": {
+            "steps": [
+              "Since $OA \\perp PA$, $\\triangle OAP$ is a right-angled triangle.",
+              "By Pythagoras theorem, $OP^2 = OA^2 + PA^2$.",
+              "$10^2 = 6^2 + PA^2 \\Rightarrow 100 = 36 + PA^2 \\Rightarrow PA^2 = 64$.",
+              "$PA = 8$ cm."
+            ],
+            "derivation": "$OP^2 = OA^2 + PA^2 \\\\ 10^2 = 6^2 + PA^2 \\\\ 100 = 36 + PA^2 \\\\ PA^2 = 64 \\\\ PA = 8$"
+          }
+        },
+        {
+          "id": "ii",
+          "type": "vsa",
+          "question": "Find the length of the segment $ON$.",
+          "answer": "$3.6$ cm",
+          "solution": {
+            "steps": [
+              "In $\\triangle OAP$, $AN$ is the altitude to the hypotenuse $OP$.",
+              "By property of similar triangles $\\triangle ONA \\sim \\triangle OAP$.",
+              "$OA^2 = ON \\times OP$.",
+              "$6^2 = ON \\times 10 \\Rightarrow 36 = 10 \\times ON \\Rightarrow ON = 3.6$ cm."
+            ],
+            "derivation": "\\triangle ONA \\sim \\triangle OAP \\\\ \\frac{ON}{OA} = \\frac{OA}{OP} \\\\ ON = \\frac{OA^2}{OP} = \\frac{6^2}{10} = \\frac{36}{10} = 3.6"
+          }
+        },
+        {
+          "id": "iii",
+          "type": "vsa",
+          "question": "Find the length of the chord $AB$.",
+          "answer": "$9.6$ cm",
+          "solution": {
+            "steps": [
+              "In $\\triangle ONA$, $AN^2 = OA^2 - ON^2$.",
+              "$AN^2 = 6^2 - 3.6^2 = 36 - 12.96 = 23.04$.",
+              "$AN = \\sqrt{23.04} = 4.8$ cm.",
+              "$AB = 2 \\times AN = 2 \\times 4.8 = 9.6$ cm."
+            ],
+            "derivation": "AN^2 = 6^2 - 3.6^2 \\\\ AN^2 = 36 - 12.96 = 23.04 \\\\ AN = 4.8 \\\\ AB = 2 \\times 4.8 = 9.6"
+          }
+        },
+        {
+          "id": "iv",
+          "type": "mcq",
+          "question": "What is the length of $MN$?",
+          "answer": "(A)",
+          "options": [
+            "(A) $2.4$ cm",
+            "(B) $3.6$ cm",
+            "(C) $6.4$ cm",
+            "(D) $4.0$ cm"
+          ],
+          "solution": {
+            "steps": [
+              "$OM$ is the radius, so $OM = 6$ cm.",
+              "$MN = OM - ON$.",
+              "$MN = 6 - 3.6 = 2.4$ cm."
+            ],
+            "derivation": "MN = OM - ON \\\\ MN = 6 - 3.6 = 2.4"
+          }
+        }
+      ],
+      "diagram": {
+        "required": true,
+        "type": "circle",
+        "caption": "Circle with tangents from external point P",
+        "elements": [
+          {
+            "kind": "circle",
+            "center": "O",
+            "radius": 2
+          },
+          {
+            "kind": "point",
+            "id": "O",
+            "x": 0,
+            "y": 0,
+            "label": "O"
+          },
+          {
+            "kind": "point",
+            "id": "P",
+            "x": 3.33,
+            "y": 0,
+            "label": "P"
+          },
+          {
+            "kind": "point",
+            "id": "A",
+            "x": 0.72,
+            "y": 1.86,
+            "label": "A"
+          },
+          {
+            "kind": "point",
+            "id": "B",
+            "x": 0.72,
+            "y": -1.86,
+            "label": "B"
+          },
+          {
+            "kind": "point",
+            "id": "N",
+            "x": 0.72,
+            "y": 0,
+            "label": "N"
+          },
+          {
+            "kind": "point",
+            "id": "M",
+            "x": 2,
+            "y": 0,
+            "label": "M"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "P"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "A"
+          },
+          {
+            "kind": "segment",
+            "from": "P",
+            "to": "B"
+          },
+          {
+            "kind": "segment",
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "kind": "segment",
+            "from": "O",
+            "to": "A"
+          }
+        ]
+      },
+      "topic": "Circles",
+      "subtopic": "",
+      "difficulty": "hard",
+      "metadata": {
+        "generated_at": "2026-06-09T16:02:09.317260",
+        "model": "google/gemini-3.1-flash-lite",
+        "retrieved_sources": [
+          "Chapter_12 (Areas Related to Circles).pdf",
+          "Chapter_10 (Circles).pdf"
+        ],
+        "pyq_pattern_sources": [
+          {
+            "source": "basic/1159-2_430-5-2 Mathematics (Basic).pdf",
+            "question_no": 36,
+            "paper_variant": "basic",
+            "question_type": "case_study"
+          },
+          {
+            "source": "basic/430-1-3_Mathematics Basic.pdf",
+            "question_no": 36,
+            "paper_variant": "basic",
+            "question_type": "case_study"
+          },
+          {
+            "source": "basic/430-1-2_Mathematics Basic.pdf",
+            "question_no": 37,
+            "paper_variant": "basic",
+            "question_type": "case_study"
+          }
+        ],
+        "exemplar_depth_sources": [
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Circles",
+            "exercise": "9.3",
+            "question_no": 6,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.4",
+            "question_no": 7,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.4",
+            "question_no": 13,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.3",
+            "question_no": 1,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Circles",
+            "exercise": "9.3",
+            "question_no": 4,
+            "question_type": "sa",
+            "estimated_depth": "challenging"
+          },
+          {
+            "source": "CBSE-Class-10-Maths-NCERT-Exemplar.pdf",
+            "chapter": "Areas Related to Circles",
+            "exercise": "11.4",
+            "question_no": 16,
+            "question_type": "la",
+            "estimated_depth": "challenging"
+          }
+        ]
+      },
+      "id": "ncert_20260609_160209_3168eb_01"
+    }
+  ]
+}
