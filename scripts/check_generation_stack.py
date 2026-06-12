@@ -19,6 +19,7 @@ sys.path.insert(0, str(ROOT))
 from generator.generator import QuestionGenerator
 from generator.prompts import build_prompt
 from graph.source_pattern_graph import get_source_patterns
+from renderer.latex_renderer import CBSELaTeXRenderer
 from syllabus.registry import normalize_question_type
 
 
@@ -47,6 +48,7 @@ def main() -> int:
     _check_corpora()
     _check_source_patterns()
     _check_prompt_wiring()
+    _check_latex_formatting()
     print("generation stack checks passed")
     return 0
 
@@ -128,6 +130,24 @@ def _check_prompt_wiring() -> None:
     ]
     for needle in required:
         assert needle in prompt, f"prompt missing {needle!r}"
+
+
+def _check_latex_formatting() -> None:
+    renderer = CBSELaTeXRenderer(output_dir=str(ROOT / "pdfs"))
+    question = {
+        "type": "mcq",
+        "marks": 1,
+        "question": "Which equation is correct: CaO(s) + H2O(l) -> Ca(OH)2(aq)?",
+        "options": [
+            "(A) CaO(s) + H2O(l) -> Ca(OH)2(aq)",
+            "(B) Na2CO3 + 2HCl -> 2NaCl + H2O + CO2",
+        ],
+    }
+    tex = renderer._format_question(question, 1)
+    assert "(A) (A)" not in tex
+    assert r"\rightarrow" in tex
+    assert r"\mathrm{H}_{2}\mathrm{O}" in tex
+    assert r"2\mathrm{Na}\mathrm{Cl}" in tex
 
 
 def _load_json(path: str) -> list[dict]:

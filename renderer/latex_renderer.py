@@ -205,7 +205,7 @@ class CBSELaTeXRenderer:
             options = q.get("options", [])
             parts.append("\\begin{enumerate}[label=(\\Alph*)]")
             for opt in options:
-                parts.append(f"  \\item {self._escape_latex(opt)}")
+                parts.append(f"  \\item {self._escape_latex(self._strip_option_label(opt))}")
             parts.append("\\end{enumerate}")
 
         elif qtype == "assertion_reason":
@@ -235,7 +235,7 @@ class CBSELaTeXRenderer:
                         sq_opts = sq.get("options", [])
                         parts.append("  \\begin{enumerate}[label=(\\Alph*)]")
                         for o in sq_opts:
-                            parts.append(f"    \\item {self._escape_latex(o)}")
+                            parts.append(f"    \\item {self._escape_latex(self._strip_option_label(o))}")
                         parts.append("  \\end{enumerate}")
                 parts.append("\\end{enumerate}")
 
@@ -495,9 +495,13 @@ class CBSELaTeXRenderer:
         if not text:
             return ""
         text = self._normalize_latex_text(text)
+        text = self._normalize_science_notation(text)
         if self._contains_markdown_table(text):
             return self._format_mixed_text_with_tables(text)
         return self._escape_mixed_with_math(text)
+
+    def _strip_option_label(self, option: Any) -> str:
+        return re.sub(r"^\s*\([A-Da-d]\)\s*", "", str(option or "")).strip()
 
     def _format_mixed_text_with_tables(self, text: str) -> str:
         blocks = self._split_table_blocks(self._normalize_latex_text(text))
@@ -645,6 +649,107 @@ class CBSELaTeXRenderer:
         text = "".join(ch if ch in "\n\t" or ord(ch) >= 32 else " " for ch in text)
         text = re.sub(r"\\[a-zA-Z]{0,2}$", "", text)
         return text.strip()
+
+    def _normalize_science_notation(self, text: str) -> str:
+        parts: list[str] = []
+        pos = 0
+        for match in self.INLINE_MATH_RE.finditer(text):
+            if match.start() > pos:
+                parts.append(self._normalize_science_plain_text(text[pos:match.start()]))
+            parts.append(match.group(0))
+            pos = match.end()
+        if pos < len(text):
+            parts.append(self._normalize_science_plain_text(text[pos:]))
+        return "".join(parts)
+
+    def _normalize_science_plain_text(self, text: str) -> str:
+        if not text:
+            return ""
+        formula_unit = r"(?:[a-z]?\d*)?(?:[A-Z][a-z]?\d*|\([A-Za-z0-9]+\)\d*)+(?:\([a-z]{1,2}\))?"
+        equation_side = rf"{formula_unit}(?:\s*\+\s*{formula_unit})*"
+        text = re.sub(
+            rf"(?<!\$)\b({equation_side}\s*(?:->|-->|=>|→|⟶)\s*{equation_side})(?!\$)",
+            lambda m: "$" + self._format_chemical_equation_math(m.group(1)) + "$",
+            text,
+        )
+        return re.sub(
+            r"\b(?:[A-Z][a-z]?\d*|\([A-Za-z0-9]+\)\d*){2,}(?:\([a-z]{1,2}\))?",
+            lambda m: "$" + self._format_chemical_formula_math(m.group(0)) + "$"
+            if self._looks_like_chemical_formula(m.group(0)) else m.group(0),
+            text,
+        )
+
+    def _format_chemical_equation_math(self, equation: str) -> str:
+        equation = equation.strip(" .;,")
+        equation = re.sub(r"(?:-->|->|=>|→|⟶)", r" \\rightarrow ", equation)
+        equation = re.sub(
+            r"(?<![A-Za-z\\])([a-z]?\d*)?((?:[A-Z][a-z]?\d*|\([A-Za-z0-9]+\)\d*)+(?:\([a-z]{1,2}\))?)",
+            self._format_chemical_formula_match,
+            equation,
+        )
+        equation = equation.replace("+", r" + ")
+        return re.sub(r"\s+", " ", equation).strip()
+
+    def _format_chemical_formula_match(self, match: re.Match) -> str:
+        coefficient = match.group(1) or ""
+        formula = match.group(2) or ""
+        if not self._looks_like_chemical_formula(formula):
+            return match.group(0)
+        return coefficient + self._format_chemical_formula_math(formula)
+
+    def _looks_like_chemical_formula(self, token: str) -> bool:
+        if not token or not re.fullmatch(r"(?:[A-Z][a-z]?\d*|\([A-Za-z0-9]+\)\d*)+(?:\([a-z]{1,2}\))?", token):
+            return False
+        if re.fullmatch(r"[A-Z]", token):
+            return False
+        element_count = len(re.findall(r"[A-Z][a-z]?", token))
+        return element_count >= 2 or bool(re.search(r"\d|\([a-z]{1,2}\)$", token))
+
+    def _format_chemical_formula_math(self, formula: str) -> str:
+        state = ""
+        state_match = re.search(r"\((s|l|g|aq)\)$", formula)
+        if state_match:
+            state = r"\,(" + state_match.group(1) + ")"
+            formula = formula[:state_match.start()]
+
+        out: list[str] = []
+        i = 0
+        while i < len(formula):
+            ch = formula[i]
+            if ch == "(":
+                end = formula.find(")", i + 1)
+                if end != -1:
+                    inner = formula[i + 1:end]
+                    out.append("(" + self._format_chemical_formula_math(inner) + ")")
+                    i = end + 1
+                    digits_start = i
+                    while i < len(formula) and formula[i].isdigit():
+                        i += 1
+                    if i > digits_start:
+                        out.append("_{" + formula[digits_start:i] + "}")
+                    continue
+            if ch.isupper():
+                j = i + 1
+                if j < len(formula) and formula[j].islower():
+                    j += 1
+                out.append(r"\mathrm{" + formula[i:j] + "}")
+                digits_start = j
+                while j < len(formula) and formula[j].isdigit():
+                    j += 1
+                if j > digits_start:
+                    out.append("_{" + formula[digits_start:j] + "}")
+                i = j
+                continue
+            if ch.isdigit():
+                j = i
+                while j < len(formula) and formula[j].isdigit():
+                    j += 1
+                out.append("_{" + formula[i:j] + "}")
+                i = j
+                continue
+            out.append(self.LATEX_SPECIALS.get(ch, ch))
+            i += 1
+        return "".join(out) + state
 
     def _repair_control_char_latex(self, text: str) -> str:
         def replace_unicode_escape(match: re.Match) -> str:

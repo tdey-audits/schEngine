@@ -219,7 +219,11 @@ CRITICAL RULES:
 - Prefer NCERT language, activities, observations, diagrams, reasoning, and applications
 - DO NOT ask out-of-syllabus or advanced topics
 - For MCQ/Assertion-Reason, the "answer" field is ONLY the option label: "(C)".
-- Use LaTeX only where helpful for chemical equations, units, formulae, and physics calculations.
+- Use LaTeX for every chemical formula, chemical equation, unit expression, physics
+  formula, and calculation: "$H_2O$", "$Na_2CO_3$", "$Ca(OH)_2$".
+- Use "$\\rightarrow$" for reaction arrows. Never use plain "->" in final output.
+- In chemical equations, keep physical states inside math:
+  "$CaO(s) + H_2O(l) \\rightarrow Ca(OH)_2(aq)$".
 """
 
 
