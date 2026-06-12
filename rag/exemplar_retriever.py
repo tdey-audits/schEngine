@@ -1,23 +1,25 @@
 from typing import Any
 
-from config.settings import settings
+from config.settings import normalize_subject, settings
 from rag.vector_store import VectorStore
 
 
 class ExemplarRetriever:
     """Retriever for board-aligned conceptual depth from NCERT Exemplar chunks."""
 
-    def __init__(self):
+    def __init__(self, subject: str = "maths"):
+        self.subject = normalize_subject(subject)
         self._embedder = None
         self._store: VectorStore | None = None
 
     @property
     def store(self) -> VectorStore:
         if self._store is None:
+            index_path, meta_path = settings.index_paths_for(self.subject, "exemplar")
             self._store = VectorStore(
                 dim=settings.embedding_dim,
-                index_path=settings.exemplar_faiss_index_path,
-                meta_path=settings.exemplar_metadata_path,
+                index_path=index_path,
+                meta_path=meta_path,
             )
         return self._store
 

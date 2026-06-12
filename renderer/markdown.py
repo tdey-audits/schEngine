@@ -2,7 +2,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-from syllabus.ncert_class10 import normalize_question_type
+from syllabus.registry import normalize_question_type
 
 
 def render_question_paper(questions: list[dict[str, Any]],

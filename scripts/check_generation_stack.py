@@ -19,7 +19,7 @@ sys.path.insert(0, str(ROOT))
 from generator.generator import QuestionGenerator
 from generator.prompts import build_prompt
 from graph.source_pattern_graph import get_source_patterns
-from syllabus.ncert_class10 import normalize_question_type
+from syllabus.registry import normalize_question_type
 
 
 MODULES = [

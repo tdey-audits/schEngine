@@ -1,14 +1,15 @@
 import logging
 from typing import Any
 
-from config.settings import settings
+from config.settings import normalize_subject, settings
 from rag.vector_store import VectorStore
 
 logger = logging.getLogger(__name__)
 
 
 class Retriever:
-    def __init__(self):
+    def __init__(self, subject: str = "maths"):
+        self.subject = normalize_subject(subject)
         self._embedder = None
         self._store: VectorStore | None = None
         self._graph_rag = None
@@ -16,10 +17,11 @@ class Retriever:
     @property
     def store(self) -> VectorStore:
         if self._store is None:
+            index_path, meta_path = settings.index_paths_for(self.subject, "textbook")
             self._store = VectorStore(
                 dim=settings.embedding_dim,
-                index_path=settings.faiss_index_path,
-                meta_path=settings.faiss_metadata_path,
+                index_path=index_path,
+                meta_path=meta_path,
             )
         return self._store
 
@@ -34,7 +36,7 @@ class Retriever:
     def graph_rag(self):
         if self._graph_rag is None:
             from graph.graph_rag import GraphRAG
-            self._graph_rag = GraphRAG(store=self._store, embedder=self._embedder)
+            self._graph_rag = GraphRAG(store=self._store, embedder=self._embedder, subject=self.subject)
         return self._graph_rag
 
     def retrieve(self, query: str, top_k: int | None = None,

@@ -1,17 +1,19 @@
 import logging
 from pathlib import Path
 
-from config.settings import settings
+from config.settings import normalize_subject, settings
 from ingest.chunker import NCERTChunker
 from ingest.embedder import Embedder
 from ingest.extractor import PDFExtractor
+from ingest.science_chunker import ScienceNCERTChunker
 from rag.vector_store import VectorStore
 
 logger = logging.getLogger(__name__)
 
 
-def run_ingestion(data_dir: str | None = None) -> int:
-    root = Path(data_dir or settings.data_dir)
+def run_ingestion(data_dir: str | None = None, subject: str = "maths") -> int:
+    subject = normalize_subject(subject)
+    root = Path(data_dir or settings.content_dir_for(subject, "textbook"))
     pdf_files = sorted(root.glob("*.pdf"))
 
     if not pdf_files:
@@ -19,12 +21,13 @@ def run_ingestion(data_dir: str | None = None) -> int:
         return 0
 
     extractor = PDFExtractor()
-    chunker = NCERTChunker()
+    chunker = ScienceNCERTChunker() if subject == "science" else NCERTChunker()
     embedder = Embedder(model_name=settings.embedding_model)
+    index_path, meta_path = settings.index_paths_for(subject, "textbook")
     store = VectorStore(
         dim=settings.embedding_dim,
-        index_path=settings.faiss_index_path,
-        meta_path=settings.faiss_metadata_path,
+        index_path=index_path,
+        meta_path=meta_path,
     )
 
     all_chunks = []

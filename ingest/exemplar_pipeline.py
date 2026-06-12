@@ -1,17 +1,19 @@
 import logging
 from pathlib import Path
 
-from config.settings import settings
+from config.settings import normalize_subject, settings
 from ingest.embedder import Embedder
 from ingest.exemplar_chunker import ExemplarChunker
 from ingest.extractor import PDFExtractor
+from ingest.science_chunker import ScienceExemplarChunker
 from rag.vector_store import VectorStore
 
 logger = logging.getLogger(__name__)
 
 
-def run_exemplar_ingestion(data_dir: str | None = None) -> int:
-    root = Path(data_dir or settings.exemplar_data_dir)
+def run_exemplar_ingestion(data_dir: str | None = None, subject: str = "maths") -> int:
+    subject = normalize_subject(subject)
+    root = Path(data_dir or settings.content_dir_for(subject, "exemplar"))
     pdf_files = sorted(root.rglob("*.pdf"))
 
     if not pdf_files:
@@ -19,12 +21,13 @@ def run_exemplar_ingestion(data_dir: str | None = None) -> int:
         return 0
 
     extractor = PDFExtractor()
-    chunker = ExemplarChunker()
+    chunker = ScienceExemplarChunker() if subject == "science" else ExemplarChunker()
     embedder = Embedder(model_name=settings.embedding_model)
+    index_path, meta_path = settings.index_paths_for(subject, "exemplar")
     store = VectorStore(
         dim=settings.embedding_dim,
-        index_path=settings.exemplar_faiss_index_path,
-        meta_path=settings.exemplar_metadata_path,
+        index_path=index_path,
+        meta_path=meta_path,
     )
 
     all_chunks = []

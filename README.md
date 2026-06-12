@@ -1,6 +1,6 @@
-# schEngine — CBSE Class 10 Math Question Generator
+# schEngine — CBSE Class 10 Question Generator
 
-Generate NCERT-aligned CBSE exam papers with RAG, knowledge graph, CBSE question types, difficulty bands, and PDF export.
+Generate NCERT-aligned CBSE Maths and Science exam papers with RAG, subject-specific corpora, CBSE question types, difficulty bands, and PDF export.
 
 ## Quick Start
 
@@ -8,32 +8,39 @@ Generate NCERT-aligned CBSE exam papers with RAG, knowledge graph, CBSE question
 # Install dependencies
 pip install -r requirements.txt
 
-# Ingest NCERT PDFs (run once)
+# Ingest Maths NCERT PDFs (run once)
 python3 ingest.py
 
-# Optional reference corpora
+# Optional Maths reference corpora
 python3 ingest_pyqs.py
 python3 ingest_exemplar.py
+
+# Science corpora
+python3 ingest.py --subject science
+python3 ingest_pyqs.py --subject science
+python3 ingest_exemplar.py --subject science
 
 # Generate questions
 python3 generate.py --topic "Quadratic Equations" --type la --marks 5 --count 5 --pdf
 python3 generate.py --topic "Quadratic Equations" --type mcq --count 10 --pdf
 python3 generate.py --topic "Trigonometry" --type sa --paper-level challenging --pdf
+python3 generate.py --subject science --topic "Electricity" --type sa --paper-level challenging --pdf
 
 # Full paper
 python3 generate.py --paper --paper-level medium --pdf
+python3 generate.py --subject science --paper --paper-level medium --pdf
 ```
 
 ## Features
 
 | Feature | Description |
 |---------|-------------|
-| **RAG** | FAISS vector store (all-MiniLM-L6-v2) over all 14 NCERT Class 10 Math PDFs |
-| **Knowledge Graph** | 15 concept nodes with formulas, patterns, hardness hints, prerequisite edges |
+| **RAG** | FAISS vector stores (all-MiniLM-L6-v2) over subject-specific NCERT Class 10 PDFs |
+| **Knowledge Graph** | Maths concept graph with formulas, patterns, hardness hints, prerequisite edges; Science uses vector-grounded syllabus retrieval |
 | **6 CBSE Question Types** | mcq, assertion_reason, vsa, sa, la, case_study |
 | **Hardness Levels** | simple / medium / hard — maps cleanly to mark bands |
 | **Paper Difficulty Bands** | standard / medium / challenging — standard uses NCERT + graph + PYQ pattern; medium/challenging also retrieve Exemplar conceptual depth |
-| **PYQ Pattern Corpus** | CBSE Basic/Standard PYQs are retrieved only as paper-style references, not chapter content |
+| **PYQ Pattern Corpus** | CBSE Maths Basic/Standard and Science PYQs are retrieved only as paper-style references, not chapter content |
 | **Exemplar Depth Corpus** | NCERT Exemplar is retrieved separately for board-aligned conceptual challenge |
 | **Pattern Rotation** | Rotates through KG typical_patterns to prevent repeated question setups |
 | **Diversity Injection** | Tracks used mechanisms across a batch, injects avoidance into subsequent prompts |
@@ -49,16 +56,18 @@ python3 generate.py --paper --paper-level medium --pdf
 python3 generate.py --topic "Quadratic Equations" --type la --marks 5 --count 5 --pdf
 python3 generate.py --topic "Real Numbers" --type assertion_reason --count 5
 python3 generate.py --topic "Triangles" --type case_study --count 2 --pdf
+python3 generate.py --subject science --topic "Chemical Reactions and Equations" --type sa --count 5
 ```
 
 Options:
+- `--subject` — `maths` or `science` (defaults to `maths`)
 - `--topic` — Chapter name or "Chapter Subtopic" (e.g. "Quadratic Equations", "Real Numbers Euclid division lemma")
 - `--type` — Question type: mcq, assertion_reason, vsa, sa, la, case_study
 - `--marks` — Override marks (defaults from type)
 - `--count` — Number of questions (1–10)
 - `--difficulty` — simple, medium, hard
 - `--paper-level` — standard, medium, challenging; controls overall conceptual demand
-- `--paper-variant` — standard, basic; controls PYQ Basic/Standard pattern retrieval
+- `--paper-variant` — standard, basic; controls Maths PYQ Basic/Standard pattern retrieval
 - `--pdf` — Export question paper and answer key PDFs to `pdfs/`
 - `--paper` — Generate full CBSE paper: `python3 generate.py --paper --paper-level medium --pdf`
 
@@ -99,7 +108,8 @@ schEngine/
 │   └── llm_client.py # Multi-provider LLM client (OpenRouter, OpenAI, Anthropic, Groq, HF)
 ├── graph/            # Knowledge graph (15 concept nodes, edges)
 ├── ingest/           # PDF ingestion pipeline (PyMuPDF + chunker + embedder)
-├── ncert_maths_chapters/ # Source PDFs (14 chapters)
+├── content/          # Source PDFs organized by board/subject
+│   └── ncert/        # NCERT Maths/Science chapters, exemplar, and CBSE PYQs
 ├── output/           # Generated question batches (JSON)
 ├── pdfs/             # Compiled LaTeX PDFs
 ├── rag/              # FAISS vector store + retriever
@@ -126,8 +136,8 @@ Supported providers: `openrouter`, `openai`, `anthropic`, `groq`, `huggingface`.
 | Corpus | Role in generation | What it must not do |
 |--------|--------------------|---------------------|
 | NCERT textbook | Content grounding and syllabus authority | Expand syllabus beyond Class 10 CBSE |
-| GraphRAG concept graph | Formulas, prerequisites, concept relations, pattern guidance | Replace source corpora with hard-coded examples |
-| CBSE PYQ | Board-paper pattern, phrasing, mark depth, Basic/Standard variant style | Act as chapter teaching content or be copied |
+| GraphRAG concept graph | Maths formulas, prerequisites, concept relations, pattern guidance | Replace source corpora with hard-coded examples |
+| CBSE PYQ | Board-paper pattern, phrasing, mark depth, Maths Basic/Standard variant style | Act as chapter teaching content or be copied |
 | NCERT Exemplar | Board-aligned conceptual depth for medium/challenging papers | Become olympiad/out-of-syllabus difficulty |
 | RD Sharma (planned) | Pattern expansion and large question-bank coverage | Become syllabus or difficulty authority |
 

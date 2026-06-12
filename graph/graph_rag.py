@@ -3,7 +3,7 @@
 import logging
 from typing import Any
 
-from config.settings import settings
+from config.settings import normalize_subject, settings
 from graph.math_graph import (
     NODES, EDGES, ConceptNode, find_node_by_name,
     get_prerequisites, get_builds_on, get_related,
@@ -17,17 +17,20 @@ logger = logging.getLogger(__name__)
 
 class GraphRAG:
     def __init__(self, store: VectorStore | None = None,
-                 embedder: Embedder | None = None):
+                 embedder: Embedder | None = None,
+                 subject: str = "maths"):
         self._store = store
         self._embedder = embedder
+        self.subject = normalize_subject(subject)
 
     @property
     def store(self) -> VectorStore:
         if self._store is None:
+            index_path, meta_path = settings.index_paths_for(self.subject, "textbook")
             self._store = VectorStore(
                 dim=settings.embedding_dim,
-                index_path=settings.faiss_index_path,
-                meta_path=settings.faiss_metadata_path,
+                index_path=index_path,
+                meta_path=meta_path,
             )
         return self._store
 
@@ -117,6 +120,8 @@ class GraphRAG:
         return "\n".join(parts), result["chunks"], result.get("graph_contexts", {})
 
     def _resolve_concept(self, query: str, chapter_filter: str | None = None) -> ConceptNode | None:
+        if self.subject != "maths":
+            return None
         name = chapter_filter or query
         node = find_node_by_name(name)
         if node:

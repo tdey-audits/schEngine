@@ -2,14 +2,19 @@
 """Run the NCERT PDF ingestion pipeline."""
 
 import logging
+import argparse
 
+from config.settings import settings
 from ingest.pipeline import run_ingestion
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
 if __name__ == "__main__":
-    count = run_ingestion()
+    parser = argparse.ArgumentParser(description="Run the NCERT textbook ingestion pipeline.")
+    parser.add_argument("--subject", default="maths", choices=["maths", "science"])
+    args = parser.parse_args()
+    count = run_ingestion(subject=args.subject)
     if count:
         print(f"\nIngested {count} chunks from NCERT PDFs into FAISS.")
     else:
-        print("\nNo chunks ingested. Check that PDFs exist in ncert_maths_chapters/")
+        print(f"\nNo chunks ingested. Check that PDFs exist in {settings.content_dir_for(args.subject, 'textbook')}/.")

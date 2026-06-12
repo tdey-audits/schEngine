@@ -5,14 +5,14 @@ import re
 from datetime import datetime
 from typing import Any
 
-from config.settings import settings
+from config.settings import normalize_subject, settings
 from generator.llm_client import LLMClient
 from generator.prompts import build_prompt
 from graph.graph_rag import GraphRAG
 from rag.exemplar_retriever import ExemplarRetriever
 from rag.pyq_retriever import PYQRetriever
 from rag.retriever import Retriever
-from syllabus.ncert_class10 import (
+from syllabus.registry import (
     resolve, list_chapters, marks_for_type, hardness_from_marks,
     normalize_question_type,
 )
@@ -23,74 +23,76 @@ logger = logging.getLogger(__name__)
 class QuestionGenerator:
     def __init__(self):
         self.llm = LLMClient()
-        self._retriever = None
-        self._graph_rag = None
-        self._pyq_retriever = None
-        self._exemplar_retriever = None
+        self._retrievers = {}
+        self._graph_rags = {}
+        self._pyq_retrievers = {}
+        self._exemplar_retrievers = {}
         self._rag_available = False
 
-    @property
-    def retriever(self):
-        if self._retriever is None:
+    def retriever(self, subject: str = "maths"):
+        subject = normalize_subject(subject)
+        if subject not in self._retrievers:
             try:
-                self._retriever = Retriever()
+                self._retrievers[subject] = Retriever(subject=subject)
                 self._rag_available = True
             except Exception as e:
                 logger.warning(f"RAG not available: {e}")
                 self._rag_available = False
-        return self._retriever
+        return self._retrievers.get(subject)
 
-    @property
-    def graph_rag(self):
-        if self._graph_rag is None:
+    def graph_rag(self, subject: str = "maths"):
+        subject = normalize_subject(subject)
+        if subject not in self._graph_rags:
             try:
-                self._graph_rag = GraphRAG()
+                self._graph_rags[subject] = GraphRAG(subject=subject)
                 self._rag_available = True
             except Exception as e:
                 logger.warning(f"GraphRAG not available: {e}")
                 self._rag_available = False
-        return self._graph_rag
+        return self._graph_rags.get(subject)
 
-    @property
-    def pyq_retriever(self):
-        if self._pyq_retriever is None:
-            self._pyq_retriever = PYQRetriever()
-        return self._pyq_retriever
+    def pyq_retriever(self, subject: str = "maths"):
+        subject = normalize_subject(subject)
+        if subject not in self._pyq_retrievers:
+            self._pyq_retrievers[subject] = PYQRetriever(subject=subject)
+        return self._pyq_retrievers[subject]
 
-    @property
-    def exemplar_retriever(self):
-        if self._exemplar_retriever is None:
-            self._exemplar_retriever = ExemplarRetriever()
-        return self._exemplar_retriever
+    def exemplar_retriever(self, subject: str = "maths"):
+        subject = normalize_subject(subject)
+        if subject not in self._exemplar_retrievers:
+            self._exemplar_retrievers[subject] = ExemplarRetriever(subject=subject)
+        return self._exemplar_retrievers[subject]
 
     def generate(self, topic: str, question_type: str = "sa",
                  marks: int | None = None, count: int = 1,
                  difficulty: str | None = None,
                  paper_level: str | None = "standard",
                  paper_variant: str | None = "standard",
-                 use_pyq_patterns: bool = True) -> list[dict[str, Any]]:
+                 use_pyq_patterns: bool = True,
+                 subject: str = "maths") -> list[dict[str, Any]]:
+        subject = normalize_subject(subject)
         count = max(1, min(count, 10))
-        question_type = normalize_question_type(question_type)
-        chapter, subtopic = resolve(topic)
+        question_type = normalize_question_type(question_type, subject)
+        chapter, subtopic = resolve(topic, subject)
 
         if marks is None:
-            marks = marks_for_type(question_type)
+            marks = marks_for_type(question_type, subject)
 
         if difficulty is None:
-            difficulty = hardness_from_marks(marks)
+            difficulty = hardness_from_marks(marks, subject)
 
         query_terms = self._build_query(chapter, subtopic)
         graph_rag_result = self._retrieve_graph_context(
-            query_terms, chapter.name, difficulty, question_type, paper_level,
+            query_terms, chapter.name, difficulty, question_type, paper_level, subject,
         )
 
         retrieved = graph_rag_result.get("chunks", [])
         graph_contexts = graph_rag_result.get("graph_contexts", {})
         pyq_context = self._retrieve_pyq_patterns(
-            query_terms, question_type, paper_variant, enabled=use_pyq_patterns,
+            query_terms, question_type, paper_variant, enabled=use_pyq_patterns, subject=subject,
         )
         exemplar_context = self._retrieve_exemplar_depth(
-            query_terms, chapter.name, question_type, paper_level,
+            query_terms, chapter.name, question_type, paper_level, subject=subject,
         )
         graph_contexts = self._attach_reference_profiles(
             graph_contexts, pyq_context, exemplar_context, paper_level,
@@ -111,6 +113,7 @@ class QuestionGenerator:
             pyq_context=pyq_context,
             exemplar_context=exemplar_context,
             paper_level=paper_level,
+            subject=subject,
         )
 
         response_text = self.llm.generate(
@@ -122,7 +125,7 @@ class QuestionGenerator:
         parsed = self._parse_response(response_text)
         questions: list[dict[str, Any]] = [
             self._normalize(q, chapter.name, subtopic.name if subtopic else None,
-                            question_type, marks, difficulty)
+                            question_type, marks, difficulty, subject)
             for q in parsed
         ]
 
@@ -131,7 +134,7 @@ class QuestionGenerator:
         # renumber ids within the batch
         ts_base = datetime.now().strftime('%Y%m%d_%H%M%S')
         for j, q in enumerate(questions):
-            q["id"] = f"ncert_{ts_base}_{uuid.uuid4().hex[:6]}_{j+1:02d}"
+            q["id"] = f"ncert_{subject}_{ts_base}_{uuid.uuid4().hex[:6]}_{j+1:02d}"
 
         if retrieved:
             for q in questions:
@@ -174,8 +177,10 @@ class QuestionGenerator:
                                 difficulty: str | None = None,
                                 paper_level: str | None = "standard",
                                 paper_variant: str | None = "standard",
-                                use_pyq_patterns: bool = True) -> list[dict[str, Any]]:
-        chapters = list_chapters()
+                                use_pyq_patterns: bool = True,
+                                subject: str = "maths") -> list[dict[str, Any]]:
+        subject = normalize_subject(subject)
+        chapters = list_chapters(subject)
         if chapter_number:
             ch = next((c for c in chapters if c["number"] == chapter_number), chapters[0])
         else:
@@ -186,7 +191,8 @@ class QuestionGenerator:
         return self.generate(topic, question_type, marks, count, difficulty,
                              paper_level=paper_level,
                              paper_variant=paper_variant,
-                             use_pyq_patterns=use_pyq_patterns)
+                             use_pyq_patterns=use_pyq_patterns,
+                             subject=subject)
 
     def _build_query(self, chapter: Any, subtopic: Any) -> str:
         # Retrieval query is just the topic; question-type codes and the word
@@ -211,9 +217,13 @@ class QuestionGenerator:
     def _retrieve_graph_context(self, query: str, chapter: str,
                                  difficulty: str,
                                  question_type: str | None = None,
-                                 paper_level: str | None = None) -> dict[str, Any]:
+                                 paper_level: str | None = None,
+                                 subject: str = "maths") -> dict[str, Any]:
         try:
-            return self.graph_rag.retrieve(
+            graph_rag = self.graph_rag(subject)
+            if graph_rag is None:
+                return {"chunks": [], "graph_contexts": {}}
+            return graph_rag.retrieve(
                 query=query,
                 top_k=settings.top_k_retrieved,
                 chapter_filter=chapter,
@@ -227,19 +237,22 @@ class QuestionGenerator:
 
     def _retrieve_pyq_patterns(self, query: str, question_type: str,
                                paper_variant: str | None,
-                               enabled: bool = True) -> list[dict[str, Any]]:
+                               enabled: bool = True,
+                               subject: str = "maths") -> list[dict[str, Any]]:
         if not enabled:
             return []
+        subject = normalize_subject(subject)
         pyq_type = self._pyq_type_for(question_type)
+        variant = paper_variant if subject == "maths" else None
         try:
-            rows = self.pyq_retriever.retrieve(
+            rows = self.pyq_retriever(subject).retrieve(
                 query=query,
                 top_k=3,
-                paper_level=paper_variant,
+                paper_level=variant,
                 question_type=pyq_type,
             )
-            if not rows and paper_variant:
-                rows = self.pyq_retriever.retrieve(
+            if not rows and variant:
+                rows = self.pyq_retriever(subject).retrieve(
                     query=query,
                     top_k=3,
                     paper_level=None,
@@ -251,7 +264,8 @@ class QuestionGenerator:
             return []
 
     def _retrieve_exemplar_depth(self, query: str, chapter: str, question_type: str,
-                                 paper_level: str | None) -> list[dict[str, Any]]:
+                                 paper_level: str | None,
+                                 subject: str = "maths") -> list[dict[str, Any]]:
         level = (paper_level or "standard").lower()
         if level == "standard":
             return []
@@ -259,7 +273,7 @@ class QuestionGenerator:
         desired_depth = "challenging" if level == "challenging" else None
         top_k = 6 if level == "challenging" else 3
         try:
-            rows = self.exemplar_retriever.retrieve(
+            rows = self.exemplar_retriever(subject).retrieve(
                 query=query,
                 top_k=top_k,
                 chapter=chapter,
@@ -267,7 +281,7 @@ class QuestionGenerator:
                 estimated_depth=desired_depth,
             )
             if not rows:
-                rows = self.exemplar_retriever.retrieve(
+                rows = self.exemplar_retriever(subject).retrieve(
                     query=query,
                     top_k=top_k,
                     chapter=chapter,
@@ -275,7 +289,7 @@ class QuestionGenerator:
                     estimated_depth=desired_depth,
                 )
             if not rows:
-                rows = self.exemplar_retriever.retrieve(
+                rows = self.exemplar_retriever(subject).retrieve(
                     query=query,
                     top_k=top_k,
                     chapter=None,
@@ -427,12 +441,13 @@ class QuestionGenerator:
         return []
 
     def _normalize(self, q: dict[str, Any], chapter: str, subtopic: str | None,
-                   question_type: str, marks: int, difficulty: str) -> dict[str, Any]:
+                   question_type: str, marks: int, difficulty: str,
+                   subject: str = "maths") -> dict[str, Any]:
         if "question" not in q:
             q["question"] = q.get("text", "")
         q["topic"] = q.get("topic") or chapter
         q["subtopic"] = q.get("subtopic") or subtopic or ""
-        q["type"] = normalize_question_type(q.get("type") or question_type)
+        q["type"] = normalize_question_type(q.get("type") or question_type, subject)
         q["marks"] = q.get("marks") or marks
         q["difficulty"] = q.get("difficulty") or difficulty
         # For MCQ / Assertion-Reason the answer is just the option label.
@@ -445,7 +460,8 @@ class QuestionGenerator:
             q["metadata"] = {}
         q["metadata"]["generated_at"] = datetime.now().isoformat()
         q["metadata"]["model"] = settings.llm_model
-        q["id"] = f"ncert_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{uuid.uuid4().hex[:6]}"
+        q["metadata"]["subject"] = subject
+        q["id"] = f"ncert_{subject}_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{uuid.uuid4().hex[:6]}"
         return q
 
     def _save_batch(self, questions: list[dict[str, Any]], chapter: str, subtopic: str | None):
@@ -463,6 +479,7 @@ class QuestionGenerator:
             "question_type": questions[0].get("type") if questions else None,
             "question_count": len(questions),
             "mechanisms": [q.get("metadata", {}).get("mechanism") for q in questions],
+            "subject": questions[0].get("metadata", {}).get("subject") if questions else None,
             "questions": questions,
         }
         output_dir = Path(settings.output_dir)
@@ -481,6 +498,7 @@ class QuestionGenerator:
             "chapter", "subtopic", "difficulty", "question_type",
             "question_count", "mechanisms",
         )}
+        entry["subject"] = batch.get("subject")
         entry["file"] = path
         if log_path.exists():
             log = json.loads(log_path.read_text())

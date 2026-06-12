@@ -28,10 +28,11 @@ import katex from "katex";
 import { useEffect, useRef, useState } from "react";
 
 type QuestionType = "mcq" | "assertion_reason" | "vsa" | "sa" | "la" | "case_study";
+type Subject = "maths" | "science";
 type Difficulty = "simple" | "medium" | "hard";
 type PaperLevel = "standard" | "medium" | "challenging";
 type PaperVariant = "basic" | "standard";
-type PaperTemplateId = "custom" | "default" | "cbse_class10_standard";
+type PaperTemplateId = "custom" | "default" | "cbse_class10_standard" | "cbse_class10_science";
 type QuestionStatus = "generated" | "edited" | "regenerated" | "locked" | "needs_review";
 type WorkspaceSection = "builder" | "drafts" | "library" | "trash" | "exports";
 type CoverageMode = "chapter" | "chapter_subtopics";
@@ -110,6 +111,7 @@ type ChallengePlan = {
 };
 
 type PaperSettings = {
+  subject: Subject;
   paperTitle: string;
   selectedChapters: string[];
   subtopics: string[];
@@ -197,10 +199,24 @@ const cbseClass10StandardMix: Record<QuestionType, number> = {
   case_study: 3
 };
 
+const cbseClass10ScienceMix: Record<QuestionType, number> = {
+  mcq: 18,
+  assertion_reason: 2,
+  vsa: 6,
+  sa: 7,
+  la: 3,
+  case_study: 3
+};
+
 const paperLevelOptions: { value: PaperLevel; label: string }[] = [
   { value: "standard", label: "Standard" },
   { value: "medium", label: "Medium" },
   { value: "challenging", label: "Challenging" }
+];
+
+const subjectOptions: { value: Subject; label: string }[] = [
+  { value: "maths", label: "Maths" },
+  { value: "science", label: "Science" }
 ];
 
 const challengeOverrideOptions: { value: ChallengeOverride; label: string }[] = [
@@ -210,6 +226,7 @@ const challengeOverrideOptions: { value: ChallengeOverride; label: string }[] = 
 
 const paperTemplates: {
   id: PaperTemplateId;
+  subject?: Subject;
   label: string;
   description: string;
   questionMix: Record<QuestionType, number>;
@@ -226,12 +243,23 @@ const paperTemplates: {
   },
   {
     id: "cbse_class10_standard",
+    subject: "maths",
     label: "CBSE Class 10 Standard",
     description: "38 questions / 80 marks / all chapters",
     questionMix: cbseClass10StandardMix,
     paperTitle: "CBSE Class 10 Mathematics Standard",
     paperLevel: "standard",
     paperVariant: "standard",
+    selectAllChapters: true
+  },
+  {
+    id: "cbse_class10_science",
+    subject: "science",
+    label: "CBSE Class 10 Science",
+    description: "39 questions / 80 marks / all chapters",
+    questionMix: cbseClass10ScienceMix,
+    paperTitle: "CBSE Class 10 Science",
+    paperLevel: "standard",
     selectAllChapters: true
   }
 ];
@@ -359,6 +387,7 @@ const initialQuestions: Question[] = [
 ];
 
 export default function PaperBuilderPage() {
+  const [subject, setSubject] = useState<Subject>("maths");
   const [chapters, setChapters] = useState<Chapter[]>(fallbackChapters);
   const [paperTitle, setPaperTitle] = useState("CBSE Class 10 Mathematics");
   const [selectedChapters, setSelectedChapters] = useState<string[]>(["Quadratic Equations"]);
@@ -423,17 +452,27 @@ export default function PaperBuilderPage() {
     : null;
   const totalMarks = questions.reduce((sum, q) => sum + Number(q.marks || 0), 0);
   const validationIssues = questions.filter((q) => !q.question || !q.answer || (q.type === "mcq" && (q.options?.length ?? 0) !== 4));
+  const availableTemplates = paperTemplates.filter((template) => !template.subject || template.subject === subject);
 
   useEffect(() => {
-    fetch("/api/v1/chapters")
+    fetch(`/api/v1/chapters?subject=${subject}`)
       .then((response) => (response.ok ? response.json() : null))
       .then((data: { chapters?: Chapter[] } | null) => {
         if (data?.chapters?.length) {
           setChapters(data.chapters);
+          const defaultChapter = data.chapters[0];
+          setSelectedChapters(defaultChapter ? [defaultChapter.name] : []);
+          setSelectedSubtopics([]);
+          setCoveragePlan(createCoveragePlan(defaultChapter ? [defaultChapter] : [], "chapter_subtopics"));
+          setChallengePlan(createChallengePlan(defaultChapter ? [defaultChapter] : []));
+          setExpandedCoverageChapter(defaultChapter?.name ?? null);
+          setPaperTitle(subject === "science" ? "CBSE Class 10 Science" : "CBSE Class 10 Mathematics");
+          setPaperTemplate("default");
+          setQuestionMix(defaultQuestionMix);
         }
       })
       .catch(() => undefined);
-  }, []);
+  }, [subject]);
 
   useEffect(() => {
     setDrafts(loadStoredList<DraftRecord>(DRAFT_STORAGE_KEY));
@@ -484,6 +523,7 @@ export default function PaperBuilderPage() {
 
   function currentSettings(): PaperSettings {
     return {
+      subject,
       paperTitle,
       selectedChapters,
       subtopics: [...selectedSubtopics],
@@ -500,11 +540,12 @@ export default function PaperBuilderPage() {
   }
 
   function applySettings(settings: PaperSettings & { subtopic?: string }) {
+    setSubject(settings.subject ?? "maths");
     const nextSelectedChapters = settings.selectedChapters ?? [];
     const nextSelectedRows = nextSelectedChapters
       .map((name) => chapters.find((chapter) => chapter.name === name))
       .filter((chapter): chapter is Chapter => Boolean(chapter));
-    setPaperTitle(settings.paperTitle || "CBSE Class 10 Mathematics");
+    setPaperTitle(settings.paperTitle || (settings.subject === "science" ? "CBSE Class 10 Science" : "CBSE Class 10 Mathematics"));
     setSelectedChapters(nextSelectedChapters);
     // Backward compat: old drafts had single "subtopic" string
     if (settings.subtopics) {
@@ -852,6 +893,7 @@ export default function PaperBuilderPage() {
           )
         } : current);
         const payload = {
+          subject,
           topic: chapterTopic,
           question_type: item.type,
           count: allocation.count,
@@ -928,6 +970,7 @@ export default function PaperBuilderPage() {
         body: JSON.stringify({
           questions: questions.map(normalizeQuestionRecord),
           title: paperTitle,
+          subject,
           time_allowed: "3 Hours",
           max_marks: String(totalMarks || 80),
           generation_id: genId
@@ -1076,6 +1119,7 @@ export default function PaperBuilderPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          subject,
           topic: promptTopic,
           question_type: source.type,
           count: 1,
@@ -1179,6 +1223,13 @@ export default function PaperBuilderPage() {
         <div className="builder-grid">
           <aside className="setup-rail">
             <PanelTitle title="Paper setup" />
+            <Field label="Subject">
+              <Segmented
+                value={subject}
+                options={subjectOptions}
+                onChange={(value) => setSubject(value as Subject)}
+              />
+            </Field>
             <Field label="Chapters">
               <div
                 className={activeDropdown === "chapters" ? "chapter-dropdown active-menu" : "chapter-dropdown"}
@@ -1257,14 +1308,14 @@ export default function PaperBuilderPage() {
                 value={paperTemplate}
                 options={[
                   { value: "custom", label: "Custom" },
-                  ...paperTemplates.map((template) => ({ value: template.id, label: template.label }))
+                  ...availableTemplates.map((template) => ({ value: template.id, label: template.label }))
                 ]}
                 onChange={(value) => applyPaperTemplate(value as PaperTemplateId)}
               />
               <span className="template-note">
                 {paperTemplate === "custom"
                   ? "Use manual question counts."
-                  : paperTemplates.find((template) => template.id === paperTemplate)?.description}
+                  : availableTemplates.find((template) => template.id === paperTemplate)?.description}
               </span>
             </Field>
             <Field label="Difficulty">
@@ -1302,16 +1353,22 @@ export default function PaperBuilderPage() {
                 )}
               </div>
             </Field>
-            <Field label="Board variant">
-              <Segmented
-                value={paperVariant}
-                options={[
-                  { value: "basic", label: "Basic" },
-                  { value: "standard", label: "Standard" }
-                ]}
-                onChange={(value) => setPaperVariant(value as PaperVariant)}
-              />
-            </Field>
+            {subject === "maths" ? (
+              <Field label="Board variant">
+                <Segmented
+                  value={paperVariant}
+                  options={[
+                    { value: "basic", label: "Basic" },
+                    { value: "standard", label: "Standard" }
+                  ]}
+                  onChange={(value) => setPaperVariant(value as PaperVariant)}
+                />
+              </Field>
+            ) : (
+              <Field label="Board variant">
+                <span className="template-note">Science uses one common CBSE pattern with standard, medium and challenging difficulty levels.</span>
+              </Field>
+            )}
             <label className="toggle-row">
               <input type="checkbox" checked={usePyqPatterns} onChange={(event) => setUsePyqPatterns(event.target.checked)} />
               <span>Use PYQ pattern context</span>

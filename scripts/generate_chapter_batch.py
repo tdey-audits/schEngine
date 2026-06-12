@@ -16,7 +16,7 @@ sys.path.insert(0, str(ROOT))
 from generator.generator import QuestionGenerator
 from renderer.export_paths import ensure_dir, export_basename, topic_code
 from renderer.latex_renderer import CBSELaTeXRenderer
-from syllabus.ncert_class10 import list_chapters, normalize_question_type
+from syllabus.registry import list_chapters, normalize_question_type
 
 
 TYPES = ["mcq", "assertion_reason", "vsa", "sa", "la", "case_study"]

@@ -2,15 +2,20 @@
 """Run the NCERT Exemplar ingestion pipeline."""
 
 import logging
+import argparse
 
+from config.settings import settings
 from ingest.exemplar_pipeline import run_exemplar_ingestion
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
 
 if __name__ == "__main__":
-    count = run_exemplar_ingestion()
+    parser = argparse.ArgumentParser(description="Run the NCERT Exemplar ingestion pipeline.")
+    parser.add_argument("--subject", default="maths", choices=["maths", "science"])
+    args = parser.parse_args()
+    count = run_exemplar_ingestion(subject=args.subject)
     if count:
         print(f"\nIngested {count} NCERT Exemplar question chunks into the Exemplar FAISS corpus.")
     else:
-        print("\nNo NCERT Exemplar chunks ingested. Check content/ncert_exemplar/.")
+        print(f"\nNo NCERT Exemplar chunks ingested. Check {settings.content_dir_for(args.subject, 'exemplar')}/.")

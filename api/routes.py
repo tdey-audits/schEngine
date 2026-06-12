@@ -2,7 +2,7 @@ import logging
 from datetime import datetime
 from pathlib import Path
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Query
 from fastapi.responses import FileResponse
 
 from api.schemas import (
@@ -11,7 +11,8 @@ from api.schemas import (
 )
 from generator.generator import QuestionGenerator
 from renderer.latex_renderer import CBSELaTeXRenderer
-from syllabus.ncert_class10 import list_chapters, list_question_types
+from config.settings import normalize_subject
+from syllabus.registry import list_chapters, list_question_types
 from validator.validator import Validator
 
 logger = logging.getLogger(__name__)
@@ -22,21 +23,24 @@ validator = Validator()
 
 
 @router.get("/health", response_model=HealthResponse)
-async def health():
+async def health(subject: str = Query(default="maths")):
+    subject = normalize_subject(subject)
     return HealthResponse(
         status="ok",
-        chapters=list_chapters(),
+        chapters=list_chapters(subject),
     )
 
 
 @router.get("/chapters", response_model=ChapterListResponse)
-async def chapters():
-    return ChapterListResponse(chapters=list_chapters())
+async def chapters(subject: str = Query(default="maths")):
+    subject = normalize_subject(subject)
+    return ChapterListResponse(chapters=list_chapters(subject))
 
 
 @router.get("/question-types", response_model=QuestionTypeResponse)
-async def question_types():
-    return QuestionTypeResponse(types=list_question_types())
+async def question_types(subject: str = Query(default="maths")):
+    subject = normalize_subject(subject)
+    return QuestionTypeResponse(types=list_question_types(subject))
 
 
 @router.post("/generate", response_model=GenerateResponse)
@@ -51,12 +55,13 @@ async def generate(req: GenerateRequest):
             paper_level=req.paper_level,
             paper_variant=req.paper_variant,
             use_pyq_patterns=req.use_pyq_patterns,
+            subject=req.subject,
         )
     except Exception as e:
         logger.error(f"Generation failed: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"Generation failed: {str(e)}")
 
-    validated = validator.validate_batch(questions)
+    validated = validator.validate_batch(_with_subject(questions, req.subject))
     rejected = len(questions) - len(validated)
     if rejected:
         logger.warning(f"{rejected} questions failed validation")
@@ -78,7 +83,7 @@ async def export_answer_key(req: ExportRequest):
 
 
 def _export_pdf(req: ExportRequest, kind: str):
-    validated = validator.validate_batch(req.questions)
+    validated = validator.validate_batch(_with_subject(req.questions, req.subject))
     if not validated:
         raise HTTPException(status_code=422, detail="No valid questions available for export")
 
@@ -111,3 +116,14 @@ def _export_pdf(req: ExportRequest, kind: str):
     if pdf_path.suffix.lower() != ".pdf" or not pdf_path.exists():
         raise HTTPException(status_code=500, detail="PDF compilation failed")
     return FileResponse(pdf_path, media_type="application/pdf", filename=filename)
+
+
+def _with_subject(questions: list[dict], subject: str) -> list[dict]:
+    rows = []
+    for question in questions:
+        row = dict(question)
+        metadata = dict(row.get("metadata") or {})
+        metadata.setdefault("subject", subject)
+        row["metadata"] = metadata
+        rows.append(row)
+    return rows

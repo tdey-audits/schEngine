@@ -1,23 +1,25 @@
 from typing import Any
 
-from config.settings import settings
+from config.settings import normalize_subject, settings
 from rag.vector_store import VectorStore
 
 
 class PYQRetriever:
     """Retriever for exam-pattern context from CBSE PYQ question chunks."""
 
-    def __init__(self):
+    def __init__(self, subject: str = "maths"):
+        self.subject = normalize_subject(subject)
         self._embedder = None
         self._store: VectorStore | None = None
 
     @property
     def store(self) -> VectorStore:
         if self._store is None:
+            index_path, meta_path = settings.index_paths_for(self.subject, "pyq")
             self._store = VectorStore(
                 dim=settings.embedding_dim,
-                index_path=settings.pyq_faiss_index_path,
-                meta_path=settings.pyq_metadata_path,
+                index_path=index_path,
+                meta_path=meta_path,
             )
         return self._store
 
@@ -31,6 +33,8 @@ class PYQRetriever:
     def retrieve(self, query: str, top_k: int = 5,
                  paper_level: str | None = None,
                  question_type: str | None = None) -> list[dict[str, Any]]:
+        if self.subject == "science":
+            paper_level = None
         query_vector = self.embedder.embed(query)
         results = self.store.search(query_vector, k=max(top_k * 20, 100))
 

@@ -1,4 +1,4 @@
-"""LaTeX renderer for CBSE Class 10 Mathematics question papers.
+"""LaTeX renderer for CBSE Class 10 question papers.
 
 Generates authentic CBSE-style question papers and solution booklets
 using the `exam` document class, compiled via pdflatex.
@@ -15,7 +15,7 @@ from pathlib import Path
 from typing import Any
 
 from renderer.diagrams import PDFDiagramRenderer
-from syllabus.ncert_class10 import normalize_question_type
+from syllabus.registry import normalize_question_type
 
 logger = logging.getLogger(__name__)
 

@@ -2,7 +2,8 @@ import re
 from typing import Any
 
 from renderer.diagrams import PDFDiagramRenderer
-from syllabus.ncert_class10 import normalize_question_type
+from config.settings import normalize_subject
+from syllabus.registry import normalize_question_type
 
 VALID_TYPES = {"mcq", "assertion_reason", "vsa", "sa", "la", "case_study"}
 MARKS_RANGE = (1, 5)
@@ -18,8 +19,9 @@ class Validator:
 
     def validate(self, question: dict[str, Any]) -> tuple[bool, list[str]]:
         errors = []
+        subject = normalize_subject(question.get("metadata", {}).get("subject") or question.get("subject") or "maths")
 
-        qtype = normalize_question_type(question.get("type", ""))
+        qtype = normalize_question_type(question.get("type", ""), subject)
         if qtype:
             question["type"] = qtype
 
@@ -76,7 +78,7 @@ class Validator:
         if len(str(q_text).strip()) < 15:
             errors.append("Question too short (< 15 chars)")
 
-        if qtype in ("vsa", "sa", "la"):
+        if subject == "maths" and qtype in ("vsa", "sa", "la"):
             if not self.LATEX_RE.search(str(q_text)):
                 question.setdefault("metadata", {}).setdefault("validation_warnings", []).append(
                     "Question has no LaTeX math"
@@ -94,11 +96,12 @@ class Validator:
 
     def _validate_case_sub(self, sq: dict[str, Any]) -> tuple[bool, list[str]]:
         errs = []
+        subject = normalize_subject(sq.get("metadata", {}).get("subject") or sq.get("subject") or "maths")
         if not sq.get("question", "").strip():
             errs.append("missing question")
         if not sq.get("answer", "").strip():
             errs.append("missing answer")
-        st = normalize_question_type(sq.get("type", ""))
+        st = normalize_question_type(sq.get("type", ""), subject)
         if st:
             sq["type"] = st
         if st and st not in {"mcq", "vsa", "sa"}:

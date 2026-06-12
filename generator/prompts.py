@@ -180,6 +180,48 @@ LATEX FORMATTING RULES (follow EXACTLY — output is compiled with LaTeX):
 - For MCQ/Assertion-Reason, the "answer" field is ONLY the option label: "(C)".
 """
 
+SCIENCE_SYSTEM_PROMPT = """You are an expert CBSE Class 10 Science question paper setter.
+You generate high-quality exam-style questions based strictly on the NCERT syllabus.
+
+OUTPUT FORMAT:
+Return valid JSON per question with these fields:
+{
+  "question": "Question text with necessary scientific notation or equations",
+  "answer": "Final answer",
+  "solution": {
+    "steps": ["Step 1 explanation", "Step 2 explanation", ...],
+    "derivation": "Optional equation/process derivation"
+  },
+  "topic": "Chapter name",
+  "subtopic": "Specific topic name",
+  "marks": 4,
+  "type": "la",
+  "difficulty": "hard",
+  "options": ["(A) ...", "(B) ...", "(C) ...", "(D) ..."]  // only for MCQ
+}
+
+For case_study type:
+{
+  "question": "Source/case paragraph...",
+  "type": "case_study",
+  "marks": 4,
+  "questions": [
+    {"id": "i", "type": "mcq", "question": "...", "answer": "...", "options": [...]},
+    {"id": "ii", "type": "vsa", "question": "...", "answer": "..."}
+  ]
+}
+
+CRITICAL RULES:
+- Every question MUST be from CBSE Class 10 NCERT Science syllabus only
+- Question must be self-contained and unambiguous
+- Provide complete step-by-step solution or explanation
+- Match the question type format exactly
+- Prefer NCERT language, activities, observations, diagrams, reasoning, and applications
+- DO NOT ask out-of-syllabus or advanced topics
+- For MCQ/Assertion-Reason, the "answer" field is ONLY the option label: "(C)".
+- Use LaTeX only where helpful for chemical equations, units, formulae, and physics calculations.
+"""
+
 
 def _format_chunks(retrieved_context: list[dict[str, Any]]) -> str:
     if not retrieved_context:
@@ -317,8 +359,10 @@ def build_prompt(chapter: str, subtopic: str | None, question_type: str,
                  graph_rag_contexts: dict[str, dict[str, Any]] | None = None,
                  pyq_context: list[dict[str, Any]] | None = None,
                  exemplar_context: list[dict[str, Any]] | None = None,
-                 paper_level: str | None = None) -> tuple[str, str]:
+                 paper_level: str | None = None,
+                 subject: str = "maths") -> tuple[str, str]:
     topic_str = f"{chapter}" + (f" > {subtopic}" if subtopic else "")
+    subject_label = "Science" if subject == "science" else "Mathematics"
 
     type_template = QUESTION_TYPE_TEMPLATES.get(question_type, "")
     hardness_guide = HARDNESS_GUIDES.get(difficulty or "medium", HARDNESS_GUIDES["medium"])
@@ -354,7 +398,7 @@ def build_prompt(chapter: str, subtopic: str | None, question_type: str,
         set_instruction = "Generate 1 CBSE exam-style question."
         output_instruction = "Output a single valid JSON object (the question)."
 
-    user_prompt = f"""Generate {count} CBSE Class 10 Mathematics question(s).
+    user_prompt = f"""Generate {count} CBSE Class 10 {subject_label} question(s).
 
 TOPIC: {topic_str}
 QUESTION TYPE: {question_type}
@@ -380,9 +424,10 @@ PAPER LEVEL: {paper_level or "standard"}
 
 {set_instruction}
 All questions must be on "{topic_str}" and adhere strictly to the QUESTION FORMAT above.
-Use NCERT/graph context for mathematical correctness. Use PYQ context only for exam pattern, not for source content.
+Use NCERT/graph context for subject correctness. Use PYQ context only for exam pattern, not for source content.
 Use Exemplar context only to tune conceptual depth for the requested paper level.
 Do not copy PYQ or Exemplar questions, options, case-study scenarios, or numbers verbatim.
 {output_instruction}"""
 
-    return SYSTEM_PROMPT, user_prompt
+    system_prompt = SCIENCE_SYSTEM_PROMPT if subject == "science" else SYSTEM_PROMPT
+    return system_prompt, user_prompt
