@@ -25,6 +25,7 @@ import {
   X
 } from "lucide-react";
 import katex from "katex";
+import type { CSSProperties } from "react";
 import { useEffect, useRef, useState } from "react";
 
 type QuestionType = "mcq" | "assertion_reason" | "vsa" | "sa" | "la" | "case_study";
@@ -170,7 +171,11 @@ type TrashedQuestionRecord = {
 const DRAFT_STORAGE_KEY = "schengine.paperDrafts.v1";
 const QUESTION_LIBRARY_STORAGE_KEY = "schengine.questionLibrary.v1";
 const QUESTION_TRASH_STORAGE_KEY = "schengine.questionTrash.v1";
+const INSPECTOR_WIDTH_STORAGE_KEY = "schengine.inspectorWidth.v1";
 const TRASH_RETENTION_DAYS = 30;
+const DEFAULT_INSPECTOR_WIDTH = 376;
+const MIN_INSPECTOR_WIDTH = 320;
+const MAX_INSPECTOR_WIDTH = 760;
 
 const questionTypes: { type: QuestionType; label: string; section: string; marks: number }[] = [
   { type: "mcq", label: "MCQ", section: "A", marks: 1 },
@@ -427,7 +432,9 @@ export default function PaperBuilderPage() {
   const [generationProgress, setGenerationProgress] = useState<GenerationProgress | null>(null);
   const [notice, setNotice] = useState("Draft saved locally");
   const [currentGenerationId, setCurrentGenerationId] = useState("");
+  const [inspectorWidth, setInspectorWidth] = useState(DEFAULT_INSPECTOR_WIDTH);
   const chapterDropdownRef = useRef<HTMLDivElement | null>(null);
+  const inspectorResizeRef = useRef<{ startX: number; startWidth: number } | null>(null);
   const [regeneration, setRegeneration] = useState<{
     source: Question;
     candidate?: Question;
@@ -453,6 +460,9 @@ export default function PaperBuilderPage() {
   const totalMarks = questions.reduce((sum, q) => sum + Number(q.marks || 0), 0);
   const validationIssues = questions.filter((q) => !q.question || !q.answer || (q.type === "mcq" && (q.options?.length ?? 0) !== 4));
   const availableTemplates = paperTemplates.filter((template) => !template.subject || template.subject === subject);
+  const builderGridStyle = {
+    "--inspector-width": `${inspectorWidth}px`
+  } as CSSProperties & Record<"--inspector-width", string>;
 
   useEffect(() => {
     fetch(`/api/v1/chapters?subject=${subject}`)
@@ -478,11 +488,19 @@ export default function PaperBuilderPage() {
     setDrafts(loadStoredList<DraftRecord>(DRAFT_STORAGE_KEY));
     setQuestionLibrary(loadStoredList<QuestionLibraryItem>(QUESTION_LIBRARY_STORAGE_KEY));
     setQuestionTrash(pruneExpiredTrash(loadStoredList<TrashedQuestionRecord>(QUESTION_TRASH_STORAGE_KEY)));
+    const storedInspectorWidth = Number(window.localStorage.getItem(INSPECTOR_WIDTH_STORAGE_KEY));
+    if (Number.isFinite(storedInspectorWidth)) {
+      setInspectorWidth(clampInspectorWidth(storedInspectorWidth, window.innerWidth));
+    }
   }, []);
 
   useEffect(() => {
     saveStoredList(QUESTION_TRASH_STORAGE_KEY, pruneExpiredTrash(questionTrash));
   }, [questionTrash]);
+
+  useEffect(() => {
+    window.localStorage.setItem(INSPECTOR_WIDTH_STORAGE_KEY, String(inspectorWidth));
+  }, [inspectorWidth]);
 
   useEffect(() => {
     if (!chapterMenuOpen) return;
@@ -572,6 +590,31 @@ export default function PaperBuilderPage() {
     setPaperVariant(settings.paperVariant ?? "standard");
     setUsePyqPatterns(settings.usePyqPatterns ?? true);
     setView(settings.view ?? "paper");
+  }
+
+  function startInspectorResize(event: React.PointerEvent<HTMLButtonElement>) {
+    inspectorResizeRef.current = {
+      startX: event.clientX,
+      startWidth: inspectorWidth
+    };
+    event.currentTarget.setPointerCapture(event.pointerId);
+    document.body.classList.add("resizing-inspector");
+  }
+
+  function resizeInspector(event: React.PointerEvent<HTMLButtonElement>) {
+    const current = inspectorResizeRef.current;
+    if (!current) return;
+    const delta = current.startX - event.clientX;
+    setInspectorWidth(clampInspectorWidth(current.startWidth + delta, window.innerWidth));
+  }
+
+  function stopInspectorResize(event: React.PointerEvent<HTMLButtonElement>) {
+    if (!inspectorResizeRef.current) return;
+    inspectorResizeRef.current = null;
+    if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+      event.currentTarget.releasePointerCapture(event.pointerId);
+    }
+    document.body.classList.remove("resizing-inspector");
   }
 
   function saveCurrentDraft() {
@@ -1220,7 +1263,7 @@ export default function PaperBuilderPage() {
           </div>
         </header>
 
-        <div className="builder-grid">
+        <div className="builder-grid" style={builderGridStyle}>
           <aside className="setup-rail">
             <PanelTitle title="Paper setup" />
             <Field label="Subject">
@@ -1517,6 +1560,16 @@ export default function PaperBuilderPage() {
 	          </section>
 
           <aside className="inspector">
+            <button
+              type="button"
+              className="inspector-resize-handle"
+              aria-label="Resize question editor"
+              title="Drag to resize editor"
+              onPointerDown={startInspectorResize}
+              onPointerMove={resizeInspector}
+              onPointerUp={stopInspectorResize}
+              onPointerCancel={stopInspectorResize}
+            />
             {selectedQuestion ? (
               <QuestionInspector key={selectedQuestion.id} question={selectedQuestion} onChange={updateSelected} />
             ) : (
@@ -2668,6 +2721,13 @@ function saveStoredList<T>(key: string, rows: T[]) {
   } catch {
     // Local persistence is best-effort; generation and export should keep working.
   }
+}
+
+function clampInspectorWidth(width: number, viewportWidth?: number) {
+  const viewportMax = viewportWidth
+    ? Math.max(MIN_INSPECTOR_WIDTH, viewportWidth - 60 - 300 - 420)
+    : MAX_INSPECTOR_WIDTH;
+  return Math.min(Math.max(width, MIN_INSPECTOR_WIDTH), Math.min(MAX_INSPECTOR_WIDTH, viewportMax));
 }
 
 function formatDateTime(value: string) {
