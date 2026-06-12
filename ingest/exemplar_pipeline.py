@@ -13,6 +13,9 @@ logger = logging.getLogger(__name__)
 
 def run_exemplar_ingestion(data_dir: str | None = None, subject: str = "maths") -> int:
     subject = normalize_subject(subject)
+    if subject == "sst":
+        logger.info("SST does not have a configured NCERT Exemplar corpus; skipping.")
+        return 0
     root = Path(data_dir or settings.content_dir_for(subject, "exemplar"))
     pdf_files = sorted(root.rglob("*.pdf"))
 

@@ -39,6 +39,13 @@ QUESTION_TYPE_TEMPLATES = {
 - Each sub-question: 1 mark, mix of MCQ/VSA
 - Sub-questions form: "questions": [{...}, {...}, {...}, {...}]
 - Each sub-question has its own type, question, answer, solution""",
+
+    "map_skill": """QUESTION FORMAT: Map Skill (5 marks)
+- Ask a text-based map-skill task suitable for an outline map of India or the world.
+- Do not invent or attach an actual image/map file.
+- The question should clearly state what must be located, labelled, or identified.
+- Include a "map_items" array with 2-5 items, each with "label", "location", and "instruction".
+- Answer lists the correct locations/labels in order.""",
 }
 
 HARDNESS_GUIDES = {
@@ -226,6 +233,62 @@ CRITICAL RULES:
   "$CaO(s) + H_2O(l) \\rightarrow Ca(OH)_2(aq)$".
 """
 
+SST_SYSTEM_PROMPT = """You are an expert CBSE Class 10 Social Science question paper setter.
+You generate high-quality exam-style questions based strictly on the NCERT syllabus.
+
+Subject streams are History, Geography, Political Science, and Economics. Keep the
+chapter, stream, command word, and marks aligned with CBSE Class 10 Social Science.
+
+OUTPUT FORMAT:
+Return valid JSON per question with these fields:
+{
+  "question": "Question text",
+  "answer": "Final answer",
+  "solution": {
+    "steps": ["Step 1 explanation", "Step 2 explanation", ...],
+    "derivation": ""
+  },
+  "topic": "Chapter name",
+  "subtopic": "Specific topic name",
+  "marks": 4,
+  "type": "la",
+  "difficulty": "hard",
+  "options": ["(A) ...", "(B) ...", "(C) ...", "(D) ..."]  // only for MCQ
+}
+
+For case_study type:
+{
+  "question": "Source paragraph...",
+  "type": "case_study",
+  "marks": 4,
+  "questions": [
+    {"id": "i", "type": "mcq", "question": "...", "answer": "...", "options": [...]},
+    {"id": "ii", "type": "vsa", "question": "...", "answer": "..."}
+  ]
+}
+
+For map_skill type:
+{
+  "question": "On the given outline map of India/world, locate and label...",
+  "type": "map_skill",
+  "marks": 5,
+  "map_items": [
+    {"label": "A", "location": "Dandi", "instruction": "Locate and label the place associated with the Salt March"}
+  ],
+  "answer": "A - Dandi",
+  "solution": {"steps": ["A is Dandi, Gujarat, associated with the Salt March."]}
+}
+
+CRITICAL RULES:
+- Every question MUST be from CBSE Class 10 NCERT Social Science syllabus only
+- Use PYQs only as pattern references, not as copied source material
+- Maintain the correct stream: History, Geography, Political Science, or Economics
+- For map_skill questions, ask only standard board-style locations from NCERT maps/PYQs
+- Question must be self-contained and unambiguous
+- Provide complete answer points suitable for the marks
+- For MCQ/Assertion-Reason, the "answer" field is ONLY the option label: "(C)".
+"""
+
 
 def _format_chunks(retrieved_context: list[dict[str, Any]]) -> str:
     if not retrieved_context:
@@ -366,7 +429,11 @@ def build_prompt(chapter: str, subtopic: str | None, question_type: str,
                  paper_level: str | None = None,
                  subject: str = "maths") -> tuple[str, str]:
     topic_str = f"{chapter}" + (f" > {subtopic}" if subtopic else "")
-    subject_label = "Science" if subject == "science" else "Mathematics"
+    subject_label = {
+        "maths": "Mathematics",
+        "science": "Science",
+        "sst": "Social Science",
+    }.get(subject, "Mathematics")
 
     type_template = QUESTION_TYPE_TEMPLATES.get(question_type, "")
     hardness_guide = HARDNESS_GUIDES.get(difficulty or "medium", HARDNESS_GUIDES["medium"])
@@ -429,9 +496,14 @@ PAPER LEVEL: {paper_level or "standard"}
 {set_instruction}
 All questions must be on "{topic_str}" and adhere strictly to the QUESTION FORMAT above.
 Use NCERT/graph context for subject correctness. Use PYQ context only for exam pattern, not for source content.
-Use Exemplar context only to tune conceptual depth for the requested paper level.
-Do not copy PYQ or Exemplar questions, options, case-study scenarios, or numbers verbatim.
+{"Use Exemplar context only to tune conceptual depth for the requested paper level." if subject != "sst" else "For SST, use the PYQ context to calibrate easy, medium, and challenging demand across the same CBSE format."}
+{"Do not copy PYQ or Exemplar questions, options, case-study scenarios, or numbers verbatim." if subject != "sst" else "Do not copy PYQ questions, options, case-study scenarios, map prompts, or numbers verbatim."}
 {output_instruction}"""
 
-    system_prompt = SCIENCE_SYSTEM_PROMPT if subject == "science" else SYSTEM_PROMPT
+    if subject == "science":
+        system_prompt = SCIENCE_SYSTEM_PROMPT
+    elif subject == "sst":
+        system_prompt = SST_SYSTEM_PROMPT
+    else:
+        system_prompt = SYSTEM_PROMPT
     return system_prompt, user_prompt

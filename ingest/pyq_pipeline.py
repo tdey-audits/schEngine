@@ -6,6 +6,7 @@ from ingest.embedder import Embedder
 from ingest.extractor import PDFExtractor
 from ingest.pyq_chunker import PYQChunker
 from ingest.science_chunker import SciencePYQChunker
+from ingest.sst_chunker import SSTPYQChunker
 from rag.vector_store import VectorStore
 
 logger = logging.getLogger(__name__)
@@ -21,7 +22,12 @@ def run_pyq_ingestion(data_dir: str | None = None, subject: str = "maths") -> in
         return 0
 
     extractor = PDFExtractor()
-    chunker = SciencePYQChunker() if subject == "science" else PYQChunker()
+    if subject == "science":
+        chunker = SciencePYQChunker()
+    elif subject == "sst":
+        chunker = SSTPYQChunker()
+    else:
+        chunker = PYQChunker()
     embedder = Embedder(model_name=settings.embedding_model)
     index_path, meta_path = settings.index_paths_for(subject, "pyq")
     store = VectorStore(

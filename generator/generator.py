@@ -266,6 +266,9 @@ class QuestionGenerator:
     def _retrieve_exemplar_depth(self, query: str, chapter: str, question_type: str,
                                  paper_level: str | None,
                                  subject: str = "maths") -> list[dict[str, Any]]:
+        subject = normalize_subject(subject)
+        if subject == "sst":
+            return []
         level = (paper_level or "standard").lower()
         if level == "standard":
             return []

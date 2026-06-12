@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run the CBSE Class 10 PYQ ingestion pipeline.")
-    parser.add_argument("--subject", default="maths", choices=["maths", "science"])
+    parser.add_argument("--subject", default="maths", choices=["maths", "science", "sst"])
     args = parser.parse_args()
     count = run_pyq_ingestion(subject=args.subject)
     if count:

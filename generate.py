@@ -16,13 +16,13 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 def main():
     import argparse
     parser = argparse.ArgumentParser(description="Generate NCERT Class 10 questions")
-    parser.add_argument("--subject", default="maths", choices=["maths", "science"],
+    parser.add_argument("--subject", default="maths", choices=["maths", "science", "sst"],
                         help="Subject corpus/syllabus to use")
     parser.add_argument("--topic", "-t", default="Quadratic Equations",
                         help="Chapter or topic (e.g. 'Quadratic Equations')")
     parser.add_argument("--subtopic", "-s", default=None, help="Specific subtopic")
     parser.add_argument("--type", "-T", default="sa",
-                        choices=["mcq", "assertion_reason", "vsa", "sa", "la", "case_study"],
+                        choices=["mcq", "assertion_reason", "vsa", "sa", "la", "case_study", "map_skill"],
                         help="Question type (see --list-types)")
     parser.add_argument("--marks", "-m", type=int, default=None, choices=[1, 2, 3, 4, 5],
                         help="Marks (auto-derived from type if omitted)")
@@ -61,13 +61,16 @@ def main():
         return
 
     gen = QuestionGenerator()
-    default_title = args.title or (
-        "CBSE Class 10 Science" if args.subject == "science" else "CBSE Class 10 Mathematics"
-    )
+    title_by_subject = {
+        "maths": "CBSE Class 10 Mathematics",
+        "science": "CBSE Class 10 Science",
+        "sst": "CBSE Class 10 Social Science",
+    }
+    default_title = args.title or title_by_subject[args.subject]
 
     if args.paper:
         chapters = [ch["name"] for ch in list_syllabus_chapters(args.subject)]
-        types = ["mcq", "assertion_reason", "vsa", "sa", "la", "case_study"]
+        types = [qt["type"] for qt in list_question_types(args.subject)]
         all_qs = []
         for i, (ch, tp) in enumerate(zip(chapters, types)):
             try:
@@ -75,7 +78,8 @@ def main():
                     ch, tp, count=1,
                     difficulty={"mcq": "simple", "assertion_reason": "simple",
                                 "vsa": "medium", "sa": "medium",
-                                "la": "hard", "case_study": "hard"}.get(tp),
+                                "la": "hard", "case_study": "hard",
+                                "map_skill": "medium"}.get(tp),
                     paper_level=args.paper_level,
                     paper_variant=args.paper_variant,
                     use_pyq_patterns=not args.no_pyq_patterns,

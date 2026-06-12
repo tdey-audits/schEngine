@@ -25,6 +25,7 @@ CHAPTER_EXPORT_CODES = {
 QUESTION_TYPE_CODES = {
     "assertion_reason": "ar",
     "case_study": "case",
+    "map_skill": "map",
 }
 
 PAPER_LEVEL_CODES = {

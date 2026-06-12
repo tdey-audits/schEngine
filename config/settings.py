@@ -17,6 +17,10 @@ class Settings(BaseSettings):
     science_pyq_metadata_path: str = "data/science_pyq_metadata.json"
     science_exemplar_faiss_index_path: str = "data/science_exemplar_faiss.index"
     science_exemplar_metadata_path: str = "data/science_exemplar_metadata.json"
+    sst_faiss_index_path: str = "data/sst_faiss.index"
+    sst_metadata_path: str = "data/sst_metadata.json"
+    sst_pyq_faiss_index_path: str = "data/sst_pyq_faiss.index"
+    sst_pyq_metadata_path: str = "data/sst_pyq_metadata.json"
 
     llm_provider: str = "groq"
     llm_model: str = "llama-3.1-8b-instant"
@@ -46,6 +50,8 @@ class Settings(BaseSettings):
     science_data_dir: str = "content/ncert/science/ncert_science_chapter"
     science_pyq_data_dir: str = "content/ncert/science/pyqs"
     science_exemplar_data_dir: str = "content/ncert/science/ncert_exemplar_science"
+    sst_data_dir: str = "content/ncert/sst"
+    sst_pyq_data_dir: str = "content/ncert/sst/pyqs"
     output_dir: str = "output"
 
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
@@ -57,6 +63,11 @@ class Settings(BaseSettings):
                 "textbook": self.science_data_dir,
                 "pyq": self.science_pyq_data_dir,
                 "exemplar": self.science_exemplar_data_dir,
+            }[corpus]
+        if subject == "sst":
+            return {
+                "textbook": self.sst_data_dir,
+                "pyq": self.sst_pyq_data_dir,
             }[corpus]
         return {
             "textbook": self.data_dir,
@@ -71,6 +82,11 @@ class Settings(BaseSettings):
                 "textbook": (self.science_faiss_index_path, self.science_faiss_metadata_path),
                 "pyq": (self.science_pyq_faiss_index_path, self.science_pyq_metadata_path),
                 "exemplar": (self.science_exemplar_faiss_index_path, self.science_exemplar_metadata_path),
+            }[corpus]
+        if subject == "sst":
+            return {
+                "textbook": (self.sst_faiss_index_path, self.sst_metadata_path),
+                "pyq": (self.sst_pyq_faiss_index_path, self.sst_pyq_metadata_path),
             }[corpus]
         return {
             "textbook": (self.faiss_index_path, self.faiss_metadata_path),
@@ -87,6 +103,13 @@ def normalize_subject(subject: str | None) -> str:
         "maths": "maths",
         "science": "science",
         "sci": "science",
+        "sst": "sst",
+        "social": "sst",
+        "social science": "sst",
+        "social-science": "sst",
+        "social_science": "sst",
+        "social studies": "sst",
+        "social-studies": "sst",
     }
     if value not in aliases:
         raise ValueError(f"Unsupported subject: {subject}")

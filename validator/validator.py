@@ -5,7 +5,7 @@ from renderer.diagrams import PDFDiagramRenderer
 from config.settings import normalize_subject
 from syllabus.registry import normalize_question_type
 
-VALID_TYPES = {"mcq", "assertion_reason", "vsa", "sa", "la", "case_study"}
+VALID_TYPES = {"mcq", "assertion_reason", "vsa", "sa", "la", "case_study", "map_skill"}
 MARKS_RANGE = (1, 5)
 VALID_HARDNESS = {"simple", "medium", "hard"}
 OPTION_LABELS = {"(A)", "(B)", "(C)", "(D)"}

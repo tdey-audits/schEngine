@@ -8,11 +8,14 @@ from syllabus.registry import normalize_question_type
 
 
 class GenerateRequest(BaseModel):
-    subject: str = Field(default="maths", pattern="^(maths|math|mathematics|science|sci)$")
+    subject: str = Field(
+        default="maths",
+        pattern="^(maths|math|mathematics|science|sci|sst|social|social science|social-science|social_science|social studies|social-studies)$",
+    )
     topic: str = Field(..., description="Chapter or topic name")
     question_type: str = Field(
         default="sa",
-        pattern="^(mcq|assertion_reason|vsa|sa|la|case_study)$",
+        pattern="^(mcq|assertion_reason|vsa|sa|la|case_study|map_skill|map|map_based|map_skill_based)$",
     )
     marks: int | None = Field(default=None, ge=1, le=5)
     count: int = Field(default=1, ge=1, le=10)
@@ -38,6 +41,8 @@ class GenerateRequest(BaseModel):
     @field_validator("question_type", mode="before")
     @classmethod
     def normalize_question_type_field(cls, value):
+        if str(value).strip().lower() in {"map", "map_based", "map_skill_based"}:
+            return "map_skill"
         return normalize_question_type(value)
 
     @field_validator("subject", mode="before")
@@ -55,7 +60,10 @@ class GenerateResponse(BaseModel):
 class ExportRequest(BaseModel):
     questions: list[dict[str, Any]] = Field(..., min_length=1)
     title: str = "CBSE Class 10 Mathematics"
-    subject: str = Field(default="maths", pattern="^(maths|math|mathematics|science|sci)$")
+    subject: str = Field(
+        default="maths",
+        pattern="^(maths|math|mathematics|science|sci|sst|social|social science|social-science|social_science|social studies|social-studies)$",
+    )
     instructions: str | None = None
     time_allowed: str = "3 Hours"
     max_marks: str = "80"

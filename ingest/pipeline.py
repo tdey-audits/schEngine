@@ -6,6 +6,7 @@ from ingest.chunker import NCERTChunker
 from ingest.embedder import Embedder
 from ingest.extractor import PDFExtractor
 from ingest.science_chunker import ScienceNCERTChunker
+from ingest.sst_chunker import SSTNCERTChunker
 from rag.vector_store import VectorStore
 
 logger = logging.getLogger(__name__)
@@ -14,14 +15,19 @@ logger = logging.getLogger(__name__)
 def run_ingestion(data_dir: str | None = None, subject: str = "maths") -> int:
     subject = normalize_subject(subject)
     root = Path(data_dir or settings.content_dir_for(subject, "textbook"))
-    pdf_files = sorted(root.glob("*.pdf"))
+    pdf_files = sorted(root.rglob("*.pdf") if subject == "sst" else root.glob("*.pdf"))
 
     if not pdf_files:
         logger.warning(f"No PDFs found in {root}")
         return 0
 
     extractor = PDFExtractor()
-    chunker = ScienceNCERTChunker() if subject == "science" else NCERTChunker()
+    if subject == "science":
+        chunker = ScienceNCERTChunker()
+    elif subject == "sst":
+        chunker = SSTNCERTChunker()
+    else:
+        chunker = NCERTChunker()
     embedder = Embedder(model_name=settings.embedding_model)
     index_path, meta_path = settings.index_paths_for(subject, "textbook")
     store = VectorStore(
@@ -32,10 +38,16 @@ def run_ingestion(data_dir: str | None = None, subject: str = "maths") -> int:
 
     all_chunks = []
     for pdf_path in pdf_files:
+        source = str(pdf_path.relative_to(root)) if subject == "sst" else pdf_path.name
+        if subject == "sst" and source.lower().startswith("pyqs/"):
+            continue
+        if subject == "sst" and (pdf_path.name.lower() == "ps.pdf" or source == "Social-History/ch1.pdf"):
+            logger.info(f"{source}: skipped non-chapter or duplicate PDF")
+            continue
         text = extractor.extract(pdf_path)
-        chunks = chunker.chunk(text, source=pdf_path.name)
+        chunks = chunker.chunk(text, source=source)
         all_chunks.extend(chunks)
-        logger.info(f"{pdf_path.name}: {len(chunks)} chunks")
+        logger.info(f"{source}: {len(chunks)} chunks")
 
     if not all_chunks:
         logger.warning("No chunks extracted")

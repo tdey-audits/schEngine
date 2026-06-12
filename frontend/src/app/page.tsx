@@ -28,12 +28,12 @@ import katex from "katex";
 import type { CSSProperties } from "react";
 import { useEffect, useRef, useState } from "react";
 
-type QuestionType = "mcq" | "assertion_reason" | "vsa" | "sa" | "la" | "case_study";
-type Subject = "maths" | "science";
+type QuestionType = "mcq" | "assertion_reason" | "vsa" | "sa" | "la" | "case_study" | "map_skill";
+type Subject = "maths" | "science" | "sst";
 type Difficulty = "simple" | "medium" | "hard";
 type PaperLevel = "standard" | "medium" | "challenging";
 type PaperVariant = "basic" | "standard";
-type PaperTemplateId = "custom" | "default" | "cbse_class10_standard" | "cbse_class10_science";
+type PaperTemplateId = "custom" | "default" | "cbse_class10_standard" | "cbse_class10_science" | "cbse_class10_sst";
 type QuestionStatus = "generated" | "edited" | "regenerated" | "locked" | "needs_review";
 type WorkspaceSection = "builder" | "drafts" | "library" | "trash" | "exports";
 type CoverageMode = "chapter" | "chapter_subtopics";
@@ -61,6 +61,7 @@ type Question = {
   type: QuestionType;
   difficulty: Difficulty;
   options?: string[];
+  map_items?: { label?: string; location?: string; instruction?: string }[];
   metadata?: Record<string, unknown>;
   status?: QuestionStatus;
   locked?: boolean;
@@ -183,7 +184,8 @@ const questionTypes: { type: QuestionType; label: string; section: string; marks
   { type: "vsa", label: "VSA", section: "B", marks: 2 },
   { type: "sa", label: "SA", section: "C", marks: 3 },
   { type: "la", label: "LA", section: "D", marks: 5 },
-  { type: "case_study", label: "Case Study", section: "E", marks: 4 }
+  { type: "case_study", label: "Case Study", section: "E", marks: 4 },
+  { type: "map_skill", label: "Map Skill", section: "F", marks: 5 }
 ];
 
 const defaultQuestionMix: Record<QuestionType, number> = {
@@ -192,7 +194,8 @@ const defaultQuestionMix: Record<QuestionType, number> = {
   vsa: 0,
   sa: 0,
   la: 0,
-  case_study: 0
+  case_study: 0,
+  map_skill: 0
 };
 
 const cbseClass10StandardMix: Record<QuestionType, number> = {
@@ -201,7 +204,8 @@ const cbseClass10StandardMix: Record<QuestionType, number> = {
   vsa: 5,
   sa: 6,
   la: 4,
-  case_study: 3
+  case_study: 3,
+  map_skill: 0
 };
 
 const cbseClass10ScienceMix: Record<QuestionType, number> = {
@@ -210,7 +214,18 @@ const cbseClass10ScienceMix: Record<QuestionType, number> = {
   vsa: 6,
   sa: 7,
   la: 3,
-  case_study: 3
+  case_study: 3,
+  map_skill: 0
+};
+
+const cbseClass10SstMix: Record<QuestionType, number> = {
+  mcq: 20,
+  assertion_reason: 0,
+  vsa: 4,
+  sa: 5,
+  la: 4,
+  case_study: 3,
+  map_skill: 1
 };
 
 const paperLevelOptions: { value: PaperLevel; label: string }[] = [
@@ -221,7 +236,8 @@ const paperLevelOptions: { value: PaperLevel; label: string }[] = [
 
 const subjectOptions: { value: Subject; label: string }[] = [
   { value: "maths", label: "Maths" },
-  { value: "science", label: "Science" }
+  { value: "science", label: "Science" },
+  { value: "sst", label: "SST" }
 ];
 
 const challengeOverrideOptions: { value: ChallengeOverride; label: string }[] = [
@@ -264,6 +280,16 @@ const paperTemplates: {
     description: "39 questions / 80 marks / all chapters",
     questionMix: cbseClass10ScienceMix,
     paperTitle: "CBSE Class 10 Science",
+    paperLevel: "standard",
+    selectAllChapters: true
+  },
+  {
+    id: "cbse_class10_sst",
+    subject: "sst",
+    label: "CBSE Class 10 SST",
+    description: "37 questions / 80 marks / all streams",
+    questionMix: cbseClass10SstMix,
+    paperTitle: "CBSE Class 10 Social Science",
     paperLevel: "standard",
     selectAllChapters: true
   }
@@ -476,7 +502,7 @@ export default function PaperBuilderPage() {
           setCoveragePlan(createCoveragePlan(defaultChapter ? [defaultChapter] : [], "chapter_subtopics"));
           setChallengePlan(createChallengePlan(defaultChapter ? [defaultChapter] : []));
           setExpandedCoverageChapter(defaultChapter?.name ?? null);
-          setPaperTitle(subject === "science" ? "CBSE Class 10 Science" : "CBSE Class 10 Mathematics");
+          setPaperTitle(defaultPaperTitle(subject));
           setPaperTemplate("default");
           setQuestionMix(defaultQuestionMix);
         }
@@ -563,7 +589,7 @@ export default function PaperBuilderPage() {
     const nextSelectedRows = nextSelectedChapters
       .map((name) => chapters.find((chapter) => chapter.name === name))
       .filter((chapter): chapter is Chapter => Boolean(chapter));
-    setPaperTitle(settings.paperTitle || (settings.subject === "science" ? "CBSE Class 10 Science" : "CBSE Class 10 Mathematics"));
+    setPaperTitle(settings.paperTitle || defaultPaperTitle(settings.subject ?? "maths"));
     setSelectedChapters(nextSelectedChapters);
     // Backward compat: old drafts had single "subtopic" string
     if (settings.subtopics) {
@@ -1409,7 +1435,7 @@ export default function PaperBuilderPage() {
               </Field>
             ) : (
               <Field label="Board variant">
-                <span className="template-note">Science uses one common CBSE pattern with standard, medium and challenging difficulty levels.</span>
+                <span className="template-note">{subject === "science" ? "Science" : "SST"} uses one common CBSE pattern with standard, medium and challenging difficulty levels.</span>
               </Field>
             )}
             <label className="toggle-row">
@@ -1468,7 +1494,7 @@ export default function PaperBuilderPage() {
 	                  {view === "paper" ? (
 	                    <PaperHeader title={paperTitle} totalMarks={totalMarks} count={questions.length} />
 	                  ) : null}
-	                  {view === "paper" ? ["A", "B", "C", "D", "E"].map((section) => {
+                  {view === "paper" ? ["A", "B", "C", "D", "E", "F"].map((section) => {
 	                    const rows = questions.filter((q) => sectionFor(q.type) === section);
 	                    if (!rows.length) return null;
 	                    return (
@@ -1503,6 +1529,15 @@ export default function PaperBuilderPage() {
 	                                  <div className="paper-options">
 	                                    {question.options.map((option) => (
 	                                      <span key={option}><LatexText text={option} /></span>
+	                                    ))}
+	                                  </div>
+	                                ) : null}
+	                                {question.map_items?.length ? (
+	                                  <div className="paper-options">
+	                                    {question.map_items.map((item, itemIndex) => (
+	                                      <span key={`${item.label ?? itemIndex}-${item.location ?? ""}`}>
+	                                        <LatexText text={[item.label, item.location, item.instruction].filter(Boolean).join(" - ")} />
+	                                      </span>
 	                                    ))}
 	                                  </div>
 	                                ) : null}
@@ -3056,6 +3091,15 @@ function paperLevelLabel(value: PaperLevel) {
   return paperLevelOptions.find((option) => option.value === value)?.label ?? formatTitleCase(value);
 }
 
+function defaultPaperTitle(subject: Subject) {
+  const titles: Record<Subject, string> = {
+    maths: "CBSE Class 10 Mathematics",
+    science: "CBSE Class 10 Science",
+    sst: "CBSE Class 10 Social Science"
+  };
+  return titles[subject];
+}
+
 function isEqualWeightSet(weights: number[]) {
   if (weights.length <= 1) return true;
   return weights.every((weight) => weight === weights[0]);
@@ -3199,7 +3243,8 @@ function sectionTitle(section: string) {
     B: "Very short answer",
     C: "Short answer",
     D: "Long answer",
-    E: "Case study"
+    E: "Case study",
+    F: "Map skill"
   };
   return titles[section] ?? "Questions";
 }

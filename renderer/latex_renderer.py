@@ -74,6 +74,7 @@ class CBSELaTeXRenderer:
         "sa": "Short Answer",
         "la": "Long Answer",
         "case_study": "Case Study",
+        "map_skill": "Map Skill",
     }
 
     def __init__(self, output_dir: str = "pdfs", build_dir: str | None = None):
@@ -148,6 +149,7 @@ class CBSELaTeXRenderer:
             "sa": "C",
             "la": "D",
             "case_study": "E",
+            "map_skill": "F",
         }
         section_names = {
             "A": r"Section A: Multiple Choice \& Assertion-Reason (1 mark each)",
@@ -155,9 +157,10 @@ class CBSELaTeXRenderer:
             "C": "Section C: Short Answer (3 marks each)",
             "D": "Section D: Long Answer (4-5 marks each)",
             "E": "Section E: Case Study (4 marks each)",
+            "F": "Section F: Map Skill (5 marks)",
         }
 
-        for sec_letter in ("A", "B", "C", "D", "E"):
+        for sec_letter in ("A", "B", "C", "D", "E", "F"):
             sec_types = [t for t in grouped if section_labels.get(t) == sec_letter]
             sec_questions = []
             for t in sec_types:
@@ -237,6 +240,21 @@ class CBSELaTeXRenderer:
                         for o in sq_opts:
                             parts.append(f"    \\item {self._escape_latex(self._strip_option_label(o))}")
                         parts.append("  \\end{enumerate}")
+                parts.append("\\end{enumerate}")
+
+        elif qtype == "map_skill":
+            map_items = q.get("map_items", [])
+            if isinstance(map_items, list) and map_items:
+                parts.append("\\begin{enumerate}[label=(\\alph*)]")
+                for item in map_items:
+                    if isinstance(item, dict):
+                        label = str(item.get("label", "")).strip()
+                        location = str(item.get("location", "")).strip()
+                        instruction = str(item.get("instruction", "")).strip()
+                        text = " - ".join(part for part in (label, location, instruction) if part)
+                    else:
+                        text = str(item)
+                    parts.append(f"  \\item {self._escape_latex(text)}")
                 parts.append("\\end{enumerate}")
 
         parts.append("\\vspace{0.15cm}\n")
@@ -320,7 +338,7 @@ class CBSELaTeXRenderer:
 
     def _group_by_type(self, questions: list[dict]) -> OrderedDict:
         groups: OrderedDict = OrderedDict()
-        type_order = ["mcq", "assertion_reason", "vsa", "sa", "la", "case_study"]
+        type_order = ["mcq", "assertion_reason", "vsa", "sa", "la", "case_study", "map_skill"]
         for t in type_order:
             groups[t] = []
         for q in questions:

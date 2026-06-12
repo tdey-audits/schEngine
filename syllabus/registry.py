@@ -4,13 +4,15 @@ from types import ModuleType
 from typing import Any
 
 from config.settings import normalize_subject
-from syllabus import ncert_class10, ncert_class10_science
+from syllabus import ncert_class10, ncert_class10_science, ncert_class10_sst
 
 
 def get_syllabus(subject: str | None = "maths") -> ModuleType:
     subject = normalize_subject(subject)
     if subject == "science":
         return ncert_class10_science
+    if subject == "sst":
+        return ncert_class10_sst
     return ncert_class10
 
 

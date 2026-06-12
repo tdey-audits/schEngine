@@ -33,7 +33,7 @@ class PYQRetriever:
     def retrieve(self, query: str, top_k: int = 5,
                  paper_level: str | None = None,
                  question_type: str | None = None) -> list[dict[str, Any]]:
-        if self.subject == "science":
+        if self.subject != "maths":
             paper_level = None
         query_vector = self.embedder.embed(query)
         results = self.store.search(query_vector, k=max(top_k * 20, 100))

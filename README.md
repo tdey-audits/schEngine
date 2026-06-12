@@ -1,6 +1,6 @@
 # schEngine — CBSE Class 10 Question Generator
 
-Generate NCERT-aligned CBSE Maths and Science exam papers with RAG, subject-specific corpora, CBSE question types, difficulty bands, and PDF export.
+Generate NCERT-aligned CBSE Maths, Science, and Social Science exam papers with RAG, subject-specific corpora, CBSE question types, difficulty bands, and PDF export.
 
 ## Quick Start
 
@@ -20,15 +20,22 @@ python3 ingest.py --subject science
 python3 ingest_pyqs.py --subject science
 python3 ingest_exemplar.py --subject science
 
+# Social Science corpora
+python3 ingest.py --subject sst
+python3 ingest_pyqs.py --subject sst
+
 # Generate questions
 python3 generate.py --topic "Quadratic Equations" --type la --marks 5 --count 5 --pdf
 python3 generate.py --topic "Quadratic Equations" --type mcq --count 10 --pdf
 python3 generate.py --topic "Trigonometry" --type sa --paper-level challenging --pdf
 python3 generate.py --subject science --topic "Electricity" --type sa --paper-level challenging --pdf
+python3 generate.py --subject sst --topic "Nationalism in India" --type la --paper-level medium --pdf
+python3 generate.py --subject sst --topic "Agriculture" --type map_skill --pdf
 
 # Full paper
 python3 generate.py --paper --paper-level medium --pdf
 python3 generate.py --subject science --paper --paper-level medium --pdf
+python3 generate.py --subject sst --paper --paper-level medium --pdf
 ```
 
 ## Features
@@ -36,15 +43,15 @@ python3 generate.py --subject science --paper --paper-level medium --pdf
 | Feature | Description |
 |---------|-------------|
 | **RAG** | FAISS vector stores (all-MiniLM-L6-v2) over subject-specific NCERT Class 10 PDFs |
-| **Knowledge Graph** | Maths concept graph with formulas, patterns, hardness hints, prerequisite edges; Science uses vector-grounded syllabus retrieval |
-| **6 CBSE Question Types** | mcq, assertion_reason, vsa, sa, la, case_study |
+| **Knowledge Graph** | Maths concept graph with formulas, patterns, hardness hints, prerequisite edges; Science and SST use vector-grounded syllabus retrieval |
+| **7 CBSE Question Types** | mcq, assertion_reason, vsa, sa, la, case_study, map_skill |
 | **Hardness Levels** | simple / medium / hard — maps cleanly to mark bands |
 | **Paper Difficulty Bands** | standard / medium / challenging — standard uses NCERT + graph + PYQ pattern; medium/challenging also retrieve Exemplar conceptual depth |
-| **PYQ Pattern Corpus** | CBSE Maths Basic/Standard and Science PYQs are retrieved only as paper-style references, not chapter content |
-| **Exemplar Depth Corpus** | NCERT Exemplar is retrieved separately for board-aligned conceptual challenge |
+| **PYQ Pattern Corpus** | CBSE Maths Basic/Standard, Science, and SST PYQs are retrieved only as paper-style references, not chapter content |
+| **Exemplar Depth Corpus** | NCERT Exemplar is retrieved separately for board-aligned conceptual challenge where available; SST uses PYQs for demand calibration |
 | **Pattern Rotation** | Rotates through KG typical_patterns to prevent repeated question setups |
 | **Diversity Injection** | Tracks used mechanisms across a batch, injects avoidance into subsequent prompts |
-| **PDF Export** | `exam` document class with CBSE sections A–E, proper inline/display math |
+| **PDF Export** | `exam` document class with CBSE sections A-F, proper inline/display math |
 | **CLI + API** | `generate.py` CLI and FastAPI server |
 | **Validators** | Structural checks per question type |
 
@@ -57,12 +64,13 @@ python3 generate.py --topic "Quadratic Equations" --type la --marks 5 --count 5 
 python3 generate.py --topic "Real Numbers" --type assertion_reason --count 5
 python3 generate.py --topic "Triangles" --type case_study --count 2 --pdf
 python3 generate.py --subject science --topic "Chemical Reactions and Equations" --type sa --count 5
+python3 generate.py --subject sst --topic "Money and Credit" --type case_study --count 2
 ```
 
 Options:
-- `--subject` — `maths` or `science` (defaults to `maths`)
+- `--subject` — `maths`, `science`, or `sst` (defaults to `maths`)
 - `--topic` — Chapter name or "Chapter Subtopic" (e.g. "Quadratic Equations", "Real Numbers Euclid division lemma")
-- `--type` — Question type: mcq, assertion_reason, vsa, sa, la, case_study
+- `--type` — Question type: mcq, assertion_reason, vsa, sa, la, case_study, map_skill
 - `--marks` — Override marks (defaults from type)
 - `--count` — Number of questions (1–10)
 - `--difficulty` — simple, medium, hard
@@ -109,7 +117,7 @@ schEngine/
 ├── graph/            # Knowledge graph (15 concept nodes, edges)
 ├── ingest/           # PDF ingestion pipeline (PyMuPDF + chunker + embedder)
 ├── content/          # Source PDFs organized by board/subject
-│   └── ncert/        # NCERT Maths/Science chapters, exemplar, and CBSE PYQs
+│   └── ncert/        # NCERT Maths/Science/SST chapters, exemplar where available, and CBSE PYQs
 ├── output/           # Generated question batches (JSON)
 ├── pdfs/             # Compiled LaTeX PDFs
 ├── rag/              # FAISS vector store + retriever
@@ -137,8 +145,8 @@ Supported providers: `openrouter`, `openai`, `anthropic`, `groq`, `huggingface`.
 |--------|--------------------|---------------------|
 | NCERT textbook | Content grounding and syllabus authority | Expand syllabus beyond Class 10 CBSE |
 | GraphRAG concept graph | Maths formulas, prerequisites, concept relations, pattern guidance | Replace source corpora with hard-coded examples |
-| CBSE PYQ | Board-paper pattern, phrasing, mark depth, Maths Basic/Standard variant style | Act as chapter teaching content or be copied |
-| NCERT Exemplar | Board-aligned conceptual depth for medium/challenging papers | Become olympiad/out-of-syllabus difficulty |
+| CBSE PYQ | Board-paper pattern, phrasing, mark depth, Maths Basic/Standard variant style, and SST demand calibration | Act as chapter teaching content or be copied |
+| NCERT Exemplar | Board-aligned conceptual depth for medium/challenging papers where available | Become olympiad/out-of-syllabus difficulty |
 | RD Sharma (planned) | Pattern expansion and large question-bank coverage | Become syllabus or difficulty authority |
 
 ## Development Checks
@@ -162,6 +170,11 @@ For a corpus update, use this sequence:
 python3 ingest.py
 python3 ingest_pyqs.py
 python3 ingest_exemplar.py
+python3 ingest.py --subject science
+python3 ingest_pyqs.py --subject science
+python3 ingest_exemplar.py --subject science
+python3 ingest.py --subject sst
+python3 ingest_pyqs.py --subject sst
 python3 scripts/check_generation_stack.py
 ```
 
@@ -181,3 +194,4 @@ python3 scripts/generate_chapter_batch.py --pdf-dir pdfs/batch1 --meta-dir outpu
 | sa | Short Answer | 3 | C |
 | la | Long Answer | 4-5 | D |
 | case_study | Case Study | 4 | E |
+| map_skill | Map Skill | 5 | F |
